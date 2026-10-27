@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "instructions": "Ctrl+F the card name; check candidate details and issuerSource, then change humanVerified from false to true. Run npm run build && npm test. The compiler will re-lock any edited card record until the QC queue is synced and reapproved.",
+  "instructions": "Unranked research inventory for owner review. Ctrl+F the card name; inspect proposed benefits, rate structure, annual and monthly fees, source, credits, exclusions. Only set humanVerified true after independently verifying ALL details. Rebuild with npm run build and npm test.",
   "cards": [
     {
       "id": "chase-aer-lingus",
@@ -269,7 +269,12 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -304,7 +309,12 @@
         "airlineProgram": "Atmos Rewards",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -338,7 +348,12 @@
         "airlineProgram": "Atmos Rewards",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -373,7 +388,12 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -640,7 +660,12 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -667,7 +692,12 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -700,7 +730,12 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -733,7 +768,12 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -838,7 +878,12 @@
           "sourcePage": "https://www.capitalone.com/credit-cards/",
           "alt": "Official front-facing product image of Capital One Quicksilver Rewards"
         },
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -875,7 +920,12 @@
           "sourcePage": "https://www.capitalone.com/credit-cards/",
           "alt": "Official front-facing product image of Capital One Savor Rewards"
         },
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -910,7 +960,12 @@
           "sourcePage": "https://www.capitalone.com/credit-cards/",
           "alt": "Official front-facing product image of Capital One Venture Rewards"
         },
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -1062,7 +1117,12 @@
           "sourcePage": "https://creditcards.chase.com/check-for-preapproved-offers",
           "alt": "Official front-facing card image of Chase Freedom Flex"
         },
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -1154,7 +1214,12 @@
           "sourcePage": "https://creditcards.chase.com/check-for-preapproved-offers",
           "alt": "Official front-facing card image of Chase Freedom Unlimited"
         },
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -1190,7 +1255,12 @@
           "sourcePage": "https://creditcards.chase.com/check-for-preapproved-offers",
           "alt": "Official front-facing card image of Chase Sapphire Preferred"
         },
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -1259,7 +1329,12 @@
         "airlineProgram": "American AAdvantage",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -1294,7 +1369,12 @@
         "airlineProgram": "American AAdvantage",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -1389,7 +1469,12 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -1489,7 +1574,12 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -1559,7 +1649,12 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -1666,7 +1761,12 @@
         "airlineProgram": "Delta SkyMiles",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -1701,7 +1801,12 @@
         "airlineProgram": "Delta SkyMiles",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -1734,7 +1839,12 @@
         "airlineProgram": "Delta SkyMiles",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -2275,6 +2385,42 @@
       "reviewedBy": ""
     },
     {
+      "id": "wells-one-key",
+      "name": "One Key Mastercard",
+      "issuer": "Wells Fargo",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "One Key travel loyalty rewards. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "One Key travel loyalty rewards; check current issuer program terms.",
+        "plainEnglish": "This card is associated with one key travel loyalty rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.wellsfargo.com/credit-cards/agreements/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "One Key Mastercard is a travel credit card candidate from Wells Fargo. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
       "id": "cap-platinum-secured",
       "name": "Platinum Secured",
       "issuer": "Capital One",
@@ -2336,7 +2482,12 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -2365,7 +2516,12 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -2652,7 +2808,12 @@
         "airlineProgram": "Southwest Rapid Rewards",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -2687,7 +2848,12 @@
         "airlineProgram": "Southwest Rapid Rewards",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -2722,7 +2888,12 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -2832,7 +3003,12 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -2895,7 +3071,12 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -2927,7 +3108,12 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -2961,7 +3147,12 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -2992,7 +3183,209 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "truist-future",
+      "name": "Truist Future",
+      "issuer": "Truist",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Low-rate financing and introductory APR. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Low-rate financing and introductory APR; check current issuer program terms.",
+        "plainEnglish": "This card is associated with low-rate financing and introductory apr. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.truist.com/credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Truist Future is a financing credit card candidate from Truist. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "none",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "us-altitude-connect",
+      "name": "U.S. Bank Altitude Connect Visa Signature",
+      "issuer": "U.S. Bank",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Travel points and selected travel benefits. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Travel points and selected travel benefits; check current issuer program terms.",
+        "plainEnglish": "This card is associated with travel points and selected travel benefits. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.usbank.com/credit-cards/benefits.html",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "U.S. Bank Altitude Connect Visa Signature is a travel credit card candidate from U.S. Bank. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "us-altitude-go-secured",
+      "name": "U.S. Bank Altitude Go Secured Visa",
+      "issuer": "U.S. Bank",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "4X dining on first $2,000 quarterly; 2X groceries, gas and streaming.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "4X dining on first $2,000 quarterly; 2X groceries, gas and streaming.",
+        "plainEnglish": "4X dining on first $2,000 quarterly; 2X groceries, gas and streaming.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [],
+        "features": [
+          "secured"
+        ],
+        "issuerSource": "https://www.usbank.com/credit-cards/altitude-go-secured-visa-credit-card.html",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "U.S. Bank Altitude Go Secured Visa is a credit building credit card candidate from U.S. Bank. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [
+          {
+            "label": "Dining",
+            "rate": 4,
+            "unit": "x",
+            "capAmountUsd": 2000,
+            "capPeriod": "Quarter"
+          },
+          {
+            "label": "Eligible grocery/gas/streaming",
+            "rate": 2,
+            "unit": "x"
+          }
+        ],
+        "benefits": [
+          {
+            "name": "Annual streaming purchase credit",
+            "type": "statement_credit",
+            "amountUsd": 15,
+            "frequencyMonths": 12,
+            "condition": "After qualifying streaming service purchases"
+          }
+        ],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "us-altitude-go",
+      "name": "U.S. Bank Altitude Go Visa Signature",
+      "issuer": "U.S. Bank",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Dining and streaming rewards. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Dining and streaming rewards; check current issuer program terms.",
+        "plainEnglish": "This card is associated with dining and streaming rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "dining"
+        ],
+        "features": [],
+        "issuerSource": "https://www.usbank.com/credit-cards/benefits.html",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "U.S. Bank Altitude Go Visa Signature is a dining credit card candidate from U.S. Bank. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "us-cashplus-secured",
+      "name": "U.S. Bank Cash+ Secured Visa",
+      "issuer": "U.S. Bank",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Selectable bonus cash back with security deposit. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Selectable bonus cash back with security deposit; check current issuer program terms.",
+        "plainEnglish": "This card is associated with selectable bonus cash back with security deposit. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [
+          "secured"
+        ],
+        "issuerSource": "https://www.usbank.com/credit-cards/benefits.html",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "U.S. Bank Cash+ Secured Visa is a credit building credit card candidate from U.S. Bank. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "selectable",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -3027,7 +3420,12 @@
           "sourcePage": "https://www.usbank.com/credit-cards.html",
           "alt": "Official front-facing product image of U.S. Bank Cash+ Visa Signature"
         },
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -3058,7 +3456,12 @@
           "sourcePage": "https://www.usbank.com/credit-cards.html",
           "alt": "Official front-facing product image of U.S. Bank Shield Visa"
         },
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -3091,7 +3494,12 @@
           "sourcePage": "https://www.usbank.com/credit-cards.html",
           "alt": "Official front-facing product image of U.S. Bank Smartly Visa Signature"
         },
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -3124,7 +3532,12 @@
         "airlineProgram": "United MileagePlus",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -3157,7 +3570,12 @@
         "airlineProgram": "United MileagePlus",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -3190,7 +3608,12 @@
         "airlineProgram": "United MileagePlus",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -3223,7 +3646,12 @@
         "airlineProgram": "United MileagePlus",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -3257,7 +3685,48 @@
           }
         ],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "wells-attune",
+      "name": "Wells Fargo Attune World Elite Mastercard",
+      "issuer": "Wells Fargo",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Lifestyle, wellness and sustainable spending rewards. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Lifestyle, wellness and sustainable spending rewards; check current issuer program terms.",
+        "plainEnglish": "This card is associated with lifestyle, wellness and sustainable spending rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [
+          "lifestyle"
+        ],
+        "features": [],
+        "issuerSource": "https://www.wellsfargo.com/credit-cards/agreements/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Wells Fargo Attune World Elite Mastercard is a lifestyle credit card candidate from Wells Fargo. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "cash_back",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -3296,7 +3765,80 @@
           }
         ],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "wells-autograph-journey",
+      "name": "Wells Fargo Autograph Journey",
+      "issuer": "Wells Fargo",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Travel category rewards. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Travel category rewards; check current issuer program terms.",
+        "plainEnglish": "This card is associated with travel category rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.wellsfargo.com/credit-cards/agreements/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Wells Fargo Autograph Journey is a travel credit card candidate from Wells Fargo. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "wells-reflect",
+      "name": "Wells Fargo Reflect",
+      "issuer": "Wells Fargo",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Intro APR financing-focused card. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Intro APR financing-focused card; check current issuer program terms.",
+        "plainEnglish": "This card is associated with intro apr financing-focused card. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.wellsfargo.com/credit-cards/agreements/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Wells Fargo Reflect is a financing credit card candidate from Wells Fargo. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "none",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
