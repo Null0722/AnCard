@@ -44,7 +44,7 @@ The repository includes an early, working **static-site prototype** with:
 - A disclosure-first entry flow and our soft-dark “Clear Atlas” visual direction.
 - Client-side category filters and neutral sorting.
 - A plain-language decoder, card detail views and side-by-side comparison.
-- 41 real credit card identities across ten issuers, including 13 airline co-branded cards. All proposed financial details are currently hidden pending human verification.
+- 41 established directory identities and additional unpublished research-only card candidates. Every financial benefit must pass human approval before appearing publicly.
 - A Git-versioned card catalog and a build-time validation script.
 
 **Important:** All 41 cards start as identity-only placeholders. Proposed fees, rewards, restrictions and sources are available for your review in `catalog/HUMAN-QC.json`, but no unapproved financial claims are published.
@@ -74,6 +74,18 @@ Catalog tests also verify that unapproved monetary and reward details are absent
 ## Easier card review
 
 For a more readable view than raw JSON, open the [generated card review sheet](catalog/REVIEW-SHEET.md). Each card has a searchable heading with proposed annual fees, rewards, restrictions, and an issuer source link. The sheet is read-only and generated from the approval queue. **To change approval, edit [HUMAN-QC.json](catalog/HUMAN-QC.json)**, then run `npm run build && npm test` and commit both generated outputs.
+
+## Extended unranked research inventory
+
+AnCard does not rank cards or recommend "top" products. The growing inventory is a **research database**, not a ranked list. It contains **100 proposed consumer-card records** across the existing institution cohort, including 59 new research-only candidates. This number is an inventory count, not a ranking or promise of complete coverage.
+
+- Open the [searchable human QC review sheet](catalog/REVIEW-SHEET.md) to inspect proposed annual and monthly fees, earning structures, category caps, statement credits, Global Entry / TSA PreCheck reimbursements, and other restrictions.
+- Review the underlying official issuer documentation, then flip the card's `humanVerified` boolean in [HUMAN-QC.json](catalog/HUMAN-QC.json).
+- The 59 newly researched cards **do not appear on the public site at all until approved**. The earlier 41 directory identities remain available as privacy-safe placeholders without unapproved financial details.
+- Each approved card may then display structured reward categories, rate multipliers, spending caps, travel credits and terms through the **Decode terms** view and neutral comparison table.
+- The circular progress display counts human-approved research records against the full internal review queue. It does not score, rank or endorse any card.
+
+The stack remains static HTML, CSS, JavaScript and JSON on GitHub Pages with no visitor profiles or persistence.
 
 ## Optional official card images
 
