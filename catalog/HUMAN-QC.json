@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "instructions": "AnCard is an unranked research database. Search card names with Ctrl+F, check proposed benefits, restrictions and issuer sources, then mark humanVerified true only after verifying facts. Research-stage cards stay out of the public directory until approved. Run npm run build and npm test.",
+  "instructions": "Owner review workflow: Ctrl+F any unranked card name; compare fees, earn rates, category caps, perks and disclaimers with the current official issuer terms. Set humanVerified to true only after approval, or keep false if any fact is uncertain. Saving a review change on main triggers the automated publishing workflow.",
   "cards": [
     {
       "id": "chase-aer-lingus",
