@@ -119,6 +119,44 @@
       "reviewedBy": ""
     },
     {
+      "id": "citi-aadvantage-mileup",
+      "name": "American Airlines AAdvantage MileUp",
+      "issuer": "Citi",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "American Airlines miles without annual fee. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "American Airlines miles without annual fee; check current issuer program terms.",
+        "plainEnglish": "This card is associated with american airlines miles without annual fee. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://www.citi.com/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "American Airlines AAdvantage MileUp is a airline credit card candidate from Citi. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "miles",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
       "id": "amex-gold",
       "name": "American Express Gold",
       "issuer": "American Express",
@@ -1030,6 +1068,62 @@
       "reviewedBy": ""
     },
     {
+      "id": "chase-freedom-rise",
+      "name": "Chase Freedom Rise",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "1.5% base cash back; introductory 3% dining under spending and time limits.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "1.5% base cash back; introductory 3% dining under spending and time limits.",
+        "plainEnglish": "1.5% base cash back; introductory 3% dining under spending and time limits.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/cash-back-credit-cards/freedom/rise",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Chase Freedom Rise is a cash back credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "flat",
+        "earnRules": [
+          {
+            "label": "Base eligible purchases",
+            "rate": 1.5,
+            "unit": "percent"
+          },
+          {
+            "label": "Introductory dining",
+            "rate": 3,
+            "unit": "percent",
+            "capAmountUsd": 6000,
+            "capPeriod": "First six months",
+            "condition": "Limited-time new-cardmember offer"
+          }
+        ],
+        "benefits": [
+          {
+            "name": "Automatic payment setup credit",
+            "type": "statement_credit",
+            "amountUsd": 25,
+            "frequencyMonths": null,
+            "condition": "Enroll in eligible autopay within first 3 months and remain enrolled at least 90 days"
+          }
+        ],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
       "id": "chase-freedom-unlimited",
       "name": "Chase Freedom Unlimited",
       "issuer": "Chase",
@@ -1097,6 +1191,42 @@
           "alt": "Official front-facing card image of Chase Sapphire Preferred"
         },
         "accessType": "public"
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "chase-sapphire-reserve",
+      "name": "Chase Sapphire Reserve",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Premium travel rewards. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Premium travel rewards; check current issuer program terms.",
+        "plainEnglish": "This card is associated with premium travel rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/travel-credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Chase Sapphire Reserve is a travel credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -1689,6 +1819,116 @@
       "reviewedBy": ""
     },
     {
+      "id": "chase-iberia",
+      "name": "Iberia Visa Signature",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Avios airline rewards. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Avios airline rewards; check current issuer program terms.",
+        "plainEnglish": "This card is associated with avios airline rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://creditcards.chase.com/compare-credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Iberia Visa Signature is a airline credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "miles",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "chase-ihg-premier",
+      "name": "IHG One Rewards Premier",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Hotel points earning and fourth-night award benefit, subject to eligibility.",
+        "annualFeeUsd": 99,
+        "feeSummary": "$99 annual fee",
+        "primaryLabel": "Hotel points earning and fourth-night award benefit, subject to eligibility.",
+        "plainEnglish": "Hotel points earning and fourth-night award benefit, subject to eligibility.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/travel-credit-cards/ihg",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "IHG One Rewards Premier is a hotel credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "chase-ihg-traveler",
+      "name": "IHG One Rewards Traveler",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "IHG hotel rewards without annual fee. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "IHG hotel rewards without annual fee; check current issuer program terms.",
+        "plainEnglish": "This card is associated with ihg hotel rewards without annual fee. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/travel-credit-cards/ihg",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "IHG One Rewards Traveler is a hotel credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
       "id": "amex-marriott-bevy",
       "name": "Marriott Bonvoy Bevy American Express",
       "issuer": "American Express",
@@ -1716,6 +1956,78 @@
         "imageFront": null,
         "accessType": "public",
         "bio": "Marriott Bonvoy Bevy American Express is a hotel credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "chase-marriott-bold",
+      "name": "Marriott Bonvoy Bold",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Marriott hotel points without annual fee. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Marriott hotel points without annual fee; check current issuer program terms.",
+        "plainEnglish": "This card is associated with marriott hotel points without annual fee. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Marriott Bonvoy Bold is a hotel credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "chase-marriott-boundless",
+      "name": "Marriott Bonvoy Boundless",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Marriott hotel points and travel. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Marriott hotel points and travel; check current issuer program terms.",
+        "plainEnglish": "This card is associated with marriott hotel points and travel. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Marriott Bonvoy Boundless is a hotel credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
         "rewardStructure": "points",
         "earnRules": [],
         "benefits": [],
@@ -1852,6 +2164,52 @@
         "additionalSources": [],
         "imageFront": null,
         "accessType": "public"
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "chase-prime-visa",
+      "name": "Prime Visa",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "5% Amazon and eligible Whole Foods with qualifying Prime membership.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "5% Amazon and eligible Whole Foods with qualifying Prime membership.",
+        "plainEnglish": "5% Amazon and eligible Whole Foods with qualifying Prime membership.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/cash-back-credit-cards/amazon-prime-rewards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Prime Visa is a cash back credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "flat",
+        "earnRules": [
+          {
+            "label": "Amazon, Whole Foods and eligible Chase Travel with Prime",
+            "rate": 5,
+            "unit": "percent",
+            "condition": "Eligible Prime membership required"
+          },
+          {
+            "label": "Gas, dining and eligible transit",
+            "rate": 2,
+            "unit": "percent"
+          }
+        ],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -2588,6 +2946,42 @@
         ],
         "imageFront": null,
         "accessType": "public"
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "chase-world-hyatt",
+      "name": "World of Hyatt Credit Card",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Hyatt hotel points. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Hyatt hotel points; check current issuer program terms.",
+        "plainEnglish": "This card is associated with hyatt hotel points. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/travel-credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "World of Hyatt Credit Card is a hotel credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
