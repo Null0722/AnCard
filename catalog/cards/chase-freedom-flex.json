@@ -41,5 +41,31 @@
       "condition": "Activate eligible quarter's categories before the deadline"
     }
   ],
-  "benefits": []
+  "benefits": [],
+  "welcomeOffer": {
+    "kind": "fixed",
+    "amount": 250,
+    "unit": "usd",
+    "minimumSpendUsd": 500,
+    "monthsToEarn": 3,
+    "description": "Limited-time $250 bonus after $500 eligible purchases in first three months; confirm offer availability and existing-cardmember restrictions.",
+    "source": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex",
+    "observedAt": "2026-10-27"
+  },
+  "targetedOffers": {
+    "status": "not_individually_verified",
+    "description": "Issuer-specific and targeted offers may exist. Do not assume the public offer or maximum offer is available for any applicant."
+  },
+  "inviteOnlyOffer": {
+    "status": "not_documented",
+    "description": "No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product."
+  },
+  "pricingDetail": {
+    "introPurchaseAprPct": 0,
+    "introPurchaseMonths": 15,
+    "purchaseAprRangePct": null,
+    "foreignTransactionFeePct": 0,
+    "notes": "0% intro purchase APR for 15 months; post-intro APR variable. Issuer currently advertises no foreign transaction fee.",
+    "source": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex"
+  }
 }

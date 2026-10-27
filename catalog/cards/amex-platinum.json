@@ -23,5 +23,38 @@
   "issuerSource": "https://www.americanexpress.com/us/credit-cards/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
-  "accessType": "public"
+  "accessType": "public",
+  "welcomeOffer": {
+    "kind": "up_to",
+    "amount": 175000,
+    "unit": "points",
+    "minimumSpendUsd": 12000,
+    "monthsToEarn": 6,
+    "description": "As high as 175,000 Membership Rewards points; actual amount and eligibility vary; not a guaranteed bonus.",
+    "source": "https://www.americanexpress.com/us/credit-cards/",
+    "observedAt": "2026-10-27"
+  },
+  "targetedOffers": {
+    "status": "not_individually_verified",
+    "description": "Issuer-specific and targeted offers may exist. Do not assume the public offer or maximum offer is available for any applicant."
+  },
+  "inviteOnlyOffer": {
+    "status": "not_documented",
+    "description": "No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product."
+  },
+  "redemptionDetail": {
+    "examples": [
+      {
+        "method": "Statement charges",
+        "centsPerPoint": 0.6,
+        "notes": "Membership Rewards points; value depends on redemption choice."
+      },
+      {
+        "method": "Eligible flights through Amex Travel",
+        "centsPerPoint": 1,
+        "notes": "Travel portal rate depends on eligible redemption type."
+      }
+    ],
+    "source": "https://www.americanexpress.com/en-us/credit-cards/credit-intel/american-express-points-value/"
+  }
 }

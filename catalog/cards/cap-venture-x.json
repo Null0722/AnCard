@@ -66,5 +66,50 @@
       "condition": "10,000 miles each anniversary, not cash"
     }
   ],
-  "monthlyFeeUsd": null
+  "monthlyFeeUsd": null,
+  "welcomeOffer": {
+    "kind": "fixed",
+    "amount": 75000,
+    "unit": "miles",
+    "minimumSpendUsd": 4000,
+    "monthsToEarn": 3,
+    "description": "75,000 bonus miles after $4,000 eligible purchases in three months, with issuer eligibility restrictions.",
+    "source": "https://www.capitalone.com/credit-cards/venture-x/",
+    "observedAt": "2026-10-27"
+  },
+  "targetedOffers": {
+    "status": "not_individually_verified",
+    "description": "Issuer-specific and targeted offers may exist. Do not assume the public offer or maximum offer is available for any applicant."
+  },
+  "inviteOnlyOffer": {
+    "status": "not_documented",
+    "description": "No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product."
+  },
+  "redemptionDetail": {
+    "examples": [
+      {
+        "method": "Cover eligible travel purchases",
+        "centsPerPoint": 1,
+        "notes": "Issuer describes 10,000 miles as $100 toward eligible travel. Other uses differ."
+      }
+    ],
+    "source": "https://www.capitalone.com/credit-cards/venture-x/"
+  },
+  "approvalGuidance": {
+    "issuerCreditLevel": "Excellent",
+    "noPresetSpendingLimit": false,
+    "creditScoreThreshold": null,
+    "typicalApprovalScore": null,
+    "startingLimitMinUsd": null,
+    "notes": "Excellent is the issuer's qualitative credit-level label, not a numerical approval threshold or promise. Income, existing debt, credit history and obligations also matter.",
+    "source": "https://www.capitalone.com/credit-cards/venture-x/"
+  },
+  "pricingDetail": {
+    "introPurchaseAprPct": null,
+    "introPurchaseMonths": null,
+    "purchaseAprRangePct": null,
+    "foreignTransactionFeePct": 0,
+    "notes": "Variable APR changes and depends on creditworthiness. No foreign transaction fee according to issuer.",
+    "source": "https://www.capitalone.com/credit-cards/venture-x/"
+  }
 }
