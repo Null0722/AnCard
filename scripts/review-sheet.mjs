@@ -37,7 +37,7 @@ function report(qc){
    '- **Reviewer:** '+toText(e.reviewedBy||'Not assigned'),
    '- **Review notes:** '+toText(e.reviewNotes||'None'),
    '',
-   'To approve after verifying all facts, change the matching card\\'s humanVerified flag in [HUMAN-QC.json](HUMAN-QC.json) and rebuild.',
+   "To approve after verifying all facts, change the matching card's humanVerified flag in [HUMAN-QC.json](HUMAN-QC.json) and rebuild.",
    '',
    '---',
    ''
