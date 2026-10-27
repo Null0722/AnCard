@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "14X eligible Hilton purchases and Hilton Honors Diamond status.",
-  "primaryLabel": "14X eligible Hilton purchases and Hilton Honors Diamond status.",
+  "summary": "14X points at eligible Hilton hotels, 7X selected flights/car rentals/U.S. dining and 3X elsewhere.",
+  "primaryLabel": "14X points at eligible Hilton hotels, 7X selected flights/car rentals/U.S. dining and 3X elsewhere.",
   "feeSummary": "$550 annual fee",
   "annualFeeUsd": 550,
   "rewards": [
@@ -16,30 +16,48 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "14X eligible Hilton purchases and Hilton Honors Diamond status.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "14X points at eligible Hilton hotels, 7X selected flights/car rentals/U.S. dining and 3X elsewhere.",
+  "watchOut": "Hotel and airline credits have separate timing/booking conditions; premium hotel status is not cash equivalent.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.americanexpress.com/us/credit-cards/category/hotel-rewards/",
+  "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Hilton Honors American Express Aspire is a hotel credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Hilton Honors American Express Aspire from American Express. 14X points at eligible Hilton hotels, 7X selected flights/car rentals/U.S. dining and 3X elsewhere.",
   "rewardStructure": "points",
   "earnRules": [
     {
-      "label": "Eligible Hilton purchases",
+      "label": "Hilton hotel purchases",
       "rate": 14,
+      "unit": "x"
+    },
+    {
+      "label": "Selected direct flights, rentals and U.S. restaurants",
+      "rate": 7,
+      "unit": "x"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 3,
       "unit": "x"
     }
   ],
   "benefits": [
     {
-      "name": "Hilton Honors Diamond status",
-      "type": "hotel_status",
-      "amountUsd": null,
-      "frequencyMonths": null,
-      "condition": "Terms and program requirements apply"
+      "name": "Flight statement credits",
+      "type": "issuer_benefit",
+      "amountUsd": 200,
+      "frequencyMonths": 12,
+      "condition": "Up to $50 per quarter for eligible airline bookings"
+    },
+    {
+      "name": "CLEAR+ membership credit",
+      "type": "issuer_benefit",
+      "amountUsd": 209,
+      "frequencyMonths": 12,
+      "condition": "Eligible CLEAR+ subscription paid with the card"
     }
-  ]
+  ],
+  "monthlyFeeUsd": null
 }

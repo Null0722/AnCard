@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "3% at Amazon/Whole Foods and eligible Chase Travel, without a Prime membership.",
-  "primaryLabel": "3% at Amazon/Whole Foods and eligible Chase Travel, without a Prime membership.",
+  "summary": "3% back at eligible Amazon, Audible, Whole Foods and Chase Travel; 2% gas, dining and transit; 1% elsewhere.",
+  "primaryLabel": "3% back at eligible Amazon, Audible, Whole Foods and Chase Travel; 2% gas, dining and transit; 1% elsewhere.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -14,22 +14,33 @@
   ],
   "categories": [],
   "features": [],
-  "plainEnglish": "3% at Amazon/Whole Foods and eligible Chase Travel, without a Prime membership.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "3% back at eligible Amazon, Audible, Whole Foods and Chase Travel; 2% gas, dining and transit; 1% elsewhere.",
+  "watchOut": "Merchant and transaction exclusions apply; Amazon Visa does not require paid Prime membership.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://creditcards.chase.com/cash-back-credit-cards",
+  "issuerSource": "https://creditcards.chase.com/cash-back-credit-cards/amazon-rewards",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Amazon Visa is a cash back credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
-  "rewardStructure": "flat",
+  "bio": "Amazon Visa from Chase. 3% back at eligible Amazon, Audible, Whole Foods and Chase Travel; 2% gas, dining and transit; 1% elsewhere.",
+  "rewardStructure": "tiered",
   "earnRules": [
     {
-      "label": "Amazon and eligible Whole Foods",
+      "label": "Eligible Amazon, Whole Foods and Chase Travel",
       "rate": 3,
+      "unit": "percent"
+    },
+    {
+      "label": "Dining, gas and local transit",
+      "rate": 2,
+      "unit": "percent"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1,
       "unit": "percent"
     }
   ],
-  "benefits": []
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Delta SkyMiles with no annual fee. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Delta SkyMiles with no annual fee; check current issuer program terms.",
+  "summary": "2 Delta SkyMiles per $1 on eligible direct Delta purchases and restaurants; 1 mile on other eligible purchases.",
+  "primaryLabel": "2 Delta SkyMiles per $1 on eligible direct Delta purchases and restaurants; 1 mile on other eligible purchases.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -18,16 +18,41 @@
   "features": [
     "airline"
   ],
-  "plainEnglish": "This card is associated with delta skymiles with no annual fee. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "2 Delta SkyMiles per $1 on eligible direct Delta purchases and restaurants; 1 mile on other eligible purchases.",
+  "watchOut": "No Delta Sky Club access; no foreign transaction fees per issuer.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.americanexpress.com/us/credit-cards/",
+  "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-blue-american-express-card/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Delta SkyMiles Blue is a airline credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Delta SkyMiles Blue from American Express. 2 Delta SkyMiles per $1 on eligible direct Delta purchases and restaurants; 1 mile on other eligible purchases.",
   "rewardStructure": "miles",
-  "earnRules": [],
-  "benefits": []
+  "earnRules": [
+    {
+      "label": "Eligible Delta purchases",
+      "rate": 2,
+      "unit": "x"
+    },
+    {
+      "label": "Restaurants",
+      "rate": 2,
+      "unit": "x"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1,
+      "unit": "x"
+    }
+  ],
+  "benefits": [
+    {
+      "name": "In-flight food and beverage savings",
+      "type": "issuer_benefit",
+      "amountUsd": 20,
+      "frequencyMonths": null,
+      "condition": "20% back as a statement credit on eligible Delta in-flight food and beverage purchases; percentage, not dollars"
+    }
+  ],
+  "monthlyFeeUsd": null
 }

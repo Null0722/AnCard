@@ -53,3 +53,7 @@ The static site publishes real-card **identities only** until the owner approves
 ## Research expansion (v0.4.0)
 
 The catalog consists of an unranked editorial research inventory. New candidate cards remain backend-only until owner QC. No ranking, match score, or top-card claims are generated. The homepage displays a circular QC completion percentage, calculated from reviewed count divided by total research records. Human-reviewed cards can expose structured reward models, activation/spend limits, and quantified perks in the terms decoder and side-by-side comparisons. This must not imply all missing perks are absent.
+
+## v0.5.0 directory coverage
+
+The 100 researched products now appear in the public directory **without rankings** and **without unapproved card costs or benefits**. Their back-office records carry proposed source-backed facts for human QC. Every approved card may publish its documented fee, earning rates, caps and quantified benefits; unapproved cards remain identity-only placeholders. The directory total is a coverage inventory count, not a "top 100" or approval-likelihood ranking.

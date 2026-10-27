@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Disney Rewards Dollars and cardmember offers. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Disney Rewards Dollars and cardmember offers; check current issuer program terms.",
+  "summary": "Earn Disney Rewards Dollars on eligible purchases and access select Disney shopping and vacation offers.",
+  "primaryLabel": "Earn Disney Rewards Dollars on eligible purchases and access select Disney shopping and vacation offers.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -16,16 +16,17 @@
     "lifestyle"
   ],
   "features": [],
-  "plainEnglish": "This card is associated with disney rewards dollars and cardmember offers. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "Earn Disney Rewards Dollars on eligible purchases and access select Disney shopping and vacation offers.",
+  "watchOut": "Rewards Dollars are not interchangeable with cash; published earn rate needs issuer reward schedule review.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
   "issuerSource": "https://creditcards.chase.com/rewards-credit-cards/disney",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Disney Visa is a lifestyle credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
-  "rewardStructure": "cash_back",
+  "bio": "Disney Visa from Chase. Earn Disney Rewards Dollars on eligible purchases and access select Disney shopping and vacation offers.",
+  "rewardStructure": "points",
   "earnRules": [],
-  "benefits": []
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

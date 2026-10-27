@@ -21,7 +21,7 @@ const perk=p=>{
 };
 function report(q){
  const n=q.cards.filter(e=>e.humanVerified).length;
- const lines=["# AnCard human QC review sheet","","**Unranked research inventory. No card is recommended or ranked in this file.**","","This is a generated READ-ONLY view. Review proposed terms and change approval in [HUMAN-QC.json](HUMAN-QC.json).","","**Review progress:** "+n+" of "+q.cards.length+" entries human approved. Research-only entries are not added to the public directory until approved.",""];
+ const lines=["# AnCard human QC review sheet","","**Unranked research inventory. No card is recommended or ranked in this file.**","","This is a generated READ-ONLY view. Review proposed terms and change approval in [HUMAN-QC.json](HUMAN-QC.json).","","**Review progress:** "+n+" of "+q.cards.length+" entries human approved. Unapproved financial details remain hidden from the public directory.",""];
  for(const e of q.cards){
   const c=e.candidate||{};
   lines.push("## "+fmt(e.name),"",

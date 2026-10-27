@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Entry-level credit product. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Entry-level credit product; check current issuer program terms.",
+  "summary": "Credit-building card with $0 annual fee and no purchase-rewards program advertised.",
+  "primaryLabel": "Credit-building card with $0 annual fee and no purchase-rewards program advertised.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [],
@@ -14,16 +14,17 @@
   "features": [
     "secured"
   ],
-  "plainEnglish": "This card is associated with entry-level credit product. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "Credit-building card with $0 annual fee and no purchase-rewards program advertised.",
+  "watchOut": "Approval is not guaranteed; account terms and APRs vary.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+  "issuerSource": "https://www.capitalone.com/credit-cards/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Capital One Platinum is a credit building credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Capital One Platinum from Capital One. Credit-building card with $0 annual fee and no purchase-rewards program advertised.",
   "rewardStructure": "none",
   "earnRules": [],
-  "benefits": []
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

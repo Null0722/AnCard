@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "2X travel/dining; 1.5X other eligible purchases.",
-  "primaryLabel": "2X travel/dining; 1.5X other eligible purchases.",
+  "summary": "2 points per $1 travel/dining and 1.5 elsewhere; additional travel credits and privileges have restrictions.",
+  "primaryLabel": "2 points per $1 travel/dining and 1.5 elsewhere; additional travel credits and privileges have restrictions.",
   "feeSummary": "$550 annual fee",
   "annualFeeUsd": 550,
   "rewards": [
@@ -16,15 +16,15 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "2X travel/dining; 1.5X other eligible purchases.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "2 points per $1 travel/dining and 1.5 elsewhere; additional travel credits and privileges have restrictions.",
+  "watchOut": "Relationship-tier bonus not universal; each credit carries exclusions.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
   "issuerSource": "https://www.bankofamerica.com/credit-cards/products/premium-rewards-elite-credit-card/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Bank of America Premium Rewards Elite is a travel credit card candidate from Bank of America. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Bank of America Premium Rewards Elite from Bank of America. 2 points per $1 travel/dining and 1.5 elsewhere; additional travel credits and privileges have restrictions.",
   "rewardStructure": "points",
   "earnRules": [
     {
@@ -33,32 +33,33 @@
       "unit": "x"
     },
     {
-      "label": "Other eligible purchases",
+      "label": "Other purchases",
       "rate": 1.5,
       "unit": "x"
     }
   ],
   "benefits": [
     {
-      "name": "Global Entry or TSA PreCheck credit",
-      "type": "global_entry",
-      "amountUsd": 120,
-      "frequencyMonths": 48,
-      "condition": "Up to $120 every four years after eligible application fee purchase"
-    },
-    {
-      "name": "Annual airline incidental credit",
-      "type": "statement_credit",
+      "name": "Eligible airline incidentals",
+      "type": "issuer_benefit",
       "amountUsd": 300,
       "frequencyMonths": 12,
-      "condition": "Qualifying purchases"
+      "condition": "Eligible incidental charges"
     },
     {
       "name": "Lifestyle statement credits",
-      "type": "statement_credit",
+      "type": "issuer_benefit",
       "amountUsd": 150,
       "frequencyMonths": 12,
-      "condition": "Qualifying lifestyle purchases"
+      "condition": "Eligible providers"
+    },
+    {
+      "name": "Global Entry or TSA PreCheck application credit",
+      "type": "issuer_benefit",
+      "amountUsd": 120,
+      "frequencyMonths": 48,
+      "condition": "Qualifying application fees and renewal frequency"
     }
-  ]
+  ],
+  "monthlyFeeUsd": null
 }

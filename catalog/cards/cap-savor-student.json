@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Student dining, grocery and entertainment cash back. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Student dining, grocery and entertainment cash back; check current issuer program terms.",
+  "summary": "3% cash back on eligible grocery, dining, entertainment and streaming; 1% on other eligible purchases.",
+  "primaryLabel": "3% cash back on eligible grocery, dining, entertainment and streaming; 1% on other eligible purchases.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -14,16 +14,28 @@
   ],
   "categories": [],
   "features": [],
-  "plainEnglish": "This card is associated with student dining, grocery and entertainment cash back. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "3% cash back on eligible grocery, dining, entertainment and streaming; 1% on other eligible purchases.",
+  "watchOut": "Some superstores and warehouse clubs are excluded from grocery bonus categories.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+  "issuerSource": "https://www.capitalone.com/credit-cards/savor-student/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Savor Rewards for Students is a cash back credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Savor Rewards for Students from Capital One. 3% cash back on eligible grocery, dining, entertainment and streaming; 1% on other eligible purchases.",
   "rewardStructure": "tiered",
-  "earnRules": [],
-  "benefits": []
+  "earnRules": [
+    {
+      "label": "Grocery, dining, entertainment and select streaming",
+      "rate": 3,
+      "unit": "percent"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1,
+      "unit": "percent"
+    }
+  ],
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

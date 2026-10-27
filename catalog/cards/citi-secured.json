@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Deposit-backed credit-building product. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Deposit-backed credit-building product; check current issuer program terms.",
+  "summary": "Deposit-backed secured credit card with no purchase rewards indicated in current listing.",
+  "primaryLabel": "Deposit-backed secured credit card with no purchase rewards indicated in current listing.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [],
@@ -14,16 +14,17 @@
   "features": [
     "secured"
   ],
-  "plainEnglish": "This card is associated with deposit-backed credit-building product. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "Deposit-backed secured credit card with no purchase rewards indicated in current listing.",
+  "watchOut": "Security deposit, foreign transaction fees and eligibility should be verified.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
   "issuerSource": "https://www.citi.com/credit-cards/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Citi Secured Mastercard is a credit building credit card candidate from Citi. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Citi Secured Mastercard from Citi. Deposit-backed secured credit card with no purchase rewards indicated in current listing.",
   "rewardStructure": "none",
   "earnRules": [],
-  "benefits": []
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

@@ -5,10 +5,10 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Marriott Bonvoy hotel rewards. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Marriott Bonvoy hotel rewards; check current issuer program terms.",
-  "feeSummary": "Annual fee: needs issuer agreement review",
-  "annualFeeUsd": null,
+  "summary": "6X participating Marriott stays; 4X restaurants and U.S. supermarkets on first $15,000 combined annually; 2X other eligible spending.",
+  "primaryLabel": "6X participating Marriott stays; 4X restaurants and U.S. supermarkets on first $15,000 combined annually; 2X other eligible spending.",
+  "feeSummary": "$250 annual fee",
+  "annualFeeUsd": 250,
   "rewards": [
     "points"
   ],
@@ -16,16 +16,36 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "This card is associated with marriott bonvoy hotel rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "6X participating Marriott stays; 4X restaurants and U.S. supermarkets on first $15,000 combined annually; 2X other eligible spending.",
+  "watchOut": "The $15,000 restaurant and supermarket spending cap is combined, not per category.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.americanexpress.com/us/credit-cards/",
+  "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/marriott-bonvoy-bevy/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Marriott Bonvoy Bevy American Express is a hotel credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Marriott Bonvoy Bevy American Express from American Express. 6X participating Marriott stays; 4X restaurants and U.S. supermarkets on first $15,000 combined annually; 2X other eligible spending.",
   "rewardStructure": "points",
-  "earnRules": [],
-  "benefits": []
+  "earnRules": [
+    {
+      "label": "Eligible Marriott hotel purchases",
+      "rate": 6,
+      "unit": "x"
+    },
+    {
+      "label": "Restaurants and U.S. supermarkets",
+      "rate": 4,
+      "unit": "x",
+      "capAmountUsd": 15000,
+      "capPeriod": "Calendar year",
+      "condition": "Shared cap, then 2X"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 2,
+      "unit": "x"
+    }
+  ],
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

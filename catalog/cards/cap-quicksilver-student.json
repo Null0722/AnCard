@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Student flat-rate cash back. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Student flat-rate cash back; check current issuer program terms.",
+  "summary": "1.5% cash back on everyday purchases; no annual fee.",
+  "primaryLabel": "1.5% cash back on everyday purchases; no annual fee.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -14,16 +14,23 @@
   ],
   "categories": [],
   "features": [],
-  "plainEnglish": "This card is associated with student flat-rate cash back. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "1.5% cash back on everyday purchases; no annual fee.",
+  "watchOut": "Student eligibility criteria apply, with separate promotional new-cardmember offers.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+  "issuerSource": "https://www.capitalone.com/credit-cards/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Quicksilver Rewards for Students is a cash back credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Quicksilver Rewards for Students from Capital One. 1.5% cash back on everyday purchases; no annual fee.",
   "rewardStructure": "flat",
-  "earnRules": [],
-  "benefits": []
+  "earnRules": [
+    {
+      "label": "All eligible purchases",
+      "rate": 1.5,
+      "unit": "percent"
+    }
+  ],
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

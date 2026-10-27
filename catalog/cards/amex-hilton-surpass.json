@@ -5,10 +5,10 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Hilton Honors rewards and elite benefits. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Hilton Honors rewards and elite benefits; check current issuer program terms.",
-  "feeSummary": "Annual fee: needs issuer agreement review",
-  "annualFeeUsd": null,
+  "summary": "12X Hilton hotel points; 6X at eligible U.S. restaurants, supermarkets and gas; 4X U.S. online retailers; 3X elsewhere.",
+  "primaryLabel": "12X Hilton hotel points; 6X at eligible U.S. restaurants, supermarkets and gas; 4X U.S. online retailers; 3X elsewhere.",
+  "feeSummary": "$150 annual fee",
+  "annualFeeUsd": 150,
   "rewards": [
     "points"
   ],
@@ -16,16 +16,38 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "This card is associated with hilton honors rewards and elite benefits. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "12X Hilton hotel points; 6X at eligible U.S. restaurants, supermarkets and gas; 4X U.S. online retailers; 3X elsewhere.",
+  "watchOut": "Some promotional offers may waive the first-year annual fee; check offer-specific pricing and Hilton point valuation.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.americanexpress.com/us/credit-cards/category/hotel-rewards/",
+  "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-surpass/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Hilton Honors American Express Surpass is a hotel credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Hilton Honors American Express Surpass from American Express. 12X Hilton hotel points; 6X at eligible U.S. restaurants, supermarkets and gas; 4X U.S. online retailers; 3X elsewhere.",
   "rewardStructure": "points",
-  "earnRules": [],
-  "benefits": []
+  "earnRules": [
+    {
+      "label": "Participating Hilton properties",
+      "rate": 12,
+      "unit": "x"
+    },
+    {
+      "label": "U.S. restaurants, supermarkets and gas",
+      "rate": 6,
+      "unit": "x"
+    },
+    {
+      "label": "U.S. online retail",
+      "rate": 4,
+      "unit": "x"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 3,
+      "unit": "x"
+    }
+  ],
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

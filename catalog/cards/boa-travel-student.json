@@ -5,10 +5,10 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Student travel rewards. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Student travel rewards; check current issuer program terms.",
-  "feeSummary": "Annual fee: needs issuer agreement review",
-  "annualFeeUsd": null,
+  "summary": "1.5 points per $1 eligible purchases, 3X through BofA Travel, with no card annual fee.",
+  "primaryLabel": "1.5 points per $1 eligible purchases, 3X through BofA Travel, with no card annual fee.",
+  "feeSummary": "$0 annual fee",
+  "annualFeeUsd": 0,
   "rewards": [
     "points"
   ],
@@ -16,16 +16,28 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "This card is associated with student travel rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "1.5 points per $1 eligible purchases, 3X through BofA Travel, with no card annual fee.",
+  "watchOut": "Student product approval and introductory offers are conditional.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.bankofamerica.com/credit-cards/",
+  "issuerSource": "https://www.bankofamerica.com/credit-cards/travel-credit-cards/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Bank of America Travel Rewards for Students is a travel credit card candidate from Bank of America. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Bank of America Travel Rewards for Students from Bank of America. 1.5 points per $1 eligible purchases, 3X through BofA Travel, with no card annual fee.",
   "rewardStructure": "points",
-  "earnRules": [],
-  "benefits": []
+  "earnRules": [
+    {
+      "label": "Everyday purchases",
+      "rate": 1.5,
+      "unit": "x"
+    },
+    {
+      "label": "BofA Travel bookings",
+      "rate": 3,
+      "unit": "x"
+    }
+  ],
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

@@ -5,9 +5,9 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Air Canada Aeroplan points. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Air Canada Aeroplan points; check current issuer program terms.",
-  "feeSummary": "Annual fee: needs issuer agreement review",
+  "summary": "Air Canada Aeroplan points on eligible airline, travel and everyday purchase categories.",
+  "primaryLabel": "Air Canada Aeroplan points on eligible airline, travel and everyday purchase categories.",
+  "feeSummary": "Annual fee: issuer agreement review required",
   "annualFeeUsd": null,
   "rewards": [
     "miles"
@@ -18,16 +18,17 @@
   "features": [
     "airline"
   ],
-  "plainEnglish": "This card is associated with air canada aeroplan points. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "Air Canada Aeroplan points on eligible airline, travel and everyday purchase categories.",
+  "watchOut": "Specific categories, annual fee and new-account offer require current issuer agreement.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://creditcards.chase.com/compare-credit-cards",
+  "issuerSource": "https://creditcards.chase.com/travel-credit-cards",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Aeroplan Credit Card is a airline credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Aeroplan Credit Card from Chase. Air Canada Aeroplan points on eligible airline, travel and everyday purchase categories.",
   "rewardStructure": "miles",
   "earnRules": [],
-  "benefits": []
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

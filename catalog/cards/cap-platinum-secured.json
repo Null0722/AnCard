@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Secured credit-building card. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Secured credit-building card; check current issuer program terms.",
+  "summary": "Secured credit-building card, no annual fee; refundable deposit starts at $49 for qualifying applicants for a $200 initial credit line.",
+  "primaryLabel": "Secured credit-building card, no annual fee; refundable deposit starts at $49 for qualifying applicants for a $200 initial credit line.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [],
@@ -14,16 +14,17 @@
   "features": [
     "secured"
   ],
-  "plainEnglish": "This card is associated with secured credit-building card. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "Secured credit-building card, no annual fee; refundable deposit starts at $49 for qualifying applicants for a $200 initial credit line.",
+  "watchOut": "Security deposit is required and depends on approval eligibility.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+  "issuerSource": "https://www.capitalone.com/credit-cards/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Platinum Secured is a credit building credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Platinum Secured from Capital One. Secured credit-building card, no annual fee; refundable deposit starts at $49 for qualifying applicants for a $200 initial credit line.",
   "rewardStructure": "none",
   "earnRules": [],
-  "benefits": []
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

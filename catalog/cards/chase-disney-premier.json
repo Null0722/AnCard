@@ -5,10 +5,10 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Disney Rewards Dollars and Disney offers. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Disney Rewards Dollars and Disney offers; check current issuer program terms.",
-  "feeSummary": "Annual fee: needs issuer agreement review",
-  "annualFeeUsd": null,
+  "summary": "5% in Disney Rewards Dollars on eligible Disney+, Hulu and ESPN purchases; 2% on selected categories; 1% elsewhere.",
+  "primaryLabel": "5% in Disney Rewards Dollars on eligible Disney+, Hulu and ESPN purchases; 2% on selected categories; 1% elsewhere.",
+  "feeSummary": "$49 annual fee",
+  "annualFeeUsd": 49,
   "rewards": [
     "cash_back"
   ],
@@ -16,16 +16,33 @@
     "lifestyle"
   ],
   "features": [],
-  "plainEnglish": "This card is associated with disney rewards dollars and disney offers. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "5% in Disney Rewards Dollars on eligible Disney+, Hulu and ESPN purchases; 2% on selected categories; 1% elsewhere.",
+  "watchOut": "Disney Rewards Dollars have limited redemption methods; not general-purpose cash.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
   "issuerSource": "https://creditcards.chase.com/rewards-credit-cards/disney",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Disney Premier Visa is a lifestyle credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
-  "rewardStructure": "cash_back",
-  "earnRules": [],
-  "benefits": []
+  "bio": "Disney Premier Visa from Chase. 5% in Disney Rewards Dollars on eligible Disney+, Hulu and ESPN purchases; 2% on selected categories; 1% elsewhere.",
+  "rewardStructure": "tiered",
+  "earnRules": [
+    {
+      "label": "Eligible Disney streaming purchases",
+      "rate": 5,
+      "unit": "percent"
+    },
+    {
+      "label": "Select eligible purchases",
+      "rate": 2,
+      "unit": "percent"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1,
+      "unit": "percent"
+    }
+  ],
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

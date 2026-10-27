@@ -5,9 +5,9 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Travel category rewards. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Travel category rewards; check current issuer program terms.",
-  "feeSummary": "Annual fee: needs issuer agreement review",
+  "summary": "Travel-oriented rewards on selected hotels, airlines and other spending categories.",
+  "primaryLabel": "Travel-oriented rewards on selected hotels, airlines and other spending categories.",
+  "feeSummary": "Annual fee: issuer agreement review required",
   "annualFeeUsd": null,
   "rewards": [
     "points"
@@ -16,16 +16,17 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "This card is associated with travel category rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "Travel-oriented rewards on selected hotels, airlines and other spending categories.",
+  "watchOut": "Specific multiplier and annual fee require issuer product page and agreement verification.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
   "issuerSource": "https://www.wellsfargo.com/credit-cards/agreements/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Wells Fargo Autograph Journey is a travel credit card candidate from Wells Fargo. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Wells Fargo Autograph Journey from Wells Fargo. Travel-oriented rewards on selected hotels, airlines and other spending categories.",
   "rewardStructure": "points",
   "earnRules": [],
-  "benefits": []
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

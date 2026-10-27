@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "5% on rotating eligible categories when activated, subject to quarterly caps.",
-  "primaryLabel": "5% on rotating eligible categories when activated, subject to quarterly caps.",
+  "summary": "5% on activated rotating categories up to quarterly spending limits, then 1% cash back.",
+  "primaryLabel": "5% on activated rotating categories up to quarterly spending limits, then 1% cash back.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -14,24 +14,30 @@
   ],
   "categories": [],
   "features": [],
-  "plainEnglish": "5% on rotating eligible categories when activated, subject to quarterly caps.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "5% on activated rotating categories up to quarterly spending limits, then 1% cash back.",
+  "watchOut": "Quarterly activation and eligible purchase caps apply; discover brand and application channel should be reconfirmed.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+  "issuerSource": "https://www.capitalone.com/credit-cards/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Discover it Cash Back is a cash back credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Discover it Cash Back from Capital One. 5% on activated rotating categories up to quarterly spending limits, then 1% cash back.",
   "rewardStructure": "rotating",
   "earnRules": [
     {
       "label": "Activated quarterly categories",
       "rate": 5,
       "unit": "percent",
-      "capPeriod": "Quarterly",
-      "condition": "Activation and issuer spending cap required"
+      "capPeriod": "Quarter",
+      "condition": "Activation required; current quarterly cap must be confirmed"
+    },
+    {
+      "label": "Other purchases",
+      "rate": 1,
+      "unit": "percent"
     }
   ],
-  "benefits": []
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

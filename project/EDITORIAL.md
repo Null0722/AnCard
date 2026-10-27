@@ -36,3 +36,7 @@ The public placeholder is deliberately an identity-only allowlist. Only card nam
 ## Unranked intake and publish stages
 
 Every card in the review queue has a `reviewStage` of `research` or `directory`. Intake-stage cards do **not** enter the public JSON until their owner QC boolean is true and the candidate fingerprint is unchanged. Directory-stage cards can appear as identity-only pending cards, as before. The aggregated progress metadata is a count of human-reviewed research entries, not a ranking, quality score or indication of endorsement. Structured earn rates, category caps, credits, Global Entry/TSA PreCheck reimbursements and monthly membership fees are claims requiring independent human validation and become public only after approval.
+
+## Human QC coverage policy, October 2026
+
+Directory-stage and research-stage identities may both appear as placeholders to aid navigation, but financial terms are released only when the `humanVerified` flag is true and the entire candidate fingerprint matches. Source checks are not a substitute for full issuer agreement review. If a reviewer previously approved a card but the researched fee/rate is corrected, reset approval to false and document the change. The Aer Lingus correction provides an example of this safeguard.

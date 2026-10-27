@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Selectable bonus cash back with security deposit. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Selectable bonus cash back with security deposit; check current issuer program terms.",
+  "summary": "Selectable quarterly 5% bonus categories with spending caps on a deposit-backed card.",
+  "primaryLabel": "Selectable quarterly 5% bonus categories with spending caps on a deposit-backed card.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -16,16 +16,17 @@
   "features": [
     "secured"
   ],
-  "plainEnglish": "This card is associated with selectable bonus cash back with security deposit. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "Selectable quarterly 5% bonus categories with spending caps on a deposit-backed card.",
+  "watchOut": "Confirm secured card availability, cap, deposit and product-specific Rewards Rules.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.usbank.com/credit-cards/benefits.html",
+  "issuerSource": "https://www.usbank.com/credit-cards.html",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "U.S. Bank Cash+ Secured Visa is a credit building credit card candidate from U.S. Bank. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "U.S. Bank Cash+ Secured Visa from U.S. Bank. Selectable quarterly 5% bonus categories with spending caps on a deposit-backed card.",
   "rewardStructure": "selectable",
   "earnRules": [],
-  "benefits": []
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

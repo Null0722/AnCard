@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Costco travel, gasoline and restaurant cash back. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Costco travel, gasoline and restaurant cash back; check current issuer program terms.",
+  "summary": "Cash-back credit card tied to a paid Costco membership, with rewards for eligible Costco and other purchases.",
+  "primaryLabel": "Cash-back credit card tied to a paid Costco membership, with rewards for eligible Costco and other purchases.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -14,16 +14,17 @@
   ],
   "categories": [],
   "features": [],
-  "plainEnglish": "This card is associated with costco travel, gasoline and restaurant cash back. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "Cash-back credit card tied to a paid Costco membership, with rewards for eligible Costco and other purchases.",
+  "watchOut": "Paid Costco membership is separate, and exact current gas/travel/dining category caps require current Citi and Costco terms.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
   "issuerSource": "https://www.citi.com/credit-cards/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Costco Anywhere Visa by Citi is a cash back credit card candidate from Citi. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Costco Anywhere Visa by Citi from Citi. Cash-back credit card tied to a paid Costco membership, with rewards for eligible Costco and other purchases.",
   "rewardStructure": "tiered",
   "earnRules": [],
-  "benefits": []
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

@@ -5,10 +5,10 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Marriott hotel points and travel. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Marriott hotel points and travel; check current issuer program terms.",
-  "feeSummary": "Annual fee: needs issuer agreement review",
-  "annualFeeUsd": null,
+  "summary": "Marriott Bonvoy points on eligible spending, with up to 17X combined points at participating hotels from card and loyalty-program sources.",
+  "primaryLabel": "Marriott Bonvoy points on eligible spending, with up to 17X combined points at participating hotels from card and loyalty-program sources.",
+  "feeSummary": "$95 annual fee",
+  "annualFeeUsd": 95,
   "rewards": [
     "points"
   ],
@@ -16,16 +16,25 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "This card is associated with marriott hotel points and travel. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "Marriott Bonvoy points on eligible spending, with up to 17X combined points at participating hotels from card and loyalty-program sources.",
+  "watchOut": "Up to 17X is a combined program earning statement, not 17 card points per $1.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
   "issuerSource": "https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Marriott Bonvoy Boundless is a hotel credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Marriott Bonvoy Boundless from Chase. Marriott Bonvoy points on eligible spending, with up to 17X combined points at participating hotels from card and loyalty-program sources.",
   "rewardStructure": "points",
   "earnRules": [],
-  "benefits": []
+  "benefits": [
+    {
+      "name": "Annual Free Night Award",
+      "type": "issuer_benefit",
+      "amountUsd": null,
+      "frequencyMonths": 12,
+      "condition": "Subject to point ceiling, participating hotel and award availability"
+    }
+  ],
+  "monthlyFeeUsd": null
 }

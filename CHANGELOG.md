@@ -2,6 +2,17 @@
 
 All meaningful website changes are documented here and in Git history. Entries should state **what changed**, **why**, **files/components affected**, **verification**, and **what is next**. Most recent changes first. Do not silently rewrite prior decisions; add a new dated entry instead.
 
+## 2026-10-27: Publish full unranked card-directory identities and prefill issuer research
+
+- Moved the additional 59 card records from backend-only research to unranked directory placeholders, making **100 card identities discoverable** without displaying any unapproved financial claims.
+- Prefilled proposed annual fees, rewards per dollar, eligible-category limits, bonus earn windows, monetary travel credits and explanatory card descriptions from issuer pages where available.
+- 53/59 new card records include annual fee values; 37/59 contain structured earning-rate entries. Remaining unknown fields are explicit and still require user verification.
+- Separated issuer program combined earning rates from actual card reward multipliers for Marriott, IHG and Hyatt cards.
+- Added clean issuer-specific source URLs to numerous existing research records. Where only a portfolio index is available, the review notes flag incomplete confirmation.
+- Existing `humanVerified: true` on Aer Lingus was **reset to false** because the issuer-sourced $95 fee and Avios multipliers materially change its prior approval snapshot. Do not silently carry forward stale approval.
+- All cards remain unranked and are visible to visitors only as identity/source placeholders until QC.
+- Rebuilt generated `docs/data/cards.json` and `catalog/REVIEW-SHEET.md` consistently. CI and deployment pending verification.
+
 ## 2026-10-27: Expanded unranked research database and structured terms
 
 - Added 59 proposed card records to the private-to-edit, Git-versioned research inventory, including hotel, travel, cash back, student, secured and balance transfer categories. This is not a ranked "top 100" list.
