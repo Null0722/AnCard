@@ -1,26 +1,13 @@
-// AnCard: no cookies, localStorage, sessionStorage, tracking, or network submissions.
-// The only app data request is the read-only, same-origin published catalog JSON.
-const catalogEl = document.querySelector('#card-results');
-const checks = [...document.querySelectorAll('[data-facet]')];
-const quicks = [...document.querySelectorAll('[data-quick]')];
-const compared = new Set();
-let artEnabled = false; // In-memory only: default off after every navigation or reload.
-function createCardArt(card) {
-  const visual=node('div','card-art tone-'+card.tone);
-  const asset=card.imageFront;
-  if(artEnabled && asset && asset.url) {
-    const image=node('img');image.alt=asset.alt||('Front of '+card.name);
-    image.referrerPolicy='no-referrer';image.loading='lazy';image.decoding='async';
-    image.addEventListener('error',()=>{visual.classList.remove('loaded-art');visual.replaceChildren(node('span','',card.issuer.slice(0,2).toUpperCase()));});
-    // src is assigned only after a real user turns on the opt-in checkbox.
-    image.src=asset.url;visual.replaceChildren(image);visual.classList.add('loaded-art');
-  }else{
-    visual.append(node('span','',card.issuer.split(/\s+/).slice(0,2).map(v=>v[0]).join('').toUpperCase()));
-    visual.title=asset?'Official card image disabled for privacy':'Official card art not available';
-  }
-  return visual;
-}
-
+// AnCard keeps browsing state in memory only. No accounts, analytics or saved choices.
+import {createCardVisual, identityType, rightsClearedAsset} from './card-visual.js';
+const catalogEl=document.querySelector('#card-results');
+const checks=[...document.querySelectorAll('[data-facet]')];
+const quicks=[...document.querySelectorAll('[data-quick]')];
+const identityQuicks=[...document.querySelectorAll('[data-identity-quick]')];
+const compared=new Set();
+const flipped=new Set();
+let artEnabled=false;
+let visibleLimit=24;
 let cards = [];
 let catalogError = false;
 let lastFocused = null;
@@ -75,28 +62,116 @@ function sortCards(list) {
   const mode=$('#sort-by').value;
   return [...list].sort((a,b)=>mode==='fee' ? ((a.annualFeeUsd??Infinity)-(b.annualFeeUsd??Infinity) || col.compare(a.name,b.name)) : (col.compare(mode==='issuer'?a.issuer:a.name,mode==='issuer'?b.issuer:b.name) || col.compare(a.name,b.name)));
 }
+
+function button(textValue,className,attribute,value) {
+  const btn=node('button',className,textValue);
+  btn.type='button';btn.dataset[attribute]=value;
+  return btn;
+}
 function makeCard(card) {
-  const article=node('article','card-row');
-  article.append(createCardArt(card));
-  const info=node('div','card-info');info.append(node('h4','',card.name),node('div','card-meta',`${card.issuer} · ${card.status==='pending_review'?'Pending human review':(card.status==='demo'?'Fictional example':'Human QC approved')}`),node('p','card-desc',card.summary));
-  const tags=node('div','card-tags');[...card.rewards,...card.categories,...card.features.filter(v=>v==='airline')].slice(0,3).forEach(t=>tags.append(node('span','',labels[t]??t)));info.append(tags);article.append(info);
-  const terms=node('div','card-term');terms.append(node('strong','',card.primaryLabel),node('span','',card.feeSummary));article.append(terms);
-  const actions=node('div','card-actions');const detail=node('button','link-button','Decode terms: offers and limits ↗');detail.type='button';detail.dataset.detail=card.id;const compare=node('button','compare-button',compared.has(card.id)?'✓ Added':'＋ Compare');compare.type='button';compare.dataset.compare=card.id;compare.setAttribute('aria-pressed',String(compared.has(card.id)));
-  const verified=node('span','card-verification',card.humanVerified?'Human QC approved':'Pending human review');actions.append(detail,compare,verified);article.append(actions);return article;
+  const article=node('article','card-row premium-card');
+  article.dataset.cardId=card.id;
+  article.dataset.identityType=identityType(card);
+  article.classList.toggle('is-flipped',flipped.has(card.id));
+  article.setAttribute('aria-label',card.name+' by '+card.issuer+'. Select to flip for a preview of terms.');
+  const frame=node('div','flip-frame');
+  const inner=node('div','flip-inner');
+  const front=node('section','flip-face flip-front');
+  const back=node('section','flip-face flip-back');
+  front.inert=flipped.has(card.id);back.inert=!flipped.has(card.id);
+  front.setAttribute('aria-hidden',String(flipped.has(card.id)));
+  back.setAttribute('aria-hidden',String(!flipped.has(card.id)));
+  const top=node('div','flip-top');
+  top.append(node('span','issuer-eyebrow',card.issuer));
+  top.append(node('span','review-pill',card.humanVerified?'QC reviewed':'Review pending'));
+  front.append(top);
+  const art=createCardVisual(card,artEnabled);
+  front.append(art);
+  const info=node('div','flip-summary');
+  info.append(node('h4','',card.name),node('p','',card.humanVerified?card.summary:'Official issuer reference available. Financial terms awaiting human review.'));
+  front.append(info);
+  const bottom=node('div','flip-toolbar');
+  bottom.append(button('Flip for a quick look','flip-action','flip',card.id));
+  const compare=button(compared.has(card.id)?'Selected':'Compare','compare-button','compare',card.id);
+  compare.setAttribute('aria-pressed',String(compared.has(card.id)));
+  bottom.append(compare);front.append(bottom);
+  back.append(node('div','flip-back-eyebrow','AT A GLANCE'));
+  back.append(node('h4','flip-back-title',card.name));
+  const backInfo=node('div','flip-back-details');
+  function fact(title,value) {
+    const line=node('div','flip-fact');line.append(node('span','flip-fact-label',title),node('span','flip-fact-value',value));
+    backInfo.append(line);
+  }
+  fact('Issuer',card.issuer);
+  fact('Human review',card.humanVerified?'Approved source snapshot':'Pending');
+  fact('Annual fee',card.humanVerified?card.feeSummary:'Pending human review');
+  fact('Reward overview',card.humanVerified?card.primaryLabel:'Not published until QC');
+  fact('Welcome offer',card.humanVerified&&card.welcomeOffer?
+    ((card.welcomeOffer.kind==='up_to'?'Up to ':'')+(card.welcomeOffer.unit==='usd'?'$':'')+card.welcomeOffer.amount.toLocaleString()+(card.welcomeOffer.unit==='usd'?'':' '+card.welcomeOffer.unit)):
+    'Not yet approved or documented');
+  back.append(backInfo);
+  const backActions=node('div','flip-back-actions');
+  backActions.append(button('Back to front','flip-return','unflip',card.id),button('Open full Decode terms','flip-read','detail',card.id));
+  back.append(backActions);
+  inner.append(front,back);frame.append(inner);article.append(frame);
+  return article;
+}
+function flipCard(article,toBack) {
+  const id=article.dataset.cardId;
+  if(!id)return;
+  const front=article.querySelector('.flip-front'),back=article.querySelector('.flip-back');
+  article.classList.toggle('is-flipped',toBack);
+  if(toBack)flipped.add(id);else flipped.delete(id);
+  front.inert=toBack;back.inert=!toBack;
+  front.setAttribute('aria-hidden',String(toBack));
+  back.setAttribute('aria-hidden',String(!toBack));
+  const next=article.querySelector(toBack?'[data-unflip]':'[data-flip]');
+  next?.focus({preventScroll:true});
+}
+
+function activeIdentity() {
+ return document.querySelector('#identity-filter').value;
+}
+function activeFiltersCount() {
+ return checks.filter(c=>c.checked).length
+   +Boolean($('#card-search').value.trim())+Boolean($('#issuer-filter').value)
+   +Boolean($('#identity-filter').value)+Boolean($('#review-status').value);
 }
 function render() {
-  const query=$('#card-search').value.trim().toLocaleLowerCase();
-  const approvedOnly=$('#reviewed-only').checked;
-  const filtered=sortCards(cards.filter(c=>matches(c,activeFilters())
-    && (!approvedOnly||c.humanVerified===true)
-    && (!query||[c.name,c.issuer,c.airlineProgram].filter(Boolean).some(value=>value.toLocaleLowerCase().includes(query)))));
-  const count=$('#result-count');count.textContent=catalogError?'Catalog unavailable':`${filtered.length} cards · ${filtered.filter(c=>c.humanVerified).length} human-reviewed · ${$('#sort-by').selectedOptions[0].textContent}`;
-  catalogEl.replaceChildren();
-  if(catalogError || !filtered.length){const empty=node('div','empty-card');empty.append(node('h4','',catalogError?'We could not load the catalog.':'No cards match those filters.'),node('p','',catalogError?'Try reloading the page. No preferences were transmitted.':'Try removing a filter to explore more cards. We do not select alternatives for you.'));catalogEl.append(empty);}
-  else filtered.forEach(card=>catalogEl.append(makeCard(card)));
-  quicks.forEach(button=>{const input=checks.find(c=>c.value===button.dataset.quick);button.setAttribute('aria-pressed',String(Boolean(input?.checked)));});
-  $('#compare-bar').hidden=compared.size===0;
-  $('#compare-label').textContent=`${compared.size} of 3 cards selected for factual comparison`;
+ const query=$('#card-search').value.trim().toLocaleLowerCase();
+ const issuer=$('#issuer-filter').value;
+ const identity=activeIdentity();
+ const review=$('#review-status').value;
+ const filtered=sortCards(cards.filter(c=>matches(c,activeFilters())
+   && (!issuer||c.issuer===issuer)
+   && (!identity||identityType(c)===identity)
+   && (!review||(review==='approved'?c.humanVerified===true:c.humanVerified!==true))
+   && (!query||[c.name,c.issuer,c.airlineProgram].filter(Boolean).some(v=>v.toLocaleLowerCase().includes(query)))));
+ const visible=filtered.slice(0,visibleLimit);
+ const financialFacet=checks.some(c=>c.checked&&c.dataset.facet!=='features');
+ const count=$('#result-count');
+ count.textContent=catalogError?'Catalog unavailable':filtered.length+' of '+cards.length+' card identities'+(financialFacet?' | Rewards filters require verified data':'')+' | '+filtered.filter(c=>c.humanVerified).length+' QC-reviewed';
+ catalogEl.replaceChildren();
+ if(catalogError||!filtered.length){
+   const empty=node('div','empty-card');
+   empty.append(node('h4','',catalogError?'The catalog did not load.':'No cards match these filters.'));
+   empty.append(node('p','',catalogError?'Try reloading. No preferences were sent.':financialFacet?'Most reward terms are awaiting human review. Try issuer or card type, or clear the rewards filter.':'Clear filters or search another issuer or name.'));
+   catalogEl.append(empty);
+ }else{
+   const fragment=document.createDocumentFragment();
+   visible.forEach(c=>fragment.append(makeCard(c)));
+   catalogEl.append(fragment);
+ }
+ $('#load-more').hidden=filtered.length<=visible.length;
+ $('#load-more').textContent='Show more cards ('+(filtered.length-visible.length)+' remaining)';
+ $('#active-filter-count').textContent=activeFiltersCount()+' active';
+ $('#compare-bar').hidden=compared.size===0;
+ $('#compare-label').textContent=compared.size+' of 3 cards selected for factual comparison';
+ identityQuicks.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.identityQuick===$('#identity-filter').value)));
+ quicks.forEach(b=>{
+   const input=checks.find(c=>c.value===b.dataset.quick);
+   b.setAttribute('aria-pressed',String(Boolean(input?.checked)));
+ });
 }
 function showModal(backdrop, focusTarget){lastFocused=document.activeElement;modalOpen=backdrop;backdrop.hidden=false;document.body.classList.add('lock-scroll');focusTarget.focus();}
 function closeModal(){if(!modalOpen || modalOpen.id==='trust-backdrop')return;modalOpen.hidden=true;modalOpen=null;document.body.classList.remove('lock-scroll');lastFocused?.focus();}
@@ -210,15 +285,48 @@ function showComparison() {
  showModal($('#details-backdrop'),$('#details-backdrop [data-close]'));
 }
 
-checks.forEach(c=>c.addEventListener('change',render));
-quicks.forEach(button=>button.addEventListener('click',()=>{const input=checks.find(c=>c.value===button.dataset.quick);if(input){input.checked=!input.checked;render();}$('#catalog').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}));
-$('#clear-filters').addEventListener('click',()=>{checks.forEach(c=>c.checked=false);$('#card-search').value='';$('#reviewed-only').checked=false;render();});
-$('#sort-by').addEventListener('change',render);
-$('#card-search').addEventListener('input',render);
-$('#reviewed-only').addEventListener('change',render);
+function updateFilter() {visibleLimit=24;render();}
+checks.forEach(c=>c.addEventListener('change',updateFilter));
+quicks.forEach(button=>button.addEventListener('click',()=>{
+ const input=checks.find(c=>c.value===button.dataset.quick);
+ if(input){input.checked=!input.checked;updateFilter();}
+ $('#catalog').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+}));
+identityQuicks.forEach(button=>button.addEventListener('click',()=>{
+ const value=button.dataset.identityQuick;
+ $('#identity-filter').value=$('#identity-filter').value===value?'':value;
+ updateFilter();
+}));
+$('#clear-filters').addEventListener('click',()=>{
+ checks.forEach(c=>c.checked=false);
+ for(const id of ['card-search','issuer-filter','identity-filter','review-status'])$('#'+id).value='';
+ updateFilter();
+});
+for(const id of ['card-search','issuer-filter','identity-filter','review-status']){
+ $('#'+id).addEventListener(id==='card-search'?'input':'change',updateFilter);
+}
+$('#sort-by').addEventListener('change',updateFilter);
+$('#load-more').addEventListener('click',()=>{
+ visibleLimit+=24;render();
+ $('#load-more').focus({preventScroll:true});
+});
 $('#show-art').addEventListener('change',event=>{artEnabled=event.target.checked;render();});
-$('#toggle-filters').addEventListener('click',()=>{const open=$('#filter-panel').classList.toggle('is-open');$('#toggle-filters').setAttribute('aria-expanded',String(open));});
-catalogEl.addEventListener('click',event=>{const detail=event.target.closest('[data-detail]');if(detail){const card=cards.find(c=>c.id===detail.dataset.detail);if(card)showDetails(card);return;}const toggle=event.target.closest('[data-compare]');if(toggle){const id=toggle.dataset.compare;if(compared.has(id))compared.delete(id);else if(compared.size<3)compared.add(id);else{showComparison();return;}render();}});
+$('#toggle-filters').addEventListener('click',()=>{
+ const open=$('#filter-panel').classList.toggle('is-open');
+ $('#toggle-filters').setAttribute('aria-expanded',String(open));
+});
+catalogEl.addEventListener('click',event=>{
+ const target=event.target;
+ const article=target.closest('.card-row');
+ if(!article)return;
+ const detail=target.closest('[data-detail]');
+ if(detail){const card=cards.find(c=>c.id===detail.dataset.detail);if(card)showDetails(card);return;}
+ const compare=target.closest('[data-compare]');
+ if(compare){const id=compare.dataset.compare;if(compared.has(id))compared.delete(id);else if(compared.size<3)compared.add(id);else{showComparison();return;}render();return;}
+ if(target.closest('[data-flip]')){flipCard(article,true);return;}
+ if(target.closest('[data-unflip]')){flipCard(article,false);return;}
+ if(!target.closest('button,a,input,select,summary'))flipCard(article,!article.classList.contains('is-flipped'));
+});
 $('#clear-compare').addEventListener('click',()=>{compared.clear();render();});
 $('#show-compare').addEventListener('click',showComparison);
 document.querySelectorAll('#details-backdrop [data-close]').forEach(button=>button.addEventListener('click',closeModal));
@@ -227,5 +335,24 @@ document.addEventListener('keydown',e=>{if(!modalOpen)return;if(e.key==='Escape'
 $('#enter-site').addEventListener('click',()=>{$('#trust-backdrop').hidden=true;modalOpen=null;document.body.classList.remove('lock-scroll');$('#main').focus?.();$('#catalog-title').setAttribute('tabindex','-1');$('#catalog-title').focus();});
 // Always acknowledge anew on reload. No persistence of the acknowledgment or selections.
 showModal($('#trust-backdrop'),$('#enter-site'));
-async function loadCatalog(){try{const response=await fetch('./data/cards.json',{cache:'no-store'});if(!response.ok)throw new Error(`HTTP ${response.status}`);const data=await response.json();if(!Array.isArray(data.cards))throw new Error('Invalid catalog');cards=data.cards.filter(card=>card.status==='pending_review'||card.status==='published');updateQcProgress(data.reviewProgress);}catch(error){catalogError=true;console.error('Catalog load failed:',error);}render();}
+async function loadCatalog(){
+ try{
+   const response=await fetch('./data/cards.json',{cache:'no-store'});
+   if(!response.ok)throw new Error('Catalog HTTP '+response.status);
+   const data=await response.json();
+   if(!Array.isArray(data.cards))throw new Error('Invalid catalog response');
+   cards=data.cards.filter(c=>c.status==='published'||c.status==='pending_review');
+   const select=$('#issuer-filter');
+   for(const issuer of [...new Set(cards.map(c=>c.issuer))].sort((a,b)=>a.localeCompare(b))){
+     const option=node('option','',issuer);option.value=issuer;select.append(option);
+   }
+   const licensed=cards.filter(rightsClearedAsset).length;
+   $('#show-art').disabled=licensed===0;
+   $('#art-status').textContent=licensed===0
+     ?'All card visuals are original, locally rendered AnCard illustrations. Official issuer artwork is paused until written usage rights are recorded. No bank-image requests.'
+     :'Original illustrations load locally. '+licensed+' issuer images have documented usage rights and can load only after opt-in.';
+   updateQcProgress(data.reviewProgress);
+ }catch(error){catalogError=true;console.error('Catalog unavailable',error);}
+ render();
+}
 loadCatalog();
