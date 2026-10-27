@@ -137,3 +137,17 @@
  .flip-inner,.card-row.premium-card{transition:none!important}
  .premium-card.is-flipped .flip-inner{transform:rotateY(180deg)}
 }
+
+
+/* Accessible, working image display preferences. Art never requires an issuer image request. */
+.art-display{background:linear-gradient(115deg,#1d373e,#172c38)}
+.art-display input[type="checkbox"]{flex-shrink:0}
+.art-display label{cursor:pointer}
+.art-display .art-availability{margin-top:8px;max-width:80ch;color:#c0cfda}
+.art-display #official-art-option[hidden]{display:none}
+.art-text-fallback{border:1px solid #5c7383;border-radius:12px;background:#263c49;
+ color:#dceaf3;min-height:105px;display:flex;align-items:center;justify-content:center;text-align:center;
+ padding:18px;font-weight:750;line-height:1.45;overflow-wrap:anywhere}
+.premium-card.is-text-only .flip-frame{height:365px}
+.flip-issuer-source{font-size:12px;display:inline-block;margin:0;padding:5px 0;white-space:normal}
+@media(max-width:590px){.premium-card.is-text-only .flip-frame{height:390px}}

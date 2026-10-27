@@ -7,7 +7,15 @@ const flipped=new Set();
 let visibleLimit=24;
 let cards=[];
 let artEnabled=false;
-byId('show-art').addEventListener('change',event=>{artEnabled=event.target.checked;render();});
+let showIllustrations=true;
+byId('show-art').addEventListener('change',event=>{
+  showIllustrations=event.target.checked;
+  const official=byId('show-official-art');
+  official.disabled=!showIllustrations;
+  if(!showIllustrations){official.checked=false;artEnabled=false;}
+  render();
+});
+byId('show-official-art').addEventListener('change',event=>{artEnabled=event.target.checked;render();});
 const text=(tag,value,className)=>{const el=document.createElement(tag); el.textContent=String(value); if(className)el.className=className; return el;};
 const viewFee=c=>!c.humanVerified?'Annual fee: pending human review':c.annualFeeUsd===null || !Number.isFinite(c.annualFeeUsd) ? 'Annual fee: not verified' : 'Annual fee: $'+c.annualFeeUsd;
 
@@ -83,6 +91,7 @@ function render(){
    article.className='product dashboard-product premium-card';
    article.dataset.cardId=c.id;
    article.classList.toggle('is-flipped',flipped.has(c.id));
+   article.classList.toggle('is-text-only',!showIllustrations);
    const frame=text('div','');frame.className='flip-frame';const inner=text('div','');inner.className='flip-inner';
    const front=text('section','');front.className='flip-face flip-front';
    const back=text('section','');back.className='flip-face flip-back';
@@ -91,7 +100,8 @@ function render(){
    back.setAttribute('aria-hidden',String(!flipped.has(c.id)));
    const top=text('div','');top.className='flip-top';
    top.append(text('span',c.issuer,'issuer-eyebrow'),text('span',c.humanVerified?'QC reviewed':'Pending QC','review-pill'));
-   front.append(top,createCardVisual(c,artEnabled));
+   const art=showIllustrations?createCardVisual(c,artEnabled):text('div',c.name,'art-text-fallback');
+   front.append(top,art);
    const title=text('div','');title.className='flip-summary';
    title.append(text('h3',c.name),text('p',c.humanVerified?c.summary:'Financial details are pending human review.'));
    front.append(title);
@@ -156,7 +166,10 @@ fetch('../data/cards.json',{cache:'no-store'}).then(resp=>{if(!resp.ok)throw new
    const opt=document.createElement('option');opt.value=name;opt.textContent=name;issuer.append(opt);
  }
  const available=cards.filter(rightsClearedAsset).length;
- byId('show-art').disabled=available===0;
- byId('art-status').textContent=available?'Original illustrations load locally; '+available+' authorized issuer images available only after opt-in.':'All card imagery is original and rendered locally. Official card art remains paused until usage rights are documented. No bank-image requests.';
+ byId('official-art-option').hidden=available===0;
+ byId('show-official-art').disabled=available===0||!showIllustrations;
+ byId('art-status').textContent=available
+   ?'AnCard illustrations render locally. '+available+' authorized issuer assets can be enabled separately with consent.'
+   :'AnCard illustrations render locally. No issuer images can load without authorization and consent.';
  render();
 }).catch(()=>{count.textContent='The card catalog is unavailable.';results.append(text('p','Try reloading this page or check the generated data file.','status'));});

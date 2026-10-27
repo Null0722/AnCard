@@ -96,7 +96,12 @@ dialog p{line-height:1.65;color:#d0dce6}
  <div class="qc-copy"><span>Human QC progress</span><strong id="qc-count">Loading review inventory</strong><small>Research coverage, never a product ranking</small></div>
 </div>
 <div class="demo-note" role="note"><strong>Explore without rankings.</strong> All 100 card identities are searchable, while fees, earnings and bonuses remain hidden until human QC. Card artwork below is original AnCard illustration, not an issuer reproduction.</div>
-<div class="art-optin"><label><input type="checkbox" id="show-art" disabled> Enable rights-cleared issuer art</label><p id="art-status">Original card illustrations render locally. Official artwork stays disabled without documented permission, and will require your opt-in.</p></div>
+<div class="art-optin art-display">
+  <label><input type="checkbox" id="show-art" checked> Show illustrated card fronts</label>
+  <p id="art-status">Illustrated card fronts are made by AnCard and render locally. These are not official issuer photos.</p>
+  <label id="official-art-option" hidden><input type="checkbox" id="show-official-art"> Load rights-cleared issuer art (contacts an external host)</label>
+  <p class="art-availability">For actual card photos, use the official issuer source link on the back of each card. External artwork requires documented reuse rights.</p>
+</div>
 <div class="work-area">
 <aside class="filters-box" aria-label="Filter controls"><h2>Choose your filters</h2>
 <form id="filters" class="filter-form">

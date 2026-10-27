@@ -2,6 +2,15 @@
 
 All meaningful website changes are documented here and in Git history. Entries should state **what changed**, **why**, **files/components affected**, **verification**, and **what is next**. Most recent changes first. Do not silently rewrite prior decisions; add a new dated entry instead.
 
+## 2026-10-27: Image toggle clarity and issuer-source access
+
+- Fixed confusing disabled image control: visitors can now toggle original locally generated AnCard illustrations on or off in both directory and dashboard.
+- Added a direct **View issuer source** link to the reverse of each directory card, with a new-tab, no-referrer, untracked HTTPS link. The dashboard reverse already linked to issuer disclosures.
+- Kept actual issuer image requests in a separate, authorization-gated checkbox. It is hidden until a specific card has documented usage rights; explicit visitor consent then controls the network request.
+- Reviewed copyright and image-use provisions for Chase, Bank of America, Wells Fargo, Citi, U.S. Bank, PNC, Truist, Capital One, TD Bank and American Express. Found no general-purpose card-front reuse license for AnCard. See research notes.
+- Added UI regression assertions for working illustration toggles, independent external consent, and reverse source links.
+- No human QC approval changes, tracking tools, external image downloads, or new runtime packages.
+
 ## 2026-10-27: Generated data check for approval-only pull requests
 
 - Diagnosed PR CI failing after an approval-flag edit because the review sheet and static catalog differed from committed generated outputs.
