@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "cards": [
+    {
+      "id": "atlas-everyday-cash",
+      "name": "Everyday Cash",
+      "issuer": "Atlas Demo",
+      "status": "demo",
+      "fictional": true,
+      "tone": "blue",
+      "summary": "See how grocery and dining rewards can work, including eligibility conditions and category caps.",
+      "primaryLabel": "Cash-back rewards",
+      "feeSummary": "Illustrative: $0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [
+        "cash_back"
+      ],
+      "categories": [
+        "groceries",
+        "dining"
+      ],
+      "features": [],
+      "plainEnglish": "Cash-back cards return a portion of eligible purchases. The category where you shop can affect how much you earn.",
+      "watchOut": "Some issuers cap bonus rewards or exclude certain merchants, even when they sell groceries or food.",
+      "limitations": "Demo terms only: no actual rewards percentage, offer, APR or issuer agreement is represented.",
+      "verifiedAt": null,
+      "issuerSource": null
+    },
+    {
+      "id": "bluebird-open-skies",
+      "name": "Open Skies",
+      "issuer": "Bluebird Demo",
+      "status": "demo",
+      "fictional": true,
+      "tone": "sand",
+      "summary": "Understand points, airline redemption rules and which travel perks come with restrictions.",
+      "primaryLabel": "Travel miles",
+      "feeSummary": "Illustrative: $95 annual fee",
+      "annualFeeUsd": 95,
+      "rewards": [
+        "miles",
+        "points"
+      ],
+      "categories": [
+        "travel",
+        "dining"
+      ],
+      "features": [],
+      "plainEnglish": "Travel cards may earn miles or points that can be used in different ways. Redemption value depends on program rules.",
+      "watchOut": "Award availability, transfer ratios, blackout policies and annual fees can affect the real value of rewards.",
+      "limitations": "Fictional program; no actual airline, points valuation or booking benefit is promised.",
+      "verifiedAt": null,
+      "issuerSource": null
+    },
+    {
+      "id": "cedar-campus-compass",
+      "name": "Campus Compass",
+      "issuer": "Cedar Demo",
+      "status": "demo",
+      "fictional": true,
+      "tone": "slate",
+      "summary": "Explore student-card conditions and the rules that affect everyday dining and transit rewards.",
+      "primaryLabel": "Student card",
+      "feeSummary": "Illustrative: $0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [
+        "cash_back"
+      ],
+      "categories": [
+        "dining",
+        "gas"
+      ],
+      "features": [
+        "student"
+      ],
+      "plainEnglish": "Student cards may have eligibility requirements tied to enrollment or credit history, and rewards can vary by transaction type.",
+      "watchOut": "Being a student does not guarantee approval. Verify issuer eligibility requirements and any intro rate expiration.",
+      "limitations": "Demo only, with no actual student eligibility or rewards terms.",
+      "verifiedAt": null,
+      "issuerSource": null
+    },
+    {
+      "id": "clarity-starter-secured",
+      "name": "Starter Secured",
+      "issuer": "Clarity Demo",
+      "status": "demo",
+      "fictional": true,
+      "tone": "berry",
+      "summary": "Learn how a refundable deposit may relate to credit limits, billing and possible upgrades.",
+      "primaryLabel": "Secured card",
+      "feeSummary": "Illustrative: $0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [],
+      "categories": [],
+      "features": [
+        "secured"
+      ],
+      "plainEnglish": "A secured credit card usually requires a cash deposit that may help establish a credit line. It is not the same as a prepaid card.",
+      "watchOut": "Review whether the issuer reports to credit bureaus and the rules for refunds, upgrades, late fees and closure.",
+      "limitations": "This example does not specify an actual minimum deposit or credit eligibility rules.",
+      "verifiedAt": null,
+      "issuerSource": null
+    },
+    {
+      "id": "north-online-plus",
+      "name": "Online Plus",
+      "issuer": "North Demo",
+      "status": "demo",
+      "fictional": true,
+      "tone": "green",
+      "summary": "Decode online shopping categories, subscription credits and the limits behind bonus rewards.",
+      "primaryLabel": "Online cash back",
+      "feeSummary": "Illustrative: $0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [
+        "cash_back"
+      ],
+      "categories": [
+        "online",
+        "lifestyle"
+      ],
+      "features": [],
+      "plainEnglish": "Some card programs give extra rewards for qualifying digital purchases. What counts as online may vary by merchant coding.",
+      "watchOut": "Subscriptions and digital wallets may not always qualify; credits can require enrollment and expire.",
+      "limitations": "Fictional terms only, with no guaranteed digital-shopping coverage or reward rate.",
+      "verifiedAt": null,
+      "issuerSource": null
+    },
+    {
+      "id": "willow-everyday-points",
+      "name": "Everyday Points",
+      "issuer": "Willow Demo",
+      "status": "demo",
+      "fictional": true,
+      "tone": "green",
+      "summary": "Understand flexible points and how grocery, travel and entertainment spending may earn rewards.",
+      "primaryLabel": "Flexible points",
+      "feeSummary": "Illustrative: $49 annual fee",
+      "annualFeeUsd": 49,
+      "rewards": [
+        "points"
+      ],
+      "categories": [
+        "groceries",
+        "travel",
+        "lifestyle"
+      ],
+      "features": [],
+      "plainEnglish": "Points programs can allow statement credits, travel or gift cards, but one point need not equal one cent for every redemption.",
+      "watchOut": "Check minimum redemption amounts, expiration policies and whether certain purchases earn base rather than bonus points.",
+      "limitations": "Fictional program; redemption options are explanatory examples and not an issuer promise.",
+      "verifiedAt": null,
+      "issuerSource": null
+    }
+  ]
+}

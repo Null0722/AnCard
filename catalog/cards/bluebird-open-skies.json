@@ -1,0 +1,10 @@
+{
+  "id": "bluebird-open-skies", "name": "Open Skies", "issuer": "Bluebird Demo", "status": "demo", "fictional": true, "tone": "sand",
+  "summary": "Understand points, airline redemption rules and which travel perks come with restrictions.",
+  "primaryLabel": "Travel miles", "feeSummary": "Illustrative: $95 annual fee", "annualFeeUsd": 95,
+  "rewards": ["miles", "points"], "categories": ["travel", "dining"], "features": [],
+  "plainEnglish": "Travel cards may earn miles or points that can be used in different ways. Redemption value depends on program rules.",
+  "watchOut": "Award availability, transfer ratios, blackout policies and annual fees can affect the real value of rewards.",
+  "limitations": "Fictional program; no actual airline, points valuation or booking benefit is promised.",
+  "verifiedAt": null, "issuerSource": null
+}

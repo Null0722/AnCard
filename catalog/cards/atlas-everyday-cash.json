@@ -1,0 +1,10 @@
+{
+  "id": "atlas-everyday-cash", "name": "Everyday Cash", "issuer": "Atlas Demo", "status": "demo", "fictional": true, "tone": "blue",
+  "summary": "See how grocery and dining rewards can work, including eligibility conditions and category caps.",
+  "primaryLabel": "Cash-back rewards", "feeSummary": "Illustrative: $0 annual fee", "annualFeeUsd": 0,
+  "rewards": ["cash_back"], "categories": ["groceries", "dining"], "features": [],
+  "plainEnglish": "Cash-back cards return a portion of eligible purchases. The category where you shop can affect how much you earn.",
+  "watchOut": "Some issuers cap bonus rewards or exclude certain merchants, even when they sell groceries or food.",
+  "limitations": "Demo terms only: no actual rewards percentage, offer, APR or issuer agreement is represented.",
+  "verifiedAt": null, "issuerSource": null
+}

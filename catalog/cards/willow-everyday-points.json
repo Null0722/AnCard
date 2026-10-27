@@ -1,0 +1,10 @@
+{
+  "id": "willow-everyday-points", "name": "Everyday Points", "issuer": "Willow Demo", "status": "demo", "fictional": true, "tone": "green",
+  "summary": "Understand flexible points and how grocery, travel and entertainment spending may earn rewards.",
+  "primaryLabel": "Flexible points", "feeSummary": "Illustrative: $49 annual fee", "annualFeeUsd": 49,
+  "rewards": ["points"], "categories": ["groceries", "travel", "lifestyle"], "features": [],
+  "plainEnglish": "Points programs can allow statement credits, travel or gift cards, but one point need not equal one cent for every redemption.",
+  "watchOut": "Check minimum redemption amounts, expiration policies and whether certain purchases earn base rather than bonus points.",
+  "limitations": "Fictional program; redemption options are explanatory examples and not an issuer promise.",
+  "verifiedAt": null, "issuerSource": null
+}

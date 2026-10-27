@@ -1,0 +1,10 @@
+{
+  "id": "cedar-campus-compass", "name": "Campus Compass", "issuer": "Cedar Demo", "status": "demo", "fictional": true, "tone": "slate",
+  "summary": "Explore student-card conditions and the rules that affect everyday dining and transit rewards.",
+  "primaryLabel": "Student card", "feeSummary": "Illustrative: $0 annual fee", "annualFeeUsd": 0,
+  "rewards": ["cash_back"], "categories": ["dining", "gas"], "features": ["student"],
+  "plainEnglish": "Student cards may have eligibility requirements tied to enrollment or credit history, and rewards can vary by transaction type.",
+  "watchOut": "Being a student does not guarantee approval. Verify issuer eligibility requirements and any intro rate expiration.",
+  "limitations": "Demo only, with no actual student eligibility or rewards terms.",
+  "verifiedAt": null, "issuerSource": null
+}
