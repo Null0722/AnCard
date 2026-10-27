@@ -2,6 +2,17 @@
 
 All meaningful website changes are documented here and in Git history. Entries should state **what changed**, **why**, **files/components affected**, **verification**, and **what is next**. Most recent changes first. Do not silently rewrite prior decisions; add a new dated entry instead.
 
+## 2026-10-27 — Extended banking product model and dashboard prototype
+
+- **Changed:** Proposed versioned modular product model for credit cards, checking, savings and relationship programs; separately tracked public, relationship-gated and invite-only access types.
+- **Why:** Expand research coverage without making unverifiable elite-access, rewards or fee claims; retain a lightweight statically hosted backend.
+- **Frontend:** Added separate privacy-first client-side card dashboard, a link from the homepage, working legacy-data filters (rewards, categories, descriptors, annual-fee ceiling), neutral sorting and factual comparison. Advanced filters are visibly disabled until reviewed terms exist.
+- **Research:** Added a ten-institution official-source register and preliminary verified examples for overdraft policies and wealth-tier rewards. This is **not** a completed bank-by-bank product audit.
+- **Privacy and scope:** No visitor accounts, quizzes, stored preferences or banking data integrations. Six existing fictional demo records remain the only dashboard dataset.
+- **Affected:** `docs/index.html`, `docs/dashboard/`, `project/CATALOG-V2.md`, `project/TOP10-RESEARCH.md`, `project/DASHBOARD.md`, `project/DECISIONS-V2.md`, `README.md`, `CHANGELOG.md`.
+- **Verification:** Source links and product constraints reviewed; static dashboard still requires manual interactive/browser/keyboard testing before merge. No production or deployment settings changed.
+- **Next:** Verify individual issuer agreements and add real records; complete browser QA and decide when to adopt schema v2.
+
 ## 2026-10-27 — Public repository README refresh
 
 - **Changed:** Rewrote the README as a visitor- and contributor-friendly explanation of AnCard's mission, motivation, user-controlled discovery, plain-English financial literacy, independence, and privacy commitments.
