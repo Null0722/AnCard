@@ -52,7 +52,7 @@ for(const entry of qc.cards){
  if(byId.has(entry.id))fail('HUMAN-QC.json','duplicate approval entry: '+entry.id);
  byId.set(entry.id,entry);
 }
-if(byId.size!==filenames.length)fail('HUMAN-QC.json','count differs from card records; run npm run qc:sync');
+if(byId.size!==cards.length)fail('HUMAN-QC.json','count differs from card records; run npm run qc:sync');
 let approved=0;
 const publicCards=cards.map(card=>{
  const review=byId.get(card.id);
