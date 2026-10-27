@@ -34,6 +34,29 @@ const node = (tag, className, text) => {
   return el;
 };
 
+
+const rewardModels={flat:'Flat rewards',tiered:'Tiered category rewards',rotating:'Activated rotating categories',selectable:'Cardholder-selected categories',automatic_top_category:'Automatic top spending category',points:'Points rewards',miles:'Travel miles',none:'No purchase rewards listed'};
+function earnText(rule){
+ const amount=typeof rule?.rate==='number'?(rule.unit==='percent'?rule.rate+'%':rule.rate+'X'):'Rate pending review';
+ const cap=typeof rule?.capAmountUsd==='number'?' | Eligible spend cap: $'+rule.capAmountUsd.toLocaleString()+(rule.capPeriod?' per '+rule.capPeriod.toLowerCase():''):'';
+ return amount+cap+(rule.condition?' | '+rule.condition:'');
+}
+function benefitText(benefit){
+ const amount=typeof benefit?.amountUsd==='number'?'Up to $'+benefit.amountUsd.toLocaleString():'Amount not quantified';
+ const frequency=typeof benefit?.frequencyMonths==='number'&&benefit.frequencyMonths>0?' | every '+(benefit.frequencyMonths%12===0?benefit.frequencyMonths/12+' years':benefit.frequencyMonths+' months'):'';
+ return amount+frequency+(benefit.condition?' | '+benefit.condition:'');
+}
+function updateQcProgress(progress){
+ const total=Number(progress?.total)||0;
+ const approved=Math.max(0,Math.min(total,Number(progress?.approved)||0));
+ const percent=total?Math.round(100*approved/total):0;
+ const ring=$('#qc-ring');
+ ring.style.setProperty('--qc-progress',percent+'%');
+ ring.setAttribute('aria-label',approved+' of '+total+' research cards human reviewed, '+percent+' percent');
+ $('#qc-percent').textContent=percent+'%';
+ $('#qc-count').textContent=approved+' of '+total+' cards reviewed';
+}
+
 const labels = {cash_back:'Cash back',points:'Points',miles:'Miles',groceries:'Groceries',travel:'Travel',dining:'Dining',online:'Online',gas:'Gas & transit',lifestyle:'Lifestyle',airline:'Airline card'};
 
 function activeFilters() {
@@ -82,19 +105,46 @@ function showDetails(card) {
   $('#detail-title').textContent=card.name;$('#detail-subtitle').textContent=`${card.issuer} · ${card.status==='pending_review'?'Human review pending':'Human QC approved'}`;
   const body=$('#detail-body');body.replaceChildren();const grid=node('div','detail-fields');
   detailField(grid,'In plain English',card.plainEnglish);detailField(grid,'What to watch for',card.watchOut);detailField(grid,'Annual fee',card.annualFeeUsd === null?'Not provided':card.annualFeeUsd===0?'No annual fee':`$${card.annualFeeUsd} per year`);detailField(grid,'Important limits',card.limitations);
-  if(card.humanVerified){detailField(grid,'Source last checked on',card.verifiedAt);detailField(grid,'Verification scope',card.verificationLevel==='selected-issuer-page-facts'?'Selected product facts, not complete terms':'See methodology');const source=node('a','source-link','Open official issuer source ↗');source.href=card.issuerSource;source.target='_blank';source.rel='noopener noreferrer';source.referrerPolicy='no-referrer';grid.append(source);
+  if(card.humanVerified){
+    detailField(grid,'Card overview',card.bio||card.summary);
+    detailField(grid,'Rewards model',rewardModels[card.rewardStructure]||'Earning structure not yet classified');
+    if(typeof card.monthlyFeeUsd==='number')detailField(grid,'Monthly membership fee','$'+card.monthlyFeeUsd+' each month, separate from the annual fee');
+    if(Array.isArray(card.earnRules)&&card.earnRules.length)for(const rule of card.earnRules)detailField(grid,'Earn: '+rule.label,earnText(rule));
+    else detailField(grid,'Detailed earning rates','Not separately quantified in the approved record');
+    if(Array.isArray(card.benefits)&&card.benefits.length)for(const benefit of card.benefits)detailField(grid,'Benefit: '+benefit.name,benefitText(benefit));
+    else detailField(grid,'Travel and additional benefits','No quantified perks in the approved record. This does not mean the card has no perks.');
+    detailField(grid,'Source last checked on',card.verifiedAt);detailField(grid,'Verification scope',card.verificationLevel==='selected-issuer-page-facts'?'Selected product facts, not complete terms':'See methodology');const source=node('a','source-link','Open official issuer source ↗');source.href=card.issuerSource;source.target='_blank';source.rel='noopener noreferrer';source.referrerPolicy='no-referrer';grid.append(source);
     if(Array.isArray(card.additionalSources))for(const item of card.additionalSources){if(!item||typeof item.url!=='string'||!item.url.startsWith('https://'))continue;const secondary=node('a','source-link',item.label||'Additional source ↗');secondary.href=item.url;secondary.target='_blank';secondary.rel='noopener noreferrer';secondary.referrerPolicy='no-referrer';grid.append(secondary);}
   }else {detailField(grid,'Review status','This card has not passed human QC. Fees, rewards, APRs, bonuses and benefits are hidden until reviewed.');const source=node('a','source-link','Check official issuer source ↗');source.href=card.issuerSource;source.target='_blank';source.rel='noopener noreferrer';source.referrerPolicy='no-referrer';grid.append(source);}
   body.append(grid,node('p','dialog-note','Educational information only. The issuer agreement controls actual fees, eligibility, rates, and rewards. Some terms in this source snapshot are not verified; review official disclosures.'));
   showModal($('#details-backdrop'),$('#details-backdrop [data-close]'));
 }
+
 function showComparison() {
-  const chosen=cards.filter(c=>compared.has(c.id));if(!chosen.length)return;
-  $('#detail-title').textContent='Compare your selections';$('#detail-subtitle').textContent='Neutral side-by-side information  -  no rankings, scores, or winning card.';
-  const body=$('#detail-body');body.replaceChildren();const table=node('table','comparison-table');const thead=node('thead');const head=node('tr');head.append(node('th','','Attribute'));
-  chosen.forEach(c=>head.append(node('th','',c.name)));thead.append(head);table.append(thead);
-  const tbody=node('tbody');[['Rewards',c=>c.humanVerified?c.rewards.map(v=>labels[v]).join(', ')||'Not specified':'Pending review'],['Categories',c=>c.humanVerified?c.categories.map(v=>labels[v]).join(', ')||'Not specified':'Pending review'],['Annual fee',c=>!c.humanVerified?'Pending review':c.annualFeeUsd===null?'Unspecified':c.annualFeeUsd===0?'$0':`$${c.annualFeeUsd}`],['Important limit',c=>c.limitations],['Verification',c=>c.humanVerified?'Human QC approved':'Pending review']].forEach(([title,value])=>{const tr=node('tr');tr.append(node('th','',title));chosen.forEach(c=>tr.append(node('td','',value(c))));tbody.append(tr);});table.append(tbody);body.append(table,node('p','dialog-note','Every comparison value comes directly from the published card records. Check the current issuer agreement; this source snapshot does not cover every term.'));
-  showModal($('#details-backdrop'),$('#details-backdrop [data-close]'));
+ const chosen=cards.filter(c=>compared.has(c.id));if(!chosen.length)return;
+ $('#detail-title').textContent='Compare your selections';
+ $('#detail-subtitle').textContent='Neutral side-by-side facts, without rankings or card recommendations.';
+ const body=$('#detail-body');body.replaceChildren();
+ const table=node('table','comparison-table');const thead=node('thead');const head=node('tr');head.append(node('th','','Attribute'));
+ chosen.forEach(c=>head.append(node('th','',c.name)));thead.append(head);table.append(thead);
+ const unknown='Pending human review';
+ const earns=c=>!c.humanVerified?unknown:Array.isArray(c.earnRules)&&c.earnRules.length?c.earnRules.map(r=>r.label+': '+earnText(r)).join('; '):'Not separately quantified';
+ const perks=c=>!c.humanVerified?unknown:Array.isArray(c.benefits)&&c.benefits.length?c.benefits.map(p=>p.name+': '+benefitText(p)).join('; '):'No quantified benefits in this record';
+ const rows=[
+  ['Human QC',c=>c.humanVerified?'Human reviewed':'Pending review'],
+  ['Annual fee',c=>!c.humanVerified?unknown:c.annualFeeUsd===null?'Not verified':c.annualFeeUsd===0?'$0':'$'+c.annualFeeUsd],
+  ['Monthly fee',c=>!c.humanVerified?unknown:typeof c.monthlyFeeUsd==='number'?'$'+c.monthlyFeeUsd+' per month':'Not verified'],
+  ['Reward model',c=>!c.humanVerified?unknown:rewardModels[c.rewardStructure]||'Not classified'],
+  ['Earn categories and caps',earns],
+  ['Travel credits and protections',perks],
+  ['Card overview',c=>!c.humanVerified?unknown:c.bio||c.summary],
+  ['Important restrictions',c=>c.humanVerified?c.watchOut:unknown]
+ ];
+ const tbody=node('tbody');for(const [name,fn] of rows){const tr=node('tr');tr.append(node('th','',name));chosen.forEach(c=>tr.append(node('td','',fn(c))));tbody.append(tr);}
+ table.append(tbody);
+ const scroll=node('div','compare-scroller');scroll.setAttribute('role','region');scroll.setAttribute('aria-label','Scroll horizontally to compare selected cards');scroll.setAttribute('tabindex','0');scroll.append(table);
+ body.append(scroll,node('p','dialog-note','Benefits and earn rates appear only after human review. Monetary amounts are conditional and not guaranteed. Confirm the issuer agreement.'));
+ showModal($('#details-backdrop'),$('#details-backdrop [data-close]'));
 }
 
 checks.forEach(c=>c.addEventListener('change',render));
@@ -114,5 +164,5 @@ document.addEventListener('keydown',e=>{if(!modalOpen)return;if(e.key==='Escape'
 $('#enter-site').addEventListener('click',()=>{$('#trust-backdrop').hidden=true;modalOpen=null;document.body.classList.remove('lock-scroll');$('#main').focus?.();$('#catalog-title').setAttribute('tabindex','-1');$('#catalog-title').focus();});
 // Always acknowledge anew on reload. No persistence of the acknowledgment or selections.
 showModal($('#trust-backdrop'),$('#enter-site'));
-async function loadCatalog(){try{const response=await fetch('./data/cards.json',{cache:'no-store'});if(!response.ok)throw new Error(`HTTP ${response.status}`);const data=await response.json();if(!Array.isArray(data.cards))throw new Error('Invalid catalog');cards=data.cards.filter(card=>card.status==='pending_review'||card.status==='published');}catch(error){catalogError=true;console.error('Catalog load failed:',error);}render();}
+async function loadCatalog(){try{const response=await fetch('./data/cards.json',{cache:'no-store'});if(!response.ok)throw new Error(`HTTP ${response.status}`);const data=await response.json();if(!Array.isArray(data.cards))throw new Error('Invalid catalog');cards=data.cards.filter(card=>card.status==='pending_review'||card.status==='published');updateQcProgress(data.reviewProgress);}catch(error){catalogError=true;console.error('Catalog load failed:',error);}render();}
 loadCatalog();
