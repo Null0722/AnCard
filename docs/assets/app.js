@@ -62,7 +62,11 @@ function makeCard(card) {
   const verified=node('span','card-verification',card.humanVerified?'Human QC approved':'Pending human review');actions.append(detail,compare,verified);article.append(actions);return article;
 }
 function render() {
-  const filtered=sortCards(cards.filter(c=>matches(c,activeFilters())));
+  const query=$('#card-search').value.trim().toLocaleLowerCase();
+  const approvedOnly=$('#reviewed-only').checked;
+  const filtered=sortCards(cards.filter(c=>matches(c,activeFilters())
+    && (!approvedOnly||c.humanVerified===true)
+    && (!query||[c.name,c.issuer,c.airlineProgram].filter(Boolean).some(value=>value.toLocaleLowerCase().includes(query)))));
   const count=$('#result-count');count.textContent=catalogError?'Catalog unavailable':`${filtered.length} cards · ${filtered.filter(c=>c.humanVerified).length} human-reviewed · ${$('#sort-by').selectedOptions[0].textContent}`;
   catalogEl.replaceChildren();
   if(catalogError || !filtered.length){const empty=node('div','empty-card');empty.append(node('h4','',catalogError?'We could not load the catalog.':'No cards match those filters.'),node('p','',catalogError?'Try reloading the page. No preferences were transmitted.':'Try removing a filter to explore more cards. We do not select alternatives for you.'));catalogEl.append(empty);}
@@ -95,8 +99,10 @@ function showComparison() {
 
 checks.forEach(c=>c.addEventListener('change',render));
 quicks.forEach(button=>button.addEventListener('click',()=>{const input=checks.find(c=>c.value===button.dataset.quick);if(input){input.checked=!input.checked;render();}$('#catalog').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}));
-$('#clear-filters').addEventListener('click',()=>{checks.forEach(c=>c.checked=false);render();});
+$('#clear-filters').addEventListener('click',()=>{checks.forEach(c=>c.checked=false);$('#card-search').value='';$('#reviewed-only').checked=false;render();});
 $('#sort-by').addEventListener('change',render);
+$('#card-search').addEventListener('input',render);
+$('#reviewed-only').addEventListener('change',render);
 $('#show-art').addEventListener('change',event=>{artEnabled=event.target.checked;render();});
 $('#toggle-filters').addEventListener('click',()=>{const open=$('#filter-panel').classList.toggle('is-open');$('#toggle-filters').setAttribute('aria-expanded',String(open));});
 catalogEl.addEventListener('click',event=>{const detail=event.target.closest('[data-detail]');if(detail){const card=cards.find(c=>c.id===detail.dataset.detail);if(card)showDetails(card);return;}const toggle=event.target.closest('[data-compare]');if(toggle){const id=toggle.dataset.compare;if(compared.has(id))compared.delete(id);else if(compared.size<3)compared.add(id);else{showComparison();return;}render();}});

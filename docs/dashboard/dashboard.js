@@ -11,7 +11,11 @@ const pretty=s=>String(s||'').replaceAll('_',' ').replace(/\b\w/g,ch=>ch.toUpper
 function filtered(){
  const fd=new FormData(form);
  const reward=fd.get('reward'), spending=fd.get('spending'), type=fd.get('cardtype'), limit=Number(fd.get('annual'));
- return cards.filter(c=>(!reward||c.rewards?.includes(reward))&&(!spending||c.categories?.includes(spending))&&(!type||c.features?.includes(type))&&(Number.isFinite(c.annualFeeUsd)&&c.annualFeeUsd<=limit || c.annualFeeUsd===null && limit===1000));
+ const query=String(fd.get('search')||'').trim().toLocaleLowerCase(),approvedOnly=fd.has('reviewed-only');
+ return cards.filter(c=>(!reward||c.rewards?.includes(reward))&&(!spending||c.categories?.includes(spending))&&(!type||c.features?.includes(type))
+ && (!approvedOnly||c.humanVerified===true)
+ && (!query||[c.name,c.issuer,c.airlineProgram].filter(Boolean).some(value=>value.toLocaleLowerCase().includes(query)))
+ && (Number.isFinite(c.annualFeeUsd)&&c.annualFeeUsd<=limit || c.annualFeeUsd===null && limit===1000));
 }
 function renderComparison(){
  const ids=cards.filter(c=>selected.has(c.id));const pane=byId('compare'),grid=byId('compare-grid');
@@ -57,7 +61,7 @@ byId('gate').addEventListener('cancel',event=>event.preventDefault());
 if(typeof byId('gate').showModal==='function') byId('gate').showModal();
 form.addEventListener('input',render);
 form.addEventListener('change',render);
-form.addEventListener('reset',()=>{selected.clear();queueMicrotask(render);});
+form.addEventListener('reset',()=>{queueMicrotask(render);});
 byId('sort').addEventListener('change',render);
 byId('clear-compare').addEventListener('click',()=>{selected.clear();render();});
 fetch('../data/cards.json',{cache:'no-store'}).then(resp=>{if(!resp.ok)throw new Error('Catalog could not load');return resp.json();}).then(data=>{

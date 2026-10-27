@@ -83,6 +83,10 @@
             <div><h3>Browse the catalog</h3><p id="result-count" role="status" aria-live="polite">Loading card catalog…</p></div>
             <label class="sort-label">Sort <select id="sort-by"><option value="name">Card name A–Z</option><option value="issuer">Issuer A–Z</option><option value="fee">Annual fee: low to high</option></select></label>
           </div>
+          <div class="directory-utilities">
+            <label for="card-search">Find by card or bank <input id="card-search" type="search" autocomplete="off" placeholder="Example: Delta, Chase, Citi"></label>
+            <label class="review-toggle"><input type="checkbox" id="reviewed-only"> Human-reviewed only</label>
+          </div>
           <div class="art-optin"><label><input type="checkbox" id="show-art"> Show official card art</label><p>Off by default. Enabling images sends requests to the issuing banks or their CDNs. It may disclose your IP address and browser metadata. This choice lasts only until you leave or reload this page. Missing artwork stays a text badge.</p></div>
           <div class="preview-banner" role="note"><strong>Only human-reviewed details are displayed.</strong> All new cards start as placeholders. Fees, earning rates, and benefits appear only after review against issuer documentation. Until then, use the official issuer source for current information.</div>
           <div id="card-results" class="card-results" aria-live="off"></div>
