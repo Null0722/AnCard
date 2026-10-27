@@ -24,7 +24,7 @@ function renderComparison(){
  }
 }
 function render(){
- byId('annual-output').textContent='$'+Number(byId('annual').value).toLocaleString();
+ byId('annual-output').textContent=Number(byId('annual').value)===1000?'Any / unknown':'$'+Number(byId('annual').value).toLocaleString();
  const sort=byId('sort').value;
  const matches=filtered().sort((a,b)=>sort==='fee'?(a.annualFeeUsd??Infinity)-(b.annualFeeUsd??Infinity)||a.name.localeCompare(b.name):String(a[sort]||'').localeCompare(String(b[sort]||'')));
  count.textContent=matches.length+' of '+cards.length+' cards match; '+cards.filter(c=>c.humanVerified).length+' passed human QC.';
