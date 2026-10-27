@@ -2,6 +2,15 @@
 
 All meaningful website changes are documented here and in Git history. Entries should state **what changed**, **why**, **files/components affected**, **verification**, and **what is next**. Most recent changes first. Do not silently rewrite prior decisions; add a new dated entry instead.
 
+## 2026-10-27 — Public repository README refresh
+
+- **Changed:** Rewrote the README as a visitor- and contributor-friendly explanation of AnCard's mission, motivation, user-controlled discovery, plain-English financial literacy, independence, and privacy commitments.
+- **Why:** With the repository public, newcomers should immediately understand what AnCard aims to achieve before reading developer setup instructions.
+- **Clarity:** Distinguished future non-tracking advertising/donations from implemented funding; explained hosting log limitations, fictional example cards, non-advisory nature of content, and editorial work needed before publishing verified offers.
+- **Affected:** `README.md`, `CHANGELOG.md`. No runtime site or card records changed.
+- **Verified:** Confirmed repository is public and README content aligns with `project/PRODUCT.md`, `project/DECISIONS.md` and `project/EDITORIAL.md`.
+- **Next:** Check GitHub Pages publishing configuration, run mobile/browser accessibility tests, and verify a starter collection of actual issuer cards.
+
 ## 2026-10-27 — MVP website foundation (0.1.0)
 
 - **Changed:** Implemented the dark "Clear Atlas" direction: soft blue highlights, muted mint trust markers, charcoal surfaces, responsive filter sidebar and card directory.
