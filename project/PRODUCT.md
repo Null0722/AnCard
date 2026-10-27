@@ -11,7 +11,7 @@ AnCard is an independent, privacy-first credit-card literacy and navigation plat
 ## Current MVP scope
 
 1. Disclosure-first entry acknowledgment. No personal-data consent implied by acknowledgment.
-2. Curated credit-card catalog; current release-candidate catalog contains 28 source-checked real credit-card listings across 10 issuers; selected facts are not a complete card-agreement audit.
+2. Curated credit-card catalog; current release-candidate catalog contains 41 identified consumer cards across 10 issuers (including 13 airline co-branded products), all awaiting explicit human approval; selected facts are not a complete card-agreement audit.
 3. User-controlled, combinable reward, spending, card-type and fee filters; neutral sort options.
 4. Plain-English financial term explainers and detailed caveats per card.
 5. Side-by-side factual comparison, maximum three cards, no ranking or winner.
@@ -45,3 +45,7 @@ HTML/CSS and native JavaScript; no runtime frameworks; card JSON files in Git; d
 ## 2026-10-27 — Real issuer snapshot and visual opt-in
 
 The public JSON feed now contains 28 real cards and omits six earlier fictional demo records, which are retained in the Git history. Source-check dates reflect confirmation of **selected** issuer and issuer-network facts, not independent verification of every card fee, APR, welcome offer, or protection. Undefined fields remain unknown. Nine confirmed card-art URLs from Chase, Capital One and U.S. Bank are optional and default off; loading them exposes the visitor's network request metadata to those institutions/CDNs. User choice exists only in page memory. All source and art details remain subject to review before merging the release candidate.
+
+## v0.3.0 — Human approval controls the public facts
+
+The static site publishes real-card **identities only** until the owner approves the corresponding proposal in `catalog/HUMAN-QC.json`. Pending cards show no fees, earning rates, APRs, bonuses, or unapproved benefits. A card's pre-existing `published` editorial status does not imply that a human has checked the terms. Human QC records can be located by Ctrl+F on card name; changed financial data invalidate prior approval until reviewed again.
