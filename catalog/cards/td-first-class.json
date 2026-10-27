@@ -1,0 +1,31 @@
+{
+  "id": "td-first-class",
+  "name": "TD First Class Visa Signature",
+  "issuer": "TD Bank",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "Travel and dining miles. Exact earning terms are pending a detailed issuer agreement review.",
+  "primaryLabel": "Travel and dining miles; check current issuer program terms.",
+  "feeSummary": "$89 annual fee",
+  "annualFeeUsd": 89,
+  "rewards": [
+    "miles"
+  ],
+  "categories": [
+    "travel"
+  ],
+  "features": [],
+  "plainEnglish": "This card is associated with travel and dining miles. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.td.com/us/en/personal-banking/credit-cards",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "TD First Class Visa Signature is a travel credit card candidate from TD Bank. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "miles",
+  "earnRules": [],
+  "benefits": []
+}

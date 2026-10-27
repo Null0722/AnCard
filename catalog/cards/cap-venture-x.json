@@ -1,0 +1,69 @@
+{
+  "id": "cap-venture-x",
+  "name": "Capital One Venture X Rewards",
+  "issuer": "Capital One",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "2X eligible purchases, 5X portal flights, 10X portal hotels and rental cars.",
+  "primaryLabel": "2X eligible purchases, 5X portal flights, 10X portal hotels and rental cars.",
+  "feeSummary": "$395 annual fee",
+  "annualFeeUsd": 395,
+  "rewards": [
+    "miles"
+  ],
+  "categories": [
+    "travel"
+  ],
+  "features": [],
+  "plainEnglish": "2X eligible purchases, 5X portal flights, 10X portal hotels and rental cars.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.capitalone.com/credit-cards/venture-x/",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "Capital One Venture X Rewards is a travel credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "miles",
+  "earnRules": [
+    {
+      "label": "Everyday eligible purchases",
+      "rate": 2,
+      "unit": "x"
+    },
+    {
+      "label": "Flights booked in Capital One Travel",
+      "rate": 5,
+      "unit": "x"
+    },
+    {
+      "label": "Hotels and rental cars in Capital One Travel",
+      "rate": 10,
+      "unit": "x"
+    }
+  ],
+  "benefits": [
+    {
+      "name": "Capital One Travel annual credit",
+      "type": "statement_credit",
+      "amountUsd": 300,
+      "frequencyMonths": 12,
+      "condition": "Eligible Capital One Travel bookings"
+    },
+    {
+      "name": "Global Entry or TSA PreCheck reimbursement",
+      "type": "global_entry",
+      "amountUsd": 120,
+      "frequencyMonths": 48,
+      "condition": "Up to $120 once every four years for one qualifying application per account"
+    },
+    {
+      "name": "Anniversary miles",
+      "type": "anniversary_bonus",
+      "amountUsd": null,
+      "frequencyMonths": 12,
+      "condition": "10,000 miles after anniversary, subject to terms"
+    }
+  ]
+}

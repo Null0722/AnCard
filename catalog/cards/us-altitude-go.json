@@ -1,0 +1,31 @@
+{
+  "id": "us-altitude-go",
+  "name": "U.S. Bank Altitude Go Visa Signature",
+  "issuer": "U.S. Bank",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "Dining and streaming rewards. Exact earning terms are pending a detailed issuer agreement review.",
+  "primaryLabel": "Dining and streaming rewards; check current issuer program terms.",
+  "feeSummary": "$0 annual fee",
+  "annualFeeUsd": 0,
+  "rewards": [
+    "points"
+  ],
+  "categories": [
+    "dining"
+  ],
+  "features": [],
+  "plainEnglish": "This card is associated with dining and streaming rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.usbank.com/credit-cards/benefits.html",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "U.S. Bank Altitude Go Visa Signature is a dining credit card candidate from U.S. Bank. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "points",
+  "earnRules": [],
+  "benefits": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": "chase-disney-visa",
+  "name": "Disney Visa",
+  "issuer": "Chase",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "Disney Rewards Dollars and cardmember offers. Exact earning terms are pending a detailed issuer agreement review.",
+  "primaryLabel": "Disney Rewards Dollars and cardmember offers; check current issuer program terms.",
+  "feeSummary": "$0 annual fee",
+  "annualFeeUsd": 0,
+  "rewards": [
+    "cash_back"
+  ],
+  "categories": [
+    "lifestyle"
+  ],
+  "features": [],
+  "plainEnglish": "This card is associated with disney rewards dollars and cardmember offers. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://creditcards.chase.com/rewards-credit-cards/disney",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "Disney Visa is a lifestyle credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "cash_back",
+  "earnRules": [],
+  "benefits": []
+}

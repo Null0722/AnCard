@@ -1,0 +1,64 @@
+{
+  "id": "boa-premium-elite",
+  "name": "Bank of America Premium Rewards Elite",
+  "issuer": "Bank of America",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "2X travel/dining; 1.5X other eligible purchases.",
+  "primaryLabel": "2X travel/dining; 1.5X other eligible purchases.",
+  "feeSummary": "$550 annual fee",
+  "annualFeeUsd": 550,
+  "rewards": [
+    "points"
+  ],
+  "categories": [
+    "travel"
+  ],
+  "features": [],
+  "plainEnglish": "2X travel/dining; 1.5X other eligible purchases.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.bankofamerica.com/credit-cards/products/premium-rewards-elite-credit-card/",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "Bank of America Premium Rewards Elite is a travel credit card candidate from Bank of America. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "points",
+  "earnRules": [
+    {
+      "label": "Travel and dining",
+      "rate": 2,
+      "unit": "x"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1.5,
+      "unit": "x"
+    }
+  ],
+  "benefits": [
+    {
+      "name": "Global Entry or TSA PreCheck credit",
+      "type": "global_entry",
+      "amountUsd": 120,
+      "frequencyMonths": 48,
+      "condition": "Up to $120 every four years after eligible application fee purchase"
+    },
+    {
+      "name": "Annual airline incidental credit",
+      "type": "statement_credit",
+      "amountUsd": 300,
+      "frequencyMonths": 12,
+      "condition": "Qualifying purchases"
+    },
+    {
+      "name": "Lifestyle statement credits",
+      "type": "statement_credit",
+      "amountUsd": 150,
+      "frequencyMonths": 12,
+      "condition": "Qualifying lifestyle purchases"
+    }
+  ]
+}

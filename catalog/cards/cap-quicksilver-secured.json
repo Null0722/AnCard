@@ -1,0 +1,31 @@
+{
+  "id": "cap-quicksilver-secured",
+  "name": "Quicksilver Secured Rewards",
+  "issuer": "Capital One",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "Secured card with cash back. Exact earning terms are pending a detailed issuer agreement review.",
+  "primaryLabel": "Secured card with cash back; check current issuer program terms.",
+  "feeSummary": "$0 annual fee",
+  "annualFeeUsd": 0,
+  "rewards": [
+    "cash_back"
+  ],
+  "categories": [],
+  "features": [
+    "secured"
+  ],
+  "plainEnglish": "This card is associated with secured card with cash back. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "Quicksilver Secured Rewards is a credit building credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "flat",
+  "earnRules": [],
+  "benefits": []
+}

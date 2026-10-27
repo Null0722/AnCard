@@ -1,0 +1,35 @@
+{
+  "id": "chase-amazon-visa",
+  "name": "Amazon Visa",
+  "issuer": "Chase",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "3% at Amazon/Whole Foods and eligible Chase Travel, without a Prime membership.",
+  "primaryLabel": "3% at Amazon/Whole Foods and eligible Chase Travel, without a Prime membership.",
+  "feeSummary": "$0 annual fee",
+  "annualFeeUsd": 0,
+  "rewards": [
+    "cash_back"
+  ],
+  "categories": [],
+  "features": [],
+  "plainEnglish": "3% at Amazon/Whole Foods and eligible Chase Travel, without a Prime membership.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://creditcards.chase.com/cash-back-credit-cards",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "Amazon Visa is a cash back credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "flat",
+  "earnRules": [
+    {
+      "label": "Amazon and eligible Whole Foods",
+      "rate": 3,
+      "unit": "percent"
+    }
+  ],
+  "benefits": []
+}

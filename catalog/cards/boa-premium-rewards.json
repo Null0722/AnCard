@@ -1,0 +1,50 @@
+{
+  "id": "boa-premium-rewards",
+  "name": "Bank of America Premium Rewards",
+  "issuer": "Bank of America",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "2X travel/dining and 1.5X other eligible purchases.",
+  "primaryLabel": "2X travel/dining and 1.5X other eligible purchases.",
+  "feeSummary": "$95 annual fee",
+  "annualFeeUsd": 95,
+  "rewards": [
+    "points"
+  ],
+  "categories": [
+    "travel"
+  ],
+  "features": [],
+  "plainEnglish": "2X travel/dining and 1.5X other eligible purchases.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.bankofamerica.com/credit-cards/",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "Bank of America Premium Rewards is a travel credit card candidate from Bank of America. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "points",
+  "earnRules": [
+    {
+      "label": "Travel and dining",
+      "rate": 2,
+      "unit": "x"
+    },
+    {
+      "label": "Other purchases",
+      "rate": 1.5,
+      "unit": "x"
+    }
+  ],
+  "benefits": [
+    {
+      "name": "Global Entry or TSA PreCheck reimbursement",
+      "type": "global_entry",
+      "amountUsd": null,
+      "frequencyMonths": null,
+      "condition": "Combined travel and application fee credits; verify exact per-program amount and renewal cadence before approving"
+    }
+  ]
+}

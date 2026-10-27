@@ -1,0 +1,33 @@
+{
+  "id": "citi-aadvantage-mileup",
+  "name": "American Airlines AAdvantage MileUp",
+  "issuer": "Citi",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "American Airlines miles without annual fee. Exact earning terms are pending a detailed issuer agreement review.",
+  "primaryLabel": "American Airlines miles without annual fee; check current issuer program terms.",
+  "feeSummary": "$0 annual fee",
+  "annualFeeUsd": 0,
+  "rewards": [
+    "miles"
+  ],
+  "categories": [
+    "travel"
+  ],
+  "features": [
+    "airline"
+  ],
+  "plainEnglish": "This card is associated with american airlines miles without annual fee. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.citi.com/credit-cards/",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "American Airlines AAdvantage MileUp is a airline credit card candidate from Citi. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "miles",
+  "earnRules": [],
+  "benefits": []
+}

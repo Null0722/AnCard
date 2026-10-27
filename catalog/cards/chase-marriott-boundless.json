@@ -1,0 +1,31 @@
+{
+  "id": "chase-marriott-boundless",
+  "name": "Marriott Bonvoy Boundless",
+  "issuer": "Chase",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "Marriott hotel points and travel. Exact earning terms are pending a detailed issuer agreement review.",
+  "primaryLabel": "Marriott hotel points and travel; check current issuer program terms.",
+  "feeSummary": "Annual fee: needs issuer agreement review",
+  "annualFeeUsd": null,
+  "rewards": [
+    "points"
+  ],
+  "categories": [
+    "travel"
+  ],
+  "features": [],
+  "plainEnglish": "This card is associated with marriott hotel points and travel. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "Marriott Bonvoy Boundless is a hotel credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "points",
+  "earnRules": [],
+  "benefits": []
+}

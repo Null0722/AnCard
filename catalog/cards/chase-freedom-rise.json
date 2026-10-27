@@ -1,0 +1,51 @@
+{
+  "id": "chase-freedom-rise",
+  "name": "Chase Freedom Rise",
+  "issuer": "Chase",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "1.5% base cash back; introductory 3% dining under spending and time limits.",
+  "primaryLabel": "1.5% base cash back; introductory 3% dining under spending and time limits.",
+  "feeSummary": "$0 annual fee",
+  "annualFeeUsd": 0,
+  "rewards": [
+    "cash_back"
+  ],
+  "categories": [],
+  "features": [],
+  "plainEnglish": "1.5% base cash back; introductory 3% dining under spending and time limits.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://creditcards.chase.com/cash-back-credit-cards/freedom/rise",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "Chase Freedom Rise is a cash back credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "flat",
+  "earnRules": [
+    {
+      "label": "Base eligible purchases",
+      "rate": 1.5,
+      "unit": "percent"
+    },
+    {
+      "label": "Introductory dining",
+      "rate": 3,
+      "unit": "percent",
+      "capAmountUsd": 6000,
+      "capPeriod": "First six months",
+      "condition": "Limited-time new-cardmember offer"
+    }
+  ],
+  "benefits": [
+    {
+      "name": "Automatic payment setup credit",
+      "type": "statement_credit",
+      "amountUsd": 25,
+      "frequencyMonths": null,
+      "condition": "Enroll in eligible autopay within first 3 months and remain enrolled at least 90 days"
+    }
+  ]
+}

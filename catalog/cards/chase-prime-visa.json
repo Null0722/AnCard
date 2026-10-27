@@ -1,0 +1,41 @@
+{
+  "id": "chase-prime-visa",
+  "name": "Prime Visa",
+  "issuer": "Chase",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "5% Amazon and eligible Whole Foods with qualifying Prime membership.",
+  "primaryLabel": "5% Amazon and eligible Whole Foods with qualifying Prime membership.",
+  "feeSummary": "$0 annual fee",
+  "annualFeeUsd": 0,
+  "rewards": [
+    "cash_back"
+  ],
+  "categories": [],
+  "features": [],
+  "plainEnglish": "5% Amazon and eligible Whole Foods with qualifying Prime membership.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://creditcards.chase.com/cash-back-credit-cards/amazon-prime-rewards",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "Prime Visa is a cash back credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "flat",
+  "earnRules": [
+    {
+      "label": "Amazon, Whole Foods and eligible Chase Travel with Prime",
+      "rate": 5,
+      "unit": "percent",
+      "condition": "Eligible Prime membership required"
+    },
+    {
+      "label": "Gas, dining and eligible transit",
+      "rate": 2,
+      "unit": "percent"
+    }
+  ],
+  "benefits": []
+}

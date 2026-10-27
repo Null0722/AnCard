@@ -1,0 +1,31 @@
+{
+  "id": "wells-attune",
+  "name": "Wells Fargo Attune World Elite Mastercard",
+  "issuer": "Wells Fargo",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "Lifestyle, wellness and sustainable spending rewards. Exact earning terms are pending a detailed issuer agreement review.",
+  "primaryLabel": "Lifestyle, wellness and sustainable spending rewards; check current issuer program terms.",
+  "feeSummary": "Annual fee: needs issuer agreement review",
+  "annualFeeUsd": null,
+  "rewards": [
+    "cash_back"
+  ],
+  "categories": [
+    "lifestyle"
+  ],
+  "features": [],
+  "plainEnglish": "This card is associated with lifestyle, wellness and sustainable spending rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.wellsfargo.com/credit-cards/agreements/",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "Wells Fargo Attune World Elite Mastercard is a lifestyle credit card candidate from Wells Fargo. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "cash_back",
+  "earnRules": [],
+  "benefits": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cap-ventureone",
+  "name": "Capital One VentureOne Rewards",
+  "issuer": "Capital One",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "1.25X miles on eligible purchases.",
+  "primaryLabel": "1.25X miles on eligible purchases.",
+  "feeSummary": "$0 annual fee",
+  "annualFeeUsd": 0,
+  "rewards": [
+    "miles"
+  ],
+  "categories": [
+    "travel"
+  ],
+  "features": [],
+  "plainEnglish": "1.25X miles on eligible purchases.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "Capital One VentureOne Rewards is a travel credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "miles",
+  "earnRules": [
+    {
+      "label": "All eligible purchases",
+      "rate": 1.25,
+      "unit": "x"
+    }
+  ],
+  "benefits": []
+}
