@@ -34,7 +34,7 @@ const node = (tag, className, text) => {
   return el;
 };
 
-const labels = {cash_back:'Cash back',points:'Points',miles:'Miles',groceries:'Groceries',travel:'Travel',dining:'Dining',online:'Online',gas:'Gas & transit',lifestyle:'Lifestyle'};
+const labels = {cash_back:'Cash back',points:'Points',miles:'Miles',groceries:'Groceries',travel:'Travel',dining:'Dining',online:'Online',gas:'Gas & transit',lifestyle:'Lifestyle',airline:'Airline card'};
 
 function activeFilters() {
   const picked = {rewards:[],categories:[],features:[]};
@@ -56,7 +56,7 @@ function makeCard(card) {
   const article=node('article','card-row');
   article.append(createCardArt(card));
   const info=node('div','card-info');info.append(node('h4','',card.name),node('div','card-meta',`${card.issuer} · ${card.status==='pending_review'?'Pending human review':(card.status==='demo'?'Fictional example':'Human QC approved')}`),node('p','card-desc',card.summary));
-  const tags=node('div','card-tags');[...card.rewards,...card.categories].slice(0,3).forEach(t=>tags.append(node('span','',labels[t]??t)));info.append(tags);article.append(info);
+  const tags=node('div','card-tags');[...card.rewards,...card.categories,...card.features.filter(v=>v==='airline')].slice(0,3).forEach(t=>tags.append(node('span','',labels[t]??t)));info.append(tags);article.append(info);
   const terms=node('div','card-term');terms.append(node('strong','',card.primaryLabel),node('span','',card.feeSummary));article.append(terms);
   const actions=node('div','card-actions');const detail=node('button','link-button','Decode terms ↗');detail.type='button';detail.dataset.detail=card.id;const compare=node('button','compare-button',compared.has(card.id)?'✓ Added':'＋ Compare');compare.type='button';compare.dataset.compare=card.id;compare.setAttribute('aria-pressed',String(compared.has(card.id)));
   const verified=node('span','card-verification',card.humanVerified?'Human QC approved':'Pending human review');actions.append(detail,compare,verified);article.append(actions);return article;
