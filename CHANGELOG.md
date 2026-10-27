@@ -2,6 +2,18 @@
 
 All meaningful website changes are documented here and in Git history. Entries should state **what changed**, **why**, **files/components affected**, **verification**, and **what is next**. Most recent changes first. Do not silently rewrite prior decisions; add a new dated entry instead.
 
+## 2026-10-27: Market-informed Decode Terms and new QC proposal fields
+
+- Reviewed first-party issuer materials, CFPB credit/rewards/ability-to-pay guidance, consumer.gov card comparison advice and the 2025 J.D. Power credit-card satisfaction research.
+- Added six expandable Decoder sections and a larger plain-English glossary, covering public and targeted welcome bonuses, CPP and redemption examples, introductory APRs, opening limits, income and obligations, Global Entry and other conditional perks.
+- Added evidence-backed proposed welcome bonus requirements for seven products. No card was automatically approved.
+- Added optional schema fields for issuer credit-level descriptions, no-preset spending limit caveats, sourced redemption examples and introductory purchase APR terms.
+- Expanded three-card comparisons in both directory and dashboard to present terms without a recommendation ranking.
+- Updated the centralized review queue and readable owner sheet; missing approval-score/limit information remains explicitly unknown.
+- Existing user-marked human approvals were preserved for records not materially changed. All new offer examples remain pending.
+- No ads, profiles, consumer financial information collection, third-party tracking or application lead-generation were added.
+- CI, browser keyboard focus and mobile readability must be verified before merging.
+
 ## 2026-10-27: Automatic publishing on human QC edits
 
 - Added a GitHub Actions workflow that compiles and validates the public catalog and review sheet after main-branch edits to the owner QC queue or individual card records.

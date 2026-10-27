@@ -65,3 +65,7 @@ All **100 cards** now appear as identity-only placeholders on the public directo
 ## GitHub auto publishing after approval
 
 After this workflow is enabled, save a Boolean approval change directly to the **main branch** in GitHub. The `Publish reviewed card data` workflow uses a least-privilege GitHub Actions token to rebuild and commit the public catalog and review sheet, then requests a GitHub Pages rebuild. If validation fails because the source record and QC candidate differ, no card detail is published. A successful Actions run is required before assuming the live Pages content updated. A PR can still be used for review; PRs must commit generated artifacts with the change before merging.
+
+## Additional offer, redemption and credit guidance fields
+
+The review queue now includes per-card public signup offers, targeted and invitation-only offer notes, cents-per-point examples by redemption method, introductory APR descriptions and issuer credit-level statements where a primary source was checked. A published public offer is not a guarantee. Review the minimum spend, time window, eligibility history and application channel before approving. Do not enter a typical approved credit score or opening limit from online anecdotes. If the issuer has no documented figures, keep them null and let the educational decoder explain individual underwriting. Editing any of these fields requires a renewed approval.

@@ -87,6 +87,12 @@ AnCard does not rank cards or recommend "top" products. The growing inventory is
 
 The stack remains static HTML, CSS, JavaScript and JSON on GitHub Pages with no visitor profiles or persistence.
 
+## Decoder v0.6.0: terms people actually compare
+
+AnCard now decodes six areas on every card: product overview, welcome/targeted/invitation-only offers, borrowing costs, earning and redemption values, credit history/starting limits, and travel/lifestyle protections. General explanations work even while a card is pending human QC; specific offer amounts, APR details and redemption values are shown only once approved.
+
+The first issuer-backed proposals cover seven welcome offers, four evidence-based redemption/credit guidance records and a small set of intro APR descriptions. This does **not** imply those values are guaranteed, and the remaining cards retain explicit unknowns. See [market review](project/MARKET-REVIEW.md), [decoder field model](project/DECODER-V2.md), [review sheet](catalog/REVIEW-SHEET.md) and [human approval queue](catalog/HUMAN-QC.json).
+
 ## Optional official card images
 
 Card imagery is **off by default**. The directory and dashboard render a typography-based badge without third-party image requests. If a visitor explicitly enables “Show official card art,” the browser then requests verified front-card image URLs from the issuer or its CDN. This can disclose an IP address and browser metadata to that issuer; AnCard sets `referrerPolicy=no-referrer` and does not save the toggle. Images not yet sourced retain a badge, even when enabled. Nine records currently have issuer-sourced image URLs. Images and hotlink permissions still require live-browser verification before release. See [image opt-in policy](project/ART-OPTIN.md).

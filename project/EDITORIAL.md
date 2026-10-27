@@ -40,3 +40,7 @@ Every card in the review queue has a `reviewStage` of `research` or `directory`.
 ## Human QC coverage policy, October 2026
 
 Directory-stage and research-stage identities may both appear as placeholders to aid navigation, but financial terms are released only when the `humanVerified` flag is true and the entire candidate fingerprint matches. Source checks are not a substitute for full issuer agreement review. If a reviewer previously approved a card but the researched fee/rate is corrected, reset approval to false and document the change. The Aer Lingus correction provides an example of this safeguard.
+
+## Expanded card terms and risk of misleading qualification
+
+Never assign a likely approved credit score or introductory credit line from aspirational marketing. An issuer's qualitative label (for example, "Excellent") is not a numerical threshold. Opening credit limits depend on income/assets, outstanding obligations, credit history and issuer underwriting. Show public and personalized bonus offers separately, including whether an offer is an "as high as" ceiling, the minimum spend and the application window. All benefit values should be dated and conditioned. Cardholder scores, income and spending are neither requested nor stored by AnCard.
