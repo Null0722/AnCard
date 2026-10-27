@@ -971,43 +971,6 @@
       "reviewedBy": ""
     },
     {
-      "id": "atlas-everyday-cash",
-      "name": "Everyday Cash",
-      "issuer": "Atlas Demo",
-      "humanVerified": false,
-      "candidate": {
-        "summary": "See how grocery and dining rewards can work, including eligibility conditions and category caps.",
-        "annualFeeUsd": 0,
-        "feeSummary": "Illustrative: $0 annual fee",
-        "primaryLabel": "Cash-back rewards",
-        "plainEnglish": "Cash-back cards return a portion of eligible purchases. The category where you shop can affect how much you earn.",
-        "watchOut": "Some issuers cap bonus rewards or exclude certain merchants, even when they sell groceries or food.",
-        "limitations": "Demo terms only: no actual rewards percentage, offer, APR or issuer agreement is represented.",
-        "rewards": [
-          "cash_back"
-        ],
-        "categories": [
-          "groceries",
-          "dining"
-        ],
-        "features": [],
-        "issuerSource": null,
-        "verifiedAt": null,
-        "verificationLevel": "selected-issuer-page-facts",
-        "airlineProgram": null,
-        "additionalSources": [],
-        "imageFront": null,
-        "accessType": "public",
-        "bio": null,
-        "rewardStructure": null,
-        "earnRules": [],
-        "benefits": [],
-        "monthlyFeeUsd": null
-      },
-      "reviewNotes": "",
-      "reviewedBy": ""
-    },
-    {
       "id": "amex-hilton",
       "name": "Hilton Honors American Express",
       "issuer": "American Express",
@@ -1205,44 +1168,6 @@
         "accessType": "public",
         "bio": "Marriott Bonvoy Brilliant American Express is a hotel credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
         "rewardStructure": "points",
-        "earnRules": [],
-        "benefits": [],
-        "monthlyFeeUsd": null
-      },
-      "reviewNotes": "",
-      "reviewedBy": ""
-    },
-    {
-      "id": "bluebird-open-skies",
-      "name": "Open Skies",
-      "issuer": "Bluebird Demo",
-      "humanVerified": false,
-      "candidate": {
-        "summary": "Understand points, airline redemption rules and which travel perks come with restrictions.",
-        "annualFeeUsd": 95,
-        "feeSummary": "Illustrative: $95 annual fee",
-        "primaryLabel": "Travel miles",
-        "plainEnglish": "Travel cards may earn miles or points that can be used in different ways. Redemption value depends on program rules.",
-        "watchOut": "Award availability, transfer ratios, blackout policies and annual fees can affect the real value of rewards.",
-        "limitations": "Fictional program; no actual airline, points valuation or booking benefit is promised.",
-        "rewards": [
-          "miles",
-          "points"
-        ],
-        "categories": [
-          "travel",
-          "dining"
-        ],
-        "features": [],
-        "issuerSource": null,
-        "verifiedAt": null,
-        "verificationLevel": "selected-issuer-page-facts",
-        "airlineProgram": null,
-        "additionalSources": [],
-        "imageFront": null,
-        "accessType": "public",
-        "bio": null,
-        "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
         "monthlyFeeUsd": null
