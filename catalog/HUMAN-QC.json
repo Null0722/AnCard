@@ -1477,8 +1477,8 @@
         "additionalSources": [],
         "imageFront": null,
         "accessType": "public",
-        "bio": "Citi Custom Cash is a cash back credit card candidate from Citi. AnCard keeps its terms under human review before displaying its financial details.",
-        "rewardStructure": "selectable",
+        "bio": "Citi Custom Cash automatically rewards the highest eligible spending category each billing cycle. The qualifying category and spending cap must be checked.",
+        "rewardStructure": "automatic_top_category",
         "earnRules": [],
         "benefits": [],
         "monthlyFeeUsd": null
@@ -3081,17 +3081,17 @@
       "issuer": "TD Bank",
       "humanVerified": false,
       "candidate": {
-        "summary": "No purchase interest; $10 monthly membership fee.",
-        "annualFeeUsd": null,
-        "feeSummary": "Annual fee: needs issuer agreement review",
-        "primaryLabel": "No purchase interest; $10 monthly membership fee.",
-        "plainEnglish": "No purchase interest; $10 monthly membership fee.",
+        "summary": "No purchase interest; $10 monthly membership fee charged whether or not the card is used",
+        "annualFeeUsd": 0,
+        "feeSummary": "No annual fee; $10 monthly membership fee ($120 in 12 months)",
+        "primaryLabel": "No purchase interest; $10 monthly membership fee charged whether or not the card is used",
+        "plainEnglish": "No purchase interest; $10 monthly membership fee charged whether or not the card is used",
         "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
         "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
         "rewards": [],
         "categories": [],
         "features": [],
-        "issuerSource": "https://www.td.com/us/en/personal-banking/credit-cards",
+        "issuerSource": "https://www.td.com/us/en/personal-banking/credit-cards/clear",
         "verifiedAt": "2026-10-27",
         "verificationLevel": "selected-issuer-page-facts",
         "airlineProgram": null,
@@ -3101,8 +3101,16 @@
         "bio": "TD Clear with $1,000 Credit Limit is a financing credit card candidate from TD Bank. AnCard keeps its terms under human review before displaying its financial details.",
         "rewardStructure": "none",
         "earnRules": [],
-        "benefits": [],
-        "monthlyFeeUsd": null
+        "benefits": [
+          {
+            "name": "Cell phone protection",
+            "type": "cell_protection",
+            "amountUsd": null,
+            "frequencyMonths": null,
+            "condition": "Coverage eligibility and limits depend on TD's benefit guide"
+          }
+        ],
+        "monthlyFeeUsd": 10
       },
       "reviewNotes": "",
       "reviewedBy": "",

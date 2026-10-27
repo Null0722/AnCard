@@ -22,8 +22,8 @@
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Citi Custom Cash is a cash back credit card candidate from Citi. AnCard keeps its terms under human review before displaying its financial details.",
-  "rewardStructure": "selectable",
+  "bio": "Citi Custom Cash automatically rewards the highest eligible spending category each billing cycle. The qualifying category and spending cap must be checked.",
+  "rewardStructure": "automatic_top_category",
   "earnRules": [],
   "benefits": []
 }

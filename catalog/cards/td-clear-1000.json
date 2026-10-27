@@ -5,23 +5,32 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "No purchase interest; $10 monthly membership fee.",
-  "primaryLabel": "No purchase interest; $10 monthly membership fee.",
-  "feeSummary": "Annual fee: needs issuer agreement review",
-  "annualFeeUsd": null,
+  "summary": "No purchase interest; $10 monthly membership fee charged whether or not the card is used",
+  "primaryLabel": "No purchase interest; $10 monthly membership fee charged whether or not the card is used",
+  "feeSummary": "No annual fee; $10 monthly membership fee ($120 in 12 months)",
+  "annualFeeUsd": 0,
   "rewards": [],
   "categories": [],
   "features": [],
-  "plainEnglish": "No purchase interest; $10 monthly membership fee.",
+  "plainEnglish": "No purchase interest; $10 monthly membership fee charged whether or not the card is used",
   "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
   "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.td.com/us/en/personal-banking/credit-cards",
+  "issuerSource": "https://www.td.com/us/en/personal-banking/credit-cards/clear",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
   "bio": "TD Clear with $1,000 Credit Limit is a financing credit card candidate from TD Bank. AnCard keeps its terms under human review before displaying its financial details.",
   "rewardStructure": "none",
   "earnRules": [],
-  "benefits": []
+  "benefits": [
+    {
+      "name": "Cell phone protection",
+      "type": "cell_protection",
+      "amountUsd": null,
+      "frequencyMonths": null,
+      "condition": "Coverage eligibility and limits depend on TD's benefit guide"
+    }
+  ],
+  "monthlyFeeUsd": 10
 }
