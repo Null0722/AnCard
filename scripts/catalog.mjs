@@ -29,6 +29,16 @@ function validate(c,filename){
   if(c.monthlyFeeUsd!==undefined&&c.monthlyFeeUsd!==null&&(!Number.isFinite(c.monthlyFeeUsd)||c.monthlyFeeUsd<0))fail(filename,'monthlyFeeUsd must be non-negative or null');
   if(c.earnRules!==undefined&&!Array.isArray(c.earnRules))fail(filename,'earnRules must be a list');
   if(c.benefits!==undefined&&!Array.isArray(c.benefits))fail(filename,'benefits must be a list');
+  if(c.welcomeOffer!==undefined&&c.welcomeOffer!==null){
+    const offer=c.welcomeOffer;
+    if(!['fixed','up_to'].includes(offer.kind)||!Number.isFinite(offer.amount)||offer.amount<0||!['usd','miles','points'].includes(offer.unit)
+      ||!Number.isFinite(offer.minimumSpendUsd)||offer.minimumSpendUsd<0||!Number.isInteger(offer.monthsToEarn)||offer.monthsToEarn<1
+      ||!/^https:\/\//.test(offer.source)||!/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(offer.observedAt))fail(filename,'malformed welcomeOffer');
+  }
+  if(c.approvalGuidance!==undefined&&c.approvalGuidance!==null&&typeof c.approvalGuidance!=='object')fail(filename,'approvalGuidance must be an object');
+  if(c.redemptionDetail!==undefined&&c.redemptionDetail!==null){
+    if(!Array.isArray(c.redemptionDetail.examples)||!c.redemptionDetail.examples.every(x=>typeof x.method==='string'&&Number.isFinite(x.centsPerPoint)&&x.centsPerPoint>=0))fail(filename,'invalid documented redemption example');
+  }
   if(c.status==='published'){
     if(c.fictional!==false)fail(filename,'published cards cannot be fictional');
     if(typeof c.verifiedAt!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(c.verifiedAt)||!Number.isFinite(Date.parse(c.verifiedAt))||c.verifiedAt>new Date().toISOString().slice(0,10))fail(filename,'published cards require valid, nonfuture verifiedAt');

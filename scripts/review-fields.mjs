@@ -4,5 +4,7 @@ export function candidateFrom(c){
   watchOut:c.watchOut,limitations:c.limitations,rewards:c.rewards,categories:c.categories,features:c.features,
   issuerSource:c.issuerSource,verifiedAt:c.verifiedAt,verificationLevel:c.verificationLevel??'selected-issuer-page-facts',
   airlineProgram:c.airlineProgram??null,additionalSources:c.additionalSources??[],imageFront:c.imageFront??null,accessType:c.accessType??'public',
-  bio:c.bio??null,rewardStructure:c.rewardStructure??null,earnRules:c.earnRules??[],benefits:c.benefits??[],monthlyFeeUsd:c.monthlyFeeUsd??null};
+  bio:c.bio??null,rewardStructure:c.rewardStructure??null,earnRules:c.earnRules??[],benefits:c.benefits??[],monthlyFeeUsd:c.monthlyFeeUsd??null,
+  welcomeOffer:c.welcomeOffer??null,targetedOffers:c.targetedOffers??null,inviteOnlyOffer:c.inviteOnlyOffer??null,
+  redemptionDetail:c.redemptionDetail??null,approvalGuidance:c.approvalGuidance??null,pricingDetail:c.pricingDetail??null};
 }
