@@ -44,7 +44,7 @@ The repository includes an early, working **static-site prototype** with:
 - A disclosure-first entry flow and our soft-dark “Clear Atlas” visual direction.
 - Client-side category filters and neutral sorting.
 - A plain-language decoder, card detail views and side-by-side comparison.
-- 41 established directory identities and additional unpublished research-only card candidates. Every financial benefit must pass human approval before appearing publicly.
+- 100 searchable card identities across 10 institutions, with every financial claim subject to explicit human QC. Every financial benefit must pass human approval before appearing publicly.
 - A Git-versioned card catalog and a build-time validation script.
 
 **Important:** All 41 cards start as identity-only placeholders. Proposed fees, rewards, restrictions and sources are available for your review in `catalog/HUMAN-QC.json`, but no unapproved financial claims are published.
@@ -81,7 +81,7 @@ AnCard does not rank cards or recommend "top" products. The growing inventory is
 
 - Open the [searchable human QC review sheet](catalog/REVIEW-SHEET.md) to inspect proposed annual and monthly fees, earning structures, category caps, statement credits, Global Entry / TSA PreCheck reimbursements, and other restrictions.
 - Review the underlying official issuer documentation, then flip the card's `humanVerified` boolean in [HUMAN-QC.json](catalog/HUMAN-QC.json).
-- The 59 newly researched cards **do not appear on the public site at all until approved**. The earlier 41 directory identities remain available as privacy-safe placeholders without unapproved financial details.
+- The 59 additional research candidates now **appear in the public directory as identity-only, human-review-pending placeholders**. Fees, earning rates, bonuses and perks remain hidden until approval. All 100 directory identities are visible as privacy-safe placeholders without unapproved financial details.
 - Each approved card may then display structured reward categories, rate multipliers, spending caps, travel credits and terms through the **Decode terms** view and neutral comparison table.
 - The circular progress display counts human-approved research records against the full internal review queue. It does not score, rank or endorse any card.
 
@@ -148,3 +148,9 @@ The static website is designed to be served from `main` → `/docs` using **GitH
 ---
 
 **AnCard's goal isn't to choose a card for you. It's to give you the clarity to choose for yourself.**
+
+## Source-backed review fields, October 27, 2026
+
+The prefilled owner queue includes proposed annual and monthly fees, earn rates per eligible dollar, category conditions, quarterly or yearly spend caps, transfer-related caveats, rewards-model labels and quantified benefits where issuer sources support them. Unknown or changing values remain unverified, rather than being represented as zero. The 59 latest additions include 53 annual-fee values and 37 structured earning-rule records. These counts describe populated fields, **not 53 fully audited agreements**.
+
+All 100 card names are now exposed as unranked, alphabetical directory identities. Every card is marked `Pending human review` until its specific `humanVerified` value is true and its proposal matches the underlying record. Corrected Aer Lingus data requires another human approval. Editing the JSON alone does not automatically regenerate GitHub Pages output; see the build instructions in the owner QC guide.

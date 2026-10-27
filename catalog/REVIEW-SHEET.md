@@ -4,7 +4,7 @@
 
 This is a generated READ-ONLY view. Review proposed terms and change approval in [HUMAN-QC.json](HUMAN-QC.json).
 
-**Review progress:** 0 of 100 entries human approved. Research-only entries are not added to the public directory until approved.
+**Review progress:** 0 of 100 entries human approved. Unapproved financial details remain hidden from the public directory.
 
 ## Aer Lingus Visa Signature
 
