@@ -42,7 +42,7 @@
     <section class="browse" id="catalog" aria-labelledby="catalog-title">
       <div class="section-heading">
         <div><p class="eyebrow">THE CARD LIBRARY, UNCOMPLICATED</p><h2 id="catalog-title">Find a place to start</h2></div>
-        <span class="quiet-tag">ISSUER-SOURCED SNAPSHOT • OCT 2026</span>
+        <span class="quiet-tag">HUMAN REVIEW IN PROGRESS</span>
       </div>
       <div class="topic-filters" role="group" aria-label="Quick category filters">
         <button type="button" class="topic-chip" data-quick="cash_back" aria-pressed="false">◈ &nbsp; Cash back</button>
@@ -51,6 +51,7 @@
         <button type="button" class="topic-chip" data-quick="groceries" aria-pressed="false">▤ &nbsp; Grocery</button>
         <button type="button" class="topic-chip" data-quick="online" aria-pressed="false">▣ &nbsp; Online</button>
         <button type="button" class="topic-chip" data-quick="lifestyle" aria-pressed="false">◇ &nbsp; Lifestyle</button>
+        <button type="button" class="topic-chip" data-quick="airline" aria-pressed="false">✈ &nbsp; Airline cards</button>
       </div>
       <div class="catalog-layout">
         <div class="mobile-filters"><button type="button" id="toggle-filters" aria-expanded="false" aria-controls="filter-panel">☷ &nbsp; Refine filters <span aria-hidden="true">⌄</span></button></div>
@@ -73,6 +74,7 @@
             <label><input type="checkbox" data-facet="features" value="no_annual_fee"> No annual fee</label>
             <label><input type="checkbox" data-facet="features" value="secured"> Secured</label>
             <label><input type="checkbox" data-facet="features" value="student"> Student</label>
+            <label><input type="checkbox" data-facet="features" value="airline"> Airline cards</label>
           </fieldset>
           <div class="filter-foot"><button type="button" class="text-button" id="clear-filters">Clear all</button><span>Nothing is saved</span></div>
         </aside>
@@ -82,7 +84,7 @@
             <label class="sort-label">Sort <select id="sort-by"><option value="name">Card name A–Z</option><option value="issuer">Issuer A–Z</option><option value="fee">Annual fee: low to high</option></select></label>
           </div>
           <div class="art-optin"><label><input type="checkbox" id="show-art"> Show official card art</label><p>Off by default. Enabling images sends requests to the issuing banks or their CDNs. It may disclose your IP address and browser metadata. This choice lasts only until you leave or reload this page. Missing artwork stays a text badge.</p></div>
-          <div class="preview-banner" role="note"><strong>Source-checked directory, not financial advice.</strong> Selected facts are verified against linked issuer and network sources as of October 27, 2026; APRs, promotional rates and some fees remain unverified. Always read the full current issuer disclosures.</div>
+          <div class="preview-banner" role="note"><strong>Only human-reviewed details are displayed.</strong> All new cards start as placeholders. Fees, earning rates, and benefits appear only after review against issuer documentation. Until then, use the official issuer source for current information.</div>
           <div id="card-results" class="card-results" aria-live="off"></div>
           <div class="trust-strip"><span><strong>Independent by design.</strong> No quizzes, hidden recommendation scores or sponsored ranking.</span><a href="#methodology">Our methodology ↗</a></div>
         </div>
@@ -99,19 +101,19 @@
     </section>
 
     <section class="governance" id="methodology" aria-labelledby="method-title">
-      <div><p class="eyebrow">THE WAY WE WORK</p><h2 id="method-title">Verified, not guessed.</h2><p>Our catalog is designed to favor clear documentation over a long list of offers. Listings are based on dated issuer sources and are reviewed for selected facts. Full agreements, pricing, and card art may still require additional verification.</p></div>
+      <div><p class="eyebrow">THE WAY WE WORK</p><h2 id="method-title">Verified, not guessed.</h2><p>Our catalog is designed to favor clear documentation over a long list of offers. The catalog uses a human verification gate: proposed terms are hidden until manually confirmed; changing card details revokes approval until reviewed again.</p></div>
       <div class="governance-items"><div><span>01 / Sources</span><p>Issuer pages and card agreements take priority over marketing summaries. Every real listing will link to its source.</p></div><div><span>02 / Ordering</span><p>Alphabetical and factual sort options only. Filters use your selections; no hidden suitability score.</p></div><div><span>03 / Corrections</span><p>Outdated or disputed listings can be withdrawn without erasing the internal change history.</p></div><div><span>04 / Funding</span><p>No card referral commissions. Future contextual ads or donations must be disclosed and must not influence listings.</p></div></div>
     </section>
 
     <section class="legal-grid" aria-label="Privacy and terms">
       <article id="privacy"><h2>Privacy pledge</h2><p>AnCard does not ask for an account or collect your card-filter choices. Filtering and comparisons run in your browser memory; we do not use analytics, cookies or third-party advertising scripts in this MVP. GitHub Pages, our hosting provider, records visitor IP addresses for security purposes. We cannot claim that visiting the site creates no network logs.</p></article>
-      <article id="terms"><h2>Important notices</h2><p>This website is educational, not personalized financial, credit, legal or tax advice. Card terms change, and issuer agreements govern. Eligibility and approval decisions belong to issuers. Listings are limited, dated issuer-source snapshots, not full card-agreement audits. No application or affiliate links are included. Always verify real card information directly with the issuer before acting.</p></article>
+      <article id="terms"><h2>Important notices</h2><p>This website is educational, not personalized financial, credit, legal or tax advice. Card terms change, and issuer agreements govern. Eligibility and approval decisions belong to issuers. Unreviewed records display placeholders. Even after review, the issuer agreement governs fees, APRs and rewards. No application or affiliate links are included. Always verify real card information directly with the issuer before acting.</p></article>
     </section>
   </main>
   <footer class="site-footer"><div class="shell footer-inner"><span>an/card <span class="footer-detail">— Know more. Choose for yourself.</span></span><span>Made for clarity, not clicks. <a href="#top">Back to top ↑</a></span></div></footer>
 
   <div id="compare-bar" class="compare-bar" hidden><span id="compare-label">0 of 3 cards selected</span><div class="compare-actions"><button type="button" class="text-button" id="clear-compare">Clear</button><button type="button" class="small-primary" id="show-compare">Compare selected →</button></div></div>
   <div class="dialog-backdrop" id="details-backdrop" hidden><section class="detail-dialog" role="dialog" aria-modal="true" aria-labelledby="detail-title"><div class="dialog-head"><p class="eyebrow">UNDERSTAND THE TERMS</p><button class="close-button" type="button" data-close aria-label="Close details">×</button></div><h2 id="detail-title"></h2><p id="detail-subtitle" class="muted"></p><div id="detail-body"></div><button type="button" class="small-primary" data-close>Return to cards</button></section></div>
-  <div class="dialog-backdrop" id="trust-backdrop" hidden><section class="trust-dialog" role="dialog" aria-modal="true" aria-labelledby="trust-title"><span class="welcome-mark">an<span>/</span>card.</span><p class="eyebrow">BEFORE YOU EXPLORE</p><h2 id="trust-title">The cards are yours to choose.</h2><p>Our job is to explain their terms, not steer you toward a paid placement. No accounts, referral commissions or stored filter profiles.</p><p>We may eventually use clearly disclosed contextual ads or accept donations. Neither can influence our listings. Our host processes technical request logs, including IP addresses, for security.</p><p class="trust-important">This is an educational directory, not financial advice. Current real-card listings contain selected source-checked terms, not complete pricing or eligibility reviews.</p><button type="button" class="primary-button" id="enter-site">I understand — explore AnCard →</button><p class="trust-small">Acknowledgment is not permission for tracking. Nothing is saved; this notice reappears on reload.</p></section></div>
+  <div class="dialog-backdrop" id="trust-backdrop" hidden><section class="trust-dialog" role="dialog" aria-modal="true" aria-labelledby="trust-title"><span class="welcome-mark">an<span>/</span>card.</span><p class="eyebrow">BEFORE YOU EXPLORE</p><h2 id="trust-title">The cards are yours to choose.</h2><p>Our job is to explain their terms, not steer you toward a paid placement. No accounts, referral commissions or stored filter profiles.</p><p>We may eventually use clearly disclosed contextual ads or accept donations. Neither can influence our listings. Our host processes technical request logs, including IP addresses, for security.</p><p class="trust-important">This is an educational directory, not financial advice. Unapproved card information stays hidden until a human confirms the proposed facts.</p><button type="button" class="primary-button" id="enter-site">I understand — explore AnCard →</button><p class="trust-small">Acknowledgment is not permission for tracking. Nothing is saved; this notice reappears on reload.</p></section></div>
 </body>
 </html>
