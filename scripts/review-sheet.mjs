@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Build a readable research review sheet from the canonical owner QC queue.
+// Regenerate an unranked, readable proposal review sheet from the owner QC queue.
 import {readFile,writeFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
@@ -7,47 +7,53 @@ const root=resolve(fileURLToPath(new URL('..',import.meta.url)));
 const input=resolve(root,'catalog/HUMAN-QC.json');
 const output=resolve(root,'catalog/REVIEW-SHEET.md');
 const args=new Set(process.argv.slice(2));
-const qc=JSON.parse(await readFile(input,'utf8'));
-const toText=value=>String(value??'Not supplied').replace(/\s+/g,' ').trim().replaceAll('|','\\|');
-function report(qc){
- const lines=[
-  '# AnCard Human QC review sheet',
-  '',
-  'Research proposals only. This file is generated for convenient reading. Approval changes belong in [HUMAN-QC.json](HUMAN-QC.json), not here.',
-  '',
-  'To review a card: press Ctrl+F, search its name, compare every proposed term with the official issuer agreement, and then edit the matching humanVerified flag in HUMAN-QC.json.',
-  '',
-  'Current queue: '+qc.cards.length+' cards. Human approved: '+qc.cards.filter(c=>c.humanVerified).length+'. Pending: '+qc.cards.filter(c=>!c.humanVerified).length+'.',
-  ''
- ];
- for(const e of qc.cards){
+const fmt=v=>String(v??"Not verified").replace(/\s+/g," ").trim().replaceAll("|","\\|");
+const earn=r=>{
+ const label=fmt(r.label||"Earning rate");
+ const rate=typeof r.rate==="number"?(r.unit==="percent"?r.rate+"%":r.rate+"X"):"Rate not verified";
+ const cap=typeof r.capAmountUsd==="number"?" | Eligible spend cap: $"+r.capAmountUsd.toLocaleString()+(r.capPeriod?" per "+r.capPeriod:""):"";
+ return "- "+label+": "+rate+cap+(r.condition?" | "+fmt(r.condition):"");
+};
+const perk=p=>{
+ const quant=typeof p.amountUsd==="number"?"Up to $"+p.amountUsd.toLocaleString():"Amount not quantified";
+ const period=typeof p.frequencyMonths==="number"&&p.frequencyMonths>0?" | every "+p.frequencyMonths+" months":"";
+ return "- "+fmt(p.name)+": "+quant+period+(p.condition?" | "+fmt(p.condition):"");
+};
+function report(q){
+ const n=q.cards.filter(e=>e.humanVerified).length;
+ const lines=["# AnCard human QC review sheet","","**Unranked research inventory. No card is recommended or ranked in this file.**","","This is a generated READ-ONLY view. Review proposed terms and change approval in [HUMAN-QC.json](HUMAN-QC.json).","","**Review progress:** "+n+" of "+q.cards.length+" entries human approved. Research-only entries are not added to the public directory until approved.",""];
+ for(const e of q.cards){
   const c=e.candidate||{};
-  lines.push('## '+toText(e.name),'',
-   '- **Issuer:** '+toText(e.issuer),
-   '- **ID:** '+toText(e.id),
-   '- **QC status:** '+(e.humanVerified?'APPROVED (true)':'PENDING (false)'),
-   '- **Proposed annual fee:** '+toText(c.feeSummary),
-   '- **Proposed rewards and benefits:** '+toText(c.primaryLabel),
-   '- **Important restrictions:** '+toText(c.watchOut),
-   '- **Additional limitations:** '+toText(c.limitations),
-   '- **Reward types:** '+toText((c.rewards||[]).join(', ')||'Not specified'),
-   '- **Spending categories:** '+toText((c.categories||[]).join(', ')||'Not specified'),
-   '- **Source checked date:** '+toText(c.verifiedAt),
-   '- **Official issuer source:** '+(c.issuerSource?'[Open issuer disclosures]('+c.issuerSource+')':'Not supplied'),
-   '- **Reviewer:** '+toText(e.reviewedBy||'Not assigned'),
-   '- **Review notes:** '+toText(e.reviewNotes||'None'),
-   '',
-   "To approve after verifying all facts, change the matching card's humanVerified flag in [HUMAN-QC.json](HUMAN-QC.json) and rebuild.",
-   '',
-   '---',
-   ''
-  );
+  lines.push("## "+fmt(e.name),"",
+  "**Issuer:** "+fmt(e.issuer)+" | **Review status:** "+(e.humanVerified?"APPROVED":"PENDING")+" | **Stage:** "+(e.reviewStage==="research"?"Backend research, not publicly listed":"Established directory identity"),"",
+  "- **Annual fee proposal:** "+fmt(c.feeSummary),
+  "- **Monthly membership fee:** "+(typeof c.monthlyFeeUsd==="number"?"$"+c.monthlyFeeUsd+" per month":"Not verified / not applicable"),
+  "- **Rewards model:** "+fmt(c.rewardStructure||"Not classified"),
+  "- **Proposed headline:** "+fmt(c.primaryLabel),
+  "- **Card bio:** "+fmt(c.bio||c.summary),
+  "- **Spending categories:** "+fmt((c.categories||[]).join(", ")||"Not verified"),
+  "- **Restrictions:** "+fmt(c.watchOut),
+  "- **Additional limitations:** "+fmt(c.limitations),
+  "",
+  "### Proposed earning rates and caps","");
+  const rules=c.earnRules||[];lines.push(...(rules.length?rules.map(earn):["No quantified earning rules recorded. Verify the official agreement."]),"",
+  "### Proposed benefits and credits","");
+  const perks=c.benefits||[];lines.push(...(perks.length?perks.map(perk):["No quantified extra benefits recorded. This does not mean the card has none."]),"",
+  "**Issuer source:** "+(c.issuerSource?"[Official issuer reference]("+c.issuerSource+")":"Not supplied"),
+  "**Source snapshot date:** "+fmt(c.verifiedAt),
+  "**Reviewer notes:** "+fmt(e.reviewNotes||"None"),
+  "**Reviewer:** "+fmt(e.reviewedBy||"Unassigned"),"",
+  "To approve after verifying all claims, edit the matching `humanVerified` boolean in [HUMAN-QC.json](HUMAN-QC.json) and rebuild.","","---","");
  }
- return lines.join('\n')+'\n';
+ return lines.join("\n")+"\n";
 }
-const generated=report(qc);
+const qc=JSON.parse(await readFile(input,'utf8'));
+const content=report(qc);
 if(args.has('--check')){
- const previous=await readFile(output,'utf8').catch(()=>null);
- if(previous!==generated){console.error('Review sheet is out of date. Run npm run build.');process.exitCode=1;}
- else console.log('Readable QC review sheet validated.');
-}else{await writeFile(output,generated);console.log('Generated '+qc.cards.length+' readable card review entries.');}
+ const existing=await readFile(output,'utf8').catch(()=>null);
+ if(content!==existing){console.error('Card review sheet out of date. Run npm run build');process.exitCode=1;}
+ else console.log('Unranked review sheet validated.');
+}else{
+ await writeFile(output,content);
+ console.log('Generated review sheet for '+qc.cards.length+' unranked card research records.');
+}
