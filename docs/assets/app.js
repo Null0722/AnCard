@@ -86,7 +86,7 @@ function showDetails(card) {
 }
 function showComparison() {
   const chosen=cards.filter(c=>compared.has(c.id));if(!chosen.length)return;
-  $('#detail-title').textContent='Compare your selections';$('#detail-subtitle').textContent='Neutral side-by-side information — no rankings, scores, or winning card.';
+  $('#detail-title').textContent='Compare your selections';$('#detail-subtitle').textContent='Neutral side-by-side information  -  no rankings, scores, or winning card.';
   const body=$('#detail-body');body.replaceChildren();const table=node('table','comparison-table');const thead=node('thead');const head=node('tr');head.append(node('th','','Attribute'));
   chosen.forEach(c=>head.append(node('th','',c.name)));thead.append(head);table.append(thead);
   const tbody=node('tbody');[['Rewards',c=>c.humanVerified?c.rewards.map(v=>labels[v]).join(', ')||'Not specified':'Pending review'],['Categories',c=>c.humanVerified?c.categories.map(v=>labels[v]).join(', ')||'Not specified':'Pending review'],['Annual fee',c=>!c.humanVerified?'Pending review':c.annualFeeUsd===null?'Unspecified':c.annualFeeUsd===0?'$0':`$${c.annualFeeUsd}`],['Important limit',c=>c.limitations],['Verification',c=>c.humanVerified?'Human QC approved':'Pending review']].forEach(([title,value])=>{const tr=node('tr');tr.append(node('th','',title));chosen.forEach(c=>tr.append(node('td','',value(c))));tbody.append(tr);});table.append(tbody);body.append(table,node('p','dialog-note','Every comparison value comes directly from the published card records. Check the current issuer agreement; this source snapshot does not cover every term.'));
