@@ -325,7 +325,7 @@ catalogEl.addEventListener('click',event=>{
  if(compare){const id=compare.dataset.compare;if(compared.has(id))compared.delete(id);else if(compared.size<3)compared.add(id);else{showComparison();return;}render();return;}
  if(target.closest('[data-flip]')){flipCard(article,true);return;}
  if(target.closest('[data-unflip]')){flipCard(article,false);return;}
- if(!target.closest('button,a,input,select,summary'))flipCard(article,!article.classList.contains('is-flipped'));
+ if(!article.classList.contains('is-flipped')&&!target.closest('button,a,input,select,summary'))flipCard(article,true);
 });
 $('#clear-compare').addEventListener('click',()=>{compared.clear();render();});
 $('#show-compare').addEventListener('click',showComparison);

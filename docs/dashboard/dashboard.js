@@ -100,7 +100,12 @@ function render(){
    const label=text('label',' Compare','dash-compare-check');
    const cb=document.createElement('input');cb.type='checkbox';cb.checked=selected.has(c.id);cb.disabled=!cb.checked&&selected.size>=3;
    cb.setAttribute('aria-label','Compare '+c.name);
-   cb.addEventListener('change',()=>{if(cb.checked)selected.add(c.id);else selected.delete(c.id);render();});
+   cb.addEventListener('change',()=>{
+     if(cb.checked)selected.add(c.id);else selected.delete(c.id);
+     render();
+     const next=[...results.querySelectorAll('.dashboard-product')].find(item=>item.dataset.cardId===c.id);
+     next?.querySelector('.dash-compare-check input')?.focus({preventScroll:true});
+   });
    label.prepend(cb);bar.append(flipBtn,label);front.append(bar);
    back.append(text('div','AT A GLANCE','flip-back-eyebrow'),text('h3',c.name,'flip-back-title'));
    const facts=text('div','');facts.className='flip-back-details';
@@ -141,7 +146,7 @@ results.addEventListener('click',event=>{
  if(!article)return;
  if(event.target.closest('[data-back]')){setFlip(article,true);return;}
  if(event.target.closest('[data-front]')){setFlip(article,false);return;}
- if(!event.target.closest('button,a,input,label,select'))setFlip(article,!article.classList.contains('is-flipped'));
+ if(!article.classList.contains('is-flipped')&&!event.target.closest('button,a,input,label,select'))setFlip(article,true);
 });
 fetch('../data/cards.json',{cache:'no-store'}).then(resp=>{if(!resp.ok)throw new Error('Catalog could not load');return resp.json();}).then(data=>{
  cards=Array.isArray(data.cards)?data.cards.filter(c=>c && ['published','pending_review'].includes(c.status) && c.fictional===false):[];
