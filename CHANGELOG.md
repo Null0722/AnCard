@@ -5,7 +5,7 @@ All meaningful website changes are documented here and in Git history. Entries s
 ## 2026-10-27: Generated data check for approval-only pull requests
 
 - Diagnosed PR CI failing after an approval-flag edit because the review sheet and static catalog differed from committed generated outputs.
-- Existing `main` already includes Aer Lingus approval, its source-checked $95 fee and 3X/2X/1X proposal, and a matching 1/100 review count. The referenced PR #12 is not currently accessible via the repository PR API.
+- Existing `main` already includes Aer Lingus approval, its source-checked $95 fee and 3X/2X/1X proposal, and a matching 1/100 review count. The submitted failure log displayed outdated, ungenerated Aer Lingus details, while the current main branch already holds synchronized approved terms.
 - Added a narrow, tested CI exception only for same-repository PRs changing `humanVerified` from `false` to `true` and no other source fields or paths.
 - Approval revocations, new financial claims, record edits and mixed PRs continue to require committed regenerated static files.
 - The existing publishing workflow on `main` remains responsible for committing human-reviewed public records and triggering Pages builds.
