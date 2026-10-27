@@ -69,3 +69,11 @@ After this workflow is enabled, save a Boolean approval change directly to the *
 ## Additional offer, redemption and credit guidance fields
 
 The review queue now includes per-card public signup offers, targeted and invitation-only offer notes, cents-per-point examples by redemption method, introductory APR descriptions and issuer credit-level statements where a primary source was checked. A published public offer is not a guarantee. Review the minimum spend, time window, eligibility history and application channel before approving. Do not enter a typical approved credit score or opening limit from online anecdotes. If the issuer has no documented figures, keep them null and let the educational decoder explain individual underwriting. Editing any of these fields requires a renewed approval.
+
+## Approve-only pull requests without manual generated-file commits
+
+A PR that changes **only** one or more `humanVerified` flags from `false` to `true` in `catalog/HUMAN-QC.json` is now allowed to pass the generated-artifact check after compiling and validating the proposal. The workflow verifies that no other JSON fields, file paths or card terms have changed. When that PR merges into `main`, the existing `Publish reviewed card data` action generates and commits both public artifacts and requests the GitHub Pages rebuild.
+
+If you modify any candidate details, revoke an approval (`true` to `false`), change additional files, or correct a card source, you **must** run `npm run build && npm test` and commit `docs/data/cards.json` and `catalog/REVIEW-SHEET.md` in the PR. That prevents a revoked card's previously approved details from remaining in the committed public feed.
+
+This fixes the common PR CI failure caused by a one-line approval change while keeping the editorial data-consistency checks. If GitHub Actions is disabled or cannot push, check `Publish reviewed card data` and the subsequent Pages deployment before assuming a new approval is visible.
