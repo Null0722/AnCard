@@ -71,6 +71,10 @@ The card directory and comparison dashboard provide a fast **search by issuer, c
 
 Catalog tests also verify that unapproved monetary and reward details are absent from public JSON and that em dashes have not been introduced into the repository.
 
+## Easier card review
+
+For a more readable view than raw JSON, open the [generated card review sheet](catalog/REVIEW-SHEET.md). Each card has a searchable heading with proposed annual fees, rewards, restrictions, and an issuer source link. The sheet is read-only and generated from the approval queue. **To change approval, edit [HUMAN-QC.json](catalog/HUMAN-QC.json)**, then run `npm run build && npm test` and commit both generated outputs.
+
 ## Optional official card images
 
 Card imagery is **off by default**. The directory and dashboard render a typography-based badge without third-party image requests. If a visitor explicitly enables “Show official card art,” the browser then requests verified front-card image URLs from the issuer or its CDN. This can disclose an IP address and browser metadata to that issuer; AnCard sets `referrerPolicy=no-referrer` and does not save the toggle. Images not yet sourced retain a badge, even when enabled. Nine records currently have issuer-sourced image URLs. Images and hotlink permissions still require live-browser verification before release. See [image opt-in policy](project/ART-OPTIN.md).

@@ -47,3 +47,7 @@ The card art switch is independent and defaults off. Turning it on may contact i
 ## Stale approval safeguards
 
 The candidate snapshot includes the public summary, all proposed annual-fee and reward terms, source references, access classification, and card-art metadata. If any of those source fields changes, `npm run build` fails until `npm run qc:sync` resets the changed card to `humanVerified: false`. This prevents the public summary from changing without an explicit second review.
+
+## Readable alternative
+
+For card-by-card reading, use [REVIEW-SHEET.md](../catalog/REVIEW-SHEET.md). It presents each proposal as a labeled section with its issuer, benefits, annual fee and source links. This document is generated and must not be edited directly. Make all approvals and corrections in the JSON queue and canonical card files, then run the build.

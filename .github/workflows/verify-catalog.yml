@@ -36,4 +36,4 @@ jobs:
       - name: Run catalog and JavaScript checks
         run: npm test
       - name: Verify generated static data is committed
-        run: git diff --exit-code -- docs/data/cards.json
+        run: git diff --exit-code -- docs/data/cards.json catalog/REVIEW-SHEET.md

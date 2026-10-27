@@ -2,6 +2,13 @@
 
 All meaningful website changes are documented here and in Git history. Entries should state **what changed**, **why**, **files/components affected**, **verification**, and **what is next**. Most recent changes first. Do not silently rewrite prior decisions; add a new dated entry instead.
 
+## 2026-10-27: Readable human QC reference
+
+- Added a generated [card review sheet](catalog/REVIEW-SHEET.md) with a searchable section for each card's proposed annual fee, benefits, limitations, source and QC status.
+- Retained `catalog/HUMAN-QC.json` as the only approval control; the Markdown sheet is a read-only view.
+- Updated the dependency-free build and CI tests to verify that the review sheet stays synchronized with the JSON queue.
+- Added quick access to the review sheet in README and the owner QC guide.
+
 ## 2026-10-27: Maintenance and usability pass
 
 - Fixed the catalog build ordering bug caused by sorting .json filenames rather than canonical card IDs. The fix was committed to main and its GitHub Actions validation passed.
