@@ -88,6 +88,10 @@ Then open **http://localhost:8080**. A local HTTP server is needed because the c
 
 The validator checks file structure and required publication metadata; it cannot replace independent human verification of financial terms.
 
+## Discovery dashboard and banking research
+
+A separate, privacy-first [discovery dashboard](docs/dashboard/) is being developed to support explicit card filtering and factual comparisons. Current records are fictional examples. Planned checking, savings, relationship-tier and invite-only research is documented in [the ten-institution source register](project/TOP10-RESEARCH.md) and [modular catalog model](project/CATALOG-V2.md); it is not yet a verified public banking directory.
+
 ## Where we're going
 
 Our immediate priorities are to **verify a small set of real credit cards against official issuer terms**, improve term-by-term explanations, complete accessibility and browser QA, and strengthen the editorial review process. Future features should preserve the same principles: no unnecessary data collection, no opaque recommendation logic, and no incentives hidden from visitors.
