@@ -9,7 +9,7 @@ Required fields: `id`, `name`, `issuer`, `status`, `fictional`, `tone`, `summary
 ## Publishing an actual credit card
 
 1. Read the official current issuer product page and card agreement. Do not copy marketing text or depend on an aggregator as the sole source.
-2. Write plain-English descriptions of APR rules, fees, reward caps, restrictions, and marketing disclosures. Verify each required fact and record any data not supplied as unknown—not zero.
+2. Write plain-English descriptions of APR rules, fees, reward caps, restrictions, and marketing disclosures. Verify each required fact and record any data not supplied as unknown - not zero.
 3. Set `fictional` to `false`, `status` to `review`, fill in the clean HTTPS issuer source link and verification date. The published URL cannot contain query parameters or fragments.
 4. Have an independent reviewer check the source and copy against the terms. Only then change `status` to `published`.
 5. Run `npm run build && npm test`. Commit changes including generated catalog and a dated `CHANGELOG.md` entry. Merge after PR review.
@@ -21,13 +21,13 @@ Required fields: `id`, `name`, `issuer`, `status`, `fictional`, `tone`, `summary
 
 Archiving preserves the card's source record and Git history while removing it from the public catalog. Corrections should state the affected record and source date in the change log. Do not add third-party analytics, pixels, affiliate URLs or browser storage without a new documented privacy review.
 
-## 2026-10-27 — Source snapshots and opt-in artwork
+## 2026-10-27  -  Source snapshots and opt-in artwork
 
 The 28-card initial research cohort records **selected source-checked details**, not a claim of full agreement verification. Values not confirmed are null/unknown; promotional APRs, card fees and restrictions must not be inferred. All published records have a source page and date; those alone are not an independent full-document audit. The old fictional records stay in Git but no longer compile into the public catalog.
 
 External card-front art must have an exact issuer/CDN URL, source metadata, and no referral parameters. It is **never loaded until the visitor opts in**. Before full consumer launch, recheck image rights and URLs, independent terms and all unverified mandatory fields.
 
-## v0.3.0 — Human QC gate
+## v0.3.0  -  Human QC gate
 
 Open `catalog/HUMAN-QC.json`, Ctrl+F the card name, read the pre-filled proposed annual fee, rewards and restrictions, and open the official `issuerSource`. Read the pricing/benefits agreement and confirm each claim. If the source record changes, run `npm run qc:sync` to reconcile and **reset any changed card to false**. Only after checking the candidate fields should a reviewer set `humanVerified:true`. Run `npm run build && npm test`, and commit the queue and regenerated `docs/data/cards.json` together. The build rejects mismatched review snapshots. Never bulk-approve unverified cards.
 

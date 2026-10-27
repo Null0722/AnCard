@@ -1,4 +1,4 @@
-# AnCard — Modular Financial Product Catalog v2 (design contract)
+# AnCard  -  Modular Financial Product Catalog v2 (design contract)
 
 Status: proposed, development branch. This does not replace the currently published v1 credit-card JSON records until reviewed and migrated.
 

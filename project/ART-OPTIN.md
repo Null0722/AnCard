@@ -1,4 +1,4 @@
-# AnCard — Show Card Art Privacy Pattern
+# AnCard  -  Show Card Art Privacy Pattern
 
 Decision: **OFF by default** on both the directory and dashboard. The text badge and terms render without loading issuer-hosted imagery. In the version-controlled catalog, `imageFront` may include `url`, `sourcePage`, and `alt`. If null, no card image is sourced and the badge persists.
 

@@ -21,7 +21,7 @@ Each record contains `name`, `issuer`, the switch `"humanVerified": false`, and 
 }
 ```
 
-*Abbreviated display of a proposed entry — open the full record for every condition and supporting source. No proposal is human-verified yet.*
+*Abbreviated display of a proposed entry  -  open the full record for every condition and supporting source. No proposal is human-verified yet.*
 
 ## Your review checklist
 
