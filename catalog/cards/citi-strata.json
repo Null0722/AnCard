@@ -1,0 +1,30 @@
+{
+  "id": "citi-strata",
+  "name": "Citi Strata",
+  "issuer": "Citi",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "3X supermarkets, gas/EV, transit and one self-select category; 2X dining",
+  "primaryLabel": "3X supermarkets, gas/EV, transit and one self-select category; 2X dining",
+  "feeSummary": "$0 annual fee",
+  "annualFeeUsd": 0,
+  "rewards": [
+    "points"
+  ],
+  "categories": [
+    "groceries",
+    "gas",
+    "dining",
+    "lifestyle"
+  ],
+  "features": [],
+  "plainEnglish": "3X supermarkets, gas/EV, transit and one self-select category; 2X dining",
+  "watchOut": "Self-select 3X applies only to listed categories; redemption values vary",
+  "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.citi.com/credit-cards/citi-strata-credit-card",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public"
+}

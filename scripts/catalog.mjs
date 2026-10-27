@@ -28,12 +28,20 @@ function validate(c,filename){
     if(c.fictional!==false)fail(filename,'published cards cannot be fictional');
     if(typeof c.verifiedAt!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(c.verifiedAt)||!Number.isFinite(Date.parse(c.verifiedAt))||c.verifiedAt>new Date().toISOString().slice(0,10))fail(filename,'published cards require valid, nonfuture verifiedAt');
     try {const url=new URL(c.issuerSource);if(url.protocol!=='https:'||url.username||url.password||url.search||url.hash||!url.hostname.includes('.'))throw new Error('Invalid source');}catch{fail(filename,'published cards require a clean HTTPS issuerSource with no query, fragment or credentials');}
+    if(c.verificationLevel!=='selected-issuer-page-facts')fail(filename,'published cards must identify verification scope');
+    if(c.imageFront!==null && c.imageFront!==undefined){
+      const image=c.imageFront;
+      if(typeof image.alt!=='string'||!image.alt.trim()||typeof image.url!=='string')fail(filename,'invalid image metadata');
+      const host=new URL(image.url).hostname;
+      const approved={"Chase":["creditcards.chase.com"],"Capital One":["ecm.capitalone.com"],"U.S. Bank":["www.usbank.com"]};
+      if(!approved[c.issuer]?.includes(host)||!image.url.startsWith('https://')||new URL(image.url).search)fail(filename,'card art requires reviewed official host and clean https URL');
+    }
   }else if(c.status==='demo' && c.fictional!==true){fail(filename,'demo cards must be explicitly fictional');}
   if(c.status==='demo' && (c.issuerSource!==null || c.verifiedAt!==null))fail(filename,'demo cards cannot claim an issuer source or verification');
 }
 const filenames=(await readdir(source)).filter(name=>name.endsWith('.json')).sort();
 const cards=[];const ids=new Set();
-for(const filename of filenames){const card=JSON.parse(await readFile(resolve(source,filename),'utf8'));validate(card,filename);if(ids.has(card.id))fail(filename,'duplicate id');ids.add(card.id);if(['demo','published'].includes(card.status))cards.push(card);}
+for(const filename of filenames){const card=JSON.parse(await readFile(resolve(source,filename),'utf8'));validate(card,filename);if(ids.has(card.id))fail(filename,'duplicate id');ids.add(card.id);if(card.status==='published')cards.push(card);}
 const output=JSON.stringify({schemaVersion:1,cards},null,2)+'\n';
 if(args.has('--check')) {const existing=await readFile(target,'utf8').catch(()=>null);if(existing!==output){console.error('Public catalog is out of date. Run: npm run build');process.exitCode=1;}else console.log(`Catalog validated: ${filenames.length} records, ${cards.length} public.`);}
 else {await writeFile(target,output);console.log(`Compiled ${cards.length} public cards from ${filenames.length} records.`);}

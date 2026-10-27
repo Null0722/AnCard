@@ -2,155 +2,814 @@
   "schemaVersion": 1,
   "cards": [
     {
-      "id": "atlas-everyday-cash",
-      "name": "Everyday Cash",
-      "issuer": "Atlas Demo",
-      "status": "demo",
-      "fictional": true,
-      "tone": "blue",
-      "summary": "See how grocery and dining rewards can work, including eligibility conditions and category caps.",
-      "primaryLabel": "Cash-back rewards",
-      "feeSummary": "Illustrative: $0 annual fee",
+      "id": "amex-blue-cash-everyday",
+      "name": "Blue Cash Everyday",
+      "issuer": "American Express",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "3% at eligible U.S. supermarkets, gas stations and online retail",
+      "primaryLabel": "3% at eligible U.S. supermarkets, gas stations and online retail",
+      "feeSummary": "$0 annual fee",
       "annualFeeUsd": 0,
       "rewards": [
         "cash_back"
       ],
       "categories": [
         "groceries",
-        "dining"
+        "gas",
+        "online"
       ],
       "features": [],
-      "plainEnglish": "Cash-back cards return a portion of eligible purchases. The category where you shop can affect how much you earn.",
-      "watchOut": "Some issuers cap bonus rewards or exclude certain merchants, even when they sell groceries or food.",
-      "limitations": "Demo terms only: no actual rewards percentage, offer, APR or issuer agreement is represented.",
-      "verifiedAt": null,
-      "issuerSource": null
+      "plainEnglish": "3% at eligible U.S. supermarkets, gas stations and online retail",
+      "watchOut": "Each category has its own $6,000 annual cap, then earns 1%",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://global.americanexpress.com/card-benefits/detail/blue-cash-everyday-321/blue-cash-everyday/",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": null,
+      "accessType": "public"
     },
     {
-      "id": "bluebird-open-skies",
-      "name": "Open Skies",
-      "issuer": "Bluebird Demo",
-      "status": "demo",
-      "fictional": true,
-      "tone": "sand",
-      "summary": "Understand points, airline redemption rules and which travel perks come with restrictions.",
-      "primaryLabel": "Travel miles",
-      "feeSummary": "Illustrative: $95 annual fee",
+      "id": "amex-blue-cash-preferred",
+      "name": "Blue Cash Preferred",
+      "issuer": "American Express",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "6% U.S. supermarkets (first $6,000/year) and select streaming; 3% gas/transit",
+      "primaryLabel": "6% U.S. supermarkets (first $6,000/year) and select streaming; 3% gas/transit",
+      "feeSummary": "$95 annual fee",
       "annualFeeUsd": 95,
       "rewards": [
-        "miles",
+        "cash_back"
+      ],
+      "categories": [
+        "groceries",
+        "gas",
+        "lifestyle"
+      ],
+      "features": [],
+      "plainEnglish": "6% U.S. supermarkets (first $6,000/year) and select streaming; 3% gas/transit",
+      "watchOut": "$0 introductory annual fee in year one, then $95; supermarket rate capped",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.americanexpress.com/us/credit-cards/",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": null,
+      "accessType": "public"
+    },
+    {
+      "id": "amex-platinum",
+      "name": "American Express Platinum",
+      "issuer": "American Express",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "5X points on qualifying flights and prepaid hotels booked through Amex Travel",
+      "primaryLabel": "5X points on qualifying flights and prepaid hotels booked through Amex Travel",
+      "feeSummary": "Annual fee: not verified",
+      "annualFeeUsd": null,
+      "rewards": [
         "points"
       ],
       "categories": [
-        "travel",
-        "dining"
+        "travel"
       ],
       "features": [],
-      "plainEnglish": "Travel cards may earn miles or points that can be used in different ways. Redemption value depends on program rules.",
-      "watchOut": "Award availability, transfer ratios, blackout policies and annual fees can affect the real value of rewards.",
-      "limitations": "Fictional program; no actual airline, points valuation or booking benefit is promised.",
-      "verifiedAt": null,
-      "issuerSource": null
+      "plainEnglish": "5X points on qualifying flights and prepaid hotels booked through Amex Travel",
+      "watchOut": "5X is subject to booking limits; statement credits and lounge access have separate rules",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.americanexpress.com/us/credit-cards/",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": null,
+      "accessType": "public"
     },
     {
-      "id": "cedar-campus-compass",
-      "name": "Campus Compass",
-      "issuer": "Cedar Demo",
-      "status": "demo",
-      "fictional": true,
+      "id": "boa-bankamericard",
+      "name": "BankAmericard",
+      "issuer": "Bank of America",
+      "status": "published",
+      "fictional": false,
       "tone": "slate",
-      "summary": "Explore student-card conditions and the rules that affect everyday dining and transit rewards.",
-      "primaryLabel": "Student card",
-      "feeSummary": "Illustrative: $0 annual fee",
+      "summary": "0% introductory APR on qualifying purchases and transfers for 21 billing cycles",
+      "primaryLabel": "0% introductory APR on qualifying purchases and transfers for 21 billing cycles",
+      "feeSummary": "$0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [],
+      "categories": [],
+      "features": [],
+      "plainEnglish": "0% introductory APR on qualifying purchases and transfers for 21 billing cycles",
+      "watchOut": "Transfers must occur within 60 days and incur a 5% fee",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.bankofamerica.com/credit-cards/products/bankamericard-credit-card/",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": null,
+      "accessType": "public"
+    },
+    {
+      "id": "boa-customized-cash",
+      "name": "Bank of America Customized Cash Rewards",
+      "issuer": "Bank of America",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "6% choice-category reward for the first year; 3% thereafter",
+      "primaryLabel": "6% choice-category reward for the first year; 3% thereafter",
+      "feeSummary": "$0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [
+        "cash_back"
+      ],
+      "categories": [
+        "groceries",
+        "online",
+        "dining",
+        "gas",
+        "travel"
+      ],
+      "features": [],
+      "plainEnglish": "6% choice-category reward for the first year; 3% thereafter",
+      "watchOut": "Choice and grocery categories share a quarterly $2,500 cap, then base rate",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.bankofamerica.com/credit-cards/",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": null,
+      "accessType": "public"
+    },
+    {
+      "id": "boa-unlimited-cash",
+      "name": "Bank of America Unlimited Cash Rewards",
+      "issuer": "Bank of America",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "Unlimited 1.5% cash back",
+      "primaryLabel": "Unlimited 1.5% cash back",
+      "feeSummary": "$0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [
+        "cash_back"
+      ],
+      "categories": [],
+      "features": [],
+      "plainEnglish": "Unlimited 1.5% cash back",
+      "watchOut": "Additional relationship bonuses require qualifying banking balances",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.bankofamerica.com/credit-cards/",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": null,
+      "accessType": "public"
+    },
+    {
+      "id": "cap-quicksilver",
+      "name": "Capital One Quicksilver Rewards",
+      "issuer": "Capital One",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "1.5% cash back on eligible purchases",
+      "primaryLabel": "1.5% cash back on eligible purchases",
+      "feeSummary": "$0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [
+        "cash_back"
+      ],
+      "categories": [],
+      "features": [],
+      "plainEnglish": "1.5% cash back on eligible purchases",
+      "watchOut": "Promotional offers and eligible purchase exclusions apply",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.capitalone.com/credit-cards/",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": {
+        "url": "https://ecm.capitalone.com/WCM/card/products/quicksilver_cardart.png",
+        "sourcePage": "https://www.capitalone.com/credit-cards/",
+        "alt": "Official front-facing product image of Capital One Quicksilver Rewards"
+      },
+      "accessType": "public"
+    },
+    {
+      "id": "cap-savor",
+      "name": "Capital One Savor Rewards",
+      "issuer": "Capital One",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "3% cash back on groceries, dining and eligible entertainment",
+      "primaryLabel": "3% cash back on groceries, dining and eligible entertainment",
+      "feeSummary": "$0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [
+        "cash_back"
+      ],
+      "categories": [
+        "groceries",
+        "dining",
+        "lifestyle"
+      ],
+      "features": [],
+      "plainEnglish": "3% cash back on groceries, dining and eligible entertainment",
+      "watchOut": "Some superstores and warehouse clubs do not qualify as groceries",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.capitalone.com/credit-cards/",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": {
+        "url": "https://ecm.capitalone.com/WCM/card/products/new-savor-card-art/mobile.png",
+        "sourcePage": "https://www.capitalone.com/credit-cards/",
+        "alt": "Official front-facing product image of Capital One Savor Rewards"
+      },
+      "accessType": "public"
+    },
+    {
+      "id": "cap-venture",
+      "name": "Capital One Venture Rewards",
+      "issuer": "Capital One",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "2X miles on eligible purchases",
+      "primaryLabel": "2X miles on eligible purchases",
+      "feeSummary": "$95 annual fee",
+      "annualFeeUsd": 95,
+      "rewards": [
+        "miles"
+      ],
+      "categories": [
+        "travel"
+      ],
+      "features": [],
+      "plainEnglish": "2X miles on eligible purchases",
+      "watchOut": "Redemption value varies; travel benefits and promotional offers have conditions",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.capitalone.com/credit-cards/",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": {
+        "url": "https://ecm.capitalone.com/WCM/card/products/venture_cardart_prim_323x203-1/mobile.png",
+        "sourcePage": "https://www.capitalone.com/credit-cards/",
+        "alt": "Official front-facing product image of Capital One Venture Rewards"
+      },
+      "accessType": "public"
+    },
+    {
+      "id": "chase-freedom-flex",
+      "name": "Chase Freedom Flex",
+      "issuer": "Chase",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "5% cash back in activated rotating categories",
+      "primaryLabel": "5% cash back in activated rotating categories",
+      "feeSummary": "$0 annual fee",
       "annualFeeUsd": 0,
       "rewards": [
         "cash_back"
       ],
       "categories": [
         "dining",
-        "gas"
+        "travel"
       ],
-      "features": [
-        "student"
-      ],
-      "plainEnglish": "Student cards may have eligibility requirements tied to enrollment or credit history, and rewards can vary by transaction type.",
-      "watchOut": "Being a student does not guarantee approval. Verify issuer eligibility requirements and any intro rate expiration.",
-      "limitations": "Demo only, with no actual student eligibility or rewards terms.",
-      "verifiedAt": null,
-      "issuerSource": null
+      "features": [],
+      "plainEnglish": "5% cash back in activated rotating categories",
+      "watchOut": "Quarterly activation and a combined $1,500 bonus-category spending limit apply",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://creditcards.chase.com/",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": {
+        "url": "https://creditcards.chase.com/content/dam/jpmc-marketplace/card-art/freedom-flex-2026.png",
+        "sourcePage": "https://creditcards.chase.com/check-for-preapproved-offers",
+        "alt": "Official front-facing card image of Chase Freedom Flex"
+      },
+      "accessType": "public"
     },
     {
-      "id": "clarity-starter-secured",
-      "name": "Starter Secured",
-      "issuer": "Clarity Demo",
-      "status": "demo",
-      "fictional": true,
-      "tone": "berry",
-      "summary": "Learn how a refundable deposit may relate to credit limits, billing and possible upgrades.",
-      "primaryLabel": "Secured card",
-      "feeSummary": "Illustrative: $0 annual fee",
-      "annualFeeUsd": 0,
-      "rewards": [],
-      "categories": [],
-      "features": [
-        "secured"
-      ],
-      "plainEnglish": "A secured credit card usually requires a cash deposit that may help establish a credit line. It is not the same as a prepaid card.",
-      "watchOut": "Review whether the issuer reports to credit bureaus and the rules for refunds, upgrades, late fees and closure.",
-      "limitations": "This example does not specify an actual minimum deposit or credit eligibility rules.",
-      "verifiedAt": null,
-      "issuerSource": null
-    },
-    {
-      "id": "north-online-plus",
-      "name": "Online Plus",
-      "issuer": "North Demo",
-      "status": "demo",
-      "fictional": true,
-      "tone": "green",
-      "summary": "Decode online shopping categories, subscription credits and the limits behind bonus rewards.",
-      "primaryLabel": "Online cash back",
-      "feeSummary": "Illustrative: $0 annual fee",
+      "id": "chase-freedom-unlimited",
+      "name": "Chase Freedom Unlimited",
+      "issuer": "Chase",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "1.5% base cash back; 3% dining/drugstores; 5% Chase Travel",
+      "primaryLabel": "1.5% base cash back; 3% dining/drugstores; 5% Chase Travel",
+      "feeSummary": "$0 annual fee",
       "annualFeeUsd": 0,
       "rewards": [
         "cash_back"
       ],
       "categories": [
-        "online",
-        "lifestyle"
+        "dining",
+        "travel"
       ],
       "features": [],
-      "plainEnglish": "Some card programs give extra rewards for qualifying digital purchases. What counts as online may vary by merchant coding.",
-      "watchOut": "Subscriptions and digital wallets may not always qualify; credits can require enrollment and expire.",
-      "limitations": "Fictional terms only, with no guaranteed digital-shopping coverage or reward rate.",
-      "verifiedAt": null,
-      "issuerSource": null
+      "plainEnglish": "1.5% base cash back; 3% dining/drugstores; 5% Chase Travel",
+      "watchOut": "Enhanced rates have merchant and booking eligibility rules",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.chase.com/personal/credit-cards/freedom/unlimited",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": {
+        "url": "https://creditcards.chase.com/content/dam/jpmc-marketplace/card-art/freedom%20unlimited-banner.png",
+        "sourcePage": "https://creditcards.chase.com/check-for-preapproved-offers",
+        "alt": "Official front-facing card image of Chase Freedom Unlimited"
+      },
+      "accessType": "public"
     },
     {
-      "id": "willow-everyday-points",
-      "name": "Everyday Points",
-      "issuer": "Willow Demo",
-      "status": "demo",
-      "fictional": true,
-      "tone": "green",
-      "summary": "Understand flexible points and how grocery, travel and entertainment spending may earn rewards.",
-      "primaryLabel": "Flexible points",
-      "feeSummary": "Illustrative: $49 annual fee",
-      "annualFeeUsd": 49,
+      "id": "chase-sapphire-preferred",
+      "name": "Chase Sapphire Preferred",
+      "issuer": "Chase",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "5X points on eligible Chase Travel bookings",
+      "primaryLabel": "5X points on eligible Chase Travel bookings",
+      "feeSummary": "$95 annual fee",
+      "annualFeeUsd": 95,
+      "rewards": [
+        "points"
+      ],
+      "categories": [
+        "travel",
+        "dining"
+      ],
+      "features": [],
+      "plainEnglish": "5X points on eligible Chase Travel bookings",
+      "watchOut": "Reward earning and redemption depend on specific issuer rules",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://creditcards.chase.com/",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": {
+        "url": "https://creditcards.chase.com/content/dam/jpmc-marketplace/card-art/sapphire_preferred_card.png",
+        "sourcePage": "https://creditcards.chase.com/check-for-preapproved-offers",
+        "alt": "Official front-facing card image of Chase Sapphire Preferred"
+      },
+      "accessType": "public"
+    },
+    {
+      "id": "citi-double-cash",
+      "name": "Citi Double Cash",
+      "issuer": "Citi",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "2% total cash back equivalent: 1% buying, 1% paying",
+      "primaryLabel": "2% total cash back equivalent: 1% buying, 1% paying",
+      "feeSummary": "$0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [
+        "cash_back"
+      ],
+      "categories": [],
+      "features": [],
+      "plainEnglish": "2% total cash back equivalent: 1% buying, 1% paying",
+      "watchOut": "The second 1% depends on qualifying payment; rewards use ThankYou Points",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.citi.com/credit-cards/",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": null,
+      "accessType": "public"
+    },
+    {
+      "id": "citi-strata",
+      "name": "Citi Strata",
+      "issuer": "Citi",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "3X supermarkets, gas/EV, transit and one self-select category; 2X dining",
+      "primaryLabel": "3X supermarkets, gas/EV, transit and one self-select category; 2X dining",
+      "feeSummary": "$0 annual fee",
+      "annualFeeUsd": 0,
       "rewards": [
         "points"
       ],
       "categories": [
         "groceries",
+        "gas",
+        "dining",
+        "lifestyle"
+      ],
+      "features": [],
+      "plainEnglish": "3X supermarkets, gas/EV, transit and one self-select category; 2X dining",
+      "watchOut": "Self-select 3X applies only to listed categories; redemption values vary",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.citi.com/credit-cards/citi-strata-credit-card",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": null,
+      "accessType": "public"
+    },
+    {
+      "id": "citi-strata-premier",
+      "name": "Citi Strata Premier",
+      "issuer": "Citi",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "3X dining, supermarkets, gas/EV and airfare; 10X eligible Citi Travel",
+      "primaryLabel": "3X dining, supermarkets, gas/EV and airfare; 10X eligible Citi Travel",
+      "feeSummary": "Annual fee: not verified",
+      "annualFeeUsd": null,
+      "rewards": [
+        "points"
+      ],
+      "categories": [
+        "groceries",
+        "gas",
+        "dining",
+        "travel"
+      ],
+      "features": [],
+      "plainEnglish": "3X dining, supermarkets, gas/EV and airfare; 10X eligible Citi Travel",
+      "watchOut": "10X requires qualifying Citi Travel bookings; annual fee remains unverified in this record",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.citi.com/credit-cards/citi-strata-premier-credit-card",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": null,
+      "accessType": "public"
+    },
+    {
+      "id": "pnc-cash-rewards",
+      "name": "PNC Cash Rewards",
+      "issuer": "PNC",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "4% gas, 3% dining, 2% grocery on first $8,000 combined annually",
+      "primaryLabel": "4% gas, 3% dining, 2% grocery on first $8,000 combined annually",
+      "feeSummary": "$0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [
+        "cash_back"
+      ],
+      "categories": [
+        "gas",
+        "dining",
+        "groceries"
+      ],
+      "features": [],
+      "plainEnglish": "4% gas, 3% dining, 2% grocery on first $8,000 combined annually",
+      "watchOut": "1% after combined annual limit; merchant codes determine category eligibility",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.pnc.com/en/personal-banking/banking/credit-cards.html",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": null,
+      "accessType": "public"
+    },
+    {
+      "id": "pnc-cash-unlimited",
+      "name": "PNC Cash Unlimited",
+      "issuer": "PNC",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "Unlimited 2% cash back on eligible purchases",
+      "primaryLabel": "Unlimited 2% cash back on eligible purchases",
+      "feeSummary": "$0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [
+        "cash_back"
+      ],
+      "categories": [],
+      "features": [],
+      "plainEnglish": "Unlimited 2% cash back on eligible purchases",
+      "watchOut": "Minimum qualifying initial credit line and redemption restrictions apply",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.pnc.com/en/personal-banking/banking/credit-cards.html",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": null,
+      "accessType": "public"
+    },
+    {
+      "id": "td-cash",
+      "name": "TD Cash",
+      "issuer": "TD Bank",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "3% and 2% selectable cash back categories, changed quarterly",
+      "primaryLabel": "3% and 2% selectable cash back categories, changed quarterly",
+      "feeSummary": "$0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [
+        "cash_back"
+      ],
+      "categories": [
+        "groceries",
+        "dining",
+        "gas",
         "travel",
         "lifestyle"
       ],
       "features": [],
-      "plainEnglish": "Points programs can allow statement credits, travel or gift cards, but one point need not equal one cent for every redemption.",
-      "watchOut": "Check minimum redemption amounts, expiration policies and whether certain purchases earn base rather than bonus points.",
-      "limitations": "Fictional program; redemption options are explanatory examples and not an issuer promise.",
-      "verifiedAt": null,
-      "issuerSource": null
+      "plainEnglish": "3% and 2% selectable cash back categories, changed quarterly",
+      "watchOut": "Merchant and quarterly selection requirements apply",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.td.com/us/en/personal-banking/credit-cards",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": null,
+      "accessType": "public"
+    },
+    {
+      "id": "td-double-up",
+      "name": "TD Double Up",
+      "issuer": "TD Bank",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "Unlimited 2% cash back on eligible purchases",
+      "primaryLabel": "Unlimited 2% cash back on eligible purchases",
+      "feeSummary": "$0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [
+        "cash_back"
+      ],
+      "categories": [],
+      "features": [],
+      "plainEnglish": "Unlimited 2% cash back on eligible purchases",
+      "watchOut": "Review issuer agreement for APRs, fees and excluded transactions",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.td.com/us/en/personal-banking/credit-cards",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": null,
+      "accessType": "public"
+    },
+    {
+      "id": "td-flexpay",
+      "name": "TD FlexPay",
+      "issuer": "TD Bank",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "0% intro APR on qualifying balance transfers for 18 billing cycles",
+      "primaryLabel": "0% intro APR on qualifying balance transfers for 18 billing cycles",
+      "feeSummary": "$0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [],
+      "categories": [],
+      "features": [],
+      "plainEnglish": "0% intro APR on qualifying balance transfers for 18 billing cycles",
+      "watchOut": "Transfers must complete within first 90 days; fees and variable APR after intro",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.td.com/us/en/personal-banking/credit-cards",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": null,
+      "accessType": "public"
+    },
+    {
+      "id": "truist-enjoy-cash",
+      "name": "Truist Enjoy Cash",
+      "issuer": "Truist",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "Choice of 3%-2%-1% category rewards or flat 1.5% rewards",
+      "primaryLabel": "Choice of 3%-2%-1% category rewards or flat 1.5% rewards",
+      "feeSummary": "$0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [
+        "cash_back"
+      ],
+      "categories": [
+        "groceries",
+        "gas"
+      ],
+      "features": [],
+      "plainEnglish": "Choice of 3%-2%-1% category rewards or flat 1.5% rewards",
+      "watchOut": "Choice is locked after applying; category plan has a $1,000 combined monthly cap",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.truist.com/credit-cards",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": null,
+      "accessType": "public"
+    },
+    {
+      "id": "truist-enjoy-cash-secured",
+      "name": "Truist Enjoy Cash Secured",
+      "issuer": "Truist",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "3% gas/EV and 2% groceries/utilities up to a monthly cap",
+      "primaryLabel": "3% gas/EV and 2% groceries/utilities up to a monthly cap",
+      "feeSummary": "$0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [
+        "cash_back"
+      ],
+      "categories": [
+        "gas",
+        "groceries"
+      ],
+      "features": [
+        "secured"
+      ],
+      "plainEnglish": "3% gas/EV and 2% groceries/utilities up to a monthly cap",
+      "watchOut": "Minimum security deposit $400; 3%/2% categories share monthly $1,000 cap",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.truist.com/credit-cards",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": null,
+      "accessType": "public"
+    },
+    {
+      "id": "truist-enjoy-travel",
+      "name": "Truist Enjoy Travel",
+      "issuer": "Truist",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "2X miles on qualifying airfare, hotels and car rentals",
+      "primaryLabel": "2X miles on qualifying airfare, hotels and car rentals",
+      "feeSummary": "$0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [
+        "miles"
+      ],
+      "categories": [
+        "travel"
+      ],
+      "features": [],
+      "plainEnglish": "2X miles on qualifying airfare, hotels and car rentals",
+      "watchOut": "Mileage redemption and eligible purchase definitions vary",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.truist.com/credit-cards",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": null,
+      "accessType": "public"
+    },
+    {
+      "id": "us-cashplus",
+      "name": "U.S. Bank Cash+ Visa Signature",
+      "issuer": "U.S. Bank",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "Up to 5% cash back in two eligible selected categories",
+      "primaryLabel": "Up to 5% cash back in two eligible selected categories",
+      "feeSummary": "$0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [
+        "cash_back"
+      ],
+      "categories": [
+        "lifestyle"
+      ],
+      "features": [],
+      "plainEnglish": "Up to 5% cash back in two eligible selected categories",
+      "watchOut": "Eligible categories and spending caps apply; selection required",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.usbank.com/credit-cards.html",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": {
+        "url": "https://www.usbank.com/content/dam/usbank/en/images/illustrations/card-art/credit-cards/photo-cash-plus-signature-lg.png",
+        "sourcePage": "https://www.usbank.com/credit-cards.html",
+        "alt": "Official front-facing product image of U.S. Bank Cash+ Visa Signature"
+      },
+      "accessType": "public"
+    },
+    {
+      "id": "us-shield",
+      "name": "U.S. Bank Shield Visa",
+      "issuer": "U.S. Bank",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "0% introductory APR on purchases and transfers for 21 billing cycles",
+      "primaryLabel": "0% introductory APR on purchases and transfers for 21 billing cycles",
+      "feeSummary": "$0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [],
+      "categories": [],
+      "features": [],
+      "plainEnglish": "0% introductory APR on purchases and transfers for 21 billing cycles",
+      "watchOut": "Variable APR applies after promotion and transfer fees may apply",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.usbank.com/credit-cards.html",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": {
+        "url": "https://www.usbank.com/content/dam/usbank/en/images/illustrations/card-art/credit-cards/shield-credit-card-transparent.png",
+        "sourcePage": "https://www.usbank.com/credit-cards.html",
+        "alt": "Official front-facing product image of U.S. Bank Shield Visa"
+      },
+      "accessType": "public"
+    },
+    {
+      "id": "us-smartly",
+      "name": "U.S. Bank Smartly Visa Signature",
+      "issuer": "U.S. Bank",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "2% cash back on eligible purchases; qualified relationship bonuses may apply",
+      "primaryLabel": "2% cash back on eligible purchases; qualified relationship bonuses may apply",
+      "feeSummary": "$0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [
+        "cash_back"
+      ],
+      "categories": [],
+      "features": [],
+      "plainEnglish": "2% cash back on eligible purchases; qualified relationship bonuses may apply",
+      "watchOut": "Extra earnings depend on U.S. Bank qualifying deposit relationships and spending caps",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.usbank.com/credit-cards.html",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": {
+        "url": "https://www.usbank.com/content/dam/usbank/en/images/illustrations/card-art/credit-cards/photo-bank-smartly-card-art.png",
+        "sourcePage": "https://www.usbank.com/credit-cards.html",
+        "alt": "Official front-facing product image of U.S. Bank Smartly Visa Signature"
+      },
+      "accessType": "public"
+    },
+    {
+      "id": "wells-active-cash",
+      "name": "Wells Fargo Active Cash",
+      "issuer": "Wells Fargo",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "Unlimited 2% cash rewards",
+      "primaryLabel": "Unlimited 2% cash rewards",
+      "feeSummary": "$0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [
+        "cash_back"
+      ],
+      "categories": [],
+      "features": [],
+      "plainEnglish": "Unlimited 2% cash rewards",
+      "watchOut": "Reward rate also cross-checked with Visa card directory; full issuer agreement not audited",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.wellsfargo.com/credit-cards/agreements/",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": null,
+      "accessType": "public",
+      "additionalSources": [
+        {
+          "url": "https://www.visa.com/en-us/card-finder/credit-card/personal/other",
+          "label": "Visa network listing — reward and annual fee reference"
+        }
+      ]
+    },
+    {
+      "id": "wells-autograph",
+      "name": "Wells Fargo Autograph",
+      "issuer": "Wells Fargo",
+      "status": "published",
+      "fictional": false,
+      "tone": "slate",
+      "summary": "3X points for eligible restaurants, travel, gas, transit, streaming and phone plans",
+      "primaryLabel": "3X points for eligible restaurants, travel, gas, transit, streaming and phone plans",
+      "feeSummary": "$0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [
+        "points"
+      ],
+      "categories": [
+        "dining",
+        "travel",
+        "gas",
+        "lifestyle"
+      ],
+      "features": [],
+      "plainEnglish": "3X points for eligible restaurants, travel, gas, transit, streaming and phone plans",
+      "watchOut": "Merchant codes and benefit exclusions govern; cross-checked with Visa card directory",
+      "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+      "verifiedAt": "2026-10-27",
+      "issuerSource": "https://www.wellsfargo.com/credit-cards/agreements/",
+      "verificationLevel": "selected-issuer-page-facts",
+      "imageFront": null,
+      "accessType": "public",
+      "additionalSources": [
+        {
+          "url": "https://www.visa.com/en-us/card-finder/credit-card/signature",
+          "label": "Visa network listing — reward categories and benefits reference"
+        }
+      ]
     }
   ]
 }

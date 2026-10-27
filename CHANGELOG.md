@@ -2,6 +2,15 @@
 
 All meaningful website changes are documented here and in Git history. Entries should state **what changed**, **why**, **files/components affected**, **verification**, and **what is next**. Most recent changes first. Do not silently rewrite prior decisions; add a new dated entry instead.
 
+## 2026-10-27 — Real-card source snapshot and opt-in visual assets
+
+- **Changed:** Created 28 real card records spanning 10 banks; limited claims to selected current issuer-page and network-directory statements. Archived fictional entries from the compiled public feed without deleting their Git history.
+- **New UI:** Text-only issuer badges by default in directory and dashboard. Opt-in global checkbox loads verified external card art only after user action, with explicit privacy warning. Nine issuer-sourced card-front URLs: three Chase, three Capital One and three U.S. Bank. No art URL is invented for other issuers.
+- **Privacy:** Toggle is never stored; image elements are created only after opt-in, set `referrerPolicy=no-referrer`. Issuer/CDN can still learn requesting IP and browser details.
+- **Data safeguards:** Unknown fee fields stay null; every listing identifies limited source-verification scope and last checked date. This is **not** a full issuer-agreement audit or a complete 28-image release.
+- **Affected:** `catalog/cards`, `docs/data/cards.json`, `scripts/catalog.mjs`, `docs/assets`, `docs/index.html`, `docs/dashboard`, README, Editorial, and visual asset policy.
+- **Verification:** Both frontend scripts parse; generated catalog contains 28 unique real cards across ten issuers and nine issuer art URLs. Compiler consistency and live browser network/keyboard tests remain release gates. Selected card terms need independent source review before declaring production ready.
+
 ## 2026-10-27 — Extended banking product model and dashboard prototype
 
 - **Changed:** Proposed versioned modular product model for credit cards, checking, savings and relationship programs; separately tracked public, relationship-gated and invite-only access types.

@@ -1,0 +1,32 @@
+{
+  "id": "chase-freedom-flex",
+  "name": "Chase Freedom Flex",
+  "issuer": "Chase",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "5% cash back in activated rotating categories",
+  "primaryLabel": "5% cash back in activated rotating categories",
+  "feeSummary": "$0 annual fee",
+  "annualFeeUsd": 0,
+  "rewards": [
+    "cash_back"
+  ],
+  "categories": [
+    "dining",
+    "travel"
+  ],
+  "features": [],
+  "plainEnglish": "5% cash back in activated rotating categories",
+  "watchOut": "Quarterly activation and a combined $1,500 bonus-category spending limit apply",
+  "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://creditcards.chase.com/",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": {
+    "url": "https://creditcards.chase.com/content/dam/jpmc-marketplace/card-art/freedom-flex-2026.png",
+    "sourcePage": "https://creditcards.chase.com/check-for-preapproved-offers",
+    "alt": "Official front-facing card image of Chase Freedom Flex"
+  },
+  "accessType": "public"
+}
