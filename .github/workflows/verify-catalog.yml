@@ -27,6 +27,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Use Node.js 20
         uses: actions/setup-node@v4
         with:
@@ -35,6 +37,8 @@ jobs:
         run: npm run build
       - name: Run catalog and JavaScript checks
         run: npm test
-      - name: Verify generated static data is committed in pull requests
+      - name: Verify committed artifacts or safe approval-only changes
         if: github.event_name == 'pull_request'
-        run: git diff --exit-code -- docs/data/cards.json catalog/REVIEW-SHEET.md
+        env:
+          ANCARD_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: node scripts/verify-pr-artifacts.mjs

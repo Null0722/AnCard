@@ -176,3 +176,11 @@ All 100 card names are now exposed as unranked, alphabetical directory identitie
 For cards whose proposed facts match the canonical record, an authorized editor can open [HUMAN-QC.json](catalog/HUMAN-QC.json) on **main** and change the exact card's `"humanVerified": false` to `true`. The **Publish reviewed card data** GitHub Actions workflow validates, regenerates `docs/data/cards.json` and the readable review sheet, commits their synchronized output, and requests a fresh GitHub Pages build. If a proposal and its source disagree, the build fails and **does not publish the unreviewed claim**.
 
 The workflow does not certify terms automatically: the reviewer must read the official issuer disclosures before changing the flag. You can also run `npm run build && npm test` locally for advance checking. Read the Actions log if the automatic publishing job fails (for example, if GitHub repository workflow permissions or Pages API settings restrict automated commits).
+
+## Approve-only pull requests without manual generated-file commits
+
+A PR that changes **only** one or more `humanVerified` flags from `false` to `true` in `catalog/HUMAN-QC.json` is now allowed to pass the generated-artifact check after compiling and validating the proposal. The workflow verifies that no other JSON fields, file paths or card terms have changed. When that PR merges into `main`, the existing `Publish reviewed card data` action generates and commits both public artifacts and requests the GitHub Pages rebuild.
+
+If you modify any candidate details, revoke an approval (`true` to `false`), change additional files, or correct a card source, you **must** run `npm run build && npm test` and commit `docs/data/cards.json` and `catalog/REVIEW-SHEET.md` in the PR. That prevents a revoked card's previously approved details from remaining in the committed public feed.
+
+This fixes the common PR CI failure caused by a one-line approval change while keeping the editorial data-consistency checks. If GitHub Actions is disabled or cannot push, check `Publish reviewed card data` and the subsequent Pages deployment before assuming a new approval is visible.
