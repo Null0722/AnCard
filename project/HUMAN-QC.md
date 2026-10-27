@@ -61,3 +61,7 @@ The review sheet shows card bios, earning structures (flat, rotating, selected, 
 ## October 2026 directory update
 
 All **100 cards** now appear as identity-only placeholders on the public directory, even when `humanVerified` is false. The `reviewStage` field remains an internal editorial indicator, and **does not override the requirement for human approval of financial terms**. Read the pre-filled annual fee, earn rate per dollar, caps, monthly fees and applicable benefits in [REVIEW-SHEET.md](../catalog/REVIEW-SHEET.md), then inspect the official source and mark `humanVerified` true in [HUMAN-QC.json](../catalog/HUMAN-QC.json) only when correct. The previously marked Aer Lingus proposal was materially updated and therefore requires a fresh review.
+
+## GitHub auto publishing after approval
+
+After this workflow is enabled, save a Boolean approval change directly to the **main branch** in GitHub. The `Publish reviewed card data` workflow uses a least-privilege GitHub Actions token to rebuild and commit the public catalog and review sheet, then requests a GitHub Pages rebuild. If validation fails because the source record and QC candidate differ, no card detail is published. A successful Actions run is required before assuming the live Pages content updated. A PR can still be used for review; PRs must commit generated artifacts with the change before merging.

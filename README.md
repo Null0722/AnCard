@@ -154,3 +154,9 @@ The static website is designed to be served from `main` → `/docs` using **GitH
 The prefilled owner queue includes proposed annual and monthly fees, earn rates per eligible dollar, category conditions, quarterly or yearly spend caps, transfer-related caveats, rewards-model labels and quantified benefits where issuer sources support them. Unknown or changing values remain unverified, rather than being represented as zero. The 59 latest additions include 53 annual-fee values and 37 structured earning-rule records. These counts describe populated fields, **not 53 fully audited agreements**.
 
 All 100 card names are now exposed as unranked, alphabetical directory identities. Every card is marked `Pending human review` until its specific `humanVerified` value is true and its proposal matches the underlying record. Corrected Aer Lingus data requires another human approval. Editing the JSON alone does not automatically regenerate GitHub Pages output; see the build instructions in the owner QC guide.
+
+## Single-flag approval publishing
+
+For cards whose proposed facts match the canonical record, an authorized editor can open [HUMAN-QC.json](catalog/HUMAN-QC.json) on **main** and change the exact card's `"humanVerified": false` to `true`. The **Publish reviewed card data** GitHub Actions workflow validates, regenerates `docs/data/cards.json` and the readable review sheet, commits their synchronized output, and requests a fresh GitHub Pages build. If a proposal and its source disagree, the build fails and **does not publish the unreviewed claim**.
+
+The workflow does not certify terms automatically: the reviewer must read the official issuer disclosures before changing the flag. You can also run `npm run build && npm test` locally for advance checking. Read the Actions log if the automatic publishing job fails (for example, if GitHub repository workflow permissions or Pages API settings restrict automated commits).
