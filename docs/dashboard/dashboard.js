@@ -34,7 +34,7 @@ function render(){
   const article=text('article',''); article.className='product';
   const art=document.createElement('div');art.className='dash-card-art';
   if(artEnabled&&c.imageFront?.url){const img=document.createElement('img');img.alt=c.imageFront.alt||('Front of '+c.name);img.referrerPolicy='no-referrer';img.loading='lazy';img.decoding='async';img.addEventListener('error',()=>{art.replaceChildren(text('strong',c.issuer.slice(0,2).toUpperCase()));});img.src=c.imageFront.url;art.append(img);}
-  else{art.append(text('strong',c.issuer.split(/\\s+/).slice(0,2).map(x=>x[0]).join('').toUpperCase()));}
+  else{art.append(text('strong',c.issuer.split(/\s+/).slice(0,2).map(x=>x[0]).join('').toUpperCase()));}
   article.append(art,text('h3',c.name),text('p',c.issuer,'institution'),text('p',c.summary));
   const tags=document.createElement('div');tags.className='tags';
   for(const t of [...(c.rewards||[]),...(c.categories||[]),...(c.features||[])]) tags.append(text('span',pretty(t),'tag'));
