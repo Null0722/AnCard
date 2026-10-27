@@ -47,19 +47,18 @@
           <div class="qc-copy"><span>Human QC progress</span><strong id="qc-count">Loading review inventory</strong><small>Review coverage, not a card ranking</small></div>
         </div>
       </div>
-      <div class="topic-filters" role="group" aria-label="Quick category filters">
-        <button type="button" class="topic-chip" data-quick="cash_back" aria-pressed="false">◈ &nbsp; Cash back</button>
-        <button type="button" class="topic-chip" data-quick="points" aria-pressed="false">✧ &nbsp; Points</button>
-        <button type="button" class="topic-chip" data-quick="miles" aria-pressed="false">✈ &nbsp; Travel miles</button>
-        <button type="button" class="topic-chip" data-quick="groceries" aria-pressed="false">▤ &nbsp; Grocery</button>
-        <button type="button" class="topic-chip" data-quick="online" aria-pressed="false">▣ &nbsp; Online</button>
-        <button type="button" class="topic-chip" data-quick="lifestyle" aria-pressed="false">◇ &nbsp; Lifestyle</button>
-        <button type="button" class="topic-chip" data-quick="airline" aria-pressed="false">✈ &nbsp; Airline cards</button>
+      <div class="topic-filters" role="group" aria-label="Explore by card identity">
+        <button type="button" class="topic-chip" data-identity-quick="" aria-pressed="true">All cards</button>
+        <button type="button" class="topic-chip" data-identity-quick="airline" aria-pressed="false">Airline</button>
+        <button type="button" class="topic-chip" data-identity-quick="hotel" aria-pressed="false">Hotel</button>
+        <button type="button" class="topic-chip" data-identity-quick="secured" aria-pressed="false">Secured</button>
+        <button type="button" class="topic-chip" data-identity-quick="student" aria-pressed="false">Student</button>
       </div>
       <div class="catalog-layout">
         <div class="mobile-filters"><button type="button" id="toggle-filters" aria-expanded="false" aria-controls="filter-panel">☷ &nbsp; Refine filters <span aria-hidden="true">⌄</span></button></div>
         <aside class="filter-panel" id="filter-panel" aria-labelledby="filters-title">
-          <div class="panel-title"><h3 id="filters-title">Refine the directory</h3><span class="count-pill">Your filters</span></div>
+          <div class="panel-title"><h3 id="filters-title">Refine the directory</h3><span class="count-pill" id="active-filter-count">0 active</span></div>
+          <p class="filter-explainer">Issuer and product-type filters work across the entire directory. Monetary and reward filters use verified facts only.</p>
           <fieldset><legend>REWARD STYLE</legend>
             <label><input type="checkbox" data-facet="rewards" value="cash_back"> Cash back</label>
             <label><input type="checkbox" data-facet="rewards" value="points"> Points</label>
@@ -74,7 +73,7 @@
             <label><input type="checkbox" data-facet="categories" value="lifestyle"> Lifestyle</label>
           </fieldset>
           <fieldset><legend>CARD DETAILS</legend>
-            <label><input type="checkbox" data-facet="features" value="no_annual_fee"> No annual fee</label>
+            <label><input type="checkbox" data-facet="features" value="no_annual_fee"> No annual fee (verified)</label>
             <label><input type="checkbox" data-facet="features" value="secured"> Secured</label>
             <label><input type="checkbox" data-facet="features" value="student"> Student</label>
             <label><input type="checkbox" data-facet="features" value="airline"> Airline cards</label>
@@ -84,15 +83,26 @@
         <div class="catalog-main">
           <div class="catalog-heading">
             <div><h3>Browse the catalog</h3><p id="result-count" role="status" aria-live="polite">Loading card catalog…</p></div>
-            <label class="sort-label">Sort <select id="sort-by"><option value="name">Card name A–Z</option><option value="issuer">Issuer A–Z</option><option value="fee">Annual fee: low to high</option></select></label>
+            <label class="sort-label">Sort <select id="sort-by"><option value="name">Card name A–Z</option><option value="issuer">Issuer A–Z</option><option value="fee">Annual fee (verified first)</option></select></label>
           </div>
-          <div class="directory-utilities">
-            <label for="card-search">Find by card or bank <input id="card-search" type="search" autocomplete="off" placeholder="Example: Delta, Chase, Citi"></label>
-            <label class="review-toggle"><input type="checkbox" id="reviewed-only"> Human-reviewed only</label>
+          <div class="directory-utilities premium-filter-bar">
+            <label for="card-search">Find a card or bank
+              <input id="card-search" type="search" autocomplete="off" placeholder="Search name, bank or airline" aria-label="Search card name or issuer">
+            </label>
+            <label for="issuer-filter">Issuer
+              <select id="issuer-filter"><option value="">All issuers</option></select>
+            </label>
+            <label for="identity-filter">Card type
+              <select id="identity-filter"><option value="">All card types</option><option value="airline">Airline</option><option value="hotel">Hotel</option><option value="student">Student</option><option value="secured">Secured</option><option value="other">Other</option></select>
+            </label>
+            <label for="review-status">Editorial status
+              <select id="review-status"><option value="">All records</option><option value="approved">Human-reviewed</option><option value="pending">Awaiting review</option></select>
+            </label>
           </div>
-          <div class="art-optin"><label><input type="checkbox" id="show-art"> Show official card art</label><p>Off by default. Enabling images sends requests to the issuing banks or their CDNs. It may disclose your IP address and browser metadata. This choice lasts only until you leave or reload this page. Missing artwork stays a text badge.</p></div>
-          <div class="preview-banner" role="note"><strong>Financial claims need human approval.</strong> The public directory contains established card identities with unapproved details hidden. Newly researched cards stay in the internal QC inventory until approved. Use current issuer disclosures for financial decisions.</div>
+          <div class="art-optin"><label><input type="checkbox" id="show-art" disabled> Enable rights-cleared official card art</label><p id="art-status">Original AnCard artwork renders locally, without contacting issuing banks. Official issuer art requires documented permission and explicit opt-in.</p></div>
+          <div class="preview-banner" role="note"><strong>Financial claims need human approval.</strong> All 100 card identities are visible. Card-specific fees, bonuses and rewards remain hidden until human verification. Use current issuer disclosures for financial decisions.</div>
           <div id="card-results" class="card-results" aria-live="off"></div>
+          <button id="load-more" class="show-more-cards" type="button" hidden>Show more cards</button>
           <div class="trust-strip"><span><strong>Independent by design.</strong> No quizzes, hidden recommendation scores or sponsored ranking.</span><a href="#methodology">Our methodology ↗</a></div>
         </div>
       </div>
