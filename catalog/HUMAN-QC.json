@@ -3,6 +3,122 @@
   "instructions": "Ctrl+F the card name; check candidate details and issuerSource, then change humanVerified from false to true. Run npm run build && npm test. The compiler will re-lock any edited card record until the QC queue is synced and reapproved.",
   "cards": [
     {
+      "id": "chase-aer-lingus",
+      "name": "Aer Lingus Visa Signature",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Avios airline rewards. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Avios airline rewards; check current issuer program terms.",
+        "plainEnglish": "This card is associated with avios airline rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://creditcards.chase.com/compare-credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Aer Lingus Visa Signature is a airline credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "miles",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "chase-aeroplan",
+      "name": "Aeroplan Credit Card",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Air Canada Aeroplan points. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Air Canada Aeroplan points; check current issuer program terms.",
+        "plainEnglish": "This card is associated with air canada aeroplan points. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://creditcards.chase.com/compare-credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Aeroplan Credit Card is a airline credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "miles",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "chase-amazon-visa",
+      "name": "Amazon Visa",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "3% at Amazon/Whole Foods and eligible Chase Travel, without a Prime membership.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "3% at Amazon/Whole Foods and eligible Chase Travel, without a Prime membership.",
+        "plainEnglish": "3% at Amazon/Whole Foods and eligible Chase Travel, without a Prime membership.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/cash-back-credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Amazon Visa is a cash back credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "flat",
+        "earnRules": [
+          {
+            "label": "Amazon and eligible Whole Foods",
+            "rate": 3,
+            "unit": "percent"
+          }
+        ],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
       "id": "amex-gold",
       "name": "American Express Gold",
       "issuer": "American Express",
@@ -585,6 +701,44 @@
       "reviewedBy": ""
     },
     {
+      "id": "chase-british-airways",
+      "name": "British Airways Visa Signature",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Avios airline miles. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Avios airline miles; check current issuer program terms.",
+        "plainEnglish": "This card is associated with avios airline miles. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://creditcards.chase.com/compare-credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "British Airways Visa Signature is a airline credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "miles",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
       "id": "cap-platinum",
       "name": "Capital One Platinum",
       "issuer": "Capital One",
@@ -719,6 +873,122 @@
           "alt": "Official front-facing product image of Capital One Venture Rewards"
         },
         "accessType": "public"
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "cap-venture-x",
+      "name": "Capital One Venture X Rewards",
+      "issuer": "Capital One",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "2X eligible purchases, 5X portal flights, 10X portal hotels and rental cars.",
+        "annualFeeUsd": 395,
+        "feeSummary": "$395 annual fee",
+        "primaryLabel": "2X eligible purchases, 5X portal flights, 10X portal hotels and rental cars.",
+        "plainEnglish": "2X eligible purchases, 5X portal flights, 10X portal hotels and rental cars.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.capitalone.com/credit-cards/venture-x/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Capital One Venture X Rewards is a travel credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "miles",
+        "earnRules": [
+          {
+            "label": "Everyday eligible purchases",
+            "rate": 2,
+            "unit": "x"
+          },
+          {
+            "label": "Flights booked in Capital One Travel",
+            "rate": 5,
+            "unit": "x"
+          },
+          {
+            "label": "Hotels and rental cars in Capital One Travel",
+            "rate": 10,
+            "unit": "x"
+          }
+        ],
+        "benefits": [
+          {
+            "name": "Capital One Travel annual credit",
+            "type": "statement_credit",
+            "amountUsd": 300,
+            "frequencyMonths": 12,
+            "condition": "Eligible Capital One Travel bookings"
+          },
+          {
+            "name": "Global Entry or TSA PreCheck reimbursement",
+            "type": "global_entry",
+            "amountUsd": 120,
+            "frequencyMonths": 48,
+            "condition": "Up to $120 once every four years for one qualifying application per account"
+          },
+          {
+            "name": "Anniversary miles",
+            "type": "anniversary_bonus",
+            "amountUsd": null,
+            "frequencyMonths": 12,
+            "condition": "10,000 miles after anniversary, subject to terms"
+          }
+        ],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "cap-ventureone",
+      "name": "Capital One VentureOne Rewards",
+      "issuer": "Capital One",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "1.25X miles on eligible purchases.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "1.25X miles on eligible purchases.",
+        "plainEnglish": "1.25X miles on eligible purchases.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Capital One VentureOne Rewards is a travel credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "miles",
+        "earnRules": [
+          {
+            "label": "All eligible purchases",
+            "rate": 1.25,
+            "unit": "x"
+          }
+        ],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -1214,6 +1484,78 @@
       "reviewedBy": ""
     },
     {
+      "id": "chase-disney-premier",
+      "name": "Disney Premier Visa",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Disney Rewards Dollars and Disney offers. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Disney Rewards Dollars and Disney offers; check current issuer program terms.",
+        "plainEnglish": "This card is associated with disney rewards dollars and disney offers. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [
+          "lifestyle"
+        ],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/rewards-credit-cards/disney",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Disney Premier Visa is a lifestyle credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "cash_back",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "chase-disney-visa",
+      "name": "Disney Visa",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Disney Rewards Dollars and cardmember offers. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Disney Rewards Dollars and cardmember offers; check current issuer program terms.",
+        "plainEnglish": "This card is associated with disney rewards dollars and cardmember offers. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [
+          "lifestyle"
+        ],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/rewards-credit-cards/disney",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Disney Visa is a lifestyle credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "cash_back",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
       "id": "amex-hilton",
       "name": "Hilton Honors American Express",
       "issuer": "American Express",
@@ -1515,6 +1857,40 @@
       "reviewedBy": ""
     },
     {
+      "id": "cap-quicksilver-student",
+      "name": "Quicksilver Rewards for Students",
+      "issuer": "Capital One",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Student flat-rate cash back. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Student flat-rate cash back; check current issuer program terms.",
+        "plainEnglish": "This card is associated with student flat-rate cash back. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Quicksilver Rewards for Students is a cash back credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "flat",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
       "id": "cap-quicksilver-secured",
       "name": "Quicksilver Secured Rewards",
       "issuer": "Capital One",
@@ -1615,6 +1991,40 @@
         "accessType": "public",
         "bio": "Royal ONE Visa Signature is a travel credit card candidate from Bank of America. AnCard keeps its terms under human review before displaying its financial details.",
         "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "cap-savor-student",
+      "name": "Savor Rewards for Students",
+      "issuer": "Capital One",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Student dining, grocery and entertainment cash back. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Student dining, grocery and entertainment cash back; check current issuer program terms.",
+        "plainEnglish": "This card is associated with student dining, grocery and entertainment cash back. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Savor Rewards for Students is a cash back credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "tiered",
         "earnRules": [],
         "benefits": [],
         "monthlyFeeUsd": null
