@@ -1,0 +1,30 @@
+{
+  "id": "truist-enjoy-cash-secured",
+  "name": "Truist Enjoy Cash Secured",
+  "issuer": "Truist",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "3% gas/EV and 2% groceries/utilities up to a monthly cap",
+  "primaryLabel": "3% gas/EV and 2% groceries/utilities up to a monthly cap",
+  "feeSummary": "$0 annual fee",
+  "annualFeeUsd": 0,
+  "rewards": [
+    "cash_back"
+  ],
+  "categories": [
+    "gas",
+    "groceries"
+  ],
+  "features": [
+    "secured"
+  ],
+  "plainEnglish": "3% gas/EV and 2% groceries/utilities up to a monthly cap",
+  "watchOut": "Minimum security deposit $400; 3%/2% categories share monthly $1,000 cap",
+  "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.truist.com/credit-cards",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public"
+}

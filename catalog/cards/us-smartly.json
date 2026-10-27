@@ -1,0 +1,29 @@
+{
+  "id": "us-smartly",
+  "name": "U.S. Bank Smartly Visa Signature",
+  "issuer": "U.S. Bank",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "2% cash back on eligible purchases; qualified relationship bonuses may apply",
+  "primaryLabel": "2% cash back on eligible purchases; qualified relationship bonuses may apply",
+  "feeSummary": "$0 annual fee",
+  "annualFeeUsd": 0,
+  "rewards": [
+    "cash_back"
+  ],
+  "categories": [],
+  "features": [],
+  "plainEnglish": "2% cash back on eligible purchases; qualified relationship bonuses may apply",
+  "watchOut": "Extra earnings depend on U.S. Bank qualifying deposit relationships and spending caps",
+  "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.usbank.com/credit-cards.html",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": {
+    "url": "https://www.usbank.com/content/dam/usbank/en/images/illustrations/card-art/credit-cards/photo-bank-smartly-card-art.png",
+    "sourcePage": "https://www.usbank.com/credit-cards.html",
+    "alt": "Official front-facing product image of U.S. Bank Smartly Visa Signature"
+  },
+  "accessType": "public"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "boa-unlimited-cash",
+  "name": "Bank of America Unlimited Cash Rewards",
+  "issuer": "Bank of America",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "Unlimited 1.5% cash back",
+  "primaryLabel": "Unlimited 1.5% cash back",
+  "feeSummary": "$0 annual fee",
+  "annualFeeUsd": 0,
+  "rewards": [
+    "cash_back"
+  ],
+  "categories": [],
+  "features": [],
+  "plainEnglish": "Unlimited 1.5% cash back",
+  "watchOut": "Additional relationship bonuses require qualifying banking balances",
+  "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.bankofamerica.com/credit-cards/",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public"
+}

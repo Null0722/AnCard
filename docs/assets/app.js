@@ -4,6 +4,23 @@ const catalogEl = document.querySelector('#card-results');
 const checks = [...document.querySelectorAll('[data-facet]')];
 const quicks = [...document.querySelectorAll('[data-quick]')];
 const compared = new Set();
+let artEnabled = false; // In-memory only: default off after every navigation or reload.
+function createCardArt(card) {
+  const visual=node('div','card-art tone-'+card.tone);
+  const asset=card.imageFront;
+  if(artEnabled && asset && asset.url) {
+    const image=node('img');image.alt=asset.alt||('Front of '+card.name);
+    image.referrerPolicy='no-referrer';image.loading='lazy';image.decoding='async';
+    image.addEventListener('error',()=>{visual.classList.remove('loaded-art');visual.replaceChildren(node('span','',card.issuer.slice(0,2).toUpperCase()));});
+    // src is assigned only after a real user turns on the opt-in checkbox.
+    image.src=asset.url;visual.replaceChildren(image);visual.classList.add('loaded-art');
+  }else{
+    visual.append(node('span','',card.issuer.split(/\s+/).slice(0,2).map(v=>v[0]).join('').toUpperCase()));
+    visual.title=asset?'Official card image disabled for privacy':'Official card art not available';
+  }
+  return visual;
+}
+
 let cards = [];
 let catalogError = false;
 let lastFocused = null;
@@ -37,16 +54,16 @@ function sortCards(list) {
 }
 function makeCard(card) {
   const article=node('article','card-row');
-  const art=node('div',`card-art tone-${card.tone}`);art.setAttribute('aria-hidden','true');article.append(art);
-  const info=node('div','card-info');info.append(node('h4','',card.name),node('div','card-meta',`${card.issuer} · ${card.status==='demo'?'Fictional example':'Verified listing'}`),node('p','card-desc',card.summary));
+  article.append(createCardArt(card));
+  const info=node('div','card-info');info.append(node('h4','',card.name),node('div','card-meta',`${card.issuer} · ${card.status==='demo'?'Fictional example':'Source-checked listing'}`),node('p','card-desc',card.summary));
   const tags=node('div','card-tags');[...card.rewards,...card.categories].slice(0,3).forEach(t=>tags.append(node('span','',labels[t]??t)));info.append(tags);article.append(info);
   const terms=node('div','card-term');terms.append(node('strong','',card.primaryLabel),node('span','',card.feeSummary));article.append(terms);
   const actions=node('div','card-actions');const detail=node('button','link-button','Decode terms ↗');detail.type='button';detail.dataset.detail=card.id;const compare=node('button','compare-button',compared.has(card.id)?'✓ Added':'＋ Compare');compare.type='button';compare.dataset.compare=card.id;compare.setAttribute('aria-pressed',String(compared.has(card.id)));
-  const verified=node('span','card-verification',card.status==='demo'?'Demo only · No issuer offer':`Verified ${card.verifiedAt}`);actions.append(detail,compare,verified);article.append(actions);return article;
+  const verified=node('span','card-verification',card.status==='demo'?'Demo only':`Source checked ${card.verifiedAt}`);actions.append(detail,compare,verified);article.append(actions);return article;
 }
 function render() {
   const filtered=sortCards(cards.filter(c=>matches(c,activeFilters())));
-  const count=$('#result-count');count.textContent=catalogError?'Catalog unavailable':`${filtered.length} example card${filtered.length===1?'':'s'} · ${$('#sort-by').selectedOptions[0].textContent}`;
+  const count=$('#result-count');count.textContent=catalogError?'Catalog unavailable':`${filtered.length} card${filtered.length===1?'':'s'} · ${$('#sort-by').selectedOptions[0].textContent}`;
   catalogEl.replaceChildren();
   if(catalogError || !filtered.length){const empty=node('div','empty-card');empty.append(node('h4','',catalogError?'We could not load the catalog.':'No cards match those filters.'),node('p','',catalogError?'Try reloading the page. No preferences were transmitted.':'Try removing a filter to explore more cards. We do not select alternatives for you.'));catalogEl.append(empty);}
   else filtered.forEach(card=>catalogEl.append(makeCard(card)));
@@ -58,10 +75,10 @@ function showModal(backdrop, focusTarget){lastFocused=document.activeElement;mod
 function closeModal(){if(!modalOpen || modalOpen.id==='trust-backdrop')return;modalOpen.hidden=true;modalOpen=null;document.body.classList.remove('lock-scroll');lastFocused?.focus();}
 function detailField(container,title,body){const a=node('article');a.append(node('h3','',title),node('p','',body));container.append(a);}
 function showDetails(card) {
-  $('#detail-title').textContent=card.name;$('#detail-subtitle').textContent=`${card.issuer} · ${card.status==='demo'?'Fictional demonstration':'Published listing'}`;
+  $('#detail-title').textContent=card.name;$('#detail-subtitle').textContent=`${card.issuer} · ${card.status==='demo'?'Fictional demonstration':'Issuer-sourced listing'}`;
   const body=$('#detail-body');body.replaceChildren();const grid=node('div','detail-fields');
   detailField(grid,'In plain English',card.plainEnglish);detailField(grid,'What to watch for',card.watchOut);detailField(grid,'Annual fee',card.annualFeeUsd === null?'Not provided':card.annualFeeUsd===0?'No annual fee':`$${card.annualFeeUsd} per year`);detailField(grid,'Important limits',card.limitations);
-  if(card.status==='published'){detailField(grid,'Issuer source',card.issuerSource);detailField(grid,'Verified on',card.verifiedAt);}else {detailField(grid,'Source status','Fictional example. No actual issuer terms or APRs are represented.');}
+  if(card.status==='published'){detailField(grid,'Checked on',card.verifiedAt);detailField(grid,'Verification scope',card.verificationLevel==='selected-issuer-page-facts'?'Selected product facts, not complete terms':'See methodology');const source=node('a','source-link','Open official issuer source ↗');source.href=card.issuerSource;source.target='_blank';source.rel='noopener noreferrer';source.referrerPolicy='no-referrer';grid.append(source);}else {detailField(grid,'Source status','Fictional example. No actual issuer terms or APRs are represented.');}
   body.append(grid,node('p','dialog-note','Educational information only. The issuer agreement controls actual fees, eligibility, rates, and rewards. Preview entries are not financial offers.'));
   showModal($('#details-backdrop'),$('#details-backdrop [data-close]'));
 }
@@ -70,7 +87,7 @@ function showComparison() {
   $('#detail-title').textContent='Compare your selections';$('#detail-subtitle').textContent='Neutral side-by-side information — no rankings, scores, or winning card.';
   const body=$('#detail-body');body.replaceChildren();const table=node('table','comparison-table');const thead=node('thead');const head=node('tr');head.append(node('th','','Attribute'));
   chosen.forEach(c=>head.append(node('th','',c.name)));thead.append(head);table.append(thead);
-  const tbody=node('tbody');[['Rewards',c=>c.rewards.map(v=>labels[v]).join(', ')||'None listed'],['Categories',c=>c.categories.map(v=>labels[v]).join(', ')||'None listed'],['Annual fee',c=>c.annualFeeUsd===null?'Unspecified':c.annualFeeUsd===0?'$0':`$${c.annualFeeUsd}`],['Important limit',c=>c.limitations],['Verification',c=>c.status==='demo'?'Fictional example':`Verified ${c.verifiedAt}`]].forEach(([title,value])=>{const tr=node('tr');tr.append(node('th','',title));chosen.forEach(c=>tr.append(node('td','',value(c))));tbody.append(tr);});table.append(tbody);body.append(table,node('p','dialog-note','Every comparison value comes directly from the published card records. These demo cards are fictional and not actual offers.'));
+  const tbody=node('tbody');[['Rewards',c=>c.rewards.map(v=>labels[v]).join(', ')||'None listed'],['Categories',c=>c.categories.map(v=>labels[v]).join(', ')||'None listed'],['Annual fee',c=>c.annualFeeUsd===null?'Unspecified':c.annualFeeUsd===0?'$0':`$${c.annualFeeUsd}`],['Important limit',c=>c.limitations],['Verification',c=>c.status==='demo'?'Fictional example':`Source checked ${c.verifiedAt}`]].forEach(([title,value])=>{const tr=node('tr');tr.append(node('th','',title));chosen.forEach(c=>tr.append(node('td','',value(c))));tbody.append(tr);});table.append(tbody);body.append(table,node('p','dialog-note','Every comparison value comes directly from the published card records. Check the issuer's current agreement; this source snapshot does not cover every term.'));
   showModal($('#details-backdrop'),$('#details-backdrop [data-close]'));
 }
 
@@ -78,6 +95,7 @@ checks.forEach(c=>c.addEventListener('change',render));
 quicks.forEach(button=>button.addEventListener('click',()=>{const input=checks.find(c=>c.value===button.dataset.quick);if(input){input.checked=!input.checked;render();}$('#catalog').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}));
 $('#clear-filters').addEventListener('click',()=>{checks.forEach(c=>c.checked=false);render();});
 $('#sort-by').addEventListener('change',render);
+$('#show-art').addEventListener('change',event=>{artEnabled=event.target.checked;render();});
 $('#toggle-filters').addEventListener('click',()=>{const open=$('#filter-panel').classList.toggle('is-open');$('#toggle-filters').setAttribute('aria-expanded',String(open));});
 catalogEl.addEventListener('click',event=>{const detail=event.target.closest('[data-detail]');if(detail){const card=cards.find(c=>c.id===detail.dataset.detail);if(card)showDetails(card);return;}const toggle=event.target.closest('[data-compare]');if(toggle){const id=toggle.dataset.compare;if(compared.has(id))compared.delete(id);else if(compared.size<3)compared.add(id);else{showComparison();return;}render();}});
 $('#clear-compare').addEventListener('click',()=>{compared.clear();render();});

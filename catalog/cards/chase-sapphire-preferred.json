@@ -1,0 +1,28 @@
+{
+  "id": "chase-sapphire-preferred",
+  "name": "Chase Sapphire Preferred",
+  "issuer": "Chase",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "5X points on eligible Chase Travel bookings",
+  "primaryLabel": "5X points on eligible Chase Travel bookings",
+  "feeSummary": "$95 annual fee",
+  "annualFeeUsd": 95,
+  "rewards": [
+    "points"
+  ],
+  "categories": [
+    "travel",
+    "dining"
+  ],
+  "features": [],
+  "plainEnglish": "5X points on eligible Chase Travel bookings",
+  "watchOut": "Reward earning and redemption depend on specific issuer rules",
+  "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://creditcards.chase.com/",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public"
+}

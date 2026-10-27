@@ -1,0 +1,29 @@
+{
+  "id": "pnc-cash-rewards",
+  "name": "PNC Cash Rewards",
+  "issuer": "PNC",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "4% gas, 3% dining, 2% grocery on first $8,000 combined annually",
+  "primaryLabel": "4% gas, 3% dining, 2% grocery on first $8,000 combined annually",
+  "feeSummary": "$0 annual fee",
+  "annualFeeUsd": 0,
+  "rewards": [
+    "cash_back"
+  ],
+  "categories": [
+    "gas",
+    "dining",
+    "groceries"
+  ],
+  "features": [],
+  "plainEnglish": "4% gas, 3% dining, 2% grocery on first $8,000 combined annually",
+  "watchOut": "1% after combined annual limit; merchant codes determine category eligibility",
+  "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.pnc.com/en/personal-banking/banking/credit-cards.html",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public"
+}

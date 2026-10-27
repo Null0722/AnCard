@@ -37,19 +37,23 @@ We are working toward a different model from conversion-focused comparison exper
 
 **A note on funding:** The long-term goal is to explore transparent, non-tracking contextual advertising and potentially donations. This is a future business-model direction, **not** a claim that donations or ad funding is live today. Any changes affecting independence or privacy must be documented and disclosed.
 
-## Current status — MVP preview (v0.1.0)
+## Current status — issuer-source snapshot (release candidate)
 
 The repository includes an early, working **static-site prototype** with:
 
 - A disclosure-first entry flow and our soft-dark “Clear Atlas” visual direction.
 - Client-side category filters and neutral sorting.
 - A plain-language decoder, card detail views and side-by-side comparison.
-- Six **explicitly fictional demonstration cards** for development and UI testing.
+- 28 real consumer credit card listings across ten issuers, with selected facts checked against issuer and network sources; several important financial fields still await complete agreement review.
 - A Git-versioned card catalog and a build-time validation script.
 
-**Important: The demonstration cards are not real offers.** AnCard is not yet a verified, comprehensive credit card directory. Real issuer cards will only be introduced after editorial verification and additional accessibility, browser and disclosure review.
+**Important:** Listings are limited issuer-source snapshots, not exhaustive agreement reviews. Some pricing and APR details are unknown. Check current issuer terms before making any decisions. Previously fictional records remain in source control but are excluded from the generated public feed.
 
 AnCard provides general educational information, not personalized financial, legal or credit advice. Card terms can change. Before applying for any card, read its current official issuer disclosures and agreement.
+
+## Optional official card images
+
+Card imagery is **off by default**. The directory and dashboard render a typography-based badge without third-party image requests. If a visitor explicitly enables “Show official card art,” the browser then requests verified front-card image URLs from the issuer or its CDN. This can disclose an IP address and browser metadata to that issuer; AnCard sets `referrerPolicy=no-referrer` and does not save the toggle. Images not yet sourced retain a badge, even when enabled. Only six records initially have reviewed image URLs. See [image opt-in policy](project/ART-OPTIN.md).
 
 ## How it works technically
 

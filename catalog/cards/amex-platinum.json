@@ -1,0 +1,27 @@
+{
+  "id": "amex-platinum",
+  "name": "American Express Platinum",
+  "issuer": "American Express",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "5X points on qualifying flights and prepaid hotels booked through Amex Travel",
+  "primaryLabel": "5X points on qualifying flights and prepaid hotels booked through Amex Travel",
+  "feeSummary": "Annual fee: not verified",
+  "annualFeeUsd": null,
+  "rewards": [
+    "points"
+  ],
+  "categories": [
+    "travel"
+  ],
+  "features": [],
+  "plainEnglish": "5X points on qualifying flights and prepaid hotels booked through Amex Travel",
+  "watchOut": "5X is subject to booking limits; statement credits and lounge access have separate rules",
+  "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.americanexpress.com/us/credit-cards/",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public"
+}

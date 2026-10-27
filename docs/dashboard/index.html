@@ -54,6 +54,7 @@ dialog{max-width:min(540px,92vw);border:1px solid #7490a5;border-radius:18px;bac
 dialog::backdrop{background:#08121aeb}
 dialog p{line-height:1.65;color:#d0dce6}
 @media(max-width:820px){.work-area{grid-template-columns:1fr}.dashboard-nav{margin-bottom:28px}}
+ .dash-card-art{width:95px;min-height:58px;border:1px solid #405a68;border-radius:9px;display:flex;align-items:center;justify-content:center;background:linear-gradient(130deg,#304e61,#1d2938);margin:0 0 12px;color:#ecf3f8;font-size:22px;overflow:hidden}.dash-card-art img{max-width:100%;max-height:90px;object-fit:contain}.art-optin{margin:12px 0 24px}
 </style>
 <script src="./dashboard.js" defer></script>
 </head>
@@ -68,7 +69,8 @@ dialog p{line-height:1.65;color:#d0dce6}
 <h1>Compare the facts.<br><span>Keep the choice.</span></h1>
 <p>Build your own view of the card directory. This workspace filters only the attributes available in each published record. No suitability score, preference history, or application tracking.</p>
 </header>
-<div class="demo-note" role="note"><strong>Development preview.</strong> The initial catalog contains six fictional demonstration cards, not actual financial products or offers. Checking, savings, relationship tiers, invite-only products and expanded filters require independently verified data before release.</div>
+<div class="demo-note" role="note"><strong>Issuer-sourced card snapshot.</strong> The current directory contains selected real-card facts checked on October 27, 2026. It is not a complete audit of pricing, conditions, or eligibility. More detailed filters, banking products and invitation-only access are deferred.</div>
+<div class="art-optin"><label><input type="checkbox" id="show-art"> Show official card art</label><p>Off by default. Turning it on loads images from external issuers or CDNs, sharing your IP address and browser request details. No choice is saved. Cards without a verified image use a text badge.</p></div>
 <div class="work-area">
 <aside class="filters-box" aria-label="Filter controls"><h2>Choose your filters</h2>
 <form id="filters" class="filter-form">
@@ -97,7 +99,7 @@ dialog p{line-height:1.65;color:#d0dce6}
 <dialog id="gate" aria-labelledby="gate-title">
 <p class="eyebrow-soft">Before you explore</p><h2 id="gate-title">Information before influence.</h2>
 <p>AnCard does not recommend or broker cards. Filter selections stay in browser memory; no profiles or application tracking. The host may maintain network/security logs.</p>
-<p>This dashboard currently contains fictional demonstration cards only. Never rely on them for a financial decision.</p>
+<p>Listings show selected source-backed terms only. Review full issuer pricing and agreement before making a financial decision.</p>
 <button class="btn-action" type="button" id="enter">I understand — explore</button>
 <p class="hint">Acknowledgment is not consent to tracking and is not stored.</p>
 </dialog>
