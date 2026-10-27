@@ -8,6 +8,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -23,8 +24,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "amex-blue-cash-preferred",
@@ -33,6 +33,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -48,8 +49,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "amex-delta-gold",
@@ -58,6 +58,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -75,9 +76,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "airlineProgram": "Delta SkyMiles",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": "Delta SkyMiles"
     },
     {
       "id": "amex-delta-platinum",
@@ -86,6 +85,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -103,9 +103,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "airlineProgram": "Delta SkyMiles",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": "Delta SkyMiles"
     },
     {
       "id": "amex-delta-reserve",
@@ -114,6 +112,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -131,9 +130,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "airlineProgram": "Delta SkyMiles",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": "Delta SkyMiles"
     },
     {
       "id": "amex-platinum",
@@ -142,6 +139,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -157,8 +155,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "boa-atmos-ascent",
@@ -167,6 +164,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -184,9 +182,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "airlineProgram": "Atmos Rewards",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": "Atmos Rewards"
     },
     {
       "id": "boa-atmos-summit",
@@ -195,6 +191,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -212,9 +209,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "airlineProgram": "Atmos Rewards",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": "Atmos Rewards"
     },
     {
       "id": "boa-bankamericard",
@@ -223,6 +218,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -238,8 +234,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "boa-customized-cash",
@@ -248,6 +243,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -263,8 +259,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "boa-unlimited-cash",
@@ -273,6 +268,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -288,8 +284,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "cap-quicksilver",
@@ -298,6 +293,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -317,8 +313,7 @@
         "alt": "Official front-facing product image of Capital One Quicksilver Rewards"
       },
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "cap-savor",
@@ -327,6 +322,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -346,8 +342,7 @@
         "alt": "Official front-facing product image of Capital One Savor Rewards"
       },
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "cap-venture",
@@ -356,6 +351,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -375,8 +371,7 @@
         "alt": "Official front-facing product image of Capital One Venture Rewards"
       },
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "chase-freedom-flex",
@@ -385,6 +380,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -404,8 +400,7 @@
         "alt": "Official front-facing card image of Chase Freedom Flex"
       },
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "chase-freedom-unlimited",
@@ -414,6 +409,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -433,8 +429,7 @@
         "alt": "Official front-facing card image of Chase Freedom Unlimited"
       },
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "chase-sapphire-preferred",
@@ -443,6 +438,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -462,8 +458,7 @@
         "alt": "Official front-facing card image of Chase Sapphire Preferred"
       },
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "chase-southwest-plus",
@@ -472,6 +467,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -489,9 +485,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "airlineProgram": "Southwest Rapid Rewards",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": "Southwest Rapid Rewards"
     },
     {
       "id": "chase-southwest-priority",
@@ -500,6 +494,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -517,9 +512,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "airlineProgram": "Southwest Rapid Rewards",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": "Southwest Rapid Rewards"
     },
     {
       "id": "chase-united-club",
@@ -528,6 +521,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -545,9 +539,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "airlineProgram": "United MileagePlus",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": "United MileagePlus"
     },
     {
       "id": "chase-united-explorer",
@@ -556,6 +548,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -573,9 +566,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "airlineProgram": "United MileagePlus",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": "United MileagePlus"
     },
     {
       "id": "chase-united-gateway",
@@ -584,6 +575,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -601,9 +593,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "airlineProgram": "United MileagePlus",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": "United MileagePlus"
     },
     {
       "id": "chase-united-quest",
@@ -612,6 +602,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -629,9 +620,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "airlineProgram": "United MileagePlus",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": "United MileagePlus"
     },
     {
       "id": "citi-aadvantage-executive",
@@ -640,6 +629,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -657,9 +647,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "airlineProgram": "American AAdvantage",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": "American AAdvantage"
     },
     {
       "id": "citi-aadvantage-platinum",
@@ -668,6 +656,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -685,9 +674,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "airlineProgram": "American AAdvantage",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": "American AAdvantage"
     },
     {
       "id": "citi-double-cash",
@@ -696,6 +683,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -711,8 +699,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "citi-strata",
@@ -721,6 +708,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -736,8 +724,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "citi-strata-premier",
@@ -746,6 +733,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -761,8 +749,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "pnc-cash-rewards",
@@ -771,6 +758,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -786,8 +774,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "pnc-cash-unlimited",
@@ -796,6 +783,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -811,8 +799,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "td-cash",
@@ -821,6 +808,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -836,8 +824,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "td-double-up",
@@ -846,6 +833,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -861,8 +849,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "td-flexpay",
@@ -871,6 +858,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -886,8 +874,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "truist-enjoy-cash",
@@ -896,6 +883,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -911,8 +899,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "truist-enjoy-cash-secured",
@@ -921,6 +908,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -936,8 +924,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "truist-enjoy-travel",
@@ -946,6 +933,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -961,8 +949,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "us-cashplus",
@@ -971,6 +958,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -990,8 +978,7 @@
         "alt": "Official front-facing product image of U.S. Bank Cash+ Visa Signature"
       },
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "us-shield",
@@ -1000,6 +987,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -1019,8 +1007,7 @@
         "alt": "Official front-facing product image of U.S. Bank Shield Visa"
       },
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "us-smartly",
@@ -1029,6 +1016,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -1048,8 +1036,7 @@
         "alt": "Official front-facing product image of U.S. Bank Smartly Visa Signature"
       },
       "accessType": "public",
-      "humanVerified": false,
-      "additionalSources": []
+      "airlineProgram": null
     },
     {
       "id": "wells-active-cash",
@@ -1058,6 +1045,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -1073,8 +1061,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "additionalSources": [],
-      "humanVerified": false
+      "airlineProgram": null
     },
     {
       "id": "wells-autograph",
@@ -1083,6 +1070,7 @@
       "status": "pending_review",
       "fictional": false,
       "tone": "slate",
+      "humanVerified": false,
       "summary": "Terms and benefits are awaiting human review.",
       "primaryLabel": "Pending human review",
       "feeSummary": "Annual fee: pending human review",
@@ -1098,8 +1086,7 @@
       "verificationLevel": "pending-human-review",
       "imageFront": null,
       "accessType": "public",
-      "additionalSources": [],
-      "humanVerified": false
+      "airlineProgram": null
     }
   ]
 }

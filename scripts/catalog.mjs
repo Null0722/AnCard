@@ -60,14 +60,17 @@ const publicCards=cards.map(card=>{
  if(review.name!==card.name||review.issuer!==card.issuer||JSON.stringify(review.candidate)!==JSON.stringify(candidateFrom(card)))fail(card.id,'card details changed; run npm run qc:sync, then review again');
  if(review.humanVerified){approved++;return {...card,humanVerified:true};}
  // Keep identity and source URL for discovery, but hide ALL unapproved financial terms and rates.
- return {...card,status:'pending_review',humanVerified:false,annualFeeUsd:null,
-  feeSummary:'Annual fee: pending human review',summary:'Terms and benefits are awaiting human review.',
-  primaryLabel:'Pending human review',rewards:[],categories:[],
-  features:card.features.includes('airline')?['airline']:[],
+ return {id:card.id,name:card.name,issuer:card.issuer,status:'pending_review',
+  fictional:false,tone:card.tone,humanVerified:false,
+  summary:'Terms and benefits are awaiting human review.',
+  primaryLabel:'Pending human review',feeSummary:'Annual fee: pending human review',annualFeeUsd:null,
+  rewards:[],categories:[],features:card.features.includes('airline')?['airline']:[],
   plainEnglish:'The proposed benefit details are currently in the human QC queue and have not been approved for visitors.',
   watchOut:'Do not rely on this card for a financial decision until its terms have been checked against the current issuer agreement.',
   limitations:'Annual fees, APRs, bonuses, redemption, and insurance benefits are intentionally hidden until human QC.',
-  verifiedAt:null,verificationLevel:'pending-human-review',additionalSources:[]};
+  verifiedAt:null,issuerSource:card.issuerSource,verificationLevel:'pending-human-review',
+  imageFront:card.imageFront??null,accessType:card.accessType??'public',airlineProgram:card.airlineProgram??null
+ };
 });
 const output=JSON.stringify({schemaVersion:1,cards:publicCards},null,2)+'\n';
 if(args.has('--check')) {const existing=await readFile(target,'utf8').catch(()=>null);if(existing!==output){console.error('Public catalog is out of date. Run: npm run build');process.exitCode=1;}else console.log(`Catalog validated: ${filenames.length} records, ${approved} human-reviewed, ${publicCards.length-approved} pending.`);}
