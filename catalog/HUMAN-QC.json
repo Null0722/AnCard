@@ -6,7 +6,7 @@
       "id": "chase-aer-lingus",
       "name": "Aer Lingus Visa Signature",
       "issuer": "Chase",
-      "humanVerified": false,
+      "humanVerified": true,
       "candidate": {
         "summary": "Avios airline rewards. Exact earning terms are pending a detailed issuer agreement review.",
         "annualFeeUsd": null,
