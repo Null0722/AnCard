@@ -39,6 +39,14 @@ function renderComparison(){
    block.append(text('p','Earn rules: '+(c.earnRules?.length?c.earnRules.map(r=>r.label+': '+earnText(r)).join('; '):'Not separately quantified')));
    block.append(text('p','Travel credits / perks: '+(c.benefits?.length?c.benefits.map(p=>p.name+': '+benefitText(p)).join('; '):'No quantified benefits in this record')));
    if(typeof c.monthlyFeeUsd==='number')block.append(text('p','Monthly membership fee: $'+c.monthlyFeeUsd));
+   const bonus=c.welcomeOffer;
+   block.append(text('p','Welcome offer: '+(bonus?(bonus.kind==='up_to'?'As high as ':'')+(bonus.unit==='usd'?'$':'')+bonus.amount.toLocaleString()+(bonus.unit==='usd'?'':' '+bonus.unit)+' after $'+bonus.minimumSpendUsd.toLocaleString()+' in '+bonus.monthsToEarn+' months':'Not documented')));
+   block.append(text('p','Targeted / invite-only: '+(c.targetedOffers?.description||'Not documented for this card')));
+   block.append(text('p','Starting limit: '+(Number.isFinite(c.approvalGuidance?.startingLimitMinUsd)?'$'+c.approvalGuidance.startingLimitMinUsd:'Set after individual underwriting')));
+   block.append(text('p','Issuer credit label: '+(c.approvalGuidance?.issuerCreditLevel||'No numerical approval threshold supported')));
+   block.append(text('p','Redemption examples: '+(c.redemptionDetail?.examples?.length?c.redemptionDetail.examples.map(x=>x.method+': '+x.centsPerPoint+' cents/point').join('; '):'No fixed verified value')));
+   block.append(text('p','Intro purchase APR: '+(Number.isFinite(c.pricingDetail?.introPurchaseAprPct)?c.pricingDetail.introPurchaseAprPct+'% for '+c.pricingDetail.introPurchaseMonths+' months':'Not verified')));
+
    block.append(text('p','Watch out: '+c.watchOut));
    grid.append(block);
  }
