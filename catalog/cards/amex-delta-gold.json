@@ -1,0 +1,32 @@
+{
+  "id": "amex-delta-gold",
+  "name": "Delta SkyMiles Gold American Express",
+  "issuer": "American Express",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "2X Delta purchases, restaurants and U.S. supermarkets; eligible checked bag benefits.",
+  "primaryLabel": "2X Delta purchases, restaurants and U.S. supermarkets; eligible checked bag benefits.",
+  "feeSummary": "$150 annual fee after introductory first year",
+  "annualFeeUsd": 150,
+  "rewards": [
+    "miles"
+  ],
+  "categories": [
+    "travel",
+    "dining",
+    "groceries"
+  ],
+  "features": [
+    "airline"
+  ],
+  "plainEnglish": "2X Delta purchases, restaurants and U.S. supermarkets; eligible checked bag benefits.",
+  "watchOut": "$0 introductory annual fee first year, then $150; special Delta flight credits require qualifying spend.",
+  "limitations": "Issuer terms and eligibility govern. Airline miles are not equivalent to cash. Companion benefits, checked bags, lounge access, and statement credits carry restrictions. Proposed details awaiting human review.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-gold-american-express-card/",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "airlineProgram": "Delta SkyMiles"
+}

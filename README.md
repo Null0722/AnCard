@@ -37,19 +37,33 @@ We are working toward a different model from conversion-focused comparison exper
 
 **A note on funding:** The long-term goal is to explore transparent, non-tracking contextual advertising and potentially donations. This is a future business-model direction, **not** a claim that donations or ad funding is live today. Any changes affecting independence or privacy must be documented and disclosed.
 
-## Current status — issuer-source snapshot (release candidate)
+## Current status — v0.3.0 owner-QC release candidate
 
 The repository includes an early, working **static-site prototype** with:
 
 - A disclosure-first entry flow and our soft-dark “Clear Atlas” visual direction.
 - Client-side category filters and neutral sorting.
 - A plain-language decoder, card detail views and side-by-side comparison.
-- 28 real consumer credit card listings across ten issuers, with selected facts checked against issuer and network sources; several important financial fields still await complete agreement review.
+- 41 real credit card identities across ten issuers, including 13 airline co-branded cards. All proposed financial details are currently hidden pending human verification.
 - A Git-versioned card catalog and a build-time validation script.
 
-**Important:** Listings are limited issuer-source snapshots, not exhaustive agreement reviews. Some pricing and APR details are unknown. Check current issuer terms before making any decisions. Previously fictional records remain in source control but are excluded from the generated public feed.
+**Important:** All 41 cards start as identity-only placeholders. Proposed fees, rewards, restrictions and sources are available for your review in `catalog/HUMAN-QC.json`, but no unapproved financial claims are published.
 
 AnCard provides general educational information, not personalized financial, legal or credit advice. Card terms can change. Before applying for any card, read its current official issuer disclosures and agreement.
+
+## Approve a card using one searchable file
+
+**[Open the central HUMAN-QC.json review queue](catalog/HUMAN-QC.json)**. Press **Ctrl+F**, enter a card name, and read its `candidate` fields for annual fees, benefits, restrictions and official source URL.
+
+1. Check every proposed term against the issuer's current official disclosures.
+2. If the values are correct, change `"humanVerified": false` to `"humanVerified": true` for that card. You may add initials or review notes.
+3. Run `npm run build && npm test`. Commit both `catalog/HUMAN-QC.json` and the regenerated `docs/data/cards.json` file before merging.
+
+A GitHub edit of the flag **alone** does not rebuild the static site. If an underlying card detail changes, run `npm run qc:sync` to refresh the review queue. The changed card resets to `false` and must be checked again.
+
+**False means visitors see only a named placeholder and official issuer link, with no fees, benefits or earning rates.** True means the reviewed card terms can be published. The source record and central review queue must match or the build fails.
+
+See the [human QC instructions](project/HUMAN-QC.md) for the complete process.
 
 ## Optional official card images
 

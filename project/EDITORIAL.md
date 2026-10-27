@@ -2,7 +2,7 @@
 
 ## Card records
 
-Each `catalog/cards/<card-id>.json` file is the canonical record. The compiler in `scripts/catalog.mjs` creates the only public JSON consumed by the frontend (`docs/data/cards.json`). Allowed `status` values: `draft`, `review`, `demo`, `published`, `archived`. Only published entries reach the public catalog. Demo entries remain in Git for development but are excluded from visitor-facing data. Demo records must be fictional, lack verification claims and be conspicuously labeled in the UI.
+Each `catalog/cards/<card-id>.json` file is the canonical record. The compiler in `scripts/catalog.mjs` creates the only public JSON consumed by the frontend (`docs/data/cards.json`). Allowed `status` values: `draft`, `review`, `demo`, `published`, `archived`. Only published-source entries reach the public catalog, but their financial details are hidden until explicit approval in the central `catalog/HUMAN-QC.json` queue. Demo entries remain in Git for development but are excluded from visitor-facing data. Demo records must be fictional, lack verification claims and be conspicuously labeled in the UI.
 
 Required fields: `id`, `name`, `issuer`, `status`, `fictional`, `tone`, `summary`, `primaryLabel`, `feeSummary`, `annualFeeUsd` (integer or null), `rewards`, `categories`, `features`, `plainEnglish`, `watchOut`, `limitations`, `verifiedAt`, `issuerSource`.
 
@@ -26,3 +26,9 @@ Archiving preserves the card's source record and Git history while removing it f
 The 28-card initial research cohort records **selected source-checked details**, not a claim of full agreement verification. Values not confirmed are null/unknown; promotional APRs, card fees and restrictions must not be inferred. All published records have a source page and date; those alone are not an independent full-document audit. The old fictional records stay in Git but no longer compile into the public catalog.
 
 External card-front art must have an exact issuer/CDN URL, source metadata, and no referral parameters. It is **never loaded until the visitor opts in**. Before full consumer launch, recheck image rights and URLs, independent terms and all unverified mandatory fields.
+
+## v0.3.0 — Human QC gate
+
+Open `catalog/HUMAN-QC.json`, Ctrl+F the card name, read the pre-filled proposed annual fee, rewards and restrictions, and open the official `issuerSource`. Read the pricing/benefits agreement and confirm each claim. If the source record changes, run `npm run qc:sync` to reconcile and **reset any changed card to false**. Only after checking the candidate fields should a reviewer set `humanVerified:true`. Run `npm run build && npm test`, and commit the queue and regenerated `docs/data/cards.json` together. The build rejects mismatched review snapshots. Never bulk-approve unverified cards.
+
+The public placeholder is deliberately an identity-only allowlist. Only card name, issuer, source link, airline classification and opt-in card art can appear before human approval. This is not a full agreement audit; issuer terms can change after human review.

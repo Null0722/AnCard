@@ -1,0 +1,30 @@
+{
+  "id": "chase-united-explorer",
+  "name": "United Explorer Card",
+  "issuer": "Chase",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "Free first checked bag, 2 annual United Club one-time passes, priority boarding; miles on eligible United purchases.",
+  "primaryLabel": "Free first checked bag, 2 annual United Club one-time passes, priority boarding; miles on eligible United purchases.",
+  "feeSummary": "$150 annual fee after introductory first year",
+  "annualFeeUsd": 150,
+  "rewards": [
+    "miles"
+  ],
+  "categories": [
+    "travel"
+  ],
+  "features": [
+    "airline"
+  ],
+  "plainEnglish": "Free first checked bag, 2 annual United Club one-time passes, priority boarding; miles on eligible United purchases.",
+  "watchOut": "$0 introductory annual fee in first year, then $150. Baggage and pass privileges require eligible United travel.",
+  "limitations": "Issuer terms and eligibility govern. Airline miles are not equivalent to cash. Companion benefits, checked bags, lounge access, and statement credits carry restrictions. Proposed details awaiting human review.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://creditcards.chase.com/travel-credit-cards/united/united-explorer",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "airlineProgram": "United MileagePlus"
+}

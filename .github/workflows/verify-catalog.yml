@@ -1,0 +1,39 @@
+name: Verify AnCard card catalog
+
+on:
+  pull_request:
+    paths:
+      - 'catalog/**'
+      - 'scripts/**'
+      - 'docs/**'
+      - 'package.json'
+      - '.github/workflows/verify-catalog.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'catalog/**'
+      - 'scripts/**'
+      - 'docs/**'
+      - 'package.json'
+      - '.github/workflows/verify-catalog.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Compile human-reviewed public catalog
+        run: npm run build
+      - name: Run catalog and JavaScript checks
+        run: npm test
+      - name: Verify generated static data is committed
+        run: git diff --exit-code -- docs/data/cards.json

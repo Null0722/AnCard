@@ -19,3 +19,7 @@
 ## ADR-005 — Acknowledgment without tracking — 2026-10-27
 
 **Decision:** Display a disclosure at every page load, store acknowledgment only in JavaScript page memory, and do not create a behavioral or consent profile. **Why:** Conforms to the approved mandatory trust gate without cookies. **Tradeoff:** Repeated acknowledgment can create friction; re-evaluate through privacy-preserving accessibility review.
+
+## ADR-006 — Single-file human QC & safe public placeholders — 2026-10-27
+
+**Decision:** Preserve one canonical JSON record per card but provide one searchable `catalog/HUMAN-QC.json` queue sorted by name. A boolean `humanVerified` gates publication of **all financial facts**. The compiler compares the proposed candidate snapshot with the canonical card to detect drift, then publishes either the approved card or an **identity-only placeholder**. **Why:** The owner can Ctrl+F and approve cards without editing frontend code while accidental changes do not silently retain approval. **Tradeoff:** A `npm run build` static rebuild is required after toggling approval; editing just the flag on GitHub does not instantly update the hosted site. **Safety:** `npm run qc:sync` resets changed approvals to false.

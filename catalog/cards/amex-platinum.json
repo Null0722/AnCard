@@ -7,8 +7,8 @@
   "tone": "slate",
   "summary": "5X points on qualifying flights and prepaid hotels booked through Amex Travel",
   "primaryLabel": "5X points on qualifying flights and prepaid hotels booked through Amex Travel",
-  "feeSummary": "Annual fee: not verified",
-  "annualFeeUsd": null,
+  "feeSummary": "$895 annual fee",
+  "annualFeeUsd": 895,
   "rewards": [
     "points"
   ],

@@ -24,10 +24,10 @@ function renderComparison(){
  }
 }
 function render(){
- byId('annual-output').textContent='$'+Number(byId('annual').value).toLocaleString();
+ byId('annual-output').textContent=Number(byId('annual').value)===1000?'Any / unknown':'$'+Number(byId('annual').value).toLocaleString();
  const sort=byId('sort').value;
  const matches=filtered().sort((a,b)=>sort==='fee'?(a.annualFeeUsd??Infinity)-(b.annualFeeUsd??Infinity)||a.name.localeCompare(b.name):String(a[sort]||'').localeCompare(String(b[sort]||'')));
- count.textContent=matches.length+' of '+cards.length+' source-checked real cards match your filters.';
+ count.textContent=matches.length+' of '+cards.length+' cards match; '+cards.filter(c=>c.humanVerified).length+' passed human QC.';
  results.replaceChildren();
  if(!matches.length) results.append(text('p','No cards match those selections. Clear filters to explore again.','status'));
  for(const c of matches){
@@ -38,7 +38,7 @@ function render(){
   article.append(art,text('h3',c.name),text('p',c.issuer,'institution'),text('p',c.summary));
   const tags=document.createElement('div');tags.className='tags';
   for(const t of [...(c.rewards||[]),...(c.categories||[]),...(c.features||[])]) tags.append(text('span',pretty(t),'tag'));
-  article.append(tags,text('p',viewFee(c)),text('p','Fine print: '+c.watchOut));
+  article.append(tags,text('p',viewFee(c)),text('p','Important: '+c.watchOut));
   const footer=document.createElement('div');footer.className='product-footer';
   const label=document.createElement('label');
   const checkbox=document.createElement('input'); checkbox.type='checkbox'; checkbox.checked=selected.has(c.id);
@@ -47,7 +47,7 @@ function render(){
   checkbox.addEventListener('change',()=>{if(checkbox.checked)selected.add(c.id);else selected.delete(c.id);render();});
   label.append(checkbox,document.createTextNode(' Compare'));
   const source=document.createElement('a');source.href=c.issuerSource;source.target='_blank';source.rel='noopener noreferrer';source.referrerPolicy='no-referrer';source.textContent='Official source ↗';source.className='data-note';
-  footer.append(label,source,text('span','Source checked '+c.verifiedAt+' • selected facts','data-note'));
+  footer.append(label,source,text('span',c.humanVerified?'Human QC approved':'Pending human review','data-note'));
   article.append(footer); results.append(article);
  }
  renderComparison();
@@ -61,6 +61,6 @@ form.addEventListener('reset',()=>{selected.clear();queueMicrotask(render);});
 byId('sort').addEventListener('change',render);
 byId('clear-compare').addEventListener('click',()=>{selected.clear();render();});
 fetch('../data/cards.json',{cache:'no-store'}).then(resp=>{if(!resp.ok)throw new Error('Catalog could not load');return resp.json();}).then(data=>{
- cards=Array.isArray(data.cards)?data.cards.filter(c=>c && c.status==='published' && c.fictional===false):[];
+ cards=Array.isArray(data.cards)?data.cards.filter(c=>c && ['published','pending_review'].includes(c.status) && c.fictional===false):[];
  render();
 }).catch(()=>{count.textContent='The demo catalog is unavailable.';results.append(text('p','Try reloading this page or check the generated data file.','status'));});

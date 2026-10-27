@@ -1,0 +1,32 @@
+{
+  "id": "citi-aadvantage-platinum",
+  "name": "Citi AAdvantage Platinum Select",
+  "issuer": "Citi",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "2X American Airlines, restaurants and gas; preferred boarding.",
+  "primaryLabel": "2X American Airlines, restaurants and gas; preferred boarding.",
+  "feeSummary": "$99 annual fee after introductory first year",
+  "annualFeeUsd": 99,
+  "rewards": [
+    "miles"
+  ],
+  "categories": [
+    "travel",
+    "gas",
+    "dining"
+  ],
+  "features": [
+    "airline"
+  ],
+  "plainEnglish": "2X American Airlines, restaurants and gas; preferred boarding.",
+  "watchOut": "$0 introductory annual fee first year then $99; eligible AA purchases and benefit rules apply.",
+  "limitations": "Issuer terms and eligibility govern. Airline miles are not equivalent to cash. Companion benefits, checked bags, lounge access, and statement credits carry restrictions. Proposed details awaiting human review.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.citi.com/credit-cards/travel-reward-credit-cards",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "airlineProgram": "American AAdvantage"
+}

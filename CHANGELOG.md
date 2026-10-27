@@ -2,6 +2,16 @@
 
 All meaningful website changes are documented here and in Git history. Entries should state **what changed**, **why**, **files/components affected**, **verification**, and **what is next**. Most recent changes first. Do not silently rewrite prior decisions; add a new dated entry instead.
 
+## 2026-10-27 — v0.3.0 centralized human review and airline expansion
+
+- **Catalog:** Added 13 airline co-branded card records across United, Southwest, American Airlines, Delta and Atmos, bringing the prospective real-card cohort to **41** across ten issuers.
+- **Human review:** Added `catalog/HUMAN-QC.json`, a single searchable alphabetical review queue with pre-filled proposed annual fees, benefits, warnings, links and a `humanVerified: false` toggle for every card. No card was automatically approved.
+- **Safety:** Changed catalog compiler to publish **identity-only placeholders** until human approval. Sensitive financial values and unchecked claims are excluded from the generated public JSON. A mismatch between original card facts and the QC candidate prevents the build from passing.
+- **Workflow:** Added `npm run qc:sync`, which keeps approvals only for unchanged card candidates; changed details reset to `false`. `npm run build && npm test` produces and checks the visitor-facing data.
+- **Frontend:** Main directory and dashboard label pending cards clearly and include an airline category/filter, without adding visitor accounts or tracking.
+- **Maintenance:** Linked documentation and updated Git notepad. Full per-card agreement verification, source freshness, artwork, mobile/browser testing and final deployment remain open.
+- **Affected:** Card records, approval queue, catalog compiler, generated data, dashboard/directory, README and project documentation.
+
 ## 2026-10-27 — Real-card source snapshot and opt-in visual assets
 
 - **Changed:** Created 28 real card records spanning 10 banks; limited claims to selected current issuer-page and network-directory statements. Archived fictional entries from the compiled public feed without deleting their Git history.
