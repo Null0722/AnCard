@@ -8,8 +8,8 @@ Provide a separate client-side workspace for deliberate exploration and factual 
 
 ## Present capabilities (v1 catalog adapter)
 
-- Load `docs/data/cards.json` locally from GitHub Pages; display fictional demonstration records visibly labeled.
-- Filters: reward type, spending category, annual fee upper bound, and existing secured/student descriptors. Factual alphabetical and cost sorting.
+- Load `docs/data/cards.json` locally from GitHub Pages; display 28 real issuer-sourced records with explicitly limited source verification.
+- Filters: reward type, spending category, annual fee upper bound, and secured descriptors where documented. Factual alphabetical and cost sorting.
 - No persistent state, server queries with user choices, cookie, login, analytics or recommendations.
 - Do not show invented foreign fees, APRs, bonus valuations or access thresholds for the example records.
 
@@ -30,3 +30,7 @@ Checking/savings: distinct product tabs and differing fee/interest controls; nev
 - No sensitive balances or scores sent to server.
 - Support URLs relative to the GitHub Pages project subpath.
 - Update docs and changelog for every frontend or schema update.
+
+## External card art opt-in (v0.2.0)
+
+Global Show Card Art checkbox defaults off on every page load and navigation. No third-party image requests until the visitor intentionally enables it. The explanatory label states that third-party issuer or CDN servers receive IP address and browser request metadata. The app sets referrerPolicy=no-referrer. Unknown artwork remains a text-first badge. No cookies or persistent browser storage is used.

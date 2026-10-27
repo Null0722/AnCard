@@ -11,7 +11,7 @@ AnCard is an independent, privacy-first credit-card literacy and navigation plat
 ## Current MVP scope
 
 1. Disclosure-first entry acknowledgment. No personal-data consent implied by acknowledgment.
-2. Curated credit-card catalog; first release uses explicitly fictional demonstration data pending real issuer verification.
+2. Curated credit-card catalog; current release-candidate catalog contains 28 source-checked real credit-card listings across 10 issuers; selected facts are not a complete card-agreement audit.
 3. User-controlled, combinable reward, spending, card-type and fee filters; neutral sort options.
 4. Plain-English financial term explainers and detailed caveats per card.
 5. Side-by-side factual comparison, maximum three cards, no ranking or winner.
@@ -36,8 +36,12 @@ HTML/CSS and native JavaScript; no runtime frameworks; card JSON files in Git; d
 
 ## Launch requirements
 
-- Replace examples with verified real consumer card data, confirmed directly from official terms.
+- Perform independent complete card-agreement audits for the 28 current issuer-sourced records and recheck all reward/fee disclosures, including unknown fields.
 - Establish a regular content review calendar and a correction process.
 - Test keyboard usability, screen readers, browser compatibility, mobile presentation and filtering accuracy.
 - Review disclosures with appropriately qualified legal/compliance counsel before publicly representing the site as definitive financial information.
 - Decide whether repository can become public for GitHub Free Pages, or use a qualifying plan/other host; GitHub Pages sites are public even if repository remains private under an eligible plan.
+
+## 2026-10-27 — Real issuer snapshot and visual opt-in
+
+The public JSON feed now contains 28 real cards and omits six earlier fictional demo records, which are retained in the Git history. Source-check dates reflect confirmation of **selected** issuer and issuer-network facts, not independent verification of every card fee, APR, welcome offer, or protection. Undefined fields remain unknown. Nine confirmed card-art URLs from Chase, Capital One and U.S. Bank are optional and default off; loading them exposes the visitor's network request metadata to those institutions/CDNs. User choice exists only in page memory. All source and art details remain subject to review before merging the release candidate.

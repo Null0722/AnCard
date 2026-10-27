@@ -21,5 +21,11 @@
   "issuerSource": "https://www.wellsfargo.com/credit-cards/agreements/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
-  "accessType": "public"
+  "accessType": "public",
+  "additionalSources": [
+    {
+      "url": "https://www.visa.com/en-us/card-finder/credit-card/personal/other",
+      "label": "Visa network listing — reward and annual fee reference"
+    }
+  ]
 }

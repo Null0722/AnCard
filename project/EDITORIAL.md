@@ -2,7 +2,7 @@
 
 ## Card records
 
-Each `catalog/cards/<card-id>.json` file is the canonical record. The compiler in `scripts/catalog.mjs` creates the only public JSON consumed by the frontend (`docs/data/cards.json`). Allowed `status` values: `draft`, `review`, `demo`, `published`, `archived`. Only demo and published entries reach the public catalog. Demo records must be fictional, lack verification claims and be conspicuously labeled in the UI.
+Each `catalog/cards/<card-id>.json` file is the canonical record. The compiler in `scripts/catalog.mjs` creates the only public JSON consumed by the frontend (`docs/data/cards.json`). Allowed `status` values: `draft`, `review`, `demo`, `published`, `archived`. Only published entries reach the public catalog. Demo entries remain in Git for development but are excluded from visitor-facing data. Demo records must be fictional, lack verification claims and be conspicuously labeled in the UI.
 
 Required fields: `id`, `name`, `issuer`, `status`, `fictional`, `tone`, `summary`, `primaryLabel`, `feeSummary`, `annualFeeUsd` (integer or null), `rewards`, `categories`, `features`, `plainEnglish`, `watchOut`, `limitations`, `verifiedAt`, `issuerSource`.
 
