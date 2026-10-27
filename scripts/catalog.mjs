@@ -41,7 +41,7 @@ function validate(c,filename){
   }else if(c.status==='demo' && c.fictional!==true){fail(filename,'demo cards must be explicitly fictional');}
   if(c.status==='demo' && (c.issuerSource!==null || c.verifiedAt!==null))fail(filename,'demo cards cannot claim an issuer source or verification');
 }
-const filenames=(await readdir(source)).filter(name=>name.endsWith('.json')).sort();
+const filenames=(await readdir(source)).filter(name=>name.endsWith('.json')).sort((a,b)=>{const x=a.slice(0,-5), y=b.slice(0,-5);return x<y?-1:x>y?1:0;});
 const cards=[];const ids=new Set();
 for(const filename of filenames){const card=JSON.parse(await readFile(resolve(source,filename),'utf8'));validate(card,filename);if(ids.has(card.id))fail(filename,'duplicate id');ids.add(card.id);if(card.status==='published')cards.push(card);}
 const qc=JSON.parse(await readFile(reviewPath,'utf8'));
