@@ -2,6 +2,17 @@
 
 All meaningful website changes are documented here and in Git history. Entries should state **what changed**, **why**, **files/components affected**, **verification**, and **what is next**. Most recent changes first. Do not silently rewrite prior decisions; add a new dated entry instead.
 
+## 2026-10-27: Premium flip cards and original copyright-conscious artwork
+
+- Redesigned the directory as responsive cards with original locally rendered conceptual visuals and a flip animation contained inside each card border.
+- Card click, touch and keyboard button flip to an at-a-glance summary; the back links to the full Decode Terms experience. Reduced motion is respected, and hidden-side controls are inert.
+- Updated dashboard with the same visual and flip behavior while preserving the factual three-card comparison.
+- Added issuer and identity filtering and clearly separated those from financial-category filters that require human-reviewed values. Added 24-at-a-time pagination.
+- Nine older issuer image URLs remain stored for research but will not be loaded without documented written usage authorization and explicit visitor opt-in.
+- Added static UI regression tests for accessibility state, privacy controls, original graphics, image permissions and financial-data QC.
+- No visitor accounts, behavioral tracking, analytics or persistent client state added.
+- Automated CI is required before merging; manual browser rendering and assistive-technology QA remain recommended.
+
 ## 2026-10-27: Market-informed Decode Terms and new QC proposal fields
 
 - Reviewed first-party issuer materials, CFPB credit/rewards/ability-to-pay guidance, consumer.gov card comparison advice and the 2025 J.D. Power credit-card satisfaction research.

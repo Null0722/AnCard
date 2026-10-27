@@ -38,3 +38,11 @@ Global Show Card Art checkbox defaults off on every page load and navigation. No
 ## v0.3.0  -  Airline cards and pending review
 
 The dashboard accepts `pending_review` and `published` records. Unapproved card rows show identity and source only. Added `airline` identity facet, allowing exploration of 13 additional airline co-branded candidates without exposing proposed earning rates. Card art remains optional and disabled by default.
+
+## v0.7.0 premium card interactions
+
+The dashboard and directory share one original AnCard illustration helper. It creates all graphics locally with original gradients and geometry, not copied issuer art. Card front and reverse views have keyboard-accessible flip/return controls and hide inactive controls from assistive technology.
+
+Filters can select issuer, card identity (airline, hotel, secured, student), and human-review status without assuming unapproved rewards or annual fees. Verified-terms filters still exclude cards with unknown values. The first 24 cards are rendered, with the user controlling how many additional records appear.
+
+The dashboard also preserves its original factual comparison workflow. All issuer image URLs remain blocked unless written usage permissions are recorded, and later require an additional visitor opt-in.
