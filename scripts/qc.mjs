@@ -14,7 +14,7 @@ for(const filename of (await readdir(directory)).filter(n=>n.endsWith('.json')).
  if(card.status!=='published')continue; // Keep demo cards in Git, not in the review queue.
  const candidate=candidateFrom(card), before=known.get(card.id);
  const unchanged=before && before.name===card.name && before.issuer===card.issuer && JSON.stringify(before.candidate)===JSON.stringify(candidate);
- cards.push({id:card.id,name:card.name,issuer:card.issuer,humanVerified:unchanged&&before.humanVerified===true,
+ cards.push({id:card.id,name:card.name,issuer:card.issuer,humanVerified:Boolean(unchanged&&before.humanVerified===true),
   candidate,reviewNotes:unchanged?(before.reviewNotes||''):'',reviewedBy:unchanged?(before.reviewedBy||''):''});
 }
 cards.sort((a,b)=>a.name.localeCompare(b.name)||a.issuer.localeCompare(b.issuer));
