@@ -3,6 +3,93 @@
   "instructions": "Ctrl+F the card name; check candidate details and issuerSource, then change humanVerified from false to true. Run npm run build && npm test. The compiler will re-lock any edited card record until the QC queue is synced and reapproved.",
   "cards": [
     {
+      "id": "amex-gold",
+      "name": "American Express Gold",
+      "issuer": "American Express",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "4X restaurants up to $50,000 per calendar year and U.S. supermarkets up to $25,000.",
+        "annualFeeUsd": 325,
+        "feeSummary": "$325 annual fee",
+        "primaryLabel": "4X restaurants up to $50,000 per calendar year and U.S. supermarkets up to $25,000.",
+        "plainEnglish": "4X restaurants up to $50,000 per calendar year and U.S. supermarkets up to $25,000.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "dining"
+        ],
+        "features": [],
+        "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "American Express Gold is a dining credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [
+          {
+            "label": "Restaurants",
+            "rate": 4,
+            "unit": "x",
+            "capAmountUsd": 50000,
+            "capPeriod": "Calendar year"
+          },
+          {
+            "label": "U.S. supermarkets",
+            "rate": 4,
+            "unit": "x",
+            "capAmountUsd": 25000,
+            "capPeriod": "Calendar year"
+          }
+        ],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "amex-green",
+      "name": "American Express Green",
+      "issuer": "American Express",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Travel and dining points. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Travel and dining points; check current issuer program terms.",
+        "plainEnglish": "This card is associated with travel and dining points. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.americanexpress.com/us/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "American Express Green is a travel credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
       "id": "amex-platinum",
       "name": "American Express Platinum",
       "issuer": "American Express",
@@ -133,6 +220,111 @@
         "additionalSources": [],
         "imageFront": null,
         "accessType": "public"
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "boa-customized-cash-secured",
+      "name": "Bank of America Customized Cash Rewards Secured",
+      "issuer": "Bank of America",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Choice-category cash back with refundable deposit. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Choice-category cash back with refundable deposit; check current issuer program terms.",
+        "plainEnglish": "This card is associated with choice-category cash back with refundable deposit. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [
+          "secured"
+        ],
+        "issuerSource": "https://www.bankofamerica.com/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Bank of America Customized Cash Rewards Secured is a credit building credit card candidate from Bank of America. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "selectable",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "boa-premium-elite",
+      "name": "Bank of America Premium Rewards Elite",
+      "issuer": "Bank of America",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "2X travel/dining; 1.5X other eligible purchases.",
+        "annualFeeUsd": 550,
+        "feeSummary": "$550 annual fee",
+        "primaryLabel": "2X travel/dining; 1.5X other eligible purchases.",
+        "plainEnglish": "2X travel/dining; 1.5X other eligible purchases.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.bankofamerica.com/credit-cards/products/premium-rewards-elite-credit-card/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Bank of America Premium Rewards Elite is a travel credit card candidate from Bank of America. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [
+          {
+            "label": "Travel and dining",
+            "rate": 2,
+            "unit": "x"
+          },
+          {
+            "label": "Other eligible purchases",
+            "rate": 1.5,
+            "unit": "x"
+          }
+        ],
+        "benefits": [
+          {
+            "name": "Global Entry or TSA PreCheck credit",
+            "type": "global_entry",
+            "amountUsd": 120,
+            "frequencyMonths": 48,
+            "condition": "Up to $120 every four years after eligible application fee purchase"
+          },
+          {
+            "name": "Annual airline incidental credit",
+            "type": "statement_credit",
+            "amountUsd": 300,
+            "frequencyMonths": 12,
+            "condition": "Qualifying purchases"
+          },
+          {
+            "name": "Lifestyle statement credits",
+            "type": "statement_credit",
+            "amountUsd": 150,
+            "frequencyMonths": 12,
+            "condition": "Qualifying lifestyle purchases"
+          }
+        ],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
@@ -638,6 +830,44 @@
       "reviewedBy": ""
     },
     {
+      "id": "amex-delta-blue",
+      "name": "Delta SkyMiles Blue",
+      "issuer": "American Express",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Delta SkyMiles with no annual fee. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Delta SkyMiles with no annual fee; check current issuer program terms.",
+        "plainEnglish": "This card is associated with delta skymiles with no annual fee. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://www.americanexpress.com/us/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Delta SkyMiles Blue is a airline credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "miles",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
       "id": "amex-delta-gold",
       "name": "Delta SkyMiles Gold American Express",
       "issuer": "American Express",
@@ -736,6 +966,286 @@
         "additionalSources": [],
         "imageFront": null,
         "accessType": "public"
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "atlas-everyday-cash",
+      "name": "Everyday Cash",
+      "issuer": "Atlas Demo",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "See how grocery and dining rewards can work, including eligibility conditions and category caps.",
+        "annualFeeUsd": 0,
+        "feeSummary": "Illustrative: $0 annual fee",
+        "primaryLabel": "Cash-back rewards",
+        "plainEnglish": "Cash-back cards return a portion of eligible purchases. The category where you shop can affect how much you earn.",
+        "watchOut": "Some issuers cap bonus rewards or exclude certain merchants, even when they sell groceries or food.",
+        "limitations": "Demo terms only: no actual rewards percentage, offer, APR or issuer agreement is represented.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [
+          "groceries",
+          "dining"
+        ],
+        "features": [],
+        "issuerSource": null,
+        "verifiedAt": null,
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "amex-hilton",
+      "name": "Hilton Honors American Express",
+      "issuer": "American Express",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "7X points at eligible Hilton properties, 5X at U.S. restaurants, supermarkets and gas stations.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "7X points at eligible Hilton properties, 5X at U.S. restaurants, supermarkets and gas stations.",
+        "plainEnglish": "7X points at eligible Hilton properties, 5X at U.S. restaurants, supermarkets and gas stations.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Hilton Honors American Express is a hotel credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [
+          {
+            "label": "Hilton hotels and resorts",
+            "rate": 7,
+            "unit": "x"
+          },
+          {
+            "label": "U.S. restaurants, supermarkets and gas",
+            "rate": 5,
+            "unit": "x"
+          }
+        ],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "amex-hilton-aspire",
+      "name": "Hilton Honors American Express Aspire",
+      "issuer": "American Express",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "14X eligible Hilton purchases and Hilton Honors Diamond status.",
+        "annualFeeUsd": 550,
+        "feeSummary": "$550 annual fee",
+        "primaryLabel": "14X eligible Hilton purchases and Hilton Honors Diamond status.",
+        "plainEnglish": "14X eligible Hilton purchases and Hilton Honors Diamond status.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.americanexpress.com/us/credit-cards/category/hotel-rewards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Hilton Honors American Express Aspire is a hotel credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [
+          {
+            "label": "Eligible Hilton purchases",
+            "rate": 14,
+            "unit": "x"
+          }
+        ],
+        "benefits": [
+          {
+            "name": "Hilton Honors Diamond status",
+            "type": "hotel_status",
+            "amountUsd": null,
+            "frequencyMonths": null,
+            "condition": "Terms and program requirements apply"
+          }
+        ],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "amex-hilton-surpass",
+      "name": "Hilton Honors American Express Surpass",
+      "issuer": "American Express",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Hilton Honors rewards and elite benefits. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Hilton Honors rewards and elite benefits; check current issuer program terms.",
+        "plainEnglish": "This card is associated with hilton honors rewards and elite benefits. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.americanexpress.com/us/credit-cards/category/hotel-rewards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Hilton Honors American Express Surpass is a hotel credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "amex-marriott-bevy",
+      "name": "Marriott Bonvoy Bevy American Express",
+      "issuer": "American Express",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Marriott Bonvoy hotel rewards. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Marriott Bonvoy hotel rewards; check current issuer program terms.",
+        "plainEnglish": "This card is associated with marriott bonvoy hotel rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.americanexpress.com/us/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Marriott Bonvoy Bevy American Express is a hotel credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "amex-marriott-brilliant",
+      "name": "Marriott Bonvoy Brilliant American Express",
+      "issuer": "American Express",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Premium Marriott Bonvoy card benefits. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Premium Marriott Bonvoy card benefits; check current issuer program terms.",
+        "plainEnglish": "This card is associated with premium marriott bonvoy card benefits. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.americanexpress.com/us/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Marriott Bonvoy Brilliant American Express is a hotel credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "bluebird-open-skies",
+      "name": "Open Skies",
+      "issuer": "Bluebird Demo",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Understand points, airline redemption rules and which travel perks come with restrictions.",
+        "annualFeeUsd": 95,
+        "feeSummary": "Illustrative: $95 annual fee",
+        "primaryLabel": "Travel miles",
+        "plainEnglish": "Travel cards may earn miles or points that can be used in different ways. Redemption value depends on program rules.",
+        "watchOut": "Award availability, transfer ratios, blackout policies and annual fees can affect the real value of rewards.",
+        "limitations": "Fictional program; no actual airline, points valuation or booking benefit is promised.",
+        "rewards": [
+          "miles",
+          "points"
+        ],
+        "categories": [
+          "travel",
+          "dining"
+        ],
+        "features": [],
+        "issuerSource": null,
+        "verifiedAt": null,
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
       "reviewedBy": ""
