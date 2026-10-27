@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "4X restaurants up to $50,000 per calendar year and U.S. supermarkets up to $25,000.",
-  "primaryLabel": "4X restaurants up to $50,000 per calendar year and U.S. supermarkets up to $25,000.",
+  "summary": "4X Membership Rewards points at restaurants up to $50,000 per calendar year and eligible U.S. supermarkets up to $25,000.",
+  "primaryLabel": "4X Membership Rewards points at restaurants up to $50,000 per calendar year and eligible U.S. supermarkets up to $25,000.",
   "feeSummary": "$325 annual fee",
   "annualFeeUsd": 325,
   "rewards": [
@@ -16,16 +16,16 @@
     "dining"
   ],
   "features": [],
-  "plainEnglish": "4X restaurants up to $50,000 per calendar year and U.S. supermarkets up to $25,000.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "4X Membership Rewards points at restaurants up to $50,000 per calendar year and eligible U.S. supermarkets up to $25,000.",
+  "watchOut": "Restaurant and supermarket rates have separate annual caps; enrollment is required for some statement credits.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
   "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "American Express Gold is a dining credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
-  "rewardStructure": "points",
+  "bio": "American Express Gold from American Express. 4X Membership Rewards points at restaurants up to $50,000 per calendar year and eligible U.S. supermarkets up to $25,000.",
+  "rewardStructure": "tiered",
   "earnRules": [
     {
       "label": "Restaurants",
@@ -42,5 +42,6 @@
       "capPeriod": "Calendar year"
     }
   ],
-  "benefits": []
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

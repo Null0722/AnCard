@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Secured card with cash back. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Secured card with cash back; check current issuer program terms.",
+  "summary": "1.5% unlimited cash back on eligible purchases; $0 annual fee and refundable secured deposit starting at $200.",
+  "primaryLabel": "1.5% unlimited cash back on eligible purchases; $0 annual fee and refundable secured deposit starting at $200.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -16,16 +16,23 @@
   "features": [
     "secured"
   ],
-  "plainEnglish": "This card is associated with secured card with cash back. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "1.5% unlimited cash back on eligible purchases; $0 annual fee and refundable secured deposit starting at $200.",
+  "watchOut": "A refundable security deposit is required to open the account.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+  "issuerSource": "https://www.capitalone.com/credit-cards/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Quicksilver Secured Rewards is a credit building credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Quicksilver Secured Rewards from Capital One. 1.5% unlimited cash back on eligible purchases; $0 annual fee and refundable secured deposit starting at $200.",
   "rewardStructure": "flat",
-  "earnRules": [],
-  "benefits": []
+  "earnRules": [
+    {
+      "label": "Eligible purchases",
+      "rate": 1.5,
+      "unit": "percent"
+    }
+  ],
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "2X eligible purchases, 5X portal flights, 10X portal hotels and rental cars.",
-  "primaryLabel": "2X eligible purchases, 5X portal flights, 10X portal hotels and rental cars.",
+  "summary": "10X miles for hotels/rental cars through Capital One Travel, 5X portal flights/vacation rentals, 2X all other eligible purchases.",
+  "primaryLabel": "10X miles for hotels/rental cars through Capital One Travel, 5X portal flights/vacation rentals, 2X all other eligible purchases.",
   "feeSummary": "$395 annual fee",
   "annualFeeUsd": 395,
   "rewards": [
@@ -16,54 +16,55 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "2X eligible purchases, 5X portal flights, 10X portal hotels and rental cars.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "10X miles for hotels/rental cars through Capital One Travel, 5X portal flights/vacation rentals, 2X all other eligible purchases.",
+  "watchOut": "Portal-only multipliers and credits are distinct from direct airline/hotel purchases.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
   "issuerSource": "https://www.capitalone.com/credit-cards/venture-x/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Capital One Venture X Rewards is a travel credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Capital One Venture X Rewards from Capital One. 10X miles for hotels/rental cars through Capital One Travel, 5X portal flights/vacation rentals, 2X all other eligible purchases.",
   "rewardStructure": "miles",
   "earnRules": [
     {
-      "label": "Everyday eligible purchases",
-      "rate": 2,
+      "label": "Portal hotels and rental cars",
+      "rate": 10,
       "unit": "x"
     },
     {
-      "label": "Flights booked in Capital One Travel",
+      "label": "Portal flights and vacation rentals",
       "rate": 5,
       "unit": "x"
     },
     {
-      "label": "Hotels and rental cars in Capital One Travel",
-      "rate": 10,
+      "label": "Other eligible purchases",
+      "rate": 2,
       "unit": "x"
     }
   ],
   "benefits": [
     {
-      "name": "Capital One Travel annual credit",
-      "type": "statement_credit",
+      "name": "Annual Capital One Travel credit",
+      "type": "issuer_benefit",
       "amountUsd": 300,
       "frequencyMonths": 12,
-      "condition": "Eligible Capital One Travel bookings"
+      "condition": "Eligible portal bookings only"
     },
     {
-      "name": "Global Entry or TSA PreCheck reimbursement",
-      "type": "global_entry",
+      "name": "Global Entry or TSA PreCheck fee reimbursement",
+      "type": "issuer_benefit",
       "amountUsd": 120,
       "frequencyMonths": 48,
-      "condition": "Up to $120 once every four years for one qualifying application per account"
+      "condition": "Qualifying application fee; frequency and eligibility restrictions apply"
     },
     {
-      "name": "Anniversary miles",
-      "type": "anniversary_bonus",
+      "name": "Anniversary mileage bonus",
+      "type": "issuer_benefit",
       "amountUsd": null,
       "frequencyMonths": 12,
-      "condition": "10,000 miles after anniversary, subject to terms"
+      "condition": "10,000 miles each anniversary, not cash"
     }
-  ]
+  ],
+  "monthlyFeeUsd": null
 }

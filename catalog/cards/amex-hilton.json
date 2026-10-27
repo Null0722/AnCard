@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "7X points at eligible Hilton properties, 5X at U.S. restaurants, supermarkets and gas stations.",
-  "primaryLabel": "7X points at eligible Hilton properties, 5X at U.S. restaurants, supermarkets and gas stations.",
+  "summary": "7 Hilton Honors points per $1 at eligible Hilton properties, 5X at U.S. restaurants, supermarkets and gas, 3X elsewhere.",
+  "primaryLabel": "7 Hilton Honors points per $1 at eligible Hilton properties, 5X at U.S. restaurants, supermarkets and gas, 3X elsewhere.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -16,19 +16,19 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "7X points at eligible Hilton properties, 5X at U.S. restaurants, supermarkets and gas stations.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "7 Hilton Honors points per $1 at eligible Hilton properties, 5X at U.S. restaurants, supermarkets and gas, 3X elsewhere.",
+  "watchOut": "Hilton points have variable redemption value; do not equate 7X points with 7% cash back.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
   "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Hilton Honors American Express is a hotel credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Hilton Honors American Express from American Express. 7 Hilton Honors points per $1 at eligible Hilton properties, 5X at U.S. restaurants, supermarkets and gas, 3X elsewhere.",
   "rewardStructure": "points",
   "earnRules": [
     {
-      "label": "Hilton hotels and resorts",
+      "label": "Participating Hilton hotels",
       "rate": 7,
       "unit": "x"
     },
@@ -36,7 +36,13 @@
       "label": "U.S. restaurants, supermarkets and gas",
       "rate": 5,
       "unit": "x"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 3,
+      "unit": "x"
     }
   ],
-  "benefits": []
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

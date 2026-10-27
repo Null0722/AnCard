@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Travel and dining miles. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Travel and dining miles; check current issuer program terms.",
+  "summary": "3X miles on eligible travel and dining, 1X elsewhere; $89 annual fee waived the first year.",
+  "primaryLabel": "3X miles on eligible travel and dining, 1X elsewhere; $89 annual fee waived the first year.",
   "feeSummary": "$89 annual fee",
   "annualFeeUsd": 89,
   "rewards": [
@@ -16,16 +16,28 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "This card is associated with travel and dining miles. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "3X miles on eligible travel and dining, 1X elsewhere; $89 annual fee waived the first year.",
+  "watchOut": "Annual fee waived first year only; miles redemptions have variable value.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.td.com/us/en/personal-banking/credit-cards",
+  "issuerSource": "https://www.td.com/us/en/personal-banking/credit-cards/first-class-card",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "TD First Class Visa Signature is a travel credit card candidate from TD Bank. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "TD First Class Visa Signature from TD Bank. 3X miles on eligible travel and dining, 1X elsewhere; $89 annual fee waived the first year.",
   "rewardStructure": "miles",
-  "earnRules": [],
-  "benefits": []
+  "earnRules": [
+    {
+      "label": "Travel and dining",
+      "rate": 3,
+      "unit": "x"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1,
+      "unit": "x"
+    }
+  ],
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

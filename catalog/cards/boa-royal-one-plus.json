@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Cruise rewards with annual fee. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Cruise rewards with annual fee; check current issuer program terms.",
+  "summary": "4X Royal Caribbean group cruises, 2X grocery/gas/EV, air/hotel/dining, 1X others.",
+  "primaryLabel": "4X Royal Caribbean group cruises, 2X grocery/gas/EV, air/hotel/dining, 1X others.",
   "feeSummary": "$99 annual fee",
   "annualFeeUsd": 99,
   "rewards": [
@@ -16,16 +16,48 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "This card is associated with cruise rewards with annual fee. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "4X Royal Caribbean group cruises, 2X grocery/gas/EV, air/hotel/dining, 1X others.",
+  "watchOut": "Priority boarding and luggage handling subject to sailing restrictions.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.bankofamerica.com/credit-cards/",
+  "issuerSource": "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/03/royal-caribbean-group-enhances-travel-loyalty--partners-with-ban.html",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Royal ONE Plus Visa Signature is a travel credit card candidate from Bank of America. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Royal ONE Plus Visa Signature from Bank of America. 4X Royal Caribbean group cruises, 2X grocery/gas/EV, air/hotel/dining, 1X others.",
   "rewardStructure": "points",
-  "earnRules": [],
-  "benefits": []
+  "earnRules": [
+    {
+      "label": "Eligible Royal Caribbean group spending",
+      "rate": 4,
+      "unit": "x"
+    },
+    {
+      "label": "Grocery, gas, EV, air, hotel and dining",
+      "rate": 2,
+      "unit": "x"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1,
+      "unit": "x"
+    }
+  ],
+  "benefits": [
+    {
+      "name": "Anniversary reward",
+      "type": "issuer_benefit",
+      "amountUsd": 200,
+      "frequencyMonths": 12,
+      "condition": "After qualifying spend"
+    },
+    {
+      "name": "Global Entry or TSA PreCheck",
+      "type": "issuer_benefit",
+      "amountUsd": 120,
+      "frequencyMonths": 48,
+      "condition": "Qualifying application fee"
+    }
+  ],
+  "monthlyFeeUsd": null
 }

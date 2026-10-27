@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Choice-category cash back with refundable deposit. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Choice-category cash back with refundable deposit; check current issuer program terms.",
+  "summary": "First-year 6% choice category rewards, then 3%, plus 2% grocery/wholesale; $2,500 shared quarterly cap.",
+  "primaryLabel": "First-year 6% choice category rewards, then 3%, plus 2% grocery/wholesale; $2,500 shared quarterly cap.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -16,16 +16,47 @@
   "features": [
     "secured"
   ],
-  "plainEnglish": "This card is associated with choice-category cash back with refundable deposit. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "First-year 6% choice category rewards, then 3%, plus 2% grocery/wholesale; $2,500 shared quarterly cap.",
+  "watchOut": "Refundable deposit required. First-year reward boost and the $2,500 limit are not unlimited.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.bankofamerica.com/credit-cards/",
+  "issuerSource": "https://www.bankofamerica.com/credit-cards/products/cash-back-secured-credit-card/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Bank of America Customized Cash Rewards Secured is a credit building credit card candidate from Bank of America. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Bank of America Customized Cash Rewards Secured from Bank of America. First-year 6% choice category rewards, then 3%, plus 2% grocery/wholesale; $2,500 shared quarterly cap.",
   "rewardStructure": "selectable",
-  "earnRules": [],
-  "benefits": []
+  "earnRules": [
+    {
+      "label": "Choice category in first year",
+      "rate": 6,
+      "unit": "percent",
+      "capAmountUsd": 2500,
+      "capPeriod": "Quarter",
+      "condition": "First-year bonus and cap shared with grocery/wholesale"
+    },
+    {
+      "label": "Choice category after first year",
+      "rate": 3,
+      "unit": "percent",
+      "capAmountUsd": 2500,
+      "capPeriod": "Quarter",
+      "condition": "Shared eligible category cap"
+    },
+    {
+      "label": "Grocery and wholesale clubs",
+      "rate": 2,
+      "unit": "percent",
+      "capAmountUsd": 2500,
+      "capPeriod": "Quarter",
+      "condition": "Combined quarterly cap"
+    },
+    {
+      "label": "Other purchases",
+      "rate": 1,
+      "unit": "percent"
+    }
+  ],
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

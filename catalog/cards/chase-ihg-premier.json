@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Hotel points earning and fourth-night award benefit, subject to eligibility.",
-  "primaryLabel": "Hotel points earning and fourth-night award benefit, subject to eligibility.",
+  "summary": "Earn IHG One Rewards points; up to 26X combined points at participating IHG hotels.",
+  "primaryLabel": "Earn IHG One Rewards points; up to 26X combined points at participating IHG hotels.",
   "feeSummary": "$99 annual fee",
   "annualFeeUsd": 99,
   "rewards": [
@@ -16,16 +16,17 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "Hotel points earning and fourth-night award benefit, subject to eligibility.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "Earn IHG One Rewards points; up to 26X combined points at participating IHG hotels.",
+  "watchOut": "Combined 26X includes loyalty-program components and is not card-only earnings.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
   "issuerSource": "https://creditcards.chase.com/travel-credit-cards/ihg",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "IHG One Rewards Premier is a hotel credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "IHG One Rewards Premier from Chase. Earn IHG One Rewards points; up to 26X combined points at participating IHG hotels.",
   "rewardStructure": "points",
   "earnRules": [],
-  "benefits": []
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

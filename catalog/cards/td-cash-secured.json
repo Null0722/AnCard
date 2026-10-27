@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "3% and 2% on chosen categories, 1% other eligible purchases.",
-  "primaryLabel": "3% and 2% on chosen categories, 1% other eligible purchases.",
+  "summary": "3% and 2% cash back in selected categories, changed quarterly, and 1% other purchases.",
+  "primaryLabel": "3% and 2% cash back in selected categories, changed quarterly, and 1% other purchases.",
   "feeSummary": "$29 annual fee",
   "annualFeeUsd": 29,
   "rewards": [
@@ -16,29 +16,33 @@
   "features": [
     "secured"
   ],
-  "plainEnglish": "3% and 2% on chosen categories, 1% other eligible purchases.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "3% and 2% cash back in selected categories, changed quarterly, and 1% other purchases.",
+  "watchOut": "Refundable security deposit required; 3% foreign transaction fee shown in issuer fee table.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
   "issuerSource": "https://www.td.com/us/en/personal-banking/credit-cards/secured-credit-card",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "TD Cash Secured is a credit building credit card candidate from TD Bank. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "TD Cash Secured from TD Bank. 3% and 2% cash back in selected categories, changed quarterly, and 1% other purchases.",
   "rewardStructure": "selectable",
   "earnRules": [
     {
-      "label": "Chosen first category",
+      "label": "First quarterly selected category",
       "rate": 3,
-      "unit": "percent",
-      "condition": "Quarterly selection"
+      "unit": "percent"
     },
     {
-      "label": "Chosen second category",
+      "label": "Second quarterly selected category",
       "rate": 2,
-      "unit": "percent",
-      "condition": "Quarterly selection"
+      "unit": "percent"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1,
+      "unit": "percent"
     }
   ],
-  "benefits": []
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

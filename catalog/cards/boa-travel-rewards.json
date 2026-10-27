@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "1.5X eligible purchases; extra points on qualifying BofA travel bookings.",
-  "primaryLabel": "1.5X eligible purchases; extra points on qualifying BofA travel bookings.",
+  "summary": "1.5 points per $1 eligible everyday spend; 3X eligible travel booked through BofA Travel.",
+  "primaryLabel": "1.5 points per $1 eligible everyday spend; 3X eligible travel booked through BofA Travel.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -16,22 +16,28 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "1.5X eligible purchases; extra points on qualifying BofA travel bookings.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "1.5 points per $1 eligible everyday spend; 3X eligible travel booked through BofA Travel.",
+  "watchOut": "Travel statement credits and redemption rates vary by purchase category.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
   "issuerSource": "https://www.bankofamerica.com/credit-cards/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Bank of America Travel Rewards is a travel credit card candidate from Bank of America. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Bank of America Travel Rewards from Bank of America. 1.5 points per $1 eligible everyday spend; 3X eligible travel booked through BofA Travel.",
   "rewardStructure": "points",
   "earnRules": [
     {
       "label": "Everyday eligible purchases",
       "rate": 1.5,
       "unit": "x"
+    },
+    {
+      "label": "BofA Travel qualifying bookings",
+      "rate": 3,
+      "unit": "x"
     }
   ],
-  "benefits": []
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

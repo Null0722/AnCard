@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Royal Caribbean cruise rewards. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Royal Caribbean cruise rewards; check current issuer program terms.",
+  "summary": "3X Royal Caribbean, Celebrity and Silversea, 2X grocery/gas/EV charging, 1X elsewhere.",
+  "primaryLabel": "3X Royal Caribbean, Celebrity and Silversea, 2X grocery/gas/EV charging, 1X elsewhere.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -16,16 +16,41 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "This card is associated with royal caribbean cruise rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "3X Royal Caribbean, Celebrity and Silversea, 2X grocery/gas/EV charging, 1X elsewhere.",
+  "watchOut": "Program points and companion perks subject to cruise loyalty terms.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.bankofamerica.com/credit-cards/",
+  "issuerSource": "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/03/royal-caribbean-group-enhances-travel-loyalty--partners-with-ban.html",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Royal ONE Visa Signature is a travel credit card candidate from Bank of America. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Royal ONE Visa Signature from Bank of America. 3X Royal Caribbean, Celebrity and Silversea, 2X grocery/gas/EV charging, 1X elsewhere.",
   "rewardStructure": "points",
-  "earnRules": [],
-  "benefits": []
+  "earnRules": [
+    {
+      "label": "Eligible Royal Caribbean group purchases",
+      "rate": 3,
+      "unit": "x"
+    },
+    {
+      "label": "Grocery, gas and EV charging",
+      "rate": 2,
+      "unit": "x"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1,
+      "unit": "x"
+    }
+  ],
+  "benefits": [
+    {
+      "name": "Anniversary reward",
+      "type": "issuer_benefit",
+      "amountUsd": 100,
+      "frequencyMonths": 12,
+      "condition": "After qualifying spending"
+    }
+  ],
+  "monthlyFeeUsd": null
 }

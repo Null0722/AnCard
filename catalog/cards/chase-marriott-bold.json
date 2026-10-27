@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Marriott hotel points without annual fee. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Marriott hotel points without annual fee; check current issuer program terms.",
+  "summary": "Earn Marriott Bonvoy points, with up to 14X combined points at participating hotels and automatic Silver Elite status.",
+  "primaryLabel": "Earn Marriott Bonvoy points, with up to 14X combined points at participating hotels and automatic Silver Elite status.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -16,16 +16,25 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "This card is associated with marriott hotel points without annual fee. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "Earn Marriott Bonvoy points, with up to 14X combined points at participating hotels and automatic Silver Elite status.",
+  "watchOut": "Combined up-to-14X includes Marriott membership earnings and must not be displayed as card-only multiplier.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
   "issuerSource": "https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Marriott Bonvoy Bold is a hotel credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Marriott Bonvoy Bold from Chase. Earn Marriott Bonvoy points, with up to 14X combined points at participating hotels and automatic Silver Elite status.",
   "rewardStructure": "points",
   "earnRules": [],
-  "benefits": []
+  "benefits": [
+    {
+      "name": "Marriott Silver Elite status",
+      "type": "issuer_benefit",
+      "amountUsd": null,
+      "frequencyMonths": 12,
+      "condition": "Status and elite night credit conditions apply"
+    }
+  ],
+  "monthlyFeeUsd": null
 }

@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "1.25X miles on eligible purchases.",
-  "primaryLabel": "1.25X miles on eligible purchases.",
+  "summary": "1.25 miles per $1 on everyday eligible purchases and up to 5X on eligible Capital One Travel bookings.",
+  "primaryLabel": "1.25 miles per $1 on everyday eligible purchases and up to 5X on eligible Capital One Travel bookings.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -16,22 +16,28 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "1.25X miles on eligible purchases.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "1.25 miles per $1 on everyday eligible purchases and up to 5X on eligible Capital One Travel bookings.",
+  "watchOut": "The 5X portal earning categories differ from 1.25X base earning; miles redemption value varies.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+  "issuerSource": "https://www.capitalone.com/credit-cards/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Capital One VentureOne Rewards is a travel credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Capital One VentureOne Rewards from Capital One. 1.25 miles per $1 on everyday eligible purchases and up to 5X on eligible Capital One Travel bookings.",
   "rewardStructure": "miles",
   "earnRules": [
     {
-      "label": "All eligible purchases",
+      "label": "Everyday eligible purchases",
       "rate": 1.25,
+      "unit": "x"
+    },
+    {
+      "label": "Selected Capital One Travel bookings",
+      "rate": 5,
       "unit": "x"
     }
   ],
-  "benefits": []
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

@@ -5,10 +5,10 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Premium Marriott Bonvoy card benefits. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Premium Marriott Bonvoy card benefits; check current issuer program terms.",
-  "feeSummary": "Annual fee: needs issuer agreement review",
-  "annualFeeUsd": null,
+  "summary": "6X eligible Marriott stays; 3X restaurants and direct-booked flights; 2X other eligible purchases.",
+  "primaryLabel": "6X eligible Marriott stays; 3X restaurants and direct-booked flights; 2X other eligible purchases.",
+  "feeSummary": "$650 annual fee",
+  "annualFeeUsd": 650,
   "rewards": [
     "points"
   ],
@@ -16,16 +16,33 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "This card is associated with premium marriott bonvoy card benefits. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "6X eligible Marriott stays; 3X restaurants and direct-booked flights; 2X other eligible purchases.",
+  "watchOut": "Hotel status and dining credits have separate eligibility; current credit limits require benefits-guide review.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.americanexpress.com/us/credit-cards/",
+  "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/marriott-bonvoy-brilliant/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Marriott Bonvoy Brilliant American Express is a hotel credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Marriott Bonvoy Brilliant American Express from American Express. 6X eligible Marriott stays; 3X restaurants and direct-booked flights; 2X other eligible purchases.",
   "rewardStructure": "points",
-  "earnRules": [],
-  "benefits": []
+  "earnRules": [
+    {
+      "label": "Eligible Marriott properties",
+      "rate": 6,
+      "unit": "x"
+    },
+    {
+      "label": "Restaurants and flights booked directly with airlines",
+      "rate": 3,
+      "unit": "x"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 2,
+      "unit": "x"
+    }
+  ],
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

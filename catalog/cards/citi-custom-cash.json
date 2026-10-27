@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Top eligible monthly spend category rewards. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Top eligible monthly spend category rewards; check current issuer program terms.",
+  "summary": "5% cash back equivalent on your highest eligible spending category each billing cycle up to $500, then 1%.",
+  "primaryLabel": "5% cash back equivalent on your highest eligible spending category each billing cycle up to $500, then 1%.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -14,16 +14,31 @@
   ],
   "categories": [],
   "features": [],
-  "plainEnglish": "This card is associated with top eligible monthly spend category rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "5% cash back equivalent on your highest eligible spending category each billing cycle up to $500, then 1%.",
+  "watchOut": "Cash back awarded as ThankYou points; not a manually selected or activated rotating category.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.citi.com/credit-cards/citi-custom-cash-credit-card",
+  "issuerSource": "https://www.citi.com/usc/Multi/Featured/default.htm",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Citi Custom Cash automatically rewards the highest eligible spending category each billing cycle. The qualifying category and spending cap must be checked.",
+  "bio": "Citi Custom Cash from Citi. 5% cash back equivalent on your highest eligible spending category each billing cycle up to $500, then 1%.",
   "rewardStructure": "automatic_top_category",
-  "earnRules": [],
-  "benefits": []
+  "earnRules": [
+    {
+      "label": "Automatic highest eligible monthly category",
+      "rate": 5,
+      "unit": "percent",
+      "capAmountUsd": 500,
+      "capPeriod": "Billing cycle",
+      "condition": "Automatically assigned from ten eligible merchant categories"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1,
+      "unit": "percent"
+    }
+  ],
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

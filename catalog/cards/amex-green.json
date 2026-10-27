@@ -5,9 +5,9 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Travel and dining points. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Travel and dining points; check current issuer program terms.",
-  "feeSummary": "Annual fee: needs issuer agreement review",
+  "summary": "American Express Green membership rewards for travel, transit and dining purchases.",
+  "primaryLabel": "American Express Green membership rewards for travel, transit and dining purchases.",
+  "feeSummary": "Annual fee: issuer agreement review required",
   "annualFeeUsd": null,
   "rewards": [
     "points"
@@ -16,16 +16,17 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "This card is associated with travel and dining points. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "American Express Green membership rewards for travel, transit and dining purchases.",
+  "watchOut": "Confirm current public consumer card offering and annual fee.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
   "issuerSource": "https://www.americanexpress.com/us/credit-cards/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "American Express Green is a travel credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "American Express Green from American Express. American Express Green membership rewards for travel, transit and dining purchases.",
   "rewardStructure": "points",
   "earnRules": [],
-  "benefits": []
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

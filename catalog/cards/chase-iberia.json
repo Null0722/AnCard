@@ -5,10 +5,10 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Avios airline rewards. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Avios airline rewards; check current issuer program terms.",
-  "feeSummary": "Annual fee: needs issuer agreement review",
-  "annualFeeUsd": null,
+  "summary": "3 Avios per $1 on eligible Aer Lingus, British Airways, Iberia and LEVEL purchases; 2 Avios per $1 on direct hotel stays; 1 Avios per $1 elsewhere.",
+  "primaryLabel": "3 Avios per $1 on eligible Aer Lingus, British Airways, Iberia and LEVEL purchases; 2 Avios per $1 on direct hotel stays; 1 Avios per $1 elsewhere.",
+  "feeSummary": "$95 annual fee",
+  "annualFeeUsd": 95,
   "rewards": [
     "miles"
   ],
@@ -18,16 +18,33 @@
   "features": [
     "airline"
   ],
-  "plainEnglish": "This card is associated with avios airline rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "3 Avios per $1 on eligible Aer Lingus, British Airways, Iberia and LEVEL purchases; 2 Avios per $1 on direct hotel stays; 1 Avios per $1 elsewhere.",
+  "watchOut": "Avios are not equivalent to dollars. Current marketing bonuses and travel benefits require separate offer terms.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://creditcards.chase.com/compare-credit-cards",
+  "issuerSource": "https://creditcards.chase.com/avios/cards",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Iberia Visa Signature is a airline credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
-  "rewardStructure": "miles",
-  "earnRules": [],
-  "benefits": []
+  "bio": "Iberia Visa Signature from Chase. 3 Avios per $1 on eligible Aer Lingus, British Airways, Iberia and LEVEL purchases; 2 Avios per $1 on direct hotel stays; 1 Avios per $1 elsewhere.",
+  "rewardStructure": "tiered",
+  "earnRules": [
+    {
+      "label": "Eligible partner airline purchases",
+      "rate": 3,
+      "unit": "x"
+    },
+    {
+      "label": "Hotels booked directly",
+      "rate": 2,
+      "unit": "x"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1,
+      "unit": "x"
+    }
+  ],
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

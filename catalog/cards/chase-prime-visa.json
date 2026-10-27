@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "5% Amazon and eligible Whole Foods with qualifying Prime membership.",
-  "primaryLabel": "5% Amazon and eligible Whole Foods with qualifying Prime membership.",
+  "summary": "5% back at eligible Amazon, Audible, Whole Foods and Chase Travel with qualifying Prime membership; 2% dining, gas and transit; 1% other.",
+  "primaryLabel": "5% back at eligible Amazon, Audible, Whole Foods and Chase Travel with qualifying Prime membership; 2% dining, gas and transit; 1% other.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -14,28 +14,34 @@
   ],
   "categories": [],
   "features": [],
-  "plainEnglish": "5% Amazon and eligible Whole Foods with qualifying Prime membership.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "5% back at eligible Amazon, Audible, Whole Foods and Chase Travel with qualifying Prime membership; 2% dining, gas and transit; 1% other.",
+  "watchOut": "Prime subscription itself has a separate cost. Non-Prime earn rates and transaction exclusions differ.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
   "issuerSource": "https://creditcards.chase.com/cash-back-credit-cards/amazon-prime-rewards",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Prime Visa is a cash back credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
-  "rewardStructure": "flat",
+  "bio": "Prime Visa from Chase. 5% back at eligible Amazon, Audible, Whole Foods and Chase Travel with qualifying Prime membership; 2% dining, gas and transit; 1% other.",
+  "rewardStructure": "tiered",
   "earnRules": [
     {
-      "label": "Amazon, Whole Foods and eligible Chase Travel with Prime",
+      "label": "Amazon, Whole Foods and Chase Travel with Prime",
       "rate": 5,
       "unit": "percent",
-      "condition": "Eligible Prime membership required"
+      "condition": "Eligible Prime membership and merchant conditions required"
     },
     {
-      "label": "Gas, dining and eligible transit",
+      "label": "Dining, gas and local transit",
       "rate": 2,
+      "unit": "percent"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1,
       "unit": "percent"
     }
   ],
-  "benefits": []
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

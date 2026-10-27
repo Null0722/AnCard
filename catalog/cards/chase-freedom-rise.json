@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "1.5% base cash back; introductory 3% dining under spending and time limits.",
-  "primaryLabel": "1.5% base cash back; introductory 3% dining under spending and time limits.",
+  "summary": "1.5% cash back on eligible purchases; first-six-month dining promotion offers 3% total on up to $6,000 in dining.",
+  "primaryLabel": "1.5% cash back on eligible purchases; first-six-month dining promotion offers 3% total on up to $6,000 in dining.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -14,38 +14,39 @@
   ],
   "categories": [],
   "features": [],
-  "plainEnglish": "1.5% base cash back; introductory 3% dining under spending and time limits.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "1.5% cash back on eligible purchases; first-six-month dining promotion offers 3% total on up to $6,000 in dining.",
+  "watchOut": "The 3% dining rate is an introductory promotion, not the ongoing unlimited base rate.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
   "issuerSource": "https://creditcards.chase.com/cash-back-credit-cards/freedom/rise",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Chase Freedom Rise is a cash back credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Chase Freedom Rise from Chase. 1.5% cash back on eligible purchases; first-six-month dining promotion offers 3% total on up to $6,000 in dining.",
   "rewardStructure": "flat",
   "earnRules": [
     {
-      "label": "Base eligible purchases",
+      "label": "All eligible purchases",
       "rate": 1.5,
       "unit": "percent"
     },
     {
-      "label": "Introductory dining",
+      "label": "Introductory dining rate",
       "rate": 3,
       "unit": "percent",
       "capAmountUsd": 6000,
       "capPeriod": "First six months",
-      "condition": "Limited-time new-cardmember offer"
+      "condition": "Time and spending limits; offer may change"
     }
   ],
   "benefits": [
     {
-      "name": "Automatic payment setup credit",
-      "type": "statement_credit",
+      "name": "Automatic payments enrollment statement credit",
+      "type": "issuer_benefit",
       "amountUsd": 25,
       "frequencyMonths": null,
-      "condition": "Enroll in eligible autopay within first 3 months and remain enrolled at least 90 days"
+      "condition": "Enroll within three months and stay enrolled for at least 90 consecutive days"
     }
-  ]
+  ],
+  "monthlyFeeUsd": null
 }

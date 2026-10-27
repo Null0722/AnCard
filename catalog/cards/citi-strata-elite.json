@@ -5,10 +5,10 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "Premium ThankYou Points travel card. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "Premium ThankYou Points travel card; check current issuer program terms.",
-  "feeSummary": "Annual fee: needs issuer agreement review",
-  "annualFeeUsd": null,
+  "summary": "12X on hotels, rentals and attractions through Citi Travel; 6X portal airfare and eligible Citi Nights dining; 3X other dining; 1.5X other.",
+  "primaryLabel": "12X on hotels, rentals and attractions through Citi Travel; 6X portal airfare and eligible Citi Nights dining; 3X other dining; 1.5X other.",
+  "feeSummary": "$595 annual fee",
+  "annualFeeUsd": 595,
   "rewards": [
     "points"
   ],
@@ -16,16 +16,58 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "This card is associated with premium thankyou points travel card. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "12X on hotels, rentals and attractions through Citi Travel; 6X portal airfare and eligible Citi Nights dining; 3X other dining; 1.5X other.",
+  "watchOut": "Higher earning is strictly limited by booking channel and Citi Nights time windows.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.citi.com/credit-cards/",
+  "issuerSource": "https://www.citi.com/credit-cards/citi-strata-elite-credit-card",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Citi Strata Elite is a travel credit card candidate from Citi. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "Citi Strata Elite from Citi. 12X on hotels, rentals and attractions through Citi Travel; 6X portal airfare and eligible Citi Nights dining; 3X other dining; 1.5X other.",
   "rewardStructure": "points",
-  "earnRules": [],
-  "benefits": []
+  "earnRules": [
+    {
+      "label": "Citi Travel hotels, rental cars and attractions",
+      "rate": 12,
+      "unit": "x"
+    },
+    {
+      "label": "Citi Travel airfare",
+      "rate": 6,
+      "unit": "x"
+    },
+    {
+      "label": "Dining during Citi Nights (Friday/Saturday 6 PM-6 AM ET)",
+      "rate": 6,
+      "unit": "x"
+    },
+    {
+      "label": "Other restaurant spend",
+      "rate": 3,
+      "unit": "x"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1.5,
+      "unit": "x"
+    }
+  ],
+  "benefits": [
+    {
+      "name": "Annual Citi Travel hotel benefit",
+      "type": "issuer_benefit",
+      "amountUsd": 300,
+      "frequencyMonths": 12,
+      "condition": "Eligible 2-night minimum booking through Citi Travel"
+    },
+    {
+      "name": "Annual Splurge credit",
+      "type": "issuer_benefit",
+      "amountUsd": 200,
+      "frequencyMonths": 12,
+      "condition": "Up to two eligible selected brands and enrollment/merchant restrictions"
+    }
+  ],
+  "monthlyFeeUsd": null
 }

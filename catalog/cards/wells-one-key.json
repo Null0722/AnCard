@@ -5,9 +5,9 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "One Key travel loyalty rewards. Exact earning terms are pending a detailed issuer agreement review.",
-  "primaryLabel": "One Key travel loyalty rewards; check current issuer program terms.",
-  "feeSummary": "Annual fee: needs issuer agreement review",
+  "summary": "One Key travel loyalty card, with Expedia-group rewards subject to program exclusions.",
+  "primaryLabel": "One Key travel loyalty card, with Expedia-group rewards subject to program exclusions.",
+  "feeSummary": "Annual fee: issuer agreement review required",
   "annualFeeUsd": null,
   "rewards": [
     "points"
@@ -16,16 +16,17 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "This card is associated with one key travel loyalty rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "One Key travel loyalty card, with Expedia-group rewards subject to program exclusions.",
+  "watchOut": "Confirm current One Key tier, annual fee and availability, including successor products.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
   "issuerSource": "https://www.wellsfargo.com/credit-cards/agreements/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "One Key Mastercard is a travel credit card candidate from Wells Fargo. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "One Key Mastercard from Wells Fargo. One Key travel loyalty card, with Expedia-group rewards subject to program exclusions.",
   "rewardStructure": "points",
   "earnRules": [],
-  "benefits": []
+  "benefits": [],
+  "monthlyFeeUsd": null
 }

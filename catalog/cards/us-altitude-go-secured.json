@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "4X dining on first $2,000 quarterly; 2X groceries, gas and streaming.",
-  "primaryLabel": "4X dining on first $2,000 quarterly; 2X groceries, gas and streaming.",
+  "summary": "4X dining on first $2,000 each quarter; 2X grocery, gas/EV and streaming; 1X other.",
+  "primaryLabel": "4X dining on first $2,000 each quarter; 2X grocery, gas/EV and streaming; 1X other.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -16,15 +16,15 @@
   "features": [
     "secured"
   ],
-  "plainEnglish": "4X dining on first $2,000 quarterly; 2X groceries, gas and streaming.",
-  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
-  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "plainEnglish": "4X dining on first $2,000 each quarter; 2X grocery, gas/EV and streaming; 1X other.",
+  "watchOut": "Refundable secured deposit $300-$5,000; merchant category exclusions apply.",
+  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
   "verifiedAt": "2026-10-27",
   "issuerSource": "https://www.usbank.com/credit-cards/altitude-go-secured-visa-credit-card.html",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "U.S. Bank Altitude Go Secured Visa is a credit building credit card candidate from U.S. Bank. AnCard keeps its terms under human review before displaying its financial details.",
+  "bio": "U.S. Bank Altitude Go Secured Visa from U.S. Bank. 4X dining on first $2,000 each quarter; 2X grocery, gas/EV and streaming; 1X other.",
   "rewardStructure": "points",
   "earnRules": [
     {
@@ -35,18 +35,24 @@
       "capPeriod": "Quarter"
     },
     {
-      "label": "Eligible grocery/gas/streaming",
+      "label": "Groceries, gas/EV and select streaming",
       "rate": 2,
+      "unit": "x"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1,
       "unit": "x"
     }
   ],
   "benefits": [
     {
-      "name": "Annual streaming purchase credit",
-      "type": "statement_credit",
+      "name": "Annual streaming credit",
+      "type": "issuer_benefit",
       "amountUsd": 15,
       "frequencyMonths": 12,
-      "condition": "After qualifying streaming service purchases"
+      "condition": "11 consecutive months of eligible streaming purchases required"
     }
-  ]
+  ],
+  "monthlyFeeUsd": null
 }
