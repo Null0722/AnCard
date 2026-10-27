@@ -5,7 +5,7 @@ All meaningful website changes are documented here and in Git history. Entries s
 ## 2026-10-27 — Real-card source snapshot and opt-in visual assets
 
 - **Changed:** Created 28 real card records spanning 10 banks; limited claims to selected current issuer-page and network-directory statements. Archived fictional entries from the compiled public feed without deleting their Git history.
-- **New UI:** Text-only issuer badges by default in directory and dashboard. Opt-in global checkbox loads verified external card art only after user action, with explicit privacy warning. Six verified card-front URLs: three Capital One and three U.S. Bank. No art URL is invented for other issuers.
+- **New UI:** Text-only issuer badges by default in directory and dashboard. Opt-in global checkbox loads verified external card art only after user action, with explicit privacy warning. Nine issuer-sourced card-front URLs: three Chase, three Capital One and three U.S. Bank. No art URL is invented for other issuers.
 - **Privacy:** Toggle is never stored; image elements are created only after opt-in, set `referrerPolicy=no-referrer`. Issuer/CDN can still learn requesting IP and browser details.
 - **Data safeguards:** Unknown fee fields stay null; every listing identifies limited source-verification scope and last checked date. This is **not** a full issuer-agreement audit or a complete 28-image release.
 - **Affected:** `catalog/cards`, `docs/data/cards.json`, `scripts/catalog.mjs`, `docs/assets`, `docs/index.html`, `docs/dashboard`, README, Editorial, and visual asset policy.

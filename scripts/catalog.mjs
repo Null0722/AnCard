@@ -33,7 +33,7 @@ function validate(c,filename){
       const image=c.imageFront;
       if(typeof image.alt!=='string'||!image.alt.trim()||typeof image.url!=='string')fail(filename,'invalid image metadata');
       const host=new URL(image.url).hostname;
-      const approved={"Capital One":["ecm.capitalone.com"],"U.S. Bank":["www.usbank.com"]};
+      const approved={"Chase":["creditcards.chase.com"],"Capital One":["ecm.capitalone.com"],"U.S. Bank":["www.usbank.com"]};
       if(!approved[c.issuer]?.includes(host)||!image.url.startsWith('https://')||new URL(image.url).search)fail(filename,'card art requires reviewed official host and clean https URL');
     }
   }else if(c.status==='demo' && c.fictional!==true){fail(filename,'demo cards must be explicitly fictional');}

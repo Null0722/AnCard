@@ -23,6 +23,10 @@
   "verifiedAt": "2026-10-27",
   "issuerSource": "https://creditcards.chase.com/",
   "verificationLevel": "selected-issuer-page-facts",
-  "imageFront": null,
+  "imageFront": {
+    "url": "https://creditcards.chase.com/content/dam/jpmc-marketplace/card-art/freedom-flex-2026.png",
+    "sourcePage": "https://creditcards.chase.com/check-for-preapproved-offers",
+    "alt": "Official front-facing card image of Chase Freedom Flex"
+  },
   "accessType": "public"
 }
