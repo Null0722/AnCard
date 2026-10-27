@@ -187,10 +187,18 @@ function showComparison() {
  const perks=c=>!c.humanVerified?unknown:Array.isArray(c.benefits)&&c.benefits.length?c.benefits.map(p=>p.name+': '+benefitText(p)).join('; '):'No quantified benefits in this record';
  const rows=[
   ['Human QC',c=>c.humanVerified?'Human reviewed':'Pending review'],
-  ['Annual fee',c=>!c.humanVerified?unknown:c.annualFeeUsd===null?'Not verified':c.annualFeeUsd===0?'$0':'$'+c.annualFeeUsd],
+  ['Annual fee',c=>!c.humanVerified?unknown:c.annualFeeUsd===null?'Not verified':'$'+c.annualFeeUsd],
+  ['Public welcome offer',c=>c.humanVerified?offerDescription(c.welcomeOffer):unknown],
+  ['Minimum spend / bonus deadline',c=>!c.humanVerified?unknown:c.welcomeOffer?'$'+c.welcomeOffer.minimumSpendUsd.toLocaleString()+' in '+c.welcomeOffer.monthsToEarn+' months':'Not verified'],
+  ['Targeted offers',c=>!c.humanVerified?unknown:c.targetedOffers?.description||'No specific targeted offer confirmed'],
+  ['Invite-only offer',c=>!c.humanVerified?unknown:c.inviteOnlyOffer?.description||'Not documented'],
+  ['Intro purchase APR',c=>!c.humanVerified?unknown:typeof c.pricingDetail?.introPurchaseAprPct==='number'?c.pricingDetail.introPurchaseAprPct+'% for '+c.pricingDetail.introPurchaseMonths+' months':'Not verified'],
   ['Monthly fee',c=>!c.humanVerified?unknown:typeof c.monthlyFeeUsd==='number'?'$'+c.monthlyFeeUsd+' per month':'Not verified'],
   ['Reward model',c=>!c.humanVerified?unknown:rewardModels[c.rewardStructure]||'Not classified'],
   ['Earn categories and caps',earns],
+  ['Issuer-backed point values',c=>!c.humanVerified?unknown:c.redemptionDetail?.examples?.length?c.redemptionDetail.examples.map(x=>x.method+': '+x.centsPerPoint+' cents per point').join('; '):'Depends on redemption, not verified'],
+  ['Starting credit limit',c=>!c.humanVerified?unknown:Number.isFinite(c.approvalGuidance?.startingLimitMinUsd)?'$'+c.approvalGuidance.startingLimitMinUsd+' issuer-disclosed minimum':'Not disclosed; issuer decides after application'],
+  ['Issuer credit guidance',c=>!c.humanVerified?unknown:c.approvalGuidance?.issuerCreditLevel||'No numerical threshold verified'],
   ['Travel credits and protections',perks],
   ['Card overview',c=>!c.humanVerified?unknown:c.bio||c.summary],
   ['Important restrictions',c=>c.humanVerified?c.watchOut:unknown]
@@ -198,7 +206,7 @@ function showComparison() {
  const tbody=node('tbody');for(const [name,fn] of rows){const tr=node('tr');tr.append(node('th','',name));chosen.forEach(c=>tr.append(node('td','',fn(c))));tbody.append(tr);}
  table.append(tbody);
  const scroll=node('div','compare-scroller');scroll.setAttribute('role','region');scroll.setAttribute('aria-label','Scroll horizontally to compare selected cards');scroll.setAttribute('tabindex','0');scroll.append(table);
- body.append(scroll,node('p','dialog-note','Benefits and earn rates appear only after human review. Monetary amounts are conditional and not guaranteed. Confirm the issuer agreement.'));
+ body.append(scroll,node('p','dialog-note','Amounts, eligibility and earning rates appear only after human review. Monetary amounts are conditional and not guaranteed. Confirm the issuer agreement.'));
  showModal($('#details-backdrop'),$('#details-backdrop [data-close]'));
 }
 
