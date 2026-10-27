@@ -65,6 +65,12 @@ A GitHub edit of the flag **alone** does not rebuild the static site. If an unde
 
 See the [human QC instructions](project/HUMAN-QC.md) for the complete process.
 
+## Local discovery improvements
+
+The card directory and comparison dashboard provide a fast **search by issuer, card name, or airline program**, plus a **Human-reviewed only** toggle. Searches run entirely inside the loaded static catalog. No query or selection is transmitted to a server. The dashboard Clear Filters action keeps your side-by-side selections.
+
+Catalog tests also verify that unapproved monetary and reward details are absent from public JSON and that em dashes have not been introduced into the repository.
+
 ## Optional official card images
 
 Card imagery is **off by default**. The directory and dashboard render a typography-based badge without third-party image requests. If a visitor explicitly enables “Show official card art,” the browser then requests verified front-card image URLs from the issuer or its CDN. This can disclose an IP address and browser metadata to that issuer; AnCard sets `referrerPolicy=no-referrer` and does not save the toggle. Images not yet sourced retain a badge, even when enabled. Nine records currently have issuer-sourced image URLs. Images and hotlink permissions still require live-browser verification before release. See [image opt-in policy](project/ART-OPTIN.md).

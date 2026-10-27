@@ -2,6 +2,16 @@
 
 All meaningful website changes are documented here and in Git history. Entries should state **what changed**, **why**, **files/components affected**, **verification**, and **what is next**. Most recent changes first. Do not silently rewrite prior decisions; add a new dated entry instead.
 
+## 2026-10-27: Maintenance and usability pass
+
+- Fixed the catalog build ordering bug caused by sorting .json filenames rather than canonical card IDs. The fix was committed to main and its GitHub Actions validation passed.
+- Removed em dashes from the UI, markdown documentation, and review-source annotations. Added a test that rejects new em dashes.
+- Added client-side search by card, bank and airline program and a human-reviewed-only filter to both directory and dashboard. No saved searches, accounts or third-party requests.
+- Dashboard Clear Filters no longer destroys the three-card comparison selection.
+- Expanded the human-QC candidate fingerprint to cover public summaries and optional art/access metadata, so changed display claims cannot inherit an earlier approval.
+- Added a regression check that unreviewed public records have no fee amount, source-checked timestamp, reward earning arrays, or unexpected private fields.
+- Changes prepared on a maintenance branch; new site features still require CI and deployment review.
+
 ## 2026-10-27  -  v0.3.0 centralized human review and airline expansion
 
 - **Catalog:** Added 13 airline co-branded card records across United, Southwest, American Airlines, Delta and Atmos, bringing the prospective real-card cohort to **41** across ten issuers.
