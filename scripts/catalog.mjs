@@ -64,7 +64,7 @@ const publicCards=cards.flatMap(card=>{
  if(review.humanVerified){approved++;return [{...card,status:'published',humanVerified:true}];}
  if(review.reviewStage==='research')return []; // Private-to-edit research entry until owner approval
  // Keep identity and source URL for discovery, but hide ALL unapproved financial terms and rates.
- return {id:card.id,name:card.name,issuer:card.issuer,status:'pending_review',
+ return [{id:card.id,name:card.name,issuer:card.issuer,status:'pending_review',
   fictional:false,tone:card.tone,humanVerified:false,
   summary:'Terms and benefits are awaiting human review.',
   primaryLabel:'Pending human review',feeSummary:'Annual fee: pending human review',annualFeeUsd:null,
