@@ -1,0 +1,51 @@
+name: Publish reviewed card data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'catalog/HUMAN-QC.json'
+      - 'catalog/cards/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: ancard-human-qc-publishing
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    if: github.repository == 'Null0722/AnCard'
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Rebuild human-reviewed static data
+        run: npm run build && npm test
+      - name: Commit synchronized public catalog and readable review sheet
+        id: updated
+        shell: bash
+        run: |
+          if ! git diff --quiet -- docs/data/cards.json catalog/REVIEW-SHEET.md; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add docs/data/cards.json catalog/REVIEW-SHEET.md
+            git commit -m 'chore(qc): regenerate approved card feed and review sheet'
+            git push origin HEAD:main
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+          fi
+      - name: Request branch-based GitHub Pages rebuild
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"

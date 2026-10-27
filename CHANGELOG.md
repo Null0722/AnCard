@@ -2,6 +2,14 @@
 
 All meaningful website changes are documented here and in Git history. Entries should state **what changed**, **why**, **files/components affected**, **verification**, and **what is next**. Most recent changes first. Do not silently rewrite prior decisions; add a new dated entry instead.
 
+## 2026-10-27: Automatic publishing on human QC edits
+
+- Added a GitHub Actions workflow that compiles and validates the public catalog and review sheet after main-branch edits to the owner QC queue or individual card records.
+- The workflow commits only generated artifacts and requests a fresh GitHub Pages build, because ordinary GITHUB_TOKEN bot commits do not automatically trigger branch-source Pages deployment.
+- Changed the existing CI diff check to require committed generated data on pull requests only, avoiding false failures while the main-branch synchronization workflow runs.
+- Human verification is still a manual editorial decision; automatic publishing does not approve any record.
+- GitHub workflow permission and Pages API access must be tested on the repository.
+
 ## 2026-10-27: Publish full unranked card-directory identities and prefill issuer research
 
 - Moved the additional 59 card records from backend-only research to unranked directory placeholders, making **100 card identities discoverable** without displaying any unapproved financial claims.
