@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="AnCard explains credit card terms in plain language. Explore categories, inspect the fine print, and compare on your own terms. No quiz or preference tracking.">
+  <meta name="theme-color" content="#111921">
+  <title>AnCard — Explore cards on your own terms</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script type="module" src="./assets/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="#top" aria-label="AnCard home">an<span>/</span>card<span class="mark-dot">.</span></a>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="#catalog">Explore</a><a href="#decoder">Decoded terms</a><a href="#methodology">How we work</a>
+      </nav>
+      <a class="header-pill" href="#privacy"><span class="live-dot"></span>No profiles. No pitches.</a>
+    </div>
+  </header>
+
+  <main id="main" class="shell">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR CARDS. YOUR CHOICES.</p>
+        <h1 id="hero-title">Explore cards on<br><span>your own terms.</span></h1>
+        <p class="hero-lede">Start with what matters to you. Browse the benefits, read the fine print, and compare the trade-offs. No one picks a winner for you.</p>
+        <a class="primary-button" href="#catalog">Browse the directory <span aria-hidden="true">↗</span></a>
+      </div>
+      <aside class="hero-note" aria-label="Our approach">
+        <p class="eyebrow">INFORMATION BEFORE INFLUENCE</p>
+        <h2>Know more.<br>Choose for yourself.</h2>
+        <p>We explain costs, conditions and exceptions in ordinary language—not sales language.</p>
+        <a href="#methodology">See how we work <span aria-hidden="true">↗</span></a>
+      </aside>
+    </section>
+
+    <section class="browse" id="catalog" aria-labelledby="catalog-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE CARD LIBRARY, UNCOMPLICATED</p><h2 id="catalog-title">Find a place to start</h2></div>
+        <span class="quiet-tag">CATALOG PREVIEW • FICTIONAL EXAMPLES</span>
+      </div>
+      <div class="topic-filters" role="group" aria-label="Quick category filters">
+        <button type="button" class="topic-chip" data-quick="cash_back" aria-pressed="false">◈ &nbsp; Cash back</button>
+        <button type="button" class="topic-chip" data-quick="points" aria-pressed="false">✧ &nbsp; Points</button>
+        <button type="button" class="topic-chip" data-quick="miles" aria-pressed="false">✈ &nbsp; Travel miles</button>
+        <button type="button" class="topic-chip" data-quick="groceries" aria-pressed="false">▤ &nbsp; Grocery</button>
+        <button type="button" class="topic-chip" data-quick="online" aria-pressed="false">▣ &nbsp; Online</button>
+        <button type="button" class="topic-chip" data-quick="lifestyle" aria-pressed="false">◇ &nbsp; Lifestyle</button>
+      </div>
+      <div class="catalog-layout">
+        <div class="mobile-filters"><button type="button" id="toggle-filters" aria-expanded="false" aria-controls="filter-panel">☷ &nbsp; Refine filters <span aria-hidden="true">⌄</span></button></div>
+        <aside class="filter-panel" id="filter-panel" aria-labelledby="filters-title">
+          <div class="panel-title"><h3 id="filters-title">Refine the directory</h3><span class="count-pill">Your filters</span></div>
+          <fieldset><legend>REWARD STYLE</legend>
+            <label><input type="checkbox" data-facet="rewards" value="cash_back"> Cash back</label>
+            <label><input type="checkbox" data-facet="rewards" value="points"> Points</label>
+            <label><input type="checkbox" data-facet="rewards" value="miles"> Miles</label>
+          </fieldset>
+          <fieldset><legend>WHERE YOU SPEND</legend>
+            <label><input type="checkbox" data-facet="categories" value="groceries"> Groceries</label>
+            <label><input type="checkbox" data-facet="categories" value="dining"> Dining</label>
+            <label><input type="checkbox" data-facet="categories" value="travel"> Travel</label>
+            <label><input type="checkbox" data-facet="categories" value="online"> Online spending</label>
+            <label><input type="checkbox" data-facet="categories" value="gas"> Gas & transport</label>
+            <label><input type="checkbox" data-facet="categories" value="lifestyle"> Lifestyle</label>
+          </fieldset>
+          <fieldset><legend>CARD DETAILS</legend>
+            <label><input type="checkbox" data-facet="features" value="no_annual_fee"> No annual fee</label>
+            <label><input type="checkbox" data-facet="features" value="secured"> Secured</label>
+            <label><input type="checkbox" data-facet="features" value="student"> Student</label>
+          </fieldset>
+          <div class="filter-foot"><button type="button" class="text-button" id="clear-filters">Clear all</button><span>Nothing is saved</span></div>
+        </aside>
+        <div class="catalog-main">
+          <div class="catalog-heading">
+            <div><h3>Browse the catalog</h3><p id="result-count" role="status" aria-live="polite">Loading card catalog…</p></div>
+            <label class="sort-label">Sort <select id="sort-by"><option value="name">Card name A–Z</option><option value="issuer">Issuer A–Z</option><option value="fee">Annual fee: low to high</option></select></label>
+          </div>
+          <div class="preview-banner" role="note"><strong>Preview, not financial offers.</strong> These fictional cards demonstrate how the finished directory works. Actual products will appear only after their terms are checked against issuer sources.</div>
+          <div id="card-results" class="card-results" aria-live="off"></div>
+          <div class="trust-strip"><span><strong>Independent by design.</strong> No quizzes, hidden recommendation scores or sponsored ranking.</span><a href="#methodology">Our methodology ↗</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="education-section" id="decoder" aria-labelledby="decoder-title">
+      <div class="section-heading"><div><p class="eyebrow">THE PLAIN-ENGLISH DECODER</p><h2 id="decoder-title">Small print, made readable.</h2></div><p class="section-aside">Examples here are general explanations, not issuer-specific terms.</p></div>
+      <div class="explainer-grid">
+        <article class="explainer"><span class="explainer-number">01</span><h3>Purchase APR</h3><p>The interest rate that may apply when you carry an eligible purchase balance. Some rates vary with an index, and promotional rates can expire.</p><p class="explainer-watch">Look for: variable rates, grace-period rules and promotional end dates.</p></article>
+        <article class="explainer"><span class="explainer-number">02</span><h3>Reward categories</h3><p>A card may reward grocery, dining or travel spending differently. Merchant coding, caps and activation rules can change what counts.</p><p class="explainer-watch">Look for: exclusions, spending limits and redemption restrictions.</p></article>
+        <article class="explainer"><span class="explainer-number">03</span><h3>Penalty APR</h3><p>Certain missed payments can trigger a higher interest rate under the issuer's terms. When and how it applies varies by agreement.</p><p class="explainer-watch">Look for: trigger events, notice rules and how long a penalty rate lasts.</p></article>
+      </div>
+    </section>
+
+    <section class="governance" id="methodology" aria-labelledby="method-title">
+      <div><p class="eyebrow">THE WAY WE WORK</p><h2 id="method-title">Verified, not guessed.</h2><p>Our catalog is designed to favor clear documentation over a long list of offers. We publish no card until its core details have an official source and a human review.</p></div>
+      <div class="governance-items"><div><span>01 / Sources</span><p>Issuer pages and card agreements take priority over marketing summaries. Every real listing will link to its source.</p></div><div><span>02 / Ordering</span><p>Alphabetical and factual sort options only. Filters use your selections; no hidden suitability score.</p></div><div><span>03 / Corrections</span><p>Outdated or disputed listings can be withdrawn without erasing the internal change history.</p></div><div><span>04 / Funding</span><p>No card referral commissions. Future contextual ads or donations must be disclosed and must not influence listings.</p></div></div>
+    </section>
+
+    <section class="legal-grid" aria-label="Privacy and terms">
+      <article id="privacy"><h2>Privacy pledge</h2><p>AnCard does not ask for an account or collect your card-filter choices. Filtering and comparisons run in your browser memory; we do not use analytics, cookies or third-party advertising scripts in this MVP. GitHub Pages, our hosting provider, records visitor IP addresses for security purposes. We cannot claim that visiting the site creates no network logs.</p></article>
+      <article id="terms"><h2>Important notices</h2><p>This website is educational, not personalized financial, credit, legal or tax advice. Card terms change, and issuer agreements govern. Eligibility and approval decisions belong to issuers. Preview card entries are fictional, and no application or affiliate links are included. Always verify real card information directly with the issuer before acting.</p></article>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><span>an/card <span class="footer-detail">— Know more. Choose for yourself.</span></span><span>Made for clarity, not clicks. <a href="#top">Back to top ↑</a></span></div></footer>
+
+  <div id="compare-bar" class="compare-bar" hidden><span id="compare-label">0 of 3 cards selected</span><div class="compare-actions"><button type="button" class="text-button" id="clear-compare">Clear</button><button type="button" class="small-primary" id="show-compare">Compare selected →</button></div></div>
+  <div class="dialog-backdrop" id="details-backdrop" hidden><section class="detail-dialog" role="dialog" aria-modal="true" aria-labelledby="detail-title"><div class="dialog-head"><p class="eyebrow">UNDERSTAND THE TERMS</p><button class="close-button" type="button" data-close aria-label="Close details">×</button></div><h2 id="detail-title"></h2><p id="detail-subtitle" class="muted"></p><div id="detail-body"></div><button type="button" class="small-primary" data-close>Return to cards</button></section></div>
+  <div class="dialog-backdrop" id="trust-backdrop" hidden><section class="trust-dialog" role="dialog" aria-modal="true" aria-labelledby="trust-title"><span class="welcome-mark">an<span>/</span>card.</span><p class="eyebrow">BEFORE YOU EXPLORE</p><h2 id="trust-title">The cards are yours to choose.</h2><p>Our job is to explain their terms, not steer you toward a paid placement. No accounts, referral commissions or stored filter profiles.</p><p>We may eventually use clearly disclosed contextual ads or accept donations. Neither can influence our listings. Our host processes technical request logs, including IP addresses, for security.</p><p class="trust-important">This is an educational directory, not financial advice. The current catalog contains fictional examples only.</p><button type="button" class="primary-button" id="enter-site">I understand — explore AnCard →</button><p class="trust-small">Acknowledgment is not permission for tracking. Nothing is saved; this notice reappears on reload.</p></section></div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "id": "north-online-plus", "name": "Online Plus", "issuer": "North Demo", "status": "demo", "fictional": true, "tone": "green",
+  "summary": "Decode online shopping categories, subscription credits and the limits behind bonus rewards.",
+  "primaryLabel": "Online cash back", "feeSummary": "Illustrative: $0 annual fee", "annualFeeUsd": 0,
+  "rewards": ["cash_back"], "categories": ["online", "lifestyle"], "features": [],
+  "plainEnglish": "Some card programs give extra rewards for qualifying digital purchases. What counts as online may vary by merchant coding.",
+  "watchOut": "Subscriptions and digital wallets may not always qualify; credits can require enrollment and expire.",
+  "limitations": "Fictional terms only, with no guaranteed digital-shopping coverage or reward rate.",
+  "verifiedAt": null, "issuerSource": null
+}

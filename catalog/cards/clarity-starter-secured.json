@@ -1,0 +1,10 @@
+{
+  "id": "clarity-starter-secured", "name": "Starter Secured", "issuer": "Clarity Demo", "status": "demo", "fictional": true, "tone": "berry",
+  "summary": "Learn how a refundable deposit may relate to credit limits, billing and possible upgrades.",
+  "primaryLabel": "Secured card", "feeSummary": "Illustrative: $0 annual fee", "annualFeeUsd": 0,
+  "rewards": [], "categories": [], "features": ["secured"],
+  "plainEnglish": "A secured credit card usually requires a cash deposit that may help establish a credit line. It is not the same as a prepaid card.",
+  "watchOut": "Review whether the issuer reports to credit bureaus and the rules for refunds, upgrades, late fees and closure.",
+  "limitations": "This example does not specify an actual minimum deposit or credit eligibility rules.",
+  "verifiedAt": null, "issuerSource": null
+}

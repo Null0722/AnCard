@@ -1,0 +1,39 @@
+#!/usr/bin/env node
+// Dependency-free catalog compiler: one JSON record per card; a single public JSON payload.
+import {readdir, readFile, writeFile} from 'node:fs/promises';
+import {resolve} from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=resolve(fileURLToPath(new URL('..',import.meta.url)));
+const source=resolve(root,'catalog/cards');
+const target=resolve(root,'docs/data/cards.json');
+const args=new Set(process.argv.slice(2));
+const demoTones=new Set(['sand','blue','berry','green','slate']);
+const rewards=new Set(['cash_back','points','miles']);
+const categories=new Set(['groceries','dining','travel','online','gas','lifestyle']);
+const features=new Set(['secured','student']);
+const requiredText=['id','name','issuer','summary','primaryLabel','feeSummary','plainEnglish','watchOut','limitations'];
+const fail=(filename,message)=>{throw new Error(`${filename}: ${message}`)};
+function validate(c,filename){
+  if(!c || typeof c!=='object' || Array.isArray(c))fail(filename,'must be an object');
+  for(const k of requiredText)if(typeof c[k]!=='string'||!c[k].trim())fail(filename,`missing text field ${k}`);
+  if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(c.id))fail(filename,'id must be kebab-case');
+  if(filename!==`${c.id}.json`)fail(filename,'file name must match card id');
+  if(!['demo','draft','review','published','archived'].includes(c.status))fail(filename,'unknown status');
+  if(!demoTones.has(c.tone))fail(filename,'unknown tone');
+  for(const [key,allowed] of [['rewards',rewards],['categories',categories],['features',features]]) {
+    if(!Array.isArray(c[key])||new Set(c[key]).size!==c[key].length||!c[key].every(v=>allowed.has(v)))fail(filename,`invalid ${key}`);
+  }
+  if(c.annualFeeUsd!==null&&(!Number.isInteger(c.annualFeeUsd)||c.annualFeeUsd<0))fail(filename,'annualFeeUsd must be a non-negative whole number or null');
+  if(c.status==='published'){
+    if(c.fictional!==false)fail(filename,'published cards cannot be fictional');
+    if(typeof c.verifiedAt!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(c.verifiedAt)||!Number.isFinite(Date.parse(c.verifiedAt))||c.verifiedAt>new Date().toISOString().slice(0,10))fail(filename,'published cards require valid, nonfuture verifiedAt');
+    try {const url=new URL(c.issuerSource);if(url.protocol!=='https:'||url.username||url.password||url.search||url.hash||!url.hostname.includes('.'))throw new Error('Invalid source');}catch{fail(filename,'published cards require a clean HTTPS issuerSource with no query, fragment or credentials');}
+  }else if(c.status==='demo' && c.fictional!==true){fail(filename,'demo cards must be explicitly fictional');}
+  if(c.status==='demo' && (c.issuerSource!==null || c.verifiedAt!==null))fail(filename,'demo cards cannot claim an issuer source or verification');
+}
+const filenames=(await readdir(source)).filter(name=>name.endsWith('.json')).sort();
+const cards=[];const ids=new Set();
+for(const filename of filenames){const card=JSON.parse(await readFile(resolve(source,filename),'utf8'));validate(card,filename);if(ids.has(card.id))fail(filename,'duplicate id');ids.add(card.id);if(['demo','published'].includes(card.status))cards.push(card);}
+const output=JSON.stringify({schemaVersion:1,cards},null,2)+'\n';
+if(args.has('--check')) {const existing=await readFile(target,'utf8').catch(()=>null);if(existing!==output){console.error('Public catalog is out of date. Run: npm run build');process.exitCode=1;}else console.log(`Catalog validated: ${filenames.length} records, ${cards.length} public.`);}
+else {await writeFile(target,output);console.log(`Compiled ${cards.length} public cards from ${filenames.length} records.`);}
