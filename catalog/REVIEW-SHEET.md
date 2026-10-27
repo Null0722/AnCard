@@ -4,11 +4,11 @@
 
 This is a generated READ-ONLY view. Review proposed terms and change approval in [HUMAN-QC.json](HUMAN-QC.json).
 
-**Review progress:** 0 of 100 entries human approved. Unapproved financial details remain hidden from the public directory.
+**Review progress:** 1 of 100 entries human approved. Unapproved financial details remain hidden from the public directory.
 
 ## Aer Lingus Visa Signature
 
-**Issuer:** Chase | **Review status:** PENDING | **Stage:** Established directory identity
+**Issuer:** Chase | **Review status:** APPROVED | **Stage:** Established directory identity
 
 - **Annual fee proposal:** $95 annual fee
 - **Monthly membership fee:** Not verified / not applicable

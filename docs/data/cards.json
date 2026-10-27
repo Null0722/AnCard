@@ -979,28 +979,52 @@
       "id": "chase-aer-lingus",
       "name": "Aer Lingus Visa Signature",
       "issuer": "Chase",
-      "status": "pending_review",
+      "status": "published",
       "fictional": false,
       "tone": "slate",
-      "humanVerified": false,
-      "summary": "Terms and benefits are awaiting human review.",
-      "primaryLabel": "Pending human review",
-      "feeSummary": "Annual fee: pending human review",
-      "annualFeeUsd": null,
-      "rewards": [],
-      "categories": [],
+      "summary": "3 Avios per $1 on eligible Aer Lingus, British Airways, Iberia and LEVEL purchases; 2 Avios per $1 on direct hotel stays; 1 Avios per $1 elsewhere.",
+      "primaryLabel": "3 Avios per $1 on eligible Aer Lingus, British Airways, Iberia and LEVEL purchases; 2 Avios per $1 on direct hotel stays; 1 Avios per $1 elsewhere.",
+      "feeSummary": "$95 annual fee",
+      "annualFeeUsd": 95,
+      "rewards": [
+        "miles"
+      ],
+      "categories": [
+        "travel"
+      ],
       "features": [
         "airline"
       ],
-      "plainEnglish": "The proposed benefit details are currently in the human QC queue and have not been approved for visitors.",
-      "watchOut": "Do not rely on this card for a financial decision until its terms have been checked against the current issuer agreement.",
-      "limitations": "Annual fees, APRs, bonuses, redemption, and insurance benefits are intentionally hidden until human QC.",
-      "verifiedAt": null,
+      "plainEnglish": "3 Avios per $1 on eligible Aer Lingus, British Airways, Iberia and LEVEL purchases; 2 Avios per $1 on direct hotel stays; 1 Avios per $1 elsewhere.",
+      "watchOut": "Avios are not equivalent to dollars. Current marketing bonuses and travel benefits require separate offer terms.",
+      "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
+      "verifiedAt": "2026-10-27",
       "issuerSource": "https://creditcards.chase.com/avios/cards",
-      "verificationLevel": "pending-human-review",
+      "verificationLevel": "selected-issuer-page-facts",
       "imageFront": null,
       "accessType": "public",
-      "airlineProgram": null
+      "bio": "Aer Lingus Visa Signature from Chase. 3 Avios per $1 on eligible Aer Lingus, British Airways, Iberia and LEVEL purchases; 2 Avios per $1 on direct hotel stays; 1 Avios per $1 elsewhere.",
+      "rewardStructure": "tiered",
+      "earnRules": [
+        {
+          "label": "Eligible partner airline purchases",
+          "rate": 3,
+          "unit": "x"
+        },
+        {
+          "label": "Hotels booked directly",
+          "rate": 2,
+          "unit": "x"
+        },
+        {
+          "label": "Other eligible purchases",
+          "rate": 1,
+          "unit": "x"
+        }
+      ],
+      "benefits": [],
+      "monthlyFeeUsd": null,
+      "humanVerified": true
     },
     {
       "id": "chase-aeroplan",
@@ -2577,7 +2601,7 @@
     }
   ],
   "reviewProgress": {
-    "approved": 0,
+    "approved": 1,
     "total": 100
   }
 }
