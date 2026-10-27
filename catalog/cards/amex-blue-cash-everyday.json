@@ -25,5 +25,23 @@
   "issuerSource": "https://global.americanexpress.com/card-benefits/detail/blue-cash-everyday-321/blue-cash-everyday/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
-  "accessType": "public"
+  "accessType": "public",
+  "welcomeOffer": {
+    "kind": "up_to",
+    "amount": 200,
+    "unit": "usd",
+    "minimumSpendUsd": 2000,
+    "monthsToEarn": 6,
+    "description": "As high as $200 in Reward Dollars after eligible spending; actual offer depends on eligibility.",
+    "source": "https://www.americanexpress.com/us/credit-cards/",
+    "observedAt": "2026-10-27"
+  },
+  "targetedOffers": {
+    "status": "not_individually_verified",
+    "description": "Issuer-specific and targeted offers may exist. Do not assume the public offer or maximum offer is available for any applicant."
+  },
+  "inviteOnlyOffer": {
+    "status": "not_documented",
+    "description": "No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product."
+  }
 }

@@ -28,5 +28,41 @@
     "sourcePage": "https://creditcards.chase.com/check-for-preapproved-offers",
     "alt": "Official front-facing card image of Chase Freedom Unlimited"
   },
-  "accessType": "public"
+  "accessType": "public",
+  "welcomeOffer": {
+    "kind": "fixed",
+    "amount": 200,
+    "unit": "usd",
+    "minimumSpendUsd": 500,
+    "monthsToEarn": 3,
+    "description": "$200 after $500 eligible purchases in first three months; card and bonus-eligibility restrictions apply.",
+    "source": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited",
+    "observedAt": "2026-10-27"
+  },
+  "targetedOffers": {
+    "status": "not_individually_verified",
+    "description": "Issuer-specific and targeted offers may exist. Do not assume the public offer or maximum offer is available for any applicant."
+  },
+  "inviteOnlyOffer": {
+    "status": "not_documented",
+    "description": "No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product."
+  },
+  "redemptionDetail": {
+    "examples": [
+      {
+        "method": "Cash redemption",
+        "centsPerPoint": 1,
+        "notes": "Official Chase program agreement; other redemptions may have different values."
+      }
+    ],
+    "source": "https://asset.chase.com/content/dam/card/rulesregulations/en/RPA0509_Web.pdf"
+  },
+  "pricingDetail": {
+    "introPurchaseAprPct": 0,
+    "introPurchaseMonths": 15,
+    "purchaseAprRangePct": null,
+    "foreignTransactionFeePct": null,
+    "notes": "0% purchase intro APR for 15 months from account opening in the observed offer; balance transfer fees and post-promo variable APR apply.",
+    "source": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited"
+  }
 }

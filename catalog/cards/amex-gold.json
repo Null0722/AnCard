@@ -43,5 +43,47 @@
     }
   ],
   "benefits": [],
-  "monthlyFeeUsd": null
+  "monthlyFeeUsd": null,
+  "welcomeOffer": {
+    "kind": "up_to",
+    "amount": 100000,
+    "unit": "points",
+    "minimumSpendUsd": 8000,
+    "monthsToEarn": 6,
+    "description": "As high as 100,000 Membership Rewards points; actual amount varies and may not be available. Only eligible purchases count.",
+    "source": "https://www.americanexpress.com/us/credit-cards/",
+    "observedAt": "2026-10-27"
+  },
+  "targetedOffers": {
+    "status": "not_individually_verified",
+    "description": "Issuer-specific and targeted offers may exist. Do not assume the public offer or maximum offer is available for any applicant."
+  },
+  "inviteOnlyOffer": {
+    "status": "not_documented",
+    "description": "No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product."
+  },
+  "redemptionDetail": {
+    "examples": [
+      {
+        "method": "Statement charges",
+        "centsPerPoint": 0.6,
+        "notes": "Membership Rewards points, issuer's published current illustrative rate."
+      },
+      {
+        "method": "Eligible flights through Amex Travel",
+        "centsPerPoint": 1,
+        "notes": "Travel portal redemption; terms and availability apply."
+      }
+    ],
+    "source": "https://www.americanexpress.com/en-us/credit-cards/credit-intel/american-express-points-value/"
+  },
+  "approvalGuidance": {
+    "issuerCreditLevel": null,
+    "noPresetSpendingLimit": true,
+    "creditScoreThreshold": null,
+    "typicalApprovalScore": null,
+    "startingLimitMinUsd": null,
+    "notes": "No preset spending limit is not unlimited spending. Available spending power adapts to purchases, payment and credit history; Amex may impose a limit.",
+    "source": "https://www.americanexpress.com/us/credit-cards/card/gold-card/"
+  }
 }

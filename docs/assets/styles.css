@@ -33,3 +33,13 @@
 @media(max-width:740px){.topic-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.browse-heading{gap:15px}.qc-summary{padding:12px 14px}.qc-ring{height:66px;width:66px}.browse-intro{max-width:none}}
 @media(max-width:375px){.topic-filters{grid-template-columns:1fr 1fr}.topic-chip{font-size:11px;padding:10px 5px}.qc-copy strong{font-size:12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Expanded Decode Terms: accessible progressive disclosure */
+.decode-section{background:#1a2935;border:1px solid #41596a;border-radius:12px;margin:0 0 10px;overflow:hidden}
+.decode-summary{cursor:pointer;padding:13px 16px;color:var(--ink);font-size:14px;font-weight:750;line-height:1.45}
+.decode-summary:hover,.decode-summary:focus-visible{background:#253947}
+.decode-section[open] .decode-summary{border-bottom:1px solid #455967}
+.decode-section-body{padding:9px 16px 14px}.decode-intro,.dialog-lede{color:var(--muted);font-size:13px;line-height:1.65}
+.decode-line{padding:10px 0;border-bottom:1px solid #334957}.decode-line:last-child{border-bottom:0}
+.decode-line h4{font-size:13px;color:var(--mint);margin:0 0 5px}.decode-line p{margin:0;font-size:13px;line-height:1.6;overflow-wrap:anywhere}
+@media(max-width:600px){.decode-section-body{padding:9px 11px}.decode-summary{padding:12px}.card-actions .link-button{white-space:normal}}

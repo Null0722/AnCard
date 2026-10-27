@@ -51,7 +51,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -90,7 +96,13 @@
         "rewardStructure": "miles",
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Annual fee not confirmed. Detailed category rates not confirmed.",
       "reviewedBy": "",
@@ -141,7 +153,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -191,7 +209,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -243,7 +267,50 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": {
+          "kind": "up_to",
+          "amount": 100000,
+          "unit": "points",
+          "minimumSpendUsd": 8000,
+          "monthsToEarn": 6,
+          "description": "As high as 100,000 Membership Rewards points; actual amount varies and may not be available. Only eligible purchases count.",
+          "source": "https://www.americanexpress.com/us/credit-cards/",
+          "observedAt": "2026-10-27"
+        },
+        "targetedOffers": {
+          "status": "not_individually_verified",
+          "description": "Issuer-specific and targeted offers may exist. Do not assume the public offer or maximum offer is available for any applicant."
+        },
+        "inviteOnlyOffer": {
+          "status": "not_documented",
+          "description": "No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product."
+        },
+        "redemptionDetail": {
+          "examples": [
+            {
+              "method": "Statement charges",
+              "centsPerPoint": 0.6,
+              "notes": "Membership Rewards points, issuer's published current illustrative rate."
+            },
+            {
+              "method": "Eligible flights through Amex Travel",
+              "centsPerPoint": 1,
+              "notes": "Travel portal redemption; terms and availability apply."
+            }
+          ],
+          "source": "https://www.americanexpress.com/en-us/credit-cards/credit-intel/american-express-points-value/"
+        },
+        "approvalGuidance": {
+          "issuerCreditLevel": null,
+          "noPresetSpendingLimit": true,
+          "creditScoreThreshold": null,
+          "typicalApprovalScore": null,
+          "startingLimitMinUsd": null,
+          "notes": "No preset spending limit is not unlimited spending. Available spending power adapts to purchases, payment and credit history; Amex may impose a limit.",
+          "source": "https://www.americanexpress.com/us/credit-cards/card/gold-card/"
+        },
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -280,7 +347,13 @@
         "rewardStructure": "points",
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Annual fee not confirmed. Detailed category rates not confirmed.",
       "reviewedBy": "",
@@ -317,7 +390,42 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": {
+          "kind": "up_to",
+          "amount": 175000,
+          "unit": "points",
+          "minimumSpendUsd": 12000,
+          "monthsToEarn": 6,
+          "description": "As high as 175,000 Membership Rewards points; actual amount and eligibility vary; not a guaranteed bonus.",
+          "source": "https://www.americanexpress.com/us/credit-cards/",
+          "observedAt": "2026-10-27"
+        },
+        "targetedOffers": {
+          "status": "not_individually_verified",
+          "description": "Issuer-specific and targeted offers may exist. Do not assume the public offer or maximum offer is available for any applicant."
+        },
+        "inviteOnlyOffer": {
+          "status": "not_documented",
+          "description": "No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product."
+        },
+        "redemptionDetail": {
+          "examples": [
+            {
+              "method": "Statement charges",
+              "centsPerPoint": 0.6,
+              "notes": "Membership Rewards points; value depends on redemption choice."
+            },
+            {
+              "method": "Eligible flights through Amex Travel",
+              "centsPerPoint": 1,
+              "notes": "Travel portal rate depends on eligible redemption type."
+            }
+          ],
+          "source": "https://www.americanexpress.com/en-us/credit-cards/credit-intel/american-express-points-value/"
+        },
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -358,7 +466,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -398,7 +512,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -456,7 +576,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -523,7 +649,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -579,7 +711,13 @@
             "condition": "Combined ceiling; verify individual per-program allowance and time conditions"
           }
         ],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -649,7 +787,13 @@
             "condition": "Qualifying application fees and renewal frequency"
           }
         ],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -697,7 +841,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -745,7 +895,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -780,7 +936,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -813,7 +975,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -852,7 +1020,28 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": {
+          "kind": "up_to",
+          "amount": 200,
+          "unit": "usd",
+          "minimumSpendUsd": 2000,
+          "monthsToEarn": 6,
+          "description": "As high as $200 in Reward Dollars after eligible spending; actual offer depends on eligibility.",
+          "source": "https://www.americanexpress.com/us/credit-cards/",
+          "observedAt": "2026-10-27"
+        },
+        "targetedOffers": {
+          "status": "not_individually_verified",
+          "description": "Issuer-specific and targeted offers may exist. Do not assume the public offer or maximum offer is available for any applicant."
+        },
+        "inviteOnlyOffer": {
+          "status": "not_documented",
+          "description": "No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product."
+        },
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -891,7 +1080,28 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": {
+          "kind": "up_to",
+          "amount": 300,
+          "unit": "usd",
+          "minimumSpendUsd": 3000,
+          "monthsToEarn": 6,
+          "description": "As high as $300 in Reward Dollars after eligible spending; actual welcome offer varies and can be unavailable.",
+          "source": "https://www.americanexpress.com/us/credit-cards/",
+          "observedAt": "2026-10-27"
+        },
+        "targetedOffers": {
+          "status": "not_individually_verified",
+          "description": "Issuer-specific and targeted offers may exist. Do not assume the public offer or maximum offer is available for any applicant."
+        },
+        "inviteOnlyOffer": {
+          "status": "not_documented",
+          "description": "No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product."
+        },
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -946,7 +1156,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -981,7 +1197,13 @@
         "rewardStructure": "none",
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Detailed category rates not confirmed.",
       "reviewedBy": "",
@@ -1020,7 +1242,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -1063,7 +1291,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -1118,7 +1352,13 @@
             "condition": "Up to $120 for a qualifying application fee once every four years; confirm eligibility in issuer benefits guide"
           }
         ],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -1193,7 +1433,52 @@
             "condition": "10,000 miles each anniversary, not cash"
           }
         ],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": {
+          "kind": "fixed",
+          "amount": 75000,
+          "unit": "miles",
+          "minimumSpendUsd": 4000,
+          "monthsToEarn": 3,
+          "description": "75,000 bonus miles after $4,000 eligible purchases in three months, with issuer eligibility restrictions.",
+          "source": "https://www.capitalone.com/credit-cards/venture-x/",
+          "observedAt": "2026-10-27"
+        },
+        "targetedOffers": {
+          "status": "not_individually_verified",
+          "description": "Issuer-specific and targeted offers may exist. Do not assume the public offer or maximum offer is available for any applicant."
+        },
+        "inviteOnlyOffer": {
+          "status": "not_documented",
+          "description": "No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product."
+        },
+        "redemptionDetail": {
+          "examples": [
+            {
+              "method": "Cover eligible travel purchases",
+              "centsPerPoint": 1,
+              "notes": "Issuer describes 10,000 miles as $100 toward eligible travel. Other uses differ."
+            }
+          ],
+          "source": "https://www.capitalone.com/credit-cards/venture-x/"
+        },
+        "approvalGuidance": {
+          "issuerCreditLevel": "Excellent",
+          "noPresetSpendingLimit": false,
+          "creditScoreThreshold": null,
+          "typicalApprovalScore": null,
+          "startingLimitMinUsd": null,
+          "notes": "Excellent is the issuer's qualitative credit-level label, not a numerical approval threshold or promise. Income, existing debt, credit history and obligations also matter.",
+          "source": "https://www.capitalone.com/credit-cards/venture-x/"
+        },
+        "pricingDetail": {
+          "introPurchaseAprPct": null,
+          "introPurchaseMonths": null,
+          "purchaseAprRangePct": null,
+          "foreignTransactionFeePct": 0,
+          "notes": "Variable APR changes and depends on creditworthiness. No foreign transaction fee according to issuer.",
+          "source": "https://www.capitalone.com/credit-cards/venture-x/"
+        }
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -1241,7 +1526,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -1292,7 +1583,35 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": {
+          "kind": "fixed",
+          "amount": 250,
+          "unit": "usd",
+          "minimumSpendUsd": 500,
+          "monthsToEarn": 3,
+          "description": "Limited-time $250 bonus after $500 eligible purchases in first three months; confirm offer availability and existing-cardmember restrictions.",
+          "source": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex",
+          "observedAt": "2026-10-27"
+        },
+        "targetedOffers": {
+          "status": "not_individually_verified",
+          "description": "Issuer-specific and targeted offers may exist. Do not assume the public offer or maximum offer is available for any applicant."
+        },
+        "inviteOnlyOffer": {
+          "status": "not_documented",
+          "description": "No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product."
+        },
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": {
+          "introPurchaseAprPct": 0,
+          "introPurchaseMonths": 15,
+          "purchaseAprRangePct": null,
+          "foreignTransactionFeePct": 0,
+          "notes": "0% intro purchase APR for 15 months; post-intro APR variable. Issuer currently advertises no foreign transaction fee.",
+          "source": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex"
+        }
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -1349,7 +1668,13 @@
             "condition": "Enroll within three months and stay enrolled for at least 90 consecutive days"
           }
         ],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -1391,7 +1716,44 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": {
+          "kind": "fixed",
+          "amount": 200,
+          "unit": "usd",
+          "minimumSpendUsd": 500,
+          "monthsToEarn": 3,
+          "description": "$200 after $500 eligible purchases in first three months; card and bonus-eligibility restrictions apply.",
+          "source": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited",
+          "observedAt": "2026-10-27"
+        },
+        "targetedOffers": {
+          "status": "not_individually_verified",
+          "description": "Issuer-specific and targeted offers may exist. Do not assume the public offer or maximum offer is available for any applicant."
+        },
+        "inviteOnlyOffer": {
+          "status": "not_documented",
+          "description": "No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product."
+        },
+        "redemptionDetail": {
+          "examples": [
+            {
+              "method": "Cash redemption",
+              "centsPerPoint": 1,
+              "notes": "Official Chase program agreement; other redemptions may have different values."
+            }
+          ],
+          "source": "https://asset.chase.com/content/dam/card/rulesregulations/en/RPA0509_Web.pdf"
+        },
+        "approvalGuidance": null,
+        "pricingDetail": {
+          "introPurchaseAprPct": 0,
+          "introPurchaseMonths": 15,
+          "purchaseAprRangePct": null,
+          "foreignTransactionFeePct": null,
+          "notes": "0% purchase intro APR for 15 months from account opening in the observed offer; balance transfer fees and post-promo variable APR apply.",
+          "source": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited"
+        }
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -1433,7 +1795,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -1489,7 +1857,13 @@
             "condition": "Eligible lounge networks, cardmember and guest conditions apply"
           }
         ],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -1528,7 +1902,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -1569,7 +1949,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -1618,7 +2004,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -1651,7 +2043,13 @@
         "rewardStructure": "none",
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Detailed category rates not confirmed.",
       "reviewedBy": "",
@@ -1686,7 +2084,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -1721,7 +2125,13 @@
         "rewardStructure": "none",
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Detailed category rates not confirmed.",
       "reviewedBy": "",
@@ -1754,7 +2164,13 @@
         "rewardStructure": "none",
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Detailed category rates not confirmed.",
       "reviewedBy": "",
@@ -1794,7 +2210,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -1872,7 +2294,13 @@
             "condition": "Up to two eligible selected brands and enrollment/merchant restrictions"
           }
         ],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -1912,7 +2340,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -1947,7 +2381,13 @@
         "rewardStructure": "tiered",
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Detailed category rates not confirmed.",
       "reviewedBy": "",
@@ -2010,7 +2450,13 @@
             "condition": "20% back as a statement credit on eligible Delta in-flight food and beverage purchases; percentage, not dollars"
           }
         ],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -2051,7 +2497,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -2092,7 +2544,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -2131,7 +2589,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -2179,7 +2643,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -2214,7 +2684,13 @@
         "rewardStructure": "tiered",
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Annual fee not confirmed. Detailed category rates not confirmed.",
       "reviewedBy": "",
@@ -2267,7 +2743,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -2304,7 +2786,13 @@
         "rewardStructure": "points",
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Detailed category rates not confirmed.",
       "reviewedBy": "",
@@ -2357,7 +2845,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -2425,7 +2919,13 @@
             "condition": "Eligible CLEAR+ subscription paid with the card"
           }
         ],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -2483,7 +2983,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -2538,7 +3044,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -2575,7 +3087,13 @@
         "rewardStructure": "points",
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Detailed category rates not confirmed.",
       "reviewedBy": "",
@@ -2612,7 +3130,13 @@
         "rewardStructure": "points",
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Detailed category rates not confirmed.",
       "reviewedBy": "",
@@ -2668,7 +3192,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -2713,7 +3243,13 @@
             "condition": "Status and elite night credit conditions apply"
           }
         ],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Detailed category rates not confirmed.",
       "reviewedBy": "",
@@ -2758,7 +3294,13 @@
             "condition": "Subject to point ceiling, participating hotel and award availability"
           }
         ],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Detailed category rates not confirmed.",
       "reviewedBy": "",
@@ -2811,7 +3353,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -2848,7 +3396,13 @@
         "rewardStructure": "points",
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Annual fee not confirmed. Detailed category rates not confirmed.",
       "reviewedBy": "",
@@ -2883,7 +3437,13 @@
         "rewardStructure": "none",
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Detailed category rates not confirmed.",
       "reviewedBy": "",
@@ -2922,7 +3482,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -2957,7 +3523,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -2990,7 +3562,13 @@
         "rewardStructure": "none",
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Detailed category rates not confirmed.",
       "reviewedBy": "",
@@ -3042,7 +3620,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -3083,7 +3667,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -3126,7 +3716,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -3194,7 +3790,13 @@
             "condition": "Qualifying application fee"
           }
         ],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -3255,7 +3857,13 @@
             "condition": "After qualifying spending"
           }
         ],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -3301,7 +3909,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -3340,7 +3954,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -3381,7 +4001,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -3435,7 +4061,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -3488,7 +4120,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -3521,7 +4159,13 @@
         "rewardStructure": "none",
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": 10
+        "monthlyFeeUsd": 10,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Detailed category rates not confirmed.",
       "reviewedBy": "",
@@ -3556,7 +4200,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -3604,7 +4254,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -3637,7 +4293,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -3675,7 +4337,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -3715,7 +4383,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -3752,7 +4426,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -3785,7 +4465,13 @@
         "rewardStructure": "none",
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Detailed category rates not confirmed.",
       "reviewedBy": "",
@@ -3850,7 +4536,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -3913,7 +4605,13 @@
             "condition": "11 consecutive months of eligible streaming purchases required"
           }
         ],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -3976,7 +4674,13 @@
             "condition": "Qualifying streaming purchases required"
           }
         ],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",
@@ -4013,7 +4717,13 @@
         "rewardStructure": "selectable",
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Detailed category rates not confirmed.",
       "reviewedBy": "",
@@ -4063,7 +4773,13 @@
           }
         ],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -4100,7 +4816,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -4139,7 +4861,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -4178,7 +4906,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -4217,7 +4951,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -4256,7 +4996,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -4295,7 +5041,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -4335,7 +5087,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -4372,7 +5130,13 @@
         "rewardStructure": "tiered",
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Annual fee not confirmed. Detailed category rates not confirmed.",
       "reviewedBy": "",
@@ -4417,7 +5181,13 @@
         "rewardStructure": null,
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "",
       "reviewedBy": "",
@@ -4454,7 +5224,13 @@
         "rewardStructure": "points",
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Annual fee not confirmed. Detailed category rates not confirmed.",
       "reviewedBy": "",
@@ -4487,7 +5263,13 @@
         "rewardStructure": "none",
         "earnRules": [],
         "benefits": [],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Detailed category rates not confirmed.",
       "reviewedBy": "",
@@ -4548,7 +5330,13 @@
             "condition": "Category 1-4 Hyatt property, subject to award availability"
           }
         ],
-        "monthlyFeeUsd": null
+        "monthlyFeeUsd": null,
+        "welcomeOffer": null,
+        "targetedOffers": null,
+        "inviteOnlyOffer": null,
+        "redemptionDetail": null,
+        "approvalGuidance": null,
+        "pricingDetail": null
       },
       "reviewNotes": "Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.",
       "reviewedBy": "",

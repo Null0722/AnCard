@@ -29,6 +29,23 @@ This is a generated READ-ONLY view. Review proposed terms and change approval in
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/avios/cards)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -58,6 +75,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/travel-credit-cards)
 **Source snapshot date:** 2026-10-27
@@ -91,6 +125,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/cash-back-credit-cards/amazon-rewards)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -121,6 +172,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.citi.com/credit-cards/)
 **Source snapshot date:** 2026-10-27
@@ -153,6 +221,24 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** As high as 100,000 points after $8,000 eligible spending in 6 months. As high as 100,000 Membership Rewards points; actual amount varies and may not be available. Only eligible purchases count.
+- **Targeted / personalized offers:** Issuer-specific and targeted offers may exist. Do not assume the public offer or maximum offer is available for any applicant.
+- **Invite-only signup offer:** No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product.
+
+### Redemption examples and eligibility
+
+- Statement charges: 0.6 cents per point. Membership Rewards points, issuer's published current illustrative rate.
+- Eligible flights through Amex Travel: 1 cents per point. Travel portal redemption; terms and availability apply.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Issuer states no preset limit; this is not unlimited purchasing power
+- **Approval factors:** No preset spending limit is not unlimited spending. Available spending power adapts to purchases, payment and credit history; Amex may impose a limit.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.americanexpress.com/us/credit-cards/card/gold-card/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -182,6 +268,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.americanexpress.com/us/credit-cards/)
 **Source snapshot date:** 2026-10-27
@@ -213,6 +316,24 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** As high as 175,000 points after $12,000 eligible spending in 6 months. As high as 175,000 Membership Rewards points; actual amount and eligibility vary; not a guaranteed bonus.
+- **Targeted / personalized offers:** Issuer-specific and targeted offers may exist. Do not assume the public offer or maximum offer is available for any applicant.
+- **Invite-only signup offer:** No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product.
+
+### Redemption examples and eligibility
+
+- Statement charges: 0.6 cents per point. Membership Rewards points; value depends on redemption choice.
+- Eligible flights through Amex Travel: 1 cents per point. Travel portal rate depends on eligible redemption type.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.americanexpress.com/us/credit-cards/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** None
@@ -242,6 +363,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.bankofamerica.com/credit-cards/products/alaska-airlines-credit-card/)
 **Source snapshot date:** 2026-10-27
@@ -273,6 +411,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.bankofamerica.com/credit-cards/products/alaska-airlines-infinite-credit-card/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** None
@@ -303,6 +458,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.bankofamerica.com/credit-cards/)
 **Source snapshot date:** 2026-10-27
@@ -337,6 +509,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.bankofamerica.com/credit-cards/products/cash-back-secured-credit-card/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -367,6 +556,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 ### Proposed benefits and credits
 
 - Combined travel incidentals and Global Entry/TSA PreCheck credits: Up to $200 | Combined ceiling; verify individual per-program allowance and time conditions
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.bankofamerica.com/credit-cards/products/premium-rewards-credit-card/)
 **Source snapshot date:** 2026-10-27
@@ -401,6 +607,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 - Lifestyle statement credits: Up to $150 | every 12 months | Eligible providers
 - Global Entry or TSA PreCheck application credit: Up to $120 | every 48 months | Qualifying application fees and renewal frequency
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.bankofamerica.com/credit-cards/products/premium-rewards-elite-credit-card/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -431,6 +654,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.bankofamerica.com/credit-cards/)
 **Source snapshot date:** 2026-10-27
@@ -463,6 +703,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.bankofamerica.com/credit-cards/travel-credit-cards/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -492,6 +749,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.bankofamerica.com/credit-cards/)
 **Source snapshot date:** 2026-10-27
@@ -523,6 +797,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.bankofamerica.com/credit-cards/products/bankamericard-credit-card/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** None
@@ -553,6 +844,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** As high as $200 after $2,000 eligible spending in 6 months. As high as $200 in Reward Dollars after eligible spending; actual offer depends on eligibility.
+- **Targeted / personalized offers:** Issuer-specific and targeted offers may exist. Do not assume the public offer or maximum offer is available for any applicant.
+- **Invite-only signup offer:** No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://global.americanexpress.com/card-benefits/detail/blue-cash-everyday-321/blue-cash-everyday/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** None
@@ -582,6 +890,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** As high as $300 after $3,000 eligible spending in 6 months. As high as $300 in Reward Dollars after eligible spending; actual welcome offer varies and can be unavailable.
+- **Targeted / personalized offers:** Issuer-specific and targeted offers may exist. Do not assume the public offer or maximum offer is available for any applicant.
+- **Invite-only signup offer:** No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.americanexpress.com/us/credit-cards/)
 **Source snapshot date:** 2026-10-27
@@ -615,6 +940,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/avios/cards)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -644,6 +986,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.capitalone.com/credit-cards/)
 **Source snapshot date:** 2026-10-27
@@ -675,6 +1034,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.capitalone.com/credit-cards/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** None
@@ -705,6 +1081,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.capitalone.com/credit-cards/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** None
@@ -734,6 +1127,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 ### Proposed benefits and credits
 
 - Global Entry or TSA PreCheck application fee credit: Up to $120 | every 48 months | Up to $120 for a qualifying application fee once every four years; confirm eligibility in issuer benefits guide
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.capitalone.com/credit-cards/)
 **Source snapshot date:** 2026-10-27
@@ -769,6 +1179,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 - Global Entry or TSA PreCheck fee reimbursement: Up to $120 | every 48 months | Qualifying application fee; frequency and eligibility restrictions apply
 - Anniversary mileage bonus: Amount not quantified | every 12 months | 10,000 miles each anniversary, not cash
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** 75,000 miles after $4,000 eligible spending in 3 months. 75,000 bonus miles after $4,000 eligible purchases in three months, with issuer eligibility restrictions.
+- **Targeted / personalized offers:** Issuer-specific and targeted offers may exist. Do not assume the public offer or maximum offer is available for any applicant.
+- **Invite-only signup offer:** No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product.
+
+### Redemption examples and eligibility
+
+- Cover eligible travel purchases: 1 cents per point. Issuer describes 10,000 miles as $100 toward eligible travel. Other uses differ.
+- **Issuer credit-level label:** Excellent
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Excellent is the issuer's qualitative credit-level label, not a numerical approval threshold or promise. Income, existing debt, credit history and obligations also matter.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Variable APR changes and depends on creditworthiness. No foreign transaction fee according to issuer.
+
 **Issuer source:** [Official issuer reference](https://www.capitalone.com/credit-cards/venture-x/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -800,6 +1227,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.capitalone.com/credit-cards/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -829,6 +1273,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** $250 after $500 eligible spending in 3 months. Limited-time $250 bonus after $500 eligible purchases in first three months; confirm offer availability and existing-cardmember restrictions.
+- **Targeted / personalized offers:** Issuer-specific and targeted offers may exist. Do not assume the public offer or maximum offer is available for any applicant.
+- **Invite-only signup offer:** No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** 0% for 15 months
+- **Other financing terms:** 0% intro purchase APR for 15 months; post-intro APR variable. Issuer currently advertises no foreign transaction fee.
 
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/)
 **Source snapshot date:** 2026-10-27
@@ -861,6 +1322,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 - Automatic payments enrollment statement credit: Up to $25 | Enroll within three months and stay enrolled for at least 90 consecutive days
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/cash-back-credit-cards/freedom/rise)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -891,6 +1369,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** $200 after $500 eligible spending in 3 months. $200 after $500 eligible purchases in first three months; card and bonus-eligibility restrictions apply.
+- **Targeted / personalized offers:** Issuer-specific and targeted offers may exist. Do not assume the public offer or maximum offer is available for any applicant.
+- **Invite-only signup offer:** No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product.
+
+### Redemption examples and eligibility
+
+- Cash redemption: 1 cents per point. Official Chase program agreement; other redemptions may have different values.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** 0% for 15 months
+- **Other financing terms:** 0% purchase intro APR for 15 months from account opening in the observed offer; balance transfer fees and post-promo variable APR apply.
+
 **Issuer source:** [Official issuer reference](https://www.chase.com/personal/credit-cards/freedom/unlimited)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** None
@@ -920,6 +1415,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/)
 **Source snapshot date:** 2026-10-27
@@ -952,6 +1464,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 - Premium airport lounge access: Amount not quantified | Eligible lounge networks, cardmember and guest conditions apply
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -982,6 +1511,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.citi.com/credit-cards/rewards-credit-cards)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** None
@@ -1011,6 +1557,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.citi.com/credit-cards/travel-reward-credit-cards)
 **Source snapshot date:** 2026-10-27
@@ -1043,6 +1606,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.citi.com/usc/Multi/Featured/default.htm)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -1072,6 +1652,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.citi.com/credit-cards/citi-diamond-preferred-credit-card)
 **Source snapshot date:** 2026-10-27
@@ -1103,6 +1700,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.citi.com/credit-cards/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** None
@@ -1132,6 +1746,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.citi.com/credit-cards/)
 **Source snapshot date:** 2026-10-27
@@ -1163,6 +1794,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.citi.com/credit-cards/citi-simplicity-credit-card)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Detailed category rates not confirmed.
@@ -1192,6 +1840,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.citi.com/credit-cards/citi-strata-credit-card)
 **Source snapshot date:** 2026-10-27
@@ -1228,6 +1893,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 - Annual Citi Travel hotel benefit: Up to $300 | every 12 months | Eligible 2-night minimum booking through Citi Travel
 - Annual Splurge credit: Up to $200 | every 12 months | Up to two eligible selected brands and enrollment/merchant restrictions
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.citi.com/credit-cards/citi-strata-elite-credit-card)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -1258,6 +1940,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.citi.com/credit-cards/rewards-credit-cards)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** None
@@ -1287,6 +1986,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.citi.com/credit-cards/)
 **Source snapshot date:** 2026-10-27
@@ -1320,6 +2036,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 - In-flight food and beverage savings: Up to $20 | 20% back as a statement credit on eligible Delta in-flight food and beverage purchases; percentage, not dollars
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-blue-american-express-card/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -1349,6 +2082,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-gold-american-express-card/)
 **Source snapshot date:** 2026-10-27
@@ -1380,6 +2130,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-platinum-american-express-card/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** None
@@ -1409,6 +2176,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-reserve-american-express-card/)
 **Source snapshot date:** 2026-10-27
@@ -1441,6 +2225,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.capitalone.com/credit-cards/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -1470,6 +2271,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.capitalone.com/credit-cards/)
 **Source snapshot date:** 2026-10-27
@@ -1503,6 +2321,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/rewards-credit-cards/disney)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -1532,6 +2367,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/rewards-credit-cards/disney)
 **Source snapshot date:** 2026-10-27
@@ -1564,6 +2416,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.americanexpress.com/us/credit-cards/card/hilton-honors/)
 **Source snapshot date:** 2026-10-27
@@ -1598,6 +2467,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 - Flight statement credits: Up to $200 | every 12 months | Up to $50 per quarter for eligible airline bookings
 - CLEAR+ membership credit: Up to $209 | every 12 months | Eligible CLEAR+ subscription paid with the card
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -1631,6 +2517,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.americanexpress.com/us/credit-cards/card/hilton-honors-surpass/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -1663,6 +2566,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/avios/cards)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -1693,6 +2613,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/travel-credit-cards/ihg)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Detailed category rates not confirmed.
@@ -1722,6 +2659,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/travel-credit-cards/ihg)
 **Source snapshot date:** 2026-10-27
@@ -1755,6 +2709,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.americanexpress.com/us/credit-cards/card/marriott-bonvoy-bevy/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -1785,6 +2756,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 - Marriott Silver Elite status: Amount not quantified | every 12 months | Status and elite night credit conditions apply
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Detailed category rates not confirmed.
@@ -1814,6 +2802,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 - Annual Free Night Award: Amount not quantified | every 12 months | Subject to point ceiling, participating hotel and award availability
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy)
 **Source snapshot date:** 2026-10-27
@@ -1847,6 +2852,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.americanexpress.com/us/credit-cards/card/marriott-bonvoy-brilliant/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -1876,6 +2898,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.wellsfargo.com/credit-cards/agreements/)
 **Source snapshot date:** 2026-10-27
@@ -1907,6 +2946,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.capitalone.com/credit-cards/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Detailed category rates not confirmed.
@@ -1936,6 +2992,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.pnc.com/en/personal-banking/banking/credit-cards.html)
 **Source snapshot date:** 2026-10-27
@@ -1967,6 +3040,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.pnc.com/en/personal-banking/banking/credit-cards.html)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** None
@@ -1996,6 +3086,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.pnc.com/en/personal-banking/banking/credit-cards.html)
 **Source snapshot date:** 2026-10-27
@@ -2029,6 +3136,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/cash-back-credit-cards/amazon-prime-rewards)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -2059,6 +3183,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.capitalone.com/credit-cards/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -2088,6 +3229,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.capitalone.com/credit-cards/)
 **Source snapshot date:** 2026-10-27
@@ -2122,6 +3280,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 - Anniversary reward: Up to $200 | every 12 months | After qualifying spend
 - Global Entry or TSA PreCheck: Up to $120 | every 48 months | Qualifying application fee
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/03/royal-caribbean-group-enhances-travel-loyalty--partners-with-ban.html)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -2154,6 +3329,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 - Anniversary reward: Up to $100 | every 12 months | After qualifying spending
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/03/royal-caribbean-group-enhances-travel-loyalty--partners-with-ban.html)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -2185,6 +3377,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.capitalone.com/credit-cards/savor-student/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -2214,6 +3423,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/travel-credit-cards/southwest)
 **Source snapshot date:** 2026-10-27
@@ -2245,6 +3471,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/travel-credit-cards/southwest)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** None
@@ -2275,6 +3518,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.td.com/us/en/personal-banking/credit-cards)
 **Source snapshot date:** 2026-10-27
@@ -2308,6 +3568,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.td.com/us/en/personal-banking/credit-cards/secured-credit-card)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -2338,6 +3615,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.td.com/us/en/personal-banking/credit-cards)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Detailed category rates not confirmed.
@@ -2367,6 +3661,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.td.com/us/en/personal-banking/credit-cards)
 **Source snapshot date:** 2026-10-27
@@ -2399,6 +3710,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.td.com/us/en/personal-banking/credit-cards/first-class-card)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -2428,6 +3756,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.td.com/us/en/personal-banking/credit-cards)
 **Source snapshot date:** 2026-10-27
@@ -2459,6 +3804,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.truist.com/credit-cards)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** None
@@ -2488,6 +3850,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.truist.com/credit-cards)
 **Source snapshot date:** 2026-10-27
@@ -2519,6 +3898,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.truist.com/credit-cards)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** None
@@ -2548,6 +3944,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.truist.com/credit-cards/future)
 **Source snapshot date:** 2026-10-27
@@ -2583,6 +3996,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.usbank.com/credit-cards.html)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -2614,6 +4044,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 ### Proposed benefits and credits
 
 - Annual streaming credit: Up to $15 | every 12 months | 11 consecutive months of eligible streaming purchases required
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.usbank.com/credit-cards/altitude-go-secured-visa-credit-card.html)
 **Source snapshot date:** 2026-10-27
@@ -2647,6 +4094,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 - Annual streaming credit: Up to $15 | every 12 months | Qualifying streaming purchases required
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.usbank.com/credit-cards.html)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
@@ -2676,6 +4140,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.usbank.com/credit-cards.html)
 **Source snapshot date:** 2026-10-27
@@ -2707,6 +4188,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.usbank.com/credit-cards.html)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** None
@@ -2736,6 +4234,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.usbank.com/credit-cards.html)
 **Source snapshot date:** 2026-10-27
@@ -2767,6 +4282,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.usbank.com/credit-cards.html)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** None
@@ -2796,6 +4328,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/travel-credit-cards/united)
 **Source snapshot date:** 2026-10-27
@@ -2827,6 +4376,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/travel-credit-cards/united/united-explorer)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** None
@@ -2856,6 +4422,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/travel-credit-cards/united)
 **Source snapshot date:** 2026-10-27
@@ -2887,6 +4470,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/travel-credit-cards/united)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** None
@@ -2916,6 +4516,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.wellsfargo.com/credit-cards/agreements/)
 **Source snapshot date:** 2026-10-27
@@ -2947,6 +4564,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.wellsfargo.com/credit-cards/agreements/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Annual fee not confirmed. Detailed category rates not confirmed.
@@ -2976,6 +4610,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.wellsfargo.com/credit-cards/agreements/)
 **Source snapshot date:** 2026-10-27
@@ -3007,6 +4658,23 @@ No quantified earning rules recorded. Verify the official agreement.
 
 No quantified extra benefits recorded. This does not mean the card has none.
 
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
+
 **Issuer source:** [Official issuer reference](https://www.wellsfargo.com/credit-cards/agreements/)
 **Source snapshot date:** 2026-10-27
 **Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true. Annual fee not confirmed. Detailed category rates not confirmed.
@@ -3036,6 +4704,23 @@ No quantified earning rules recorded. Verify the official agreement.
 ### Proposed benefits and credits
 
 No quantified extra benefits recorded. This does not mean the card has none.
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.wellsfargo.com/credit-cards/agreements/)
 **Source snapshot date:** 2026-10-27
@@ -3068,6 +4753,23 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 ### Proposed benefits and credits
 
 - Annual free night award: Amount not quantified | every 12 months | Category 1-4 Hyatt property, subject to award availability
+
+### Welcome offers and targeting
+
+- **Public welcome offer:** Not issuer-confirmed in this record
+- **Targeted / personalized offers:** No personalized offer confirmed. Values can vary by channel and applicant.
+- **Invite-only signup offer:** Not documented; an invitation to apply is not guaranteed approval.
+
+### Redemption examples and eligibility
+
+Redemption values not confirmed; points and miles are not fixed cash.
+- **Issuer credit-level label:** No consistent score bracket confirmed
+- **Typical approved score:** Not supported by reliable issuer approval-distribution data
+- **Minimum opening credit limit:** Not disclosed; generally set after underwriting
+- **No preset spending limit:** Not verified for this product
+- **Approval factors:** Credit profile, income, assets, existing obligations and issuer underwriting may matter. A score alone is not decisive.
+- **Intro purchase APR:** Not verified for this record
+- **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card)
 **Source snapshot date:** 2026-10-27
