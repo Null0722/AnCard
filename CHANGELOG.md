@@ -2,6 +2,15 @@
 
 All meaningful website changes are documented here and in Git history. Entries should state **what changed**, **why**, **files/components affected**, **verification**, and **what is next**. Most recent changes first. Do not silently rewrite prior decisions; add a new dated entry instead.
 
+## 2026-10-27: Original minimalist card color collection
+
+- Replaced arbitrary card illustration palettes with a curated, original AnCard color-family system. Examples: platinum-mist for American Express Platinum, gold-sand for Amex Gold, graphite-night for Capital One Venture X, deep-ocean for Venture, and separate indigo tones for Chase Sapphire Reserve and Preferred.
+- Standardized abstract linework, AnCard signature and a "Concept art, not official" label. Removed simulated payment-chip elements from rendered illustration markup to avoid confusion with issuer cards.
+- Preserved the working illustrated-art toggle, contained flips, issuer-source links and rights gate for authentic bank photos. No third-party requests added.
+- Expanded UI regression tests for theme selection, original visual signatures, absence of chip elements, and continued privacy restrictions.
+- Added copyright and trademark trade-dress considerations to artwork policy documentation. Palette choices do not imply legal clearance.
+- GitHub CI and manual browser / mobile presentation review remain important checks.
+
 ## 2026-10-27: Image toggle clarity and issuer-source access
 
 - Fixed confusing disabled image control: visitors can now toggle original locally generated AnCard illustrations on or off in both directory and dashboard.

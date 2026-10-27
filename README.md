@@ -93,6 +93,14 @@ AnCard now decodes six areas on every card: product overview, welcome/targeted/i
 
 The first issuer-backed proposals cover seven welcome offers, four evidence-based redemption/credit guidance records and a small set of intro APR descriptions. This does **not** imply those values are guaranteed, and the remaining cards retain explicit unknowns. See [market review](project/MARKET-REVIEW.md), [decoder field model](project/DECODER-V2.md), [review sheet](catalog/REVIEW-SHEET.md) and [human approval queue](catalog/HUMAN-QC.json).
 
+## Minimalist AnCard color collection
+
+The locally illustrated fronts use restrained, **original color families** inspired by ordinary descriptive product concepts, without reproducing issuer card art. For example, American Express Platinum receives a muted silver treatment, Capital One Venture X receives graphite, and Chase Sapphire products receive deep blue treatments. All share the same distinctive AnCard abstract geometry, brand signature and "Concept art, not official" label.
+
+These are not bank-approved or affiliated visualizations. The cards use no official logos, payment-network symbols, simulated chips, proprietary foil patterns, issuer-brand typography, or copied card-front compositions. Color is not an endorsement, an approval indicator, a quality ranking, or a promise of benefits. Visitors can turn illustrations off without third-party image requests.
+
+**Legal limitation:** a general silver, blue, gold or charcoal palette does not by itself guarantee freedom to recreate a bank's distinctive overall product appearance. U.S. copyright law generally protects original expression rather than basic concepts, while trademarks and trade dress can protect source-identifying product appearances. Independent legal review is advisable before claiming a design is risk-free. See the [U.S. Copyright Office](https://www.copyright.gov/what-is-copyright/) and [USPTO trade dress guidance](https://tmep.uspto.gov/RDMS/TMEP/print?href=TMEP-1200d1e835.html&version=current).
+
 ## Premium flipping card visuals (v0.7.0)
 
 All directory cards display original AnCard illustrations rendered locally without issuer artwork or trademarks. These illustrations are not accurate reproductions of specific bank card fronts. Click/tap a card or use its keyboard-focusable Flip control to view a summary within the card border. Select Full Decode Terms from the reverse side for detailed explanations.
