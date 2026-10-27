@@ -43,3 +43,7 @@ Each record contains `name`, `issuer`, the switch `"humanVerified": false`, and 
 The card art switch is independent and defaults off. Turning it on may contact issuer/CDN servers; enabling images does **not** imply that financial terms have passed human QC.
 
 **Important:** Do not approve cards in bulk. This is a factual editorial review checkpoint, not a statement that future APRs or offers cannot change. Only approve terms that you can confirm.
+
+## Stale approval safeguards
+
+The candidate snapshot includes the public summary, all proposed annual-fee and reward terms, source references, access classification, and card-art metadata. If any of those source fields changes, `npm run build` fails until `npm run qc:sync` resets the changed card to `humanVerified: false`. This prevents the public summary from changing without an explicit second review.
