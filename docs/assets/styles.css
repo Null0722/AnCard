@@ -151,3 +151,119 @@
 .premium-card.is-text-only .flip-frame{height:365px}
 .flip-issuer-source{font-size:12px;display:inline-block;margin:0;padding:5px 0;white-space:normal}
 @media(max-width:590px){.premium-card.is-text-only .flip-frame{height:390px}}
+
+
+/* AnCard Studio collection: minimalist original color families, never bank replicas.
+   Shared layout, AnCard signature, abstract lines. The palettes are illustrative. */
+.ancard-original-art{
+ --art-top:#394a59;--art-bottom:#1e2c3a;--art-ink:#f2f7fb;--art-muted:#e1e9ef;
+ --art-rule:#e3ecf062;
+ background:linear-gradient(154deg,var(--art-top) 4%,var(--art-bottom) 98%)!important;
+ color:var(--art-ink)!important;text-shadow:none;isolation:isolate;border:1px solid var(--art-rule);
+ border-radius:15px;box-shadow:0 11px 27px #07101b55,inset 0 1px 0 #ffffff33;
+ padding:16px 18px;gap:16px
+}
+.ancard-original-art::before{
+ content:'';position:absolute;pointer-events:none;z-index:0;
+ top:-115%;left:26%;width:128%;height:230%;
+ border:1px solid var(--art-rule);border-radius:50%;transform:rotate(-31deg);
+ background:none
+}
+.ancard-original-art::after{
+ content:'';position:absolute;pointer-events:none;z-index:0;
+ bottom:-58%;left:-22%;width:108%;height:120%;
+ border-radius:50%;border:1px solid var(--art-rule);transform:rotate(22deg);
+ background:none
+}
+.ancard-original-art .ancard-art-mark{font-size:13px;font-weight:800;letter-spacing:-.055em;color:var(--art-ink)}
+.ancard-original-art .ancard-art-motif{
+ position:absolute;top:20px;right:18px;width:66px;height:22px;z-index:1;
+ display:flex;flex-direction:column;gap:8px;align-items:flex-end
+}
+.ancard-art-motif::before,.ancard-art-motif::after{
+ content:'';height:2px;border-radius:99px;background:var(--art-ink);opacity:.48;
+ display:block;width:66px
+}
+.ancard-art-motif::after{width:37px}
+.ancard-original-art .ancard-art-bottom{margin-top:auto;align-items:end}
+.ancard-original-art .ancard-art-name{
+ font-size:13px;max-width:70%;line-height:1.28;letter-spacing:-.01em;
+ font-weight:750;color:var(--art-ink)
+}
+.ancard-original-art .ancard-art-disclaimer{
+ font-size:8px;color:var(--art-muted);opacity:1;max-width:30%;
+ line-height:1.35;text-transform:uppercase;letter-spacing:.03em
+}
+.ancard-original-art[data-theme="platinum-mist"]{
+ --art-top:#dce2e3;--art-bottom:#9dabad;--art-ink:#19282e;
+ --art-muted:#31494f;--art-rule:#36484d40
+}
+.ancard-original-art[data-theme="gold-sand"]{
+ --art-top:#e2d4ac;--art-bottom:#b8a27c;--art-ink:#3b3125;
+ --art-muted:#51463a;--art-rule:#44372937
+}
+.ancard-original-art[data-theme="graphite-night"]{
+ --art-top:#545c66;--art-bottom:#1a242f;--art-ink:#f4f7fb;
+ --art-muted:#e4eaf0;--art-rule:#d7e3f04c
+}
+.ancard-original-art[data-theme="deep-ocean"]{
+ --art-top:#497b7d;--art-bottom:#193d4c;--art-ink:#f3fafa;
+ --art-muted:#ddeced;--art-rule:#cee8e754
+}
+.ancard-original-art[data-theme="soft-steel"]{
+ --art-top:#c5d1d8;--art-bottom:#829bad;--art-ink:#203340;
+ --art-muted:#2b4654;--art-rule:#28445040
+}
+.ancard-original-art[data-theme="warm-clay"]{
+ --art-top:#cb9983;--art-bottom:#805d5e;--art-ink:#251d23;
+ --art-muted:#392c30;--art-rule:#4734394a
+}
+.ancard-original-art[data-theme="midnight-indigo"]{
+ --art-top:#30436f;--art-bottom:#111d38;--art-ink:#edf2fd;
+ --art-muted:#d6e2f4;--art-rule:#b9c8e651
+}
+.ancard-original-art[data-theme="calm-indigo"]{
+ --art-top:#60749b;--art-bottom:#26375c;--art-ink:#f4f7ff;
+ --art-muted:#e4e9fa;--art-rule:#c0d0e354
+}
+.ancard-original-art[data-theme="clear-blue"]{
+ --art-top:#6998b8;--art-bottom:#315572;--art-ink:#f6fafc;
+ --art-muted:#e6f2f5;--art-rule:#dbf4f05c
+}
+.ancard-original-art[data-theme="slate-violet"]{
+ --art-top:#787b9b;--art-bottom:#40445c;--art-ink:#f9f8ff;
+ --art-muted:#e9e7f4;--art-rule:#ded6ee56
+}
+.ancard-original-art[data-theme="rosewood"]{
+ --art-top:#916976;--art-bottom:#583943;--art-ink:#faf2f3;
+ --art-muted:#f2dce3;--art-rule:#f7dae951
+}
+.ancard-original-art[data-theme="wine-stone"]{
+ --art-top:#a47c82;--art-bottom:#573a47;--art-ink:#fff6f7;
+ --art-muted:#f1e3e6;--art-rule:#fce2e963
+}
+.ancard-original-art[data-theme="sky-fog"]{
+ --art-top:#b7d2db;--art-bottom:#708eaa;--art-ink:#172e40;
+ --art-muted:#2a4554;--art-rule:#364f6340
+}
+.ancard-original-art[data-theme="stone-forest"]{
+ --art-top:#b6bfad;--art-bottom:#6b8177;--art-ink:#20342f;
+ --art-muted:#2a453c;--art-rule:#37514845
+}
+.ancard-original-art[data-theme="soft-sage"]{
+ --art-top:#a6cbba;--art-bottom:#577e73;--art-ink:#16362e;
+ --art-muted:#244b42;--art-rule:#2a54483a
+}
+.ancard-original-art[data-theme="lavender-haze"]{
+ --art-top:#c3b9d5;--art-bottom:#8579a5;--art-ink:#292440;
+ --art-muted:#403855;--art-rule:#4a3e6140
+}
+.ancard-original-art[data-theme="ink-slate"]{
+ --art-top:#657a86;--art-bottom:#293e4b;--art-ink:#f6faff;
+ --art-muted:#e2eaf1;--art-rule:#c9deee45
+}
+@media(max-width:740px){
+ .ancard-original-art{padding:12px 14px}
+ .ancard-original-art .ancard-art-motif{top:15px;right:13px}
+ .ancard-original-art .ancard-art-name{font-size:11px}
+}

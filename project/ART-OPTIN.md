@@ -21,3 +21,13 @@ Cards flip inside their own border by mouse click, touch or keyboard-accessible 
 ## Manual release checks
 
 Test keyboard Tab / Shift+Tab, flip and return, Escape for full decoder, narrow screens, screen reader names, filtering pending cards, comparison selections, browser network requests, external link referrer policy, and zero persistence.
+
+## Original color families: legal review notes
+
+AnCard's abstract templates draw from general descriptors such as "platinum" (soft silver), "gold" (warm sand), "sapphire" (indigo), and "venture" (graphite and ocean), while retaining the independent AnCard layout, its brand signature, geometric linework and visible "Concept art, not official" notice.
+
+**Do not copy:** any issuer's distinctive composition, trademarks, Centurion artwork, source-identifying font, payment-network logos, decorative motifs, original images, characteristic metal textures or other combination that makes a design appear officially bank-issued. Generic color choices can still matter in trademark context, so changing the artwork alone does not establish complete legal clearance.
+
+References: U.S. Copyright Office https://www.copyright.gov/what-is-copyright/ and USPTO product-design trade dress guidance https://tmep.uspto.gov/RDMS/TMEP/print?href=TMEP-1200d1e835.html&version=current .
+
+The separate issuer-image permissions gate remains unchanged. Neither using a related color family nor obtaining a visitor's consent to contact an image host grants publication rights in protected original bank-card imagery.
