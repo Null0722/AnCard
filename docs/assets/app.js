@@ -62,7 +62,11 @@ function makeCard(card) {
   const verified=node('span','card-verification',card.humanVerified?'Human QC approved':'Pending human review');actions.append(detail,compare,verified);article.append(actions);return article;
 }
 function render() {
-  const filtered=sortCards(cards.filter(c=>matches(c,activeFilters())));
+  const query=$('#card-search').value.trim().toLocaleLowerCase();
+  const approvedOnly=$('#reviewed-only').checked;
+  const filtered=sortCards(cards.filter(c=>matches(c,activeFilters())
+    && (!approvedOnly||c.humanVerified===true)
+    && (!query||[c.name,c.issuer,c.airlineProgram].filter(Boolean).some(value=>value.toLocaleLowerCase().includes(query)))));
   const count=$('#result-count');count.textContent=catalogError?'Catalog unavailable':`${filtered.length} cards · ${filtered.filter(c=>c.humanVerified).length} human-reviewed · ${$('#sort-by').selectedOptions[0].textContent}`;
   catalogEl.replaceChildren();
   if(catalogError || !filtered.length){const empty=node('div','empty-card');empty.append(node('h4','',catalogError?'We could not load the catalog.':'No cards match those filters.'),node('p','',catalogError?'Try reloading the page. No preferences were transmitted.':'Try removing a filter to explore more cards. We do not select alternatives for you.'));catalogEl.append(empty);}
@@ -86,7 +90,7 @@ function showDetails(card) {
 }
 function showComparison() {
   const chosen=cards.filter(c=>compared.has(c.id));if(!chosen.length)return;
-  $('#detail-title').textContent='Compare your selections';$('#detail-subtitle').textContent='Neutral side-by-side information — no rankings, scores, or winning card.';
+  $('#detail-title').textContent='Compare your selections';$('#detail-subtitle').textContent='Neutral side-by-side information  -  no rankings, scores, or winning card.';
   const body=$('#detail-body');body.replaceChildren();const table=node('table','comparison-table');const thead=node('thead');const head=node('tr');head.append(node('th','','Attribute'));
   chosen.forEach(c=>head.append(node('th','',c.name)));thead.append(head);table.append(thead);
   const tbody=node('tbody');[['Rewards',c=>c.humanVerified?c.rewards.map(v=>labels[v]).join(', ')||'Not specified':'Pending review'],['Categories',c=>c.humanVerified?c.categories.map(v=>labels[v]).join(', ')||'Not specified':'Pending review'],['Annual fee',c=>!c.humanVerified?'Pending review':c.annualFeeUsd===null?'Unspecified':c.annualFeeUsd===0?'$0':`$${c.annualFeeUsd}`],['Important limit',c=>c.limitations],['Verification',c=>c.humanVerified?'Human QC approved':'Pending review']].forEach(([title,value])=>{const tr=node('tr');tr.append(node('th','',title));chosen.forEach(c=>tr.append(node('td','',value(c))));tbody.append(tr);});table.append(tbody);body.append(table,node('p','dialog-note','Every comparison value comes directly from the published card records. Check the current issuer agreement; this source snapshot does not cover every term.'));
@@ -95,8 +99,10 @@ function showComparison() {
 
 checks.forEach(c=>c.addEventListener('change',render));
 quicks.forEach(button=>button.addEventListener('click',()=>{const input=checks.find(c=>c.value===button.dataset.quick);if(input){input.checked=!input.checked;render();}$('#catalog').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}));
-$('#clear-filters').addEventListener('click',()=>{checks.forEach(c=>c.checked=false);render();});
+$('#clear-filters').addEventListener('click',()=>{checks.forEach(c=>c.checked=false);$('#card-search').value='';$('#reviewed-only').checked=false;render();});
 $('#sort-by').addEventListener('change',render);
+$('#card-search').addEventListener('input',render);
+$('#reviewed-only').addEventListener('change',render);
 $('#show-art').addEventListener('change',event=>{artEnabled=event.target.checked;render();});
 $('#toggle-filters').addEventListener('click',()=>{const open=$('#filter-panel').classList.toggle('is-open');$('#toggle-filters').setAttribute('aria-expanded',String(open));});
 catalogEl.addEventListener('click',event=>{const detail=event.target.closest('[data-detail]');if(detail){const card=cards.find(c=>c.id===detail.dataset.detail);if(card)showDetails(card);return;}const toggle=event.target.closest('[data-compare]');if(toggle){const id=toggle.dataset.compare;if(compared.has(id))compared.delete(id);else if(compared.size<3)compared.add(id);else{showComparison();return;}render();}});

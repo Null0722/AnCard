@@ -1,4 +1,4 @@
-# AnCard — Secondary Discovery Dashboard
+# AnCard  -  Secondary Discovery Dashboard
 
 Status: Phase 1 prototype. Intended URL after merging and deploying: `/AnCard/dashboard/`.
 
@@ -35,6 +35,6 @@ Checking/savings: distinct product tabs and differing fee/interest controls; nev
 
 Global Show Card Art checkbox defaults off on every page load and navigation. No third-party image requests until the visitor intentionally enables it. The explanatory label states that third-party issuer or CDN servers receive IP address and browser request metadata. The app sets referrerPolicy=no-referrer. Unknown artwork remains a text-first badge. No cookies or persistent browser storage is used.
 
-## v0.3.0 — Airline cards and pending review
+## v0.3.0  -  Airline cards and pending review
 
 The dashboard accepts `pending_review` and `published` records. Unapproved card rows show identity and source only. Added `airline` identity facet, allowing exploration of 13 additional airline co-branded candidates without exposing proposed earning rates. Card art remains optional and disabled by default.

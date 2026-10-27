@@ -2,7 +2,7 @@
 
 **Know more. Choose for yourself.**
 
-**AnCard is an independent, privacy-first credit card education and discovery project.** We translate confusing credit card terms into plain English and let people explore products using their own criteria—without quizzes designed to pick a winner for them.
+**AnCard is an independent, privacy-first credit card education and discovery project.** We translate confusing credit card terms into plain English and let people explore products using their own criteria - without quizzes designed to pick a winner for them.
 
 > **Our mission:** Help everyday consumers understand what a credit card offers, what it costs, and what to watch out for *before* they make a decision.
 
@@ -26,7 +26,7 @@ We are working toward a different model from conversion-focused comparison exper
 
 | Principle | What it means for AnCard |
 | --- | --- |
-| **Consumer choice** | We provide understandable information and user-controlled filters—not a quiz that chooses a card for you. |
+| **Consumer choice** | We provide understandable information and user-controlled filters - not a quiz that chooses a card for you. |
 | **Radical transparency** | We explain the methodology, important conditions, information sources, and what we do **not** know. |
 | **Privacy by design** | No visitor accounts, credit-score pulls, stored search profiles, or behavioral analytics in the MVP. Filters and comparisons operate in browser memory. |
 | **Editorial independence** | No affiliate tracking or card-application funnels in the MVP. We do not sell visitor profiles or arrange undisclosed paid rankings. |
@@ -37,7 +37,7 @@ We are working toward a different model from conversion-focused comparison exper
 
 **A note on funding:** The long-term goal is to explore transparent, non-tracking contextual advertising and potentially donations. This is a future business-model direction, **not** a claim that donations or ad funding is live today. Any changes affecting independence or privacy must be documented and disclosed.
 
-## Current status — v0.3.0 owner-QC release candidate
+## Current status  -  v0.3.0 owner-QC release candidate
 
 The repository includes an early, working **static-site prototype** with:
 
@@ -65,13 +65,19 @@ A GitHub edit of the flag **alone** does not rebuild the static site. If an unde
 
 See the [human QC instructions](project/HUMAN-QC.md) for the complete process.
 
+## Local discovery improvements
+
+The card directory and comparison dashboard provide a fast **search by issuer, card name, or airline program**, plus a **Human-reviewed only** toggle. Searches run entirely inside the loaded static catalog. No query or selection is transmitted to a server. The dashboard Clear Filters action keeps your side-by-side selections.
+
+Catalog tests also verify that unapproved monetary and reward details are absent from public JSON and that em dashes have not been introduced into the repository.
+
 ## Optional official card images
 
 Card imagery is **off by default**. The directory and dashboard render a typography-based badge without third-party image requests. If a visitor explicitly enables “Show official card art,” the browser then requests verified front-card image URLs from the issuer or its CDN. This can disclose an IP address and browser metadata to that issuer; AnCard sets `referrerPolicy=no-referrer` and does not save the toggle. Images not yet sourced retain a badge, even when enabled. Nine records currently have issuer-sourced image URLs. Images and hotlink permissions still require live-browser verification before release. See [image opt-in policy](project/ART-OPTIN.md).
 
 ## How it works technically
 
-To keep GitHub Pages hosting affordable and the site easy to maintain, the MVP uses **HTML, CSS, vanilla JavaScript and a Git-managed JSON card catalog**—no runtime database, account backend, third-party UI framework or production server required.
+To keep GitHub Pages hosting affordable and the site easy to maintain, the MVP uses **HTML, CSS, vanilla JavaScript and a Git-managed JSON card catalog** - no runtime database, account backend, third-party UI framework or production server required.
 
 ```text
 catalog/cards/          One JSON file per card

@@ -1,4 +1,4 @@
-# AnCard — Ten-institution research register
+# AnCard  -  Ten-institution research register
 
 Date opened: 2026-10-27. **In progress, NOT a completed comprehensive audit.** Institutions here are the ten requested coverage targets, not a verified rank by assets or number of customers. American Express participates as a card issuer and consumer banking provider.
 

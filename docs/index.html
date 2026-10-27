@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="dark">
   <meta name="description" content="AnCard explains credit card terms in plain language. Explore categories, inspect the fine print, and compare on your own terms. No quiz or preference tracking.">
   <meta name="theme-color" content="#111921">
-  <title>AnCard — Explore cards on your own terms</title>
+  <title>AnCard  -  Explore cards on your own terms</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./assets/styles.css">
   <script type="module" src="./assets/app.js"></script>
@@ -34,7 +34,7 @@
       <aside class="hero-note" aria-label="Our approach">
         <p class="eyebrow">INFORMATION BEFORE INFLUENCE</p>
         <h2>Know more.<br>Choose for yourself.</h2>
-        <p>We explain costs, conditions and exceptions in ordinary language—not sales language.</p>
+        <p>We explain costs, conditions and exceptions in ordinary language - not sales language.</p>
         <a href="#methodology">See how we work <span aria-hidden="true">↗</span></a>
       </aside>
     </section>
@@ -83,6 +83,10 @@
             <div><h3>Browse the catalog</h3><p id="result-count" role="status" aria-live="polite">Loading card catalog…</p></div>
             <label class="sort-label">Sort <select id="sort-by"><option value="name">Card name A–Z</option><option value="issuer">Issuer A–Z</option><option value="fee">Annual fee: low to high</option></select></label>
           </div>
+          <div class="directory-utilities">
+            <label for="card-search">Find by card or bank <input id="card-search" type="search" autocomplete="off" placeholder="Example: Delta, Chase, Citi"></label>
+            <label class="review-toggle"><input type="checkbox" id="reviewed-only"> Human-reviewed only</label>
+          </div>
           <div class="art-optin"><label><input type="checkbox" id="show-art"> Show official card art</label><p>Off by default. Enabling images sends requests to the issuing banks or their CDNs. It may disclose your IP address and browser metadata. This choice lasts only until you leave or reload this page. Missing artwork stays a text badge.</p></div>
           <div class="preview-banner" role="note"><strong>Only human-reviewed details are displayed.</strong> All new cards start as placeholders. Fees, earning rates, and benefits appear only after review against issuer documentation. Until then, use the official issuer source for current information.</div>
           <div id="card-results" class="card-results" aria-live="off"></div>
@@ -110,10 +114,10 @@
       <article id="terms"><h2>Important notices</h2><p>This website is educational, not personalized financial, credit, legal or tax advice. Card terms change, and issuer agreements govern. Eligibility and approval decisions belong to issuers. Unreviewed records display placeholders. Even after review, the issuer agreement governs fees, APRs and rewards. No application or affiliate links are included. Always verify real card information directly with the issuer before acting.</p></article>
     </section>
   </main>
-  <footer class="site-footer"><div class="shell footer-inner"><span>an/card <span class="footer-detail">— Know more. Choose for yourself.</span></span><span>Made for clarity, not clicks. <a href="#top">Back to top ↑</a></span></div></footer>
+  <footer class="site-footer"><div class="shell footer-inner"><span>an/card <span class="footer-detail"> -  Know more. Choose for yourself.</span></span><span>Made for clarity, not clicks. <a href="#top">Back to top ↑</a></span></div></footer>
 
   <div id="compare-bar" class="compare-bar" hidden><span id="compare-label">0 of 3 cards selected</span><div class="compare-actions"><button type="button" class="text-button" id="clear-compare">Clear</button><button type="button" class="small-primary" id="show-compare">Compare selected →</button></div></div>
   <div class="dialog-backdrop" id="details-backdrop" hidden><section class="detail-dialog" role="dialog" aria-modal="true" aria-labelledby="detail-title"><div class="dialog-head"><p class="eyebrow">UNDERSTAND THE TERMS</p><button class="close-button" type="button" data-close aria-label="Close details">×</button></div><h2 id="detail-title"></h2><p id="detail-subtitle" class="muted"></p><div id="detail-body"></div><button type="button" class="small-primary" data-close>Return to cards</button></section></div>
-  <div class="dialog-backdrop" id="trust-backdrop" hidden><section class="trust-dialog" role="dialog" aria-modal="true" aria-labelledby="trust-title"><span class="welcome-mark">an<span>/</span>card.</span><p class="eyebrow">BEFORE YOU EXPLORE</p><h2 id="trust-title">The cards are yours to choose.</h2><p>Our job is to explain their terms, not steer you toward a paid placement. No accounts, referral commissions or stored filter profiles.</p><p>We may eventually use clearly disclosed contextual ads or accept donations. Neither can influence our listings. Our host processes technical request logs, including IP addresses, for security.</p><p class="trust-important">This is an educational directory, not financial advice. Unapproved card information stays hidden until a human confirms the proposed facts.</p><button type="button" class="primary-button" id="enter-site">I understand — explore AnCard →</button><p class="trust-small">Acknowledgment is not permission for tracking. Nothing is saved; this notice reappears on reload.</p></section></div>
+  <div class="dialog-backdrop" id="trust-backdrop" hidden><section class="trust-dialog" role="dialog" aria-modal="true" aria-labelledby="trust-title"><span class="welcome-mark">an<span>/</span>card.</span><p class="eyebrow">BEFORE YOU EXPLORE</p><h2 id="trust-title">The cards are yours to choose.</h2><p>Our job is to explain their terms, not steer you toward a paid placement. No accounts, referral commissions or stored filter profiles.</p><p>We may eventually use clearly disclosed contextual ads or accept donations. Neither can influence our listings. Our host processes technical request logs, including IP addresses, for security.</p><p class="trust-important">This is an educational directory, not financial advice. Unapproved card information stays hidden until a human confirms the proposed facts.</p><button type="button" class="primary-button" id="enter-site">I understand  -  explore AnCard →</button><p class="trust-small">Acknowledgment is not permission for tracking. Nothing is saved; this notice reappears on reload.</p></section></div>
 </body>
 </html>
