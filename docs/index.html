@@ -99,7 +99,12 @@
               <select id="review-status"><option value="">All records</option><option value="approved">Human-reviewed</option><option value="pending">Awaiting review</option></select>
             </label>
           </div>
-          <div class="art-optin"><label><input type="checkbox" id="show-art" disabled> Enable rights-cleared official card art</label><p id="art-status">Original AnCard artwork renders locally, without contacting issuing banks. Official issuer art requires documented permission and explicit opt-in.</p></div>
+          <div class="art-optin art-display">
+            <label><input type="checkbox" id="show-art" checked> Show illustrated card fronts</label>
+            <p id="art-status">Illustrated card fronts are made by AnCard and render locally. These are not official issuer photos.</p>
+            <label id="official-art-option" hidden><input type="checkbox" id="show-official-art"> Load rights-cleared issuer art (contacts an external host)</label>
+            <p class="art-availability">For actual card photos, use the official issuer source link on the back of each card. External artwork requires documented reuse rights.</p>
+          </div>
           <div class="preview-banner" role="note"><strong>Financial claims need human approval.</strong> All 100 card identities are visible. Card-specific fees, bonuses and rewards remain hidden until human verification. Use current issuer disclosures for financial decisions.</div>
           <div id="card-results" class="card-results" aria-live="off"></div>
           <button id="load-more" class="show-more-cards" type="button" hidden>Show more cards</button>

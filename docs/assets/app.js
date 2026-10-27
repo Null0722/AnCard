@@ -7,6 +7,7 @@ const identityQuicks=[...document.querySelectorAll('[data-identity-quick]')];
 const compared=new Set();
 const flipped=new Set();
 let artEnabled=false;
+let showIllustrations=true;
 let visibleLimit=24;
 let cards = [];
 let catalogError = false;
@@ -85,7 +86,8 @@ function makeCard(card) {
   top.append(node('span','issuer-eyebrow',card.issuer));
   top.append(node('span','review-pill',card.humanVerified?'QC reviewed':'Review pending'));
   front.append(top);
-  const art=createCardVisual(card,artEnabled);
+  article.classList.toggle('is-text-only',!showIllustrations);
+  const art=showIllustrations?createCardVisual(card,artEnabled):node('div','art-text-fallback',card.name);
   front.append(art);
   const info=node('div','flip-summary');
   info.append(node('h4','',card.name),node('p','',card.humanVerified?card.summary:'Official issuer reference available. Financial terms awaiting human review.'));
@@ -112,6 +114,9 @@ function makeCard(card) {
   back.append(backInfo);
   const backActions=node('div','flip-back-actions');
   backActions.append(button('Back to front','flip-return','unflip',card.id),button('Open full Decode terms','flip-read','detail',card.id));
+  const source=node('a','source-link flip-issuer-source','View issuer source');
+  source.href=card.issuerSource;source.target='_blank';source.rel='noopener noreferrer';source.referrerPolicy='no-referrer';
+  backActions.append(source);
   back.append(backActions);
   inner.append(front,back);frame.append(inner);article.append(frame);
   return article;
@@ -310,7 +315,14 @@ $('#load-more').addEventListener('click',()=>{
  visibleLimit+=24;render();
  $('#load-more').focus({preventScroll:true});
 });
-$('#show-art').addEventListener('change',event=>{artEnabled=event.target.checked;render();});
+$('#show-art').addEventListener('change',event=>{
+  showIllustrations=event.target.checked;
+  const licensedOption=$('#show-official-art');
+  licensedOption.disabled=!showIllustrations;
+  if(!showIllustrations){licensedOption.checked=false;artEnabled=false;}
+  render();
+});
+$('#show-official-art').addEventListener('change',event=>{artEnabled=event.target.checked;render();});
 $('#toggle-filters').addEventListener('click',()=>{
  const open=$('#filter-panel').classList.toggle('is-open');
  $('#toggle-filters').setAttribute('aria-expanded',String(open));
@@ -347,10 +359,11 @@ async function loadCatalog(){
      const option=node('option','',issuer);option.value=issuer;select.append(option);
    }
    const licensed=cards.filter(rightsClearedAsset).length;
-   $('#show-art').disabled=licensed===0;
+   $('#official-art-option').hidden=licensed===0;
+   $('#show-official-art').disabled=licensed===0||!showIllustrations;
    $('#art-status').textContent=licensed===0
-     ?'All card visuals are original, locally rendered AnCard illustrations. Official issuer artwork is paused until written usage rights are recorded. No bank-image requests.'
-     :'Original illustrations load locally. '+licensed+' issuer images have documented usage rights and can load only after opt-in.';
+     ?'Locally generated AnCard illustrations. No bank-image requests or issuer image licenses are being implied.'
+     :'Locally generated AnCard illustrations. '+licensed+' authorized issuer assets can be enabled separately with consent.';
    updateQcProgress(data.reviewProgress);
  }catch(error){catalogError=true;console.error('Catalog unavailable',error);}
  render();

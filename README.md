@@ -184,3 +184,9 @@ A PR that changes **only** one or more `humanVerified` flags from `false` to `tr
 If you modify any candidate details, revoke an approval (`true` to `false`), change additional files, or correct a card source, you **must** run `npm run build && npm test` and commit `docs/data/cards.json` and `catalog/REVIEW-SHEET.md` in the PR. That prevents a revoked card's previously approved details from remaining in the committed public feed.
 
 This fixes the common PR CI failure caused by a one-line approval change while keeping the editorial data-consistency checks. If GitHub Actions is disabled or cannot push, check `Publish reviewed card data` and the subsequent Pages deployment before assuming a new approval is visible.
+
+## Image toggle and issuer links
+
+The **Show illustrated card fronts** control works immediately and switches the original local AnCard illustrations to a typography-only display when turned off. It never sends an image request to an issuer. From the reverse of a directory card, click **View issuer source** to inspect the original issuing bank's card disclosures in a new tab; source links are untracked, with `noopener noreferrer` and `no-referrer`.
+
+A **separate** external-art toggle becomes available only for an individually authorized asset with documentary evidence of reuse rights. Consumer consent for a network request is not a copyright or trademark license. The nine bank image URL references are not currently enabled. See the [bank terms review](project/CARD-IMAGE-RIGHTS-REVIEW.md).

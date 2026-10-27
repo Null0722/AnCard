@@ -11,10 +11,10 @@ const [home,dashboard,css,mainJs,dashJs,visual,feed]=await Promise.all([
  read('docs/assets/app.js'),read('docs/dashboard/dashboard.js'),
  read('docs/assets/card-visual.js'),read('docs/data/cards.json')
 ]);
-for(const id of ['card-results','load-more','issuer-filter','identity-filter','review-status','card-search','show-art','art-status','details-backdrop','trust-backdrop']){
+for(const id of ['card-results','load-more','issuer-filter','identity-filter','review-status','card-search','show-art','show-official-art','official-art-option','art-status','details-backdrop','trust-backdrop']){
  assert.ok(home.includes('id="'+id+'"'),'Missing directory control '+id);
 }
-for(const id of ['products','load-more','issuer','identity','review','show-art','art-status','compare','gate']){
+for(const id of ['products','load-more','issuer','identity','review','show-art','show-official-art','official-art-option','art-status','compare','gate']){
  assert.ok(dashboard.includes('id="'+id+'"'),'Missing dashboard control '+id);
 }
 assert.match(dashboard,/type="module" src="\.\/dashboard\.js"/);
@@ -29,6 +29,19 @@ assert.match(dashJs,/visibleLimit\+=24/);
 assert.match(visual,/written-permission/);
 assert.match(visual,/rightsEvidenceUrl/);
 assert.match(visual,/if\(allowExternal && rightsClearedAsset\(card\)\)/);
+assert.match(home,/id="show-art" checked/);
+assert.match(home,/id="official-art-option" hidden/);
+assert.match(dashboard,/id="official-art-option" hidden/);
+assert.match(mainJs,/showIllustrations=event\.target\.checked/);
+assert.match(dashJs,/showIllustrations=event\.target\.checked/);
+assert.match(dashJs,/source\.referrerPolicy='no-referrer'/);
+assert.match(dashboard,/id="show-art" checked/);
+assert.match(mainJs,/node\('a','source-link flip-issuer-source','View issuer source'\)/);
+assert.match(mainJs,/showIllustrations\?createCardVisual/);
+assert.match(dashJs,/showIllustrations\?createCardVisual/);
+assert.match(mainJs,/source\.referrerPolicy='no-referrer'/);
+assert.match(mainJs,/\$\('#official-art-option'\)\.hidden=licensed===0/);
+assert.match(dashJs,/byId\('official-art-option'\)\.hidden=available===0/);
 assert.equal(identityType({name:'Hilton Honors American Express'}),'hotel');
 assert.equal(identityType({name:'United Explorer Card'}),'airline');
 assert.equal(identityType({name:'Platinum Secured Card'}),'secured');
