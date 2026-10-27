@@ -81,7 +81,7 @@ function makeCard(card) {
   const info=node('div','card-info');info.append(node('h4','',card.name),node('div','card-meta',`${card.issuer} · ${card.status==='pending_review'?'Pending human review':(card.status==='demo'?'Fictional example':'Human QC approved')}`),node('p','card-desc',card.summary));
   const tags=node('div','card-tags');[...card.rewards,...card.categories,...card.features.filter(v=>v==='airline')].slice(0,3).forEach(t=>tags.append(node('span','',labels[t]??t)));info.append(tags);article.append(info);
   const terms=node('div','card-term');terms.append(node('strong','',card.primaryLabel),node('span','',card.feeSummary));article.append(terms);
-  const actions=node('div','card-actions');const detail=node('button','link-button','Decode terms ↗');detail.type='button';detail.dataset.detail=card.id;const compare=node('button','compare-button',compared.has(card.id)?'✓ Added':'＋ Compare');compare.type='button';compare.dataset.compare=card.id;compare.setAttribute('aria-pressed',String(compared.has(card.id)));
+  const actions=node('div','card-actions');const detail=node('button','link-button','Decode terms: offers and limits ↗');detail.type='button';detail.dataset.detail=card.id;const compare=node('button','compare-button',compared.has(card.id)?'✓ Added':'＋ Compare');compare.type='button';compare.dataset.compare=card.id;compare.setAttribute('aria-pressed',String(compared.has(card.id)));
   const verified=node('span','card-verification',card.humanVerified?'Human QC approved':'Pending human review');actions.append(detail,compare,verified);article.append(actions);return article;
 }
 function render() {
@@ -101,23 +101,78 @@ function render() {
 function showModal(backdrop, focusTarget){lastFocused=document.activeElement;modalOpen=backdrop;backdrop.hidden=false;document.body.classList.add('lock-scroll');focusTarget.focus();}
 function closeModal(){if(!modalOpen || modalOpen.id==='trust-backdrop')return;modalOpen.hidden=true;modalOpen=null;document.body.classList.remove('lock-scroll');lastFocused?.focus();}
 function detailField(container,title,body){const a=node('article');a.append(node('h3','',title),node('p','',body));container.append(a);}
-function showDetails(card) {
-  $('#detail-title').textContent=card.name;$('#detail-subtitle').textContent=`${card.issuer} · ${card.status==='pending_review'?'Human review pending':'Human QC approved'}`;
-  const body=$('#detail-body');body.replaceChildren();const grid=node('div','detail-fields');
-  detailField(grid,'In plain English',card.plainEnglish);detailField(grid,'What to watch for',card.watchOut);detailField(grid,'Annual fee',card.annualFeeUsd === null?'Not provided':card.annualFeeUsd===0?'No annual fee':`$${card.annualFeeUsd} per year`);detailField(grid,'Important limits',card.limitations);
-  if(card.humanVerified){
-    detailField(grid,'Card overview',card.bio||card.summary);
-    detailField(grid,'Rewards model',rewardModels[card.rewardStructure]||'Earning structure not yet classified');
-    if(typeof card.monthlyFeeUsd==='number')detailField(grid,'Monthly membership fee','$'+card.monthlyFeeUsd+' each month, separate from the annual fee');
-    if(Array.isArray(card.earnRules)&&card.earnRules.length)for(const rule of card.earnRules)detailField(grid,'Earn: '+rule.label,earnText(rule));
-    else detailField(grid,'Detailed earning rates','Not separately quantified in the approved record');
-    if(Array.isArray(card.benefits)&&card.benefits.length)for(const benefit of card.benefits)detailField(grid,'Benefit: '+benefit.name,benefitText(benefit));
-    else detailField(grid,'Travel and additional benefits','No quantified perks in the approved record. This does not mean the card has no perks.');
-    detailField(grid,'Source last checked on',card.verifiedAt);detailField(grid,'Verification scope',card.verificationLevel==='selected-issuer-page-facts'?'Selected product facts, not complete terms':'See methodology');const source=node('a','source-link','Open official issuer source ↗');source.href=card.issuerSource;source.target='_blank';source.rel='noopener noreferrer';source.referrerPolicy='no-referrer';grid.append(source);
-    if(Array.isArray(card.additionalSources))for(const item of card.additionalSources){if(!item||typeof item.url!=='string'||!item.url.startsWith('https://'))continue;const secondary=node('a','source-link',item.label||'Additional source ↗');secondary.href=item.url;secondary.target='_blank';secondary.rel='noopener noreferrer';secondary.referrerPolicy='no-referrer';grid.append(secondary);}
-  }else {detailField(grid,'Review status','This card has not passed human QC. Fees, rewards, APRs, bonuses and benefits are hidden until reviewed.');const source=node('a','source-link','Check official issuer source ↗');source.href=card.issuerSource;source.target='_blank';source.rel='noopener noreferrer';source.referrerPolicy='no-referrer';grid.append(source);}
-  body.append(grid,node('p','dialog-note','Educational information only. The issuer agreement controls actual fees, eligibility, rates, and rewards. Some terms in this source snapshot are not verified; review official disclosures.'));
-  showModal($('#details-backdrop'),$('#details-backdrop [data-close]'));
+
+function offerDescription(offer){
+ if(!offer)return 'No current card-specific welcome offer has been confirmed in this record.';
+ const amount=(offer.unit==='usd'?'$':'')+Number(offer.amount).toLocaleString()+(offer.unit==='usd'?'':' '+offer.unit);
+ return (offer.kind==='up_to'?'As high as ':'')+amount+' after $'+Number(offer.minimumSpendUsd).toLocaleString()+' eligible spending in '+offer.monthsToEarn+' months. '+(offer.description||'Confirm current issuer rules.');
+}
+function decodeSection(parent,title,context,rows,expanded){
+ const panel=node('details','decode-section');panel.open=expanded;
+ panel.append(node('summary','decode-summary',title));
+ const content=node('div','decode-section-body');
+ if(context)content.append(node('p','decode-intro',context));
+ for(const [name,value] of rows){const item=node('div','decode-line');item.append(node('h4','',name),node('p','',value));content.append(item);}
+ panel.append(content);parent.append(panel);
+}
+const approvalContext='Credit score alone does not determine approval. Issuers consider your credit history, income or available assets, current obligations, and their underwriting standards.';
+const limitContext='Starting limits are generally set after application. There is no reliable card-specific typical opening limit without issuer evidence.';
+function showDetails(card){
+ const ok=card.humanVerified===true;
+ const pending='Issuer-specific amount is pending human review.';
+ $('#detail-title').textContent=card.name;
+ $('#detail-subtitle').textContent=card.issuer+' | '+(ok?'Human QC approved':'Human review pending');
+ const body=$('#detail-body');body.replaceChildren();
+ body.append(node('p','dialog-lede',ok?'This card has a dated issuer-source snapshot. Always confirm current terms.':'Specific bonus amounts, fees and benefits stay hidden until reviewed. You can still learn what each term means below.'));
+ const g=ok?card.approvalGuidance:null,price=ok?card.pricingDetail:null,red=ok?card.redemptionDetail:null,offer=ok?card.welcomeOffer:null;
+ const bonus=ok?offerDescription(offer):pending;
+ const rewardRules=ok?(card.earnRules?.length?card.earnRules.map(x=>x.label+': '+earnText(x)).join(' | '):'No quantified earning rates in this record.'):pending;
+ const points=ok?(red?.examples?.length?red.examples.map(x=>x.method+': '+x.centsPerPoint+' cents per point. '+x.notes).join(' | '):'No issuer-confirmed redemption value in this record.'):pending;
+ const benefits=ok?(card.benefits?.length?card.benefits.map(x=>x.name+': '+benefitText(x)).join(' | '):'No quantified benefits documented. This does not mean the card has none.'):pending;
+ const introApr=ok&&Number.isFinite(price?.introPurchaseAprPct)&&Number.isFinite(price?.introPurchaseMonths)?price.introPurchaseAprPct+'% for '+price.introPurchaseMonths+' months, then subject to issuer terms.':pending;
+ decodeSection(body,'Card overview','What the product is, without a recommendation.',[
+  ['Plain-English summary',ok?card.bio||card.plainEnglish:'The card is in the AnCard research directory. Benefits and fees await human review.'],
+  ['Review state',ok?'Human-approved issuer-source snapshot':'Pending human approval']
+ ],true);
+ decodeSection(body,'Welcome and targeted bonuses','Public offers, personalized offers and invitation-only products are distinct.',[
+  ['Public welcome offer',bonus],
+  ['Spending target and deadline',ok&&offer?'$'+offer.minimumSpendUsd.toLocaleString()+' in '+offer.monthsToEarn+' months of qualifying purchases.':pending],
+  ['Targeted or personalized offer',ok?card.targetedOffers?.description||'Not documented for this card.':pending],
+  ['Invitation-only offer',ok?card.inviteOnlyOffer?.description||'No documented offer; an invitation does not guarantee approval.':pending],
+  ['Fine print to check','Previous-cardholder restrictions, offer channel, eligible purchases, application timing, enrollment and expiration.']
+ ],true);
+ decodeSection(body,'Borrowing costs and financing','Interest and recurring costs can exceed the value of earned rewards.',[
+  ['Annual fee',ok?(card.annualFeeUsd===null?'Not verified':card.annualFeeUsd===0?'$0':'$'+card.annualFeeUsd+' per year'):pending],
+  ['Monthly membership charge',ok&&Number.isFinite(card.monthlyFeeUsd)?'$'+card.monthlyFeeUsd+' per month.':'Not verified or not applicable.'],
+  ['Introductory purchase APR',introApr],
+  ['Other pricing',ok?price?.notes||'See issuer agreement for current APRs, foreign fees, penalty rates and transfer fees.':pending],
+  ['Grace period','Look for when purchase interest starts and whether paying the statement balance in full avoids it.']
+ ],false);
+ decodeSection(body,'Earning, redemption, and point value','An earning multiplier is not a guaranteed cash-back percentage.',[
+  ['Earning structure',ok?rewardModels[card.rewardStructure]||'Not classified':pending],
+  ['Multipliers, categories and caps',rewardRules],
+  ['Cents per point examples',points],
+  ['Terms that change value','Check category activation, merchant coding, eligible booking channels, redemption options, transfer rates and point expiry.']
+ ],false);
+ decodeSection(body,'Credit score, income and starting limit','No score range or limit shown here predicts the outcome of an application.',[
+  ['Issuer credit-level description',ok?g?.issuerCreditLevel||'No consistent issuer label confirmed.':pending],
+  ['Typical approval score','No trustworthy issuer-published card-specific distribution; a hard numerical threshold would be misleading.'],
+  ['Opening credit limit',ok&&Number.isFinite(g?.startingLimitMinUsd)?'Issuer-disclosed minimum of $'+g.startingLimitMinUsd.toLocaleString()+', individual limit still varies.':limitContext],
+  ['No preset spending limit',ok&&g?.noPresetSpendingLimit===true?'Issuer says no preset spending limit. This is not unlimited spending.':'Not established for this card.'],
+  ['Why income and obligations matter',ok?g?.notes||approvalContext:approvalContext],
+  ['Prequalification and inquiries','An invitation or prequalification is not guaranteed approval. An actual application may involve a hard inquiry.']
+ ],true);
+ decodeSection(body,'Travel benefits and protections','A benefit only works when you meet the enrollment, purchase and claims conditions.',[
+  ['Documented credits and protections',benefits],
+  ['Global Entry and TSA PreCheck','A credit may cover a qualifying application fee only once per stated multi-year period, not as annual cash.'],
+  ['Insurance and other coverage','Look for rental coverage primary versus secondary, covered events, exclusions, reimbursement ceilings and claim deadlines.'],
+  ['Important exclusions',ok?card.watchOut:pending]
+ ],false);
+ const source=node('a','source-link','Read the official issuer source');
+ source.href=card.issuerSource;source.target='_blank';source.rel='noopener noreferrer';source.referrerPolicy='no-referrer';body.append(source);
+ if(ok&&Array.isArray(card.additionalSources))for(const item of card.additionalSources){if(!item?.url?.startsWith('https://'))continue;const link=node('a','source-link',item.label||'Additional official document');link.href=item.url;link.target='_blank';link.rel='noopener noreferrer';link.referrerPolicy='no-referrer';body.append(link);}
+ body.append(node('p','dialog-note','Educational information only. Current issuer agreements determine interest, fees, benefits and eligibility.'));
+ showModal($('#details-backdrop'),$('#details-backdrop [data-close]'));
 }
 
 function showComparison() {
