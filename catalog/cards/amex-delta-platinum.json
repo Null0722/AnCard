@@ -1,0 +1,32 @@
+{
+  "id": "amex-delta-platinum",
+  "name": "Delta SkyMiles Platinum American Express",
+  "issuer": "American Express",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "3X Delta and eligible hotels; 2X U.S. supermarkets and dining; companion certificate.",
+  "primaryLabel": "3X Delta and eligible hotels; 2X U.S. supermarkets and dining; companion certificate.",
+  "feeSummary": "$350 annual fee",
+  "annualFeeUsd": 350,
+  "rewards": [
+    "miles"
+  ],
+  "categories": [
+    "travel",
+    "dining",
+    "groceries"
+  ],
+  "features": [
+    "airline"
+  ],
+  "plainEnglish": "3X Delta and eligible hotels; 2X U.S. supermarkets and dining; companion certificate.",
+  "watchOut": "$350 annual fee; companion certificate on renewal has fare restrictions; Delta hotel terms apply.",
+  "limitations": "Issuer terms and eligibility govern. Airline miles are not equivalent to cash. Companion benefits, checked bags, lounge access, and statement credits carry restrictions. Proposed details awaiting human review.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-platinum-american-express-card/",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "airlineProgram": "Delta SkyMiles"
+}

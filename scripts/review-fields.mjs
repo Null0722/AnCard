@@ -1,0 +1,7 @@
+// Candidate terms mirrored into the ONE searchable approval queue. Field order matters for drift detection.
+export function candidateFrom(c){
+ return {annualFeeUsd:c.annualFeeUsd,feeSummary:c.feeSummary,primaryLabel:c.primaryLabel,plainEnglish:c.plainEnglish,
+  watchOut:c.watchOut,limitations:c.limitations,rewards:c.rewards,categories:c.categories,features:c.features,
+  issuerSource:c.issuerSource,verifiedAt:c.verifiedAt,verificationLevel:c.verificationLevel??'selected-issuer-page-facts',
+  airlineProgram:c.airlineProgram??null,additionalSources:c.additionalSources??[]};
+}

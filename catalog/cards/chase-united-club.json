@@ -1,0 +1,30 @@
+{
+  "id": "chase-united-club",
+  "name": "United Club Card",
+  "issuer": "Chase",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "United Club access and Premier Access services with two checked bags.",
+  "primaryLabel": "United Club access and Premier Access services with two checked bags.",
+  "feeSummary": "$695 annual fee",
+  "annualFeeUsd": 695,
+  "rewards": [
+    "miles"
+  ],
+  "categories": [
+    "travel"
+  ],
+  "features": [
+    "airline"
+  ],
+  "plainEnglish": "United Club access and Premier Access services with two checked bags.",
+  "watchOut": "Annual fee $695; club eligibility and guest rules are limited by issuer and United policy.",
+  "limitations": "Issuer terms and eligibility govern. Airline miles are not equivalent to cash. Companion benefits, checked bags, lounge access, and statement credits carry restrictions. Proposed details awaiting human review.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://creditcards.chase.com/travel-credit-cards/united",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "airlineProgram": "United MileagePlus"
+}

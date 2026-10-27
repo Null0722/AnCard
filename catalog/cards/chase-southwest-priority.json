@@ -1,0 +1,32 @@
+{
+  "id": "chase-southwest-priority",
+  "name": "Southwest Rapid Rewards Priority",
+  "issuer": "Chase",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "4X Southwest purchases, 2X gas and restaurants, first checked bag free, 7,500 anniversary points.",
+  "primaryLabel": "4X Southwest purchases, 2X gas and restaurants, first checked bag free, 7,500 anniversary points.",
+  "feeSummary": "$229 annual fee",
+  "annualFeeUsd": 229,
+  "rewards": [
+    "miles"
+  ],
+  "categories": [
+    "travel",
+    "gas",
+    "dining"
+  ],
+  "features": [
+    "airline"
+  ],
+  "plainEnglish": "4X Southwest purchases, 2X gas and restaurants, first checked bag free, 7,500 anniversary points.",
+  "watchOut": "$229 annual fee; reward categories and preferred seat benefits carry booking restrictions.",
+  "limitations": "Issuer terms and eligibility govern. Airline miles are not equivalent to cash. Companion benefits, checked bags, lounge access, and statement credits carry restrictions. Proposed details awaiting human review.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://creditcards.chase.com/travel-credit-cards/southwest",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "airlineProgram": "Southwest Rapid Rewards"
+}

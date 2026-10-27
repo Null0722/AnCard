@@ -1,0 +1,1207 @@
+{
+  "schemaVersion": 1,
+  "instructions": "Ctrl+F the card name; check candidate details and issuerSource, then change humanVerified from false to true. Run npm run build && npm test. The compiler will re-lock any edited card record until the QC queue is synced and reapproved.",
+  "cards": [
+    {
+      "id": "amex-platinum",
+      "name": "American Express Platinum",
+      "issuer": "American Express",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 895,
+        "feeSummary": "$895 annual fee",
+        "primaryLabel": "5X points on qualifying flights and prepaid hotels booked through Amex Travel",
+        "plainEnglish": "5X points on qualifying flights and prepaid hotels booked through Amex Travel",
+        "watchOut": "5X is subject to booking limits; statement credits and lounge access have separate rules",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.americanexpress.com/us/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "boa-atmos-ascent",
+      "name": "Atmos Rewards Ascent Visa Signature",
+      "issuer": "Bank of America",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 95,
+        "feeSummary": "$95 annual fee",
+        "primaryLabel": "3X eligible Alaska/Hawaiian purchases, 2X eligible gas/EV, cable/streaming and transit.",
+        "plainEnglish": "3X eligible Alaska/Hawaiian purchases, 2X eligible gas/EV, cable/streaming and transit.",
+        "watchOut": "$95 annual fee; companion fare requires annual qualifying spend; card-dependent baggage conditions.",
+        "limitations": "Issuer terms and eligibility govern. Airline miles are not equivalent to cash. Companion benefits, checked bags, lounge access, and statement credits carry restrictions. Proposed details awaiting human review.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel",
+          "gas",
+          "lifestyle"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-credit-card/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": "Atmos Rewards",
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "boa-atmos-summit",
+      "name": "Atmos Rewards Summit Visa Infinite",
+      "issuer": "Bank of America",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 395,
+        "feeSummary": "$395 annual fee",
+        "primaryLabel": "3X eligible Alaska/Hawaiian, dining and foreign purchases; 8 annual Alaska Lounge passes.",
+        "plainEnglish": "3X eligible Alaska/Hawaiian, dining and foreign purchases; 8 annual Alaska Lounge passes.",
+        "watchOut": "$395 annual fee; anniversary companion award and lounge passes have eligibility and quarterly rules.",
+        "limitations": "Issuer terms and eligibility govern. Airline miles are not equivalent to cash. Companion benefits, checked bags, lounge access, and statement credits carry restrictions. Proposed details awaiting human review.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel",
+          "dining"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-infinite-credit-card/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": "Atmos Rewards",
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "boa-customized-cash",
+      "name": "Bank of America Customized Cash Rewards",
+      "issuer": "Bank of America",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "6% choice-category reward for the first year; 3% thereafter",
+        "plainEnglish": "6% choice-category reward for the first year; 3% thereafter",
+        "watchOut": "Choice and grocery categories share a quarterly $2,500 cap, then base rate",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [
+          "groceries",
+          "online",
+          "dining",
+          "gas",
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.bankofamerica.com/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "boa-unlimited-cash",
+      "name": "Bank of America Unlimited Cash Rewards",
+      "issuer": "Bank of America",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Unlimited 1.5% cash back",
+        "plainEnglish": "Unlimited 1.5% cash back",
+        "watchOut": "Additional relationship bonuses require qualifying banking balances",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.bankofamerica.com/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "boa-bankamericard",
+      "name": "BankAmericard",
+      "issuer": "Bank of America",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "0% introductory APR on qualifying purchases and transfers for 21 billing cycles",
+        "plainEnglish": "0% introductory APR on qualifying purchases and transfers for 21 billing cycles",
+        "watchOut": "Transfers must occur within 60 days and incur a 5% fee",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.bankofamerica.com/credit-cards/products/bankamericard-credit-card/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "amex-blue-cash-everyday",
+      "name": "Blue Cash Everyday",
+      "issuer": "American Express",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "3% at eligible U.S. supermarkets, gas stations and online retail",
+        "plainEnglish": "3% at eligible U.S. supermarkets, gas stations and online retail",
+        "watchOut": "Each category has its own $6,000 annual cap, then earns 1%",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [
+          "groceries",
+          "gas",
+          "online"
+        ],
+        "features": [],
+        "issuerSource": "https://global.americanexpress.com/card-benefits/detail/blue-cash-everyday-321/blue-cash-everyday/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "amex-blue-cash-preferred",
+      "name": "Blue Cash Preferred",
+      "issuer": "American Express",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 95,
+        "feeSummary": "$95 annual fee",
+        "primaryLabel": "6% U.S. supermarkets (first $6,000/year) and select streaming; 3% gas/transit",
+        "plainEnglish": "6% U.S. supermarkets (first $6,000/year) and select streaming; 3% gas/transit",
+        "watchOut": "$0 introductory annual fee in year one, then $95; supermarket rate capped",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [
+          "groceries",
+          "gas",
+          "lifestyle"
+        ],
+        "features": [],
+        "issuerSource": "https://www.americanexpress.com/us/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "cap-quicksilver",
+      "name": "Capital One Quicksilver Rewards",
+      "issuer": "Capital One",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "1.5% cash back on eligible purchases",
+        "plainEnglish": "1.5% cash back on eligible purchases",
+        "watchOut": "Promotional offers and eligible purchase exclusions apply",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.capitalone.com/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "cap-savor",
+      "name": "Capital One Savor Rewards",
+      "issuer": "Capital One",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "3% cash back on groceries, dining and eligible entertainment",
+        "plainEnglish": "3% cash back on groceries, dining and eligible entertainment",
+        "watchOut": "Some superstores and warehouse clubs do not qualify as groceries",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [
+          "groceries",
+          "dining",
+          "lifestyle"
+        ],
+        "features": [],
+        "issuerSource": "https://www.capitalone.com/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "cap-venture",
+      "name": "Capital One Venture Rewards",
+      "issuer": "Capital One",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 95,
+        "feeSummary": "$95 annual fee",
+        "primaryLabel": "2X miles on eligible purchases",
+        "plainEnglish": "2X miles on eligible purchases",
+        "watchOut": "Redemption value varies; travel benefits and promotional offers have conditions",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.capitalone.com/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "chase-freedom-flex",
+      "name": "Chase Freedom Flex",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "5% cash back in activated rotating categories",
+        "plainEnglish": "5% cash back in activated rotating categories",
+        "watchOut": "Quarterly activation and a combined $1,500 bonus-category spending limit apply",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [
+          "dining",
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "chase-freedom-unlimited",
+      "name": "Chase Freedom Unlimited",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "1.5% base cash back; 3% dining/drugstores; 5% Chase Travel",
+        "plainEnglish": "1.5% base cash back; 3% dining/drugstores; 5% Chase Travel",
+        "watchOut": "Enhanced rates have merchant and booking eligibility rules",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [
+          "dining",
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.chase.com/personal/credit-cards/freedom/unlimited",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "chase-sapphire-preferred",
+      "name": "Chase Sapphire Preferred",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 95,
+        "feeSummary": "$95 annual fee",
+        "primaryLabel": "5X points on eligible Chase Travel bookings",
+        "plainEnglish": "5X points on eligible Chase Travel bookings",
+        "watchOut": "Reward earning and redemption depend on specific issuer rules",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel",
+          "dining"
+        ],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "citi-aadvantage-executive",
+      "name": "Citi AAdvantage Executive",
+      "issuer": "Citi",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 695,
+        "feeSummary": "$695 annual fee",
+        "primaryLabel": "4X eligible American Airlines purchases and Admirals Club membership.",
+        "plainEnglish": "4X eligible American Airlines purchases and Admirals Club membership.",
+        "watchOut": "$695 annual fee; lounge access terms, spending thresholds and bonus earn cap apply.",
+        "limitations": "Issuer terms and eligibility govern. Airline miles are not equivalent to cash. Companion benefits, checked bags, lounge access, and statement credits carry restrictions. Proposed details awaiting human review.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://www.citi.com/credit-cards/rewards-credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": "American AAdvantage",
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "citi-aadvantage-platinum",
+      "name": "Citi AAdvantage Platinum Select",
+      "issuer": "Citi",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 99,
+        "feeSummary": "$99 annual fee after introductory first year",
+        "primaryLabel": "2X American Airlines, restaurants and gas; preferred boarding.",
+        "plainEnglish": "2X American Airlines, restaurants and gas; preferred boarding.",
+        "watchOut": "$0 introductory annual fee first year then $99; eligible AA purchases and benefit rules apply.",
+        "limitations": "Issuer terms and eligibility govern. Airline miles are not equivalent to cash. Companion benefits, checked bags, lounge access, and statement credits carry restrictions. Proposed details awaiting human review.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel",
+          "gas",
+          "dining"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://www.citi.com/credit-cards/travel-reward-credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": "American AAdvantage",
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "citi-double-cash",
+      "name": "Citi Double Cash",
+      "issuer": "Citi",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "2% total cash back equivalent: 1% buying, 1% paying",
+        "plainEnglish": "2% total cash back equivalent: 1% buying, 1% paying",
+        "watchOut": "The second 1% depends on qualifying payment; rewards use ThankYou Points",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.citi.com/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "citi-strata",
+      "name": "Citi Strata",
+      "issuer": "Citi",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "3X supermarkets, gas/EV, transit and one self-select category; 2X dining",
+        "plainEnglish": "3X supermarkets, gas/EV, transit and one self-select category; 2X dining",
+        "watchOut": "Self-select 3X applies only to listed categories; redemption values vary",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "groceries",
+          "gas",
+          "dining",
+          "lifestyle"
+        ],
+        "features": [],
+        "issuerSource": "https://www.citi.com/credit-cards/citi-strata-credit-card",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "citi-strata-premier",
+      "name": "Citi Strata Premier",
+      "issuer": "Citi",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 95,
+        "feeSummary": "$95 annual fee",
+        "primaryLabel": "3X dining, supermarkets, gas/EV and airfare; 10X eligible Citi Travel",
+        "plainEnglish": "3X dining, supermarkets, gas/EV and airfare; 10X eligible Citi Travel",
+        "watchOut": "10X requires qualifying Citi Travel bookings; annual fee remains unverified in this record",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "groceries",
+          "gas",
+          "dining",
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.citi.com/credit-cards/rewards-credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "amex-delta-gold",
+      "name": "Delta SkyMiles Gold American Express",
+      "issuer": "American Express",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 150,
+        "feeSummary": "$150 annual fee after introductory first year",
+        "primaryLabel": "2X Delta purchases, restaurants and U.S. supermarkets; eligible checked bag benefits.",
+        "plainEnglish": "2X Delta purchases, restaurants and U.S. supermarkets; eligible checked bag benefits.",
+        "watchOut": "$0 introductory annual fee first year, then $150; special Delta flight credits require qualifying spend.",
+        "limitations": "Issuer terms and eligibility govern. Airline miles are not equivalent to cash. Companion benefits, checked bags, lounge access, and statement credits carry restrictions. Proposed details awaiting human review.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel",
+          "dining",
+          "groceries"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-gold-american-express-card/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": "Delta SkyMiles",
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "amex-delta-platinum",
+      "name": "Delta SkyMiles Platinum American Express",
+      "issuer": "American Express",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 350,
+        "feeSummary": "$350 annual fee",
+        "primaryLabel": "3X Delta and eligible hotels; 2X U.S. supermarkets and dining; companion certificate.",
+        "plainEnglish": "3X Delta and eligible hotels; 2X U.S. supermarkets and dining; companion certificate.",
+        "watchOut": "$350 annual fee; companion certificate on renewal has fare restrictions; Delta hotel terms apply.",
+        "limitations": "Issuer terms and eligibility govern. Airline miles are not equivalent to cash. Companion benefits, checked bags, lounge access, and statement credits carry restrictions. Proposed details awaiting human review.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel",
+          "dining",
+          "groceries"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-platinum-american-express-card/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": "Delta SkyMiles",
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "amex-delta-reserve",
+      "name": "Delta SkyMiles Reserve American Express",
+      "issuer": "American Express",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 650,
+        "feeSummary": "$650 annual fee",
+        "primaryLabel": "3X Delta purchases with Delta Sky Club access and a companion certificate.",
+        "plainEnglish": "3X Delta purchases with Delta Sky Club access and a companion certificate.",
+        "watchOut": "$650 annual fee; Sky Club visit limits and qualifying activity restrictions may apply.",
+        "limitations": "Issuer terms and eligibility govern. Airline miles are not equivalent to cash. Companion benefits, checked bags, lounge access, and statement credits carry restrictions. Proposed details awaiting human review.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-reserve-american-express-card/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": "Delta SkyMiles",
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "pnc-cash-rewards",
+      "name": "PNC Cash Rewards",
+      "issuer": "PNC",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "4% gas, 3% dining, 2% grocery on first $8,000 combined annually",
+        "plainEnglish": "4% gas, 3% dining, 2% grocery on first $8,000 combined annually",
+        "watchOut": "1% after combined annual limit; merchant codes determine category eligibility",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [
+          "gas",
+          "dining",
+          "groceries"
+        ],
+        "features": [],
+        "issuerSource": "https://www.pnc.com/en/personal-banking/banking/credit-cards.html",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "pnc-cash-unlimited",
+      "name": "PNC Cash Unlimited",
+      "issuer": "PNC",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Unlimited 2% cash back on eligible purchases",
+        "plainEnglish": "Unlimited 2% cash back on eligible purchases",
+        "watchOut": "Minimum qualifying initial credit line and redemption restrictions apply",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.pnc.com/en/personal-banking/banking/credit-cards.html",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "chase-southwest-plus",
+      "name": "Southwest Rapid Rewards Plus",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 99,
+        "feeSummary": "$99 annual fee",
+        "primaryLabel": "2X Southwest Airlines purchase points, first checked bag free, 3,000 anniversary points.",
+        "plainEnglish": "2X Southwest Airlines purchase points, first checked bag free, 3,000 anniversary points.",
+        "watchOut": "$99 annual fee; seat, boarding and bag privileges are governed by Southwest's latest 2026 rules.",
+        "limitations": "Issuer terms and eligibility govern. Airline miles are not equivalent to cash. Companion benefits, checked bags, lounge access, and statement credits carry restrictions. Proposed details awaiting human review.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://creditcards.chase.com/travel-credit-cards/southwest",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": "Southwest Rapid Rewards",
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "chase-southwest-priority",
+      "name": "Southwest Rapid Rewards Priority",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 229,
+        "feeSummary": "$229 annual fee",
+        "primaryLabel": "4X Southwest purchases, 2X gas and restaurants, first checked bag free, 7,500 anniversary points.",
+        "plainEnglish": "4X Southwest purchases, 2X gas and restaurants, first checked bag free, 7,500 anniversary points.",
+        "watchOut": "$229 annual fee; reward categories and preferred seat benefits carry booking restrictions.",
+        "limitations": "Issuer terms and eligibility govern. Airline miles are not equivalent to cash. Companion benefits, checked bags, lounge access, and statement credits carry restrictions. Proposed details awaiting human review.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel",
+          "gas",
+          "dining"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://creditcards.chase.com/travel-credit-cards/southwest",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": "Southwest Rapid Rewards",
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "td-cash",
+      "name": "TD Cash",
+      "issuer": "TD Bank",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "3% and 2% selectable cash back categories, changed quarterly",
+        "plainEnglish": "3% and 2% selectable cash back categories, changed quarterly",
+        "watchOut": "Merchant and quarterly selection requirements apply",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [
+          "groceries",
+          "dining",
+          "gas",
+          "travel",
+          "lifestyle"
+        ],
+        "features": [],
+        "issuerSource": "https://www.td.com/us/en/personal-banking/credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "td-double-up",
+      "name": "TD Double Up",
+      "issuer": "TD Bank",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Unlimited 2% cash back on eligible purchases",
+        "plainEnglish": "Unlimited 2% cash back on eligible purchases",
+        "watchOut": "Review issuer agreement for APRs, fees and excluded transactions",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.td.com/us/en/personal-banking/credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "td-flexpay",
+      "name": "TD FlexPay",
+      "issuer": "TD Bank",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "0% intro APR on qualifying balance transfers for 18 billing cycles",
+        "plainEnglish": "0% intro APR on qualifying balance transfers for 18 billing cycles",
+        "watchOut": "Transfers must complete within first 90 days; fees and variable APR after intro",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.td.com/us/en/personal-banking/credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "truist-enjoy-cash",
+      "name": "Truist Enjoy Cash",
+      "issuer": "Truist",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Choice of 3%-2%-1% category rewards or flat 1.5% rewards",
+        "plainEnglish": "Choice of 3%-2%-1% category rewards or flat 1.5% rewards",
+        "watchOut": "Choice is locked after applying; category plan has a $1,000 combined monthly cap",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [
+          "groceries",
+          "gas"
+        ],
+        "features": [],
+        "issuerSource": "https://www.truist.com/credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "truist-enjoy-cash-secured",
+      "name": "Truist Enjoy Cash Secured",
+      "issuer": "Truist",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "3% gas/EV and 2% groceries/utilities up to a monthly cap",
+        "plainEnglish": "3% gas/EV and 2% groceries/utilities up to a monthly cap",
+        "watchOut": "Minimum security deposit $400; 3%/2% categories share monthly $1,000 cap",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [
+          "gas",
+          "groceries"
+        ],
+        "features": [
+          "secured"
+        ],
+        "issuerSource": "https://www.truist.com/credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "truist-enjoy-travel",
+      "name": "Truist Enjoy Travel",
+      "issuer": "Truist",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "2X miles on qualifying airfare, hotels and car rentals",
+        "plainEnglish": "2X miles on qualifying airfare, hotels and car rentals",
+        "watchOut": "Mileage redemption and eligible purchase definitions vary",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.truist.com/credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "us-cashplus",
+      "name": "U.S. Bank Cash+ Visa Signature",
+      "issuer": "U.S. Bank",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Up to 5% cash back in two eligible selected categories",
+        "plainEnglish": "Up to 5% cash back in two eligible selected categories",
+        "watchOut": "Eligible categories and spending caps apply; selection required",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [
+          "lifestyle"
+        ],
+        "features": [],
+        "issuerSource": "https://www.usbank.com/credit-cards.html",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "us-shield",
+      "name": "U.S. Bank Shield Visa",
+      "issuer": "U.S. Bank",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "0% introductory APR on purchases and transfers for 21 billing cycles",
+        "plainEnglish": "0% introductory APR on purchases and transfers for 21 billing cycles",
+        "watchOut": "Variable APR applies after promotion and transfer fees may apply",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.usbank.com/credit-cards.html",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "us-smartly",
+      "name": "U.S. Bank Smartly Visa Signature",
+      "issuer": "U.S. Bank",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "2% cash back on eligible purchases; qualified relationship bonuses may apply",
+        "plainEnglish": "2% cash back on eligible purchases; qualified relationship bonuses may apply",
+        "watchOut": "Extra earnings depend on U.S. Bank qualifying deposit relationships and spending caps",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.usbank.com/credit-cards.html",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "chase-united-club",
+      "name": "United Club Card",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 695,
+        "feeSummary": "$695 annual fee",
+        "primaryLabel": "United Club access and Premier Access services with two checked bags.",
+        "plainEnglish": "United Club access and Premier Access services with two checked bags.",
+        "watchOut": "Annual fee $695; club eligibility and guest rules are limited by issuer and United policy.",
+        "limitations": "Issuer terms and eligibility govern. Airline miles are not equivalent to cash. Companion benefits, checked bags, lounge access, and statement credits carry restrictions. Proposed details awaiting human review.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://creditcards.chase.com/travel-credit-cards/united",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": "United MileagePlus",
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "chase-united-explorer",
+      "name": "United Explorer Card",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 150,
+        "feeSummary": "$150 annual fee after introductory first year",
+        "primaryLabel": "Free first checked bag, 2 annual United Club one-time passes, priority boarding; miles on eligible United purchases.",
+        "plainEnglish": "Free first checked bag, 2 annual United Club one-time passes, priority boarding; miles on eligible United purchases.",
+        "watchOut": "$0 introductory annual fee in first year, then $150. Baggage and pass privileges require eligible United travel.",
+        "limitations": "Issuer terms and eligibility govern. Airline miles are not equivalent to cash. Companion benefits, checked bags, lounge access, and statement credits carry restrictions. Proposed details awaiting human review.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://creditcards.chase.com/travel-credit-cards/united/united-explorer",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": "United MileagePlus",
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "chase-united-gateway",
+      "name": "United Gateway Card",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "No annual fee; United MileagePlus miles with bonus miles on select purchases.",
+        "plainEnglish": "No annual fee; United MileagePlus miles with bonus miles on select purchases.",
+        "watchOut": "Issuer conditions apply to any baggage benefits and intro APR offers.",
+        "limitations": "Issuer terms and eligibility govern. Airline miles are not equivalent to cash. Companion benefits, checked bags, lounge access, and statement credits carry restrictions. Proposed details awaiting human review.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://creditcards.chase.com/travel-credit-cards/united",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": "United MileagePlus",
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "chase-united-quest",
+      "name": "United Quest Card",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 350,
+        "feeSummary": "$350 annual fee",
+        "primaryLabel": "$200 annual United travel credit, 10,000-mile annual award flight discount and two checked bags.",
+        "plainEnglish": "$200 annual United travel credit, 10,000-mile annual award flight discount and two checked bags.",
+        "watchOut": "Annual award and travel credits have separate eligibility; $350 annual fee.",
+        "limitations": "Issuer terms and eligibility govern. Airline miles are not equivalent to cash. Companion benefits, checked bags, lounge access, and statement credits carry restrictions. Proposed details awaiting human review.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://creditcards.chase.com/travel-credit-cards/united",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": "United MileagePlus",
+        "additionalSources": []
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "wells-active-cash",
+      "name": "Wells Fargo Active Cash",
+      "issuer": "Wells Fargo",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Unlimited 2% cash rewards",
+        "plainEnglish": "Unlimited 2% cash rewards",
+        "watchOut": "Reward rate also cross-checked with Visa card directory; full issuer agreement not audited",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.wellsfargo.com/credit-cards/agreements/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [
+          {
+            "url": "https://www.visa.com/en-us/card-finder/credit-card/personal/other",
+            "label": "Visa network listing — reward and annual fee reference"
+          }
+        ]
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "id": "wells-autograph",
+      "name": "Wells Fargo Autograph",
+      "issuer": "Wells Fargo",
+      "humanVerified": false,
+      "candidate": {
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "3X points for eligible restaurants, travel, gas, transit, streaming and phone plans",
+        "plainEnglish": "3X points for eligible restaurants, travel, gas, transit, streaming and phone plans",
+        "watchOut": "Merchant codes and benefit exclusions govern; cross-checked with Visa card directory",
+        "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "dining",
+          "travel",
+          "gas",
+          "lifestyle"
+        ],
+        "features": [],
+        "issuerSource": "https://www.wellsfargo.com/credit-cards/agreements/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [
+          {
+            "url": "https://www.visa.com/en-us/card-finder/credit-card/signature",
+            "label": "Visa network listing — reward categories and benefits reference"
+          }
+        ]
+      },
+      "reviewNotes": "",
+      "reviewedBy": ""
+    }
+  ]
+}

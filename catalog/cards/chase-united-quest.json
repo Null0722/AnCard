@@ -1,0 +1,30 @@
+{
+  "id": "chase-united-quest",
+  "name": "United Quest Card",
+  "issuer": "Chase",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "$200 annual United travel credit, 10,000-mile annual award flight discount and two checked bags.",
+  "primaryLabel": "$200 annual United travel credit, 10,000-mile annual award flight discount and two checked bags.",
+  "feeSummary": "$350 annual fee",
+  "annualFeeUsd": 350,
+  "rewards": [
+    "miles"
+  ],
+  "categories": [
+    "travel"
+  ],
+  "features": [
+    "airline"
+  ],
+  "plainEnglish": "$200 annual United travel credit, 10,000-mile annual award flight discount and two checked bags.",
+  "watchOut": "Annual award and travel credits have separate eligibility; $350 annual fee.",
+  "limitations": "Issuer terms and eligibility govern. Airline miles are not equivalent to cash. Companion benefits, checked bags, lounge access, and statement credits carry restrictions. Proposed details awaiting human review.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://creditcards.chase.com/travel-credit-cards/united",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "airlineProgram": "United MileagePlus"
+}

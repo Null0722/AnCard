@@ -1,16 +1,18 @@
 #!/usr/bin/env node
 // Dependency-free catalog compiler: one JSON record per card; a single public JSON payload.
 import {readdir, readFile, writeFile} from 'node:fs/promises';
+import {candidateFrom} from './review-fields.mjs';
 import {resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 const root=resolve(fileURLToPath(new URL('..',import.meta.url)));
 const source=resolve(root,'catalog/cards');
 const target=resolve(root,'docs/data/cards.json');
+const reviewPath=resolve(root,'catalog/HUMAN-QC.json');
 const args=new Set(process.argv.slice(2));
 const demoTones=new Set(['sand','blue','berry','green','slate']);
 const rewards=new Set(['cash_back','points','miles']);
 const categories=new Set(['groceries','dining','travel','online','gas','lifestyle']);
-const features=new Set(['secured','student']);
+const features=new Set(['secured','student','airline']);
 const requiredText=['id','name','issuer','summary','primaryLabel','feeSummary','plainEnglish','watchOut','limitations'];
 const fail=(filename,message)=>{throw new Error(`${filename}: ${message}`)};
 function validate(c,filename){
@@ -42,6 +44,31 @@ function validate(c,filename){
 const filenames=(await readdir(source)).filter(name=>name.endsWith('.json')).sort();
 const cards=[];const ids=new Set();
 for(const filename of filenames){const card=JSON.parse(await readFile(resolve(source,filename),'utf8'));validate(card,filename);if(ids.has(card.id))fail(filename,'duplicate id');ids.add(card.id);if(card.status==='published')cards.push(card);}
-const output=JSON.stringify({schemaVersion:1,cards},null,2)+'\n';
-if(args.has('--check')) {const existing=await readFile(target,'utf8').catch(()=>null);if(existing!==output){console.error('Public catalog is out of date. Run: npm run build');process.exitCode=1;}else console.log(`Catalog validated: ${filenames.length} records, ${cards.length} public.`);}
-else {await writeFile(target,output);console.log(`Compiled ${cards.length} public cards from ${filenames.length} records.`);}
+const qc=JSON.parse(await readFile(reviewPath,'utf8'));
+if(qc.schemaVersion!==1||!Array.isArray(qc.cards))fail('HUMAN-QC.json','expected schemaVersion 1 and cards array');
+const byId=new Map();
+for(const entry of qc.cards){
+ if(!entry||typeof entry.id!=='string'||typeof entry.name!=='string'||typeof entry.humanVerified!=='boolean')fail('HUMAN-QC.json','each entry needs an id, card name and boolean humanVerified');
+ if(byId.has(entry.id))fail('HUMAN-QC.json','duplicate approval entry: '+entry.id);
+ byId.set(entry.id,entry);
+}
+if(byId.size!==filenames.length)fail('HUMAN-QC.json','count differs from card records; run npm run qc:sync');
+let approved=0;
+const publicCards=cards.map(card=>{
+ const review=byId.get(card.id);
+ if(!review)fail(card.id,'missing QC entry. Run npm run qc:sync');
+ if(review.name!==card.name||review.issuer!==card.issuer||JSON.stringify(review.candidate)!==JSON.stringify(candidateFrom(card)))fail(card.id,'card details changed; run npm run qc:sync, then review again');
+ if(review.humanVerified){approved++;return {...card,humanVerified:true};}
+ // Keep identity and source URL for discovery, but hide ALL unapproved financial terms and rates.
+ return {...card,status:'pending_review',humanVerified:false,annualFeeUsd:null,
+  feeSummary:'Annual fee: pending human review',summary:'Terms and benefits are awaiting human review.',
+  primaryLabel:'Pending human review',rewards:[],categories:[],
+  features:card.features.includes('airline')?['airline']:[],
+  plainEnglish:'The proposed benefit details are currently in the human QC queue and have not been approved for visitors.',
+  watchOut:'Do not rely on this card for a financial decision until its terms have been checked against the current issuer agreement.',
+  limitations:'Annual fees, APRs, bonuses, redemption, and insurance benefits are intentionally hidden until human QC.',
+  verifiedAt:null,verificationLevel:'pending-human-review',additionalSources:[]};
+});
+const output=JSON.stringify({schemaVersion:1,cards:publicCards},null,2)+'\n';
+if(args.has('--check')) {const existing=await readFile(target,'utf8').catch(()=>null);if(existing!==output){console.error('Public catalog is out of date. Run: npm run build');process.exitCode=1;}else console.log(`Catalog validated: ${filenames.length} records, ${approved} human-reviewed, ${publicCards.length-approved} pending.`);}
+else {await writeFile(target,output);console.log(`Compiled ${publicCards.length} cards: ${approved} reviewed, ${publicCards.length-approved} pending.`);}

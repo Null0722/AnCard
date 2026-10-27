@@ -1,0 +1,31 @@
+{
+  "id": "boa-atmos-summit",
+  "name": "Atmos Rewards Summit Visa Infinite",
+  "issuer": "Bank of America",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "3X eligible Alaska/Hawaiian, dining and foreign purchases; 8 annual Alaska Lounge passes.",
+  "primaryLabel": "3X eligible Alaska/Hawaiian, dining and foreign purchases; 8 annual Alaska Lounge passes.",
+  "feeSummary": "$395 annual fee",
+  "annualFeeUsd": 395,
+  "rewards": [
+    "miles"
+  ],
+  "categories": [
+    "travel",
+    "dining"
+  ],
+  "features": [
+    "airline"
+  ],
+  "plainEnglish": "3X eligible Alaska/Hawaiian, dining and foreign purchases; 8 annual Alaska Lounge passes.",
+  "watchOut": "$395 annual fee; anniversary companion award and lounge passes have eligibility and quarterly rules.",
+  "limitations": "Issuer terms and eligibility govern. Airline miles are not equivalent to cash. Companion benefits, checked bags, lounge access, and statement credits carry restrictions. Proposed details awaiting human review.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-infinite-credit-card/",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "airlineProgram": "Atmos Rewards"
+}
