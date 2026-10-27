@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "instructions": "Unranked research inventory for owner review. Ctrl+F the card name; inspect proposed benefits, rate structure, annual and monthly fees, source, credits, exclusions. Only set humanVerified true after independently verifying ALL details. Rebuild with npm run build and npm test.",
+  "instructions": "AnCard is an unranked research database. Search card names with Ctrl+F, check proposed benefits, restrictions and issuer sources, then mark humanVerified true only after verifying facts. Research-stage cards stay out of the public directory until approved. Run npm run build and npm test.",
   "cards": [
     {
       "id": "chase-aer-lingus",
@@ -38,7 +38,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "chase-aeroplan",
@@ -76,7 +77,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "chase-amazon-visa",
@@ -116,7 +118,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "citi-aadvantage-mileup",
@@ -154,7 +157,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "amex-gold",
@@ -205,7 +209,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "amex-green",
@@ -241,7 +246,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "amex-platinum",
@@ -277,7 +283,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "boa-atmos-ascent",
@@ -317,7 +324,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "boa-atmos-summit",
@@ -356,7 +364,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "boa-customized-cash",
@@ -396,7 +405,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "boa-customized-cash-secured",
@@ -432,7 +442,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "boa-premium-rewards",
@@ -487,7 +498,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "boa-premium-elite",
@@ -556,7 +568,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "boa-travel-rewards",
@@ -598,7 +611,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "boa-travel-student",
@@ -634,7 +648,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "boa-unlimited-cash",
@@ -668,7 +683,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "boa-bankamericard",
@@ -700,7 +716,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "amex-blue-cash-everyday",
@@ -738,7 +755,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "amex-blue-cash-preferred",
@@ -776,7 +794,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "chase-british-airways",
@@ -814,7 +833,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "cap-platinum",
@@ -848,7 +868,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "cap-quicksilver",
@@ -886,7 +907,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "cap-savor",
@@ -928,7 +950,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "cap-venture",
@@ -968,7 +991,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "cap-venture-x",
@@ -1042,7 +1066,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "cap-ventureone",
@@ -1084,7 +1109,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "chase-freedom-flex",
@@ -1125,7 +1151,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "chase-freedom-rise",
@@ -1181,7 +1208,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "chase-freedom-unlimited",
@@ -1222,7 +1250,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "chase-sapphire-preferred",
@@ -1263,7 +1292,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "chase-sapphire-reserve",
@@ -1299,7 +1329,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "citi-aadvantage-executive",
@@ -1337,7 +1368,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "citi-aadvantage-platinum",
@@ -1377,7 +1409,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "citi-custom-cash",
@@ -1411,7 +1444,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "citi-diamond-preferred",
@@ -1443,7 +1477,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "citi-double-cash",
@@ -1477,7 +1512,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "citi-secured",
@@ -1511,7 +1547,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "citi-simplicity",
@@ -1543,7 +1580,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "citi-strata",
@@ -1582,7 +1620,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "citi-strata-elite",
@@ -1618,7 +1657,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "citi-strata-premier",
@@ -1657,7 +1697,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "citi-costco-anywhere",
@@ -1691,7 +1732,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "amex-delta-blue",
@@ -1729,7 +1771,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "amex-delta-gold",
@@ -1769,7 +1812,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "amex-delta-platinum",
@@ -1809,7 +1853,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "amex-delta-reserve",
@@ -1847,7 +1892,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "cap-discover-it",
@@ -1889,7 +1935,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "cap-discover-it-chrome",
@@ -1923,7 +1970,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "chase-disney-premier",
@@ -1959,7 +2007,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "chase-disney-visa",
@@ -1995,7 +2044,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "amex-hilton",
@@ -2042,7 +2092,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "amex-hilton-aspire",
@@ -2092,7 +2143,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "amex-hilton-surpass",
@@ -2128,7 +2180,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "chase-iberia",
@@ -2166,7 +2219,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "chase-ihg-premier",
@@ -2202,7 +2256,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "chase-ihg-traveler",
@@ -2238,7 +2293,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "amex-marriott-bevy",
@@ -2274,7 +2330,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "chase-marriott-bold",
@@ -2310,7 +2367,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "chase-marriott-boundless",
@@ -2346,7 +2404,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "amex-marriott-brilliant",
@@ -2382,7 +2441,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "wells-one-key",
@@ -2418,7 +2478,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "cap-platinum-secured",
@@ -2452,7 +2513,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "pnc-cash-rewards",
@@ -2490,7 +2552,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "pnc-cash-unlimited",
@@ -2524,7 +2587,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "pnc-core",
@@ -2556,7 +2620,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "chase-prime-visa",
@@ -2602,7 +2667,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "cap-quicksilver-student",
@@ -2636,7 +2702,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "cap-quicksilver-secured",
@@ -2672,7 +2739,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "boa-royal-one-plus",
@@ -2708,7 +2776,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "boa-royal-one",
@@ -2744,7 +2813,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "cap-savor-student",
@@ -2778,7 +2848,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "chase-southwest-plus",
@@ -2816,7 +2887,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "chase-southwest-priority",
@@ -2856,7 +2928,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "td-cash",
@@ -2896,7 +2969,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "td-cash-secured",
@@ -2945,7 +3019,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "td-clear-1000",
@@ -2977,7 +3052,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "td-double-up",
@@ -3011,7 +3087,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "td-first-class",
@@ -3047,7 +3124,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "td-flexpay",
@@ -3079,7 +3157,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "truist-enjoy-cash",
@@ -3116,7 +3195,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "truist-enjoy-cash-secured",
@@ -3155,7 +3235,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "truist-enjoy-travel",
@@ -3191,7 +3272,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "truist-future",
@@ -3223,7 +3305,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "us-altitude-connect",
@@ -3259,7 +3342,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "us-altitude-go-secured",
@@ -3316,7 +3400,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "us-altitude-go",
@@ -3352,7 +3437,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "us-cashplus-secured",
@@ -3388,7 +3474,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "us-cashplus",
@@ -3428,7 +3515,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "us-shield",
@@ -3464,7 +3552,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "us-smartly",
@@ -3502,7 +3591,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "chase-united-club",
@@ -3540,7 +3630,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "chase-united-explorer",
@@ -3578,7 +3669,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "chase-united-gateway",
@@ -3616,7 +3708,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "chase-united-quest",
@@ -3654,7 +3747,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "wells-active-cash",
@@ -3693,7 +3787,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "wells-attune",
@@ -3729,7 +3824,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "wells-autograph",
@@ -3773,7 +3869,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "wells-autograph-journey",
@@ -3809,7 +3906,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "wells-reflect",
@@ -3841,7 +3939,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "chase-world-hyatt",
@@ -3877,7 +3976,8 @@
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "research"
     }
   ]
 }
