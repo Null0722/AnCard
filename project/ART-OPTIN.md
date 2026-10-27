@@ -1,9 +1,23 @@
-# AnCard  -  Show Card Art Privacy Pattern
+# Artwork rights, licensing and privacy
 
-Decision: **OFF by default** on both the directory and dashboard. The text badge and terms render without loading issuer-hosted imagery. In the version-controlled catalog, `imageFront` may include `url`, `sourcePage`, and `alt`. If null, no card image is sourced and the badge persists.
+## Current visual design
 
-The opt-in checkbox clearly discloses: "Turning this on loads card images from external issuing banks or their CDN. Your IP address and browser request details may be sent to those servers." It creates image elements and assigns their `src` only after explicit user interaction. `referrerPolicy='no-referrer'` reduces referrer leakage; it does **not** hide the IP address or promise anonymity. When disabled, future image elements are removed from the page, but already-completed network requests cannot be undone. The choice is held **only in page memory**, never cookies, storage, URLs or analytics. Navigating or reloading resets it to Off. Turning it on does not modify financial filters or card ordering.
+Every card uses an original AnCard illustration created with local CSS and JavaScript. It is not a reproduction of the card front, logo, or issuer brand design. Different hues and geometric patterns are not card-quality indicators.
 
-Initial direct issuer/CDN-hosted assets exist for three Chase cards, three Capital One cards and three U.S. Bank cards; other issuers use text badges until exact, rights-reviewed image URLs are available. Broken or blocked URLs fall back to the badge. No third-party proxy or analytics service is used.
+## Conditions for using official issuer imagery
 
-Before merging: test with browser network tab to confirm **zero issuer image requests before opt-in**, confirm network requests after opt-in, keyboard and screen-reader labeling, slow-network failure behavior, mobile layout, referrer suppression, and zero persistence. Also review reuse and hotlink policies and ensure issuer artwork is not presented as endorsement.
+A publicly viewable file is not automatically licensed for reproduction. Previous issuer-linked image URLs remain in version control as references, but none has documented written permission to use the artwork. External image loading is therefore paused.
+
+To enable a specific official image later, a reviewer must record imageFront.usageAuthorization as written-permission and provide imageFront.rightsEvidenceUrl as an HTTPS record of the granted usage rights. The visitor must separately opt in. Without BOTH conditions, the browser must display only the local original artwork.
+
+If an authorized asset is enabled, the browser will request it from the external issuer/CDN and may disclose IP address, user agent and related request metadata. referrerPolicy=no-referrer limits the referring page URL but not other metadata. A failed request returns to local AnCard artwork. The toggle choice is never stored.
+
+No artwork is claimed to be risk-free as a legal conclusion. Trademarks, endorsements, copyright, image licensing and hotlink terms still require appropriate authorization review.
+
+## Interaction and accessibility
+
+Cards flip inside their own border by mouse click, touch or keyboard-accessible button. The hidden face is inert and has aria-hidden=true so that invisible controls cannot be focused. Reduced-motion preferences disable flip animation. A card never navigates to a third party merely because its body is clicked.
+
+## Manual release checks
+
+Test keyboard Tab / Shift+Tab, flip and return, Escape for full decoder, narrow screens, screen reader names, filtering pending cards, comparison selections, browser network requests, external link referrer policy, and zero persistence.

@@ -55,8 +55,30 @@ dialog::backdrop{background:#08121aeb}
 dialog p{line-height:1.65;color:#d0dce6}
 @media(max-width:820px){.work-area{grid-template-columns:1fr}.dashboard-nav{margin-bottom:28px}}
  .dash-card-art{width:95px;min-height:58px;border:1px solid #405a68;border-radius:9px;display:flex;align-items:center;justify-content:center;background:linear-gradient(130deg,#304e61,#1d2938);margin:0 0 12px;color:#ecf3f8;font-size:22px;overflow:hidden}.dash-card-art img{max-width:100%;max-height:90px;object-fit:contain}.art-optin{margin:12px 0 24px}
+
+.dashboard-card-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.dashboard-product.product{padding:0;min-height:0;overflow:hidden;cursor:pointer;border-color:#4b6271;border-radius:17px}
+.dashboard-product .flip-frame{height:415px}
+.dashboard-product .flip-summary h3{font-size:18px;line-height:1.24;margin:0 0 7px}
+.dashboard-product .flip-summary p{font-size:11px;line-height:1.45;margin:0;color:#c2d0da}
+.dashboard-product .flip-face{padding:15px}
+.dashboard-product .ancard-original-art{height:auto;width:100%;max-height:172px;margin:0 auto}
+.dashboard-product .flip-back h3{font-size:16px}
+.dashboard-product .flip-back .flip-back-details{margin-bottom:4px}
+.dashboard-product .flip-back .flip-fact-label{font-size:10px}
+.dashboard-product .flip-back .flip-fact-value{font-size:11px}
+.dashboard-product .source-link{color:#c3dafa;font-size:12px;text-decoration:underline}
+.dash-compare-check{display:inline-flex;align-items:center;gap:7px;color:#e4f0f6;font-size:12px;white-space:nowrap}
+.dash-compare-check input{width:17px;height:17px;accent-color:#a3d7c9}
+.filter-form input[type=search]{display:block;width:100%;margin-top:6px;min-width:0}
+.dashboard-product:focus-within{outline:2px solid #94bfcc;outline-offset:2px}
+@media(max-width:1170px){.dashboard-card-grid{grid-template-columns:1fr}}
+@media(max-width:820px){.dashboard-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.dashboard-card-grid{grid-template-columns:1fr}.dashboard-product .flip-frame{height:400px}}
+@media(max-width:385px){.dashboard-product .flip-frame{height:430px}}
+
 </style>
-<script src="./dashboard.js" defer></script>
+<script type="module" src="./dashboard.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#dashboard-main">Skip to main content</a>
@@ -73,18 +95,20 @@ dialog p{line-height:1.65;color:#d0dce6}
  <div class="qc-ring" id="qc-ring" role="img" aria-label="Human review progress loading"><strong id="qc-percent">0%</strong></div>
  <div class="qc-copy"><span>Human QC progress</span><strong id="qc-count">Loading review inventory</strong><small>Research coverage, never a product ranking</small></div>
 </div>
-<div class="demo-note" role="note"><strong>Privacy-first research directory.</strong> Cards from the established directory remain visible as identity-only placeholders until human QC; new research entries stay in the review inventory until approved. No hidden recommendations.</div>
-<div class="art-optin"><label><input type="checkbox" id="show-art"> Show official card art</label><p>Off by default. Turning it on loads images from external issuers or CDNs, sharing your IP address and browser request details. No choice is saved. Cards without a verified image use a text badge.</p></div>
+<div class="demo-note" role="note"><strong>Explore without rankings.</strong> All 100 card identities are searchable, while fees, earnings and bonuses remain hidden until human QC. Card artwork below is original AnCard illustration, not an issuer reproduction.</div>
+<div class="art-optin"><label><input type="checkbox" id="show-art" disabled> Enable rights-cleared issuer art</label><p id="art-status">Original card illustrations render locally. Official artwork stays disabled without documented permission, and will require your opt-in.</p></div>
 <div class="work-area">
 <aside class="filters-box" aria-label="Filter controls"><h2>Choose your filters</h2>
 <form id="filters" class="filter-form">
 <label for="search">Search cards or issuers<input type="search" id="search" name="search" autocomplete="off" placeholder="Example: United, TD, Delta" style="display:block;width:100%;margin-top:6px;padding:10px;border:1px solid #638196;border-radius:9px;background:#111921;color:#edf3f7"></label>
-<label for="reviewed-only"><input type="checkbox" id="reviewed-only" name="reviewed-only"> Human-reviewed only</label>
+<label for="issuer">Issuing bank<select id="issuer" name="issuer"><option value="">All issuers</option></select></label>
+<label for="identity">Card type<select id="identity" name="identity"><option value="">All card types</option><option value="airline">Airline</option><option value="hotel">Hotel</option><option value="secured">Secured</option><option value="student">Student</option><option value="other">Other</option></select></label>
+<label for="review">Editorial status<select id="review" name="review"><option value="">All records</option><option value="approved">Human-reviewed</option><option value="pending">Awaiting review</option></select></label>
 <label for="reward">Reward type<select id="reward" name="reward"><option value="">All reward types</option><option value="cash_back">Cash back</option><option value="points">Points</option><option value="miles">Miles</option></select></label>
 <label for="spending">Spending category<select id="spending" name="spending"><option value="">Every category</option><option value="groceries">Groceries</option><option value="dining">Dining</option><option value="gas">Gas and transport</option><option value="online">Online shopping</option><option value="travel">Travel</option><option value="lifestyle">Lifestyle</option></select></label>
 <label for="cardtype">Card descriptor<select id="cardtype" name="cardtype"><option value="">All</option><option value="secured">Secured</option><option value="student">Student</option><option value="airline">Airline card</option></select></label>
 <label for="annual">Maximum reviewed annual fee: <output id="annual-output" for="annual">$1,000</output><input type="range" id="annual" name="annual" min="0" max="1000" step="25" value="1000"></label>
-<p class="hint">At the default “Any / unknown” setting, pending-review cards remain visible. Narrowing the amount hides cards whose fees have not been approved.</p>
+<p class="hint">Unknown annual fees are not zero. Narrowing this amount hides cards whose fees have not yet passed human review.</p>
 <fieldset disabled aria-describedby="planned-note"><legend>Advanced filters  -  in research</legend>
 <label><input type="checkbox"> No foreign transaction fee</label>
 <label><input type="checkbox"> Balance transfer introductory period</label>
@@ -96,8 +120,8 @@ dialog p{line-height:1.65;color:#d0dce6}
 <button class="btn-plain" id="reset" type="reset">Clear all filters</button>
 </form></aside>
 <section class="results-box" aria-labelledby="results-title">
-<div class="list-toolbar"><div><h2 id="results-title">Explore the directory</h2><p id="count" class="status" role="status" aria-live="polite">Loading records…</p></div><label class="status" for="sort">Sort by <select id="sort"><option value="name">Name A–Z</option><option value="issuer">Issuer A–Z</option><option value="fee">Annual fee: low to high</option></select></label></div>
-<div class="card-list" id="products"></div>
+<div class="list-toolbar"><div><h2 id="results-title">Explore the directory</h2><p id="count" class="status" role="status" aria-live="polite">Loading records…</p></div><label class="status" for="sort">Sort by <select id="sort"><option value="name">Name A–Z</option><option value="issuer">Issuer A–Z</option><option value="fee">Annual fee (verified first)</option></select></label></div>
+<div class="card-list dashboard-card-grid" id="products"></div><button class="show-more-cards" id="load-more" type="button" hidden>Show more cards</button>
 <div id="compare" class="compare-pane" hidden><h2>Factual side-by-side comparison</h2><p class="hint">Up to three cards. No recommendation or winner. Missing values are labeled as unknown.</p><div id="compare-grid" class="compare-grid"></div><p><button class="btn-plain" type="button" id="clear-compare">Clear comparison</button></p></div>
 </section>
 </div>

@@ -1,12 +1,12 @@
 {
   "name": "ancard",
   "private": true,
-  "version": "0.4.0",
+  "version": "0.7.0",
   "type": "module",
   "description": "Privacy-first, dependency-free credit card literacy directory",
   "scripts": {
     "build": "node scripts/catalog.mjs && node scripts/review-sheet.mjs",
-    "test": "node scripts/catalog.mjs --check && node scripts/review-sheet.mjs --check && node --check scripts/qc.mjs && node --check scripts/review-fields.mjs && node --check docs/assets/app.js && node --check docs/dashboard/dashboard.js && node scripts/quality-check.mjs",
+    "test": "node scripts/catalog.mjs --check && node scripts/review-sheet.mjs --check && node --check scripts/qc.mjs && node --check scripts/review-fields.mjs && node --check docs/assets/app.js && node --check docs/dashboard/dashboard.js && node scripts/quality-check.mjs && node --check docs/assets/card-visual.js && node scripts/ui-check.mjs",
     "preview": "python3 -m http.server 8080 --directory docs",
     "qc:sync": "node scripts/qc.mjs"
   }

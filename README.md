@@ -67,7 +67,7 @@ See the [human QC instructions](project/HUMAN-QC.md) for the complete process.
 
 ## Local discovery improvements
 
-The card directory and comparison dashboard provide a fast **search by issuer, card name, or airline program**, plus a **Human-reviewed only** toggle. Searches run entirely inside the loaded static catalog. No query or selection is transmitted to a server. The dashboard Clear Filters action keeps your side-by-side selections.
+The card directory and comparison dashboard provide a fast **search by issuer, card name, or airline program**, plus an editorial-status filter. Searches run entirely inside the loaded static catalog. No query or selection is transmitted to a server. The dashboard Clear Filters action keeps your side-by-side selections.
 
 Catalog tests also verify that unapproved monetary and reward details are absent from public JSON and that em dashes have not been introduced into the repository.
 
@@ -93,9 +93,19 @@ AnCard now decodes six areas on every card: product overview, welcome/targeted/i
 
 The first issuer-backed proposals cover seven welcome offers, four evidence-based redemption/credit guidance records and a small set of intro APR descriptions. This does **not** imply those values are guaranteed, and the remaining cards retain explicit unknowns. See [market review](project/MARKET-REVIEW.md), [decoder field model](project/DECODER-V2.md), [review sheet](catalog/REVIEW-SHEET.md) and [human approval queue](catalog/HUMAN-QC.json).
 
+## Premium flipping card visuals (v0.7.0)
+
+All directory cards display original AnCard illustrations rendered locally without issuer artwork or trademarks. These illustrations are not accurate reproductions of specific bank card fronts. Click/tap a card or use its keyboard-focusable Flip control to view a summary within the card border. Select Full Decode Terms from the reverse side for detailed explanations.
+
+The directory and dashboard now offer issuer, card type and review-status filters, with reward and fee filters still restricted to human-reviewed financial facts. The first 24 results render initially, with a Show More control. No profile, cookie or browser storage is added.
+
+Important: the nine previously sourced issuer image URLs remain in the card records for reference, but cannot load unless there is recorded written permission and explicit visitor opt-in. There is currently no documented permission for these URLs, so the external-art toggle is disabled. This protects visitor privacy and avoids assuming that an accessible online image is licensed for reuse.
+
+See [card imagery rights policy](project/ART-OPTIN.md) and [dashboard design notes](project/DASHBOARD.md).
+
 ## Optional official card images
 
-Card imagery is **off by default**. The directory and dashboard render a typography-based badge without third-party image requests. If a visitor explicitly enables “Show official card art,” the browser then requests verified front-card image URLs from the issuer or its CDN. This can disclose an IP address and browser metadata to that issuer; AnCard sets `referrerPolicy=no-referrer` and does not save the toggle. Images not yet sourced retain a badge, even when enabled. Nine records currently have issuer-sourced image URLs. Images and hotlink permissions still require live-browser verification before release. See [image opt-in policy](project/ART-OPTIN.md).
+The site now shows original, locally generated illustrations for all cards. Reuse of official issuer artwork requires documentary written permission, followed by explicit visitor opt-in. All nine previously sourced image URLs are currently blocked from loading because that permission has not been recorded. No issuer-image requests occur. See [card imagery rights policy](project/ART-OPTIN.md).
 
 ## How it works technically
 
