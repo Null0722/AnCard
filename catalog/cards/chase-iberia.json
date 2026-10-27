@@ -1,0 +1,33 @@
+{
+  "id": "chase-iberia",
+  "name": "Iberia Visa Signature",
+  "issuer": "Chase",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "Avios airline rewards. Exact earning terms are pending a detailed issuer agreement review.",
+  "primaryLabel": "Avios airline rewards; check current issuer program terms.",
+  "feeSummary": "Annual fee: needs issuer agreement review",
+  "annualFeeUsd": null,
+  "rewards": [
+    "miles"
+  ],
+  "categories": [
+    "travel"
+  ],
+  "features": [
+    "airline"
+  ],
+  "plainEnglish": "This card is associated with avios airline rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://creditcards.chase.com/compare-credit-cards",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "Iberia Visa Signature is a airline credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "miles",
+  "earnRules": [],
+  "benefits": []
+}

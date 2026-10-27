@@ -26,6 +26,9 @@ function validate(c,filename){
     if(!Array.isArray(c[key])||new Set(c[key]).size!==c[key].length||!c[key].every(v=>allowed.has(v)))fail(filename,`invalid ${key}`);
   }
   if(c.annualFeeUsd!==null&&(!Number.isInteger(c.annualFeeUsd)||c.annualFeeUsd<0))fail(filename,'annualFeeUsd must be a non-negative whole number or null');
+  if(c.monthlyFeeUsd!==undefined&&c.monthlyFeeUsd!==null&&(!Number.isFinite(c.monthlyFeeUsd)||c.monthlyFeeUsd<0))fail(filename,'monthlyFeeUsd must be non-negative or null');
+  if(c.earnRules!==undefined&&!Array.isArray(c.earnRules))fail(filename,'earnRules must be a list');
+  if(c.benefits!==undefined&&!Array.isArray(c.benefits))fail(filename,'benefits must be a list');
   if(c.status==='published'){
     if(c.fictional!==false)fail(filename,'published cards cannot be fictional');
     if(typeof c.verifiedAt!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(c.verifiedAt)||!Number.isFinite(Date.parse(c.verifiedAt))||c.verifiedAt>new Date().toISOString().slice(0,10))fail(filename,'published cards require valid, nonfuture verifiedAt');
@@ -48,19 +51,20 @@ const qc=JSON.parse(await readFile(reviewPath,'utf8'));
 if(qc.schemaVersion!==1||!Array.isArray(qc.cards))fail('HUMAN-QC.json','expected schemaVersion 1 and cards array');
 const byId=new Map();
 for(const entry of qc.cards){
- if(!entry||typeof entry.id!=='string'||typeof entry.name!=='string'||typeof entry.humanVerified!=='boolean')fail('HUMAN-QC.json','each entry needs an id, card name and boolean humanVerified');
+ if(!entry||typeof entry.id!=='string'||typeof entry.name!=='string'||typeof entry.humanVerified!=='boolean'||!['directory','research'].includes(entry.reviewStage))fail('HUMAN-QC.json','each entry needs an id, card name and boolean humanVerified');
  if(byId.has(entry.id))fail('HUMAN-QC.json','duplicate approval entry: '+entry.id);
  byId.set(entry.id,entry);
 }
 if(byId.size!==cards.length)fail('HUMAN-QC.json','count differs from card records; run npm run qc:sync');
 let approved=0;
-const publicCards=cards.map(card=>{
+const publicCards=cards.flatMap(card=>{
  const review=byId.get(card.id);
  if(!review)fail(card.id,'missing QC entry. Run npm run qc:sync');
  if(review.name!==card.name||review.issuer!==card.issuer||JSON.stringify(review.candidate)!==JSON.stringify(candidateFrom(card)))fail(card.id,'card details changed; run npm run qc:sync, then review again');
- if(review.humanVerified){approved++;return {...card,humanVerified:true};}
+ if(review.humanVerified){approved++;return [{...card,status:'published',humanVerified:true}];}
+ if(review.reviewStage==='research')return []; // Private-to-edit research entry until owner approval
  // Keep identity and source URL for discovery, but hide ALL unapproved financial terms and rates.
- return {id:card.id,name:card.name,issuer:card.issuer,status:'pending_review',
+ return [{id:card.id,name:card.name,issuer:card.issuer,status:'pending_review',
   fictional:false,tone:card.tone,humanVerified:false,
   summary:'Terms and benefits are awaiting human review.',
   primaryLabel:'Pending human review',feeSummary:'Annual fee: pending human review',annualFeeUsd:null,
@@ -70,8 +74,8 @@ const publicCards=cards.map(card=>{
   limitations:'Annual fees, APRs, bonuses, redemption, and insurance benefits are intentionally hidden until human QC.',
   verifiedAt:null,issuerSource:card.issuerSource,verificationLevel:'pending-human-review',
   imageFront:card.imageFront??null,accessType:card.accessType??'public',airlineProgram:card.airlineProgram??null
- };
+ }];
 });
-const output=JSON.stringify({schemaVersion:1,cards:publicCards},null,2)+'\n';
+const output=JSON.stringify({schemaVersion:1,cards:publicCards,reviewProgress:{approved,total:byId.size}},null,2)+'\n';
 if(args.has('--check')) {const existing=await readFile(target,'utf8').catch(()=>null);if(existing!==output){console.error('Public catalog is out of date. Run: npm run build');process.exitCode=1;}else console.log(`Catalog validated: ${filenames.length} records, ${approved} human-reviewed, ${publicCards.length-approved} pending.`);}
 else {await writeFile(target,output);console.log(`Compiled ${publicCards.length} cards: ${approved} reviewed, ${publicCards.length-approved} pending.`);}

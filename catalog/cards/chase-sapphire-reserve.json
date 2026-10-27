@@ -1,0 +1,31 @@
+{
+  "id": "chase-sapphire-reserve",
+  "name": "Chase Sapphire Reserve",
+  "issuer": "Chase",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "Premium travel rewards. Exact earning terms are pending a detailed issuer agreement review.",
+  "primaryLabel": "Premium travel rewards; check current issuer program terms.",
+  "feeSummary": "Annual fee: needs issuer agreement review",
+  "annualFeeUsd": null,
+  "rewards": [
+    "points"
+  ],
+  "categories": [
+    "travel"
+  ],
+  "features": [],
+  "plainEnglish": "This card is associated with premium travel rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://creditcards.chase.com/travel-credit-cards",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "Chase Sapphire Reserve is a travel credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "points",
+  "earnRules": [],
+  "benefits": []
+}

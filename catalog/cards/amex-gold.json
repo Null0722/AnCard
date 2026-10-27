@@ -1,0 +1,46 @@
+{
+  "id": "amex-gold",
+  "name": "American Express Gold",
+  "issuer": "American Express",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "4X restaurants up to $50,000 per calendar year and U.S. supermarkets up to $25,000.",
+  "primaryLabel": "4X restaurants up to $50,000 per calendar year and U.S. supermarkets up to $25,000.",
+  "feeSummary": "$325 annual fee",
+  "annualFeeUsd": 325,
+  "rewards": [
+    "points"
+  ],
+  "categories": [
+    "dining"
+  ],
+  "features": [],
+  "plainEnglish": "4X restaurants up to $50,000 per calendar year and U.S. supermarkets up to $25,000.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "American Express Gold is a dining credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "points",
+  "earnRules": [
+    {
+      "label": "Restaurants",
+      "rate": 4,
+      "unit": "x",
+      "capAmountUsd": 50000,
+      "capPeriod": "Calendar year"
+    },
+    {
+      "label": "U.S. supermarkets",
+      "rate": 4,
+      "unit": "x",
+      "capAmountUsd": 25000,
+      "capPeriod": "Calendar year"
+    }
+  ],
+  "benefits": []
+}

@@ -15,9 +15,9 @@ for(const filename of (await readdir(directory)).filter(n=>n.endsWith('.json')).
  const candidate=candidateFrom(card), before=known.get(card.id);
  const unchanged=before && before.name===card.name && before.issuer===card.issuer && JSON.stringify(before.candidate)===JSON.stringify(candidate);
  cards.push({id:card.id,name:card.name,issuer:card.issuer,humanVerified:Boolean(unchanged&&before.humanVerified===true),
-  candidate,reviewNotes:unchanged?(before.reviewNotes||''):'',reviewedBy:unchanged?(before.reviewedBy||''):''});
+  candidate,reviewNotes:unchanged?(before.reviewNotes||''):'',reviewedBy:unchanged?(before.reviewedBy||''):'',reviewStage:before?.reviewStage==='research'?'research':'directory'});
 }
 cards.sort((a,b)=>a.name.localeCompare(b.name)||a.issuer.localeCompare(b.issuer));
-const output={schemaVersion:1,instructions:"Ctrl+F the card name; verify the candidate against its issuerSource; then flip humanVerified false -> true. Run npm run build && npm test. Changed cards reset to false after npm run qc:sync.",cards};
+const output={schemaVersion:1,instructions:"Unranked research inventory. Use Ctrl+F to find a card, verify proposed details against issuer terms, and mark humanVerified true only after completing the review. Research-only cards appear publicly only after approval. Build and test to publish.",cards};
 await writeFile(path,JSON.stringify(output,null,2)+'\n');
 console.log('QC queue synced:',cards.length,'cards;',cards.filter(c=>c.humanVerified).length,'remain approved.');

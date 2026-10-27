@@ -1,0 +1,37 @@
+{
+  "id": "cap-discover-it",
+  "name": "Discover it Cash Back",
+  "issuer": "Capital One",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "5% on rotating eligible categories when activated, subject to quarterly caps.",
+  "primaryLabel": "5% on rotating eligible categories when activated, subject to quarterly caps.",
+  "feeSummary": "$0 annual fee",
+  "annualFeeUsd": 0,
+  "rewards": [
+    "cash_back"
+  ],
+  "categories": [],
+  "features": [],
+  "plainEnglish": "5% on rotating eligible categories when activated, subject to quarterly caps.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "Discover it Cash Back is a cash back credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "rotating",
+  "earnRules": [
+    {
+      "label": "Activated quarterly categories",
+      "rate": 5,
+      "unit": "percent",
+      "capPeriod": "Quarterly",
+      "condition": "Activation and issuer spending cap required"
+    }
+  ],
+  "benefits": []
+}

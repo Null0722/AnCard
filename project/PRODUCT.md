@@ -49,3 +49,7 @@ The public JSON feed now contains 28 real cards and omits six earlier fictional 
 ## v0.3.0  -  Human approval controls the public facts
 
 The static site publishes real-card **identities only** until the owner approves the corresponding proposal in `catalog/HUMAN-QC.json`. Pending cards show no fees, earning rates, APRs, bonuses, or unapproved benefits. A card's pre-existing `published` editorial status does not imply that a human has checked the terms. Human QC records can be located by Ctrl+F on card name; changed financial data invalidate prior approval until reviewed again.
+
+## Research expansion (v0.4.0)
+
+The catalog consists of an unranked editorial research inventory. New candidate cards remain backend-only until owner QC. No ranking, match score, or top-card claims are generated. The homepage displays a circular QC completion percentage, calculated from reviewed count divided by total research records. Human-reviewed cards can expose structured reward models, activation/spend limits, and quantified perks in the terms decoder and side-by-side comparisons. This must not imply all missing perks are absent.

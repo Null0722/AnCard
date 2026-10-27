@@ -6,7 +6,18 @@ let cards=[];
 let artEnabled=false;
 byId('show-art').addEventListener('change',event=>{artEnabled=event.target.checked;render();});
 const text=(tag,value,className)=>{const el=document.createElement(tag); el.textContent=String(value); if(className)el.className=className; return el;};
-const viewFee=c=> c.annualFeeUsd===null || !Number.isFinite(c.annualFeeUsd) ? 'Annual fee: not verified' : 'Annual fee: $'+c.annualFeeUsd;
+const viewFee=c=>!c.humanVerified?'Annual fee: pending human review':c.annualFeeUsd===null || !Number.isFinite(c.annualFeeUsd) ? 'Annual fee: not verified' : 'Annual fee: $'+c.annualFeeUsd;
+
+const rewardModels={flat:'Flat rewards',tiered:'Tiered categories',rotating:'Rotating categories',selectable:'Selected categories',automatic_top_category:'Automatic top category',points:'Points',miles:'Miles',none:'No purchase rewards listed'};
+const earnText=r=>(typeof r.rate==='number'?(r.unit==='percent'?r.rate+'%':r.rate+'X'):'Rate not verified')+(typeof r.capAmountUsd==='number'?' on up to $'+r.capAmountUsd.toLocaleString()+' eligible spend'+(r.capPeriod?' per '+r.capPeriod:''):'')+(r.condition?' | '+r.condition:'');
+const benefitText=p=>(typeof p.amountUsd==='number'?'Up to $'+p.amountUsd.toLocaleString():'Amount not quantified')+(typeof p.frequencyMonths==='number'?' every '+p.frequencyMonths+' months':'')+(p.condition?' | '+p.condition:'');
+function updateQc(progress){
+ const total=Number(progress?.total)||0,approved=Math.max(0,Math.min(total,Number(progress?.approved)||0)),pct=total?Math.round(100*approved/total):0;
+ byId('qc-ring').style.setProperty('--qc-progress',pct+'%');
+ byId('qc-ring').setAttribute('aria-label',approved+' of '+total+' research cards human reviewed, '+pct+' percent');
+ byId('qc-percent').textContent=pct+'%';byId('qc-count').textContent=approved+' of '+total+' cards reviewed';
+}
+
 const pretty=s=>String(s||'').replaceAll('_',' ').replace(/\b\w/g,ch=>ch.toUpperCase());
 function filtered(){
  const fd=new FormData(form);
@@ -23,6 +34,11 @@ function renderComparison(){
  for(const c of ids){
    const block=text('article',''); block.append(text('h3',c.name),text('p',c.issuer),text('p',viewFee(c)));
    block.append(text('p','Rewards: '+(c.rewards||[]).map(pretty).join(', ')));
+   if(!c.humanVerified){block.append(text('p','Benefits and rates pending human QC'));grid.append(block);continue;}
+   block.append(text('p','Rewards model: '+(rewardModels[c.rewardStructure]||'Not classified')));
+   block.append(text('p','Earn rules: '+(c.earnRules?.length?c.earnRules.map(r=>r.label+': '+earnText(r)).join('; '):'Not separately quantified')));
+   block.append(text('p','Travel credits / perks: '+(c.benefits?.length?c.benefits.map(p=>p.name+': '+benefitText(p)).join('; '):'No quantified benefits in this record')));
+   if(typeof c.monthlyFeeUsd==='number')block.append(text('p','Monthly membership fee: $'+c.monthlyFeeUsd));
    block.append(text('p','Watch out: '+c.watchOut));
    grid.append(block);
  }
@@ -65,6 +81,6 @@ form.addEventListener('reset',()=>{queueMicrotask(render);});
 byId('sort').addEventListener('change',render);
 byId('clear-compare').addEventListener('click',()=>{selected.clear();render();});
 fetch('../data/cards.json',{cache:'no-store'}).then(resp=>{if(!resp.ok)throw new Error('Catalog could not load');return resp.json();}).then(data=>{
- cards=Array.isArray(data.cards)?data.cards.filter(c=>c && ['published','pending_review'].includes(c.status) && c.fictional===false):[];
+ cards=Array.isArray(data.cards)?data.cards.filter(c=>c && ['published','pending_review'].includes(c.status) && c.fictional===false):[];updateQc(data.reviewProgress);
  render();
-}).catch(()=>{count.textContent='The demo catalog is unavailable.';results.append(text('p','Try reloading this page or check the generated data file.','status'));});
+}).catch(()=>{count.textContent='The card catalog is unavailable.';results.append(text('p','Try reloading this page or check the generated data file.','status'));});

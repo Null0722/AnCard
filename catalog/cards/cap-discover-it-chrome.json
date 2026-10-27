@@ -1,0 +1,29 @@
+{
+  "id": "cap-discover-it-chrome",
+  "name": "Discover it Chrome",
+  "issuer": "Capital One",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "Gas and dining rewards; product availability to confirm. Exact earning terms are pending a detailed issuer agreement review.",
+  "primaryLabel": "Gas and dining rewards; product availability to confirm; check current issuer program terms.",
+  "feeSummary": "Annual fee: needs issuer agreement review",
+  "annualFeeUsd": null,
+  "rewards": [
+    "cash_back"
+  ],
+  "categories": [],
+  "features": [],
+  "plainEnglish": "This card is associated with gas and dining rewards; product availability to confirm. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "Discover it Chrome is a cash back credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "tiered",
+  "earnRules": [],
+  "benefits": []
+}

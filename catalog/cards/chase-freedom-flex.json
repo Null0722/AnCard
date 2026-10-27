@@ -28,5 +28,18 @@
     "sourcePage": "https://creditcards.chase.com/check-for-preapproved-offers",
     "alt": "Official front-facing card image of Chase Freedom Flex"
   },
-  "accessType": "public"
+  "accessType": "public",
+  "bio": "Chase Freedom Flex combines activated quarterly bonus categories with ongoing rewards for some everyday purchase types. Activation, the eligible category list, merchant coding and the quarterly spending cap matter.",
+  "rewardStructure": "rotating",
+  "earnRules": [
+    {
+      "label": "Activated quarterly spending categories",
+      "rate": 5,
+      "unit": "percent",
+      "capAmountUsd": 1500,
+      "capPeriod": "Quarter",
+      "condition": "Activate eligible quarter's categories before the deadline"
+    }
+  ],
+  "benefits": []
 }

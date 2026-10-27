@@ -2,6 +2,18 @@
 
 All meaningful website changes are documented here and in Git history. Entries should state **what changed**, **why**, **files/components affected**, **verification**, and **what is next**. Most recent changes first. Do not silently rewrite prior decisions; add a new dated entry instead.
 
+## 2026-10-27: Expanded unranked research database and structured terms
+
+- Added 59 proposed card records to the private-to-edit, Git-versioned research inventory, including hotel, travel, cash back, student, secured and balance transfer categories. This is not a ranked "top 100" list.
+- The review queue now contains 100 entries for owner QC; the new 59 entries use `reviewStage: "research"` and are **absent from public card results** until human approval. The original 41 directory identities remain in the public feed as QC-pending placeholders.
+- Added structured optional `rewardStructure`, `earnRules` with units, spending caps and conditions, `benefits` with monetary values, recurrence and restrictions, `monthlyFeeUsd` and plain-English card bios. Unknown information remains null or omitted.
+- Added revolving QC progress displays to directory and dashboard, representing the percent of the review inventory human approved, never product ranking.
+- Redesigned "Find a place to start" for narrow screens and made quick-category controls a responsive grid.
+- Extended Decode Terms and comparison tables to show human-approved rate models, earn caps, travel credits, Global Entry/TSA PreCheck credit conditions, recurring charges and benefit limits.
+- Restored accurate distinction between no annual fee and a required monthly membership fee for the TD Clear research candidate. Corrected the planned Citi Custom Cash reward model to an automatic top-category structure.
+- Strengthened the canonical review fingerprint, public data validation and readable review sheet to cover new categories. No card was marked human approved.
+- All changes subject to GitHub Actions and browser QA before merge.
+
 ## 2026-10-27: Readable human QC reference
 
 - Added a generated [card review sheet](catalog/REVIEW-SHEET.md) with a searchable section for each card's proposed annual fee, benefits, limitations, source and QC status.

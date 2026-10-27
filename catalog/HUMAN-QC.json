@@ -1,7 +1,254 @@
 {
   "schemaVersion": 1,
-  "instructions": "Ctrl+F the card name; check candidate details and issuerSource, then change humanVerified from false to true. Run npm run build && npm test. The compiler will re-lock any edited card record until the QC queue is synced and reapproved.",
+  "instructions": "AnCard is an unranked research database. Search card names with Ctrl+F, check proposed benefits, restrictions and issuer sources, then mark humanVerified true only after verifying facts. Research-stage cards stay out of the public directory until approved. Run npm run build and npm test.",
   "cards": [
+    {
+      "id": "chase-aer-lingus",
+      "name": "Aer Lingus Visa Signature",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Avios airline rewards. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Avios airline rewards; check current issuer program terms.",
+        "plainEnglish": "This card is associated with avios airline rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://creditcards.chase.com/compare-credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Aer Lingus Visa Signature is a airline credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "miles",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "chase-aeroplan",
+      "name": "Aeroplan Credit Card",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Air Canada Aeroplan points. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Air Canada Aeroplan points; check current issuer program terms.",
+        "plainEnglish": "This card is associated with air canada aeroplan points. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://creditcards.chase.com/compare-credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Aeroplan Credit Card is a airline credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "miles",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "chase-amazon-visa",
+      "name": "Amazon Visa",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "3% at Amazon/Whole Foods and eligible Chase Travel, without a Prime membership.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "3% at Amazon/Whole Foods and eligible Chase Travel, without a Prime membership.",
+        "plainEnglish": "3% at Amazon/Whole Foods and eligible Chase Travel, without a Prime membership.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/cash-back-credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Amazon Visa is a cash back credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "flat",
+        "earnRules": [
+          {
+            "label": "Amazon and eligible Whole Foods",
+            "rate": 3,
+            "unit": "percent"
+          }
+        ],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "citi-aadvantage-mileup",
+      "name": "American Airlines AAdvantage MileUp",
+      "issuer": "Citi",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "American Airlines miles without annual fee. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "American Airlines miles without annual fee; check current issuer program terms.",
+        "plainEnglish": "This card is associated with american airlines miles without annual fee. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://www.citi.com/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "American Airlines AAdvantage MileUp is a airline credit card candidate from Citi. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "miles",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "amex-gold",
+      "name": "American Express Gold",
+      "issuer": "American Express",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "4X restaurants up to $50,000 per calendar year and U.S. supermarkets up to $25,000.",
+        "annualFeeUsd": 325,
+        "feeSummary": "$325 annual fee",
+        "primaryLabel": "4X restaurants up to $50,000 per calendar year and U.S. supermarkets up to $25,000.",
+        "plainEnglish": "4X restaurants up to $50,000 per calendar year and U.S. supermarkets up to $25,000.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "dining"
+        ],
+        "features": [],
+        "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "American Express Gold is a dining credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [
+          {
+            "label": "Restaurants",
+            "rate": 4,
+            "unit": "x",
+            "capAmountUsd": 50000,
+            "capPeriod": "Calendar year"
+          },
+          {
+            "label": "U.S. supermarkets",
+            "rate": 4,
+            "unit": "x",
+            "capAmountUsd": 25000,
+            "capPeriod": "Calendar year"
+          }
+        ],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "amex-green",
+      "name": "American Express Green",
+      "issuer": "American Express",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Travel and dining points. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Travel and dining points; check current issuer program terms.",
+        "plainEnglish": "This card is associated with travel and dining points. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.americanexpress.com/us/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "American Express Green is a travel credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
     {
       "id": "amex-platinum",
       "name": "American Express Platinum",
@@ -28,10 +275,16 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "boa-atmos-ascent",
@@ -63,10 +316,16 @@
         "airlineProgram": "Atmos Rewards",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "boa-atmos-summit",
@@ -97,10 +356,16 @@
         "airlineProgram": "Atmos Rewards",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "boa-customized-cash",
@@ -132,10 +397,276 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": "Customized Cash Rewards lets cardholders choose an eligible high-earning category. Introductory first-year categories and the quarterly spending cap need special attention.",
+        "rewardStructure": "selectable",
+        "earnRules": [
+          {
+            "label": "Selected category, first 12 months",
+            "rate": 6,
+            "unit": "percent",
+            "capAmountUsd": 2500,
+            "capPeriod": "Quarter",
+            "condition": "First-year offer, limited eligible choice categories and shared quarterly cap"
+          },
+          {
+            "label": "Selected category after first year",
+            "rate": 3,
+            "unit": "percent",
+            "capAmountUsd": 2500,
+            "capPeriod": "Quarter",
+            "condition": "Shares spending cap with eligible grocery and wholesale spending"
+          }
+        ],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
+    },
+    {
+      "id": "boa-customized-cash-secured",
+      "name": "Bank of America Customized Cash Rewards Secured",
+      "issuer": "Bank of America",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Choice-category cash back with refundable deposit. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Choice-category cash back with refundable deposit; check current issuer program terms.",
+        "plainEnglish": "This card is associated with choice-category cash back with refundable deposit. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [
+          "secured"
+        ],
+        "issuerSource": "https://www.bankofamerica.com/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Bank of America Customized Cash Rewards Secured is a credit building credit card candidate from Bank of America. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "selectable",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "boa-premium-rewards",
+      "name": "Bank of America Premium Rewards",
+      "issuer": "Bank of America",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "2X travel/dining and 1.5X other eligible purchases.",
+        "annualFeeUsd": 95,
+        "feeSummary": "$95 annual fee",
+        "primaryLabel": "2X travel/dining and 1.5X other eligible purchases.",
+        "plainEnglish": "2X travel/dining and 1.5X other eligible purchases.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.bankofamerica.com/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Bank of America Premium Rewards is a travel credit card candidate from Bank of America. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [
+          {
+            "label": "Travel and dining",
+            "rate": 2,
+            "unit": "x"
+          },
+          {
+            "label": "Other purchases",
+            "rate": 1.5,
+            "unit": "x"
+          }
+        ],
+        "benefits": [
+          {
+            "name": "Global Entry or TSA PreCheck reimbursement",
+            "type": "global_entry",
+            "amountUsd": null,
+            "frequencyMonths": null,
+            "condition": "Combined travel and application fee credits; verify exact per-program amount and renewal cadence before approving"
+          }
+        ],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "boa-premium-elite",
+      "name": "Bank of America Premium Rewards Elite",
+      "issuer": "Bank of America",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "2X travel/dining; 1.5X other eligible purchases.",
+        "annualFeeUsd": 550,
+        "feeSummary": "$550 annual fee",
+        "primaryLabel": "2X travel/dining; 1.5X other eligible purchases.",
+        "plainEnglish": "2X travel/dining; 1.5X other eligible purchases.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.bankofamerica.com/credit-cards/products/premium-rewards-elite-credit-card/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Bank of America Premium Rewards Elite is a travel credit card candidate from Bank of America. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [
+          {
+            "label": "Travel and dining",
+            "rate": 2,
+            "unit": "x"
+          },
+          {
+            "label": "Other eligible purchases",
+            "rate": 1.5,
+            "unit": "x"
+          }
+        ],
+        "benefits": [
+          {
+            "name": "Global Entry or TSA PreCheck credit",
+            "type": "global_entry",
+            "amountUsd": 120,
+            "frequencyMonths": 48,
+            "condition": "Up to $120 every four years after eligible application fee purchase"
+          },
+          {
+            "name": "Annual airline incidental credit",
+            "type": "statement_credit",
+            "amountUsd": 300,
+            "frequencyMonths": 12,
+            "condition": "Qualifying purchases"
+          },
+          {
+            "name": "Lifestyle statement credits",
+            "type": "statement_credit",
+            "amountUsd": 150,
+            "frequencyMonths": 12,
+            "condition": "Qualifying lifestyle purchases"
+          }
+        ],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "boa-travel-rewards",
+      "name": "Bank of America Travel Rewards",
+      "issuer": "Bank of America",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "1.5X eligible purchases; extra points on qualifying BofA travel bookings.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "1.5X eligible purchases; extra points on qualifying BofA travel bookings.",
+        "plainEnglish": "1.5X eligible purchases; extra points on qualifying BofA travel bookings.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.bankofamerica.com/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Bank of America Travel Rewards is a travel credit card candidate from Bank of America. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [
+          {
+            "label": "Everyday eligible purchases",
+            "rate": 1.5,
+            "unit": "x"
+          }
+        ],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "boa-travel-student",
+      "name": "Bank of America Travel Rewards for Students",
+      "issuer": "Bank of America",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Student travel rewards. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Student travel rewards; check current issuer program terms.",
+        "plainEnglish": "This card is associated with student travel rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.bankofamerica.com/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Bank of America Travel Rewards for Students is a travel credit card candidate from Bank of America. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "boa-unlimited-cash",
@@ -161,10 +692,16 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "boa-bankamericard",
@@ -188,10 +725,16 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "amex-blue-cash-everyday",
@@ -221,10 +764,16 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "amex-blue-cash-preferred",
@@ -254,10 +803,90 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
+    },
+    {
+      "id": "chase-british-airways",
+      "name": "British Airways Visa Signature",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Avios airline miles. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Avios airline miles; check current issuer program terms.",
+        "plainEnglish": "This card is associated with avios airline miles. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://creditcards.chase.com/compare-credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "British Airways Visa Signature is a airline credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "miles",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "cap-platinum",
+      "name": "Capital One Platinum",
+      "issuer": "Capital One",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Entry-level credit product. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Entry-level credit product; check current issuer program terms.",
+        "plainEnglish": "This card is associated with entry-level credit product. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [],
+        "categories": [],
+        "features": [
+          "secured"
+        ],
+        "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Capital One Platinum is a credit building credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "none",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "cap-quicksilver",
@@ -287,10 +916,16 @@
           "sourcePage": "https://www.capitalone.com/credit-cards/",
           "alt": "Official front-facing product image of Capital One Quicksilver Rewards"
         },
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "cap-savor",
@@ -324,10 +959,16 @@
           "sourcePage": "https://www.capitalone.com/credit-cards/",
           "alt": "Official front-facing product image of Capital One Savor Rewards"
         },
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "cap-venture",
@@ -359,10 +1000,148 @@
           "sourcePage": "https://www.capitalone.com/credit-cards/",
           "alt": "Official front-facing product image of Capital One Venture Rewards"
         },
-        "accessType": "public"
+        "accessType": "public",
+        "bio": "Capital One Venture is a general travel miles card with a flat rewards rate and eligible travel-related account credits. Miles redemption values are not fixed cash equivalents.",
+        "rewardStructure": "flat",
+        "earnRules": [
+          {
+            "label": "Eligible purchases",
+            "rate": 2,
+            "unit": "x"
+          }
+        ],
+        "benefits": [
+          {
+            "name": "Global Entry or TSA PreCheck application fee credit",
+            "type": "global_entry",
+            "amountUsd": 120,
+            "frequencyMonths": 48,
+            "condition": "Up to $120 for a qualifying application fee once every four years; confirm eligibility in issuer benefits guide"
+          }
+        ],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
+    },
+    {
+      "id": "cap-venture-x",
+      "name": "Capital One Venture X Rewards",
+      "issuer": "Capital One",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "2X eligible purchases, 5X portal flights, 10X portal hotels and rental cars.",
+        "annualFeeUsd": 395,
+        "feeSummary": "$395 annual fee",
+        "primaryLabel": "2X eligible purchases, 5X portal flights, 10X portal hotels and rental cars.",
+        "plainEnglish": "2X eligible purchases, 5X portal flights, 10X portal hotels and rental cars.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.capitalone.com/credit-cards/venture-x/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Capital One Venture X Rewards is a travel credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "miles",
+        "earnRules": [
+          {
+            "label": "Everyday eligible purchases",
+            "rate": 2,
+            "unit": "x"
+          },
+          {
+            "label": "Flights booked in Capital One Travel",
+            "rate": 5,
+            "unit": "x"
+          },
+          {
+            "label": "Hotels and rental cars in Capital One Travel",
+            "rate": 10,
+            "unit": "x"
+          }
+        ],
+        "benefits": [
+          {
+            "name": "Capital One Travel annual credit",
+            "type": "statement_credit",
+            "amountUsd": 300,
+            "frequencyMonths": 12,
+            "condition": "Eligible Capital One Travel bookings"
+          },
+          {
+            "name": "Global Entry or TSA PreCheck reimbursement",
+            "type": "global_entry",
+            "amountUsd": 120,
+            "frequencyMonths": 48,
+            "condition": "Up to $120 once every four years for one qualifying application per account"
+          },
+          {
+            "name": "Anniversary miles",
+            "type": "anniversary_bonus",
+            "amountUsd": null,
+            "frequencyMonths": 12,
+            "condition": "10,000 miles after anniversary, subject to terms"
+          }
+        ],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "cap-ventureone",
+      "name": "Capital One VentureOne Rewards",
+      "issuer": "Capital One",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "1.25X miles on eligible purchases.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "1.25X miles on eligible purchases.",
+        "plainEnglish": "1.25X miles on eligible purchases.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Capital One VentureOne Rewards is a travel credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "miles",
+        "earnRules": [
+          {
+            "label": "All eligible purchases",
+            "rate": 1.25,
+            "unit": "x"
+          }
+        ],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "chase-freedom-flex",
@@ -395,10 +1174,82 @@
           "sourcePage": "https://creditcards.chase.com/check-for-preapproved-offers",
           "alt": "Official front-facing card image of Chase Freedom Flex"
         },
-        "accessType": "public"
+        "accessType": "public",
+        "bio": "Chase Freedom Flex combines activated quarterly bonus categories with ongoing rewards for some everyday purchase types. Activation, the eligible category list, merchant coding and the quarterly spending cap matter.",
+        "rewardStructure": "rotating",
+        "earnRules": [
+          {
+            "label": "Activated quarterly spending categories",
+            "rate": 5,
+            "unit": "percent",
+            "capAmountUsd": 1500,
+            "capPeriod": "Quarter",
+            "condition": "Activate eligible quarter's categories before the deadline"
+          }
+        ],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
+    },
+    {
+      "id": "chase-freedom-rise",
+      "name": "Chase Freedom Rise",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "1.5% base cash back; introductory 3% dining under spending and time limits.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "1.5% base cash back; introductory 3% dining under spending and time limits.",
+        "plainEnglish": "1.5% base cash back; introductory 3% dining under spending and time limits.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/cash-back-credit-cards/freedom/rise",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Chase Freedom Rise is a cash back credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "flat",
+        "earnRules": [
+          {
+            "label": "Base eligible purchases",
+            "rate": 1.5,
+            "unit": "percent"
+          },
+          {
+            "label": "Introductory dining",
+            "rate": 3,
+            "unit": "percent",
+            "capAmountUsd": 6000,
+            "capPeriod": "First six months",
+            "condition": "Limited-time new-cardmember offer"
+          }
+        ],
+        "benefits": [
+          {
+            "name": "Automatic payment setup credit",
+            "type": "statement_credit",
+            "amountUsd": 25,
+            "frequencyMonths": null,
+            "condition": "Enroll in eligible autopay within first 3 months and remain enrolled at least 90 days"
+          }
+        ],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "chase-freedom-unlimited",
@@ -431,10 +1282,16 @@
           "sourcePage": "https://creditcards.chase.com/check-for-preapproved-offers",
           "alt": "Official front-facing card image of Chase Freedom Unlimited"
         },
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "chase-sapphire-preferred",
@@ -467,10 +1324,53 @@
           "sourcePage": "https://creditcards.chase.com/check-for-preapproved-offers",
           "alt": "Official front-facing card image of Chase Sapphire Preferred"
         },
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
+    },
+    {
+      "id": "chase-sapphire-reserve",
+      "name": "Chase Sapphire Reserve",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Premium travel rewards. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Premium travel rewards; check current issuer program terms.",
+        "plainEnglish": "This card is associated with premium travel rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/travel-credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Chase Sapphire Reserve is a travel credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "citi-aadvantage-executive",
@@ -500,10 +1400,16 @@
         "airlineProgram": "American AAdvantage",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "citi-aadvantage-platinum",
@@ -535,10 +1441,84 @@
         "airlineProgram": "American AAdvantage",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
+    },
+    {
+      "id": "citi-custom-cash",
+      "name": "Citi Custom Cash",
+      "issuer": "Citi",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Top eligible monthly spend category rewards. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Top eligible monthly spend category rewards; check current issuer program terms.",
+        "plainEnglish": "This card is associated with top eligible monthly spend category rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.citi.com/credit-cards/citi-custom-cash-credit-card",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Citi Custom Cash automatically rewards the highest eligible spending category each billing cycle. The qualifying category and spending cap must be checked.",
+        "rewardStructure": "automatic_top_category",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "citi-diamond-preferred",
+      "name": "Citi Diamond Preferred",
+      "issuer": "Citi",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Balance transfer oriented card. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Balance transfer oriented card; check current issuer program terms.",
+        "plainEnglish": "This card is associated with balance transfer oriented card. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.citi.com/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Citi Diamond Preferred is a financing credit card candidate from Citi. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "none",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "citi-double-cash",
@@ -564,10 +1544,84 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
+    },
+    {
+      "id": "citi-secured",
+      "name": "Citi Secured Mastercard",
+      "issuer": "Citi",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Deposit-backed credit-building product. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Deposit-backed credit-building product; check current issuer program terms.",
+        "plainEnglish": "This card is associated with deposit-backed credit-building product. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [],
+        "categories": [],
+        "features": [
+          "secured"
+        ],
+        "issuerSource": "https://www.citi.com/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Citi Secured Mastercard is a credit building credit card candidate from Citi. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "none",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "citi-simplicity",
+      "name": "Citi Simplicity",
+      "issuer": "Citi",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Introductory balance transfer and purchase terms. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Introductory balance transfer and purchase terms; check current issuer program terms.",
+        "plainEnglish": "This card is associated with introductory balance transfer and purchase terms. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.citi.com/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Citi Simplicity is a financing credit card candidate from Citi. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "none",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "citi-strata",
@@ -598,10 +1652,53 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
+    },
+    {
+      "id": "citi-strata-elite",
+      "name": "Citi Strata Elite",
+      "issuer": "Citi",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Premium ThankYou Points travel card. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Premium ThankYou Points travel card; check current issuer program terms.",
+        "plainEnglish": "This card is associated with premium thankyou points travel card. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.citi.com/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Citi Strata Elite is a travel credit card candidate from Citi. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "citi-strata-premier",
@@ -632,10 +1729,90 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
+    },
+    {
+      "id": "citi-costco-anywhere",
+      "name": "Costco Anywhere Visa by Citi",
+      "issuer": "Citi",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Costco travel, gasoline and restaurant cash back. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Costco travel, gasoline and restaurant cash back; check current issuer program terms.",
+        "plainEnglish": "This card is associated with costco travel, gasoline and restaurant cash back. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.citi.com/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Costco Anywhere Visa by Citi is a cash back credit card candidate from Citi. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "tiered",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "amex-delta-blue",
+      "name": "Delta SkyMiles Blue",
+      "issuer": "American Express",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Delta SkyMiles with no annual fee. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Delta SkyMiles with no annual fee; check current issuer program terms.",
+        "plainEnglish": "This card is associated with delta skymiles with no annual fee. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://www.americanexpress.com/us/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Delta SkyMiles Blue is a airline credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "miles",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "amex-delta-gold",
@@ -667,10 +1844,16 @@
         "airlineProgram": "Delta SkyMiles",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "amex-delta-platinum",
@@ -702,10 +1885,16 @@
         "airlineProgram": "Delta SkyMiles",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "amex-delta-reserve",
@@ -735,10 +1924,637 @@
         "airlineProgram": "Delta SkyMiles",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
+    },
+    {
+      "id": "cap-discover-it",
+      "name": "Discover it Cash Back",
+      "issuer": "Capital One",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "5% on rotating eligible categories when activated, subject to quarterly caps.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "5% on rotating eligible categories when activated, subject to quarterly caps.",
+        "plainEnglish": "5% on rotating eligible categories when activated, subject to quarterly caps.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Discover it Cash Back is a cash back credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "rotating",
+        "earnRules": [
+          {
+            "label": "Activated quarterly categories",
+            "rate": 5,
+            "unit": "percent",
+            "capPeriod": "Quarterly",
+            "condition": "Activation and issuer spending cap required"
+          }
+        ],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "cap-discover-it-chrome",
+      "name": "Discover it Chrome",
+      "issuer": "Capital One",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Gas and dining rewards; product availability to confirm. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Gas and dining rewards; product availability to confirm; check current issuer program terms.",
+        "plainEnglish": "This card is associated with gas and dining rewards; product availability to confirm. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Discover it Chrome is a cash back credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "tiered",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "chase-disney-premier",
+      "name": "Disney Premier Visa",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Disney Rewards Dollars and Disney offers. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Disney Rewards Dollars and Disney offers; check current issuer program terms.",
+        "plainEnglish": "This card is associated with disney rewards dollars and disney offers. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [
+          "lifestyle"
+        ],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/rewards-credit-cards/disney",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Disney Premier Visa is a lifestyle credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "cash_back",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "chase-disney-visa",
+      "name": "Disney Visa",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Disney Rewards Dollars and cardmember offers. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Disney Rewards Dollars and cardmember offers; check current issuer program terms.",
+        "plainEnglish": "This card is associated with disney rewards dollars and cardmember offers. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [
+          "lifestyle"
+        ],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/rewards-credit-cards/disney",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Disney Visa is a lifestyle credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "cash_back",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "amex-hilton",
+      "name": "Hilton Honors American Express",
+      "issuer": "American Express",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "7X points at eligible Hilton properties, 5X at U.S. restaurants, supermarkets and gas stations.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "7X points at eligible Hilton properties, 5X at U.S. restaurants, supermarkets and gas stations.",
+        "plainEnglish": "7X points at eligible Hilton properties, 5X at U.S. restaurants, supermarkets and gas stations.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Hilton Honors American Express is a hotel credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [
+          {
+            "label": "Hilton hotels and resorts",
+            "rate": 7,
+            "unit": "x"
+          },
+          {
+            "label": "U.S. restaurants, supermarkets and gas",
+            "rate": 5,
+            "unit": "x"
+          }
+        ],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "amex-hilton-aspire",
+      "name": "Hilton Honors American Express Aspire",
+      "issuer": "American Express",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "14X eligible Hilton purchases and Hilton Honors Diamond status.",
+        "annualFeeUsd": 550,
+        "feeSummary": "$550 annual fee",
+        "primaryLabel": "14X eligible Hilton purchases and Hilton Honors Diamond status.",
+        "plainEnglish": "14X eligible Hilton purchases and Hilton Honors Diamond status.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.americanexpress.com/us/credit-cards/category/hotel-rewards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Hilton Honors American Express Aspire is a hotel credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [
+          {
+            "label": "Eligible Hilton purchases",
+            "rate": 14,
+            "unit": "x"
+          }
+        ],
+        "benefits": [
+          {
+            "name": "Hilton Honors Diamond status",
+            "type": "hotel_status",
+            "amountUsd": null,
+            "frequencyMonths": null,
+            "condition": "Terms and program requirements apply"
+          }
+        ],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "amex-hilton-surpass",
+      "name": "Hilton Honors American Express Surpass",
+      "issuer": "American Express",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Hilton Honors rewards and elite benefits. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Hilton Honors rewards and elite benefits; check current issuer program terms.",
+        "plainEnglish": "This card is associated with hilton honors rewards and elite benefits. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.americanexpress.com/us/credit-cards/category/hotel-rewards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Hilton Honors American Express Surpass is a hotel credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "chase-iberia",
+      "name": "Iberia Visa Signature",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Avios airline rewards. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Avios airline rewards; check current issuer program terms.",
+        "plainEnglish": "This card is associated with avios airline rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [
+          "airline"
+        ],
+        "issuerSource": "https://creditcards.chase.com/compare-credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Iberia Visa Signature is a airline credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "miles",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "chase-ihg-premier",
+      "name": "IHG One Rewards Premier",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Hotel points earning and fourth-night award benefit, subject to eligibility.",
+        "annualFeeUsd": 99,
+        "feeSummary": "$99 annual fee",
+        "primaryLabel": "Hotel points earning and fourth-night award benefit, subject to eligibility.",
+        "plainEnglish": "Hotel points earning and fourth-night award benefit, subject to eligibility.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/travel-credit-cards/ihg",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "IHG One Rewards Premier is a hotel credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "chase-ihg-traveler",
+      "name": "IHG One Rewards Traveler",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "IHG hotel rewards without annual fee. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "IHG hotel rewards without annual fee; check current issuer program terms.",
+        "plainEnglish": "This card is associated with ihg hotel rewards without annual fee. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/travel-credit-cards/ihg",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "IHG One Rewards Traveler is a hotel credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "amex-marriott-bevy",
+      "name": "Marriott Bonvoy Bevy American Express",
+      "issuer": "American Express",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Marriott Bonvoy hotel rewards. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Marriott Bonvoy hotel rewards; check current issuer program terms.",
+        "plainEnglish": "This card is associated with marriott bonvoy hotel rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.americanexpress.com/us/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Marriott Bonvoy Bevy American Express is a hotel credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "chase-marriott-bold",
+      "name": "Marriott Bonvoy Bold",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Marriott hotel points without annual fee. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Marriott hotel points without annual fee; check current issuer program terms.",
+        "plainEnglish": "This card is associated with marriott hotel points without annual fee. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Marriott Bonvoy Bold is a hotel credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "chase-marriott-boundless",
+      "name": "Marriott Bonvoy Boundless",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Marriott hotel points and travel. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Marriott hotel points and travel; check current issuer program terms.",
+        "plainEnglish": "This card is associated with marriott hotel points and travel. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Marriott Bonvoy Boundless is a hotel credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "amex-marriott-brilliant",
+      "name": "Marriott Bonvoy Brilliant American Express",
+      "issuer": "American Express",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Premium Marriott Bonvoy card benefits. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Premium Marriott Bonvoy card benefits; check current issuer program terms.",
+        "plainEnglish": "This card is associated with premium marriott bonvoy card benefits. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.americanexpress.com/us/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Marriott Bonvoy Brilliant American Express is a hotel credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "wells-one-key",
+      "name": "One Key Mastercard",
+      "issuer": "Wells Fargo",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "One Key travel loyalty rewards. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "One Key travel loyalty rewards; check current issuer program terms.",
+        "plainEnglish": "This card is associated with one key travel loyalty rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.wellsfargo.com/credit-cards/agreements/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "One Key Mastercard is a travel credit card candidate from Wells Fargo. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "cap-platinum-secured",
+      "name": "Platinum Secured",
+      "issuer": "Capital One",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Secured credit-building card. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Secured credit-building card; check current issuer program terms.",
+        "plainEnglish": "This card is associated with secured credit-building card. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [],
+        "categories": [],
+        "features": [
+          "secured"
+        ],
+        "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Platinum Secured is a credit building credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "none",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "pnc-cash-rewards",
@@ -768,10 +2584,16 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "pnc-cash-unlimited",
@@ -797,10 +2619,277 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
+    },
+    {
+      "id": "pnc-core",
+      "name": "PNC Core Visa",
+      "issuer": "PNC",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Lower-rate and introductory financing. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Lower-rate and introductory financing; check current issuer program terms.",
+        "plainEnglish": "This card is associated with lower-rate and introductory financing. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.pnc.com/en/personal-banking/banking/credit-cards.html",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "PNC Core Visa is a financing credit card candidate from PNC. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "none",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "chase-prime-visa",
+      "name": "Prime Visa",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "5% Amazon and eligible Whole Foods with qualifying Prime membership.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "5% Amazon and eligible Whole Foods with qualifying Prime membership.",
+        "plainEnglish": "5% Amazon and eligible Whole Foods with qualifying Prime membership.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/cash-back-credit-cards/amazon-prime-rewards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Prime Visa is a cash back credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "flat",
+        "earnRules": [
+          {
+            "label": "Amazon, Whole Foods and eligible Chase Travel with Prime",
+            "rate": 5,
+            "unit": "percent",
+            "condition": "Eligible Prime membership required"
+          },
+          {
+            "label": "Gas, dining and eligible transit",
+            "rate": 2,
+            "unit": "percent"
+          }
+        ],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "cap-quicksilver-student",
+      "name": "Quicksilver Rewards for Students",
+      "issuer": "Capital One",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Student flat-rate cash back. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Student flat-rate cash back; check current issuer program terms.",
+        "plainEnglish": "This card is associated with student flat-rate cash back. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Quicksilver Rewards for Students is a cash back credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "flat",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "cap-quicksilver-secured",
+      "name": "Quicksilver Secured Rewards",
+      "issuer": "Capital One",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Secured card with cash back. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Secured card with cash back; check current issuer program terms.",
+        "plainEnglish": "This card is associated with secured card with cash back. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [
+          "secured"
+        ],
+        "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Quicksilver Secured Rewards is a credit building credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "flat",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "boa-royal-one-plus",
+      "name": "Royal ONE Plus Visa Signature",
+      "issuer": "Bank of America",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Cruise rewards with annual fee. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 99,
+        "feeSummary": "$99 annual fee",
+        "primaryLabel": "Cruise rewards with annual fee; check current issuer program terms.",
+        "plainEnglish": "This card is associated with cruise rewards with annual fee. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.bankofamerica.com/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Royal ONE Plus Visa Signature is a travel credit card candidate from Bank of America. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "boa-royal-one",
+      "name": "Royal ONE Visa Signature",
+      "issuer": "Bank of America",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Royal Caribbean cruise rewards. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Royal Caribbean cruise rewards; check current issuer program terms.",
+        "plainEnglish": "This card is associated with royal caribbean cruise rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.bankofamerica.com/credit-cards/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Royal ONE Visa Signature is a travel credit card candidate from Bank of America. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "cap-savor-student",
+      "name": "Savor Rewards for Students",
+      "issuer": "Capital One",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Student dining, grocery and entertainment cash back. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Student dining, grocery and entertainment cash back; check current issuer program terms.",
+        "plainEnglish": "This card is associated with student dining, grocery and entertainment cash back. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Savor Rewards for Students is a cash back credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "tiered",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "chase-southwest-plus",
@@ -830,10 +2919,16 @@
         "airlineProgram": "Southwest Rapid Rewards",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "chase-southwest-priority",
@@ -865,10 +2960,16 @@
         "airlineProgram": "Southwest Rapid Rewards",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "td-cash",
@@ -900,10 +3001,120 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": "TD Cash offers category-based cash back whose 3% and 2% categories can be changed each quarter. Eligible merchant categories determine earnings.",
+        "rewardStructure": "selectable",
+        "earnRules": [
+          {
+            "label": "First selected category",
+            "rate": 3,
+            "unit": "percent",
+            "condition": "Choose from issuer's current quarterly category list"
+          },
+          {
+            "label": "Second selected category",
+            "rate": 2,
+            "unit": "percent",
+            "condition": "Choose from issuer's current quarterly category list"
+          }
+        ],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
+    },
+    {
+      "id": "td-cash-secured",
+      "name": "TD Cash Secured",
+      "issuer": "TD Bank",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "3% and 2% on chosen categories, 1% other eligible purchases.",
+        "annualFeeUsd": 29,
+        "feeSummary": "$29 annual fee",
+        "primaryLabel": "3% and 2% on chosen categories, 1% other eligible purchases.",
+        "plainEnglish": "3% and 2% on chosen categories, 1% other eligible purchases.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [
+          "secured"
+        ],
+        "issuerSource": "https://www.td.com/us/en/personal-banking/credit-cards/secured-credit-card",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "TD Cash Secured is a credit building credit card candidate from TD Bank. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "selectable",
+        "earnRules": [
+          {
+            "label": "Chosen first category",
+            "rate": 3,
+            "unit": "percent",
+            "condition": "Quarterly selection"
+          },
+          {
+            "label": "Chosen second category",
+            "rate": 2,
+            "unit": "percent",
+            "condition": "Quarterly selection"
+          }
+        ],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "td-clear-1000",
+      "name": "TD Clear with $1,000 Credit Limit",
+      "issuer": "TD Bank",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "No purchase interest; $10 monthly membership fee charged whether or not the card is used",
+        "annualFeeUsd": 0,
+        "feeSummary": "No annual fee; $10 monthly membership fee ($120 in 12 months)",
+        "primaryLabel": "No purchase interest; $10 monthly membership fee charged whether or not the card is used",
+        "plainEnglish": "No purchase interest; $10 monthly membership fee charged whether or not the card is used",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.td.com/us/en/personal-banking/credit-cards/clear",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "TD Clear with $1,000 Credit Limit is a financing credit card candidate from TD Bank. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "none",
+        "earnRules": [],
+        "benefits": [
+          {
+            "name": "Cell phone protection",
+            "type": "cell_protection",
+            "amountUsd": null,
+            "frequencyMonths": null,
+            "condition": "Coverage eligibility and limits depend on TD's benefit guide"
+          }
+        ],
+        "monthlyFeeUsd": 10
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "td-double-up",
@@ -929,10 +3140,53 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
+    },
+    {
+      "id": "td-first-class",
+      "name": "TD First Class Visa Signature",
+      "issuer": "TD Bank",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Travel and dining miles. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 89,
+        "feeSummary": "$89 annual fee",
+        "primaryLabel": "Travel and dining miles; check current issuer program terms.",
+        "plainEnglish": "This card is associated with travel and dining miles. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "miles"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.td.com/us/en/personal-banking/credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "TD First Class Visa Signature is a travel credit card candidate from TD Bank. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "miles",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "td-flexpay",
@@ -956,10 +3210,16 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "truist-enjoy-cash",
@@ -988,10 +3248,16 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "truist-enjoy-cash-secured",
@@ -1022,10 +3288,16 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "truist-enjoy-travel",
@@ -1053,10 +3325,218 @@
         "airlineProgram": null,
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
+    },
+    {
+      "id": "truist-future",
+      "name": "Truist Future",
+      "issuer": "Truist",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Low-rate financing and introductory APR. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Low-rate financing and introductory APR; check current issuer program terms.",
+        "plainEnglish": "This card is associated with low-rate financing and introductory apr. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.truist.com/credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Truist Future is a financing credit card candidate from Truist. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "none",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "us-altitude-connect",
+      "name": "U.S. Bank Altitude Connect Visa Signature",
+      "issuer": "U.S. Bank",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Travel points and selected travel benefits. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Travel points and selected travel benefits; check current issuer program terms.",
+        "plainEnglish": "This card is associated with travel points and selected travel benefits. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.usbank.com/credit-cards/benefits.html",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "U.S. Bank Altitude Connect Visa Signature is a travel credit card candidate from U.S. Bank. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "us-altitude-go-secured",
+      "name": "U.S. Bank Altitude Go Secured Visa",
+      "issuer": "U.S. Bank",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "4X dining on first $2,000 quarterly; 2X groceries, gas and streaming.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "4X dining on first $2,000 quarterly; 2X groceries, gas and streaming.",
+        "plainEnglish": "4X dining on first $2,000 quarterly; 2X groceries, gas and streaming.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [],
+        "features": [
+          "secured"
+        ],
+        "issuerSource": "https://www.usbank.com/credit-cards/altitude-go-secured-visa-credit-card.html",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "U.S. Bank Altitude Go Secured Visa is a credit building credit card candidate from U.S. Bank. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [
+          {
+            "label": "Dining",
+            "rate": 4,
+            "unit": "x",
+            "capAmountUsd": 2000,
+            "capPeriod": "Quarter"
+          },
+          {
+            "label": "Eligible grocery/gas/streaming",
+            "rate": 2,
+            "unit": "x"
+          }
+        ],
+        "benefits": [
+          {
+            "name": "Annual streaming purchase credit",
+            "type": "statement_credit",
+            "amountUsd": 15,
+            "frequencyMonths": 12,
+            "condition": "After qualifying streaming service purchases"
+          }
+        ],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "us-altitude-go",
+      "name": "U.S. Bank Altitude Go Visa Signature",
+      "issuer": "U.S. Bank",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Dining and streaming rewards. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Dining and streaming rewards; check current issuer program terms.",
+        "plainEnglish": "This card is associated with dining and streaming rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "dining"
+        ],
+        "features": [],
+        "issuerSource": "https://www.usbank.com/credit-cards/benefits.html",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "U.S. Bank Altitude Go Visa Signature is a dining credit card candidate from U.S. Bank. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "us-cashplus-secured",
+      "name": "U.S. Bank Cash+ Secured Visa",
+      "issuer": "U.S. Bank",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Selectable bonus cash back with security deposit. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Selectable bonus cash back with security deposit; check current issuer program terms.",
+        "plainEnglish": "This card is associated with selectable bonus cash back with security deposit. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [],
+        "features": [
+          "secured"
+        ],
+        "issuerSource": "https://www.usbank.com/credit-cards/benefits.html",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "U.S. Bank Cash+ Secured Visa is a credit building credit card candidate from U.S. Bank. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "selectable",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "us-cashplus",
@@ -1088,10 +3568,25 @@
           "sourcePage": "https://www.usbank.com/credit-cards.html",
           "alt": "Official front-facing product image of U.S. Bank Cash+ Visa Signature"
         },
-        "accessType": "public"
+        "accessType": "public",
+        "bio": "U.S. Bank Cash+ rewards specific categories you select, with activation and combined spending limits. Its headline 5% is not unlimited.",
+        "rewardStructure": "selectable",
+        "earnRules": [
+          {
+            "label": "Two selected 5% categories",
+            "rate": 5,
+            "unit": "percent",
+            "capAmountUsd": 2000,
+            "capPeriod": "Quarter",
+            "condition": "Combined eligible purchases and quarter-specific category selection"
+          }
+        ],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "us-shield",
@@ -1119,10 +3614,16 @@
           "sourcePage": "https://www.usbank.com/credit-cards.html",
           "alt": "Official front-facing product image of U.S. Bank Shield Visa"
         },
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "us-smartly",
@@ -1152,10 +3653,16 @@
           "sourcePage": "https://www.usbank.com/credit-cards.html",
           "alt": "Official front-facing product image of U.S. Bank Smartly Visa Signature"
         },
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "chase-united-club",
@@ -1185,10 +3692,16 @@
         "airlineProgram": "United MileagePlus",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "chase-united-explorer",
@@ -1218,10 +3731,16 @@
         "airlineProgram": "United MileagePlus",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "chase-united-gateway",
@@ -1251,10 +3770,16 @@
         "airlineProgram": "United MileagePlus",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "chase-united-quest",
@@ -1284,10 +3809,16 @@
         "airlineProgram": "United MileagePlus",
         "additionalSources": [],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
     },
     {
       "id": "wells-active-cash",
@@ -1318,10 +3849,53 @@
           }
         ],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
+    },
+    {
+      "id": "wells-attune",
+      "name": "Wells Fargo Attune World Elite Mastercard",
+      "issuer": "Wells Fargo",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Lifestyle, wellness and sustainable spending rewards. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Lifestyle, wellness and sustainable spending rewards; check current issuer program terms.",
+        "plainEnglish": "This card is associated with lifestyle, wellness and sustainable spending rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "cash_back"
+        ],
+        "categories": [
+          "lifestyle"
+        ],
+        "features": [],
+        "issuerSource": "https://www.wellsfargo.com/credit-cards/agreements/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Wells Fargo Attune World Elite Mastercard is a lifestyle credit card candidate from Wells Fargo. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "cash_back",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
     },
     {
       "id": "wells-autograph",
@@ -1357,10 +3931,123 @@
           }
         ],
         "imageFront": null,
-        "accessType": "public"
+        "accessType": "public",
+        "bio": null,
+        "rewardStructure": null,
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
       },
       "reviewNotes": "",
-      "reviewedBy": ""
+      "reviewedBy": "",
+      "reviewStage": "directory"
+    },
+    {
+      "id": "wells-autograph-journey",
+      "name": "Wells Fargo Autograph Journey",
+      "issuer": "Wells Fargo",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Travel category rewards. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Travel category rewards; check current issuer program terms.",
+        "plainEnglish": "This card is associated with travel category rewards. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://www.wellsfargo.com/credit-cards/agreements/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Wells Fargo Autograph Journey is a travel credit card candidate from Wells Fargo. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "wells-reflect",
+      "name": "Wells Fargo Reflect",
+      "issuer": "Wells Fargo",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Intro APR financing-focused card. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": 0,
+        "feeSummary": "$0 annual fee",
+        "primaryLabel": "Intro APR financing-focused card; check current issuer program terms.",
+        "plainEnglish": "This card is associated with intro apr financing-focused card. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [],
+        "categories": [],
+        "features": [],
+        "issuerSource": "https://www.wellsfargo.com/credit-cards/agreements/",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "Wells Fargo Reflect is a financing credit card candidate from Wells Fargo. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "none",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
+    },
+    {
+      "id": "chase-world-hyatt",
+      "name": "World of Hyatt Credit Card",
+      "issuer": "Chase",
+      "humanVerified": false,
+      "candidate": {
+        "summary": "Hyatt hotel points. Exact earning terms are pending a detailed issuer agreement review.",
+        "annualFeeUsd": null,
+        "feeSummary": "Annual fee: needs issuer agreement review",
+        "primaryLabel": "Hyatt hotel points; check current issuer program terms.",
+        "plainEnglish": "This card is associated with hyatt hotel points. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+        "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+        "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+        "rewards": [
+          "points"
+        ],
+        "categories": [
+          "travel"
+        ],
+        "features": [],
+        "issuerSource": "https://creditcards.chase.com/travel-credit-cards",
+        "verifiedAt": "2026-10-27",
+        "verificationLevel": "selected-issuer-page-facts",
+        "airlineProgram": null,
+        "additionalSources": [],
+        "imageFront": null,
+        "accessType": "public",
+        "bio": "World of Hyatt Credit Card is a hotel credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+        "rewardStructure": "points",
+        "earnRules": [],
+        "benefits": [],
+        "monthlyFeeUsd": null
+      },
+      "reviewNotes": "",
+      "reviewedBy": "",
+      "reviewStage": "research"
     }
   ]
 }

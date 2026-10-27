@@ -1088,5 +1088,9 @@
       "accessType": "public",
       "airlineProgram": null
     }
-  ]
+  ],
+  "reviewProgress": {
+    "approved": 0,
+    "total": 100
+  }
 }

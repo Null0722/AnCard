@@ -1,0 +1,31 @@
+{
+  "id": "chase-ihg-premier",
+  "name": "IHG One Rewards Premier",
+  "issuer": "Chase",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "Hotel points earning and fourth-night award benefit, subject to eligibility.",
+  "primaryLabel": "Hotel points earning and fourth-night award benefit, subject to eligibility.",
+  "feeSummary": "$99 annual fee",
+  "annualFeeUsd": 99,
+  "rewards": [
+    "points"
+  ],
+  "categories": [
+    "travel"
+  ],
+  "features": [],
+  "plainEnglish": "Hotel points earning and fourth-night award benefit, subject to eligibility.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://creditcards.chase.com/travel-credit-cards/ihg",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "IHG One Rewards Premier is a hotel credit card candidate from Chase. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "points",
+  "earnRules": [],
+  "benefits": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": "cap-savor-student",
+  "name": "Savor Rewards for Students",
+  "issuer": "Capital One",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "Student dining, grocery and entertainment cash back. Exact earning terms are pending a detailed issuer agreement review.",
+  "primaryLabel": "Student dining, grocery and entertainment cash back; check current issuer program terms.",
+  "feeSummary": "$0 annual fee",
+  "annualFeeUsd": 0,
+  "rewards": [
+    "cash_back"
+  ],
+  "categories": [],
+  "features": [],
+  "plainEnglish": "This card is associated with student dining, grocery and entertainment cash back. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "Savor Rewards for Students is a cash back credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "tiered",
+  "earnRules": [],
+  "benefits": []
+}

@@ -27,5 +27,26 @@
   "issuerSource": "https://www.bankofamerica.com/credit-cards/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
-  "accessType": "public"
+  "accessType": "public",
+  "bio": "Customized Cash Rewards lets cardholders choose an eligible high-earning category. Introductory first-year categories and the quarterly spending cap need special attention.",
+  "rewardStructure": "selectable",
+  "earnRules": [
+    {
+      "label": "Selected category, first 12 months",
+      "rate": 6,
+      "unit": "percent",
+      "capAmountUsd": 2500,
+      "capPeriod": "Quarter",
+      "condition": "First-year offer, limited eligible choice categories and shared quarterly cap"
+    },
+    {
+      "label": "Selected category after first year",
+      "rate": 3,
+      "unit": "percent",
+      "capAmountUsd": 2500,
+      "capPeriod": "Quarter",
+      "condition": "Shares spending cap with eligible grocery and wholesale spending"
+    }
+  ],
+  "benefits": []
 }

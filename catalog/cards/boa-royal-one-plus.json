@@ -1,0 +1,31 @@
+{
+  "id": "boa-royal-one-plus",
+  "name": "Royal ONE Plus Visa Signature",
+  "issuer": "Bank of America",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "Cruise rewards with annual fee. Exact earning terms are pending a detailed issuer agreement review.",
+  "primaryLabel": "Cruise rewards with annual fee; check current issuer program terms.",
+  "feeSummary": "$99 annual fee",
+  "annualFeeUsd": 99,
+  "rewards": [
+    "points"
+  ],
+  "categories": [
+    "travel"
+  ],
+  "features": [],
+  "plainEnglish": "This card is associated with cruise rewards with annual fee. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.bankofamerica.com/credit-cards/",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "Royal ONE Plus Visa Signature is a travel credit card candidate from Bank of America. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "points",
+  "earnRules": [],
+  "benefits": []
+}

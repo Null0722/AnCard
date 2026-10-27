@@ -1,0 +1,42 @@
+{
+  "id": "amex-hilton",
+  "name": "Hilton Honors American Express",
+  "issuer": "American Express",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "7X points at eligible Hilton properties, 5X at U.S. restaurants, supermarkets and gas stations.",
+  "primaryLabel": "7X points at eligible Hilton properties, 5X at U.S. restaurants, supermarkets and gas stations.",
+  "feeSummary": "$0 annual fee",
+  "annualFeeUsd": 0,
+  "rewards": [
+    "points"
+  ],
+  "categories": [
+    "travel"
+  ],
+  "features": [],
+  "plainEnglish": "7X points at eligible Hilton properties, 5X at U.S. restaurants, supermarkets and gas stations.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors/",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "Hilton Honors American Express is a hotel credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "points",
+  "earnRules": [
+    {
+      "label": "Hilton hotels and resorts",
+      "rate": 7,
+      "unit": "x"
+    },
+    {
+      "label": "U.S. restaurants, supermarkets and gas",
+      "rate": 5,
+      "unit": "x"
+    }
+  ],
+  "benefits": []
+}

@@ -69,7 +69,11 @@ dialog p{line-height:1.65;color:#d0dce6}
 <h1>Compare the facts.<br><span>Keep the choice.</span></h1>
 <p>Build your own view of the card directory. This workspace filters only the attributes available in each published record. No suitability score, preference history, or application tracking.</p>
 </header>
-<div class="demo-note" role="note"><strong>Human review in progress.</strong> Card names and issuer references are displayed, while fees, reward rates, and benefits stay hidden until you approve them. Airline co-branded cards are included.</div>
+<div class="qc-summary dashboard-qc" role="group" aria-label="Human card review progress">
+ <div class="qc-ring" id="qc-ring" role="img" aria-label="Human review progress loading"><strong id="qc-percent">0%</strong></div>
+ <div class="qc-copy"><span>Human QC progress</span><strong id="qc-count">Loading review inventory</strong><small>Research coverage, never a product ranking</small></div>
+</div>
+<div class="demo-note" role="note"><strong>Privacy-first research directory.</strong> Cards from the established directory remain visible as identity-only placeholders until human QC; new research entries stay in the review inventory until approved. No hidden recommendations.</div>
 <div class="art-optin"><label><input type="checkbox" id="show-art"> Show official card art</label><p>Off by default. Turning it on loads images from external issuers or CDNs, sharing your IP address and browser request details. No choice is saved. Cards without a verified image use a text badge.</p></div>
 <div class="work-area">
 <aside class="filters-box" aria-label="Filter controls"><h2>Choose your filters</h2>

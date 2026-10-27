@@ -1,0 +1,29 @@
+{
+  "id": "cap-platinum",
+  "name": "Capital One Platinum",
+  "issuer": "Capital One",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "Entry-level credit product. Exact earning terms are pending a detailed issuer agreement review.",
+  "primaryLabel": "Entry-level credit product; check current issuer program terms.",
+  "feeSummary": "$0 annual fee",
+  "annualFeeUsd": 0,
+  "rewards": [],
+  "categories": [],
+  "features": [
+    "secured"
+  ],
+  "plainEnglish": "This card is associated with entry-level credit product. Rewards rates, annual fees, caps and eligibility must be confirmed.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.capitalone.com/credit-cards/compare/",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "Capital One Platinum is a credit building credit card candidate from Capital One. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "none",
+  "earnRules": [],
+  "benefits": []
+}

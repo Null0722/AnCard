@@ -9,7 +9,8 @@ const published=await load('docs/data/cards.json');
 const queue=await load('catalog/HUMAN-QC.json');
 function assert(condition,message){if(!condition)throw new Error(message);}
 assert(Array.isArray(published.cards)&&Array.isArray(queue.cards),'Catalog and QC must be arrays.');
-assert(published.cards.length===queue.cards.length,'Review queue and public catalog counts differ.');
+assert(published.cards.length<=queue.cards.length,'Public catalog cannot exceed the review queue.');
+assert(published.reviewProgress?.approved===queue.cards.filter(x=>x.humanVerified).length && published.reviewProgress?.total===queue.cards.length,'Review progress metadata does not match the approval queue.');
 const reviews=new Map(queue.cards.map(item=>[item.id,item]));
 assert(reviews.size===queue.cards.length,'Review queue contains duplicate card IDs.');
 const permittedPending=new Set(['id','name','issuer','status','fictional','tone','humanVerified',
@@ -17,6 +18,7 @@ const permittedPending=new Set(['id','name','issuer','status','fictional','tone'
  'plainEnglish','watchOut','limitations','verifiedAt','issuerSource','verificationLevel',
  'imageFront','accessType','airlineProgram']);
 const seen=new Set();
+for(const entry of queue.cards)assert(['directory','research'].includes(entry.reviewStage),'Invalid review stage '+entry.id);
 for(const card of published.cards){
  assert(!seen.has(card.id),'Duplicate public ID '+card.id);seen.add(card.id);
  const review=reviews.get(card.id);
@@ -55,4 +57,5 @@ for(const path of textFiles){
  const content=await readFile(resolve(root,path),'utf8');
  assert(!content.includes('\u2014'),'Em dash found in '+path);
 }
-console.log('AnCard quality checks passed:',published.cards.length,'cards,',published.cards.filter(c=>!c.humanVerified).length,'pending, no unapproved financial details, no em dashes.');
+for(const entry of queue.cards){if(entry.reviewStage==='research'&&!entry.humanVerified)assert(!seen.has(entry.id),'Unapproved research card leaked to public directory: '+entry.id);else assert(seen.has(entry.id),'Approved or established card is missing from public catalog: '+entry.id);}
+console.log('AnCard quality checks passed:',published.cards.length,'public cards,',queue.cards.length,'research and directory entries, no unapproved financial details, no em dashes.');

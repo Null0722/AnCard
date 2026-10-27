@@ -51,3 +51,9 @@ The candidate snapshot includes the public summary, all proposed annual-fee and 
 ## Readable alternative
 
 For card-by-card reading, use [REVIEW-SHEET.md](../catalog/REVIEW-SHEET.md). It presents each proposal as a labeled section with its issuer, benefits, annual fee and source links. This document is generated and must not be edited directly. Make all approvals and corrections in the JSON queue and canonical card files, then run the build.
+
+## Extended unranked research queue
+
+The owner QC queue now has an `reviewStage` field in each entry. An entry with `"reviewStage": "research"` is **not exposed in the public directory until `humanVerified` is true**. Existing entries use `"reviewStage": "directory"` and continue to show identity-only placeholders when unapproved. Do not alter review stages to skip checking claims. The progress ring counts verified items in the entire research queue; it is not a quality score or ranking.
+
+The review sheet shows card bios, earning structures (flat, rotating, selected, automatic category, tiered, points or miles), earn rules with caps and conditions, monthly fees, and quantified travel/perk benefits. Null amounts mean no amount was confirmed, not that the perk is free. Do not mark a card verified if only a marketing page is available and the card agreement omits necessary conditions. After editing a canonical record, run `npm run qc:sync`; its approval resets when values have changed. Build and commit both generated catalog and review sheet.

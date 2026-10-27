@@ -1,0 +1,45 @@
+{
+  "id": "amex-hilton-aspire",
+  "name": "Hilton Honors American Express Aspire",
+  "issuer": "American Express",
+  "status": "published",
+  "fictional": false,
+  "tone": "slate",
+  "summary": "14X eligible Hilton purchases and Hilton Honors Diamond status.",
+  "primaryLabel": "14X eligible Hilton purchases and Hilton Honors Diamond status.",
+  "feeSummary": "$550 annual fee",
+  "annualFeeUsd": 550,
+  "rewards": [
+    "points"
+  ],
+  "categories": [
+    "travel"
+  ],
+  "features": [],
+  "plainEnglish": "14X eligible Hilton purchases and Hilton Honors Diamond status.",
+  "watchOut": "Proposal only. Check latest issuer reward schedules, caps, activation, fees and access conditions before approving.",
+  "limitations": "A research candidate, not an approved recommendation or a complete agreement audit.",
+  "verifiedAt": "2026-10-27",
+  "issuerSource": "https://www.americanexpress.com/us/credit-cards/category/hotel-rewards/",
+  "verificationLevel": "selected-issuer-page-facts",
+  "imageFront": null,
+  "accessType": "public",
+  "bio": "Hilton Honors American Express Aspire is a hotel credit card candidate from American Express. AnCard keeps its terms under human review before displaying its financial details.",
+  "rewardStructure": "points",
+  "earnRules": [
+    {
+      "label": "Eligible Hilton purchases",
+      "rate": 14,
+      "unit": "x"
+    }
+  ],
+  "benefits": [
+    {
+      "name": "Hilton Honors Diamond status",
+      "type": "hotel_status",
+      "amountUsd": null,
+      "frequencyMonths": null,
+      "condition": "Terms and program requirements apply"
+    }
+  ]
+}
