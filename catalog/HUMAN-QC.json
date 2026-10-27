@@ -6,7 +6,7 @@
       "id": "chase-aer-lingus",
       "name": "Aer Lingus Visa Signature",
       "issuer": "Chase",
-      "humanVerified": false,
+      "humanVerified": true,
       "candidate": {
         "summary": "3 Avios per $1 on eligible Aer Lingus, British Airways, Iberia and LEVEL purchases; 2 Avios per $1 on direct hotel stays; 1 Avios per $1 elsewhere.",
         "annualFeeUsd": 95,
