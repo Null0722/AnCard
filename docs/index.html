@@ -40,9 +40,12 @@
     </section>
 
     <section class="browse" id="catalog" aria-labelledby="catalog-title">
-      <div class="section-heading">
-        <div><p class="eyebrow">THE CARD LIBRARY, UNCOMPLICATED</p><h2 id="catalog-title">Find a place to start</h2></div>
-        <span class="quiet-tag">HUMAN REVIEW IN PROGRESS</span>
+      <div class="section-heading browse-heading">
+        <div><p class="eyebrow">THE CARD LIBRARY, UNCOMPLICATED</p><h2 id="catalog-title">Find a place to start</h2><p class="browse-intro">Explore independently, by card name or the features that matter to you.</p></div>
+        <div class="qc-summary" role="group" aria-label="Card research human quality control progress">
+          <div class="qc-ring" id="qc-ring" role="img" aria-label="Human review progress loading"><strong id="qc-percent">0%</strong></div>
+          <div class="qc-copy"><span>Human QC progress</span><strong id="qc-count">Loading review inventory</strong><small>Review coverage, not a card ranking</small></div>
+        </div>
       </div>
       <div class="topic-filters" role="group" aria-label="Quick category filters">
         <button type="button" class="topic-chip" data-quick="cash_back" aria-pressed="false">◈ &nbsp; Cash back</button>
@@ -88,7 +91,7 @@
             <label class="review-toggle"><input type="checkbox" id="reviewed-only"> Human-reviewed only</label>
           </div>
           <div class="art-optin"><label><input type="checkbox" id="show-art"> Show official card art</label><p>Off by default. Enabling images sends requests to the issuing banks or their CDNs. It may disclose your IP address and browser metadata. This choice lasts only until you leave or reload this page. Missing artwork stays a text badge.</p></div>
-          <div class="preview-banner" role="note"><strong>Only human-reviewed details are displayed.</strong> All new cards start as placeholders. Fees, earning rates, and benefits appear only after review against issuer documentation. Until then, use the official issuer source for current information.</div>
+          <div class="preview-banner" role="note"><strong>Financial claims need human approval.</strong> The public directory contains established card identities with unapproved details hidden. Newly researched cards stay in the internal QC inventory until approved. Use current issuer disclosures for financial decisions.</div>
           <div id="card-results" class="card-results" aria-live="off"></div>
           <div class="trust-strip"><span><strong>Independent by design.</strong> No quizzes, hidden recommendation scores or sponsored ranking.</span><a href="#methodology">Our methodology ↗</a></div>
         </div>
