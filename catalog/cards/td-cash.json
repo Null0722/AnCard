@@ -27,5 +27,22 @@
   "issuerSource": "https://www.td.com/us/en/personal-banking/credit-cards",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
-  "accessType": "public"
+  "accessType": "public",
+  "bio": "TD Cash offers category-based cash back whose 3% and 2% categories can be changed each quarter. Eligible merchant categories determine earnings.",
+  "rewardStructure": "selectable",
+  "earnRules": [
+    {
+      "label": "First selected category",
+      "rate": 3,
+      "unit": "percent",
+      "condition": "Choose from issuer's current quarterly category list"
+    },
+    {
+      "label": "Second selected category",
+      "rate": 2,
+      "unit": "percent",
+      "condition": "Choose from issuer's current quarterly category list"
+    }
+  ],
+  "benefits": []
 }

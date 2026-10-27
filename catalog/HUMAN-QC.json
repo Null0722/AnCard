@@ -398,9 +398,26 @@
         "additionalSources": [],
         "imageFront": null,
         "accessType": "public",
-        "bio": null,
-        "rewardStructure": null,
-        "earnRules": [],
+        "bio": "Customized Cash Rewards lets cardholders choose an eligible high-earning category. Introductory first-year categories and the quarterly spending cap need special attention.",
+        "rewardStructure": "selectable",
+        "earnRules": [
+          {
+            "label": "Selected category, first 12 months",
+            "rate": 6,
+            "unit": "percent",
+            "capAmountUsd": 2500,
+            "capPeriod": "Quarter",
+            "condition": "First-year offer, limited eligible choice categories and shared quarterly cap"
+          },
+          {
+            "label": "Selected category after first year",
+            "rate": 3,
+            "unit": "percent",
+            "capAmountUsd": 2500,
+            "capPeriod": "Quarter",
+            "condition": "Shares spending cap with eligible grocery and wholesale spending"
+          }
+        ],
         "benefits": [],
         "monthlyFeeUsd": null
       },
@@ -984,10 +1001,24 @@
           "alt": "Official front-facing product image of Capital One Venture Rewards"
         },
         "accessType": "public",
-        "bio": null,
-        "rewardStructure": null,
-        "earnRules": [],
-        "benefits": [],
+        "bio": "Capital One Venture is a general travel miles card with a flat rewards rate and eligible travel-related account credits. Miles redemption values are not fixed cash equivalents.",
+        "rewardStructure": "flat",
+        "earnRules": [
+          {
+            "label": "Eligible purchases",
+            "rate": 2,
+            "unit": "x"
+          }
+        ],
+        "benefits": [
+          {
+            "name": "Global Entry or TSA PreCheck application fee credit",
+            "type": "global_entry",
+            "amountUsd": 120,
+            "frequencyMonths": 48,
+            "condition": "Up to $120 for a qualifying application fee once every four years; confirm eligibility in issuer benefits guide"
+          }
+        ],
         "monthlyFeeUsd": null
       },
       "reviewNotes": "",
@@ -1144,9 +1175,18 @@
           "alt": "Official front-facing card image of Chase Freedom Flex"
         },
         "accessType": "public",
-        "bio": null,
-        "rewardStructure": null,
-        "earnRules": [],
+        "bio": "Chase Freedom Flex combines activated quarterly bonus categories with ongoing rewards for some everyday purchase types. Activation, the eligible category list, merchant coding and the quarterly spending cap matter.",
+        "rewardStructure": "rotating",
+        "earnRules": [
+          {
+            "label": "Activated quarterly spending categories",
+            "rate": 5,
+            "unit": "percent",
+            "capAmountUsd": 1500,
+            "capPeriod": "Quarter",
+            "condition": "Activate eligible quarter's categories before the deadline"
+          }
+        ],
         "benefits": [],
         "monthlyFeeUsd": null
       },
@@ -2962,9 +3002,22 @@
         "additionalSources": [],
         "imageFront": null,
         "accessType": "public",
-        "bio": null,
-        "rewardStructure": null,
-        "earnRules": [],
+        "bio": "TD Cash offers category-based cash back whose 3% and 2% categories can be changed each quarter. Eligible merchant categories determine earnings.",
+        "rewardStructure": "selectable",
+        "earnRules": [
+          {
+            "label": "First selected category",
+            "rate": 3,
+            "unit": "percent",
+            "condition": "Choose from issuer's current quarterly category list"
+          },
+          {
+            "label": "Second selected category",
+            "rate": 2,
+            "unit": "percent",
+            "condition": "Choose from issuer's current quarterly category list"
+          }
+        ],
         "benefits": [],
         "monthlyFeeUsd": null
       },
@@ -3508,9 +3561,18 @@
           "alt": "Official front-facing product image of U.S. Bank Cash+ Visa Signature"
         },
         "accessType": "public",
-        "bio": null,
-        "rewardStructure": null,
-        "earnRules": [],
+        "bio": "U.S. Bank Cash+ rewards specific categories you select, with activation and combined spending limits. Its headline 5% is not unlimited.",
+        "rewardStructure": "selectable",
+        "earnRules": [
+          {
+            "label": "Two selected 5% categories",
+            "rate": 5,
+            "unit": "percent",
+            "capAmountUsd": 2000,
+            "capPeriod": "Quarter",
+            "condition": "Combined eligible purchases and quarter-specific category selection"
+          }
+        ],
         "benefits": [],
         "monthlyFeeUsd": null
       },

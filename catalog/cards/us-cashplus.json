@@ -27,5 +27,18 @@
     "sourcePage": "https://www.usbank.com/credit-cards.html",
     "alt": "Official front-facing product image of U.S. Bank Cash+ Visa Signature"
   },
-  "accessType": "public"
+  "accessType": "public",
+  "bio": "U.S. Bank Cash+ rewards specific categories you select, with activation and combined spending limits. Its headline 5% is not unlimited.",
+  "rewardStructure": "selectable",
+  "earnRules": [
+    {
+      "label": "Two selected 5% categories",
+      "rate": 5,
+      "unit": "percent",
+      "capAmountUsd": 2000,
+      "capPeriod": "Quarter",
+      "condition": "Combined eligible purchases and quarter-specific category selection"
+    }
+  ],
+  "benefits": []
 }

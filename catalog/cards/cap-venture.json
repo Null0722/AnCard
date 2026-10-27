@@ -27,5 +27,23 @@
     "sourcePage": "https://www.capitalone.com/credit-cards/",
     "alt": "Official front-facing product image of Capital One Venture Rewards"
   },
-  "accessType": "public"
+  "accessType": "public",
+  "bio": "Capital One Venture is a general travel miles card with a flat rewards rate and eligible travel-related account credits. Miles redemption values are not fixed cash equivalents.",
+  "rewardStructure": "flat",
+  "earnRules": [
+    {
+      "label": "Eligible purchases",
+      "rate": 2,
+      "unit": "x"
+    }
+  ],
+  "benefits": [
+    {
+      "name": "Global Entry or TSA PreCheck application fee credit",
+      "type": "global_entry",
+      "amountUsd": 120,
+      "frequencyMonths": 48,
+      "condition": "Up to $120 for a qualifying application fee once every four years; confirm eligibility in issuer benefits guide"
+    }
+  ]
 }
