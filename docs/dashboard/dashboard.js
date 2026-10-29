@@ -11,7 +11,7 @@ let showIllustrations=true;
 byId('show-art').addEventListener('change',event=>{
   showIllustrations=event.target.checked;
   const official=byId('show-official-art');
-  official.disabled=!showIllustrations;
+  official.disabled=!showIllustrations||!cards.some(rightsClearedAsset);
   if(!showIllustrations){official.checked=false;artEnabled=false;}
   render();
 });
