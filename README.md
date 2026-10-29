@@ -146,13 +146,21 @@ Explore and Dashboard now default to **human-QC-reviewed records**. Unreviewed i
 
 At-a-glance card facts are permanently readable on the card's front. AnCard's original, locally drawn concept art appears as an optional **64 × 40 px color thumbnail** rather than a two-sided flip. Reward and welcome-offer explanations are available beside the relevant fields and link to the complete Decoder. Print styles disable transformations and hide interactive controls so exported text stays legible.
 
-Reward and spending filters show counts from the currently human-reviewed cards, with unavailable options disabled. Identity quick presets replace duplicated descriptor controls. The existing three-card, in-memory factual comparison remains available without account creation or browser storage.
+Reward and spending filters show counts from the currently human-reviewed cards, with unavailable options disabled. Identity quick presets replace duplicated descriptor controls. The four-card, in-memory factual comparison workbench is available in both Explore and Dashboard without accounts, ranking or browser storage.
 
-The default view initially contains one approved seed record; the remaining card identities are in the QC queue. Completing a 15–20 card reviewed seed requires additional **manual source verification**, and this UI update does not change any approval flags.
+The library currently contains seven approved card records (2026-10-29 source snapshot). Unapproved entries remain in the QC queue until human verification; this count changes as editorial reviews are completed.
 
 Important: the nine previously sourced issuer image URLs remain in the card records for reference, but cannot load unless there is recorded written permission and explicit visitor opt-in. There is currently no documented permission for these URLs, so the external-art toggle is disabled. This protects visitor privacy and avoids assuming that an accessible online image is licensed for reuse.
 
 See [card imagery rights policy](project/ART-OPTIN.md) and [dashboard design notes](project/DASHBOARD.md).
+
+## Comparison workbench and separate sign-up offer QC (v1.5)
+
+Visitors can select **two to four cards** in memory and open a consistent, side-by-side comparison of sign-up benefits, qualifying spend windows, earning rates, caps, fees, redemption restrictions and issuer evidence. A visible selection dock is provided on Explore and Dashboard. The workbench offers term-focused views, keyboard-accessible controls, horizontal scrolling on narrow screens, and no algorithmic recommendations or stored activity.
+
+A card's `humanVerified` flag does not independently validate a later sign-up promotion. New researched offers live in [catalog/OFFER-QC.json](catalog/OFFER-QC.json) and are not exported to the public directory until a human records their reviewer identity and date and explicitly approves that offer. The publisher then adds a structured `signUpBenefit` only for human-approved cards. Existing Gold/Platinum `welcomeOffer` records remain labeled as dated issuer-source snapshots and are not guaranteed or personalized application offers.
+
+The first [seven-card issuer-offer research packet](project/SIGNUP-OFFERS-2026-10-29.md) documents the difference between regular spend bonuses, Aeroplan's cumulative milestone offer, Amazon Visa's on-approval gift card, channel-specific Atmos promotions and the unavailability of a current Green sign-up offer. The research is **not** a substitute for the independent editorial approval step.
 
 ## Optional official card images
 
