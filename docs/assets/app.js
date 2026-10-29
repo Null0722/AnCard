@@ -72,7 +72,7 @@ function button(textValue,className,attribute,value) {
 }
 
 const lessons={
- rewards:['Reward categories','Merchant codes, spending caps and activation rules can limit the advertised multiplier.','Look for: exclusions, caps and redemption restrictions.'],
+ rewards:['Reward categories','Merchant codes, spending caps and activation rules can limit the advertised multiplier. Points and miles do not have a guaranteed cash value (see Decoder 08: Cents per point).','Look for: exclusions, caps and redemption restrictions.'],
  offer:['Welcome bonuses','Bonuses usually require eligible spending by a deadline. Prior accounts and targeted offers may affect eligibility.','Look for: spending requirements, account history and expiration.']
 };
 function makeFact(label,value,lesson){
@@ -341,7 +341,7 @@ $('#load-more').addEventListener('click',()=>{
 $('#show-art').addEventListener('change',event=>{
   showIllustrations=event.target.checked;
   const licensedOption=$('#show-official-art');
-  licensedOption.disabled=!showIllustrations;
+  licensedOption.disabled=!showIllustrations||!cards.some(rightsClearedAsset);
   if(!showIllustrations){licensedOption.checked=false;artEnabled=false;}
   render();
 });
