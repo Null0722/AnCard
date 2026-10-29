@@ -20,10 +20,17 @@ for(const id of ['products','load-more','issuer','identity','review','show-art',
 assert.match(dashboard,/type="module" src="\.\/dashboard\.js"/);
 assert.match(mainJs,/import .*card-visual\.js/);
 assert.match(dashJs,/import .*card-visual\.js/);
-assert.ok(css.includes('.flip-inner')&&css.includes('.premium-card.is-flipped'),'Missing flip CSS');
+assert.ok(css.includes('.premium-card.is-expanded .flip-back'),'Missing expandable details CSS');
+assert.ok(css.includes('grid-template-rows:0fr')&&css.includes('grid-template-rows:1fr'),'Missing vertical expansion');
 assert.ok(css.includes('prefers-reduced-motion:reduce'),'Reduced-motion fallback required');
-assert.match(mainJs,/front\.inert=toBack;back\.inert=!toBack/);
-assert.match(dashJs,/front\.inert=onBack;back\.inert=!onBack/);
+for(const js of [mainJs,dashJs]){
+ assert.match(js,/details.inert=!isExpanded/);
+ assert.match(js,/aria-expanded/);
+ assert.match(js,/aria-controls/);
+ assert.match(js,/toggleCardDetails/);
+ assert.ok(!js.includes('is-flipped'),'3D card flipping must not return');
+}
+assert.ok(!css.includes('rotateY('),'3D rotations must not return');
 assert.match(mainJs,/visibleLimit\+=24/);
 assert.match(dashJs,/visibleLimit\+=24/);
 assert.match(visual,/written-permission/);
@@ -73,4 +80,4 @@ for(const text of [mainJs,dashJs]){
  assert.ok(!text.includes('localStorage')&&!text.includes('sessionStorage'),'Do not persist browsing state');
 }
 assert.ok(cards.every(c=>c.humanVerified||c.annualFeeUsd===null),'Unapproved annual fees must stay hidden');
-console.log('Premium UI guards passed: '+cards.length+' identity cards; local art, keyboard flip and rights gate.');
+console.log('Premium UI guards passed: '+cards.length+' identity cards; local art, accessible expanding details and rights gate.');
