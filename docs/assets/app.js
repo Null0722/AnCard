@@ -5,7 +5,7 @@ const checks=[...document.querySelectorAll('[data-facet]')];
 const quicks=[...document.querySelectorAll('[data-quick]')];
 const identityQuicks=[...document.querySelectorAll('[data-identity-quick]')];
 const compared=new Set();
-const flipped=new Set();
+const expanded=new Set();
 let artEnabled=false;
 let showIllustrations=true;
 let visibleLimit=24;
@@ -73,15 +73,15 @@ function makeCard(card) {
   const article=node('article','card-row premium-card');
   article.dataset.cardId=card.id;
   article.dataset.identityType=identityType(card);
-  article.classList.toggle('is-flipped',flipped.has(card.id));
-  article.setAttribute('aria-label',card.name+' by '+card.issuer+'. Select to flip for a preview of terms.');
+  const isExpanded=expanded.has(card.id);
+  article.classList.toggle('is-expanded',isExpanded);
   const frame=node('div','flip-frame');
   const inner=node('div','flip-inner');
   const front=node('section','flip-face flip-front');
-  const back=node('section','flip-face flip-back');
-  front.inert=flipped.has(card.id);back.inert=!flipped.has(card.id);
-  front.setAttribute('aria-hidden',String(flipped.has(card.id)));
-  back.setAttribute('aria-hidden',String(!flipped.has(card.id)));
+  const details=node('section','flip-face flip-back');
+  details.id='card-details-'+card.id;
+  details.inert=!isExpanded;
+  details.setAttribute('aria-hidden',String(!isExpanded));
   const top=node('div','flip-top');
   top.append(node('span','issuer-eyebrow',card.issuer));
   top.append(node('span','review-pill',card.humanVerified?'QC reviewed':'Review pending'));
@@ -93,16 +93,22 @@ function makeCard(card) {
   info.append(node('h4','',card.name),node('p','',card.humanVerified?card.summary:'Official issuer reference available. Financial terms awaiting human review.'));
   front.append(info);
   const bottom=node('div','flip-toolbar');
-  bottom.append(button('Flip for a quick look','flip-action','flip',card.id));
+  const expandButton=button(isExpanded?'Hide card details':'Show card details','flip-action','expand',card.id);
+  expandButton.setAttribute('aria-expanded',String(isExpanded));
+  expandButton.setAttribute('aria-controls',details.id);
+  bottom.append(expandButton);
   const compare=button(compared.has(card.id)?'Selected':'Compare','compare-button','compare',card.id);
   compare.setAttribute('aria-pressed',String(compared.has(card.id)));
-  bottom.append(compare);front.append(bottom);
-  back.append(node('div','flip-back-eyebrow','AT A GLANCE'));
-  back.append(node('h4','flip-back-title',card.name));
-  const backInfo=node('div','flip-back-details');
+  bottom.append(compare);
+  front.append(bottom);
+  const content=node('div','flip-back-content');
+  content.append(node('div','flip-back-eyebrow','AT A GLANCE'));
+  content.append(node('h4','flip-back-title',card.name));
+  const facts=node('div','flip-back-details');
   function fact(title,value) {
-    const line=node('div','flip-fact');line.append(node('span','flip-fact-label',title),node('span','flip-fact-value',value));
-    backInfo.append(line);
+    const line=node('div','flip-fact');
+    line.append(node('span','flip-fact-label',title),node('span','flip-fact-value',value));
+    facts.append(line);
   }
   fact('Issuer',card.issuer);
   fact('Human review',card.humanVerified?'Approved source snapshot':'Pending');
@@ -111,27 +117,31 @@ function makeCard(card) {
   fact('Welcome offer',card.humanVerified&&card.welcomeOffer?
     ((card.welcomeOffer.kind==='up_to'?'Up to ':'')+(card.welcomeOffer.unit==='usd'?'$':'')+card.welcomeOffer.amount.toLocaleString()+(card.welcomeOffer.unit==='usd'?'':' '+card.welcomeOffer.unit)):
     'Not yet approved or documented');
-  back.append(backInfo);
-  const backActions=node('div','flip-back-actions');
-  backActions.append(button('Back to front','flip-return','unflip',card.id),button('Open full Decode terms','flip-read','detail',card.id));
+  content.append(facts);
+  const actions=node('div','flip-back-actions');
+  actions.append(button('Open full Decode terms','flip-read','detail',card.id));
   const source=node('a','source-link flip-issuer-source','View issuer source');
   source.href=card.issuerSource;source.target='_blank';source.rel='noopener noreferrer';source.referrerPolicy='no-referrer';
-  backActions.append(source);
-  back.append(backActions);
-  inner.append(front,back);frame.append(inner);article.append(frame);
+  actions.append(source);
+  content.append(actions);
+  details.append(content);
+  inner.append(front,details);
+  frame.append(inner);
+  article.append(frame);
   return article;
 }
-function flipCard(article,toBack) {
+function toggleCardDetails(article) {
   const id=article.dataset.cardId;
   if(!id)return;
-  const front=article.querySelector('.flip-front'),back=article.querySelector('.flip-back');
-  article.classList.toggle('is-flipped',toBack);
-  if(toBack)flipped.add(id);else flipped.delete(id);
-  front.inert=toBack;back.inert=!toBack;
-  front.setAttribute('aria-hidden',String(toBack));
-  back.setAttribute('aria-hidden',String(!toBack));
-  const next=article.querySelector(toBack?'[data-unflip]':'[data-flip]');
-  next?.focus({preventScroll:true});
+  const isExpanded=!expanded.has(id);
+  if(isExpanded)expanded.add(id);else expanded.delete(id);
+  article.classList.toggle('is-expanded',isExpanded);
+  const details=article.querySelector('.flip-back');
+  details.inert=!isExpanded;
+  details.setAttribute('aria-hidden',String(!isExpanded));
+  const control=article.querySelector('[data-expand]');
+  control.setAttribute('aria-expanded',String(isExpanded));
+  control.textContent=isExpanded?'Hide card details':'Show card details';
 }
 
 function activeIdentity() {
@@ -335,9 +345,7 @@ catalogEl.addEventListener('click',event=>{
  if(detail){const card=cards.find(c=>c.id===detail.dataset.detail);if(card)showDetails(card);return;}
  const compare=target.closest('[data-compare]');
  if(compare){const id=compare.dataset.compare;if(compared.has(id))compared.delete(id);else if(compared.size<3)compared.add(id);else{showComparison();return;}render();return;}
- if(target.closest('[data-flip]')){flipCard(article,true);return;}
- if(target.closest('[data-unflip]')){flipCard(article,false);return;}
- if(!article.classList.contains('is-flipped')&&!target.closest('button,a,input,select,summary'))flipCard(article,true);
+ if(target.closest('[data-expand]')){toggleCardDetails(article);return;}
 });
 $('#clear-compare').addEventListener('click',()=>{compared.clear();render();});
 $('#show-compare').addEventListener('click',showComparison);
