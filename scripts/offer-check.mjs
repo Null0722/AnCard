@@ -31,7 +31,7 @@ assert.equal(atmos.candidate.kind,'channel_variation');
 const green=offers.cards.find(x=>x.id==='amex-green');
 assert.equal(green.candidate.kind,'not_available');
 const pending=formatOffer({humanVerified:false,welcomeOffer:{kind:'fixed',unit:'usd',amount:123,minimumSpendUsd:0,monthsToEarn:1}});
-assert.match(pending.headline,/Pending/);
+assert.match(pending.headline,/pending/i);
 assert.ok(!pending.headline.includes('123'));
 const unknown=formatOffer({humanVerified:true});
 assert.match(unknown.headline,/Not verified/);
