@@ -8,6 +8,7 @@ const root=resolve(fileURLToPath(new URL('..',import.meta.url)));
 const source=resolve(root,'catalog/cards');
 const target=resolve(root,'docs/data/cards.json');
 const reviewPath=resolve(root,'catalog/HUMAN-QC.json');
+const offerReviewPath=resolve(root,'catalog/OFFER-QC.json');
 const args=new Set(process.argv.slice(2));
 const demoTones=new Set(['sand','blue','berry','green','slate']);
 const rewards=new Set(['cash_back','points','miles']);
@@ -58,6 +59,27 @@ const filenames=(await readdir(source)).filter(name=>name.endsWith('.json')).sor
 const cards=[];const ids=new Set();
 for(const filename of filenames){const card=JSON.parse(await readFile(resolve(source,filename),'utf8'));validate(card,filename);if(ids.has(card.id))fail(filename,'duplicate id');ids.add(card.id);if(card.status==='published')cards.push(card);}
 const qc=JSON.parse(await readFile(reviewPath,'utf8'));
+const offerQc=JSON.parse(await readFile(offerReviewPath,'utf8'));
+if(offerQc.schemaVersion!==1||!Array.isArray(offerQc.cards))fail('OFFER-QC.json','invalid offer queue');
+const offersById=new Map();
+for(const offer of offerQc.cards){
+ if(!offer||typeof offer.id!=='string'||typeof offer.approved!=='boolean'||!offer.candidate||typeof offer.candidate!=='object')fail('OFFER-QC.json','malformed offer entry');
+ if(offersById.has(offer.id))fail('OFFER-QC.json','duplicate card id '+offer.id);
+ if(!offer.candidate.headline||!['spend','tiered','instant','personalized','not_available','channel_variation'].includes(offer.candidate.kind))fail('OFFER-QC.json','invalid bonus type or headline for '+offer.id);
+ for(const url of [offer.candidate.source,offer.candidate.alternateSource].filter(Boolean)){
+  const parsed=new URL(url);
+  if(parsed.protocol!=='https:'||parsed.search||parsed.hash)fail('OFFER-QC.json','unclean source URL for '+offer.id);
+ }
+ if(!/^\d{4}-\d{2}-\d{2}$/.test(offer.observedAt)||offer.observedAt>new Date().toISOString().slice(0,10))fail('OFFER-QC.json','invalid observation date '+offer.id);
+ if(!Array.isArray(offer.candidate.milestones))fail('OFFER-QC.json','milestones must be an array '+offer.id);
+ for(const step of offer.candidate.milestones){
+  if(!Number.isFinite(step.amount)||step.amount<=0||typeof step.unit!=='string'||!Number.isFinite(step.minimumSpendUsd)||step.minimumSpendUsd<0||(!Number.isInteger(step.monthsToEarn)&&!Number.isInteger(step.windowDays)))fail('OFFER-QC.json','invalid milestone for '+offer.id);
+ }
+ if(offer.approved && (!offer.reviewedBy?.trim()||!/^\d{4}-\d{2}-\d{2}$/.test(offer.reviewedAt||'')||offer.reviewedAt>new Date().toISOString().slice(0,10)||offer.reviewedAt<offer.observedAt)){
+  fail('OFFER-QC.json','approved offer needs human reviewer and valid date for '+offer.id);
+ }
+ offersById.set(offer.id,offer);
+}
 if(qc.schemaVersion!==1||!Array.isArray(qc.cards))fail('HUMAN-QC.json','expected schemaVersion 1 and cards array');
 const byId=new Map();
 for(const entry of qc.cards){
@@ -66,12 +88,21 @@ for(const entry of qc.cards){
  byId.set(entry.id,entry);
 }
 if(byId.size!==cards.length)fail('HUMAN-QC.json','count differs from card records; run npm run qc:sync');
+for(const [id,offer] of offersById){
+ if(!byId.has(id))fail('OFFER-QC.json','unknown card '+id);
+ if(offer.approved&&!byId.get(id).humanVerified)fail('OFFER-QC.json','cannot approve an offer for an unreviewed card '+id);
+}
 let approved=0;
 const publicCards=cards.flatMap(card=>{
  const review=byId.get(card.id);
  if(!review)fail(card.id,'missing QC entry. Run npm run qc:sync');
  if(review.name!==card.name||review.issuer!==card.issuer||JSON.stringify(review.candidate)!==JSON.stringify(candidateFrom(card)))fail(card.id,'card details changed; run npm run qc:sync, then review again');
- if(review.humanVerified){approved++;return [{...card,status:'published',humanVerified:true}];}
+ if(review.humanVerified){
+  approved++;
+  const offer=offersById.get(card.id);
+  return [{...card,status:'published',humanVerified:true,
+    ...(offer?.approved?{signUpBenefit:{...offer.candidate,observedAt:offer.observedAt,reviewedAt:offer.reviewedAt}}:{})}];
+}
  if(review.reviewStage==='research')return []; // Private-to-edit research entry until owner approval
  // Keep identity and source URL for discovery, but hide ALL unapproved financial terms and rates.
  return [{id:card.id,name:card.name,issuer:card.issuer,status:'pending_review',
