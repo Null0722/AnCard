@@ -1,8 +1,47 @@
+<div align="center">
+
 # AnCard
 
-**Know more. Choose for yourself.**
+### Know more. Choose for yourself.
 
-**AnCard is an independent, privacy-first credit card education and discovery project.** We translate confusing credit card terms into plain English and let people explore products using their own criteria - without quizzes designed to pick a winner for them.
+**Explore credit cards with clarity, not pressure.**
+
+AnCard is an independent, privacy-first credit card education and discovery project. Explore cards, understand rewards and fees, decode the fine print, and compare terms on your own terms.
+
+<table>
+<tr>
+<td align="center" width="50%">
+
+### 🌐 Live Website
+
+**[Explore AnCard](https://null0722.github.io/AnCard/)**
+
+Browse the card directory and experience the interactive comparison tools.
+
+</td>
+<td align="center" width="50%">
+
+### 💻 GitHub Repository
+
+**[View Source Code](https://github.com/Null0722/AnCard)**
+
+Explore the open-source project, documentation, and development progress.
+
+</td>
+</tr>
+</table>
+
+**Independent education · Transparent sources · Privacy-first design**
+
+<sub>Educational information only. Not personalized financial advice. Verify current terms with the card issuer.</sub>
+
+</div>
+
+---
+
+## What is AnCard?
+
+Credit card terms should be understandable before you make a decision. AnCard translates complicated conditions into plain language and gives you user-controlled ways to explore products, without a quiz that picks a winner for you.
 
 > **Our mission:** Help everyday consumers understand what a credit card offers, what it costs, and what to watch out for *before* they make a decision.
 
