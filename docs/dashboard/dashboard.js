@@ -32,7 +32,7 @@ function updateQc(progress){
 const pretty=s=>String(s||'').replaceAll('_',' ').replace(/\b\w/g,ch=>ch.toUpperCase());
 function filtered(){
  const fd=new FormData(form);
- const reward=fd.get('reward'),spending=fd.get('spending'),type=fd.get('cardtype'),limit=Number(fd.get('annual'));
+ const reward=fd.get('reward'),spending=fd.get('spending'),limit=Number(fd.get('annual'));
  const issuer=fd.get('issuer'),identity=fd.get('identity'),review=fd.get('review');
  const query=String(fd.get('search')||'').trim().toLocaleLowerCase();
  return cards.filter(c=>
@@ -40,7 +40,6 @@ function filtered(){
    &&(!review||(review==='approved'?c.humanVerified===true:c.humanVerified!==true))
    &&(!reward||c.rewards?.includes(reward))
    &&(!spending||c.categories?.includes(spending))
-   &&(!type||c.features?.includes(type)||identityType(c)===type)
    &&(!query||[c.name,c.issuer,c.airlineProgram].filter(Boolean).some(v=>v.toLocaleLowerCase().includes(query)))
    &&((Number.isFinite(c.annualFeeUsd)&&c.annualFeeUsd<=limit)||(c.annualFeeUsd===null&&limit===1000))
  );
