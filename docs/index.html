@@ -8,8 +8,8 @@
   <meta name="theme-color" content="#111921">
   <title>AnCard  -  Explore cards on your own terms</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./assets/styles.css?v=1.1.0">
-  <script type="module" src="./assets/app.js?v=1.1.0"></script>
+  <link rel="stylesheet" href="./assets/styles.css?v=1.5.0">
+  <script type="module" src="./assets/app.js?v=1.5.0"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -145,7 +145,7 @@
   </main>
   <footer class="site-footer"><div class="shell footer-inner"><span>an/card <span class="footer-detail"> -  Know more. Choose for yourself.</span></span><span>Made for clarity, not clicks. <a href="#top">Back to top ↑</a></span></div></footer>
 
-  <div id="compare-bar" class="compare-bar" hidden><span id="compare-label">0 of 3 cards selected</span><div class="compare-actions"><button type="button" class="text-button" id="clear-compare">Clear</button><button type="button" class="small-primary" id="show-compare">Compare selected →</button></div></div>
+  <div id="compare-bar" class="compare-bar" hidden><span id="compare-label" role="status" aria-live="polite">0 of 4 cards selected</span><div class="compare-actions"><button type="button" class="text-button" id="clear-compare">Clear</button><button type="button" class="small-primary" id="show-compare" disabled>Compare 2-4 cards</button></div></div>
   <div class="dialog-backdrop" id="details-backdrop" hidden><section class="detail-dialog" role="dialog" aria-modal="true" aria-labelledby="detail-title"><div class="dialog-head"><p class="eyebrow">UNDERSTAND THE TERMS</p><button class="close-button" type="button" data-close aria-label="Close details">×</button></div><h2 id="detail-title"></h2><p id="detail-subtitle" class="muted"></p><div id="detail-body"></div><button type="button" class="small-primary" data-close>Return to cards</button></section></div>
   <div class="dialog-backdrop" id="trust-backdrop" hidden><section class="trust-dialog" role="dialog" aria-modal="true" aria-labelledby="trust-title"><span class="welcome-mark">an<span>/</span>card.</span><p class="eyebrow">BEFORE YOU EXPLORE</p><h2 id="trust-title">The cards are yours to choose.</h2><p>Our job is to explain their terms, not steer you toward a paid placement. No accounts, referral commissions or stored filter profiles.</p><p>We may eventually use clearly disclosed contextual ads or accept donations. Neither can influence our listings. Our host processes technical request logs, including IP addresses, for security.</p><p class="trust-important">This is an educational directory, not financial advice. Unapproved card information stays hidden until a human confirms the proposed facts.</p><button type="button" class="primary-button" id="enter-site">I understand  -  explore AnCard →</button><p class="trust-small">Acknowledgment is not permission for tracking. Nothing is saved; this notice reappears on reload.</p></section></div>
 </body>
