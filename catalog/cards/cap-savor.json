@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "3% cash back on groceries, dining and eligible entertainment",
-  "primaryLabel": "3% cash back on groceries, dining and eligible entertainment",
+  "summary": "Earn 3% cash back at eligible grocery stores, on dining, entertainment and popular streaming services; 8% on qualifying Capital One Entertainment and 1% other eligible spending.",
+  "primaryLabel": "Earn 3% cash back at eligible grocery stores, on dining, entertainment and popular streaming services; 8% on qualifying Capital One Entertainment and 1% other eligible spending.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -18,16 +18,36 @@
     "lifestyle"
   ],
   "features": [],
-  "plainEnglish": "3% cash back on groceries, dining and eligible entertainment",
-  "watchOut": "Some superstores and warehouse clubs do not qualify as groceries",
-  "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
-  "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.capitalone.com/credit-cards/",
+  "plainEnglish": "Earn 3% cash back at eligible grocery stores, on dining, entertainment and popular streaming services; 8% on qualifying Capital One Entertainment and 1% other eligible spending.",
+  "watchOut": "Superstores, warehouse clubs and some merchants do not code as eligible grocery spending; the 8% rate is limited to Capital One Entertainment.",
+  "limitations": "Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.",
+  "verifiedAt": "2026-10-29",
+  "issuerSource": "https://www.capitalone.com/credit-cards/savor/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": {
     "url": "https://ecm.capitalone.com/WCM/card/products/new-savor-card-art/mobile.png",
     "sourcePage": "https://www.capitalone.com/credit-cards/",
     "alt": "Official front-facing product image of Capital One Savor Rewards"
   },
-  "accessType": "public"
+  "accessType": "public",
+  "bio": "Capital One Savor Rewards from Capital One. Earn 3% cash back at eligible grocery stores, on dining, entertainment and popular streaming services; 8% on qualifying Capital One Entertainment and 1% other eligible spending.",
+  "rewardStructure": "tiered",
+  "earnRules": [
+    {
+      "label": "Grocery stores, dining, entertainment and eligible streaming",
+      "rate": 3,
+      "unit": "percent",
+      "condition": "Qualifying merchant categories and subscription services only"
+    },
+    {
+      "label": "Qualifying Capital One Entertainment purchases",
+      "rate": 8,
+      "unit": "percent"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1,
+      "unit": "percent"
+    }
+  ]
 }

@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "1.5% base cash back; 3% dining/drugstores; 5% Chase Travel",
-  "primaryLabel": "1.5% base cash back; 3% dining/drugstores; 5% Chase Travel",
+  "summary": "Earn 5% on eligible Chase Travel bookings, 3% at eligible restaurants and drugstores, and 1.5% on other eligible purchases with no annual fee.",
+  "primaryLabel": "Earn 5% on eligible Chase Travel bookings, 3% at eligible restaurants and drugstores, and 1.5% on other eligible purchases with no annual fee.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -17,11 +17,11 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "1.5% base cash back; 3% dining/drugstores; 5% Chase Travel",
-  "watchOut": "Enhanced rates have merchant and booking eligibility rules",
-  "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
-  "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.chase.com/personal/credit-cards/freedom/unlimited",
+  "plainEnglish": "Earn 5% on eligible Chase Travel bookings, 3% at eligible restaurants and drugstores, and 1.5% on other eligible purchases with no annual fee.",
+  "watchOut": "5% travel requires Chase Travel purchases; restaurant/drugstore merchant coding and promotional conditions can vary.",
+  "limitations": "Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.",
+  "verifiedAt": "2026-10-29",
+  "issuerSource": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": {
     "url": "https://creditcards.chase.com/content/dam/jpmc-marketplace/card-art/freedom%20unlimited-banner.png",
@@ -64,5 +64,24 @@
     "foreignTransactionFeePct": null,
     "notes": "0% purchase intro APR for 15 months from account opening in the observed offer; balance transfer fees and post-promo variable APR apply.",
     "source": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited"
-  }
+  },
+  "bio": "Chase Freedom Unlimited from Chase. Earn 5% on eligible Chase Travel bookings, 3% at eligible restaurants and drugstores, and 1.5% on other eligible purchases with no annual fee.",
+  "rewardStructure": "tiered",
+  "earnRules": [
+    {
+      "label": "Travel through Chase Travel",
+      "rate": 5,
+      "unit": "percent"
+    },
+    {
+      "label": "Eligible dining and drugstores",
+      "rate": 3,
+      "unit": "percent"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1.5,
+      "unit": "percent"
+    }
+  ]
 }

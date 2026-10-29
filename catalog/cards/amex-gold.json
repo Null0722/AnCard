@@ -5,41 +5,66 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "4X Membership Rewards points at restaurants up to $50,000 per calendar year and eligible U.S. supermarkets up to $25,000.",
-  "primaryLabel": "4X Membership Rewards points at restaurants up to $50,000 per calendar year and eligible U.S. supermarkets up to $25,000.",
+  "summary": "4X points at restaurants (up to $50,000/calendar year) and eligible U.S. supermarkets (up to $25,000/calendar year); 5X prepaid Amex Travel hotels, 3X flights, 2X eligible additional travel.",
+  "primaryLabel": "4X points at restaurants (up to $50,000/calendar year) and eligible U.S. supermarkets (up to $25,000/calendar year); 5X prepaid Amex Travel hotels, 3X flights, 2X eligible additional travel.",
   "feeSummary": "$325 annual fee",
   "annualFeeUsd": 325,
   "rewards": [
     "points"
   ],
   "categories": [
-    "dining"
+    "dining",
+    "groceries",
+    "travel"
   ],
   "features": [],
-  "plainEnglish": "4X Membership Rewards points at restaurants up to $50,000 per calendar year and eligible U.S. supermarkets up to $25,000.",
-  "watchOut": "Restaurant and supermarket rates have separate annual caps; enrollment is required for some statement credits.",
-  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
-  "verifiedAt": "2026-10-27",
+  "plainEnglish": "4X points at restaurants (up to $50,000/calendar year) and eligible U.S. supermarkets (up to $25,000/calendar year); 5X prepaid Amex Travel hotels, 3X flights, 2X eligible additional travel.",
+  "watchOut": "Restaurant and U.S. supermarket rewards have separate annual caps; travel multipliers require eligible booking channels; selected statement credits require enrollment.",
+  "limitations": "Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.",
+  "verifiedAt": "2026-10-29",
   "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "American Express Gold from American Express. 4X Membership Rewards points at restaurants up to $50,000 per calendar year and eligible U.S. supermarkets up to $25,000.",
+  "bio": "American Express Gold from American Express. 4X points at restaurants (up to $50,000/calendar year) and eligible U.S. supermarkets (up to $25,000/calendar year); 5X prepaid Amex Travel hotels, 3X flights, 2X eligible additional travel.",
   "rewardStructure": "tiered",
   "earnRules": [
     {
-      "label": "Restaurants",
+      "label": "Restaurants worldwide",
       "rate": 4,
       "unit": "x",
       "capAmountUsd": 50000,
-      "capPeriod": "Calendar year"
+      "capPeriod": "Calendar year",
+      "condition": "Then 1X; merchant coding and eligible purchases apply"
     },
     {
-      "label": "U.S. supermarkets",
+      "label": "Eligible U.S. supermarkets",
       "rate": 4,
       "unit": "x",
       "capAmountUsd": 25000,
-      "capPeriod": "Calendar year"
+      "capPeriod": "Calendar year",
+      "condition": "Then 1X; excludes ineligible wholesale and big-box purchases"
+    },
+    {
+      "label": "Prepaid hotels through Amex Travel",
+      "rate": 5,
+      "unit": "x",
+      "condition": "Use eligible Amex Travel booking channels"
+    },
+    {
+      "label": "Eligible flights direct with airlines or Amex Travel",
+      "rate": 3,
+      "unit": "x"
+    },
+    {
+      "label": "Eligible prepaid car rentals and cruises through Amex Travel",
+      "rate": 2,
+      "unit": "x"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1,
+      "unit": "x"
     }
   ],
   "benefits": [],

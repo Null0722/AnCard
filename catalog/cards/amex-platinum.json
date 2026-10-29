@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "5X points on qualifying flights and prepaid hotels booked through Amex Travel",
-  "primaryLabel": "5X points on qualifying flights and prepaid hotels booked through Amex Travel",
+  "summary": "5X Membership Rewards points on eligible airline-direct or Amex Travel flights (up to $500,000/year combined) and prepaid hotels booked through Amex Travel; 1X other eligible purchases.",
+  "primaryLabel": "5X Membership Rewards points on eligible airline-direct or Amex Travel flights (up to $500,000/year combined) and prepaid hotels booked through Amex Travel; 1X other eligible purchases.",
   "feeSummary": "$895 annual fee",
   "annualFeeUsd": 895,
   "rewards": [
@@ -16,11 +16,11 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "5X points on qualifying flights and prepaid hotels booked through Amex Travel",
-  "watchOut": "5X is subject to booking limits; statement credits and lounge access have separate rules",
-  "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
-  "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.americanexpress.com/us/credit-cards/",
+  "plainEnglish": "5X Membership Rewards points on eligible airline-direct or Amex Travel flights (up to $500,000/year combined) and prepaid hotels booked through Amex Travel; 1X other eligible purchases.",
+  "watchOut": "5X flight purchases are capped at $500,000 each calendar year; hotel multipliers require prepaid Amex Travel bookings; card benefits and credits have separate conditions.",
+  "limitations": "Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.",
+  "verifiedAt": "2026-10-29",
+  "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
@@ -56,5 +56,27 @@
       }
     ],
     "source": "https://www.americanexpress.com/en-us/credit-cards/credit-intel/american-express-points-value/"
-  }
+  },
+  "bio": "American Express Platinum from American Express. 5X Membership Rewards points on eligible airline-direct or Amex Travel flights (up to $500,000/year combined) and prepaid hotels booked through Amex Travel; 1X other eligible purchases.",
+  "rewardStructure": "tiered",
+  "earnRules": [
+    {
+      "label": "Flights booked directly with airlines or Amex Travel",
+      "rate": 5,
+      "unit": "x",
+      "capAmountUsd": 500000,
+      "capPeriod": "Calendar year",
+      "condition": "Combined eligible flight purchase cap, then 1X"
+    },
+    {
+      "label": "Prepaid hotels through Amex Travel",
+      "rate": 5,
+      "unit": "x"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1,
+      "unit": "x"
+    }
+  ]
 }

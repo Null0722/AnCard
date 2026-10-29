@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "5X points on eligible Chase Travel bookings",
-  "primaryLabel": "5X points on eligible Chase Travel bookings",
+  "summary": "5X Chase Travel, 3X eligible dining, selected gas/EV/vacation homes, streaming and online groceries; 2X other travel and 1X other eligible purchases.",
+  "primaryLabel": "5X Chase Travel, 3X eligible dining, selected gas/EV/vacation homes, streaming and online groceries; 2X other travel and 1X other eligible purchases.",
   "feeSummary": "$95 annual fee",
   "annualFeeUsd": 95,
   "rewards": [
@@ -14,19 +14,58 @@
   ],
   "categories": [
     "travel",
-    "dining"
+    "dining",
+    "gas",
+    "online",
+    "lifestyle"
   ],
   "features": [],
-  "plainEnglish": "5X points on eligible Chase Travel bookings",
-  "watchOut": "Reward earning and redemption depend on specific issuer rules",
-  "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
-  "verifiedAt": "2026-10-27",
-  "issuerSource": "https://creditcards.chase.com/",
+  "plainEnglish": "5X Chase Travel, 3X eligible dining, selected gas/EV/vacation homes, streaming and online groceries; 2X other travel and 1X other eligible purchases.",
+  "watchOut": "Newly expanded 3X categories can have brand, merchant and product exclusions; 5X requires Chase Travel, while other travel generally earns 2X.",
+  "limitations": "Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.",
+  "verifiedAt": "2026-10-29",
+  "issuerSource": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": {
     "url": "https://creditcards.chase.com/content/dam/jpmc-marketplace/card-art/sapphire_preferred_card.png",
     "sourcePage": "https://creditcards.chase.com/check-for-preapproved-offers",
     "alt": "Official front-facing card image of Chase Sapphire Preferred"
   },
-  "accessType": "public"
+  "accessType": "public",
+  "bio": "Chase Sapphire Preferred from Chase. 5X Chase Travel, 3X eligible dining, selected gas/EV/vacation homes, streaming and online groceries; 2X other travel and 1X other eligible purchases.",
+  "rewardStructure": "tiered",
+  "earnRules": [
+    {
+      "label": "Eligible Chase Travel bookings",
+      "rate": 5,
+      "unit": "x"
+    },
+    {
+      "label": "Dining",
+      "rate": 3,
+      "unit": "x"
+    },
+    {
+      "label": "Selected gas, EV charging and vacation-home purchases",
+      "rate": 3,
+      "unit": "x",
+      "condition": "Eligibility and participating brands apply"
+    },
+    {
+      "label": "Eligible streaming and online grocery purchases",
+      "rate": 3,
+      "unit": "x",
+      "condition": "Exclusions apply"
+    },
+    {
+      "label": "Other travel purchases",
+      "rate": 2,
+      "unit": "x"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1,
+      "unit": "x"
+    }
+  ]
 }

@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "5% cash back in activated rotating categories",
-  "primaryLabel": "5% cash back in activated rotating categories",
+  "summary": "5% cash back on rotating quarterly categories after activation (up to $1,500 combined quarterly eligible spend), 5% Chase Travel, 3% dining/drugstores, and 1% other purchases.",
+  "primaryLabel": "5% cash back on rotating quarterly categories after activation (up to $1,500 combined quarterly eligible spend), 5% Chase Travel, 3% dining/drugstores, and 1% other purchases.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -17,11 +17,11 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "5% cash back in activated rotating categories",
-  "watchOut": "Quarterly activation and a combined $1,500 bonus-category spending limit apply",
-  "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
-  "verifiedAt": "2026-10-27",
-  "issuerSource": "https://creditcards.chase.com/",
+  "plainEnglish": "5% cash back on rotating quarterly categories after activation (up to $1,500 combined quarterly eligible spend), 5% Chase Travel, 3% dining/drugstores, and 1% other purchases.",
+  "watchOut": "Quarterly bonus categories require activation and are capped at $1,500 in combined eligible quarterly spending; merchant posting deadlines and category exclusions matter.",
+  "limitations": "Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.",
+  "verifiedAt": "2026-10-29",
+  "issuerSource": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": {
     "url": "https://creditcards.chase.com/content/dam/jpmc-marketplace/card-art/freedom-flex-2026.png",
@@ -29,16 +29,31 @@
     "alt": "Official front-facing card image of Chase Freedom Flex"
   },
   "accessType": "public",
-  "bio": "Chase Freedom Flex combines activated quarterly bonus categories with ongoing rewards for some everyday purchase types. Activation, the eligible category list, merchant coding and the quarterly spending cap matter.",
+  "bio": "Chase Freedom Flex from Chase. 5% cash back on rotating quarterly categories after activation (up to $1,500 combined quarterly eligible spend), 5% Chase Travel, 3% dining/drugstores, and 1% other purchases.",
   "rewardStructure": "rotating",
   "earnRules": [
     {
-      "label": "Activated quarterly spending categories",
+      "label": "Activated quarterly bonus categories",
       "rate": 5,
       "unit": "percent",
       "capAmountUsd": 1500,
       "capPeriod": "Quarter",
-      "condition": "Activate eligible quarter's categories before the deadline"
+      "condition": "Activation required; combined eligible quarterly category purchases, then 1%"
+    },
+    {
+      "label": "Travel through Chase Travel",
+      "rate": 5,
+      "unit": "percent"
+    },
+    {
+      "label": "Dining and drugstores",
+      "rate": 3,
+      "unit": "percent"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1,
+      "unit": "percent"
     }
   ],
   "benefits": [],
