@@ -29,6 +29,6 @@
 3. For multi-step offers, confirm whether thresholds are cumulative totals or **additional** amounts. For channel-dependent alternatives, approve only a precise applicable version, not two simultaneous options.
 4. Verify issuer pricing and full cardholder terms separately. The amount of a points bonus is not equivalent to a fixed cash value.
 5. Record the reviewer identity and current date in `catalog/OFFER-QC.json`, set `approved: true` only when complete, and run `npm run build && npm test`. An approval-only PR can trigger safe automatic publication on main; non-approval changes require committed regenerated artifacts.
-6. After publication, inspect Explore and Dashboard workbench at mobile and desktop widths, plus issuer source links and the timestamped bonus caveat.
+6. After publication, inspect the Explore comparison workbench at mobile and desktop widths, plus issuer source links and the timestamped bonus caveat.
 
 **Limitation:** Offer pages may be targeted, expired, cached or rendered with overlapping old and new figures. This research packet is not an assertion that any individual applicant is eligible or that any source offer remains available after the research date.

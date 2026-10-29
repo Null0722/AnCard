@@ -106,7 +106,7 @@ See the [human QC instructions](project/HUMAN-QC.md) for the complete process.
 
 ## Local discovery improvements
 
-The card directory and comparison dashboard provide a fast **search by issuer, card name, or airline program**, plus an editorial-status filter. Searches run entirely inside the loaded static catalog. No query or selection is transmitted to a server. The dashboard Clear Filters action keeps your side-by-side selections.
+Explore provides **search by issuer, card name, or airline program** and an editorial-status filter on the same page as the facts and comparison workbench. Searches run entirely inside the loaded static catalog. No query or selection is transmitted to a server. Clearing filters leaves your in-memory comparison selections intact.
 
 Catalog tests also verify that unapproved monetary and reward details are absent from public JSON and that em dashes have not been introduced into the repository.
 
@@ -142,21 +142,21 @@ These are not bank-approved or affiliated visualizations. The cards use no offic
 
 ## Reviewed-first, fact-first cards (v1.1)
 
-Explore and Dashboard now default to **human-QC-reviewed records**. Unreviewed identities remain visible only through an explicit QC-queue disclosure or editorial-status opt-in. Neither view treats an unknown fee, multiplier or offer as zero or as a verified fact. The owner must still check each new candidate against current official issuer terms before its review flag can be approved.
+Explore defaults to **human-QC-reviewed records**. Unreviewed identities remain visible only through an explicit QC-queue disclosure or editorial-status opt-in. Neither view treats an unknown fee, multiplier or offer as zero or as a verified fact. The owner must still check each new candidate against current official issuer terms before its review flag can be approved.
 
 At-a-glance card facts are permanently readable on the card's front. AnCard's original, locally drawn concept art appears as an optional **64 × 40 px color thumbnail** rather than a two-sided flip. Reward and welcome-offer explanations are available beside the relevant fields and link to the complete Decoder. Print styles disable transformations and hide interactive controls so exported text stays legible.
 
-Reward and spending filters show counts from the currently human-reviewed cards, with unavailable options disabled. Identity quick presets replace duplicated descriptor controls. The four-card, in-memory factual comparison workbench is available in both Explore and Dashboard without accounts, ranking or browser storage.
+Reward and spending filters show counts from the currently human-reviewed cards, with unavailable options disabled. Identity quick presets replace duplicated descriptor controls. The four-card, in-memory factual comparison workbench lives on Explore without accounts, ranking or browser storage.
 
 The library currently contains seven approved card records (2026-10-29 source snapshot). Unapproved entries remain in the QC queue until human verification; this count changes as editorial reviews are completed.
 
 Important: the nine previously sourced issuer image URLs remain in the card records for reference, but cannot load unless there is recorded written permission and explicit visitor opt-in. There is currently no documented permission for these URLs, so the external-art toggle is disabled. This protects visitor privacy and avoids assuming that an accessible online image is licensed for reuse.
 
-See [card imagery rights policy](project/ART-OPTIN.md) and [dashboard design notes](project/DASHBOARD.md).
+See the [card imagery rights policy](project/ART-OPTIN.md).
 
 ## Comparison workbench and separate sign-up offer QC (v1.5)
 
-Visitors can select **two to four cards** in memory and open a consistent, side-by-side comparison of sign-up benefits, qualifying spend windows, earning rates, caps, fees, redemption restrictions and issuer evidence. A visible selection dock is provided on Explore and Dashboard. The workbench offers term-focused views, keyboard-accessible controls, horizontal scrolling on narrow screens, and no algorithmic recommendations or stored activity.
+Visitors can select **two to four cards** in memory and open a consistent, side-by-side comparison of sign-up benefits, qualifying spend windows, earning rates, caps, fees, redemption restrictions and issuer evidence. A visible selection dock is provided on Explore. The workbench offers term-focused views, keyboard-accessible controls, horizontal scrolling on narrow screens, and no algorithmic recommendations or stored activity.
 
 A card's `humanVerified` flag does not independently validate a later sign-up promotion. New researched offers live in [catalog/OFFER-QC.json](catalog/OFFER-QC.json) and are not exported to the public directory until a human records their reviewer identity and date and explicitly approves that offer. The publisher then adds a structured `signUpBenefit` only for human-approved cards. Existing Gold/Platinum `welcomeOffer` records remain labeled as dated issuer-source snapshots and are not guaranteed or personalized application offers.
 
@@ -203,9 +203,9 @@ Then open **http://localhost:8080**. A local HTTP server is needed because the c
 
 The validator checks file structure and required publication metadata; it cannot replace independent human verification of financial terms.
 
-## Discovery dashboard and banking research
+## One-page discovery and future filters
 
-A separate, privacy-first [discovery dashboard](docs/dashboard/) is being developed to support explicit card filtering and factual comparisons. Current records are fictional examples. Planned checking, savings, relationship-tier and invite-only research is documented in [the ten-institution source register](project/TOP10-RESEARCH.md) and [modular catalog model](project/CATALOG-V2.md); it is not yet a verified public banking directory.
+The standalone Dashboard route and its JavaScript have been retired. **Explore is the single visitor-facing interface** for card search, issuer/status controls, reward and spending filters, the QC queue, Decode Terms, and the 2-4 card comparison workbench. Additional filter improvements will be designed for Explore later, not added as another page. Planned checking, savings, relationship-tier and invite-only research remains in the [ten-institution source register](project/TOP10-RESEARCH.md) and [modular catalog model](project/CATALOG-V2.md); it is not a verified public banking directory.
 
 ## Where we're going
 

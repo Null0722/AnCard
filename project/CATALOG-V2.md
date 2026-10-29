@@ -55,6 +55,6 @@ Relationship program: own record with tier-specific `qualification` (assets/bala
 
 ## Rollout
 
-Phase 1: preserve legacy v1 card directory; introduce catalog v2 as an independently reviewed contract, add dashboard and research index.
+Phase 1: preserve the existing Explore directory as the only public interface; introduce catalog v2 as an independently reviewed data contract and research index, without a second dashboard.
 Phase 2: verified first-party card records and publish-aware frontend filters.
 Phase 3: manually vetted checking/savings and relationship records, only after review and clear separation by product type.

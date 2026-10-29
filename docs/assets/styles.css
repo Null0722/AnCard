@@ -26,9 +26,6 @@
 .qc-copy{display:grid;gap:4px;min-width:0}.qc-copy span{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--mint);font-weight:750}.qc-copy strong{font-size:13px;line-height:1.3}.qc-copy small{font-size:11px;line-height:1.35;color:var(--muted)}
 .topic-filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:10px}.topic-chip{min-width:0;text-align:center;white-space:normal;min-height:44px}
 .catalog-layout{min-width:0}.catalog-main{min-width:0}
-.dashboard-qc{max-width:355px;margin:0 0 22px}
-.compare-scroller{max-width:100%;overflow-x:auto;overscroll-behavior-inline:contain;border-radius:10px}
-.comparison-table{min-width:580px}.comparison-table th,.comparison-table td{overflow-wrap:anywhere;vertical-align:top}
 @media(max-width:1020px){.browse-heading{grid-template-columns:1fr}.browse-heading .qc-summary{max-width:340px}}
 @media(max-width:740px){.topic-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.browse-heading{gap:15px}.qc-summary{padding:12px 14px}.qc-ring{height:66px;width:66px}.browse-intro{max-width:none}}
 @media(max-width:375px){.topic-filters{grid-template-columns:1fr 1fr}.topic-chip{font-size:11px;padding:10px 5px}.qc-copy strong{font-size:12px}}
@@ -57,7 +54,7 @@
 .card-row.premium-card:hover,.card-row.premium-card:focus-within{border-color:#99bfd5}
 .card-overview-header{display:flex;align-items:flex-start;justify-content:space-between;gap:15px;min-width:0}
 .card-heading{display:flex;flex-direction:column;align-items:flex-start;gap:5px;min-width:0;flex:1}
-.card-heading h4,.dashboard-product .card-heading h3{font-size:19px;line-height:1.3;letter-spacing:-.3px;font-weight:800;margin:0;color:#f3f8fd;overflow-wrap:anywhere}
+.card-heading h4{font-size:19px;line-height:1.3;letter-spacing:-.3px;font-weight:800;margin:0;color:#f3f8fd;overflow-wrap:anywhere}
 .issuer-eyebrow{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#b9d5e3}
 .review-pill{display:inline-block;border:1px solid #5c8387;border-radius:99px;color:#d8f4ea;background:#294748;padding:4px 9px;font-size:11px;font-weight:750}
 .awaiting-review .review-pill{border-color:#667783;background:#2e3d48;color:#dae4e9}
@@ -283,9 +280,9 @@
  .show-more-cards,.site-footer{display:none!important}
  .shell{padding:0!important;max-width:none!important}
  .catalog-layout{display:block!important}
- .card-results,.dashboard-card-grid{display:block!important}
- .card-row.premium-card,.dashboard-product.premium-card{display:block!important;break-inside:avoid;page-break-inside:avoid;background:#fff!important;border:1px solid #888!important;box-shadow:none!important;color:#111!important;margin:0 0 12pt;padding:12pt!important;transform:none!important;filter:none!important}
- .card-heading h4,.card-fact-value,.card-fact-label,.issuer-eyebrow,.dashboard-product h3{color:#111!important;text-shadow:none!important}
+ .card-results{display:block!important}
+ .card-row.premium-card{display:block!important;break-inside:avoid;page-break-inside:avoid;background:#fff!important;border:1px solid #888!important;box-shadow:none!important;color:#111!important;margin:0 0 12pt;padding:12pt!important;transform:none!important;filter:none!important}
+ .card-heading h4,.card-fact-value,.card-fact-label,.issuer-eyebrow{color:#111!important;text-shadow:none!important}
  .card-art-thumb{display:none!important}
  .flip-inner,.flip-back,.flip-front,.card-back,.card-inner{transform:none!important;filter:none!important;backface-visibility:visible!important;perspective:none!important}
  .card-fact{border-bottom:1px solid #ddd}
