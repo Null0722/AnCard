@@ -1,5 +1,6 @@
 // AnCard keeps browsing state in memory only. No accounts, analytics or saved choices.
 import {createCardVisual, identityType, rightsClearedAsset} from './card-visual.js';
+import {MAX_COMPARE,createComparisonWorkbench,formatOffer} from './comparison-workbench.js';
 const catalogEl=document.querySelector('#card-results');
 const checks=[...document.querySelectorAll('[data-facet]')];
 const quicks=[...document.querySelectorAll('[data-quick]')];
@@ -113,7 +114,9 @@ function makeCard(card){
    const facts=node('div','card-preview-facts');
    facts.append(makeFact('Annual fee',card.feeSummary||'Not verified'));
    facts.append(makeFact('Reward overview',card.primaryLabel||'Not documented','rewards'));
-   facts.append(makeFact('Welcome offer',card.welcomeOffer?offerDescription(card.welcomeOffer):'Not documented in the reviewed snapshot','offer'));
+   facts.append(makeFact('Welcome offer',formatOffer(card).headline,'offer'));
+   const observed=formatOffer(card).observedAt;
+   if(observed)facts.append(node('p','offer-date','Issuer offer snapshot: '+observed+'. Check current availability.'));
    article.append(facts);
  }else{
    article.append(node('p','card-queue-note','Research identity only. Fees, rates and bonuses remain hidden until human source review.'));
@@ -122,6 +125,9 @@ function makeCard(card){
  if(reviewed)actions.append(button('Decode full terms','flip-read','detail',card.id));
  const compare=button(compared.has(card.id)?'✓ Added to compare':'+ Compare','compare-button','compare',card.id);
  compare.setAttribute('aria-pressed',String(compared.has(card.id)));
+ if(compared.size>=MAX_COMPARE&&!compared.has(card.id)){
+  compare.disabled=true;compare.title='Remove a selected card before adding another; maximum four cards.';
+ }
  actions.append(compare,issuerLink(card));article.append(actions);
  return article;
 }
@@ -195,7 +201,9 @@ function render(){
  $('#load-more').textContent='Show more cards ('+Math.max(0,filtered.length-visible.length)+' remaining)';
  $('#active-filter-count').textContent=activeFiltersCount()+' active';
  $('#compare-bar').hidden=compared.size===0;
- $('#compare-label').textContent=compared.size+' of 3 cards selected for factual comparison';
+ $('#compare-label').textContent=compared.size===1?'1 selected; add at least one more':compared.size+' of '+MAX_COMPARE+' cards selected for factual comparison';
+ $('#show-compare').disabled=compared.size<2;
+ $('#show-compare').textContent=compared.size>=2?'Compare '+compared.size+' cards':'Select another card';
  identityQuicks.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.identityQuick===identitySelection)));
  quicks.forEach(b=>{const input=checks.find(c=>c.value===b.dataset.quick);b.setAttribute('aria-pressed',String(Boolean(input?.checked)));});
  updateFacetCounts();renderQueue();
@@ -205,9 +213,11 @@ function closeModal(){if(!modalOpen || modalOpen.id==='trust-backdrop')return;mo
 function detailField(container,title,body){const a=node('article');a.append(node('h3','',title),node('p','',body));container.append(a);}
 
 function offerDescription(offer){
- if(!offer)return 'No current card-specific welcome offer has been confirmed in this record.';
+ if(!offer)return 'No independently documented sign-up offer in this snapshot. This is not a zero-dollar bonus.';
  const amount=(offer.unit==='usd'?'$':'')+Number(offer.amount).toLocaleString()+(offer.unit==='usd'?'':' '+offer.unit);
- return (offer.kind==='up_to'?'As high as ':'')+amount+' after $'+Number(offer.minimumSpendUsd).toLocaleString()+' eligible spending in '+offer.monthsToEarn+' months. '+(offer.description||'Confirm current issuer rules.');
+ return (offer.kind==='up_to'?'As high as ':'')+amount+' after $'+Number(offer.minimumSpendUsd).toLocaleString()+
+  ' eligible spending in '+offer.monthsToEarn+' months. '+(offer.description||'Check the current issuer terms.')+
+  ' Source observed '+(offer.observedAt||'date not recorded')+'. Not guaranteed.';
 }
 function decodeSection(parent,title,context,rows,expanded){
  const panel=node('details','decode-section');panel.open=expanded;
@@ -220,14 +230,16 @@ function decodeSection(parent,title,context,rows,expanded){
 const approvalContext='Credit score alone does not determine approval. Issuers consider your credit history, income or available assets, current obligations, and their underwriting standards.';
 const limitContext='Starting limits are generally set after application. There is no reliable card-specific typical opening limit without issuer evidence.';
 function showDetails(card){
+ $('#details-backdrop .detail-dialog').classList.remove('is-workbench');
  const ok=card.humanVerified===true;
  const pending='Issuer-specific amount is pending human review.';
  $('#detail-title').textContent=card.name;
  $('#detail-subtitle').textContent=card.issuer+' | '+(ok?'Human QC approved':'Human review pending');
  const body=$('#detail-body');body.replaceChildren();
  body.append(node('p','dialog-lede',ok?'This card has a dated issuer-source snapshot. Always confirm current terms.':'Specific bonus amounts, fees and benefits stay hidden until reviewed. You can still learn what each term means below.'));
- const g=ok?card.approvalGuidance:null,price=ok?card.pricingDetail:null,red=ok?card.redemptionDetail:null,offer=ok?card.welcomeOffer:null;
- const bonus=ok?offerDescription(offer):pending;
+ const g=ok?card.approvalGuidance:null,price=ok?card.pricingDetail:null,red=ok?card.redemptionDetail:null;
+ const offerInfo=formatOffer(card);
+ const bonus=offerInfo.headline;
  const rewardRules=ok?(card.earnRules?.length?card.earnRules.map(x=>x.label+': '+earnText(x)).join(' | '):'No quantified earning rates in this record.'):pending;
  const points=ok?(red?.examples?.length?red.examples.map(x=>x.method+': '+x.centsPerPoint+' cents per point. '+x.notes).join(' | '):'No issuer-confirmed redemption value in this record.'):pending;
  const benefits=ok?(card.benefits?.length?card.benefits.map(x=>x.name+': '+benefitText(x)).join(' | '):'No quantified benefits documented. This does not mean the card has none.'):pending;
@@ -238,7 +250,11 @@ function showDetails(card){
  ],true);
  decodeSection(body,'Welcome and targeted bonuses','Public offers, personalized offers and invitation-only products are distinct.',[
   ['Public welcome offer',bonus],
-  ['Spending target and deadline',ok&&offer?'$'+offer.minimumSpendUsd.toLocaleString()+' in '+offer.monthsToEarn+' months of qualifying purchases.':pending],
+  ['Eligible purchase target',offerInfo.spend],
+  ['Time to qualify',offerInfo.timing],
+  ['Bonus eligibility',offerInfo.eligibility],
+  ['Offer status',offerInfo.status],
+  ['Offer observation date',offerInfo.observedAt||'No independently reviewed offer date recorded'],
   ['Targeted or personalized offer',ok?card.targetedOffers?.description||'Not documented for this card.':pending],
   ['Invitation-only offer',ok?card.inviteOnlyOffer?.description||'No documented offer; an invitation does not guarantee approval.':pending],
   ['Fine print to check','Previous-cardholder restrictions, offer channel, eligible purchases, application timing, enrollment and expiration.']
@@ -273,43 +289,35 @@ function showDetails(card){
  const source=node('a','source-link','Read the official issuer source');
  source.href=card.issuerSource;source.target='_blank';source.rel='noopener noreferrer';source.referrerPolicy='no-referrer';body.append(source);
  if(ok&&Array.isArray(card.additionalSources))for(const item of card.additionalSources){if(!item?.url?.startsWith('https://'))continue;const link=node('a','source-link',item.label||'Additional official document');link.href=item.url;link.target='_blank';link.rel='noopener noreferrer';link.referrerPolicy='no-referrer';body.append(link);}
+ if(ok&&offerInfo.source){const offerSource=node('a','source-link','View issuer sign-up offer evidence');offerSource.href=offerInfo.source;offerSource.target='_blank';offerSource.rel='noopener noreferrer';offerSource.referrerPolicy='no-referrer';body.append(offerSource);}
  body.append(node('p','dialog-note','Educational information only. Current issuer agreements determine interest, fees, benefits and eligibility.'));
  showModal($('#details-backdrop'),$('#details-backdrop [data-close]'));
 }
 
-function showComparison() {
- const chosen=cards.filter(c=>compared.has(c.id));if(!chosen.length)return;
- $('#detail-title').textContent='Compare your selections';
- $('#detail-subtitle').textContent='Neutral side-by-side facts, without rankings or card recommendations.';
- const body=$('#detail-body');body.replaceChildren();
- const table=node('table','comparison-table');const thead=node('thead');const head=node('tr');head.append(node('th','','Attribute'));
- chosen.forEach(c=>head.append(node('th','',c.name)));thead.append(head);table.append(thead);
- const unknown='Pending human review';
- const earns=c=>!c.humanVerified?unknown:Array.isArray(c.earnRules)&&c.earnRules.length?c.earnRules.map(r=>r.label+': '+earnText(r)).join('; '):'Not separately quantified';
- const perks=c=>!c.humanVerified?unknown:Array.isArray(c.benefits)&&c.benefits.length?c.benefits.map(p=>p.name+': '+benefitText(p)).join('; '):'No quantified benefits in this record';
- const rows=[
-  ['Human QC',c=>c.humanVerified?'Human reviewed':'Pending review'],
-  ['Annual fee',c=>!c.humanVerified?unknown:c.annualFeeUsd===null?'Not verified':'$'+c.annualFeeUsd],
-  ['Public welcome offer',c=>c.humanVerified?offerDescription(c.welcomeOffer):unknown],
-  ['Minimum spend / bonus deadline',c=>!c.humanVerified?unknown:c.welcomeOffer?'$'+c.welcomeOffer.minimumSpendUsd.toLocaleString()+' in '+c.welcomeOffer.monthsToEarn+' months':'Not verified'],
-  ['Targeted offers',c=>!c.humanVerified?unknown:c.targetedOffers?.description||'No specific targeted offer confirmed'],
-  ['Invite-only offer',c=>!c.humanVerified?unknown:c.inviteOnlyOffer?.description||'Not documented'],
-  ['Intro purchase APR',c=>!c.humanVerified?unknown:typeof c.pricingDetail?.introPurchaseAprPct==='number'?c.pricingDetail.introPurchaseAprPct+'% for '+c.pricingDetail.introPurchaseMonths+' months':'Not verified'],
-  ['Monthly fee',c=>!c.humanVerified?unknown:typeof c.monthlyFeeUsd==='number'?'$'+c.monthlyFeeUsd+' per month':'Not verified'],
-  ['Reward model',c=>!c.humanVerified?unknown:rewardModels[c.rewardStructure]||'Not classified'],
-  ['Earn categories and caps',earns],
-  ['Issuer-backed point values',c=>!c.humanVerified?unknown:c.redemptionDetail?.examples?.length?c.redemptionDetail.examples.map(x=>x.method+': '+x.centsPerPoint+' cents per point').join('; '):'Depends on redemption, not verified'],
-  ['Starting credit limit',c=>!c.humanVerified?unknown:Number.isFinite(c.approvalGuidance?.startingLimitMinUsd)?'$'+c.approvalGuidance.startingLimitMinUsd+' issuer-disclosed minimum':'Not disclosed; issuer decides after application'],
-  ['Issuer credit guidance',c=>!c.humanVerified?unknown:c.approvalGuidance?.issuerCreditLevel||'No numerical threshold verified'],
-  ['Travel credits and protections',perks],
-  ['Card overview',c=>!c.humanVerified?unknown:c.bio||c.summary],
-  ['Important restrictions',c=>c.humanVerified?c.watchOut:unknown]
- ];
- const tbody=node('tbody');for(const [name,fn] of rows){const tr=node('tr');tr.append(node('th','',name));chosen.forEach(c=>tr.append(node('td','',fn(c))));tbody.append(tr);}
- table.append(tbody);
- const scroll=node('div','compare-scroller');scroll.setAttribute('role','region');scroll.setAttribute('aria-label','Scroll horizontally to compare selected cards');scroll.setAttribute('tabindex','0');scroll.append(table);
- body.append(scroll,node('p','dialog-note','Amounts, eligibility and earning rates appear only after human review. Monetary amounts are conditional and not guaranteed. Confirm the issuer agreement.'));
- showModal($('#details-backdrop'),$('#details-backdrop [data-close]'));
+function showComparison(){
+ const chosen=cards.filter(c=>compared.has(c.id));
+ if(chosen.length<2)return;
+ const backdrop=$('#details-backdrop'),body=$('#detail-body');
+ backdrop.querySelector('.detail-dialog').classList.add('is-workbench');
+ $('#detail-title').textContent='Your comparison workbench';
+ $('#detail-subtitle').textContent=chosen.length+' cards selected. Switch between offers, rewards and costs without a recommendation score.';
+ function paint(){
+  body.replaceChildren();
+  const current=cards.filter(c=>compared.has(c.id));
+  if(current.length<2){
+   body.append(node('p','dialog-lede','Select at least two cards to keep comparing.'));
+   const close=button('Return to card library','small-primary','close','');
+   close.addEventListener('click',closeModal);
+   body.append(close);return;
+  }
+  body.append(createComparisonWorkbench(current,{onRemove(id){
+   compared.delete(id);render();paint();
+   const next=body.querySelector('.workbench-remove');
+   (next||backdrop.querySelector('[data-close]'))?.focus({preventScroll:true});
+  }}));
+ }
+ paint();
+ showModal(backdrop,backdrop.querySelector('[data-close]'));
 }
 
 function updateFilter() {visibleLimit=24;queueLimit=12;render();}
@@ -357,7 +365,11 @@ catalogEl.addEventListener('click',event=>{
  const detail=target.closest('[data-detail]');
  if(detail){const card=cards.find(c=>c.id===detail.dataset.detail);if(card)showDetails(card);return;}
  const compare=target.closest('[data-compare]');
- if(compare){const id=compare.dataset.compare;if(compared.has(id))compared.delete(id);else if(compared.size<3)compared.add(id);else{showComparison();return;}render();return;}
+ if(compare){const id=compare.dataset.compare;if(compared.has(id))compared.delete(id);else if(compared.size<MAX_COMPARE)compared.add(id);else return;
+ render();
+ const next=[...catalogEl.querySelectorAll('[data-card-id]')].find(el=>el.dataset.cardId===id);
+ next?.querySelector('[data-compare]')?.focus({preventScroll:true});
+ return;}
 
 });
 $('#clear-compare').addEventListener('click',()=>{compared.clear();render();});

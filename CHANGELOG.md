@@ -2,6 +2,15 @@
 
 All meaningful website changes are documented here and in Git history. Entries should state **what changed**, **why**, **files/components affected**, **verification**, and **what is next**. Most recent changes first. Do not silently rewrite prior decisions; add a new dated entry instead.
 
+## 2026-10-29: Retire Dashboard and consolidate the visitor journey on Explore
+
+- Removed `docs/dashboard/index.html` and `docs/dashboard/dashboard.js`; Dashboard is no longer a public route or navigation item.
+- Preserved the main-page catalog, existing issuer and verified-fact filters, human QC queue, Decode Terms, and the four-card comparison workbench in Explore. No new filters were added; their consolidation/refinement is deferred to future single-page work.
+- Deleted the obsolete Dashboard design document. Superseded the secondary-dashboard design decision with an Explore-first decision, while retaining historical changelog context.
+- Removed dashboard-only styles, test dependencies and script checks, and added regression guards against a dashboard route or link returning.
+- Privacy, issuer source links, rights-gated artwork and the human-QC sign-up-offer pipeline remain unchanged.
+- Automated CI and mobile/desktop browser QA must be checked before merging.
+
 ## 2026-10-27: Original minimalist card color collection
 
 - Replaced arbitrary card illustration palettes with a curated, original AnCard color-family system. Examples: platinum-mist for American Express Platinum, gold-sand for Amex Gold, graphite-night for Capital One Venture X, deep-ocean for Venture, and separate indigo tones for Chase Sapphire Reserve and Preferred.

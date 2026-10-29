@@ -7,6 +7,8 @@ const root=resolve(fileURLToPath(new URL('..',import.meta.url)));
 const load=async path=>JSON.parse(await readFile(resolve(root,path),'utf8'));
 const published=await load('docs/data/cards.json');
 const queue=await load('catalog/HUMAN-QC.json');
+const offers=await load('catalog/OFFER-QC.json');
+const approvedOffers=new Map(offers.cards.filter(c=>c.approved).map(c=>[c.id,c]));
 function assert(condition,message){if(!condition)throw new Error(message);}
 assert(Array.isArray(published.cards)&&Array.isArray(queue.cards),'Catalog and QC must be arrays.');
 assert(published.cards.length<=queue.cards.length,'Public catalog cannot exceed the review queue.');
@@ -28,8 +30,12 @@ for(const card of published.cards){
  assert(url.protocol==='https:'&&!url.search&&!url.hash,'Unclean public source URL: '+card.id);
  if(review.humanVerified){
    assert(card.status==='published'&&card.humanVerified===true,'Approved record not published: '+card.id);
+   const offer=approvedOffers.get(card.id);
+   if(offer)assert(card.signUpBenefit?.headline===offer.candidate.headline&&card.signUpBenefit?.observedAt===offer.observedAt,'Approved offer not present: '+card.id);
+   else assert(card.signUpBenefit===undefined,'Unapproved offer was exposed: '+card.id);
  }else{
    assert(card.status==='pending_review'&&card.humanVerified===false,'Unapproved record exposed: '+card.id);
+   assert(!card.signUpBenefit,'Bonus must not be published for a pending card: '+card.id);
    for(const key of Object.keys(card))assert(permittedPending.has(key),'Unexpected pending field '+key+': '+card.id);
    assert(card.annualFeeUsd===null&&card.verifiedAt===null,'Unapproved monetary or date data: '+card.id);
    assert(card.primaryLabel==='Pending human review'&&card.feeSummary==='Annual fee: pending human review','Pending text changed: '+card.id);
@@ -37,6 +43,10 @@ for(const card of published.cards){
    assert(Array.isArray(card.features)&&card.features.every(v=>v==='airline'),'Unapproved card feature: '+card.id);
    assert(card.summary==='Terms and benefits are awaiting human review.','Unapproved description: '+card.id);
  }
+}
+for(const entry of offers.cards){
+ assert(reviews.has(entry.id),'Research signup offer has unknown card id: '+entry.id);
+ assert(!entry.approved||reviews.get(entry.id).humanVerified,'Sign-up bonus cannot precede card QC: '+entry.id);
 }
 async function walk(dir){
  const children=await readdir(resolve(root,dir),{withFileTypes:true});

@@ -1,29 +1,26 @@
 #!/usr/bin/env node
 import assert from 'node:assert/strict';
-import {readFile} from 'node:fs/promises';
+import {readFile,readdir} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {identityType,visualTheme,rightsClearedAsset} from '../docs/assets/card-visual.js';
 const root=resolve(fileURLToPath(new URL('..',import.meta.url)));
 const read=path=>readFile(resolve(root,path),'utf8');
-const [home,dashboard,css,mainJs,dashJs,visual,feed]=await Promise.all([
- read('docs/index.html'),read('docs/dashboard/index.html'),read('docs/assets/styles.css'),
- read('docs/assets/app.js'),read('docs/dashboard/dashboard.js'),
+const [home,css,mainJs,visual,feed]=await Promise.all([
+ read('docs/index.html'),read('docs/assets/styles.css'),read('docs/assets/app.js'),
  read('docs/assets/card-visual.js'),read('docs/data/cards.json')
 ]);
+assert.ok(!(await readdir(resolve(root,'docs'))).includes('dashboard'),'The retired dashboard directory must not be deployed');
+assert.ok(!home.includes('/dashboard/'),'The homepage must not link to the retired dashboard');
+assert.match(home,/href="#catalog">Explore<\/a>/,'Explore remains the main navigation');
+assert.match(home,/id="compare-bar"/,'Keep comparison workbench available on Explore');
+assert.match(mainJs,/import .*comparison-workbench\.js/,'Explore must import the shared comparison workbench');
 for(const id of ['card-results','load-more','issuer-filter','review-status','card-search','show-art','show-official-art','official-art-option','art-status','qc-queue','qc-queue-summary','qc-queue-cards','qc-queue-more','details-backdrop','trust-backdrop']){
  assert.ok(home.includes('id="'+id+'"'),'Missing directory control '+id);
 }
-for(const id of ['products','load-more','issuer','identity','review','show-art','show-official-art','official-art-option','art-status','compare','gate']){
- assert.ok(dashboard.includes('id="'+id+'"'),'Missing dashboard control '+id);
-}
-assert.match(dashboard,/type="module" src="\.\/dashboard\.js\?v=1\.1\.0"/);
 assert.match(mainJs,/import .*card-visual\.js/);
-assert.match(dashJs,/import .*card-visual\.js/);
 assert.match(home,/id="review-status"><option value="approved" selected/);
-assert.match(dashboard,/id="review" name="review"><option value="approved" selected/);
 assert.ok(!home.includes('id="identity-filter"'),'Duplicate identity selector must be removed from the directory');
-assert.ok(!dashboard.includes('id="cardtype"'),'Duplicate dashboard descriptor selector must be removed');
 assert.match(home,/data-identity-quick="airline"/);
 assert.match(home,/data-quick="cash_back"/);
 assert.match(home,/data-quick="travel"/);
@@ -41,12 +38,11 @@ assert.match(css,/\.card-row\.premium-card\{[^}]*align-items:stretch/,'Card head
 assert.match(css,/grid-template-columns:minmax\(0,1\.5fr\) minmax\(130px,\.85fr\) minmax\(175px,1fr\)/,'Desktop filters need three full-width columns');
 assert.match(css,/@media\(max-width:420px\)\{\.premium-filter-bar\{grid-template-columns:1fr\}/,'Narrow mobile filters must stack');
 assert.match(home,/<option value="approved" selected>Reviewed<\/option>/,'Editorial dropdown labels must fit');
-assert.match(dashboard,/<option value="approved" selected>Reviewed<\/option>/,'Dashboard status labels must fit');
 assert.match(mainJs,/pending\.length===total\?total\+' upcoming cards'/,'Unfiltered QC queue count should not repeat itself');
 assert.match(css,/@media print/);
 assert.match(css,/\.card-inner\{transform:none!important/);
 assert.match(css,/prefers-reduced-motion:reduce/);
-for(const js of [mainJs,dashJs]){
+for(const js of [mainJs]){
  assert.ok(!js.includes('is-flipped'),'3D flip states must not return');
  assert.ok(!js.includes('toggleCardDetails'),'Expandable reverse layout must not return');
  assert.ok(!js.includes('flip-frame'),'Old layered flip frames must not return');
@@ -56,18 +52,24 @@ for(const js of [mainJs,dashJs]){
 }
 assert.ok(!css.includes('rotateY('),'3D rotation must not return');
 assert.match(mainJs,/showIllustrations/);
-assert.match(dashJs,/showIllustrations/);
 assert.match(mainJs,/rightsClearedAsset/);
-assert.match(dashJs,/rightsClearedAsset/);
 assert.match(mainJs,/\.hidden=licensed===0/);
-assert.match(dashJs,/\.hidden=available===0/);
 assert.match(home,/id="show-art" checked/);
 assert.match(home,/id="official-art-option" hidden/);
-assert.match(dashboard,/id="official-art-option" hidden/);
-assert.match(dashboard,/id="show-art" checked/);
 assert.match(visual,/written-permission/);
 assert.match(visual,/rightsEvidenceUrl/);
 assert.match(visual,/if\(allowExternal && rightsClearedAsset\(card\)\)/);
+for(const src of [mainJs]){
+ assert.match(src,/MAX_COMPARE/);
+ assert.match(src,/createComparisonWorkbench/);
+ assert.ok(!src.includes('selected.size>=3'),'Comparison capacity must be four');
+}
+assert.match(mainJs,/compared\.size<MAX_COMPARE/);
+assert.match(mainJs,/show-compare'\)\.disabled=compared\.size<2/);
+assert.match(css,/\.workbench-table/);
+assert.match(css,/\.compare-bar:not\(\[hidden\]\)/);
+assert.match(css,/@media\(max-width:420px\)/);
+assert.match(home,/id="compare-label" role="status"/);
 assert.equal(visualTheme({issuer:'American Express',name:'American Express Platinum'}),'platinum-mist');
 assert.equal(visualTheme({issuer:'American Express',name:'American Express Gold'}),'gold-sand');
 assert.equal(visualTheme({issuer:'Capital One',name:'Capital One Venture X Rewards'}),'graphite-night');
@@ -95,7 +97,7 @@ assert.equal(rightsClearedAsset({imageFront:{url:testUrl,usageAuthorization:'wri
 const cards=JSON.parse(feed).cards;
 assert.ok(Array.isArray(cards)&&cards.length>0);
 assert.ok(cards.every(c=>!rightsClearedAsset(c)),'No issuer card is currently licensed for remote loading');
-for(const text of [mainJs,dashJs]){
+for(const text of [mainJs]){
  assert.ok(!text.includes('localStorage')&&!text.includes('sessionStorage'),'Do not persist browsing state');
 }
 assert.ok(cards.every(c=>c.humanVerified||c.annualFeeUsd===null),'Unapproved annual fees must stay hidden');

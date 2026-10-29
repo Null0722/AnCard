@@ -11,10 +11,10 @@ AnCard is an independent, privacy-first credit-card literacy and navigation plat
 ## Current MVP scope
 
 1. Disclosure-first entry acknowledgment. No personal-data consent implied by acknowledgment.
-2. Curated credit-card catalog; current release-candidate catalog contains 41 identified consumer cards across 10 issuers (including 13 airline co-branded products), all awaiting explicit human approval; selected facts are not a complete card-agreement audit.
+2. Curated credit-card catalog; the research inventory contains 100 identities, with 7 human-reviewed on 2026-10-29. Review flags describe a selected issuer-source snapshot, not a complete card-agreement audit.
 3. User-controlled, combinable reward, spending, card-type and fee filters; neutral sort options.
 4. Plain-English financial term explainers and detailed caveats per card.
-5. Side-by-side factual comparison, maximum three cards, no ranking or winner.
+5. Side-by-side factual comparison of 2-4 cards on Explore, with no ranking or winner.
 6. Transparency and methodology, privacy and important legal notices.
 7. Editorial governance for card creation, review, publication, correction and archiving.
 
@@ -28,7 +28,7 @@ Filter inputs and comparison selections remain in JavaScript memory within the b
 
 ## Navigation journey
 
-Disclosure acknowledgment → Explore category/filter controls → Inspect card terms and caveats → Compare selected cards side by side → Follow issuer sources once verified real cards become available. Supporting sections are accessible throughout: Decoder, Methodology, Privacy and Important Notices.
+Disclosure acknowledgment → Explore category/filter controls → Inspect reviewed card terms and caveats → Compare 2-4 selected cards on Explore → Follow issuer sources. Supporting sections are accessible throughout: Decoder, Methodology, Privacy and Important Notices. No standalone Dashboard route is maintained.
 
 ## Technical foundation
 
