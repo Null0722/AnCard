@@ -1,6 +1,6 @@
 // AnCard keeps browsing state in memory only. No accounts, analytics or saved choices.
 import {createCardVisual, identityType, rightsClearedAsset} from './card-visual.js';
-import {MAX_COMPARE,createComparisonWorkbench} from './comparison-workbench.js';
+import {MAX_COMPARE,createComparisonWorkbench,formatOffer} from './comparison-workbench.js';
 const catalogEl=document.querySelector('#card-results');
 const checks=[...document.querySelectorAll('[data-facet]')];
 const quicks=[...document.querySelectorAll('[data-quick]')];
@@ -114,7 +114,9 @@ function makeCard(card){
    const facts=node('div','card-preview-facts');
    facts.append(makeFact('Annual fee',card.feeSummary||'Not verified'));
    facts.append(makeFact('Reward overview',card.primaryLabel||'Not documented','rewards'));
-   facts.append(makeFact('Welcome offer',card.welcomeOffer?offerDescription(card.welcomeOffer):'Not documented in the reviewed snapshot','offer'));
+   facts.append(makeFact('Welcome offer',formatOffer(card).headline,'offer'));
+   const observed=formatOffer(card).observedAt;
+   if(observed)facts.append(node('p','offer-date','Issuer offer snapshot: '+observed+'. Check current availability.'));
    article.append(facts);
  }else{
    article.append(node('p','card-queue-note','Research identity only. Fees, rates and bonuses remain hidden until human source review.'));
@@ -235,8 +237,9 @@ function showDetails(card){
  $('#detail-subtitle').textContent=card.issuer+' | '+(ok?'Human QC approved':'Human review pending');
  const body=$('#detail-body');body.replaceChildren();
  body.append(node('p','dialog-lede',ok?'This card has a dated issuer-source snapshot. Always confirm current terms.':'Specific bonus amounts, fees and benefits stay hidden until reviewed. You can still learn what each term means below.'));
- const g=ok?card.approvalGuidance:null,price=ok?card.pricingDetail:null,red=ok?card.redemptionDetail:null,offer=ok?card.welcomeOffer:null;
- const bonus=ok?offerDescription(offer):pending;
+ const g=ok?card.approvalGuidance:null,price=ok?card.pricingDetail:null,red=ok?card.redemptionDetail:null;
+ const offerInfo=formatOffer(card);
+ const bonus=offerInfo.headline;
  const rewardRules=ok?(card.earnRules?.length?card.earnRules.map(x=>x.label+': '+earnText(x)).join(' | '):'No quantified earning rates in this record.'):pending;
  const points=ok?(red?.examples?.length?red.examples.map(x=>x.method+': '+x.centsPerPoint+' cents per point. '+x.notes).join(' | '):'No issuer-confirmed redemption value in this record.'):pending;
  const benefits=ok?(card.benefits?.length?card.benefits.map(x=>x.name+': '+benefitText(x)).join(' | '):'No quantified benefits documented. This does not mean the card has none.'):pending;
@@ -247,7 +250,11 @@ function showDetails(card){
  ],true);
  decodeSection(body,'Welcome and targeted bonuses','Public offers, personalized offers and invitation-only products are distinct.',[
   ['Public welcome offer',bonus],
-  ['Spending target and deadline',ok&&offer?'$'+offer.minimumSpendUsd.toLocaleString()+' in '+offer.monthsToEarn+' months of qualifying purchases.':pending],
+  ['Eligible purchase target',offerInfo.spend],
+  ['Time to qualify',offerInfo.timing],
+  ['Bonus eligibility',offerInfo.eligibility],
+  ['Offer status',offerInfo.status],
+  ['Offer observation date',offerInfo.observedAt||'No independently reviewed offer date recorded'],
   ['Targeted or personalized offer',ok?card.targetedOffers?.description||'Not documented for this card.':pending],
   ['Invitation-only offer',ok?card.inviteOnlyOffer?.description||'No documented offer; an invitation does not guarantee approval.':pending],
   ['Fine print to check','Previous-cardholder restrictions, offer channel, eligible purchases, application timing, enrollment and expiration.']
@@ -282,6 +289,7 @@ function showDetails(card){
  const source=node('a','source-link','Read the official issuer source');
  source.href=card.issuerSource;source.target='_blank';source.rel='noopener noreferrer';source.referrerPolicy='no-referrer';body.append(source);
  if(ok&&Array.isArray(card.additionalSources))for(const item of card.additionalSources){if(!item?.url?.startsWith('https://'))continue;const link=node('a','source-link',item.label||'Additional official document');link.href=item.url;link.target='_blank';link.rel='noopener noreferrer';link.referrerPolicy='no-referrer';body.append(link);}
+ if(ok&&offerInfo.source){const offerSource=node('a','source-link','View issuer sign-up offer evidence');offerSource.href=offerInfo.source;offerSource.target='_blank';offerSource.rel='noopener noreferrer';offerSource.referrerPolicy='no-referrer';body.append(offerSource);}
  body.append(node('p','dialog-note','Educational information only. Current issuer agreements determine interest, fees, benefits and eligibility.'));
  showModal($('#details-backdrop'),$('#details-backdrop [data-close]'));
 }
