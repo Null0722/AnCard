@@ -140,11 +140,15 @@ These are not bank-approved or affiliated visualizations. The cards use no offic
 
 **Legal limitation:** a general silver, blue, gold or charcoal palette does not by itself guarantee freedom to recreate a bank's distinctive overall product appearance. U.S. copyright law generally protects original expression rather than basic concepts, while trademarks and trade dress can protect source-identifying product appearances. Independent legal review is advisable before claiming a design is risk-free. See the [U.S. Copyright Office](https://www.copyright.gov/what-is-copyright/) and [USPTO trade dress guidance](https://tmep.uspto.gov/RDMS/TMEP/print?href=TMEP-1200d1e835.html&version=current).
 
-## Premium flipping card visuals (v0.7.0)
+## Reviewed-first, fact-first cards (v1.1)
 
-All directory cards display original AnCard illustrations rendered locally without issuer artwork or trademarks. These illustrations are not accurate reproductions of specific bank card fronts. Click/tap a card or use its keyboard-focusable Flip control to view a summary within the card border. Select Full Decode Terms from the reverse side for detailed explanations.
+Explore and Dashboard now default to **human-QC-reviewed records**. Unreviewed identities remain visible only through an explicit QC-queue disclosure or editorial-status opt-in. Neither view treats an unknown fee, multiplier or offer as zero or as a verified fact. The owner must still check each new candidate against current official issuer terms before its review flag can be approved.
 
-The directory and dashboard now offer issuer, card type and review-status filters, with reward and fee filters still restricted to human-reviewed financial facts. The first 24 results render initially, with a Show More control. No profile, cookie or browser storage is added.
+At-a-glance card facts are permanently readable on the card's front. AnCard's original, locally drawn concept art appears as an optional **64 × 40 px color thumbnail** rather than a two-sided flip. Reward and welcome-offer explanations are available beside the relevant fields and link to the complete Decoder. Print styles disable transformations and hide interactive controls so exported text stays legible.
+
+Reward and spending filters show counts from the currently human-reviewed cards, with unavailable options disabled. Identity quick presets replace duplicated descriptor controls. The existing three-card, in-memory factual comparison remains available without account creation or browser storage.
+
+The default view initially contains one approved seed record; the remaining card identities are in the QC queue. Completing a 15–20 card reviewed seed requires additional **manual source verification**, and this UI update does not change any approval flags.
 
 Important: the nine previously sourced issuer image URLs remain in the card records for reference, but cannot load unless there is recorded written permission and explicit visitor opt-in. There is currently no documented permission for these URLs, so the external-art toggle is disabled. This protects visitor privacy and avoids assuming that an accessible online image is licensed for reuse.
 
