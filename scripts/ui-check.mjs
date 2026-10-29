@@ -14,10 +14,10 @@ const [home,dashboard,css,mainJs,dashJs,visual,feed]=await Promise.all([
 for(const id of ['card-results','load-more','issuer-filter','review-status','card-search','show-art','show-official-art','official-art-option','art-status','qc-queue','qc-queue-summary','qc-queue-cards','qc-queue-more','details-backdrop','trust-backdrop']){
  assert.ok(home.includes('id="'+id+'"'),'Missing directory control '+id);
 }
-for(const id of ['products','load-more','issuer','identity','review','show-art','show-official-art','official-art-option','art-status','compare','gate']){
+for(const id of ['products','load-more','issuer','identity','review','show-art','show-official-art','official-art-option','art-status','compare','dashboard-compare-bar','dashboard-compare-count','dashboard-open-compare','dashboard-clear-compare','gate']){
  assert.ok(dashboard.includes('id="'+id+'"'),'Missing dashboard control '+id);
 }
-assert.match(dashboard,/type="module" src="\.\/dashboard\.js\?v=1\.1\.0"/);
+assert.match(dashboard,/type="module" src="\.\/dashboard\.js\?v=1\.5\.0"/);
 assert.match(mainJs,/import .*card-visual\.js/);
 assert.match(dashJs,/import .*card-visual\.js/);
 assert.match(home,/id="review-status"><option value="approved" selected/);
@@ -68,6 +68,19 @@ assert.match(dashboard,/id="show-art" checked/);
 assert.match(visual,/written-permission/);
 assert.match(visual,/rightsEvidenceUrl/);
 assert.match(visual,/if\(allowExternal && rightsClearedAsset\(card\)\)/);
+for(const src of [mainJs,dashJs]){
+ assert.match(src,/MAX_COMPARE/);
+ assert.match(src,/createComparisonWorkbench/);
+ assert.ok(!src.includes('selected.size>=3'),'Comparison capacity must be four');
+}
+assert.match(mainJs,/compared\.size<MAX_COMPARE/);
+assert.match(mainJs,/show-compare'\)\.disabled=compared\.size<2/);
+assert.match(dashJs,/selected\.size<2/);
+assert.match(dashboard,/id="compare-title"/);
+assert.match(css,/\.workbench-table/);
+assert.match(css,/\.compare-bar:not\(\[hidden\]\)/);
+assert.match(css,/@media\(max-width:420px\)/);
+assert.match(home,/id="compare-label" role="status"/);
 assert.equal(visualTheme({issuer:'American Express',name:'American Express Platinum'}),'platinum-mist');
 assert.equal(visualTheme({issuer:'American Express',name:'American Express Gold'}),'gold-sand');
 assert.equal(visualTheme({issuer:'Capital One',name:'Capital One Venture X Rewards'}),'graphite-night');
