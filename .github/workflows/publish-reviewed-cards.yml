@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'catalog/HUMAN-QC.json'
+      - 'catalog/OFFER-QC.json'
       - 'catalog/cards/**'
   workflow_dispatch:
 
