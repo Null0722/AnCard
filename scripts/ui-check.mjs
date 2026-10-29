@@ -11,7 +11,7 @@ const [home,dashboard,css,mainJs,dashJs,visual,feed]=await Promise.all([
  read('docs/assets/app.js'),read('docs/dashboard/dashboard.js'),
  read('docs/assets/card-visual.js'),read('docs/data/cards.json')
 ]);
-for(const id of ['card-results','load-more','issuer-filter','identity-filter','review-status','card-search','show-art','show-official-art','official-art-option','art-status','details-backdrop','trust-backdrop']){
+for(const id of ['card-results','load-more','issuer-filter','review-status','card-search','show-art','show-official-art','official-art-option','art-status','qc-queue','qc-queue-summary','qc-queue-cards','qc-queue-more','details-backdrop','trust-backdrop']){
  assert.ok(home.includes('id="'+id+'"'),'Missing directory control '+id);
 }
 for(const id of ['products','load-more','issuer','identity','review','show-art','show-official-art','official-art-option','art-status','compare','gate']){
@@ -20,35 +20,48 @@ for(const id of ['products','load-more','issuer','identity','review','show-art',
 assert.match(dashboard,/type="module" src="\.\/dashboard\.js"/);
 assert.match(mainJs,/import .*card-visual\.js/);
 assert.match(dashJs,/import .*card-visual\.js/);
-assert.ok(css.includes('.premium-card.is-expanded .flip-back'),'Missing expandable details CSS');
-assert.ok(css.includes('grid-template-rows:0fr')&&css.includes('grid-template-rows:1fr'),'Missing vertical expansion');
-assert.ok(css.includes('prefers-reduced-motion:reduce'),'Reduced-motion fallback required');
+assert.match(home,/id="review-status"><option value="approved" selected/);
+assert.match(dashboard,/id="review" name="review"><option value="approved" selected/);
+assert.ok(!home.includes('id="identity-filter"'),'Duplicate identity selector must be removed from the directory');
+assert.ok(!dashboard.includes('id="cardtype"'),'Duplicate dashboard descriptor selector must be removed');
+assert.match(home,/data-identity-quick="airline"/);
+assert.match(home,/data-quick="cash_back"/);
+assert.match(home,/data-quick="travel"/);
+assert.match(mainJs,/function updateFacetCounts\(/);
+assert.match(mainJs,/checkbox\.disabled=count===0&&!checkbox\.checked/);
+assert.match(mainJs,/function renderQueue\(/);
+assert.match(mainJs,/card\.humanVerified===true/);
+assert.match(mainJs,/c=>!c\.humanVerified&&matchesBase\(c\)/);
+assert.match(mainJs,/function makeFact\(/);
+assert.match(mainJs,/term-tip/);
+assert.match(css,/\.card-at-glance/);
+assert.match(css,/\.card-art-thumb/);
+assert.match(css,/\.card-fact-value/);
+assert.match(css,/@media print/);
+assert.match(css,/\.card-inner\{transform:none!important/);
+assert.match(css,/prefers-reduced-motion:reduce/);
 for(const js of [mainJs,dashJs]){
- assert.match(js,/details.inert=!isExpanded/);
- assert.match(js,/aria-expanded/);
- assert.match(js,/aria-controls/);
- assert.match(js,/toggleCardDetails/);
- assert.ok(!js.includes('is-flipped'),'3D card flipping must not return');
+ assert.ok(!js.includes('is-flipped'),'3D flip states must not return');
+ assert.ok(!js.includes('toggleCardDetails'),'Expandable reverse layout must not return');
+ assert.ok(!js.includes('flip-frame'),'Old layered flip frames must not return');
+ assert.match(js,/createCardVisual/);
+ assert.match(js,/referrerPolicy='no-referrer'/);
+ assert.match(js,/visibleLimit\+=24/);
 }
-assert.ok(!css.includes('rotateY('),'3D rotations must not return');
-assert.match(mainJs,/visibleLimit\+=24/);
-assert.match(dashJs,/visibleLimit\+=24/);
-assert.match(visual,/written-permission/);
-assert.match(visual,/rightsEvidenceUrl/);
-assert.match(visual,/if\(allowExternal && rightsClearedAsset\(card\)\)/);
+assert.ok(!css.includes('rotateY('),'3D rotation must not return');
+assert.match(mainJs,/showIllustrations/);
+assert.match(dashJs,/showIllustrations/);
+assert.match(mainJs,/rightsClearedAsset/);
+assert.match(dashJs,/rightsClearedAsset/);
+assert.match(mainJs,/\.hidden=licensed===0/);
+assert.match(dashJs,/\.hidden=available===0/);
 assert.match(home,/id="show-art" checked/);
 assert.match(home,/id="official-art-option" hidden/);
 assert.match(dashboard,/id="official-art-option" hidden/);
-assert.match(mainJs,/showIllustrations=event\.target\.checked/);
-assert.match(dashJs,/showIllustrations=event\.target\.checked/);
-assert.match(dashJs,/source\.referrerPolicy='no-referrer'/);
 assert.match(dashboard,/id="show-art" checked/);
-assert.match(mainJs,/node\('a','source-link flip-issuer-source','View issuer source'\)/);
-assert.match(mainJs,/showIllustrations\?createCardVisual/);
-assert.match(dashJs,/showIllustrations\?createCardVisual/);
-assert.match(mainJs,/source\.referrerPolicy='no-referrer'/);
-assert.match(mainJs,/\$\('#official-art-option'\)\.hidden=licensed===0/);
-assert.match(dashJs,/byId\('official-art-option'\)\.hidden=available===0/);
+assert.match(visual,/written-permission/);
+assert.match(visual,/rightsEvidenceUrl/);
+assert.match(visual,/if\(allowExternal && rightsClearedAsset\(card\)\)/);
 assert.equal(visualTheme({issuer:'American Express',name:'American Express Platinum'}),'platinum-mist');
 assert.equal(visualTheme({issuer:'American Express',name:'American Express Gold'}),'gold-sand');
 assert.equal(visualTheme({issuer:'Capital One',name:'Capital One Venture X Rewards'}),'graphite-night');
@@ -80,4 +93,9 @@ for(const text of [mainJs,dashJs]){
  assert.ok(!text.includes('localStorage')&&!text.includes('sessionStorage'),'Do not persist browsing state');
 }
 assert.ok(cards.every(c=>c.humanVerified||c.annualFeeUsd===null),'Unapproved annual fees must stay hidden');
-console.log('Premium UI guards passed: '+cards.length+' identity cards; local art, accessible expanding details and rights gate.');
+const aer=cards.find(c=>c.id==='chase-aer-lingus');
+assert.ok(aer?.humanVerified,'Aer Lingus reviewed seed card must exist');
+assert.ok(aer.primaryLabel.includes('1 Avios per $1 elsewhere')&&!aer.primaryLabel.includes('Avtos'),'Reviewed seed copy must be correct');
+assert.match(home,/No profiles\. No pitches\./);
+assert.ok(!home.includes('Look for.'),'Decoder microcopy should use colons');
+console.log('Fact-first UI guards passed: '+cards.length+' identity cards; reviewed-first queue, plain text, print and rights gate.');
