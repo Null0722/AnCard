@@ -244,3 +244,14 @@
  .ancard-original-art .ancard-art-motif{top:15px;right:13px}
  .ancard-original-art .ancard-art-name{font-size:11px}
 }
+
+/* Disclosure repair: content stays in document flow, never in a transformed layer. */
+.premium-card .flip-back{display:block!important;grid-template-rows:none!important;visibility:visible!important;opacity:1!important;max-height:0;overflow:hidden!important;padding:0 18px!important;border-top:0!important;transition:max-height .35s ease,padding .35s ease,border-width .35s ease!important}
+.premium-card.is-expanded .flip-back{max-height:1400px;padding:20px 18px 22px!important;border-top:1px solid #5a728483!important}
+.premium-card .flip-back-content{display:flex;flex-direction:column;min-height:0;overflow:visible}
+.premium-card .flip-fact{display:grid;grid-template-columns:1fr;gap:7px}
+.premium-card .flip-fact-label{font-size:14px!important;font-weight:800!important;line-height:1.5}
+.premium-card .flip-fact-value{font-size:16px!important;font-weight:600!important;line-height:1.65;text-align:left!important;letter-spacing:normal}
+.premium-card .flip-back-title{font-size:21px!important;font-weight:800!important}
+.premium-card .flip-back,.premium-card .flip-back *{transform:none!important;filter:none!important;backface-visibility:visible!important;text-shadow:none}
+@media(prefers-reduced-motion:reduce){.premium-card .flip-back{transition:none!important}}
