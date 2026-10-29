@@ -169,7 +169,7 @@ function renderQueue(){
  const pending=sortCards(cards.filter(c=>!c.humanVerified&&matchesBase(c)));
  const total=cards.filter(c=>!c.humanVerified).length;
  panel.hidden=$('#review-status').value!=='approved';
- $('#qc-queue-summary').textContent='In the QC queue ('+pending.length+' matching / '+total+' upcoming cards)';
+ $('#qc-queue-summary').textContent='In the QC queue ('+(pending.length===total?total+' upcoming cards':pending.length+' of '+total+' matching')+')';
  const area=$('#qc-queue-cards');area.replaceChildren();
  const more=$('#qc-queue-more');
  if(!panel.open||panel.hidden){more.hidden=true;return;}
