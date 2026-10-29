@@ -3,7 +3,7 @@ import {createCardVisual,identityType,rightsClearedAsset} from '../assets/card-v
 const byId = id => document.getElementById(id);
 const form=byId('filters'), results=byId('products'), count=byId('count');
 const selected=new Set();
-const expanded=new Set();
+
 let visibleLimit=24;
 let cards=[];
 let artEnabled=false;
@@ -68,15 +68,14 @@ function renderComparison(){
    grid.append(block);
  }
 }
-function toggleCardDetails(article){
- const id=article.dataset.cardId,isExpanded=!expanded.has(id);
- if(isExpanded)expanded.add(id);else expanded.delete(id);
- article.classList.toggle('is-expanded',isExpanded);
- const details=article.querySelector('.flip-back');
- details.inert=!isExpanded;details.setAttribute('aria-hidden',String(!isExpanded));
- const control=article.querySelector('[data-expand]');
- control.setAttribute('aria-expanded',String(isExpanded));
- control.textContent=isExpanded?'Hide card details':'Show card details';
+
+function factLine(label,value,link){
+ const row=text('div','','card-fact');
+ const heading=text('div','','card-fact-heading');
+ heading.append(text('span',label,'card-fact-label'));
+ if(link){const anchor=text('a','?','term-tip-toggle');anchor.href='../#decoder';anchor.title='Read the plain-English Decoder about '+label.toLowerCase();anchor.setAttribute('aria-label','Learn about '+label.toLowerCase());heading.append(anchor);}
+ row.append(heading,text('p',value,'card-fact-value'));
+ return row;
 }
 function render(){
  const range=Number(byId('annual').value);
@@ -84,30 +83,33 @@ function render(){
  const sort=byId('sort').value;
  const col=new Intl.Collator('en',{sensitivity:'base'});
  const matches=filtered().sort((a,b)=>sort==='fee'?((a.annualFeeUsd??Infinity)-(b.annualFeeUsd??Infinity)||col.compare(a.name,b.name)):col.compare(String(a[sort]||''),String(b[sort]||''))||col.compare(a.name,b.name));
- count.textContent=matches.length+' of '+cards.length+' card identities | '+matches.filter(c=>c.humanVerified).length+' QC reviewed';
+ count.textContent=matches.length+' matching | '+cards.filter(c=>c.humanVerified).length+' human-reviewed of '+cards.length+' total';
  results.replaceChildren();
- if(!matches.length)results.append(text('p','No matches. Reward-category filters require human-reviewed values; try issuer or card type, or clear the filters.','status'));
+ if(!matches.length)results.append(text('p','No reviewed cards match. Try another filter or choose QC queue in Editorial status to explore unreviewed identities.','status'));
+
  for(const c of matches.slice(0,visibleLimit)){
-   const article=text('article','');
-   article.className='product dashboard-product premium-card';
-   article.dataset.cardId=c.id;
-   article.classList.toggle('is-expanded',expanded.has(c.id));
-   article.classList.toggle('is-text-only',!showIllustrations);
-   const frame=text('div','');frame.className='flip-frame';const inner=text('div','');inner.className='flip-inner';
-   const front=text('section','');front.className='flip-face flip-front';
-   const back=text('section','');back.className='flip-face flip-back';
-   back.inert=!expanded.has(c.id);
-   back.id='dashboard-details-'+c.id;
-   back.setAttribute('aria-hidden',String(!expanded.has(c.id)));
-   const top=text('div','');top.className='flip-top';
-   top.append(text('span',c.issuer,'issuer-eyebrow'),text('span',c.humanVerified?'QC reviewed':'Pending QC','review-pill'));
-   const art=showIllustrations?createCardVisual(c,artEnabled):text('div',c.name,'art-text-fallback');
-   front.append(top,art);
-   const title=text('div','');title.className='flip-summary';
-   title.append(text('h3',c.name),text('p',c.humanVerified?c.summary:'Financial details are pending human review.'));
-   front.append(title);
-   const bar=text('div','');bar.className='flip-toolbar';
-   const flipBtn=text('button',expanded.has(c.id)?'Hide card details':'Show card details','flip-action');flipBtn.type='button';flipBtn.dataset.expand=c.id;flipBtn.setAttribute('aria-expanded',String(expanded.has(c.id)));flipBtn.setAttribute('aria-controls',back.id);
+   const article=text('article','','product dashboard-product premium-card card-at-glance');
+   article.dataset.cardId=c.id;article.dataset.identityType=identityType(c);
+   article.classList.toggle('awaiting-review',!c.humanVerified);
+   const header=text('header','','card-overview-header');
+   const heading=text('div','','card-heading');
+   heading.append(text('span',c.issuer,'issuer-eyebrow'),text('h3',c.name),text('span',c.humanVerified?'Human QC reviewed':'In human QC queue','review-pill'));
+   header.append(heading);
+   if(showIllustrations){
+     const art=text('div','','card-art-thumb');
+     art.append(createCardVisual(c,artEnabled));header.append(art);
+   }
+   article.append(header);
+   if(c.humanVerified){
+     const facts=text('div','','card-preview-facts');
+     facts.append(factLine('Annual fee',viewFee(c)));
+     facts.append(factLine('Reward overview',c.primaryLabel||'Not documented',true));
+     const bonus=c.welcomeOffer;
+     const offer=bonus?(bonus.kind==='up_to'?'Up to ':'')+(bonus.unit==='usd'?'$':'')+bonus.amount.toLocaleString()+(bonus.unit==='usd'?'':' '+bonus.unit)+' after $'+bonus.minimumSpendUsd.toLocaleString()+' eligible spending in '+bonus.monthsToEarn+' months':'Not documented in the reviewed snapshot';
+     facts.append(factLine('Welcome offer',offer,true));
+     article.append(facts);
+   }else article.append(text('p','Research identity only; financial facts are awaiting human review.','card-queue-note'));
+   const bar=text('div','','card-overview-actions');
    const label=text('label',' Compare','dash-compare-check');
    const cb=document.createElement('input');cb.type='checkbox';cb.checked=selected.has(c.id);cb.disabled=!cb.checked&&selected.size>=3;
    cb.setAttribute('aria-label','Compare '+c.name);
@@ -117,28 +119,10 @@ function render(){
      const next=[...results.querySelectorAll('.dashboard-product')].find(item=>item.dataset.cardId===c.id);
      next?.querySelector('.dash-compare-check input')?.focus({preventScroll:true});
    });
-   label.prepend(cb);bar.append(flipBtn,label);front.append(bar);
-   back.append(text('div','AT A GLANCE','flip-back-eyebrow'),text('h3',c.name,'flip-back-title'));
-   const facts=text('div','');facts.className='flip-back-details';
-   for(const [name,value] of [
-     ['Issuer',c.issuer],
-     ['Human review',c.humanVerified?'Human-checked snapshot':'Pending'],
-     ['Annual fee',c.humanVerified?viewFee(c):'Pending human review'],
-     ['Earn rates',c.humanVerified&&c.earnRules?.length?c.earnRules.map(x=>x.label+': '+earnText(x)).join('; '):'Not yet approved'],
-     ['Welcome bonus',c.humanVerified&&c.welcomeOffer?
-       (c.welcomeOffer.kind==='up_to'?'Up to ':'')+(c.welcomeOffer.unit==='usd'?'$':'')+c.welcomeOffer.amount.toLocaleString()+(c.welcomeOffer.unit==='usd'?'':' '+c.welcomeOffer.unit):'Not yet approved or documented']
-   ]){
-     const line=text('div','');line.className='flip-fact';
-     line.append(text('span',name,'flip-fact-label'),text('span',value,'flip-fact-value'));facts.append(line);
-   }
-   back.append(facts);
-   const actions=text('div','');actions.className='flip-back-actions';
-   const content=text('div','');content.className='flip-back-content';
-   const source=text('a','Read official issuer source','source-link');source.href=c.issuerSource;source.target='_blank';
-   source.rel='noopener noreferrer';source.referrerPolicy='no-referrer';
-   actions.append(source);back.append(actions);
-   while(back.firstChild)content.append(back.firstChild);back.append(content);inner.append(front,back);frame.append(inner);article.append(frame);
-   results.append(article);
+   label.prepend(cb);bar.append(label);
+   const source=text('a','Official issuer source','source-link issuer-link');
+   source.href=c.issuerSource;source.target='_blank';source.rel='noopener noreferrer';source.referrerPolicy='no-referrer';
+   bar.append(source);article.append(bar);results.append(article);
  }
  byId('load-more').hidden=matches.length<=visibleLimit;
  byId('load-more').textContent='Show more cards ('+Math.max(0,matches.length-visibleLimit)+' remaining)';
@@ -152,11 +136,7 @@ form.addEventListener('reset',()=>{visibleLimit=24;queueMicrotask(render);});
 byId('sort').addEventListener('change',()=>{visibleLimit=24;render();});
 byId('load-more').addEventListener('click',()=>{visibleLimit+=24;render();byId('load-more').focus({preventScroll:true});});
 byId('clear-compare').addEventListener('click',()=>{selected.clear();render();});
-results.addEventListener('click',event=>{
- const article=event.target.closest('.dashboard-product');
- if(!article)return;
- if(event.target.closest('[data-expand]')){toggleCardDetails(article);return;}
-});
+// The dashboard renders its facts directly; no flip, expansion, or mirrored text.
 fetch('../data/cards.json',{cache:'no-store'}).then(resp=>{if(!resp.ok)throw new Error('Catalog could not load');return resp.json();}).then(data=>{
  cards=Array.isArray(data.cards)?data.cards.filter(c=>c && ['published','pending_review'].includes(c.status) && c.fictional===false):[];
  updateQc(data.reviewProgress);
