@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "3% at eligible U.S. supermarkets, gas stations and online retail",
-  "primaryLabel": "3% at eligible U.S. supermarkets, gas stations and online retail",
+  "summary": "3% cash back at eligible U.S. supermarkets, U.S. gas stations and U.S. online retailers, each on up to $6,000 annual purchases (then 1%); 1% on other eligible purchases.",
+  "primaryLabel": "3% cash back at eligible U.S. supermarkets, U.S. gas stations and U.S. online retailers, each on up to $6,000 annual purchases (then 1%); 1% on other eligible purchases.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -18,10 +18,10 @@
     "online"
   ],
   "features": [],
-  "plainEnglish": "3% at eligible U.S. supermarkets, gas stations and online retail",
-  "watchOut": "Each category has its own $6,000 annual cap, then earns 1%",
-  "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
-  "verifiedAt": "2026-10-27",
+  "plainEnglish": "3% cash back at eligible U.S. supermarkets, U.S. gas stations and U.S. online retailers, each on up to $6,000 annual purchases (then 1%); 1% on other eligible purchases.",
+  "watchOut": "Each 3% category has its own $6,000 annual eligible-purchase cap; grocery, online and gas merchant coding exclusions apply. Cash back is earned as Reward Dollars.",
+  "limitations": "Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.",
+  "verifiedAt": "2026-10-29",
   "issuerSource": "https://global.americanexpress.com/card-benefits/detail/blue-cash-everyday-321/blue-cash-everyday/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
@@ -43,5 +43,38 @@
   "inviteOnlyOffer": {
     "status": "not_documented",
     "description": "No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product."
-  }
+  },
+  "bio": "Blue Cash Everyday from American Express. 3% cash back at eligible U.S. supermarkets, U.S. gas stations and U.S. online retailers, each on up to $6,000 annual purchases (then 1%); 1% on other eligible purchases.",
+  "rewardStructure": "tiered",
+  "earnRules": [
+    {
+      "label": "Eligible U.S. supermarkets",
+      "rate": 3,
+      "unit": "percent",
+      "capAmountUsd": 6000,
+      "capPeriod": "Calendar year",
+      "condition": "Then 1%; eligible merchant codes only"
+    },
+    {
+      "label": "Eligible U.S. online retail",
+      "rate": 3,
+      "unit": "percent",
+      "capAmountUsd": 6000,
+      "capPeriod": "Calendar year",
+      "condition": "Then 1%"
+    },
+    {
+      "label": "Eligible U.S. gas stations",
+      "rate": 3,
+      "unit": "percent",
+      "capAmountUsd": 6000,
+      "capPeriod": "Calendar year",
+      "condition": "Then 1%"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1,
+      "unit": "percent"
+    }
+  ]
 }

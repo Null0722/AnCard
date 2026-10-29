@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "5% on activated rotating categories up to quarterly spending limits, then 1% cash back.",
-  "primaryLabel": "5% on activated rotating categories up to quarterly spending limits, then 1% cash back.",
+  "summary": "5% cash back in eligible activated rotating categories on up to $1,500 in purchases each quarter, then 1% cash back on other eligible spending; Capital One now manages these Discover card rewards.",
+  "primaryLabel": "5% cash back in eligible activated rotating categories on up to $1,500 in purchases each quarter, then 1% cash back on other eligible spending; Capital One now manages these Discover card rewards.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -14,26 +14,27 @@
   ],
   "categories": [],
   "features": [],
-  "plainEnglish": "5% on activated rotating categories up to quarterly spending limits, then 1% cash back.",
-  "watchOut": "Quarterly activation and eligible purchase caps apply; discover brand and application channel should be reconfirmed.",
-  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
-  "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.capitalone.com/credit-cards/",
+  "plainEnglish": "5% cash back in eligible activated rotating categories on up to $1,500 in purchases each quarter, then 1% cash back on other eligible spending; Capital One now manages these Discover card rewards.",
+  "watchOut": "Activation is required each quarter and 5% is capped at $1,500 of eligible purchases. Discover-to-Capital-One account migration and new-account promotional terms must be checked separately.",
+  "limitations": "Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.",
+  "verifiedAt": "2026-10-29",
+  "issuerSource": "https://www.capitalone.com/credit-cards/cash-back/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Discover it Cash Back from Capital One. 5% on activated rotating categories up to quarterly spending limits, then 1% cash back.",
+  "bio": "Discover it Cash Back from Capital One. 5% cash back in eligible activated rotating categories on up to $1,500 in purchases each quarter, then 1% cash back on other eligible spending; Capital One now manages these Discover card rewards.",
   "rewardStructure": "rotating",
   "earnRules": [
     {
       "label": "Activated quarterly categories",
       "rate": 5,
       "unit": "percent",
+      "capAmountUsd": 1500,
       "capPeriod": "Quarter",
-      "condition": "Activation required; current quarterly cap must be confirmed"
+      "condition": "Activation required each quarter; eligible category purchases only"
     },
     {
-      "label": "Other purchases",
+      "label": "Other eligible purchases",
       "rate": 1,
       "unit": "percent"
     }

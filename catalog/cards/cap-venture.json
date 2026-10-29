@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "2X miles on eligible purchases",
-  "primaryLabel": "2X miles on eligible purchases",
+  "summary": "2X miles on eligible purchases and 5X miles on eligible hotels, vacation rentals and rental cars booked through Capital One Travel.",
+  "primaryLabel": "2X miles on eligible purchases and 5X miles on eligible hotels, vacation rentals and rental cars booked through Capital One Travel.",
   "feeSummary": "$95 annual fee",
   "annualFeeUsd": 95,
   "rewards": [
@@ -16,11 +16,11 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "2X miles on eligible purchases",
-  "watchOut": "Redemption value varies; travel benefits and promotional offers have conditions",
-  "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
-  "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.capitalone.com/credit-cards/",
+  "plainEnglish": "2X miles on eligible purchases and 5X miles on eligible hotels, vacation rentals and rental cars booked through Capital One Travel.",
+  "watchOut": "5X is restricted to Capital One Travel lodging and car bookings, and mile redemption values depend on usage.",
+  "limitations": "Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.",
+  "verifiedAt": "2026-10-29",
+  "issuerSource": "https://www.capitalone.com/credit-cards/venture/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": {
     "url": "https://ecm.capitalone.com/WCM/card/products/venture_cardart_prim_323x203-1/mobile.png",
@@ -28,13 +28,19 @@
     "alt": "Official front-facing product image of Capital One Venture Rewards"
   },
   "accessType": "public",
-  "bio": "Capital One Venture is a general travel miles card with a flat rewards rate and eligible travel-related account credits. Miles redemption values are not fixed cash equivalents.",
-  "rewardStructure": "flat",
+  "bio": "Capital One Venture Rewards from Capital One. 2X miles on eligible purchases and 5X miles on eligible hotels, vacation rentals and rental cars booked through Capital One Travel.",
+  "rewardStructure": "tiered",
   "earnRules": [
     {
       "label": "Eligible purchases",
       "rate": 2,
       "unit": "x"
+    },
+    {
+      "label": "Hotels, vacation rentals and rental cars via Capital One Travel",
+      "rate": 5,
+      "unit": "x",
+      "condition": "Portal booking conditions apply"
     }
   ],
   "benefits": [

@@ -5,25 +5,49 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "1.5% cash back on eligible purchases",
-  "primaryLabel": "1.5% cash back on eligible purchases",
+  "summary": "Earn unlimited 1.5% cash back on eligible purchases; Capital One separately advertises 5% on qualifying Capital One Travel and Entertainment purchases.",
+  "primaryLabel": "Earn unlimited 1.5% cash back on eligible purchases; Capital One separately advertises 5% on qualifying Capital One Travel and Entertainment purchases.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
     "cash_back"
   ],
-  "categories": [],
+  "categories": [
+    "travel",
+    "lifestyle"
+  ],
   "features": [],
-  "plainEnglish": "1.5% cash back on eligible purchases",
-  "watchOut": "Promotional offers and eligible purchase exclusions apply",
-  "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
-  "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.capitalone.com/credit-cards/",
+  "plainEnglish": "Earn unlimited 1.5% cash back on eligible purchases; Capital One separately advertises 5% on qualifying Capital One Travel and Entertainment purchases.",
+  "watchOut": "Higher Travel and Entertainment rates require qualifying Capital One channels; ordinary card purchases earn the base 1.5%.",
+  "limitations": "Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.",
+  "verifiedAt": "2026-10-29",
+  "issuerSource": "https://www.capitalone.com/credit-cards/quicksilver/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": {
     "url": "https://ecm.capitalone.com/WCM/card/products/quicksilver_cardart.png",
     "sourcePage": "https://www.capitalone.com/credit-cards/",
     "alt": "Official front-facing product image of Capital One Quicksilver Rewards"
   },
-  "accessType": "public"
+  "accessType": "public",
+  "bio": "Capital One Quicksilver Rewards from Capital One. Earn unlimited 1.5% cash back on eligible purchases; Capital One separately advertises 5% on qualifying Capital One Travel and Entertainment purchases.",
+  "rewardStructure": "tiered",
+  "earnRules": [
+    {
+      "label": "Other eligible purchases",
+      "rate": 1.5,
+      "unit": "percent"
+    },
+    {
+      "label": "Qualifying Capital One Travel purchases",
+      "rate": 5,
+      "unit": "percent",
+      "condition": "Issuer booking channel restrictions apply"
+    },
+    {
+      "label": "Qualifying Capital One Entertainment purchases",
+      "rate": 5,
+      "unit": "percent",
+      "condition": "Issuer purchases only"
+    }
+  ]
 }

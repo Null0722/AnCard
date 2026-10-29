@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "6% choice-category reward for the first year; 3% thereafter",
-  "primaryLabel": "6% choice-category reward for the first year; 3% thereafter",
+  "summary": "6% in one eligible choice category during the first year (3% thereafter), 2% grocery/wholesale club purchases, 1% elsewhere, with a shared $2,500 quarterly bonus-category spend cap.",
+  "primaryLabel": "6% in one eligible choice category during the first year (3% thereafter), 2% grocery/wholesale club purchases, 1% elsewhere, with a shared $2,500 quarterly bonus-category spend cap.",
   "feeSummary": "$0 annual fee",
   "annualFeeUsd": 0,
   "rewards": [
@@ -20,32 +20,45 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "6% choice-category reward for the first year; 3% thereafter",
-  "watchOut": "Choice and grocery categories share a quarterly $2,500 cap, then base rate",
-  "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
-  "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.bankofamerica.com/credit-cards/",
+  "plainEnglish": "6% in one eligible choice category during the first year (3% thereafter), 2% grocery/wholesale club purchases, 1% elsewhere, with a shared $2,500 quarterly bonus-category spend cap.",
+  "watchOut": "The 6% rate is a first-year 3% plus 3% bonus; choice and grocery/wholesale club rates share a combined $2,500 quarterly spending cap, then 1%.",
+  "limitations": "Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.",
+  "verifiedAt": "2026-10-29",
+  "issuerSource": "https://www.bankofamerica.com/credit-cards/products/cash-back-credit-card/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Customized Cash Rewards lets cardholders choose an eligible high-earning category. Introductory first-year categories and the quarterly spending cap need special attention.",
+  "bio": "Bank of America Customized Cash Rewards from Bank of America. 6% in one eligible choice category during the first year (3% thereafter), 2% grocery/wholesale club purchases, 1% elsewhere, with a shared $2,500 quarterly bonus-category spend cap.",
   "rewardStructure": "selectable",
   "earnRules": [
     {
-      "label": "Selected category, first 12 months",
+      "label": "Selected choice category in first year",
       "rate": 6,
       "unit": "percent",
       "capAmountUsd": 2500,
       "capPeriod": "Quarter",
-      "condition": "First-year offer, limited eligible choice categories and shared quarterly cap"
+      "condition": "Shared quarterly cap with grocery/wholesale club 2% categories; 3% of 6% is first-year bonus"
     },
     {
-      "label": "Selected category after first year",
+      "label": "Selected choice category after first year",
       "rate": 3,
       "unit": "percent",
       "capAmountUsd": 2500,
       "capPeriod": "Quarter",
-      "condition": "Shares spending cap with eligible grocery and wholesale spending"
+      "condition": "Shared quarterly cap"
+    },
+    {
+      "label": "Grocery stores and wholesale clubs",
+      "rate": 2,
+      "unit": "percent",
+      "capAmountUsd": 2500,
+      "capPeriod": "Quarter",
+      "condition": "Shares combined quarterly eligible-purchase cap with choice category"
+    },
+    {
+      "label": "Other eligible purchases or after the shared quarterly cap",
+      "rate": 1,
+      "unit": "percent"
     }
   ],
   "benefits": []

@@ -206,16 +206,20 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 - **Annual fee proposal:** $325 annual fee
 - **Monthly membership fee:** Not verified / not applicable
 - **Rewards model:** tiered
-- **Proposed headline:** 4X Membership Rewards points at restaurants up to $50,000 per calendar year and eligible U.S. supermarkets up to $25,000.
-- **Card bio:** American Express Gold from American Express. 4X Membership Rewards points at restaurants up to $50,000 per calendar year and eligible U.S. supermarkets up to $25,000.
-- **Spending categories:** dining
-- **Restrictions:** Restaurant and supermarket rates have separate annual caps; enrollment is required for some statement credits.
-- **Additional limitations:** Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.
+- **Proposed headline:** 4X points at restaurants (up to $50,000/calendar year) and eligible U.S. supermarkets (up to $25,000/calendar year); 5X prepaid Amex Travel hotels, 3X flights, 2X eligible additional travel.
+- **Card bio:** American Express Gold from American Express. 4X points at restaurants (up to $50,000/calendar year) and eligible U.S. supermarkets (up to $25,000/calendar year); 5X prepaid Amex Travel hotels, 3X flights, 2X eligible additional travel.
+- **Spending categories:** dining, groceries, travel
+- **Restrictions:** Restaurant and U.S. supermarket rewards have separate annual caps; travel multipliers require eligible booking channels; selected statement credits require enrollment.
+- **Additional limitations:** Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.
 
 ### Proposed earning rates and caps
 
-- Restaurants: 4X | Eligible spend cap: $50,000 per Calendar year
-- U.S. supermarkets: 4X | Eligible spend cap: $25,000 per Calendar year
+- Restaurants worldwide: 4X | Eligible spend cap: $50,000 per Calendar year | Then 1X; merchant coding and eligible purchases apply
+- Eligible U.S. supermarkets: 4X | Eligible spend cap: $25,000 per Calendar year | Then 1X; excludes ineligible wholesale and big-box purchases
+- Prepaid hotels through Amex Travel: 5X | Use eligible Amex Travel booking channels
+- Eligible flights direct with airlines or Amex Travel: 3X
+- Eligible prepaid car rentals and cruises through Amex Travel: 2X
+- Other eligible purchases: 1X
 
 ### Proposed benefits and credits
 
@@ -240,8 +244,8 @@ No quantified extra benefits recorded. This does not mean the card has none.
 - **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://www.americanexpress.com/us/credit-cards/card/gold-card/)
-**Source snapshot date:** 2026-10-27
-**Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
+**Source snapshot date:** 2026-10-29
+**Reviewer notes:** Issuer-source research checked 2026-10-29 (not human QC). Check full Amex card agreement, travel merchant/booking exclusions, credit enrollments, and existing varying welcome-offer proposal before any approval. Welcome-offer and financing proposals were not newly approved; review current issuer terms.
 **Reviewer:** Unassigned
 
 To approve after verifying all claims, edit the matching `humanVerified` boolean in [HUMAN-QC.json](HUMAN-QC.json) and rebuild.
@@ -301,16 +305,18 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 - **Annual fee proposal:** $895 annual fee
 - **Monthly membership fee:** Not verified / not applicable
-- **Rewards model:** Not classified
-- **Proposed headline:** 5X points on qualifying flights and prepaid hotels booked through Amex Travel
-- **Card bio:** 5X points on qualifying flights and prepaid hotels booked through Amex Travel
+- **Rewards model:** tiered
+- **Proposed headline:** 5X Membership Rewards points on eligible airline-direct or Amex Travel flights (up to $500,000/year combined) and prepaid hotels booked through Amex Travel; 1X other eligible purchases.
+- **Card bio:** American Express Platinum from American Express. 5X Membership Rewards points on eligible airline-direct or Amex Travel flights (up to $500,000/year combined) and prepaid hotels booked through Amex Travel; 1X other eligible purchases.
 - **Spending categories:** travel
-- **Restrictions:** 5X is subject to booking limits; statement credits and lounge access have separate rules
-- **Additional limitations:** Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.
+- **Restrictions:** 5X flight purchases are capped at $500,000 each calendar year; hotel multipliers require prepaid Amex Travel bookings; card benefits and credits have separate conditions.
+- **Additional limitations:** Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.
 
 ### Proposed earning rates and caps
 
-No quantified earning rules recorded. Verify the official agreement.
+- Flights booked directly with airlines or Amex Travel: 5X | Eligible spend cap: $500,000 per Calendar year | Combined eligible flight purchase cap, then 1X
+- Prepaid hotels through Amex Travel: 5X
+- Other eligible purchases: 1X
 
 ### Proposed benefits and credits
 
@@ -334,9 +340,9 @@ No quantified extra benefits recorded. This does not mean the card has none.
 - **Intro purchase APR:** Not verified for this record
 - **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
-**Issuer source:** [Official issuer reference](https://www.americanexpress.com/us/credit-cards/)
-**Source snapshot date:** 2026-10-27
-**Reviewer notes:** None
+**Issuer source:** [Official issuer reference](https://www.americanexpress.com/us/credit-cards/card/platinum/)
+**Source snapshot date:** 2026-10-29
+**Reviewer notes:** Issuer-source research checked 2026-10-29 (not human QC). Confirm $895 annual fee and additional-card fees against currently offered Amex agreement; verify flight cap and credits. Welcome-offer and financing proposals were not newly approved; review current issuer terms.
 **Reviewer:** Unassigned
 
 To approve after verifying all claims, edit the matching `humanVerified` boolean in [HUMAN-QC.json](HUMAN-QC.json) and rebuild.
@@ -444,16 +450,18 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 - **Annual fee proposal:** $0 annual fee
 - **Monthly membership fee:** Not verified / not applicable
 - **Rewards model:** selectable
-- **Proposed headline:** 6% choice-category reward for the first year; 3% thereafter
-- **Card bio:** Customized Cash Rewards lets cardholders choose an eligible high-earning category. Introductory first-year categories and the quarterly spending cap need special attention.
+- **Proposed headline:** 6% in one eligible choice category during the first year (3% thereafter), 2% grocery/wholesale club purchases, 1% elsewhere, with a shared $2,500 quarterly bonus-category spend cap.
+- **Card bio:** Bank of America Customized Cash Rewards from Bank of America. 6% in one eligible choice category during the first year (3% thereafter), 2% grocery/wholesale club purchases, 1% elsewhere, with a shared $2,500 quarterly bonus-category spend cap.
 - **Spending categories:** groceries, online, dining, gas, travel
-- **Restrictions:** Choice and grocery categories share a quarterly $2,500 cap, then base rate
-- **Additional limitations:** Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.
+- **Restrictions:** The 6% rate is a first-year 3% plus 3% bonus; choice and grocery/wholesale club rates share a combined $2,500 quarterly spending cap, then 1%.
+- **Additional limitations:** Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.
 
 ### Proposed earning rates and caps
 
-- Selected category, first 12 months: 6% | Eligible spend cap: $2,500 per Quarter | First-year offer, limited eligible choice categories and shared quarterly cap
-- Selected category after first year: 3% | Eligible spend cap: $2,500 per Quarter | Shares spending cap with eligible grocery and wholesale spending
+- Selected choice category in first year: 6% | Eligible spend cap: $2,500 per Quarter | Shared quarterly cap with grocery/wholesale club 2% categories; 3% of 6% is first-year bonus
+- Selected choice category after first year: 3% | Eligible spend cap: $2,500 per Quarter | Shared quarterly cap
+- Grocery stores and wholesale clubs: 2% | Eligible spend cap: $2,500 per Quarter | Shares combined quarterly eligible-purchase cap with choice category
+- Other eligible purchases or after the shared quarterly cap: 1%
 
 ### Proposed benefits and credits
 
@@ -476,9 +484,9 @@ Redemption values not confirmed; points and miles are not fixed cash.
 - **Intro purchase APR:** Not verified for this record
 - **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
-**Issuer source:** [Official issuer reference](https://www.bankofamerica.com/credit-cards/)
-**Source snapshot date:** 2026-10-27
-**Reviewer notes:** None
+**Issuer source:** [Official issuer reference](https://www.bankofamerica.com/credit-cards/products/cash-back-credit-card/)
+**Source snapshot date:** 2026-10-29
+**Reviewer notes:** Issuer-source research checked 2026-10-29 (not human QC). Confirm first-year promotion, eligible category selections, monthly category-change rules and relationship bonus qualifications. Welcome-offer and financing proposals were not newly approved; review current issuer terms.
 **Reviewer:** Unassigned
 
 To approve after verifying all claims, edit the matching `humanVerified` boolean in [HUMAN-QC.json](HUMAN-QC.json) and rebuild.
@@ -829,16 +837,19 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 - **Annual fee proposal:** $0 annual fee
 - **Monthly membership fee:** Not verified / not applicable
-- **Rewards model:** Not classified
-- **Proposed headline:** 3% at eligible U.S. supermarkets, gas stations and online retail
-- **Card bio:** 3% at eligible U.S. supermarkets, gas stations and online retail
+- **Rewards model:** tiered
+- **Proposed headline:** 3% cash back at eligible U.S. supermarkets, U.S. gas stations and U.S. online retailers, each on up to $6,000 annual purchases (then 1%); 1% on other eligible purchases.
+- **Card bio:** Blue Cash Everyday from American Express. 3% cash back at eligible U.S. supermarkets, U.S. gas stations and U.S. online retailers, each on up to $6,000 annual purchases (then 1%); 1% on other eligible purchases.
 - **Spending categories:** groceries, gas, online
-- **Restrictions:** Each category has its own $6,000 annual cap, then earns 1%
-- **Additional limitations:** Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.
+- **Restrictions:** Each 3% category has its own $6,000 annual eligible-purchase cap; grocery, online and gas merchant coding exclusions apply. Cash back is earned as Reward Dollars.
+- **Additional limitations:** Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.
 
 ### Proposed earning rates and caps
 
-No quantified earning rules recorded. Verify the official agreement.
+- Eligible U.S. supermarkets: 3% | Eligible spend cap: $6,000 per Calendar year | Then 1%; eligible merchant codes only
+- Eligible U.S. online retail: 3% | Eligible spend cap: $6,000 per Calendar year | Then 1%
+- Eligible U.S. gas stations: 3% | Eligible spend cap: $6,000 per Calendar year | Then 1%
+- Other eligible purchases: 1%
 
 ### Proposed benefits and credits
 
@@ -862,8 +873,8 @@ Redemption values not confirmed; points and miles are not fixed cash.
 - **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://global.americanexpress.com/card-benefits/detail/blue-cash-everyday-321/blue-cash-everyday/)
-**Source snapshot date:** 2026-10-27
-**Reviewer notes:** None
+**Source snapshot date:** 2026-10-29
+**Reviewer notes:** Issuer-source research checked 2026-10-29 (not human QC). Check current cardmember agreement, reward-dollar redemption and welcome-offer channel before approval. Welcome-offer and financing proposals were not newly approved; review current issuer terms.
 **Reviewer:** Unassigned
 
 To approve after verifying all claims, edit the matching `humanVerified` boolean in [HUMAN-QC.json](HUMAN-QC.json) and rebuild.
@@ -874,18 +885,22 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 **Issuer:** American Express | **Review status:** PENDING | **Stage:** Established directory identity
 
-- **Annual fee proposal:** $95 annual fee
+- **Annual fee proposal:** $0 introductory annual fee in year one, then $95 annually
 - **Monthly membership fee:** Not verified / not applicable
-- **Rewards model:** Not classified
-- **Proposed headline:** 6% U.S. supermarkets (first $6,000/year) and select streaming; 3% gas/transit
-- **Card bio:** 6% U.S. supermarkets (first $6,000/year) and select streaming; 3% gas/transit
+- **Rewards model:** tiered
+- **Proposed headline:** 6% cash back on eligible U.S. supermarkets (up to $6,000/year, then 1%) and select U.S. streaming; 3% eligible U.S. gas and transit; 1% other purchases.
+- **Card bio:** Blue Cash Preferred from American Express. 6% cash back on eligible U.S. supermarkets (up to $6,000/year, then 1%) and select U.S. streaming; 3% eligible U.S. gas and transit; 1% other purchases.
 - **Spending categories:** groceries, gas, lifestyle
-- **Restrictions:** $0 introductory annual fee in year one, then $95; supermarket rate capped
-- **Additional limitations:** Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.
+- **Restrictions:** First-year $0 annual-fee promotion is conditional; the $95 ongoing fee and $6,000 supermarket cap must be weighed against spending. Streaming/gas/transit eligibility varies.
+- **Additional limitations:** Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.
 
 ### Proposed earning rates and caps
 
-No quantified earning rules recorded. Verify the official agreement.
+- Eligible U.S. supermarkets: 6% | Eligible spend cap: $6,000 per Calendar year | Then 1%
+- Select U.S. streaming subscriptions: 6%
+- Eligible U.S. gas stations: 3%
+- Eligible transit: 3%
+- Other eligible purchases: 1%
 
 ### Proposed benefits and credits
 
@@ -908,9 +923,9 @@ Redemption values not confirmed; points and miles are not fixed cash.
 - **Intro purchase APR:** Not verified for this record
 - **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
-**Issuer source:** [Official issuer reference](https://www.americanexpress.com/us/credit-cards/)
-**Source snapshot date:** 2026-10-27
-**Reviewer notes:** None
+**Issuer source:** [Official issuer reference](https://www.americanexpress.com/us/credit-cards/card/blue-cash-preferred/)
+**Source snapshot date:** 2026-10-29
+**Reviewer notes:** Issuer-source research checked 2026-10-29 (not human QC). Recheck first-year fee promotion, reward eligibility, rates and terms against issuer agreement before approval. Welcome-offer and financing proposals were not newly approved; review current issuer terms.
 **Reviewer:** Unassigned
 
 To approve after verifying all claims, edit the matching `humanVerified` boolean in [HUMAN-QC.json](HUMAN-QC.json) and rebuild.
@@ -1019,16 +1034,18 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 - **Annual fee proposal:** $0 annual fee
 - **Monthly membership fee:** Not verified / not applicable
-- **Rewards model:** Not classified
-- **Proposed headline:** 1.5% cash back on eligible purchases
-- **Card bio:** 1.5% cash back on eligible purchases
-- **Spending categories:** Not verified
-- **Restrictions:** Promotional offers and eligible purchase exclusions apply
-- **Additional limitations:** Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.
+- **Rewards model:** tiered
+- **Proposed headline:** Earn unlimited 1.5% cash back on eligible purchases; Capital One separately advertises 5% on qualifying Capital One Travel and Entertainment purchases.
+- **Card bio:** Capital One Quicksilver Rewards from Capital One. Earn unlimited 1.5% cash back on eligible purchases; Capital One separately advertises 5% on qualifying Capital One Travel and Entertainment purchases.
+- **Spending categories:** travel, lifestyle
+- **Restrictions:** Higher Travel and Entertainment rates require qualifying Capital One channels; ordinary card purchases earn the base 1.5%.
+- **Additional limitations:** Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.
 
 ### Proposed earning rates and caps
 
-No quantified earning rules recorded. Verify the official agreement.
+- Other eligible purchases: 1.5%
+- Qualifying Capital One Travel purchases: 5% | Issuer booking channel restrictions apply
+- Qualifying Capital One Entertainment purchases: 5% | Issuer purchases only
 
 ### Proposed benefits and credits
 
@@ -1051,9 +1068,9 @@ Redemption values not confirmed; points and miles are not fixed cash.
 - **Intro purchase APR:** Not verified for this record
 - **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
-**Issuer source:** [Official issuer reference](https://www.capitalone.com/credit-cards/)
-**Source snapshot date:** 2026-10-27
-**Reviewer notes:** None
+**Issuer source:** [Official issuer reference](https://www.capitalone.com/credit-cards/quicksilver/)
+**Source snapshot date:** 2026-10-29
+**Reviewer notes:** Issuer-source research checked 2026-10-29 (not human QC). Verify $0 annual fee, portal multipliers and any offer-specific bonuses directly on current issuer terms. Welcome-offer and financing proposals were not newly approved; review current issuer terms.
 **Reviewer:** Unassigned
 
 To approve after verifying all claims, edit the matching `humanVerified` boolean in [HUMAN-QC.json](HUMAN-QC.json) and rebuild.
@@ -1066,16 +1083,18 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 - **Annual fee proposal:** $0 annual fee
 - **Monthly membership fee:** Not verified / not applicable
-- **Rewards model:** Not classified
-- **Proposed headline:** 3% cash back on groceries, dining and eligible entertainment
-- **Card bio:** 3% cash back on groceries, dining and eligible entertainment
+- **Rewards model:** tiered
+- **Proposed headline:** Earn 3% cash back at eligible grocery stores, on dining, entertainment and popular streaming services; 8% on qualifying Capital One Entertainment and 1% other eligible spending.
+- **Card bio:** Capital One Savor Rewards from Capital One. Earn 3% cash back at eligible grocery stores, on dining, entertainment and popular streaming services; 8% on qualifying Capital One Entertainment and 1% other eligible spending.
 - **Spending categories:** groceries, dining, lifestyle
-- **Restrictions:** Some superstores and warehouse clubs do not qualify as groceries
-- **Additional limitations:** Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.
+- **Restrictions:** Superstores, warehouse clubs and some merchants do not code as eligible grocery spending; the 8% rate is limited to Capital One Entertainment.
+- **Additional limitations:** Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.
 
 ### Proposed earning rates and caps
 
-No quantified earning rules recorded. Verify the official agreement.
+- Grocery stores, dining, entertainment and eligible streaming: 3% | Qualifying merchant categories and subscription services only
+- Qualifying Capital One Entertainment purchases: 8%
+- Other eligible purchases: 1%
 
 ### Proposed benefits and credits
 
@@ -1098,9 +1117,9 @@ Redemption values not confirmed; points and miles are not fixed cash.
 - **Intro purchase APR:** Not verified for this record
 - **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
-**Issuer source:** [Official issuer reference](https://www.capitalone.com/credit-cards/)
-**Source snapshot date:** 2026-10-27
-**Reviewer notes:** None
+**Issuer source:** [Official issuer reference](https://www.capitalone.com/credit-cards/savor/)
+**Source snapshot date:** 2026-10-29
+**Reviewer notes:** Issuer-source research checked 2026-10-29 (not human QC). Confirm $0 annual fee, grocery merchant classification, select streaming list and separate Entertainment booking restrictions. Welcome-offer and financing proposals were not newly approved; review current issuer terms.
 **Reviewer:** Unassigned
 
 To approve after verifying all claims, edit the matching `humanVerified` boolean in [HUMAN-QC.json](HUMAN-QC.json) and rebuild.
@@ -1113,16 +1132,17 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 - **Annual fee proposal:** $95 annual fee
 - **Monthly membership fee:** Not verified / not applicable
-- **Rewards model:** flat
-- **Proposed headline:** 2X miles on eligible purchases
-- **Card bio:** Capital One Venture is a general travel miles card with a flat rewards rate and eligible travel-related account credits. Miles redemption values are not fixed cash equivalents.
+- **Rewards model:** tiered
+- **Proposed headline:** 2X miles on eligible purchases and 5X miles on eligible hotels, vacation rentals and rental cars booked through Capital One Travel.
+- **Card bio:** Capital One Venture Rewards from Capital One. 2X miles on eligible purchases and 5X miles on eligible hotels, vacation rentals and rental cars booked through Capital One Travel.
 - **Spending categories:** travel
-- **Restrictions:** Redemption value varies; travel benefits and promotional offers have conditions
-- **Additional limitations:** Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.
+- **Restrictions:** 5X is restricted to Capital One Travel lodging and car bookings, and mile redemption values depend on usage.
+- **Additional limitations:** Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.
 
 ### Proposed earning rates and caps
 
 - Eligible purchases: 2X
+- Hotels, vacation rentals and rental cars via Capital One Travel: 5X | Portal booking conditions apply
 
 ### Proposed benefits and credits
 
@@ -1145,9 +1165,9 @@ Redemption values not confirmed; points and miles are not fixed cash.
 - **Intro purchase APR:** Not verified for this record
 - **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
-**Issuer source:** [Official issuer reference](https://www.capitalone.com/credit-cards/)
-**Source snapshot date:** 2026-10-27
-**Reviewer notes:** None
+**Issuer source:** [Official issuer reference](https://www.capitalone.com/credit-cards/venture/)
+**Source snapshot date:** 2026-10-29
+**Reviewer notes:** Issuer-source research checked 2026-10-29 (not human QC). Review $95 annual fee, any limited-time travel credit and redemption rules; do not assume signup offers are available to every applicant. Welcome-offer and financing proposals were not newly approved; review current issuer terms.
 **Reviewer:** Unassigned
 
 To approve after verifying all claims, edit the matching `humanVerified` boolean in [HUMAN-QC.json](HUMAN-QC.json) and rebuild.
@@ -1160,17 +1180,17 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 - **Annual fee proposal:** $395 annual fee
 - **Monthly membership fee:** Not verified / not applicable
-- **Rewards model:** miles
-- **Proposed headline:** 10X miles for hotels/rental cars through Capital One Travel, 5X portal flights/vacation rentals, 2X all other eligible purchases.
-- **Card bio:** Capital One Venture X Rewards from Capital One. 10X miles for hotels/rental cars through Capital One Travel, 5X portal flights/vacation rentals, 2X all other eligible purchases.
+- **Rewards model:** tiered
+- **Proposed headline:** 10X miles on eligible hotels and rental cars through Capital One Travel, 5X portal flights/vacation rentals, and 2X other eligible purchases.
+- **Card bio:** Capital One Venture X Rewards from Capital One. 10X miles on eligible hotels and rental cars through Capital One Travel, 5X portal flights/vacation rentals, and 2X other eligible purchases.
 - **Spending categories:** travel
-- **Restrictions:** Portal-only multipliers and credits are distinct from direct airline/hotel purchases.
-- **Additional limitations:** Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.
+- **Restrictions:** Travel multipliers require the Capital One Travel portal; $395 annual fee, annual travel credit, lounge entry and anniversary rewards are conditional.
+- **Additional limitations:** Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.
 
 ### Proposed earning rates and caps
 
-- Portal hotels and rental cars: 10X
-- Portal flights and vacation rentals: 5X
+- Hotels and rental cars through Capital One Travel: 10X
+- Flights and vacation rentals through Capital One Travel: 5X
 - Other eligible purchases: 2X
 
 ### Proposed benefits and credits
@@ -1197,8 +1217,8 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 - **Other financing terms:** Variable APR changes and depends on creditworthiness. No foreign transaction fee according to issuer.
 
 **Issuer source:** [Official issuer reference](https://www.capitalone.com/credit-cards/venture-x/)
-**Source snapshot date:** 2026-10-27
-**Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
+**Source snapshot date:** 2026-10-29
+**Reviewer notes:** Issuer-source research checked 2026-10-29 (not human QC). Verify $395 annual fee, lounge access, $300 travel credit, travel portal exclusions and miles redemption terms. Welcome-offer and financing proposals were not newly approved; review current issuer terms.
 **Reviewer:** Unassigned
 
 To approve after verifying all claims, edit the matching `humanVerified` boolean in [HUMAN-QC.json](HUMAN-QC.json) and rebuild.
@@ -1260,15 +1280,18 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 - **Annual fee proposal:** $0 annual fee
 - **Monthly membership fee:** Not verified / not applicable
 - **Rewards model:** rotating
-- **Proposed headline:** 5% cash back in activated rotating categories
-- **Card bio:** Chase Freedom Flex combines activated quarterly bonus categories with ongoing rewards for some everyday purchase types. Activation, the eligible category list, merchant coding and the quarterly spending cap matter.
+- **Proposed headline:** 5% cash back on rotating quarterly categories after activation (up to $1,500 combined quarterly eligible spend), 5% Chase Travel, 3% dining/drugstores, and 1% other purchases.
+- **Card bio:** Chase Freedom Flex from Chase. 5% cash back on rotating quarterly categories after activation (up to $1,500 combined quarterly eligible spend), 5% Chase Travel, 3% dining/drugstores, and 1% other purchases.
 - **Spending categories:** dining, travel
-- **Restrictions:** Quarterly activation and a combined $1,500 bonus-category spending limit apply
-- **Additional limitations:** Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.
+- **Restrictions:** Quarterly bonus categories require activation and are capped at $1,500 in combined eligible quarterly spending; merchant posting deadlines and category exclusions matter.
+- **Additional limitations:** Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.
 
 ### Proposed earning rates and caps
 
-- Activated quarterly spending categories: 5% | Eligible spend cap: $1,500 per Quarter | Activate eligible quarter's categories before the deadline
+- Activated quarterly bonus categories: 5% | Eligible spend cap: $1,500 per Quarter | Activation required; combined eligible quarterly category purchases, then 1%
+- Travel through Chase Travel: 5%
+- Dining and drugstores: 3%
+- Other eligible purchases: 1%
 
 ### Proposed benefits and credits
 
@@ -1291,9 +1314,9 @@ Redemption values not confirmed; points and miles are not fixed cash.
 - **Intro purchase APR:** 0% for 15 months
 - **Other financing terms:** 0% intro purchase APR for 15 months; post-intro APR variable. Issuer currently advertises no foreign transaction fee.
 
-**Issuer source:** [Official issuer reference](https://creditcards.chase.com/)
-**Source snapshot date:** 2026-10-27
-**Reviewer notes:** None
+**Issuer source:** [Official issuer reference](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex)
+**Source snapshot date:** 2026-10-29
+**Reviewer notes:** Issuer-source research checked 2026-10-29 (not human QC). Review each current quarter, activation window, pricing and rewards agreement, rather than treating rotating categories as permanent. Welcome-offer and financing proposals were not newly approved; review current issuer terms.
 **Reviewer:** Unassigned
 
 To approve after verifying all claims, edit the matching `humanVerified` boolean in [HUMAN-QC.json](HUMAN-QC.json) and rebuild.
@@ -1354,16 +1377,18 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 - **Annual fee proposal:** $0 annual fee
 - **Monthly membership fee:** Not verified / not applicable
-- **Rewards model:** Not classified
-- **Proposed headline:** 1.5% base cash back; 3% dining/drugstores; 5% Chase Travel
-- **Card bio:** 1.5% base cash back; 3% dining/drugstores; 5% Chase Travel
+- **Rewards model:** tiered
+- **Proposed headline:** Earn 5% on eligible Chase Travel bookings, 3% at eligible restaurants and drugstores, and 1.5% on other eligible purchases with no annual fee.
+- **Card bio:** Chase Freedom Unlimited from Chase. Earn 5% on eligible Chase Travel bookings, 3% at eligible restaurants and drugstores, and 1.5% on other eligible purchases with no annual fee.
 - **Spending categories:** dining, travel
-- **Restrictions:** Enhanced rates have merchant and booking eligibility rules
-- **Additional limitations:** Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.
+- **Restrictions:** 5% travel requires Chase Travel purchases; restaurant/drugstore merchant coding and promotional conditions can vary.
+- **Additional limitations:** Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.
 
 ### Proposed earning rates and caps
 
-No quantified earning rules recorded. Verify the official agreement.
+- Travel through Chase Travel: 5%
+- Eligible dining and drugstores: 3%
+- Other eligible purchases: 1.5%
 
 ### Proposed benefits and credits
 
@@ -1386,9 +1411,9 @@ No quantified extra benefits recorded. This does not mean the card has none.
 - **Intro purchase APR:** 0% for 15 months
 - **Other financing terms:** 0% purchase intro APR for 15 months from account opening in the observed offer; balance transfer fees and post-promo variable APR apply.
 
-**Issuer source:** [Official issuer reference](https://www.chase.com/personal/credit-cards/freedom/unlimited)
-**Source snapshot date:** 2026-10-27
-**Reviewer notes:** None
+**Issuer source:** [Official issuer reference](https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited)
+**Source snapshot date:** 2026-10-29
+**Reviewer notes:** Issuer-source research checked 2026-10-29 (not human QC). Confirm current $0 fee and rewards agreement; bonuses and APR vary with offer channel. Welcome-offer and financing proposals were not newly approved; review current issuer terms.
 **Reviewer:** Unassigned
 
 To approve after verifying all claims, edit the matching `humanVerified` boolean in [HUMAN-QC.json](HUMAN-QC.json) and rebuild.
@@ -1401,16 +1426,21 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 - **Annual fee proposal:** $95 annual fee
 - **Monthly membership fee:** Not verified / not applicable
-- **Rewards model:** Not classified
-- **Proposed headline:** 5X points on eligible Chase Travel bookings
-- **Card bio:** 5X points on eligible Chase Travel bookings
-- **Spending categories:** travel, dining
-- **Restrictions:** Reward earning and redemption depend on specific issuer rules
-- **Additional limitations:** Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.
+- **Rewards model:** tiered
+- **Proposed headline:** 5X Chase Travel, 3X eligible dining, selected gas/EV/vacation homes, streaming and online groceries; 2X other travel and 1X other eligible purchases.
+- **Card bio:** Chase Sapphire Preferred from Chase. 5X Chase Travel, 3X eligible dining, selected gas/EV/vacation homes, streaming and online groceries; 2X other travel and 1X other eligible purchases.
+- **Spending categories:** travel, dining, gas, online, lifestyle
+- **Restrictions:** Newly expanded 3X categories can have brand, merchant and product exclusions; 5X requires Chase Travel, while other travel generally earns 2X.
+- **Additional limitations:** Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.
 
 ### Proposed earning rates and caps
 
-No quantified earning rules recorded. Verify the official agreement.
+- Eligible Chase Travel bookings: 5X
+- Dining: 3X
+- Selected gas, EV charging and vacation-home purchases: 3X | Eligibility and participating brands apply
+- Eligible streaming and online grocery purchases: 3X | Exclusions apply
+- Other travel purchases: 2X
+- Other eligible purchases: 1X
 
 ### Proposed benefits and credits
 
@@ -1433,9 +1463,9 @@ Redemption values not confirmed; points and miles are not fixed cash.
 - **Intro purchase APR:** Not verified for this record
 - **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
-**Issuer source:** [Official issuer reference](https://creditcards.chase.com/)
-**Source snapshot date:** 2026-10-27
-**Reviewer notes:** None
+**Issuer source:** [Official issuer reference](https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred)
+**Source snapshot date:** 2026-10-29
+**Reviewer notes:** Issuer-source research checked 2026-10-29 (not human QC). Current issuer product shows expanded 3X categories. Reconfirm eligibility, excluded merchants and points transfer/redemption rules before human approval. Welcome-offer and financing proposals were not newly approved; review current issuer terms.
 **Reviewer:** Unassigned
 
 To approve after verifying all claims, edit the matching `humanVerified` boolean in [HUMAN-QC.json](HUMAN-QC.json) and rebuild.
@@ -1449,16 +1479,19 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 - **Annual fee proposal:** $795 annual fee
 - **Monthly membership fee:** Not verified / not applicable
 - **Rewards model:** tiered
-- **Proposed headline:** 8X points on eligible Chase Travel bookings; 4X flights and hotels booked directly; additional credits subject to enrollment and restrictions.
-- **Card bio:** Chase Sapphire Reserve from Chase. 8X points on eligible Chase Travel bookings; 4X flights and hotels booked directly; additional credits subject to enrollment and restrictions.
-- **Spending categories:** travel
-- **Restrictions:** $795 annual fee plus $195 per authorized user; credit amounts and redemption rates need separate benefit review.
-- **Additional limitations:** Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.
+- **Proposed headline:** 8X points on eligible Chase Travel, 4X direct-booked airline flights and hotels, 3X dining worldwide and 1X other eligible purchases.
+- **Card bio:** Chase Sapphire Reserve from Chase. 8X points on eligible Chase Travel, 4X direct-booked airline flights and hotels, 3X dining worldwide and 1X other eligible purchases.
+- **Spending categories:** travel, dining
+- **Restrictions:** $795 annual fee and $195 for each authorized user; some travel-credit purchases do not earn points. Additional credits have separate eligibility and enrollment conditions.
+- **Additional limitations:** Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.
 
 ### Proposed earning rates and caps
 
-- Chase Travel eligible bookings: 8X
-- Airline flights and hotels booked directly: 4X
+- Eligible Chase Travel bookings: 8X
+- Flights booked directly with airlines: 4X
+- Hotels booked directly: 4X
+- Dining worldwide: 3X
+- Other eligible purchases: 1X
 
 ### Proposed benefits and credits
 
@@ -1482,8 +1515,8 @@ Redemption values not confirmed; points and miles are not fixed cash.
 - **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
 **Issuer source:** [Official issuer reference](https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve)
-**Source snapshot date:** 2026-10-27
-**Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
+**Source snapshot date:** 2026-10-29
+**Reviewer notes:** Issuer-source research checked 2026-10-29 (not human QC). Confirm posted pricing and benefits against Chase agreements; offers and point value claims depend on redemption and eligibility. Welcome-offer and financing proposals were not newly approved; review current issuer terms.
 **Reviewer:** Unassigned
 
 To approve after verifying all claims, edit the matching `humanVerified` boolean in [HUMAN-QC.json](HUMAN-QC.json) and rebuild.
@@ -1685,16 +1718,18 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 - **Annual fee proposal:** $0 annual fee
 - **Monthly membership fee:** Not verified / not applicable
-- **Rewards model:** Not classified
-- **Proposed headline:** 2% total cash back equivalent: 1% buying, 1% paying
-- **Card bio:** 2% total cash back equivalent: 1% buying, 1% paying
-- **Spending categories:** Not verified
-- **Restrictions:** The second 1% depends on qualifying payment; rewards use ThankYou Points
-- **Additional limitations:** Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.
+- **Rewards model:** tiered
+- **Proposed headline:** Earn a total 2% cash-back equivalent on eligible purchases: 1% when buying plus 1% on qualifying payments. Eligible Citi Travel portal hotel, rental car and attraction bookings may earn a total of 5%.
+- **Card bio:** Citi Double Cash from Citi. Earn a total 2% cash-back equivalent on eligible purchases: 1% when buying plus 1% on qualifying payments. Eligible Citi Travel portal hotel, rental car and attraction bookings may earn a total of 5%.
+- **Spending categories:** travel
+- **Restrictions:** The second 1% requires qualifying payment; cash rewards accrue as ThankYou Points. The total 5% applies only to eligible Citi Travel portal bookings.
+- **Additional limitations:** Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.
 
 ### Proposed earning rates and caps
 
-No quantified earning rules recorded. Verify the official agreement.
+- Eligible purchases at time of purchase: 1%
+- Qualifying payments on purchases: 1% | Corresponding purchase tracker balance required
+- Total on qualifying Citi Travel portal hotel/car/attraction purchases: 5% | Includes the standard 1% + 1% earning; not an extra 5%
 
 ### Proposed benefits and credits
 
@@ -1717,9 +1752,9 @@ Redemption values not confirmed; points and miles are not fixed cash.
 - **Intro purchase APR:** Not verified for this record
 - **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
-**Issuer source:** [Official issuer reference](https://www.citi.com/credit-cards/)
-**Source snapshot date:** 2026-10-27
-**Reviewer notes:** None
+**Issuer source:** [Official issuer reference](https://www.citi.com/credit-cards/citi-double-cash-credit-card)
+**Source snapshot date:** 2026-10-29
+**Reviewer notes:** Issuer-source research checked 2026-10-29 (not human QC). Review points-to-cash conversion, payment tracker and fees from issuer pricing disclosures. Ignore channel-specific bonus offers until independently checked. Welcome-offer and financing proposals were not newly approved; review current issuer terms.
 **Reviewer:** Unassigned
 
 To approve after verifying all claims, edit the matching `humanVerified` boolean in [HUMAN-QC.json](HUMAN-QC.json) and rebuild.
@@ -2210,16 +2245,16 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 - **Annual fee proposal:** $0 annual fee
 - **Monthly membership fee:** Not verified / not applicable
 - **Rewards model:** rotating
-- **Proposed headline:** 5% on activated rotating categories up to quarterly spending limits, then 1% cash back.
-- **Card bio:** Discover it Cash Back from Capital One. 5% on activated rotating categories up to quarterly spending limits, then 1% cash back.
+- **Proposed headline:** 5% cash back in eligible activated rotating categories on up to $1,500 in purchases each quarter, then 1% cash back on other eligible spending; Capital One now manages these Discover card rewards.
+- **Card bio:** Discover it Cash Back from Capital One. 5% cash back in eligible activated rotating categories on up to $1,500 in purchases each quarter, then 1% cash back on other eligible spending; Capital One now manages these Discover card rewards.
 - **Spending categories:** Not verified
-- **Restrictions:** Quarterly activation and eligible purchase caps apply; discover brand and application channel should be reconfirmed.
-- **Additional limitations:** Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.
+- **Restrictions:** Activation is required each quarter and 5% is capped at $1,500 of eligible purchases. Discover-to-Capital-One account migration and new-account promotional terms must be checked separately.
+- **Additional limitations:** Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.
 
 ### Proposed earning rates and caps
 
-- Activated quarterly categories: 5% | Activation required; current quarterly cap must be confirmed
-- Other purchases: 1%
+- Activated quarterly categories: 5% | Eligible spend cap: $1,500 per Quarter | Activation required each quarter; eligible category purchases only
+- Other eligible purchases: 1%
 
 ### Proposed benefits and credits
 
@@ -2242,9 +2277,9 @@ Redemption values not confirmed; points and miles are not fixed cash.
 - **Intro purchase APR:** Not verified for this record
 - **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
-**Issuer source:** [Official issuer reference](https://www.capitalone.com/credit-cards/)
-**Source snapshot date:** 2026-10-27
-**Reviewer notes:** Issuer-page prefill, 2026-10-27. Check linked current issuer agreement, fee schedule and bonus exclusions before marking true.
+**Issuer source:** [Official issuer reference](https://www.capitalone.com/credit-cards/cash-back/)
+**Source snapshot date:** 2026-10-29
+**Reviewer notes:** Issuer-source research checked 2026-10-29 (not human QC). Use Capital One's Discover transition FAQ for existing account activation and cap. Confirm separate current new-account terms and quarterly merchant categories. Welcome-offer and financing proposals were not newly approved; review current issuer terms.
 **Reviewer:** Unassigned
 
 To approve after verifying all claims, edit the matching `humanVerified` boolean in [HUMAN-QC.json](HUMAN-QC.json) and rebuild.
@@ -4502,16 +4537,16 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 - **Annual fee proposal:** $0 annual fee
 - **Monthly membership fee:** Not verified / not applicable
-- **Rewards model:** Not classified
-- **Proposed headline:** Unlimited 2% cash rewards
-- **Card bio:** Unlimited 2% cash rewards
+- **Rewards model:** flat
+- **Proposed headline:** Earn two cents in cash rewards per $1 of eligible net purchases, equivalent to a 2% rewards rate; verify the current annual fee against issuer pricing.
+- **Card bio:** Wells Fargo Active Cash from Wells Fargo. Earn two cents in cash rewards per $1 of eligible net purchases, equivalent to a 2% rewards rate; verify the current annual fee against issuer pricing.
 - **Spending categories:** Not verified
-- **Restrictions:** Reward rate also cross-checked with Visa card directory; full issuer agreement not audited
-- **Additional limitations:** Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.
+- **Restrictions:** Issuer rewards terms currently available from a 2025-dated document; obtain the latest card fee schedule and full rewards agreement before human approval.
+- **Additional limitations:** Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.
 
 ### Proposed earning rates and caps
 
-No quantified earning rules recorded. Verify the official agreement.
+- Eligible net purchases: 2% | Rewards are calculated as $0.02 per eligible $1 spent
 
 ### Proposed benefits and credits
 
@@ -4534,9 +4569,9 @@ Redemption values not confirmed; points and miles are not fixed cash.
 - **Intro purchase APR:** Not verified for this record
 - **Other financing terms:** Read current issuer purchase APR, transfer, foreign fee, penalty, and grace period terms.
 
-**Issuer source:** [Official issuer reference](https://www.wellsfargo.com/credit-cards/agreements/)
-**Source snapshot date:** 2026-10-27
-**Reviewer notes:** None
+**Issuer source:** [Official issuer reference](https://www.wellsfargo.com/credit-cards/active-cash/terms/)
+**Source snapshot date:** 2026-10-29
+**Reviewer notes:** Issuer-source research checked 2026-10-29 (not human QC). Partial issuer verification only: 2025-dated issuer reward terms support 2% but current $0 annual fee is corroborated by Visa. A current issuer fee disclosure is required. Welcome-offer and financing proposals were not newly approved; review current issuer terms.
 **Reviewer:** Unassigned
 
 To approve after verifying all claims, edit the matching `humanVerified` boolean in [HUMAN-QC.json](HUMAN-QC.json) and rebuild.

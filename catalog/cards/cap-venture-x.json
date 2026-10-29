@@ -5,8 +5,8 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "10X miles for hotels/rental cars through Capital One Travel, 5X portal flights/vacation rentals, 2X all other eligible purchases.",
-  "primaryLabel": "10X miles for hotels/rental cars through Capital One Travel, 5X portal flights/vacation rentals, 2X all other eligible purchases.",
+  "summary": "10X miles on eligible hotels and rental cars through Capital One Travel, 5X portal flights/vacation rentals, and 2X other eligible purchases.",
+  "primaryLabel": "10X miles on eligible hotels and rental cars through Capital One Travel, 5X portal flights/vacation rentals, and 2X other eligible purchases.",
   "feeSummary": "$395 annual fee",
   "annualFeeUsd": 395,
   "rewards": [
@@ -16,24 +16,24 @@
     "travel"
   ],
   "features": [],
-  "plainEnglish": "10X miles for hotels/rental cars through Capital One Travel, 5X portal flights/vacation rentals, 2X all other eligible purchases.",
-  "watchOut": "Portal-only multipliers and credits are distinct from direct airline/hotel purchases.",
-  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
-  "verifiedAt": "2026-10-27",
+  "plainEnglish": "10X miles on eligible hotels and rental cars through Capital One Travel, 5X portal flights/vacation rentals, and 2X other eligible purchases.",
+  "watchOut": "Travel multipliers require the Capital One Travel portal; $395 annual fee, annual travel credit, lounge entry and anniversary rewards are conditional.",
+  "limitations": "Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.",
+  "verifiedAt": "2026-10-29",
   "issuerSource": "https://www.capitalone.com/credit-cards/venture-x/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Capital One Venture X Rewards from Capital One. 10X miles for hotels/rental cars through Capital One Travel, 5X portal flights/vacation rentals, 2X all other eligible purchases.",
-  "rewardStructure": "miles",
+  "bio": "Capital One Venture X Rewards from Capital One. 10X miles on eligible hotels and rental cars through Capital One Travel, 5X portal flights/vacation rentals, and 2X other eligible purchases.",
+  "rewardStructure": "tiered",
   "earnRules": [
     {
-      "label": "Portal hotels and rental cars",
+      "label": "Hotels and rental cars through Capital One Travel",
       "rate": 10,
       "unit": "x"
     },
     {
-      "label": "Portal flights and vacation rentals",
+      "label": "Flights and vacation rentals through Capital One Travel",
       "rate": 5,
       "unit": "x"
     },

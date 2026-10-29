@@ -5,36 +5,52 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "8X points on eligible Chase Travel bookings; 4X flights and hotels booked directly; additional credits subject to enrollment and restrictions.",
-  "primaryLabel": "8X points on eligible Chase Travel bookings; 4X flights and hotels booked directly; additional credits subject to enrollment and restrictions.",
+  "summary": "8X points on eligible Chase Travel, 4X direct-booked airline flights and hotels, 3X dining worldwide and 1X other eligible purchases.",
+  "primaryLabel": "8X points on eligible Chase Travel, 4X direct-booked airline flights and hotels, 3X dining worldwide and 1X other eligible purchases.",
   "feeSummary": "$795 annual fee",
   "annualFeeUsd": 795,
   "rewards": [
     "points"
   ],
   "categories": [
-    "travel"
+    "travel",
+    "dining"
   ],
   "features": [],
-  "plainEnglish": "8X points on eligible Chase Travel bookings; 4X flights and hotels booked directly; additional credits subject to enrollment and restrictions.",
-  "watchOut": "$795 annual fee plus $195 per authorized user; credit amounts and redemption rates need separate benefit review.",
-  "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
-  "verifiedAt": "2026-10-27",
+  "plainEnglish": "8X points on eligible Chase Travel, 4X direct-booked airline flights and hotels, 3X dining worldwide and 1X other eligible purchases.",
+  "watchOut": "$795 annual fee and $195 for each authorized user; some travel-credit purchases do not earn points. Additional credits have separate eligibility and enrollment conditions.",
+  "limitations": "Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.",
+  "verifiedAt": "2026-10-29",
   "issuerSource": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
-  "bio": "Chase Sapphire Reserve from Chase. 8X points on eligible Chase Travel bookings; 4X flights and hotels booked directly; additional credits subject to enrollment and restrictions.",
+  "bio": "Chase Sapphire Reserve from Chase. 8X points on eligible Chase Travel, 4X direct-booked airline flights and hotels, 3X dining worldwide and 1X other eligible purchases.",
   "rewardStructure": "tiered",
   "earnRules": [
     {
-      "label": "Chase Travel eligible bookings",
+      "label": "Eligible Chase Travel bookings",
       "rate": 8,
       "unit": "x"
     },
     {
-      "label": "Airline flights and hotels booked directly",
+      "label": "Flights booked directly with airlines",
       "rate": 4,
+      "unit": "x"
+    },
+    {
+      "label": "Hotels booked directly",
+      "rate": 4,
+      "unit": "x"
+    },
+    {
+      "label": "Dining worldwide",
+      "rate": 3,
+      "unit": "x"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1,
       "unit": "x"
     }
   ],

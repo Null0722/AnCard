@@ -5,9 +5,9 @@
   "status": "published",
   "fictional": false,
   "tone": "slate",
-  "summary": "6% U.S. supermarkets (first $6,000/year) and select streaming; 3% gas/transit",
-  "primaryLabel": "6% U.S. supermarkets (first $6,000/year) and select streaming; 3% gas/transit",
-  "feeSummary": "$95 annual fee",
+  "summary": "6% cash back on eligible U.S. supermarkets (up to $6,000/year, then 1%) and select U.S. streaming; 3% eligible U.S. gas and transit; 1% other purchases.",
+  "primaryLabel": "6% cash back on eligible U.S. supermarkets (up to $6,000/year, then 1%) and select U.S. streaming; 3% eligible U.S. gas and transit; 1% other purchases.",
+  "feeSummary": "$0 introductory annual fee in year one, then $95 annually",
   "annualFeeUsd": 95,
   "rewards": [
     "cash_back"
@@ -18,11 +18,11 @@
     "lifestyle"
   ],
   "features": [],
-  "plainEnglish": "6% U.S. supermarkets (first $6,000/year) and select streaming; 3% gas/transit",
-  "watchOut": "$0 introductory annual fee in year one, then $95; supermarket rate capped",
-  "limitations": "Selected source-checked facts only. This is not a complete rates and card agreement audit. Terms and offers may change; confirm current official issuer documents before acting.",
-  "verifiedAt": "2026-10-27",
-  "issuerSource": "https://www.americanexpress.com/us/credit-cards/",
+  "plainEnglish": "6% cash back on eligible U.S. supermarkets (up to $6,000/year, then 1%) and select U.S. streaming; 3% eligible U.S. gas and transit; 1% other purchases.",
+  "watchOut": "First-year $0 annual-fee promotion is conditional; the $95 ongoing fee and $6,000 supermarket cap must be weighed against spending. Streaming/gas/transit eligibility varies.",
+  "limitations": "Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.",
+  "verifiedAt": "2026-10-29",
+  "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-preferred/",
   "verificationLevel": "selected-issuer-page-facts",
   "imageFront": null,
   "accessType": "public",
@@ -43,5 +43,37 @@
   "inviteOnlyOffer": {
     "status": "not_documented",
     "description": "No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product."
-  }
+  },
+  "bio": "Blue Cash Preferred from American Express. 6% cash back on eligible U.S. supermarkets (up to $6,000/year, then 1%) and select U.S. streaming; 3% eligible U.S. gas and transit; 1% other purchases.",
+  "rewardStructure": "tiered",
+  "earnRules": [
+    {
+      "label": "Eligible U.S. supermarkets",
+      "rate": 6,
+      "unit": "percent",
+      "capAmountUsd": 6000,
+      "capPeriod": "Calendar year",
+      "condition": "Then 1%"
+    },
+    {
+      "label": "Select U.S. streaming subscriptions",
+      "rate": 6,
+      "unit": "percent"
+    },
+    {
+      "label": "Eligible U.S. gas stations",
+      "rate": 3,
+      "unit": "percent"
+    },
+    {
+      "label": "Eligible transit",
+      "rate": 3,
+      "unit": "percent"
+    },
+    {
+      "label": "Other eligible purchases",
+      "rate": 1,
+      "unit": "percent"
+    }
+  ]
 }
