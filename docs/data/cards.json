@@ -163,51 +163,149 @@
       "id": "amex-gold",
       "name": "American Express Gold",
       "issuer": "American Express",
-      "status": "pending_review",
+      "status": "published",
       "fictional": false,
       "tone": "slate",
-      "humanVerified": false,
-      "summary": "Terms and benefits are awaiting human review.",
-      "primaryLabel": "Pending human review",
-      "feeSummary": "Annual fee: pending human review",
-      "annualFeeUsd": null,
-      "rewards": [],
-      "categories": [],
+      "summary": "4X points at restaurants (up to $50,000/calendar year) and eligible U.S. supermarkets (up to $25,000/calendar year); 5X prepaid Amex Travel hotels, 3X flights, 2X eligible additional travel.",
+      "primaryLabel": "4X points at restaurants (up to $50,000/calendar year) and eligible U.S. supermarkets (up to $25,000/calendar year); 5X prepaid Amex Travel hotels, 3X flights, 2X eligible additional travel.",
+      "feeSummary": "$325 annual fee",
+      "annualFeeUsd": 325,
+      "rewards": [
+        "points"
+      ],
+      "categories": [
+        "dining",
+        "groceries",
+        "travel"
+      ],
       "features": [],
-      "plainEnglish": "The proposed benefit details are currently in the human QC queue and have not been approved for visitors.",
-      "watchOut": "Do not rely on this card for a financial decision until its terms have been checked against the current issuer agreement.",
-      "limitations": "Annual fees, APRs, bonuses, redemption, and insurance benefits are intentionally hidden until human QC.",
-      "verifiedAt": null,
+      "plainEnglish": "4X points at restaurants (up to $50,000/calendar year) and eligible U.S. supermarkets (up to $25,000/calendar year); 5X prepaid Amex Travel hotels, 3X flights, 2X eligible additional travel.",
+      "watchOut": "Restaurant and U.S. supermarket rewards have separate annual caps; travel multipliers require eligible booking channels; selected statement credits require enrollment.",
+      "limitations": "Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.",
+      "verifiedAt": "2026-10-29",
       "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
-      "verificationLevel": "pending-human-review",
+      "verificationLevel": "selected-issuer-page-facts",
       "imageFront": null,
       "accessType": "public",
-      "airlineProgram": null
+      "bio": "American Express Gold from American Express. 4X points at restaurants (up to $50,000/calendar year) and eligible U.S. supermarkets (up to $25,000/calendar year); 5X prepaid Amex Travel hotels, 3X flights, 2X eligible additional travel.",
+      "rewardStructure": "tiered",
+      "earnRules": [
+        {
+          "label": "Restaurants worldwide",
+          "rate": 4,
+          "unit": "x",
+          "capAmountUsd": 50000,
+          "capPeriod": "Calendar year",
+          "condition": "Then 1X; merchant coding and eligible purchases apply"
+        },
+        {
+          "label": "Eligible U.S. supermarkets",
+          "rate": 4,
+          "unit": "x",
+          "capAmountUsd": 25000,
+          "capPeriod": "Calendar year",
+          "condition": "Then 1X; excludes ineligible wholesale and big-box purchases"
+        },
+        {
+          "label": "Prepaid hotels through Amex Travel",
+          "rate": 5,
+          "unit": "x",
+          "condition": "Use eligible Amex Travel booking channels"
+        },
+        {
+          "label": "Eligible flights direct with airlines or Amex Travel",
+          "rate": 3,
+          "unit": "x"
+        },
+        {
+          "label": "Eligible prepaid car rentals and cruises through Amex Travel",
+          "rate": 2,
+          "unit": "x"
+        },
+        {
+          "label": "Other eligible purchases",
+          "rate": 1,
+          "unit": "x"
+        }
+      ],
+      "benefits": [],
+      "monthlyFeeUsd": null,
+      "welcomeOffer": {
+        "kind": "up_to",
+        "amount": 100000,
+        "unit": "points",
+        "minimumSpendUsd": 8000,
+        "monthsToEarn": 6,
+        "description": "As high as 100,000 Membership Rewards points; actual amount varies and may not be available. Only eligible purchases count.",
+        "source": "https://www.americanexpress.com/us/credit-cards/",
+        "observedAt": "2026-10-27"
+      },
+      "targetedOffers": {
+        "status": "not_individually_verified",
+        "description": "Issuer-specific and targeted offers may exist. Do not assume the public offer or maximum offer is available for any applicant."
+      },
+      "inviteOnlyOffer": {
+        "status": "not_documented",
+        "description": "No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product."
+      },
+      "redemptionDetail": {
+        "examples": [
+          {
+            "method": "Statement charges",
+            "centsPerPoint": 0.6,
+            "notes": "Membership Rewards points, issuer's published current illustrative rate."
+          },
+          {
+            "method": "Eligible flights through Amex Travel",
+            "centsPerPoint": 1,
+            "notes": "Travel portal redemption; terms and availability apply."
+          }
+        ],
+        "source": "https://www.americanexpress.com/en-us/credit-cards/credit-intel/american-express-points-value/"
+      },
+      "approvalGuidance": {
+        "issuerCreditLevel": null,
+        "noPresetSpendingLimit": true,
+        "creditScoreThreshold": null,
+        "typicalApprovalScore": null,
+        "startingLimitMinUsd": null,
+        "notes": "No preset spending limit is not unlimited spending. Available spending power adapts to purchases, payment and credit history; Amex may impose a limit.",
+        "source": "https://www.americanexpress.com/us/credit-cards/card/gold-card/"
+      },
+      "humanVerified": true
     },
     {
       "id": "amex-green",
       "name": "American Express Green",
       "issuer": "American Express",
-      "status": "pending_review",
+      "status": "published",
       "fictional": false,
       "tone": "slate",
-      "humanVerified": false,
-      "summary": "Terms and benefits are awaiting human review.",
-      "primaryLabel": "Pending human review",
-      "feeSummary": "Annual fee: pending human review",
+      "summary": "American Express Green membership rewards for travel, transit and dining purchases.",
+      "primaryLabel": "American Express Green membership rewards for travel, transit and dining purchases.",
+      "feeSummary": "Annual fee: issuer agreement review required",
       "annualFeeUsd": null,
-      "rewards": [],
-      "categories": [],
+      "rewards": [
+        "points"
+      ],
+      "categories": [
+        "travel"
+      ],
       "features": [],
-      "plainEnglish": "The proposed benefit details are currently in the human QC queue and have not been approved for visitors.",
-      "watchOut": "Do not rely on this card for a financial decision until its terms have been checked against the current issuer agreement.",
-      "limitations": "Annual fees, APRs, bonuses, redemption, and insurance benefits are intentionally hidden until human QC.",
-      "verifiedAt": null,
+      "plainEnglish": "American Express Green membership rewards for travel, transit and dining purchases.",
+      "watchOut": "Confirm current public consumer card offering and annual fee.",
+      "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
+      "verifiedAt": "2026-10-27",
       "issuerSource": "https://www.americanexpress.com/us/credit-cards/",
-      "verificationLevel": "pending-human-review",
+      "verificationLevel": "selected-issuer-page-facts",
       "imageFront": null,
       "accessType": "public",
-      "airlineProgram": null
+      "bio": "American Express Green from American Express. American Express Green membership rewards for travel, transit and dining purchases.",
+      "rewardStructure": "points",
+      "earnRules": [],
+      "benefits": [],
+      "monthlyFeeUsd": null,
+      "humanVerified": true
     },
     {
       "id": "amex-hilton",
@@ -338,53 +436,117 @@
       "id": "amex-platinum",
       "name": "American Express Platinum",
       "issuer": "American Express",
-      "status": "pending_review",
+      "status": "published",
       "fictional": false,
       "tone": "slate",
-      "humanVerified": false,
-      "summary": "Terms and benefits are awaiting human review.",
-      "primaryLabel": "Pending human review",
-      "feeSummary": "Annual fee: pending human review",
-      "annualFeeUsd": null,
-      "rewards": [],
-      "categories": [],
+      "summary": "5X Membership Rewards points on eligible airline-direct or Amex Travel flights (up to $500,000/year combined) and prepaid hotels booked through Amex Travel; 1X other eligible purchases.",
+      "primaryLabel": "5X Membership Rewards points on eligible airline-direct or Amex Travel flights (up to $500,000/year combined) and prepaid hotels booked through Amex Travel; 1X other eligible purchases.",
+      "feeSummary": "$895 annual fee",
+      "annualFeeUsd": 895,
+      "rewards": [
+        "points"
+      ],
+      "categories": [
+        "travel"
+      ],
       "features": [],
-      "plainEnglish": "The proposed benefit details are currently in the human QC queue and have not been approved for visitors.",
-      "watchOut": "Do not rely on this card for a financial decision until its terms have been checked against the current issuer agreement.",
-      "limitations": "Annual fees, APRs, bonuses, redemption, and insurance benefits are intentionally hidden until human QC.",
-      "verifiedAt": null,
+      "plainEnglish": "5X Membership Rewards points on eligible airline-direct or Amex Travel flights (up to $500,000/year combined) and prepaid hotels booked through Amex Travel; 1X other eligible purchases.",
+      "watchOut": "5X flight purchases are capped at $500,000 each calendar year; hotel multipliers require prepaid Amex Travel bookings; card benefits and credits have separate conditions.",
+      "limitations": "Research candidate based on selected dated issuer-source facts, not a complete current card agreement or human QC approval. Rates, exclusions, APRs, redemption and promotional eligibility require owner review.",
+      "verifiedAt": "2026-10-29",
       "issuerSource": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
-      "verificationLevel": "pending-human-review",
+      "verificationLevel": "selected-issuer-page-facts",
       "imageFront": null,
       "accessType": "public",
-      "airlineProgram": null
+      "welcomeOffer": {
+        "kind": "up_to",
+        "amount": 175000,
+        "unit": "points",
+        "minimumSpendUsd": 12000,
+        "monthsToEarn": 6,
+        "description": "As high as 175,000 Membership Rewards points; actual amount and eligibility vary; not a guaranteed bonus.",
+        "source": "https://www.americanexpress.com/us/credit-cards/",
+        "observedAt": "2026-10-27"
+      },
+      "targetedOffers": {
+        "status": "not_individually_verified",
+        "description": "Issuer-specific and targeted offers may exist. Do not assume the public offer or maximum offer is available for any applicant."
+      },
+      "inviteOnlyOffer": {
+        "status": "not_documented",
+        "description": "No public evidence of a distinct invitation-only sign-up bonus for this record. Invitation to apply is not the same as an invitation-only product."
+      },
+      "redemptionDetail": {
+        "examples": [
+          {
+            "method": "Statement charges",
+            "centsPerPoint": 0.6,
+            "notes": "Membership Rewards points; value depends on redemption choice."
+          },
+          {
+            "method": "Eligible flights through Amex Travel",
+            "centsPerPoint": 1,
+            "notes": "Travel portal rate depends on eligible redemption type."
+          }
+        ],
+        "source": "https://www.americanexpress.com/en-us/credit-cards/credit-intel/american-express-points-value/"
+      },
+      "bio": "American Express Platinum from American Express. 5X Membership Rewards points on eligible airline-direct or Amex Travel flights (up to $500,000/year combined) and prepaid hotels booked through Amex Travel; 1X other eligible purchases.",
+      "rewardStructure": "tiered",
+      "earnRules": [
+        {
+          "label": "Flights booked directly with airlines or Amex Travel",
+          "rate": 5,
+          "unit": "x",
+          "capAmountUsd": 500000,
+          "capPeriod": "Calendar year",
+          "condition": "Combined eligible flight purchase cap, then 1X"
+        },
+        {
+          "label": "Prepaid hotels through Amex Travel",
+          "rate": 5,
+          "unit": "x"
+        },
+        {
+          "label": "Other eligible purchases",
+          "rate": 1,
+          "unit": "x"
+        }
+      ],
+      "humanVerified": true
     },
     {
       "id": "boa-atmos-ascent",
       "name": "Atmos Rewards Ascent Visa Signature",
       "issuer": "Bank of America",
-      "status": "pending_review",
+      "status": "published",
       "fictional": false,
       "tone": "slate",
-      "humanVerified": false,
-      "summary": "Terms and benefits are awaiting human review.",
-      "primaryLabel": "Pending human review",
-      "feeSummary": "Annual fee: pending human review",
-      "annualFeeUsd": null,
-      "rewards": [],
-      "categories": [],
+      "summary": "3X eligible Alaska/Hawaiian purchases, 2X eligible gas/EV, cable/streaming and transit.",
+      "primaryLabel": "3X eligible Alaska/Hawaiian purchases, 2X eligible gas/EV, cable/streaming and transit.",
+      "feeSummary": "$95 annual fee",
+      "annualFeeUsd": 95,
+      "rewards": [
+        "miles"
+      ],
+      "categories": [
+        "travel",
+        "gas",
+        "lifestyle"
+      ],
       "features": [
         "airline"
       ],
-      "plainEnglish": "The proposed benefit details are currently in the human QC queue and have not been approved for visitors.",
-      "watchOut": "Do not rely on this card for a financial decision until its terms have been checked against the current issuer agreement.",
-      "limitations": "Annual fees, APRs, bonuses, redemption, and insurance benefits are intentionally hidden until human QC.",
-      "verifiedAt": null,
+      "plainEnglish": "3X eligible Alaska/Hawaiian purchases, 2X eligible gas/EV, cable/streaming and transit.",
+      "watchOut": "$95 annual fee; companion fare requires annual qualifying spend; card-dependent baggage conditions.",
+      "limitations": "Issuer terms and eligibility govern. Airline miles are not equivalent to cash. Companion benefits, checked bags, lounge access, and statement credits carry restrictions. Proposed details awaiting human review.",
+      "verifiedAt": "2026-10-27",
       "issuerSource": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-credit-card/",
-      "verificationLevel": "pending-human-review",
+      "verificationLevel": "selected-issuer-page-facts",
       "imageFront": null,
       "accessType": "public",
-      "airlineProgram": "Atmos Rewards"
+      "airlineProgram": "Atmos Rewards",
+      "humanVerified": true
     },
     {
       "id": "boa-atmos-summit",
@@ -1030,53 +1192,83 @@
       "id": "chase-aeroplan",
       "name": "Aeroplan Credit Card",
       "issuer": "Chase",
-      "status": "pending_review",
+      "status": "published",
       "fictional": false,
       "tone": "slate",
-      "humanVerified": false,
-      "summary": "Terms and benefits are awaiting human review.",
-      "primaryLabel": "Pending human review",
-      "feeSummary": "Annual fee: pending human review",
+      "summary": "Air Canada Aeroplan points on eligible airline, travel and everyday purchase categories.",
+      "primaryLabel": "Air Canada Aeroplan points on eligible airline, travel and everyday purchase categories.",
+      "feeSummary": "Annual fee: issuer agreement review required",
       "annualFeeUsd": null,
-      "rewards": [],
-      "categories": [],
+      "rewards": [
+        "miles"
+      ],
+      "categories": [
+        "travel"
+      ],
       "features": [
         "airline"
       ],
-      "plainEnglish": "The proposed benefit details are currently in the human QC queue and have not been approved for visitors.",
-      "watchOut": "Do not rely on this card for a financial decision until its terms have been checked against the current issuer agreement.",
-      "limitations": "Annual fees, APRs, bonuses, redemption, and insurance benefits are intentionally hidden until human QC.",
-      "verifiedAt": null,
+      "plainEnglish": "Air Canada Aeroplan points on eligible airline, travel and everyday purchase categories.",
+      "watchOut": "Specific categories, annual fee and new-account offer require current issuer agreement.",
+      "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
+      "verifiedAt": "2026-10-27",
       "issuerSource": "https://creditcards.chase.com/travel-credit-cards",
-      "verificationLevel": "pending-human-review",
+      "verificationLevel": "selected-issuer-page-facts",
       "imageFront": null,
       "accessType": "public",
-      "airlineProgram": null
+      "bio": "Aeroplan Credit Card from Chase. Air Canada Aeroplan points on eligible airline, travel and everyday purchase categories.",
+      "rewardStructure": "miles",
+      "earnRules": [],
+      "benefits": [],
+      "monthlyFeeUsd": null,
+      "humanVerified": true
     },
     {
       "id": "chase-amazon-visa",
       "name": "Amazon Visa",
       "issuer": "Chase",
-      "status": "pending_review",
+      "status": "published",
       "fictional": false,
       "tone": "slate",
-      "humanVerified": false,
-      "summary": "Terms and benefits are awaiting human review.",
-      "primaryLabel": "Pending human review",
-      "feeSummary": "Annual fee: pending human review",
-      "annualFeeUsd": null,
-      "rewards": [],
+      "summary": "3% back at eligible Amazon, Audible, Whole Foods and Chase Travel; 2% gas, dining and transit; 1% elsewhere.",
+      "primaryLabel": "3% back at eligible Amazon, Audible, Whole Foods and Chase Travel; 2% gas, dining and transit; 1% elsewhere.",
+      "feeSummary": "$0 annual fee",
+      "annualFeeUsd": 0,
+      "rewards": [
+        "cash_back"
+      ],
       "categories": [],
       "features": [],
-      "plainEnglish": "The proposed benefit details are currently in the human QC queue and have not been approved for visitors.",
-      "watchOut": "Do not rely on this card for a financial decision until its terms have been checked against the current issuer agreement.",
-      "limitations": "Annual fees, APRs, bonuses, redemption, and insurance benefits are intentionally hidden until human QC.",
-      "verifiedAt": null,
+      "plainEnglish": "3% back at eligible Amazon, Audible, Whole Foods and Chase Travel; 2% gas, dining and transit; 1% elsewhere.",
+      "watchOut": "Merchant and transaction exclusions apply; Amazon Visa does not require paid Prime membership.",
+      "limitations": "Selected current issuer-page facts, not complete card agreement. Redemption values, APRs and promotional eligibility may change. Human review required.",
+      "verifiedAt": "2026-10-27",
       "issuerSource": "https://creditcards.chase.com/cash-back-credit-cards/amazon-rewards",
-      "verificationLevel": "pending-human-review",
+      "verificationLevel": "selected-issuer-page-facts",
       "imageFront": null,
       "accessType": "public",
-      "airlineProgram": null
+      "bio": "Amazon Visa from Chase. 3% back at eligible Amazon, Audible, Whole Foods and Chase Travel; 2% gas, dining and transit; 1% elsewhere.",
+      "rewardStructure": "tiered",
+      "earnRules": [
+        {
+          "label": "Eligible Amazon, Whole Foods and Chase Travel",
+          "rate": 3,
+          "unit": "percent"
+        },
+        {
+          "label": "Dining, gas and local transit",
+          "rate": 2,
+          "unit": "percent"
+        },
+        {
+          "label": "Other eligible purchases",
+          "rate": 1,
+          "unit": "percent"
+        }
+      ],
+      "benefits": [],
+      "monthlyFeeUsd": null,
+      "humanVerified": true
     },
     {
       "id": "chase-british-airways",
@@ -2601,7 +2793,7 @@
     }
   ],
   "reviewProgress": {
-    "approved": 1,
+    "approved": 7,
     "total": 100
   }
 }

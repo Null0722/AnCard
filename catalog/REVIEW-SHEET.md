@@ -4,7 +4,7 @@
 
 This is a generated READ-ONLY view. Review proposed terms and change approval in [HUMAN-QC.json](HUMAN-QC.json).
 
-**Review progress:** 1 of 100 entries human approved. Unapproved financial details remain hidden from the public directory.
+**Review progress:** 7 of 100 entries human approved. Unapproved financial details remain hidden from the public directory.
 
 ## Aer Lingus Visa Signature
 
@@ -57,7 +57,7 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 ## Aeroplan Credit Card
 
-**Issuer:** Chase | **Review status:** PENDING | **Stage:** Established directory identity
+**Issuer:** Chase | **Review status:** APPROVED | **Stage:** Established directory identity
 
 - **Annual fee proposal:** Annual fee: issuer agreement review required
 - **Monthly membership fee:** Not verified / not applicable
@@ -104,7 +104,7 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 ## Amazon Visa
 
-**Issuer:** Chase | **Review status:** PENDING | **Stage:** Established directory identity
+**Issuer:** Chase | **Review status:** APPROVED | **Stage:** Established directory identity
 
 - **Annual fee proposal:** $0 annual fee
 - **Monthly membership fee:** Not verified / not applicable
@@ -201,7 +201,7 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 ## American Express Gold
 
-**Issuer:** American Express | **Review status:** PENDING | **Stage:** Established directory identity
+**Issuer:** American Express | **Review status:** APPROVED | **Stage:** Established directory identity
 
 - **Annual fee proposal:** $325 annual fee
 - **Monthly membership fee:** Not verified / not applicable
@@ -254,7 +254,7 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 ## American Express Green
 
-**Issuer:** American Express | **Review status:** PENDING | **Stage:** Established directory identity
+**Issuer:** American Express | **Review status:** APPROVED | **Stage:** Established directory identity
 
 - **Annual fee proposal:** Annual fee: issuer agreement review required
 - **Monthly membership fee:** Not verified / not applicable
@@ -301,7 +301,7 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 ## American Express Platinum
 
-**Issuer:** American Express | **Review status:** PENDING | **Stage:** Established directory identity
+**Issuer:** American Express | **Review status:** APPROVED | **Stage:** Established directory identity
 
 - **Annual fee proposal:** $895 annual fee
 - **Monthly membership fee:** Not verified / not applicable
@@ -351,7 +351,7 @@ To approve after verifying all claims, edit the matching `humanVerified` boolean
 
 ## Atmos Rewards Ascent Visa Signature
 
-**Issuer:** Bank of America | **Review status:** PENDING | **Stage:** Established directory identity
+**Issuer:** Bank of America | **Review status:** APPROVED | **Stage:** Established directory identity
 
 - **Annual fee proposal:** $95 annual fee
 - **Monthly membership fee:** Not verified / not applicable
