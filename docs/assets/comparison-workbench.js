@@ -26,8 +26,8 @@ export function formatOffer(card){
   return {
    status:'Separately human-reviewed offer',
    headline:approved.headline||UNKNOWN,
-   spend:milestones.length?milestones.map((step,i)=>'Milestone '+(i+1)+': '+dollar(step.minimumSpendUsd)+' eligible purchases').join('; '):approved.instantBenefit?.spendRequired===false?'No minimum purchase spending required':'See official offer',
-   timing:milestones.length?milestones.map((step,i)=>'Milestone '+(i+1)+': '+(step.windowDays?step.windowDays+' days':step.monthsToEarn+' months')).join('; '):approved.instantBenefit?.trigger||'See terms',
+   spend:milestones.length?milestones.map((step,i)=>(approved.kind==='channel_variation'?'Channel option ':'Milestone ')+(i+1)+': '+dollar(step.minimumSpendUsd)+' eligible purchases').join('; '):approved.instantBenefit?.spendRequired===false?'No minimum purchase spending required':'See official offer',
+   timing:milestones.length?milestones.map((step,i)=>(approved.kind==='channel_variation'?'Channel option ':'Milestone ')+(i+1)+': '+(step.windowDays?step.windowDays+' days':step.monthsToEarn+' months')).join('; '):approved.instantBenefit?.trigger||'See terms',
    eligibility:approved.offerDetails||UNKNOWN,
    source:approved.source||null,
    observedAt:approved.observedAt||null
