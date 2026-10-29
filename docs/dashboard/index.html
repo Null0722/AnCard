@@ -5,7 +5,7 @@
 <meta name="description" content="AnCard independent client-side credit-card comparison dashboard. Your preferences stay in your browser.">
 <title>AnCard  -  Explore dashboard</title>
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="../assets/styles.css?v=1.1.0">
+<link rel="stylesheet" href="../assets/styles.css?v=1.5.0">
 <style>
 .dashboard-shell{max-width:1190px;margin:auto;padding:32px 20px 88px}
 .dashboard-nav{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:52px}
@@ -74,7 +74,7 @@ dialog p{line-height:1.65;color:#d0dce6}
 @media print{.dashboard-product.product{background:#fff!important;border:1px solid #888!important;box-shadow:none!important;break-inside:avoid}.dashboard-product .card-fact-value,.dashboard-product .card-heading h3{color:#111!important}.dash-compare-check{display:none!important}}
 
 </style>
-<script type="module" src="./dashboard.js?v=1.1.0"></script>
+<script type="module" src="./dashboard.js?v=1.5.0"></script>
 </head>
 <body>
 <a class="skip-link" href="#dashboard-main">Skip to main content</a>
@@ -122,11 +122,12 @@ dialog p{line-height:1.65;color:#d0dce6}
 <section class="results-box" aria-labelledby="results-title">
 <div class="list-toolbar"><div><h2 id="results-title">Compare reviewed facts</h2><p id="count" class="status" role="status" aria-live="polite">Loading records…</p></div><label class="status" for="sort">Sort by <select id="sort"><option value="name">Name A–Z</option><option value="issuer">Issuer A–Z</option><option value="fee">Annual fee (verified first)</option></select></label></div>
 <div class="card-list dashboard-card-grid" id="products"></div><button class="show-more-cards" id="load-more" type="button" hidden>Show more cards</button>
-<div id="compare" class="compare-pane" hidden><h2>Factual side-by-side comparison</h2><p class="hint">Up to three cards. No recommendation or winner. Missing values are labeled as unknown.</p><div id="compare-grid" class="compare-grid"></div><p><button class="btn-plain" type="button" id="clear-compare">Clear comparison</button></p></div>
+<div id="compare" class="compare-pane" hidden><h2 id="compare-title" tabindex="-1">Comparison workbench</h2><p class="hint">Compare 2-4 selected cards. Offers have separate review status and are not guaranteed. Unknown never means zero.</p><div id="compare-grid" class="workbench-host"></div><p><button class="btn-plain" type="button" id="clear-compare">Clear comparison</button></p></div>
 </section>
 </div>
 <footer>No visitor account • No behavioral analytics • Choices are never saved. Hosting infrastructure may process network/security logs. Educational information only; issuer disclosures govern. <a href="../#privacy">Privacy & notices</a></footer>
 </main>
+<div id="dashboard-compare-bar" class="compare-bar" hidden><span id="dashboard-compare-count" role="status" aria-live="polite">0 cards selected</span><div class="compare-actions"><button type="button" class="btn-plain" id="dashboard-clear-compare">Clear</button><button type="button" class="btn-action" id="dashboard-open-compare" disabled>Compare 2-4 cards</button></div></div>
 <dialog id="gate" aria-labelledby="gate-title">
 <p class="eyebrow-soft">Before you explore</p><h2 id="gate-title">Information before influence.</h2>
 <p>AnCard does not recommend or broker cards. Filter selections stay in browser memory; no profiles or application tracking. The host may maintain network/security logs.</p>
