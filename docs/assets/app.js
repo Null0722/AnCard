@@ -147,7 +147,7 @@ function matchesBase(c){
 function updateFacetCounts(){
  const active=activeFilters();
  for(const checkbox of checks){
-   const remaining={...active,[checkbox.dataset.facet]:active[checkbox.dataset.facet].filter(v=>v!==checkbox.value)};
+   const remaining={...active,[checkbox.dataset.facet]:[]};
    const one={rewards:[],categories:[],features:[]};one[checkbox.dataset.facet]=[checkbox.value];
    const count=cards.filter(c=>c.humanVerified&&matchesBase(c)&&matches(c,remaining)&&matches(c,one)).length;
    const label=checkbox.closest('label');
