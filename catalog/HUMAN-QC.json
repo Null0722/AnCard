@@ -67,7 +67,7 @@
       "id": "chase-aeroplan",
       "name": "Aeroplan Credit Card",
       "issuer": "Chase",
-      "humanVerified": false,
+      "humanVerified": true,
       "candidate": {
         "summary": "Air Canada Aeroplan points on eligible airline, travel and everyday purchase categories.",
         "annualFeeUsd": null,
@@ -112,7 +112,7 @@
       "id": "chase-amazon-visa",
       "name": "Amazon Visa",
       "issuer": "Chase",
-      "humanVerified": false,
+      "humanVerified": true,
       "candidate": {
         "summary": "3% back at eligible Amazon, Audible, Whole Foods and Chase Travel; 2% gas, dining and transit; 1% elsewhere.",
         "annualFeeUsd": 0,
@@ -225,7 +225,7 @@
       "id": "amex-gold",
       "name": "American Express Gold",
       "issuer": "American Express",
-      "humanVerified": false,
+      "humanVerified": true,
       "candidate": {
         "summary": "4X points at restaurants (up to $50,000/calendar year) and eligible U.S. supermarkets (up to $25,000/calendar year); 5X prepaid Amex Travel hotels, 3X flights, 2X eligible additional travel.",
         "annualFeeUsd": 325,
@@ -345,7 +345,7 @@
       "id": "amex-green",
       "name": "American Express Green",
       "issuer": "American Express",
-      "humanVerified": false,
+      "humanVerified": true,
       "candidate": {
         "summary": "American Express Green membership rewards for travel, transit and dining purchases.",
         "annualFeeUsd": null,
@@ -388,7 +388,7 @@
       "id": "amex-platinum",
       "name": "American Express Platinum",
       "issuer": "American Express",
-      "humanVerified": false,
+      "humanVerified": true,
       "candidate": {
         "summary": "5X Membership Rewards points on eligible airline-direct or Amex Travel flights (up to $500,000/year combined) and prepaid hotels booked through Amex Travel; 1X other eligible purchases.",
         "annualFeeUsd": 895,
@@ -479,7 +479,7 @@
       "id": "boa-atmos-ascent",
       "name": "Atmos Rewards Ascent Visa Signature",
       "issuer": "Bank of America",
-      "humanVerified": false,
+      "humanVerified": true,
       "candidate": {
         "summary": "3X eligible Alaska/Hawaiian purchases, 2X eligible gas/EV, cable/streaming and transit.",
         "annualFeeUsd": 95,
