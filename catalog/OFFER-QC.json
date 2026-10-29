@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "researchDate": "2026-10-29",
+  "instructions": "Independent offer-QC is separate from existing humanVerified card approval. Research candidates are NOT published as live bonuses. To publish, verify current issuer channel/terms and manually record reviewedBy and reviewedAt, then set approved true, rebuild artifacts and review PR. Offers can be targeted or change without notice.",
+  "cards": [
+    {
+      "id": "chase-aer-lingus",
+      "approved": false,
+      "reviewedBy": "",
+      "reviewedAt": null,
+      "observedAt": "2026-10-29",
+      "candidate": {
+        "kind": "spend",
+        "headline": "75,000 bonus Avios after $5,000 in purchases in the first 3 months",
+        "milestones": [
+          {
+            "amount": 75000,
+            "unit": "Avios",
+            "minimumSpendUsd": 5000,
+            "monthsToEarn": 3
+          }
+        ],
+        "offerDetails": "Cardholder must qualify as a new eligible applicant. Chase lists a 24-month prior-bonus restriction, and excluded purchases do not count.",
+        "source": "https://creditcards.chase.com/avios/cards"
+      },
+      "researchNotes": "Official Chase issuer page. Human reviewer must inspect offer details and any direct channel restrictions before approval."
+    },
+    {
+      "id": "chase-aeroplan",
+      "approved": false,
+      "reviewedBy": "",
+      "reviewedAt": null,
+      "observedAt": "2026-10-29",
+      "candidate": {
+        "kind": "tiered",
+        "headline": "Up to 115,000 Aeroplan bonus points across two spending milestones",
+        "milestones": [
+          {
+            "amount": 75000,
+            "unit": "Aeroplan points",
+            "minimumSpendUsd": 4000,
+            "monthsToEarn": 3
+          },
+          {
+            "amount": 40000,
+            "unit": "Aeroplan points",
+            "minimumSpendUsd": 20000,
+            "monthsToEarn": 12
+          }
+        ],
+        "offerDetails": "The $20,000 milestone is the total within 12 months, not an additional $20,000 above the first milestone. Issuer page contains old and new figures simultaneously; confirm current channel terms before approving.",
+        "source": "https://creditcards.chase.com/travel-credit-cards/aircanada/aeroplan"
+      },
+      "researchNotes": "Issuer page includes overlapping 60K and 115K content; check actual current offer page, eligibility, and rate/annual-fee changes. Do not approve without human source capture."
+    },
+    {
+      "id": "chase-amazon-visa",
+      "approved": false,
+      "reviewedBy": "",
+      "reviewedAt": null,
+      "observedAt": "2026-10-29",
+      "candidate": {
+        "kind": "instant",
+        "headline": "$50 Amazon gift card upon approval, subject to eligibility",
+        "milestones": [],
+        "instantBenefit": {
+          "kind": "gift_card",
+          "amountUsd": 50,
+          "trigger": "On eligible application approval",
+          "spendRequired": false
+        },
+        "offerDetails": "Amazon gift card is added to an eligible Amazon account at approval; there is no advertised minimum purchase spending requirement for this offer. This is Amazon Visa, not Prime Visa.",
+        "source": "https://creditcards.chase.com/cash-back-credit-cards/amazon"
+      },
+      "researchNotes": "Do not confuse Amazon Visa $50 with Prime Visa $150, whose membership eligibility differs. Approval and distribution can vary by offer channel."
+    },
+    {
+      "id": "amex-gold",
+      "approved": false,
+      "reviewedBy": "",
+      "reviewedAt": null,
+      "observedAt": "2026-10-29",
+      "candidate": {
+        "kind": "personalized",
+        "headline": "As high as 100,000 Membership Rewards points after $8,000 in purchases within 6 months",
+        "milestones": [
+          {
+            "amount": 100000,
+            "unit": "Membership Rewards points",
+            "minimumSpendUsd": 8000,
+            "monthsToEarn": 6
+          }
+        ],
+        "offerDetails": "Maximum possible offer; actual amount varies by applicant and channel and is not guaranteed. Existing AnCard card record already includes this as a dated offer snapshot.",
+        "source": "https://www.americanexpress.com/us/credit-cards/"
+      },
+      "researchNotes": "Existing snapshot already published under the card's general human QC. This independent offer-review record remains pending until separately approved."
+    },
+    {
+      "id": "amex-platinum",
+      "approved": false,
+      "reviewedBy": "",
+      "reviewedAt": null,
+      "observedAt": "2026-10-29",
+      "candidate": {
+        "kind": "personalized",
+        "headline": "As high as 175,000 Membership Rewards points after $12,000 in purchases within 6 months",
+        "milestones": [
+          {
+            "amount": 175000,
+            "unit": "Membership Rewards points",
+            "minimumSpendUsd": 12000,
+            "monthsToEarn": 6
+          }
+        ],
+        "offerDetails": "Maximum possible offer; actual value is personalized and not guaranteed. Existing AnCard card record already includes this as a dated offer snapshot.",
+        "source": "https://www.americanexpress.com/us/credit-cards/"
+      },
+      "researchNotes": "Do not confuse with Business Platinum. Existing card snapshot remains unaltered; independent offer review is pending."
+    },
+    {
+      "id": "amex-green",
+      "approved": false,
+      "reviewedBy": "",
+      "reviewedAt": null,
+      "observedAt": "2026-10-29",
+      "candidate": {
+        "kind": "not_available",
+        "headline": "No current new-application welcome offer confirmed",
+        "milestones": [],
+        "offerDetails": "Amex Classic Green appears closed to new applications since July 2026. Official issuer benefits page documents benefits for current cardmembers but is not a new-account acquisition offer.",
+        "source": "https://global.americanexpress.com/card-benefits/view-all/amex-green"
+      },
+      "researchNotes": "Issuer benefits page is not sufficient evidence of current sign-up availability. Confirm actual issuer applications status; do not republish historical 40,000-point offers as live. Independent reports suggest applications stopped July 23, 2026."
+    },
+    {
+      "id": "boa-atmos-ascent",
+      "approved": false,
+      "reviewedBy": "",
+      "reviewedAt": null,
+      "observedAt": "2026-10-29",
+      "candidate": {
+        "kind": "channel_variation",
+        "headline": "Channel-dependent: issuer pages advertise 50,000 or 70,000 bonus points plus a $99 companion fare",
+        "milestones": [
+          {
+            "amount": 50000,
+            "unit": "Atmos Rewards points",
+            "minimumSpendUsd": 1500,
+            "windowDays": 90
+          },
+          {
+            "amount": 70000,
+            "unit": "Atmos Rewards points",
+            "minimumSpendUsd": 2500,
+            "windowDays": 90
+          }
+        ],
+        "extraBenefit": "$99 Companion Fare (plus taxes and fees) on qualifying offer; separate anniversary companion benefit also has spending requirements.",
+        "offerDetails": "50,000 and 70,000 are alternatives across different issuer pages, not additive tiers; compare available application channel. 50,000 requires $1,500/90 days, 70,000 requires $2,500/90 days.",
+        "source": "https://www.bankofamerica.com/credit-cards/",
+        "alternateSource": "https://www.bankofamerica.com/credit-cards/preferred-rewards-credit-cards/"
+      },
+      "researchNotes": "Conflicting channel offers mean neither maximum should be presented as a universal welcome offer. Record exact offered channel when human approves."
+    }
+  ]
+}
