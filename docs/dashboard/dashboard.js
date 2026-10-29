@@ -137,7 +137,7 @@ function render(){
    const source=text('a','Read official issuer source','source-link');source.href=c.issuerSource;source.target='_blank';
    source.rel='noopener noreferrer';source.referrerPolicy='no-referrer';
    actions.append(source);back.append(actions);
-   content.append(...back.childNodes);back.append(content);inner.append(front,back);frame.append(inner);article.append(frame);
+   while(back.firstChild)content.append(back.firstChild);back.append(content);inner.append(front,back);frame.append(inner);article.append(frame);
    results.append(article);
  }
  byId('load-more').hidden=matches.length<=visibleLimit;
