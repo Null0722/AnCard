@@ -3,7 +3,7 @@ import {createCardVisual,identityType,rightsClearedAsset} from '../assets/card-v
 const byId = id => document.getElementById(id);
 const form=byId('filters'), results=byId('products'), count=byId('count');
 const selected=new Set();
-const flipped=new Set();
+const expanded=new Set();
 let visibleLimit=24;
 let cards=[];
 let artEnabled=false;
@@ -68,14 +68,15 @@ function renderComparison(){
    grid.append(block);
  }
 }
-function setFlip(article,onBack){
- const id=article.dataset.cardId;const front=article.querySelector('.flip-front'),back=article.querySelector('.flip-back');
- if(onBack)flipped.add(id);else flipped.delete(id);
- article.classList.toggle('is-flipped',onBack);
- front.inert=onBack;back.inert=!onBack;
- front.setAttribute('aria-hidden',String(onBack));
- back.setAttribute('aria-hidden',String(!onBack));
- article.querySelector(onBack?'[data-back]':'[data-front]')?.focus({preventScroll:true});
+function toggleCardDetails(article){
+ const id=article.dataset.cardId,isExpanded=!expanded.has(id);
+ if(isExpanded)expanded.add(id);else expanded.delete(id);
+ article.classList.toggle('is-expanded',isExpanded);
+ const details=article.querySelector('.flip-back');
+ details.inert=!isExpanded;details.setAttribute('aria-hidden',String(!isExpanded));
+ const control=article.querySelector('[data-expand]');
+ control.setAttribute('aria-expanded',String(isExpanded));
+ control.textContent=isExpanded?'Hide card details':'Show card details';
 }
 function render(){
  const range=Number(byId('annual').value);
@@ -90,14 +91,14 @@ function render(){
    const article=text('article','');
    article.className='product dashboard-product premium-card';
    article.dataset.cardId=c.id;
-   article.classList.toggle('is-flipped',flipped.has(c.id));
+   article.classList.toggle('is-expanded',expanded.has(c.id));
    article.classList.toggle('is-text-only',!showIllustrations);
    const frame=text('div','');frame.className='flip-frame';const inner=text('div','');inner.className='flip-inner';
    const front=text('section','');front.className='flip-face flip-front';
    const back=text('section','');back.className='flip-face flip-back';
-   front.inert=flipped.has(c.id);back.inert=!flipped.has(c.id);
-   front.setAttribute('aria-hidden',String(flipped.has(c.id)));
-   back.setAttribute('aria-hidden',String(!flipped.has(c.id)));
+   back.inert=!expanded.has(c.id);
+   back.id='dashboard-details-'+c.id;
+   back.setAttribute('aria-hidden',String(!expanded.has(c.id)));
    const top=text('div','');top.className='flip-top';
    top.append(text('span',c.issuer,'issuer-eyebrow'),text('span',c.humanVerified?'QC reviewed':'Pending QC','review-pill'));
    const art=showIllustrations?createCardVisual(c,artEnabled):text('div',c.name,'art-text-fallback');
@@ -106,7 +107,7 @@ function render(){
    title.append(text('h3',c.name),text('p',c.humanVerified?c.summary:'Financial details are pending human review.'));
    front.append(title);
    const bar=text('div','');bar.className='flip-toolbar';
-   const flipBtn=text('button','Flip for details','flip-action');flipBtn.type='button';flipBtn.dataset.back=c.id;
+   const flipBtn=text('button',expanded.has(c.id)?'Hide card details':'Show card details','flip-action');flipBtn.type='button';flipBtn.dataset.expand=c.id;flipBtn.setAttribute('aria-expanded',String(expanded.has(c.id)));flipBtn.setAttribute('aria-controls',back.id);
    const label=text('label',' Compare','dash-compare-check');
    const cb=document.createElement('input');cb.type='checkbox';cb.checked=selected.has(c.id);cb.disabled=!cb.checked&&selected.size>=3;
    cb.setAttribute('aria-label','Compare '+c.name);
@@ -132,11 +133,11 @@ function render(){
    }
    back.append(facts);
    const actions=text('div','');actions.className='flip-back-actions';
-   const returnBtn=text('button','Return to front','flip-return');returnBtn.type='button';returnBtn.dataset.front=c.id;
+   const content=text('div','');content.className='flip-back-content';
    const source=text('a','Read official issuer source','source-link');source.href=c.issuerSource;source.target='_blank';
    source.rel='noopener noreferrer';source.referrerPolicy='no-referrer';
-   actions.append(returnBtn,source);back.append(actions);
-   inner.append(front,back);frame.append(inner);article.append(frame);
+   actions.append(source);back.append(actions);
+   content.append(...back.childNodes);back.append(content);inner.append(front,back);frame.append(inner);article.append(frame);
    results.append(article);
  }
  byId('load-more').hidden=matches.length<=visibleLimit;
@@ -154,9 +155,7 @@ byId('clear-compare').addEventListener('click',()=>{selected.clear();render();})
 results.addEventListener('click',event=>{
  const article=event.target.closest('.dashboard-product');
  if(!article)return;
- if(event.target.closest('[data-back]')){setFlip(article,true);return;}
- if(event.target.closest('[data-front]')){setFlip(article,false);return;}
- if(!article.classList.contains('is-flipped')&&!event.target.closest('button,a,input,label,select'))setFlip(article,true);
+ if(event.target.closest('[data-expand]')){toggleCardDetails(article);return;}
 });
 fetch('../data/cards.json',{cache:'no-store'}).then(resp=>{if(!resp.ok)throw new Error('Catalog could not load');return resp.json();}).then(data=>{
  cards=Array.isArray(data.cards)?data.cards.filter(c=>c && ['published','pending_review'].includes(c.status) && c.fictional===false):[];
