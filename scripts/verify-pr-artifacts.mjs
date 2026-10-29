@@ -38,6 +38,7 @@ export function offerApprovalOnly(before,after){
    continue;
   }
   if(prior.approved!==false||next.approved!==true)return false;
+  if(next.candidate?.kind==='channel_variation')return false;
   if(typeof next.reviewedBy!=='string'||!next.reviewedBy.trim()||
     !/^\d{4}-\d{2}-\d{2}$/.test(next.reviewedAt||''))return false;
   increased++;
