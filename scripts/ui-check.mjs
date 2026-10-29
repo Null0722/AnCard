@@ -17,7 +17,7 @@ for(const id of ['card-results','load-more','issuer-filter','review-status','car
 for(const id of ['products','load-more','issuer','identity','review','show-art','show-official-art','official-art-option','art-status','compare','gate']){
  assert.ok(dashboard.includes('id="'+id+'"'),'Missing dashboard control '+id);
 }
-assert.match(dashboard,/type="module" src="\.\/dashboard\.js"/);
+assert.match(dashboard,/type="module" src="\.\/dashboard\.js\?v=1\.1\.0"/);
 assert.match(mainJs,/import .*card-visual\.js/);
 assert.match(dashJs,/import .*card-visual\.js/);
 assert.match(home,/id="review-status"><option value="approved" selected/);
