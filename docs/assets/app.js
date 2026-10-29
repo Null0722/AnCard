@@ -5,7 +5,8 @@ const checks=[...document.querySelectorAll('[data-facet]')];
 const quicks=[...document.querySelectorAll('[data-quick]')];
 const identityQuicks=[...document.querySelectorAll('[data-identity-quick]')];
 const compared=new Set();
-const expanded=new Set();
+let identitySelection='';
+let queueLimit=12;
 let artEnabled=false;
 let showIllustrations=true;
 let visibleLimit=24;
@@ -69,124 +70,135 @@ function button(textValue,className,attribute,value) {
   btn.type='button';btn.dataset[attribute]=value;
   return btn;
 }
-function makeCard(card) {
-  const article=node('article','card-row premium-card');
-  article.dataset.cardId=card.id;
-  article.dataset.identityType=identityType(card);
-  const isExpanded=expanded.has(card.id);
-  article.classList.toggle('is-expanded',isExpanded);
-  const frame=node('div','flip-frame');
-  const inner=node('div','flip-inner');
-  const front=node('section','flip-face flip-front');
-  const details=node('section','flip-face flip-back');
-  details.id='card-details-'+card.id;
-  details.inert=!isExpanded;
-  details.setAttribute('aria-hidden',String(!isExpanded));
-  const top=node('div','flip-top');
-  top.append(node('span','issuer-eyebrow',card.issuer));
-  top.append(node('span','review-pill',card.humanVerified?'QC reviewed':'Review pending'));
-  front.append(top);
-  article.classList.toggle('is-text-only',!showIllustrations);
-  const art=showIllustrations?createCardVisual(card,artEnabled):node('div','art-text-fallback',card.name);
-  front.append(art);
-  const info=node('div','flip-summary');
-  info.append(node('h4','',card.name),node('p','',card.humanVerified?card.summary:'Official issuer reference available. Financial terms awaiting human review.'));
-  front.append(info);
-  const bottom=node('div','flip-toolbar');
-  const expandButton=button(isExpanded?'Hide card details':'Show card details','flip-action','expand',card.id);
-  expandButton.setAttribute('aria-expanded',String(isExpanded));
-  expandButton.setAttribute('aria-controls',details.id);
-  bottom.append(expandButton);
-  const compare=button(compared.has(card.id)?'Selected':'Compare','compare-button','compare',card.id);
-  compare.setAttribute('aria-pressed',String(compared.has(card.id)));
-  bottom.append(compare);
-  front.append(bottom);
-  const content=node('div','flip-back-content');
-  content.append(node('div','flip-back-eyebrow','AT A GLANCE'));
-  content.append(node('h4','flip-back-title',card.name));
-  const facts=node('div','flip-back-details');
-  function fact(title,value) {
-    const line=node('div','flip-fact');
-    line.append(node('span','flip-fact-label',title),node('span','flip-fact-value',value));
-    facts.append(line);
-  }
-  fact('Issuer',card.issuer);
-  fact('Human review',card.humanVerified?'Approved source snapshot':'Pending');
-  fact('Annual fee',card.humanVerified?card.feeSummary:'Pending human review');
-  fact('Reward overview',card.humanVerified?card.primaryLabel:'Not published until QC');
-  fact('Welcome offer',card.humanVerified&&card.welcomeOffer?
-    ((card.welcomeOffer.kind==='up_to'?'Up to ':'')+(card.welcomeOffer.unit==='usd'?'$':'')+card.welcomeOffer.amount.toLocaleString()+(card.welcomeOffer.unit==='usd'?'':' '+card.welcomeOffer.unit)):
-    'Not yet approved or documented');
-  content.append(facts);
-  const actions=node('div','flip-back-actions');
-  actions.append(button('Open full Decode terms','flip-read','detail',card.id));
-  const source=node('a','source-link flip-issuer-source','View issuer source');
-  source.href=card.issuerSource;source.target='_blank';source.rel='noopener noreferrer';source.referrerPolicy='no-referrer';
-  actions.append(source);
-  content.append(actions);
-  details.append(content);
-  inner.append(front,details);
-  frame.append(inner);
-  article.append(frame);
-  return article;
-}
-function toggleCardDetails(article) {
-  const id=article.dataset.cardId;
-  if(!id)return;
-  const isExpanded=!expanded.has(id);
-  if(isExpanded)expanded.add(id);else expanded.delete(id);
-  article.classList.toggle('is-expanded',isExpanded);
-  const details=article.querySelector('.flip-back');
-  details.inert=!isExpanded;
-  details.setAttribute('aria-hidden',String(!isExpanded));
-  const control=article.querySelector('[data-expand]');
-  control.setAttribute('aria-expanded',String(isExpanded));
-  control.textContent=isExpanded?'Hide card details':'Show card details';
-}
 
+const lessons={
+ rewards:['Reward categories','Merchant codes, spending caps and activation rules can limit the advertised multiplier.','Look for: exclusions, caps and redemption restrictions.'],
+ offer:['Welcome bonuses','Bonuses usually require eligible spending by a deadline. Prior accounts and targeted offers may affect eligibility.','Look for: spending requirements, account history and expiration.']
+};
+function makeFact(label,value,lesson){
+ const row=node('div','card-fact');
+ const heading=node('div','card-fact-heading');
+ heading.append(node('span','card-fact-label',label));
+ if(lesson){
+   const tip=node('details','term-tip'),summary=node('summary','term-tip-toggle','?');
+   summary.setAttribute('aria-label','Explain '+lessons[lesson][0].toLowerCase());
+   const content=node('div','term-tip-copy');
+   content.append(node('strong','',lessons[lesson][0]),node('p','',lessons[lesson][1]),node('p','',lessons[lesson][2]));
+   const link=node('a','','Read the full Decoder');link.href='#decoder';content.append(link);
+   tip.append(summary,content);heading.append(tip);
+ }
+ row.append(heading,node('p','card-fact-value',value));
+ return row;
+}
+function issuerLink(card){
+ const link=node('a','source-link issuer-link','Official issuer source');
+ link.href=card.issuerSource;link.target='_blank';link.rel='noopener noreferrer';link.referrerPolicy='no-referrer';
+ return link;
+}
+function makeCard(card){
+ const reviewed=card.humanVerified===true;
+ const article=node('article','card-row premium-card card-at-glance');
+ article.dataset.cardId=card.id;article.dataset.identityType=identityType(card);
+ article.classList.toggle('awaiting-review',!reviewed);
+ const header=node('header','card-overview-header');
+ const heading=node('div','card-heading');
+ heading.append(node('span','issuer-eyebrow',card.issuer),node('h4','',card.name),node('span','review-pill',reviewed?'Human QC reviewed':'In human QC queue'));
+ header.append(heading);
+ if(showIllustrations){
+   const thumbnail=node('div','card-art-thumb');
+   thumbnail.append(createCardVisual(card,artEnabled));header.append(thumbnail);
+ }
+ article.append(header);
+ if(reviewed){
+   const facts=node('div','card-preview-facts');
+   facts.append(makeFact('Annual fee',card.feeSummary||'Not verified'));
+   facts.append(makeFact('Reward overview',card.primaryLabel||'Not documented','rewards'));
+   facts.append(makeFact('Welcome offer',card.welcomeOffer?offerDescription(card.welcomeOffer):'Not documented in the reviewed snapshot','offer'));
+   article.append(facts);
+ }else{
+   article.append(node('p','card-queue-note','Research identity only. Fees, rates and bonuses remain hidden until human source review.'));
+ }
+ const actions=node('div','card-overview-actions');
+ if(reviewed)actions.append(button('Decode full terms','flip-read','detail',card.id));
+ const compare=button(compared.has(card.id)?'✓ Added to compare':'+ Compare','compare-button','compare',card.id);
+ compare.setAttribute('aria-pressed',String(compared.has(card.id)));
+ actions.append(compare,issuerLink(card));article.append(actions);
+ return article;
+}
+function makeQueueCard(card){
+ const article=node('article','queue-card');
+ article.append(node('span','queue-issuer',card.issuer),node('h4','',card.name),node('p','','Awaiting human review; financial terms not yet published.'),issuerLink(card));
+ return article;
+}
 function activeIdentity() {
- return document.querySelector('#identity-filter').value;
+ return identitySelection;
 }
 function activeFiltersCount() {
  return checks.filter(c=>c.checked).length
    +Boolean($('#card-search').value.trim())+Boolean($('#issuer-filter').value)
-   +Boolean($('#identity-filter').value)+Boolean($('#review-status').value);
+   +Boolean(identitySelection)+Boolean($('#review-status').value!=='approved');
 }
-function render() {
- const query=$('#card-search').value.trim().toLocaleLowerCase();
- const issuer=$('#issuer-filter').value;
- const identity=activeIdentity();
+
+function matchesBase(c){
+ const q=$('#card-search').value.trim().toLowerCase(),issuer=$('#issuer-filter').value;
+ return (!issuer||c.issuer===issuer)&&(!identitySelection||identityType(c)===identitySelection)
+  &&(!q||[c.name,c.issuer,c.airlineProgram].filter(Boolean).some(v=>v.toLowerCase().includes(q)));
+}
+function updateFacetCounts(){
+ const active=activeFilters();
+ for(const checkbox of checks){
+   const remaining={...active,[checkbox.dataset.facet]:active[checkbox.dataset.facet].filter(v=>v!==checkbox.value)};
+   const one={rewards:[],categories:[],features:[]};one[checkbox.dataset.facet]=[checkbox.value];
+   const count=cards.filter(c=>c.humanVerified&&matchesBase(c)&&matches(c,remaining)&&matches(c,one)).length;
+   const label=checkbox.closest('label');
+   let mark=label.querySelector('.facet-count');
+   if(!mark){mark=node('span','facet-count');label.append(mark);}
+   mark.textContent=count+' verified';
+   checkbox.disabled=count===0&&!checkbox.checked;
+   label.classList.toggle('facet-unavailable',count===0);
+   label.title=count===0?'No approved card currently matches; pending rates are unknown.':count+' reviewed card'+(count===1?'':'s')+' match';
+ }
+ for(const preset of quicks){
+   const option=checks.find(c=>c.value===preset.dataset.quick);
+   preset.disabled=Boolean(option?.disabled);
+   preset.title=preset.disabled?'No reviewed card currently matches this preset.':'';
+ }
+}
+function renderQueue(){
+ const panel=$('#qc-queue');
+ const pending=sortCards(cards.filter(c=>!c.humanVerified&&matchesBase(c)));
+ const total=cards.filter(c=>!c.humanVerified).length;
+ panel.hidden=$('#review-status').value!=='approved';
+ $('#qc-queue-summary').textContent='In the QC queue ('+pending.length+' matching / '+total+' upcoming cards)';
+ const area=$('#qc-queue-cards');area.replaceChildren();
+ const more=$('#qc-queue-more');
+ if(!panel.open||panel.hidden){more.hidden=true;return;}
+ if(!pending.length)area.append(node('p','queue-empty','No upcoming cards match this issuer, name or type.'));
+ else pending.slice(0,queueLimit).forEach(c=>area.append(makeQueueCard(c)));
+ more.hidden=pending.length<=queueLimit;
+ more.textContent='Show more in queue ('+Math.max(0,pending.length-queueLimit)+' remaining)';
+}
+function render(){
  const review=$('#review-status').value;
- const filtered=sortCards(cards.filter(c=>matches(c,activeFilters())
-   && (!issuer||c.issuer===issuer)
-   && (!identity||identityType(c)===identity)
-   && (!review||(review==='approved'?c.humanVerified===true:c.humanVerified!==true))
-   && (!query||[c.name,c.issuer,c.airlineProgram].filter(Boolean).some(v=>v.toLocaleLowerCase().includes(query)))));
- const visible=filtered.slice(0,visibleLimit);
- const financialFacet=checks.some(c=>c.checked&&c.dataset.facet!=='features');
- const count=$('#result-count');
- count.textContent=catalogError?'Catalog unavailable':filtered.length+' of '+cards.length+' card identities'+(financialFacet?' | Rewards filters require verified data':'')+' | '+filtered.filter(c=>c.humanVerified).length+' QC-reviewed';
+ const filtered=sortCards(cards.filter(c=>matchesBase(c)&&matches(c,activeFilters())
+   &&(review==='approved'?c.humanVerified===true:review==='pending'?c.humanVerified!==true:true)));
+ const visible=filtered.slice(0,visibleLimit),reviewedTotal=cards.filter(c=>c.humanVerified).length;
+ $('#result-count').textContent=catalogError?'Catalog unavailable':filtered.length+' matching | '+reviewedTotal+' human-reviewed of '+cards.length+' total';
  catalogEl.replaceChildren();
  if(catalogError||!filtered.length){
    const empty=node('div','empty-card');
-   empty.append(node('h4','',catalogError?'The catalog did not load.':'No cards match these filters.'));
-   empty.append(node('p','',catalogError?'Try reloading. No preferences were sent.':financialFacet?'Most reward terms are awaiting human review. Try issuer or card type, or clear the rewards filter.':'Clear filters or search another issuer or name.'));
+   empty.append(node('h4','',catalogError?'The catalog did not load.':'No reviewed cards match these filters.'));
+   empty.append(node('p','',catalogError?'Try reloading. No preferences were sent.':'Try another filter, or browse upcoming identities in the QC queue. Unknown rates are never zero.'));
    catalogEl.append(empty);
- }else{
-   const fragment=document.createDocumentFragment();
-   visible.forEach(c=>fragment.append(makeCard(c)));
-   catalogEl.append(fragment);
- }
+ }else{const fragment=document.createDocumentFragment();visible.forEach(c=>fragment.append(makeCard(c)));catalogEl.append(fragment);}
  $('#load-more').hidden=filtered.length<=visible.length;
- $('#load-more').textContent='Show more cards ('+(filtered.length-visible.length)+' remaining)';
+ $('#load-more').textContent='Show more cards ('+Math.max(0,filtered.length-visible.length)+' remaining)';
  $('#active-filter-count').textContent=activeFiltersCount()+' active';
  $('#compare-bar').hidden=compared.size===0;
  $('#compare-label').textContent=compared.size+' of 3 cards selected for factual comparison';
- identityQuicks.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.identityQuick===$('#identity-filter').value)));
- quicks.forEach(b=>{
-   const input=checks.find(c=>c.value===b.dataset.quick);
-   b.setAttribute('aria-pressed',String(Boolean(input?.checked)));
- });
+ identityQuicks.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.identityQuick===identitySelection)));
+ quicks.forEach(b=>{const input=checks.find(c=>c.value===b.dataset.quick);b.setAttribute('aria-pressed',String(Boolean(input?.checked)));});
+ updateFacetCounts();renderQueue();
 }
 function showModal(backdrop, focusTarget){lastFocused=document.activeElement;modalOpen=backdrop;backdrop.hidden=false;document.body.classList.add('lock-scroll');focusTarget.focus();}
 function closeModal(){if(!modalOpen || modalOpen.id==='trust-backdrop')return;modalOpen.hidden=true;modalOpen=null;document.body.classList.remove('lock-scroll');lastFocused?.focus();}
@@ -300,7 +312,7 @@ function showComparison() {
  showModal($('#details-backdrop'),$('#details-backdrop [data-close]'));
 }
 
-function updateFilter() {visibleLimit=24;render();}
+function updateFilter() {visibleLimit=24;queueLimit=12;render();}
 checks.forEach(c=>c.addEventListener('change',updateFilter));
 quicks.forEach(button=>button.addEventListener('click',()=>{
  const input=checks.find(c=>c.value===button.dataset.quick);
@@ -309,15 +321,16 @@ quicks.forEach(button=>button.addEventListener('click',()=>{
 }));
 identityQuicks.forEach(button=>button.addEventListener('click',()=>{
  const value=button.dataset.identityQuick;
- $('#identity-filter').value=$('#identity-filter').value===value?'':value;
+ identitySelection=identitySelection===value?'':value;
  updateFilter();
 }));
 $('#clear-filters').addEventListener('click',()=>{
  checks.forEach(c=>c.checked=false);
- for(const id of ['card-search','issuer-filter','identity-filter','review-status'])$('#'+id).value='';
+ for(const id of ['card-search','issuer-filter'])$('#'+id).value='';
+ identitySelection='';$('#review-status').value='approved';
  updateFilter();
 });
-for(const id of ['card-search','issuer-filter','identity-filter','review-status']){
+for(const id of ['card-search','issuer-filter','review-status']){
  $('#'+id).addEventListener(id==='card-search'?'input':'change',updateFilter);
 }
 $('#sort-by').addEventListener('change',updateFilter);
@@ -345,10 +358,12 @@ catalogEl.addEventListener('click',event=>{
  if(detail){const card=cards.find(c=>c.id===detail.dataset.detail);if(card)showDetails(card);return;}
  const compare=target.closest('[data-compare]');
  if(compare){const id=compare.dataset.compare;if(compared.has(id))compared.delete(id);else if(compared.size<3)compared.add(id);else{showComparison();return;}render();return;}
- if(target.closest('[data-expand]')){toggleCardDetails(article);return;}
+
 });
 $('#clear-compare').addEventListener('click',()=>{compared.clear();render();});
 $('#show-compare').addEventListener('click',showComparison);
+$('#qc-queue').addEventListener('toggle',renderQueue);
+$('#qc-queue-more').addEventListener('click',()=>{queueLimit+=12;renderQueue();$('#qc-queue-more').focus({preventScroll:true});});
 document.querySelectorAll('#details-backdrop [data-close]').forEach(button=>button.addEventListener('click',closeModal));
 $('#details-backdrop').addEventListener('click',e=>{if(e.target===$('#details-backdrop'))closeModal();});
 document.addEventListener('keydown',e=>{if(!modalOpen)return;if(e.key==='Escape' && modalOpen.id!=='trust-backdrop'){e.preventDefault();closeModal();}if(e.key==='Tab'){const focusable=[...modalOpen.querySelectorAll('a[href],button:not([disabled]),input,select')].filter(el=>el.getClientRects().length);if(!focusable.length)return;const first=focusable[0],last=focusable.at(-1);if(e.shiftKey && document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey && document.activeElement===last){e.preventDefault();first.focus();}}});
