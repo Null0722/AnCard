@@ -75,6 +75,7 @@ for(const offer of offerQc.cards){
  for(const step of offer.candidate.milestones){
   if(!Number.isFinite(step.amount)||step.amount<=0||typeof step.unit!=='string'||!Number.isFinite(step.minimumSpendUsd)||step.minimumSpendUsd<0||(!Number.isInteger(step.monthsToEarn)&&!Number.isInteger(step.windowDays)))fail('OFFER-QC.json','invalid milestone for '+offer.id);
  }
+ if(offer.approved&&offer.candidate.kind==='channel_variation')fail('OFFER-QC.json','select one issuer offer channel before approval: '+offer.id);
  if(offer.approved && (!offer.reviewedBy?.trim()||!/^\d{4}-\d{2}-\d{2}$/.test(offer.reviewedAt||'')||offer.reviewedAt>new Date().toISOString().slice(0,10)||offer.reviewedAt<offer.observedAt)){
   fail('OFFER-QC.json','approved offer needs human reviewer and valid date for '+offer.id);
  }
