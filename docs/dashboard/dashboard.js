@@ -1,4 +1,5 @@
 import {createCardVisual,identityType,rightsClearedAsset} from '../assets/card-visual.js';
+import {MAX_COMPARE,createComparisonWorkbench,formatOffer} from '../assets/comparison-workbench.js';
 'use strict';
 const byId = id => document.getElementById(id);
 const form=byId('filters'), results=byId('products'), count=byId('count');
@@ -45,29 +46,20 @@ function filtered(){
  );
 }
 function renderComparison(){
- const ids=cards.filter(c=>selected.has(c.id));const pane=byId('compare'),grid=byId('compare-grid');
- pane.hidden=ids.length===0; grid.replaceChildren();
- for(const c of ids){
-   const block=text('article',''); block.append(text('h3',c.name),text('p',c.issuer),text('p',viewFee(c)));
-   block.append(text('p','Rewards: '+(c.rewards||[]).map(pretty).join(', ')));
-   if(!c.humanVerified){block.append(text('p','Benefits and rates pending human QC'));grid.append(block);continue;}
-   block.append(text('p','Rewards model: '+(rewardModels[c.rewardStructure]||'Not classified')));
-   block.append(text('p','Earn rules: '+(c.earnRules?.length?c.earnRules.map(r=>r.label+': '+earnText(r)).join('; '):'Not separately quantified')));
-   block.append(text('p','Travel credits / perks: '+(c.benefits?.length?c.benefits.map(p=>p.name+': '+benefitText(p)).join('; '):'No quantified benefits in this record')));
-   if(typeof c.monthlyFeeUsd==='number')block.append(text('p','Monthly membership fee: $'+c.monthlyFeeUsd));
-   const bonus=c.welcomeOffer;
-   block.append(text('p','Welcome offer: '+(bonus?(bonus.kind==='up_to'?'As high as ':'')+(bonus.unit==='usd'?'$':'')+bonus.amount.toLocaleString()+(bonus.unit==='usd'?'':' '+bonus.unit)+' after $'+bonus.minimumSpendUsd.toLocaleString()+' in '+bonus.monthsToEarn+' months':'Not documented')));
-   block.append(text('p','Targeted / invite-only: '+(c.targetedOffers?.description||'Not documented for this card')));
-   block.append(text('p','Starting limit: '+(Number.isFinite(c.approvalGuidance?.startingLimitMinUsd)?'$'+c.approvalGuidance.startingLimitMinUsd:'Set after individual underwriting')));
-   block.append(text('p','Issuer credit label: '+(c.approvalGuidance?.issuerCreditLevel||'No numerical approval threshold supported')));
-   block.append(text('p','Redemption examples: '+(c.redemptionDetail?.examples?.length?c.redemptionDetail.examples.map(x=>x.method+': '+x.centsPerPoint+' cents/point').join('; '):'No fixed verified value')));
-   block.append(text('p','Intro purchase APR: '+(Number.isFinite(c.pricingDetail?.introPurchaseAprPct)?c.pricingDetail.introPurchaseAprPct+'% for '+c.pricingDetail.introPurchaseMonths+' months':'Not verified')));
-
-   block.append(text('p','Watch out: '+c.watchOut));
-   grid.append(block);
- }
+ const chosen=[...selected].map(id=>cards.find(c=>c.id===id)).filter(Boolean);
+ const pane=byId('compare'),grid=byId('compare-grid'),dock=byId('dashboard-compare-bar');
+ dock.hidden=selected.size===0;
+ byId('dashboard-compare-count').textContent=selected.size===1?'1 card selected; add another':selected.size+' of '+MAX_COMPARE+' cards selected';
+ byId('dashboard-open-compare').disabled=selected.size<2;
+ byId('dashboard-open-compare').textContent=selected.size<2?'Select another card':'Compare '+selected.size+' cards';
+ pane.hidden=chosen.length<2;grid.replaceChildren();
+ if(chosen.length<2)return;
+ grid.append(createComparisonWorkbench(chosen,{onRemove(id){
+  selected.delete(id);render();
+  const next=byId('compare-grid').querySelector('.workbench-remove');
+  (next||byId('dashboard-open-compare'))?.focus({preventScroll:true});
+ }}));
 }
-
 function factLine(label,value,link){
  const row=text('div','','card-fact');
  const heading=text('div','','card-fact-heading');
@@ -103,14 +95,13 @@ function render(){
      const facts=text('div','','card-preview-facts');
      facts.append(factLine('Annual fee',viewFee(c)));
      facts.append(factLine('Reward overview',c.primaryLabel||'Not documented',true));
-     const bonus=c.welcomeOffer;
-     const offer=bonus?(bonus.kind==='up_to'?'Up to ':'')+(bonus.unit==='usd'?'$':'')+bonus.amount.toLocaleString()+(bonus.unit==='usd'?'':' '+bonus.unit)+' after $'+bonus.minimumSpendUsd.toLocaleString()+' eligible spending in '+bonus.monthsToEarn+' months':'Not documented in the reviewed snapshot';
+     const offer=formatOffer(c).headline;
      facts.append(factLine('Welcome offer',offer,true));
      article.append(facts);
    }else article.append(text('p','Research identity only; financial facts are awaiting human review.','card-queue-note'));
    const bar=text('div','','card-overview-actions');
    const label=text('label',' Compare','dash-compare-check');
-   const cb=document.createElement('input');cb.type='checkbox';cb.checked=selected.has(c.id);cb.disabled=!cb.checked&&selected.size>=3;
+   const cb=document.createElement('input');cb.type='checkbox';cb.checked=selected.has(c.id);cb.disabled=!cb.checked&&selected.size>=MAX_COMPARE;
    cb.setAttribute('aria-label','Compare '+c.name);
    cb.addEventListener('change',()=>{
      if(cb.checked)selected.add(c.id);else selected.delete(c.id);
@@ -135,6 +126,13 @@ form.addEventListener('reset',()=>{visibleLimit=24;queueMicrotask(render);});
 byId('sort').addEventListener('change',()=>{visibleLimit=24;render();});
 byId('load-more').addEventListener('click',()=>{visibleLimit+=24;render();byId('load-more').focus({preventScroll:true});});
 byId('clear-compare').addEventListener('click',()=>{selected.clear();render();});
+byId('dashboard-clear-compare').addEventListener('click',()=>{selected.clear();render();});
+byId('dashboard-open-compare').addEventListener('click',()=>{
+ const panel=byId('compare');
+ if(panel.hidden)return;
+ panel.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+ byId('compare-title').focus({preventScroll:true});
+});
 // The dashboard renders its facts directly; no flip, expansion, or mirrored text.
 fetch('../data/cards.json',{cache:'no-store'}).then(resp=>{if(!resp.ok)throw new Error('Catalog could not load');return resp.json();}).then(data=>{
  cards=Array.isArray(data.cards)?data.cards.filter(c=>c && ['published','pending_review'].includes(c.status) && c.fictional===false):[];
