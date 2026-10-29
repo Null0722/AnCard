@@ -34,7 +34,7 @@ assert.match(mainJs,/card\.humanVerified===true/);
 assert.match(mainJs,/c=>!c\.humanVerified&&matchesBase\(c\)/);
 assert.match(mainJs,/function makeFact\(/);
 assert.match(mainJs,/term-tip/);
-assert.match(css,/\.card-at-glance/);
+assert.match(css,/\.card-row\.premium-card/);
 assert.match(css,/\.card-art-thumb/);
 assert.match(css,/\.card-fact-value/);
 assert.match(css,/@media print/);
