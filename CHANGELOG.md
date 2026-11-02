@@ -160,3 +160,9 @@ All meaningful website changes are documented here and in Git history. Entries s
 
 - **Defined:** Independent credit-card literacy, radical transparency, factual sourcing, readable terms, and privacy-first operation.
 - **MVP:** Trust gate, curated cards, plain-English decoder, filter-first catalog and governance pages. No accounts, bureau pulls, community forum or user reviews.
+
+## Owner editorial dashboard improvements
+
+- Added an editable local card workspace with source review, a live preview, and structured fields for fees, rewards, benefits, offers and eligibility.
+- Saving changed terms resets human approval and regenerates the public catalog with unapproved details hidden; publishing runs validation and pushes only dashboard-managed changes.
+- Added a Windows launcher and GitHub Desktop setup guidance. The dashboard and its private link remain local to the owner's computer.

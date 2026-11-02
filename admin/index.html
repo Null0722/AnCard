@@ -1,7 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AnCard | Card review</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head><body>
-<header><div class="brand">an/card<span>.</span></div><div class="header-label">EDITORIAL WORKSPACE</div><div class="local">● Local session</div></header>
-<main><div class="intro"><div><p class="eyebrow">CARD CATALOG / HUMAN REVIEW</p><h1>Review the details.</h1><p>Check each proposed claim against the issuer before approving it.</p></div><div class="progress"><strong id="approved">—</strong><span>cards reviewed</span></div></div>
-<div class="notice">Approvals are saved to this computer. Run the build and tests, then commit and publish the changes to update the site.</div>
-<div class="layout"><aside><div class="queue-head"><h2>Review queue</h2><span id="count"></span></div><label for="search">Search</label><input id="search" type="search" placeholder="Card or issuer"><label for="filter">Status</label><select id="filter"><option value="pending">Awaiting review</option><option value="all">All cards</option><option value="approved">Reviewed</option></select><div id="list" class="list"></div></aside>
-<section id="detail" aria-live="polite"><div class="empty"><h2>Select a card</h2><p>Its proposed terms, sources, and review status will appear here.</p></div></section></div></main>
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark">
+<title>AnCard | Editorial dashboard</title>
+<link rel="stylesheet" href="/style.css"><script type="module" src="/app.js"></script>
+</head><body>
+<header class="topbar"><a class="brand" href="/">an<span>/</span>card<span>.</span></a><span class="header-caption">EDITORIAL DASHBOARD</span><span class="local-indicator">● Private local session</span><button class="quiet" id="sync" type="button">Sync from GitHub</button><button class="primary" id="publish" type="button">Publish changes</button></header>
+<main class="shell"><div class="intro"><div><p class="eyebrow">AN INDEPENDENT EDITORIAL WORKSPACE</p><h1>Every detail, <span>in your hands.</span></h1><p>Review, edit and preview your card catalog before sharing it with readers.</p></div><div class="progress"><strong id="approved">-</strong><span>cards reviewed</span></div></div>
+<div class="notice"><strong>Your workflow:</strong> Edit and save a card, review it against current issuer disclosures, then approve it. Publish sends your saved changes to GitHub; only approved details appear on the site.</div>
+<div id="global-message" role="status" aria-live="polite"></div>
+<div class="workspace"><aside class="sidebar"><div class="queue-heading"><h2>Card library</h2><span id="count"></span></div><label for="search">Search cards</label><input id="search" type="search" placeholder="Card name or issuer" autocomplete="off"><label for="filter">Review status</label><select id="filter"><option value="all">All cards</option><option value="pending">Awaiting review</option><option value="approved">Reviewed</option></select><div id="list" class="card-list" aria-label="Cards"></div></aside>
+<section id="detail" class="detail"><div class="empty"><div class="empty-icon">✦</div><h2>Select a card to get started</h2><p>See the proposed details and edit them in one place.</p></div></section></div>
+<footer>This dashboard runs on your computer. Keep its session link private. Card data in the public GitHub repository is visible to everyone.</footer></main>
 </body></html>
