@@ -90,6 +90,10 @@ The repository includes an early, working **static-site prototype** with:
 
 AnCard provides general educational information, not personalized financial, legal or credit advice. Card terms can change. Before applying for any card, read its current official issuer disclosures and agreement.
 
+## Owner editorial dashboard
+
+Use the local dashboard to edit card details, preview them, approve verified terms and publish changes without editing JSON. On Windows, clone AnCard with GitHub Desktop and double-click **Open AnCard Dashboard.cmd** in the repository folder. See the [dashboard setup and publishing guide](project/OWNER-REVIEW-DASHBOARD.md) for first-time setup, security and the full workflow.
+
 ## Approve a card using one searchable file
 
 **[Open the central HUMAN-QC.json review queue](catalog/HUMAN-QC.json)**. Press **Ctrl+F**, enter a card name, and read its `candidate` fields for annual fees, benefits, restrictions and official source URL.
